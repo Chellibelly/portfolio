@@ -5,7 +5,11 @@ import QuantitativeAnswersGraphic from '../../public/Quantitative_Answers.png';
 import QualitativeAnswersGraphic from '../../public/Qualitative_Answers.png';
 import HeuristicsGraphic from '../../public/Heuristics.png';
 import CategoriesGraphic from '../../public/Categories.png';
-import PersonaGraphic1 from '../../public/Persona_1.png';
+
+import PersonaTomas from '../../public/Persona_Tomas.png';
+import PersonaRachel from '../../public/Persona_Rachel.png';
+import PersonaLinda from '../../public/Persona_Linda.png';
+
 import ProcessResearchGraphic from '../../public/Process_Research.png';
 
 export default function Research() {
@@ -18,7 +22,7 @@ export default function Research() {
         <Image
           className='graphic'
           src={ProcessResearchGraphic}
-          width="100%"
+          width={900}
           height={500}
           alt="Picture of the author"
         />
@@ -65,19 +69,10 @@ export default function Research() {
         <Typography variant='body1' className='paragraph' style={{ color: "red" }}>[INSERT UX QUOTE]</Typography>
         <Typography variant='h3' className='heading3'>Good ‘ol Heuristics to the Rescue</Typography>
         <Typography variant='body1' className='paragraph'>Before looking at a single hotel site, I wanted to establish rules to guide me. I figured if I examined these websites through the correct design lens, my personal opinions would have little room to interfere. From a set of twelve heuristics, I came up with a small set of categories I could focus on. My categories were navigation and order, saving time or effort, alignment with user goals, expectations, and forthcomingness. </Typography>
-        <Typography variant='body1' className='paragraph' style={{ color: "red" }}>[PUT THE HEURISTICS DIAGRAM HERE]</Typography>
 
         <Image
           className='graphic'
           src={HeuristicsGraphic}
-          width="100%"
-          height={500}
-          alt="Picture of the author"
-        />
-
-        <Image
-          className='graphic'
-          src={CategoriesGraphic}
           width="100%"
           height={500}
           alt="Picture of the author"
@@ -101,13 +96,25 @@ export default function Research() {
         <Typography variant='body1' className='paragraph'>Lastly, I explained the structure of the test so they knew what to expect, and I reminded them that the sessions would be recorded for later analysis and double-checked that they were okay with that.</Typography>
         <Typography variant='h3' className='heading3'>Understanding the user (who is my user, really?) – the depth interviews</Typography>
         <Typography variant='body1' className='paragraph'>All four tests opened with short depth interviews intended to help me understand who these users really were, what they were like, what their backgrounds were, and in what context they might be using this software. I prepared questions about their occupations, location, what reasons they typically booked hotels, how they book typically, what was important for them when booking, and any information they could provide about a recent booking experience. </Typography>
-        <Typography variant='body1' className='paragraph'>Based on their answers to all of these questions, I later created four user personas to help design a customer journey later on.</Typography>
-        
-        <Typography variant='body1' className='paragraph' style={{ color: "red" }}>[INSERT PERSONAS HERE]</Typography>
+        <Typography variant='body1' className='paragraph'>Based on their answers to all of these questions, I later created three user personas to help design a customer journey later on.</Typography>
 
         <Image
           className='graphic'
-          src={PersonaGraphic1}
+          src={PersonaTomas}
+          width="100%"
+          height={500}
+          alt="Picture of the author"
+        />
+        <Image
+          className='graphic'
+          src={PersonaRachel}
+          width="100%"
+          height={500}
+          alt="Picture of the author"
+        />
+        <Image
+          className='graphic'
+          src={PersonaLinda}
           width="100%"
           height={500}
           alt="Picture of the author"

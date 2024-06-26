@@ -27,34 +27,42 @@ body {
 }
 
 .heading1 {
-  font-size: 46px;
+  font-size: 48px;
   font-family: "Montserrat";
+  margin-bottom: 8px;
 }
 
 .heading2 {
-  font-size: 30px;
+  font-size: 32px;
   font-style: italic;
   font-family: "Montserrat";
+  margin-bottom: 36px;
 }
 
 .heading3 {
-  font-size: 26px;
+  font-size: 28px;
   font-family: "Montserrat";
+  margin-bottom: 22px;
 }
 
 .paragraph {
-  font-size: 16px;
+  font-size: 20px;
   font-family: "Montserrat";
+  margin-bottom: 18px;
 }
 
 .nav-link {
-  font-size: 16px;
+  font-size: 18px;
   color: white;
   font-family: "Montserrat";
 }
 
 .graphic {
   background-color: "green";
+}
+
+.column-b {
+  font-size: 200px;
 }
 
 .column-b .MuiListItem-root {

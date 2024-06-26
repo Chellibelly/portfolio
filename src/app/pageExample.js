@@ -19,7 +19,7 @@ export default function Home() {
       <Grid container direction="row" justifyContent="space-between">
         <Grid item xs={2}>
           <Box style={{ position: "fixed" }}>
-            <Typography className="column-b"><a href="#section1">Introduction</a></Typography>
+            <Typography className="column-b"><a href="#section1">Introductionn</a></Typography>
             <Typography className="column-b"><a href="#section2">Research</a></Typography>
             <Typography className="column-b"><a href="#section3">Analysis</a></Typography>
             <Typography className="column-b"><a href="#section4">Design</a></Typography>

@@ -12,7 +12,7 @@ export default function Conclusion() {
         <Image
           className='graphic'
           src={ProcessSolutionGraphic}
-          width="100%"
+          width={900}
           alt="Picture of the author"
         />
 

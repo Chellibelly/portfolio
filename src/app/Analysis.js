@@ -16,7 +16,7 @@ export default function Analysis() {
         <Image
           className='graphic'
           src={ProcessAnalysisGraphic}
-          width="100%"
+          width={900}
           alt="Picture of the author"
         />
         

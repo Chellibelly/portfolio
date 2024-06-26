@@ -13,7 +13,7 @@ export default function Design() {
         <Image
           className='graphic'
           src={ProcessDesignGraphic}
-          width="100%"
+          width={900}
           alt="Picture of the author"
         />
 
