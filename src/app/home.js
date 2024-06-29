@@ -116,7 +116,7 @@ const Home = () => {
                   </Grid>
                 </Grid></ListItemText>
             </ListItem>
-            <ListItem onClick={() => handleSectionClick('delivery_section')} className={activeSection === 'delivery_section' ? 'active' : ''}>
+            <ListItem onClick={() => handleSectionClick('design_section')} className={activeSection === 'design_section' ? 'active' : ''}>
               <ListItemText>
                 <Grid container direction="row">
                   <Grid item xs={2} sx={{ marginRight: "10px" }}>
@@ -160,7 +160,7 @@ const Home = () => {
             <section id="design_section" ref={(el) => sectionRefs.current['design_section'] = el} style={{ paddingTop: 86  }}>
          <Design/>
           </section>
-            <section id="delivery_section" ref={(el) => sectionRefs.current['delivery_section'] = el} style={{ paddingTop: 86  }}>
+            <section id="conclusion_section" ref={(el) => sectionRefs.current['conclusion_section'] = el} style={{ paddingTop: 86  }}>
          <Conclusion/>
           </section>
         </div>

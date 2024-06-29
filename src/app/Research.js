@@ -66,7 +66,6 @@ export default function Research() {
         <Typography variant='h3' className='heading3'>Checking out the Competition and the Hunt for Conventions</Typography>
         <Typography variant='body1' className='paragraph'>Having some preliminary research gathered about user goals, I wanted to see how other hotel websites were catering to (or not catering to) them, discover conventions, and form a baseline. </Typography>
         <Typography variant='body1' className='paragraph'>I acknowledged this as yet another place where I could potentially easily insert my own opinion, and I wanted to avoid that as much as possible. Something important to me might not be to my user. So, if one of my goals was to discover holes in the products of the competition, how would I go about this without letting my opinions take over?</Typography>
-        <Typography variant='body1' className='paragraph' style={{ color: "red" }}>[INSERT UX QUOTE]</Typography>
         <Typography variant='h3' className='heading3'>Good ‘ol Heuristics to the Rescue</Typography>
         <Typography variant='body1' className='paragraph'>Before looking at a single hotel site, I wanted to establish rules to guide me. I figured if I examined these websites through the correct design lens, my personal opinions would have little room to interfere. From a set of twelve heuristics, I came up with a small set of categories I could focus on. My categories were navigation and order, saving time or effort, alignment with user goals, expectations, and forthcomingness. </Typography>
 
@@ -80,7 +79,6 @@ export default function Research() {
 
         <Typography variant='h3' className='heading3'>The Search for The Lucky Contestants</Typography>
         <Typography variant='body1' className='paragraph'>Besides the convention, I noticed in the set of steps through the booking process, I also noticed [List the common findings/assumptions to test].</Typography>
-        <Typography variant='body1' className='paragraph' style={{ color: "red" }}>[INSERT ASSUMPTIONS GRAPHIC]</Typography>
         <Typography variant='h3' className='heading3'>Testing the Assumptions (something about getting real or observation)</Typography>
         <Typography variant='body1' className='paragraph'>Now that I was starting to get an idea of what users wanted and what the booking process tends to look like on existing websites, it was time to go deeper and bridge the gap between the people and the software. I wanted to get organic. What could I learn by just watching some people use existing booking software? Would their real-time behaviors align with the assumptions I had formed so far? Would users feel confident in their actions? What points in the process would cause frustration? What else could I learn about their mental models? </Typography>
         <Typography variant='body1' className='paragraph'>It was time for some usability tests. Usability tests were going to be my best bet for witnessing real, organic reactions. I would be able to see expressions and body language in real time. I could observe what they actually do when they get stuck or confused, and how long it would take them to get back on track. </Typography>
@@ -127,7 +125,6 @@ export default function Research() {
         <Typography variant='h3' className='heading3'>Self-Reflection on an Exercise in Empathy</Typography>
         <Typography variant='body1' className='paragraph'>Watching people struggle is painful, but powerful. Not everyone works through problems in the same way, and completing the task isn’t everything if the journey was painful. </Typography>
         <Typography variant='body1' className='paragraph'>These were the first usability tests I’ve ever conducted. I was nervous. I was afraid I would miss a step or overstep. I didn’t want to bias the data, but I also didn’t want my users to feel bad about themselves. There were a few times with [participant mom], where I could tell she was getting anxious and blaming herself and it took everything I had not to jump in and console her. </Typography>
-        <Typography variant='body1' className='paragraph' style={{ color: "red" }}>[INCLUDE ANXIOUS USER QUOTE]</Typography>
         <Typography variant='body1' className='paragraph'>That being said, I do think I slipped a few times, and there are some things I would do differently next time. </Typography>
         <Typography variant='body1' className='paragraph' style={{ color: "red" }}>[INCLUDE MISTAKES MADE AND HOW I THINK I COULD DO BETTER NEXT TIME]</Typography>
         <Typography variant='h3' className='heading3'>Takeaways</Typography>
