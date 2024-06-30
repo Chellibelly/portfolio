@@ -73,7 +73,7 @@ export default function Research() {
           className='graphic'
           src={HeuristicsGraphic}
           width="100%"
-          height={500}
+          height={900}
           alt="Picture of the author"
         />
 

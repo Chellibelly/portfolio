@@ -1,6 +1,8 @@
 import { Typography, Box, Grid } from '@mui/material';
+import AffinityGroupList from './AffinityGroupsList';
 import Image from 'next/image';
 import AffinityDiagramGraphic from '../../public/Affinity_Diagram.jpg';
+import WhiteboardPostItsGraphic from '../../public/Whiteboard_PostIts.jpg';
 import CustomerJourneyMapGraphic1 from '../../public/Customer_Journey_Map_1.png';
 import CustomerJourneyMapGraphic2 from '../../public/Customer_Journey_Map_2.png';
 import ProcessAnalysisGraphic from '../../public/Process_Analysis.png';
@@ -8,6 +10,7 @@ import CategoryHotelGraphic from '../../public/Category_Hotel.png';
 import CategoryAccountGraphic from '../../public/Category_Account.png';
 import CategoryPricingGraphic from '../../public/Category_Pricing.png';
 import CategoryLocationGraphic from '../../public/Category_Location.png';
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 
 export default function Analysis() {
@@ -20,8 +23,25 @@ export default function Analysis() {
     marginTop: "12px"
   };
 
+  const numberBackgroundStyle = {
+    display: "inline-block",
+    padding: "5px",
+    borderRadius: "50%",
+    backgroundColor: "#96D1FF",
+    textAlign: "center",
+    width: "32px",
+    height: "32px",
+    LineHeight: "32px",
+    margin: -12,
+  };
+
+  const numberTextStyle = {
+    color: "white",
+    fontWeight: "bold"
+  };
+
   return (
-      <Box>
+      <Box sx={{ width: "100%" }}>
         <Typography variant='h1' className='heading1'>The Analysis</Typography>
         <Typography variant='h2' className='heading2'>From the meat grinder to the meal</Typography>
         <Typography variant='body1' className='paragraph'>During my time earning my UX diploma, my instructor used an analogy I don’t ever think I’ll forget because I think it was a good one, but mostly because it was accompanied by a gross video clip of ground beef moving through a meat grinder. The analogy was that all of the research you do is the meat in the meat grinder. [or something. Find this in notes]. Analysis is about taking that meat and turning it into something. I had my meat. I had piles of notes, and it was time to find meaning in all the chaos.</Typography>
@@ -41,7 +61,15 @@ export default function Analysis() {
         <Typography variant='body1' className='paragraph'>I learned that an affinity diagram is a method of triangulation where raw data is grouped into more meaningful categories to make sense of it. Rather than defining the categories up front, instead I would group like data together first, then based on the commonalities, define the groups that formed. In this way, natural groupings would form and help me decide what’s important without biasing the groupings with my own opinions. Essentially, this process would allow the data to speak for itself.</Typography>
         <Typography variant='h3' className='heading3'>The Process – I Should Have Bought a Bigger White Board</Typography>
         <Typography variant='body1' className='paragraph'>My process consisted of setting myself up with stacks of sticky notes of varying colors, my office white board, and whiteboard markers. I focused on one research result set at a time, traversing through the survey results, benchmark research notes, interview answers, and usability videos and notes, spending about 10 minutes with each. I examined each, writing any significant factor down on a sticky note. When I was finished, I stuck each note on the whiteboard.</Typography>
-        <Typography variant='body1' className='paragraph'>Once my whiteboard was full of sticky note chaos, I got to work grouping together any notes which seemed related. I grouped, and regrouped, and tweaked until each sticky note had a home that made sense. I then gave each group a topic name. I noticed some groups could be further refined into subgroups, and I broke those down and gave them their own labels. I ended up with this.</Typography>
+        
+        <Image
+          className='graphic'
+          src={WhiteboardPostItsGraphic}
+          width="100%"
+          alt="Picture of the author"
+        />
+        
+        <Typography variant='body1' className='paragraph'>My whiteboard was full of sticky note chaos, and I got to work grouping together any notes which seemed related. I grouped, and regrouped, and tweaked until each sticky note had a home that made sense. I then gave each group a topic name. I noticed some groups could be further refined into subgroups, and I broke those down and gave them their own labels. I ended up with this.</Typography>
       
         <Image
           className='graphic'
@@ -63,6 +91,8 @@ export default function Analysis() {
           location, hotel amenities, and hotel reviews.
         </Typography>
 
+        <AffinityGroupList/>
+
         <Typography variant='body1' className='paragraph'>
           Many of the remaining groupings almost seem to correspond to steps
           of the process or screens. Room selection, date selection, pricing, and
@@ -77,6 +107,62 @@ export default function Analysis() {
           pattern to help circumvent user concerns over where they are in the
           process, how do they get to what they want, and what’s next.
         </Typography>
+
+        <Grid container direction="row" sx={{ width: "100%" }}>
+          <Grid item sx={{ backgroundColor: "lightgray", width: 250, height: 80, marginTop: 2 }}>
+            <Box style={numberBackgroundStyle}><Typography style={numberTextStyle}>1</Typography></Box>
+            <Typography sx={{textAlign: "center", fontWeight: "bold", fontFamily: "Montserrat" }}>Home Page</Typography>
+          </Grid>
+          <Grid item sx={{ marginTop: 4.5 }}>
+            <ArrowRightAltIcon sx={{ fontSize: 40 }}/>
+          </Grid>
+          <Grid item sx={{ backgroundColor: "lightgray", width: 250, height: 80, marginTop: 2}}>
+            <Box style={numberBackgroundStyle}><Typography style={numberTextStyle}>2</Typography></Box>
+            <Typography sx={{textAlign: "center", fontWeight: "bold", fontFamily: "Montserrat" }}>Date Selection</Typography>
+          </Grid>
+          <Grid item sx={{ marginTop: 4.5 }}>
+            <ArrowRightAltIcon sx={{ fontSize: 40 }}/>
+          </Grid>
+          <Grid item sx={{ backgroundColor: "lightgray", width: 250, height: 80, marginTop: 2}}>
+            <Box style={numberBackgroundStyle}><Typography style={numberTextStyle}>3</Typography></Box>
+            <Typography sx={{textAlign: "center", fontWeight: "bold", fontFamily: "Montserrat" }}>Search, sort, & filter hotels</Typography>
+          </Grid>
+          <Grid item sx={{ marginTop: 4.5 }}>
+            <ArrowRightAltIcon sx={{ fontSize: 40 }}/>
+          </Grid>
+          <Grid item sx={{ backgroundColor: "lightgray", width: 250, height: 80, marginTop: 2}}>
+            <Box style={numberBackgroundStyle}><Typography style={numberTextStyle}>4</Typography></Box>
+            <Typography sx={{textAlign: "center", fontWeight: "bold", fontFamily: "Montserrat" }}>Compare hotel results & select a hotel</Typography>
+          </Grid>
+          <Grid item sx={{ marginTop: 4.5 }}>
+            <ArrowRightAltIcon sx={{ fontSize: 40 }}/>
+          </Grid>
+          <Grid item sx={{ backgroundColor: "lightgray", width: 250, height: 80, marginTop: 2}}>
+            <Box style={numberBackgroundStyle}><Typography style={numberTextStyle}>5</Typography></Box>
+            <Typography sx={{textAlign: "center", fontWeight: "bold", fontFamily: "Montserrat" }}>Compare hotel rooms & select a room</Typography>
+          </Grid>
+          <Grid item sx={{ marginTop: 4.5 }}>
+            <ArrowRightAltIcon sx={{ fontSize: 40 }}/>
+          </Grid>
+          <Grid item sx={{ backgroundColor: "lightgray", width: 250, height: 80, marginTop: 2}}>
+            <Box style={numberBackgroundStyle}><Typography style={numberTextStyle}>6</Typography></Box>
+            <Typography sx={{textAlign: "center", fontWeight: "bold", fontFamily: "Montserrat" }}>Select a rate</Typography>
+          </Grid>
+          <Grid item sx={{ marginTop: 4.5 }}>
+            <ArrowRightAltIcon sx={{ fontSize: 40 }}/>
+          </Grid>
+          <Grid item sx={{ backgroundColor: "lightgray", width: 250, height: 80, marginTop: 2}}>
+            <Box style={numberBackgroundStyle}><Typography style={numberTextStyle}>7</Typography></Box>
+            <Typography sx={{textAlign: "center", fontWeight: "bold", fontFamily: "Montserrat" }}>Choose or skip add-ons</Typography>
+          </Grid>
+          <Grid item sx={{ marginTop: 4.5 }}>
+            <ArrowRightAltIcon sx={{ fontSize: 40 }}/>
+          </Grid>
+          <Grid item sx={{ backgroundColor: "lightgray", width: 250, height: 80, marginTop: 2}}>
+            <Box style={numberBackgroundStyle}><Typography style={numberTextStyle}>8</Typography></Box>
+            <Typography sx={{textAlign: "center", fontWeight: "bold", fontFamily: "Montserrat" }}>Complete the booking</Typography>
+          </Grid>
+        </Grid>
 
         <Typography variant='h3' className='heading3'>The Customer Journey Map</Typography>
         <Typography variant='body1' className='paragraph'>[Explain why I made an empathy map (needed to start building out a flow and defining what each step should be, and how I made it]</Typography>

@@ -27,8 +27,6 @@ export default function Design() {
           alt="Picture of the author"
         />
 
-        <Typography variant='h3' className='heading3'>Takeaways/Lessons Learned</Typography>
-        <Typography variant='body1' className='paragraph'>[Explain the screens I ended up with and how each fit into the customer journey]</Typography>
         <Typography variant='h3' className='heading3'>Sketches</Typography>
         <Typography variant='body1' className='paragraph'>At this point, I realized I had enough to start sketching out the design. Sketching would allow me to get ideas out quickly. Pens and paper are a physical medium that make for a fantastic way to brainstorm with relative ease. Sketching the screens would allow me to translate the interaction notes from the previous exercise into actual web controls, such as inputs and buttons, and determine where these controls would be positioned on each page. The goal here was to end up with realistic screen states, a low fidelity draft I’d be able to use to design my prototype later. </Typography>
         <Typography variant='body1' className='paragraph'>I pulled out some pens, notebook paper, and grid paper and got to work. I chose controls and positioning mostly which aligned with conventions I found or which improved usability issues I’d discovered. I kept it as simple as possible, focusing on discovered opportunities within a happy path. I started with very sloppy, quick sketches on notebook paper, then redrew and tweaked those sketches on grid paper for a cleaner representation. I uploaded pictures of the clean sketches to a Miro board and wrote careful, detailed annotations that any stakeholders, especially developers, would need to know about the interactions and screen states.</Typography>

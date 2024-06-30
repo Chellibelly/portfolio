@@ -1,6 +1,7 @@
 "use client"; 
 import React, { useState, useEffect, useRef } from 'react';
-import { Grid, List, ListItem, ListItemText, Box, Typography } from '@mui/material';
+import Header from './Header';
+import { Grid, List, ListItem, ListItemText, Box, Typography, Link } from '@mui/material';
 import Introduction from './Introduction';
 import Research from './Research';
 import Analysis from './Analysis';
@@ -51,14 +52,7 @@ const Home = () => {
 
   return (
     <div>
-    <Box style={{ width: "100%", backgroundColor: blue[800], position: "sticky", top: 0 }}>
-      <Grid container direction="row" justifyContent="space-between" style={{ width:"50%", padding: 20 }}>
-        <Grid item><Typography className="nav-link">About Me</Typography></Grid>
-        <Grid item><Typography className="nav-link">My Case Study</Typography></Grid>
-        <Grid item><Typography className="nav-link">My Resume</Typography></Grid>
-        <Grid item><Typography className="nav-link">My Blog</Typography></Grid>
-      </Grid>
-    </Box>
+    <Header/>
     <div style={{ padding: 20 }}>
     <Grid container>
       <Grid item xs={3}>
