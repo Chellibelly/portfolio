@@ -1,16 +1,19 @@
-import { Typography, Box } from '@mui/material';
+import { Typography, Box, Grid } from '@mui/material';
 import Image from 'next/image';
 import SurveyQuestionsGraphic from '../../public/Survey_Questions.png';
 import QuantitativeAnswersGraphic from '../../public/Quantitative_Answers.png';
-import QualitativeAnswersGraphic from '../../public/Qualitative_Answers.png';
-import HeuristicsGraphic from '../../public/Heuristics.png';
-import CategoriesGraphic from '../../public/Categories.png';
 
+import SurveyQuotesPainpoints from "../../public/Survey_quotes_painpoints.png";
+import SurveyQuotes from "../../public/Survey_Quotes.png";
+import UsabilityQuotesPainpoints from "../../public/Usability_Quotes_painpoints.png";
+import UsabilityQuotes from "../../public/Usability_quotes.png";
+import HeuristicsGraphic from '../../public/Heuristics.png';
 import PersonaTomas from '../../public/Persona_Tomas.png';
 import PersonaRachel from '../../public/Persona_Rachel.png';
 import PersonaLinda from '../../public/Persona_Linda.png';
-
 import ProcessResearchGraphic from '../../public/Process_Research.png';
+
+import { blue } from '@mui/material/colors';
 
 export default function Research() {
   return (
@@ -30,7 +33,7 @@ export default function Research() {
         <Typography variant='h3' className='heading3'>I Am Not My User</Typography>
         <Typography variant='body1' className='paragraph'>Starting with basically nothing, I needed to cast a wide net in terms of audience and gather information from real people about past experiences that they have had while using hotel booking websites. I wanted to know their stories, contexts, goals, and struggles.  </Typography>
         <Typography variant='body1' className='paragraph'>One easy way to get feedback from several users is to use a classic research method: a survey. I wanted both quantitative and qualitative feedback. Quantitative feedback would help to identify commonalities I could focus on, and qualitative feedback would reveal deeper insights and allow real emotions to come through.</Typography>
-        <Typography variant='h3' className='heading3'>The Survey: Gathering Experiences</Typography>
+        <Typography variant='h3' className='heading3'>The Survey Questions</Typography>
         <Typography variant='body1' className='paragraph'>I decided to use Google Forms because it was free, familiar to me, and easy to use and distribute. I came up with a total of seven questions, an easily digestible amount that would take less than five minutes to answer. I figured as long as I had a really good reason behind asking each question, seven questions should be plenty to get some really good insights.</Typography>
 
         <Image
@@ -43,9 +46,11 @@ export default function Research() {
         
         <Typography variant='body1' className='paragraph'>After crafting the questions and getting the survey written in Google Forms, it was time to distribute. Since this was a school project, I had zero budget to work with. That being said, I needed volunteers. I reached out to friends, coworkers, colleagues, and family, looking for anyone I knew who had experienced booking hotels through websites before.</Typography>
         <Typography variant='body1' className='paragraph'>The survey was distributed to the qualified volunteers by email and, after a little over a week (and a few reminders), all of the surveys had been summitted!</Typography>
-        <Typography variant='h3' className='heading3'>My First Piece of the Puzzle</Typography>
-        <Typography variant='body1' className='paragraph'>Once I had all of the survey results, I summarized the data into some assumptions I wanted to continue to test into. This was the first time I realized avoiding actual analysis until the correct part in the process was going to be hard. I’m human, and reading all of survey responses made me want to jump into designing out the pain points I was reading about. And there were a lot. In fact, there were a lot more pain points than I expected. In fact, the answers to my pain points focused question were longer and more in depth than any other question I included.</Typography>
+        <Typography variant='h3' className='heading3'>Could I really get all the answers by surveying 12 people?</Typography>
+        <Typography variant='body1' className='paragraph'>The short answer to this question is “no.” And the answer <i>should</i> be no. This was the first time I realized avoiding actual analysis until the correct part in the process was going to be hard. Surprisingly however, I was able to get a good handful of useful insights from surveying twelve people. These insights weren’t “all the answers”, but they would be some of the stepping stones to those answers. They would help me to form assumptions that I could test later, and that would end up being very valuable. </Typography>
 
+        <Typography variant='h3' className='heading3'>Goals, Context, and Behavior</Typography>
+        <Typography variant='body1' className='paragraph'>Most respondents reported that proximity to activities in the area is the most important thing to them when looking for a hotel. Additionally, a large portion of respondents also reported that they spent the majority of their efforts filtering hotel amenities and browsing through search results. A large portion of respondents reported that they spent the majority of their efforts filtering hotel amenities and browsing through search results.</Typography>
         
         <Image
           className='graphic'
@@ -55,9 +60,35 @@ export default function Research() {
           alt="Picture of the author"
         />
 
+        <Typography variant='body1' className='paragraph'>When asked what task they were trying to complete, most respondents replied that they were trying to either book a stay or research and compare prices. Several mentioned selecting their chosen website because of good prices or being able to easily compare prices. Others mentioned using the site because they belong to a rewards or preferred program with the brand. Several also highlighted ease and quickness of use and reliability being the reason they use their favorite hotel booking websites.</Typography>
+
         <Image
           className='graphic'
-          src={QualitativeAnswersGraphic}
+          src={SurveyQuotes}
+          width="100%"
+          height={500}
+          alt="Picture of the author"
+        />
+
+        <Typography variant='h3' className='heading3'>The Contradiction</Typography>
+        <Typography variant='body1' className='paragraph'>One interesting contradition the survey results seemed to expose was that When asked what the most important thing to them is when booking a hotel, most respondents reported that the most important thing is the proximity to activities in the area. However, almost none of the respondents mentioned anything to do with this desire when describing what they were trying to accomplish or what they actually interacted with on the website. This reminded me of a quote.</Typography>
+
+        <Box sx={{ border: `5px solid ${blue[800]}` }}>
+          "What people do, what people say, and what people say they do and all different things."
+        </Box>
+
+        <Typography variant='body1' className='paragraph'>
+          I wondered if that's what was going on with this contradition, and I also wondered if I'd be able to witness this contradiction in action later on in the research. At this point though, I tried to keep in mind my small sample size and to not draw any conclusions from this early.
+        </Typography>
+
+        <Typography variant='h3' className='heading3'>The Pain</Typography>
+        <Typography variant='body1' className='paragraph'>
+          Out of all of the questions I asked, the longest and most detailed answers came in response to the last question on the survey: "What would you change?" It was clear that even though some respondants were answering questions about an experience they had weeks to months ago, their frustrations stuck with them.
+        </Typography>
+
+        <Image
+          className='graphic'
+          src={SurveyQuotesPainpoints}
           width="100%"
           height={500}
           alt="Picture of the author"
@@ -78,7 +109,47 @@ export default function Research() {
         />
 
         <Typography variant='h3' className='heading3'>The Search for The Lucky Contestants</Typography>
-        <Typography variant='body1' className='paragraph'>Besides the convention, I noticed in the set of steps through the booking process, I also noticed [List the common findings/assumptions to test].</Typography>
+
+        <Typography variant='body1' className='paragraph'>
+          Now that I had a lens for how I intended to examine the websites, I needed to actually pick some websites to look at. How was I to pick these? Well, a hotel booking website isn’t a new concept by any means. Surely most successful hotel companies have everything figured out and should pass design heuristics with flying colors. I knew, though that this was an assumption, and I wanted to find out if it was true.
+        </Typography>
+
+        <Typography variant='body1' className='paragraph'>
+          I decided to pick companies that were well established because these would be the companies that should have had the time, resources, and reach to iron things out. These would be the websites that mine should compare to.  
+        </Typography>
+
+        <Typography variant='body1' className='paragraph'>
+          Knowing, I wanted to pick a few established companies, I first needed to define “established” for my use case. I decided a company that has existed for over 50 years and has several thousands of hotel locations counted as established. I selected Hilton, Marriot, and Best Western. [Insert reasons here]. I also picked a wild card, Disney [insert reason here].
+        </Typography>
+
+        <Typography variant='body1' className='paragraph' sx={{ color: "red" }}>
+          [PUT THE CHOSEN COMPANIES HERE]
+        </Typography>
+
+        <Typography variant='h3' className='heading3'>A Whole ‘Lotta Notes (meh, rename this)</Typography>
+
+        <Typography variant='body1' className='paragraph'>
+          With my design categories, chosen hotel websites, and a big cup of coffee, I got to work. I walked through the booking process of each of the hotels’ mobiles sites several times, taking screenshots and notes on anything of interest relating to my categories.
+        </Typography>
+        <Typography variant='body1' className='paragraph'>
+          In addition to the heuristic evaluations, I also took notes on the steps in the process that I had to take on each site to complete a booking.
+        </Typography>
+        <Typography variant='body1' className='paragraph' sx={{ color: "red" }}>
+          [INSERT RAW NOTES]
+        </Typography>
+  
+        <Typography variant='h3' className='heading3'>Nobody’s Perfect</Typography>
+        <Typography variant='body1' className='paragraph'>
+          I discovered a few interesting things through this exercise. For one, there was certainly a conventional pattern. Each site more or less took me through the same steps to complete my booking. Anyone who has used these sites has likely shaped a mental model off of this pattern. I was eager to see if further research would demonstrate that.
+        </Typography>
+        <Typography variant='body1' className='paragraph'>
+          Besides the convention, I noticed in the set of steps through the booking process, I also noticed [List the common findings/assumptions to test].
+        </Typography>
+        <Typography variant='body1' className='paragraph' sx={{ color: "red" }}>
+          [INSERT ASSUMPTIONS GRAPHIC]
+        </Typography>
+
+
         <Typography variant='h3' className='heading3'>Testing the Assumptions (something about getting real or observation)</Typography>
         <Typography variant='body1' className='paragraph'>Now that I was starting to get an idea of what users wanted and what the booking process tends to look like on existing websites, it was time to go deeper and bridge the gap between the people and the software. I wanted to get organic. What could I learn by just watching some people use existing booking software? Would their real-time behaviors align with the assumptions I had formed so far? Would users feel confident in their actions? What points in the process would cause frustration? What else could I learn about their mental models? </Typography>
         <Typography variant='body1' className='paragraph'>It was time for some usability tests. Usability tests were going to be my best bet for witnessing real, organic reactions. I would be able to see expressions and body language in real time. I could observe what they actually do when they get stuck or confused, and how long it would take them to get back on track. </Typography>
@@ -96,40 +167,83 @@ export default function Research() {
         <Typography variant='body1' className='paragraph'>All four tests opened with short depth interviews intended to help me understand who these users really were, what they were like, what their backgrounds were, and in what context they might be using this software. I prepared questions about their occupations, location, what reasons they typically booked hotels, how they book typically, what was important for them when booking, and any information they could provide about a recent booking experience. </Typography>
         <Typography variant='body1' className='paragraph'>Based on their answers to all of these questions, I later created three user personas to help design a customer journey later on.</Typography>
 
-        <Image
-          className='graphic'
-          src={PersonaTomas}
-          width="100%"
-          height={500}
-          alt="Picture of the author"
-        />
-        <Image
-          className='graphic'
-          src={PersonaRachel}
-          width="100%"
-          height={500}
-          alt="Picture of the author"
-        />
-        <Image
-          className='graphic'
-          src={PersonaLinda}
-          width="100%"
-          height={500}
-          alt="Picture of the author"
-        />
+        <Grid container direcion="row" justifyContent="space-around">
+          <Grid item xs={5.5}>
+              <Image
+              className='graphic'
+              src={PersonaTomas}
+              width="100%"
+              alt="Picture of the author"
+            />
+          </Grid>
+          <Grid item xs={5.5}>
+              <Image
+              className='graphic'
+              src={PersonaRachel}
+              width="100%"
+              alt="Picture of the author"
+            />
+          </Grid>
+          <Grid item xs={5.5}>
+              <Image
+              className='graphic'
+              src={PersonaLinda}
+              width="100%"
+              alt="Picture of the author"
+            />
+          </Grid>
+          <Grid item xs={5.5}>
+              <Image
+              className='graphic'
+              src={PersonaLinda}
+              width="100%"
+              alt="Picture of the author"
+            />
+          </Grid>
+        </Grid>
+      
 
         <Typography variant='h3' className='heading3'>How the tests were conducted</Typography>
         <Typography variant='body1' className='paragraph'>In each test, after the depth interviews concluded, it was time to shift into the exciting part – testing the usability of the websites. I chose to test a few of the websites I had looked at during the benchmark research for the two sessions I conducted. The other two tested two other hotel websites based in the UK. </Typography>
         <Typography variant='body1' className='paragraph'>Each participant was tasked with booking a hotel in a specified city for a specified weekend on two different websites. I watched the participants go through the exercise, reminded them to continue speaking out loud if they got quiet, asking some follow up questions when I noticed interesting behavior, and being careful not to bias or compromise the integrity of the test. Each test took about an hour to complete. </Typography>
         <Typography variant='body1' className='paragraph'>After each participant had completed their tasks, we concluded the sessions with a few questions about what they thought about the experience. I asked about their overall sentiment, what differed from their expectations, what they liked, what they disliked, and what they thought was missing, if anything. Finally, I expressed gratitude, thanking them for their time and participation and reiterating how useful their insight is to my research.</Typography>
+        <Typography variant='h3' className='heading3'>Notable Behaviors</Typography>
+        
+        <Typography variant='body1' className='paragraph'>
+          Participants all remarked on colorful, on-theme imagery and photos of hotels. 
+          Imagery seemed very important, especially on the homepage. 
+          Speaking of the homepage, each user began the same way: by looking for a place to enter their desired destination and dates of stay.
+          Once they get to the hotel results page, they were mostly looking for the
+for a hotel which looks most appealing to them and the least expensive
+with good ratings. They loved to see TripAdvisor ratings present.</Typography>
+
+<Typography variant='body1' className='paragraph'>
+After selecting a hotel, they would do a quick read-through of more detailed information on amenities if it was present, and then continue on. They would then get to the room selection screen and scroll up and down on the page, comparing pricing and room amenities until they found a match closest to what they were looking for.
+          </Typography>
+        
+        <Image
+          className='graphic'
+          src={UsabilityQuotes}
+          width="100%"
+          height={500}
+          alt="Picture of the author"
+        />
+        
+        <Typography variant='h3' className='heading3'>Pain Points</Typography>
+        <Typography variant='body1' className='paragraph'>Pain points encountered by the participants included overwhelming or unexpected search results, unconventional or confusing date picker controls, lack of clear and descriptive information about the hotels and amenities, unclear sorting options, confusing rates and promotions that weren't easy to compare, and unclear lines drawn between member and non-member options.</Typography>
+
+        <Image
+          className='graphic'
+          src={UsabilityQuotesPainpoints}
+          width="100%"
+          height={500}
+          alt="Picture of the author"
+        />
+
         <Typography variant='h3' className='heading3'>Self-Reflection on an Exercise in Empathy</Typography>
         <Typography variant='body1' className='paragraph'>Watching people struggle is painful, but powerful. Not everyone works through problems in the same way, and completing the task isn’t everything if the journey was painful. </Typography>
         <Typography variant='body1' className='paragraph'>These were the first usability tests I’ve ever conducted. I was nervous. I was afraid I would miss a step or overstep. I didn’t want to bias the data, but I also didn’t want my users to feel bad about themselves. There were a few times with [participant mom], where I could tell she was getting anxious and blaming herself and it took everything I had not to jump in and console her. </Typography>
-        <Typography variant='body1' className='paragraph'>That being said, I do think I slipped a few times, and there are some things I would do differently next time. </Typography>
-        <Typography variant='body1' className='paragraph' style={{ color: "red" }}>[INCLUDE MISTAKES MADE AND HOW I THINK I COULD DO BETTER NEXT TIME]</Typography>
-        <Typography variant='h3' className='heading3'>Takeaways</Typography>
-        <Typography variant='body1' className='paragraph' style={{ color: "red" }}>[INCLUDE SOME TAKEAWAYS HERE]</Typography>
-        <Typography variant='body1' className='paragraph' style={{ color: "red" }}>[INCLUDE PLENTY OF USER QUOTES]</Typography>
+        <Typography variant='body1' className='paragraph'>That being said, I do think I slipped a few times, and there are some things I would do differently  time. I won't interupt immediately just because a user is struggling. I won't agree with or verbally justify their annoyances or suggest a particular action to get them out of trouble. Instead, I will express empathy without being too specific, allowing them some time to figure it out before I jump in, and ask them to explain what they are feeling and trying to do when they do get stuck.</Typography>
       </Box>
   );
 }

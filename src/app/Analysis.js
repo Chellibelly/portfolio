@@ -108,10 +108,15 @@ export default function Analysis() {
           process, how do they get to what they want, and what’s next.
         </Typography>
 
-        <Grid container direction="row" sx={{ width: "100%" }}>
+        <Typography variant='body1' className='paragraph'>
+          It felt important to me at this point, to define specific beats in the process that I was starting to visualize after the research and the affinity diagram excercise. 
+          There were about eight major parts of the booking journey where the user would need to complete tasks: home page (destination selection), date selection, hotel search, hotel selection, room selection, rate selection, add-ons, and booking completion (payment & contact details).
+        </Typography>
+
+        <Grid container direction="row" sx={{ width: "100%", margin: 5 }}>
           <Grid item sx={{ backgroundColor: "lightgray", width: 250, height: 80, marginTop: 2 }}>
             <Box style={numberBackgroundStyle}><Typography style={numberTextStyle}>1</Typography></Box>
-            <Typography sx={{textAlign: "center", fontWeight: "bold", fontFamily: "Montserrat" }}>Home Page</Typography>
+            <Typography sx={{textAlign: "center", fontWeight: "bold", fontFamily: "Montserrat" }}>Home Page (destination selection)</Typography>
           </Grid>
           <Grid item sx={{ marginTop: 4.5 }}>
             <ArrowRightAltIcon sx={{ fontSize: 40 }}/>
@@ -165,7 +170,7 @@ export default function Analysis() {
         </Grid>
 
         <Typography variant='h3' className='heading3'>The Customer Journey Map</Typography>
-        <Typography variant='body1' className='paragraph'>[Explain why I made an empathy map (needed to start building out a flow and defining what each step should be, and how I made it]</Typography>
+        <Typography variant='body1' className='paragraph'>Now that I had groups of focus pulled from my affinity diagram and I had defined the steps of the journey, it was time to get a little more organized and flesh out the journey by adding all of the user goals, behaviors, and sentiments on top of it. This would help me form a blueprint for the first steps of the actual design. With a customer journey map, I'd be able to start visualizing the actual screens of the website and the guidelines, opportunities, and purposes of each one.</Typography>
         
         <Image
           className='graphic'

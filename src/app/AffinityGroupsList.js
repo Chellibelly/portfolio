@@ -34,57 +34,26 @@ export default function AffinityGroupsList() {
                 <Typography>
                     Location
                 </Typography>
-                <List sx={{ listStyleType: 'disc', marginLeft: 5 }}>
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>As the user types, suggested destinations matching the search criteria are offered</Typography>
-                    </ListItem>
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>User uses the interactable map to compare hotel result locations to find one that matches his goals</Typography>
-                    </ListItem>
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>Destination search field provides recent searches as options</Typography>
-                    </ListItem>
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>User is overwhelmed by too many hotel results and tries to narrow them down with more specific terms</Typography>
-                    </ListItem>
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>Many survey respondants say proximity to activies in the area is the most important thing to them when looking for a hotel</Typography>
-                    </ListItem>
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>User said specific hotel names as search results did not help him understand which options aligned with his goals</Typography>
-                    </ListItem>
-                </List>
+                <Box sx={{ listStyleType: 'disc', marginLeft: 5 }}>
+                    <Typography>
+                        Smart search suggestions and recent searches are a must-have. Most users are searching by a specific location in mind, so search results should focus on location, landmarks, and places of interest. The search results page needs to give the option for the user to toggle between and list view and a map view. The map view should help the user understand where each hotel is relative to the area in a highly visible way.
+                    </Typography>
+                </Box>
                 <Typography>
                     <Typography>
                         Amenities
                     </Typography>
-                    <List sx={{ listStyleType: 'disc', marginLeft: 5 }}>
-                        <ListItem sx={{ display: 'list-item' }}>
-                            <Typography>When asked if there was anything he looked for that he couldn't find, user mentions more information on the hotel itself</Typography>
-                        </ListItem>
-                        <ListItem sx={{ display: 'list-item' }}>
-                            <Typography>User loved when hotel and room amenities were listed clearly in written words with a good amount of detail</Typography>
-                        </ListItem>
-                        <ListItem sx={{ display: 'list-item' }}>
-                            <Typography>Hotel amenities listed as icons, not sure exactly what the parking icon means</Typography>
-                        </ListItem>
-                    </List>
+                    <Box sx={{ listStyleType: 'disc', marginLeft: 5 }}>
+                        <Typography>Amenities should be shown clearly at each step in the process, including when selecting a hotel, when selecting a room, when selecting a rate, and in summaries. Amenities should include icons, but they should also be labelled in text for clarity. For example a "parking" icon isn't enough. What specifically are we trying to say about parking? Amenity filtering should be easily discoverable on hotel search page.</Typography>
+                    </Box>
                 </Typography>
                 <Typography>
                     <Typography>
                         Reviews
                     </Typography>
-                    <List sx={{ listStyleType: 'disc', marginLeft: 5 }}>
-                        <ListItem sx={{ display: 'list-item' }}>
-                            <Typography>When asked if there was anything he expected to see but didn't, user mentioned he would have liked to see hotel ratings</Typography>
-                        </ListItem>
-                        <ListItem sx={{ display: 'list-item' }}>
-                            <Typography>User typically searches for hotels with the best value which have the best reviews</Typography>
-                        </ListItem>
-                        <ListItem sx={{ display: 'list-item' }}>
-                            <Typography>User remarks that the first thing he's drawn to when comparing hotel results is the TripAdvisor rating</Typography>
-                        </ListItem>
-                    </List>
+                    <Box sx={{ listStyleType: 'disc', marginLeft: 5 }}>
+                        <Typography>Importance of reviews came up time and time throughout research. Many users consider one of the most important factor when trusting a hotel booking website or specific hotel quality. A simple 5-star reputable rating system such as TripAdvisor ratings should be present and prominent on each hotel result.</Typography>
+                    </Box>
                 </Typography>
             </Grid>
         </Grid>
@@ -96,17 +65,7 @@ export default function AffinityGroupsList() {
                 </Typography>
             </Grid>
             <Grid item xs={10} sx={{ padding: "10px" }}>
-                <List sx={{ listStyleType: 'disc', marginLeft: 5 }}>
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>After selecting a hotel, the first thing the user notices on the hotel details page is hotel images, and he scrolls through them</Typography>
-                    </ListItem>           
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>When deciding on a room, user scrolls through each option, comparing them at a glance before selecting one</Typography>
-                    </ListItem>        
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>Room amenities listed and clear</Typography>
-                    </ListItem>      
-                </List>
+                <Typography>Room options should include pictures and clear standard default prices that user can easily see as they scroll so they can compare as they scroll up and down the page. Top room amenities should be listed for each room, but should not take up too much real-estate on the screen as to compromise the users ability to scroll and compare prices. Instead, if more detail exists, it should be included under an obvious expandable section under each room description.</Typography>
             </Grid>
         </Grid>
 
@@ -117,20 +76,7 @@ export default function AffinityGroupsList() {
                 </Typography>
             </Grid>
             <Grid item xs={10} sx={{ padding: "10px" }}>
-                <List sx={{ listStyleType: 'disc', marginLeft: 5 }}>
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>User is disappointed to not to have any option to select flexible dates</Typography>
-                    </ListItem>      
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>Button for reseting calendar date selections</Typography>
-                    </ListItem>       
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>Single calendar widget for selecting dates, simple to interact with</Typography>
-                    </ListItem>        
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>User progresses through calendar months and remarks "it's a bit slow getting to the month of June"</Typography>
-                    </ListItem>              
-                </List>
+                <Typography>Users wanted a single calendar picker for selecting their date range. It would need to be familiar, fast, intuitive, and easy to use with an option to clear dates easily.</Typography>
             </Grid>
         </Grid>
 
@@ -141,26 +87,7 @@ export default function AffinityGroupsList() {
                 </Typography>
             </Grid>
             <Grid item xs={10} sx={{ padding: "10px" }}>
-                <List sx={{ listStyleType: 'disc', marginLeft: 5 }}>
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>User mentions that he was confused why some rates were higher than others, the reasoning was not clear</Typography>
-                    </ListItem>          
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>User isn't sure what effect the special promo deal he selected actually had on the total price</Typography>
-                    </ListItem>              
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>Users have mentioned selecting specific hotel booking site because they can easily compare prices from them</Typography>
-                    </ListItem>  
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>Clear breakdown of pricing shown in checkout</Typography>
-                    </ListItem>  
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>Most survey respondants mentioned struggles related to pricing: hidden fees, rate comparisons, lack of an explanation for price differences</Typography>
-                    </ListItem>  
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>On the room selection step, user expands "View More Rates" control looking for options with free cancellation</Typography>
-                    </ListItem>  
-                </List>
+                <Typography>User should be easily able to find other rate options for any given room. Any member or rewards-specific pricing should be clearly labelled as so and visually seperated from other rates. All rates should have descriptions explainly exactly what they include. Rates should be organized and easy comparable. As often as possible, a clear itemized breakdown of charges should be displayed prominently. There should be no hidden fees or "gotchas."</Typography>            
             </Grid>
         </Grid>
 
@@ -171,20 +98,11 @@ export default function AffinityGroupsList() {
                 </Typography>
             </Grid>
             <Grid item xs={10} sx={{ padding: "10px" }}>
-                <List sx={{ listStyleType: 'disc', marginLeft: 5 }}>
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>When presented with a pop-up prompting the user to create an account he mistakenly assumes it's mandatory</Typography>
-                    </ListItem>    
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>Many survey respondants mentioned account sign-up not being easy or not being able to easily opt out of sign-up</Typography>
-                    </ListItem>   
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>Account login/sign-up available in site header on homepage</Typography>
-                    </ListItem>     
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>User had option to sign-in, sign-up, or continue as a guest when checking out</Typography>
-                    </ListItem>                     
-                </List>
+                <Box>
+                    <Typography>
+                        Account creation/sign-in should not be mandatory, should be very obvious to the user that it's optional, and should be easy to opt-out. However, account membership should be fully explained to the user so that they understand what it is, what it includes, and why it might be beneficial to them. Rewards perks and offers should be easy to find, but visually seperated.
+                    </Typography>
+                </Box>              
             </Grid>
         </Grid>
 
@@ -195,14 +113,7 @@ export default function AffinityGroupsList() {
                 </Typography>
             </Grid>
             <Grid item xs={10} sx={{ padding: "10px" }}>
-                <List sx={{ listStyleType: 'disc', marginLeft: 5 }}>
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>Many survey respondants said they spend the majority of their efforts filtering hotel amenities and browsing search results</Typography>
-                    </ListItem>       
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>Button for reseting search result filters</Typography>
-                    </ListItem>                
-                </List>
+                <Typography>Filtering would need to be easy to find, set, and clear. The amenities would need to be clearly labelled to avoid misinterpretation. They would need to include features of the hotel itself (i.e. pool and fitness center), features of the hotel room (i.e. in-room safe, microwave), and features of the area - including activites and points of interest</Typography>             
             </Grid>
         </Grid>
 
@@ -213,17 +124,7 @@ export default function AffinityGroupsList() {
                 </Typography>
             </Grid>
             <Grid item xs={10} sx={{ padding: "10px" }}>
-                <List sx={{ listStyleType: 'disc', marginLeft: 5 }}>
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>User said having the option to add things like roses from the site was nice to have if staying somewhere nice</Typography>
-                    </ListItem>          
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>User voices that he isn't fond of hotel add-on screen because it gives him the impression that they are "trying to get more money out of me"</Typography>
-                    </ListItem>        
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>When add-ons where blended into the flow too much, the user got confused that she had done something wrong</Typography>
-                    </ListItem>    
-                </List>
+                <Typography>Reactions to add-ons shed light on their divisiveness. Some users liked to have the option through the website to add on special amenities, but others saw it more as interuptive marketing. Another got confused when it seemed like it was mandatory. With all of this in mind, add-ons should be offered, but clearly optional and not interuptive.</Typography>
             </Grid>
         </Grid>
 
@@ -234,14 +135,7 @@ export default function AffinityGroupsList() {
                 </Typography>
             </Grid>
             <Grid item xs={10} sx={{ padding: "10px" }}>
-                <List sx={{ listStyleType: 'disc', marginLeft: 5 }}>
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>When viewing the search criteria screen with moving vacation destination imagery, user said "that's immediately put me in the holiday mood"</Typography>
-                    </ListItem>             
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>Obvious company branding and logo present</Typography>
-                    </ListItem>            
-                </List>
+                <Typography>Many users mentioned brand loyalty, so logo and branding should be present and pervasive. Imagery proved very important as well in enticing users and giving them a glimpse of quality and theme. Beautiful vacation photography and hotel imagery should be present and bold throughout the booking process, from the homepage through to the booking summary.</Typography>                 
             </Grid>
         </Grid>
 
@@ -252,41 +146,7 @@ export default function AffinityGroupsList() {
                 </Typography>
             </Grid>
             <Grid item xs={10} sx={{ padding: "10px" }}>
-                <List sx={{ listStyleType: 'disc', marginLeft: 5 }}>
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>Progress bar and current step in the process is present</Typography>
-                    </ListItem>            
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>CTA buttons are large and have good color contrast with background</Typography>
-                    </ListItem>   
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>Users expect to be asked for their destination, dates, and guest number early on in the flow</Typography>
-                    </ListItem> 
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>When user backtracked one screen, all of her search criteria and filters got reset and she had to set it all over again</Typography>
-                    </ListItem>     
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>On homepage, booking component is present above the fold</Typography>
-                    </ListItem>         
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>Destination search sticks at the top of the screen when scrolling homepage</Typography>
-                    </ListItem>   
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>When user gets confused by search results, he backtracks, scrolls around the homepage, and examines options under the hamburger menu</Typography>
-                    </ListItem>   
-                    <Typography>
-                        Member Rewards
-                    </Typography>
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>Multiple survey respondants said they choose sites where they belong to a rewards program</Typography>
-                    </ListItem> 
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>User felt that the member vs non-member rates weren't seperated from each other well-enough not to confuse them</Typography>
-                    </ListItem> 
-                    <ListItem sx={{ display: 'list-item' }}>
-                        <Typography>Information on what the honors/members program is present on the page</Typography>
-                    </ListItem> 
-                </List>
+                <Typography>For the most part, conventional order of steps for booking a hotel need to followed. Additionally, a progress bar indicating the steps that have completed, the current step, and steps remaining should be present throughout the process. Selections should be saved between steps so that backtracking doesn't require re-work. Stay details selected so far should be present on screen as much as possible so the user doesn't have to rely on memory. Call to action buttons should be large and look consistent across screens.</Typography>
             </Grid>
         </Grid>
       </Box>
