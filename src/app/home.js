@@ -61,7 +61,7 @@ const Home = () => {
     </Box>
     <div style={{ padding: 20 }}>
     <Grid container>
-      <Grid item xs={3}>
+      <Grid item xs={2}>
         <div className="column-b">
           <List component="nav" style={{ position: "fixed", width: 300 }}>
             <ListItem onClick={() => handleSectionClick('introduction_section')} className={activeSection === 'introduction_section' ? 'active' : ''}>
@@ -145,7 +145,7 @@ const Home = () => {
           </List>
         </div>
       </Grid>
-      <Grid item xs={8}>
+      <Grid item xs={10}>
         <Box sx={{ height: 260, width: "100%", marginBottom: -6, backgroundColor: blue[200] }}>Some eye-catching thing to say or graphic</Box>
         <div className="column-a">
           <section id="introduction_section" ref={(el) => sectionRefs.current['introduction_section'] = el} style={{ paddingTop: 86 }}>

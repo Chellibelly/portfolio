@@ -206,15 +206,204 @@ export default function Research() {
   
         <Typography variant='h3' className='heading3'>Nobody’s Perfect</Typography>
         <Typography variant='body1' className='paragraph'>
-          I discovered a few interesting things through this exercise. For one, there was certainly a conventional pattern. Each site more or less took me through the same steps to complete my booking. Anyone who has used these sites has likely shaped a mental model off of this pattern. I was eager to see if further research would demonstrate that.
+          I discovered a few interesting things through this exercise. For one, there was certainly a conventional pattern to the steps through the booking process. Each site more or less took me through the same steps to complete my booking. Anyone who has used these sites has likely shaped a mental model off of this pattern. I was eager to see if further research would demonstrate that.
         </Typography>
         <Typography variant='body1' className='paragraph'>
-          Besides the convention, I noticed in the set of steps through the booking process, I also noticed [List the common findings/assumptions to test].
-        </Typography>
-        <Typography variant='body1' className='paragraph' sx={{ color: "red" }}>
-          [INSERT ASSUMPTIONS GRAPHIC]
+          Besides the conventional process, there were plenty of interesting points related to my five defined categories. Included is a short summary of some of the things that stood out. It wasn't clear just yet if these were the actual guidelines I would follow or pain points I would avoid, but they were definitely more assumptions that I could test.
         </Typography>
 
+        <Grid container direction="row" justifyContent="space-around" sx={{ margin: 3 }}>
+          <Grid item xs={2.4} sx={{ backgroundColor: blue[100], padding: 2 }}>
+              <Typography className='heading6' sx={{ textAlign: "center", height: 50, fontWeight: "bold" }}>Alignment with User Goals</Typography>
+              <Typography variant='body2' className='paragraph-small'>
+                Too much promotional
+                content may obscure the
+                path or point of entry to
+                completing the goal
+              </Typography>
+              <Typography variant='body2' className='paragraph-small'>
+                Limited real-estate on
+                mobile sites can result in
+                designs that inadvertently
+                create visual relationships
+                between unrelated items
+              </Typography>
+
+              <Typography variant='body2' className='paragraph-small'>
+                Allowing users to sort by
+                distance, price, etc. may
+                help them focus on their
+                specific goal
+              </Typography>
+              <Typography variant='body2' className='paragraph-small'>
+                Interactable maps may
+                help users visualize and
+                locate hotels close to
+                their exact destination
+                preferences
+              </Typography>
+            
+              <Typography variant='body2' className='paragraph-small'>
+                Important information
+                or fields may be missed
+                if covered up with
+                pop-ups and tooltips
+              </Typography>
+
+          </Grid>
+          <Grid item xs={2.4} sx={{ backgroundColor: blue[200], padding: 2 }}>
+            <Typography className='heading6' sx={{ textAlign: "center", height: 50, fontWeight: "bold" }}>Navigation & Order</Typography>
+            <Typography variant='body2' className='paragraph-small'>
+                Including a consistent
+                header for navigation
+                and for showing the
+                user their current place
+                on the site is
+                important, especially
+                on mobile sites where
+                many functions are
+                hidden
+              </Typography>
+              <Typography variant='body2' className='paragraph-small'>
+                Navigation and
+                important info for the
+                user to have on hand
+                can be ever-present on
+                screen on mobile
+                sites
+              </Typography>
+              <Typography variant='body2' className='paragraph-small'>
+                Organizing, labelling, and
+                numbering confirmation
+                and payment form fields
+                may help guide the user
+                to providing all necessary
+                information easily
+              </Typography>
+              <Typography variant='body2' className='paragraph-small'>
+                Having good navigation
+                with obvious back
+                buttons may help users
+                get back on track when
+                they’ve made a mistake
+                or changed their minds
+              </Typography>
+          </Grid>
+          <Grid item xs={2.4} sx={{ backgroundColor: blue[100], padding: 2 }}>
+            <Typography className='heading6' sx={{ textAlign: "center", height: 50, fontWeight: "bold" }}>Expectations</Typography>
+            <Typography variant='body2' className='paragraph-small'>
+              A calendar date picker
+              is a common
+              convention for stay
+              duration selection and
+              can promote ease of
+              date selection or cause
+              frustration depending
+              on how easy it is to use
+            </Typography>
+            <Typography variant='body2' className='paragraph-small'>
+              It is common to see
+              multiple ways to filter
+              results, including by
+              amenities, type, brand,
+              and price range when
+              searching for hotel
+            </Typography>
+            <Typography variant='body2' className='paragraph-small'>
+              Including summary of
+              stay (hotel name and
+              address/phone, dates of
+              stay, total cost) during
+              the confirmation section
+              may be both expected
+              and helpful for users
+            </Typography>
+            <Typography variant='body2' className='paragraph-small'>
+              Prompting user to sign
+              in, create and account,
+              or continue as a guest
+              appears to be a common
+              convention; sign-in 
+              is typically
+              offered but not required
+            </Typography>
+          </Grid>
+          <Grid item xs={2.4} sx={{ backgroundColor: blue[200], padding: 2 }}>
+            <Typography className='heading6' sx={{ textAlign: "center", height: 50, fontWeight: "bold" }}>Forthcomingness</Typography>
+            <Typography variant='body2' className='paragraph-small'>
+              Displaying pricing
+              breakdown informs the
+              user why the total price
+              is what it is
+            </Typography>
+            <Typography variant='body2' className='paragraph-small'>
+              Be careful with “points”
+              and other “hotel
+              currency”; likely not all
+              users, especially first
+              time or casual users of
+              the site, will know what
+              these mean
+            </Typography>
+            <Typography variant='body2' className='paragraph-small'>
+              Using icons is useful and
+              conventional for mobile, but it is important
+              to ensure icons have
+              obvious meanings or are
+              explained initially
+            </Typography>
+            <Typography variant='body2' className='paragraph-small'>
+              Including good validation
+              requirements and clear
+              errors will give
+              the user a clear
+              understanding of what’s
+              missing or incorrect
+            </Typography>
+          </Grid>
+          <Grid item xs={2.4} sx={{ backgroundColor: blue[100], padding: 2 }}>
+            <Typography className='heading6' sx={{ textAlign: "center", height: 50, fontWeight: "bold" }}>Saving Time/Effort</Typography>
+            <Typography variant='body2' className='paragraph-small'>
+              As a user types in their
+              trip destination, it may
+              be helpful to
+              automatically supply
+              result suggestions
+              based on the search
+              criteria
+            </Typography>
+            <Typography variant='body2' className='paragraph-small'>
+              Having common search
+              filters present and more
+              filter options a click away
+              can save the user clicks
+            </Typography>
+            <Typography variant='body2' className='paragraph-small'>
+              Having an easy way to
+              reset filters saves the user
+              from having to change
+              them manually
+            </Typography>
+            <Typography variant='body2' className='paragraph-small'>
+              Forcing users to
+              repeatedly decline offers
+              could cause frustration
+            </Typography>
+            <Typography variant='body2' className='paragraph-small'>
+              Forcing users to select
+              card type is an
+              unconventional extra
+              step
+            </Typography>
+            <Typography variant='body2' className='paragraph-small'>
+              Clearing out
+              input when they toggle
+              options may force them
+              to have to start over
+              unnecessarily
+            </Typography>
+          </Grid>
+        </Grid>
 
         <Typography variant='h3' className='heading3'>Testing the Assumptions (something about getting real or observation)</Typography>
         <Typography variant='body1' className='paragraph'>Now that I was starting to get an idea of what users wanted and what the booking process tends to look like on existing websites, it was time to go deeper and bridge the gap between the people and the software. I wanted to get organic. What could I learn by just watching some people use existing booking software? Would their real-time behaviors align with the assumptions I had formed so far? Would users feel confident in their actions? What points in the process would cause frustration? What else could I learn about their mental models? </Typography>

@@ -1,16 +1,5 @@
-import { Typography, Box, Grid, List, ListItem } from '@mui/material';
-import AffinityGroupList from './AffinityGroupsList';
-import Image from 'next/image';
-import AffinityDiagramGraphic from '../../public/Affinity_Diagram.jpg';
-import WhiteboardPostItsGraphic from '../../public/Whiteboard_PostIts.jpg';
-import CustomerJourneyMapGraphic1 from '../../public/Customer_Journey_Map_1.png';
-import CustomerJourneyMapGraphic2 from '../../public/Customer_Journey_Map_2.png';
-import ProcessAnalysisGraphic from '../../public/Process_Analysis.png';
-import CategoryHotelGraphic from '../../public/Category_Hotel.png';
-import CategoryAccountGraphic from '../../public/Category_Account.png';
-import CategoryPricingGraphic from '../../public/Category_Pricing.png';
-import CategoryLocationGraphic from '../../public/Category_Location.png';
-
+import { Typography, Box, Grid } from '@mui/material';
+import { grey } from '@mui/material/colors';
 
 export default function AffinityGroupsList() {
 
@@ -23,7 +12,7 @@ export default function AffinityGroupsList() {
   };
 
   return (
-      <Box sx={{ width: "100%" }}>
+      <Box sx={{ width: "100%", backgroundColor: grey[200] }}>
         <Grid container direction="row" sx={{ width: "100%" }}>
             <Grid item xs={2}>
                 <Typography sx={{ padding: "10px", height: "100%" }}>

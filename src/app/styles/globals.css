@@ -45,8 +45,32 @@ body {
   margin-bottom: 22px;
 }
 
+.heading4 {
+  font-size: 24px;
+  font-family: "Montserrat";
+  margin-bottom: 22px;
+}
+
+.heading5 {
+  font-size: 20px;
+  font-family: "Montserrat";
+  margin-bottom: 22px;
+}
+
+.heading6 {
+  font-size: 18px;
+  font-family: "Montserrat";
+  margin-bottom: 22px;
+}
+
 .paragraph {
   font-size: 20px;
+  font-family: "Montserrat";
+  margin-bottom: 18px;
+}
+
+.paragraph-small {
+  font-size: 12px;
   font-family: "Montserrat";
   margin-bottom: 18px;
 }

@@ -11,6 +11,7 @@ import CategoryAccountGraphic from '../../public/Category_Account.png';
 import CategoryPricingGraphic from '../../public/Category_Pricing.png';
 import CategoryLocationGraphic from '../../public/Category_Location.png';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import { blue } from '@mui/material/colors';
 
 
 export default function Analysis() {
