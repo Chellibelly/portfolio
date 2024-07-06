@@ -5,6 +5,15 @@ import QuantitativeAnswersGraphic from '../../public/Quantitative_Answers.png';
 
 import SurveyQuotesPainpoints from "../../public/Survey_quotes_painpoints.png";
 import SurveyQuotes from "../../public/Survey_Quotes.png";
+
+import BenchmarkHotelBestWestern from "../../public/Hotel_Best_Western.png";
+import BenchmarkHotelHilton from "../../public/Hotel_Hilton.png";
+import BenchmarkHotelMarriot from "../../public/Hotel_Marriot.png";
+
+import BestWesternNotes from "../../public/Benchmark_Notes_Example_Best_Western.png";
+import HiltonNotes from "../../public/Benchmark_Notes_Example_Hilton.png";
+import MarriotNotes from "../../public/Benchmark_Notes_Example_Marriot.png";
+
 import UsabilityQuotesPainpoints from "../../public/Usability_Quotes_painpoints.png";
 import UsabilityQuotes from "../../public/Usability_quotes.png";
 import HeuristicsGraphic from '../../public/Heuristics.png';
@@ -119,12 +128,42 @@ export default function Research() {
         </Typography>
 
         <Typography variant='body1' className='paragraph'>
-          Knowing, I wanted to pick a few established companies, I first needed to define “established” for my use case. I decided a company that has existed for over 50 years and has several thousands of hotel locations counted as established. I selected Hilton, Marriot, and Best Western. [Insert reasons here]. I also picked a wild card, Disney [insert reason here].
+          Knowing, I wanted to pick a few established companies, I first needed to define “established” for my use case. I decided a company that has existed for over 50 years and has several thousands of hotel locations counted as established. 
         </Typography>
 
-        <Typography variant='body1' className='paragraph' sx={{ color: "red" }}>
-          [PUT THE CHOSEN COMPANIES HERE]
+        <Typography variant='body1' className='paragraph'>
+          I selected Hilton, Marriot, and Best Western. All three companies met my "established" definition. Hilton and Marriot are arguably the biggest hospitality companies in the United States and were mentioned quite a few times in the user surveys. I chose Best Western because it qualified and is also a large company, but is a little different from the others for it's franchisee-operated locations and reputation as a more budget-friendly option from the other two. It gave me a little variety in research subject without straying too far from my target group.
         </Typography>
+
+        <Grid container direction="row" justifyContent="space-around">
+          <Grid item xs={4}>
+            <Image
+              className='graphic'
+              src={BenchmarkHotelHilton}
+              width={900}
+              height={500}
+              alt="Picture of the author"
+            />
+          </Grid>
+          <Grid item xs={4}>
+            <Image
+              className='graphic'
+              src={BenchmarkHotelMarriot}
+              width={900}
+              height={500}
+              alt="Picture of the author"
+            />
+          </Grid>
+          <Grid item xs={4}>
+            <Image
+              className='graphic'
+              src={BenchmarkHotelBestWestern}
+              width={900}
+              height={500}
+              alt="Picture of the author"
+            />
+          </Grid>
+        </Grid>
 
         <Typography variant='h3' className='heading3'>A Whole ‘Lotta Notes (meh, rename this)</Typography>
 
@@ -134,9 +173,36 @@ export default function Research() {
         <Typography variant='body1' className='paragraph'>
           In addition to the heuristic evaluations, I also took notes on the steps in the process that I had to take on each site to complete a booking.
         </Typography>
-        <Typography variant='body1' className='paragraph' sx={{ color: "red" }}>
-          [INSERT RAW NOTES]
-        </Typography>
+
+        <Grid container direction="row" justifyContent="space-around">
+          <Grid item xs={5}>
+            <Image
+              className='graphic'
+              src={HiltonNotes}
+              width={900}
+              height={500}
+              alt="Picture of the author"
+            />
+          </Grid>
+          <Grid item xs={5}>
+            <Image
+              className='graphic'
+              src={MarriotNotes}
+              width={900}
+              height={500}
+              alt="Picture of the author"
+            />
+          </Grid>
+          <Grid item xs={5}>
+            <Image
+              className='graphic'
+              src={BestWesternNotes}
+              width={900}
+              height={500}
+              alt="Picture of the author"
+            />
+          </Grid>
+        </Grid>
   
         <Typography variant='h3' className='heading3'>Nobody’s Perfect</Typography>
         <Typography variant='body1' className='paragraph'>
