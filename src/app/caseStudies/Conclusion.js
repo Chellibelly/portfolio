@@ -1,7 +1,7 @@
 import { Typography, Box } from '@mui/material';
 import Image from 'next/image';
-import ProcessSolutionGraphic from '../../public/Process_Solution.png';
-import PrototypeGraphic from '../../public/Prototype.png';
+import ProcessSolutionGraphic from '../../../public/Process_Solution.png';
+import PrototypeGraphic from '../../../public/Prototype.png';
 
 export default function Conclusion() {
   return (

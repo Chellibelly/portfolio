@@ -1,8 +1,8 @@
 import { Typography, Box } from '@mui/material';
 import Image from 'next/image';
-import FlowDiagramGraphic from '../../public/Flow_Diagram.png';
-import SketchesGraphic from '../../public/Sketches.png';
-import ProcessDesignGraphic from '../../public/Process_Design.png';
+import FlowDiagramGraphic from '../../../public/Flow_Diagram.png';
+import SketchesGraphic from '../../../public/Sketches.png';
+import ProcessDesignGraphic from '../../../public/Process_Design.png';
 
 export default function Design() {
   return (

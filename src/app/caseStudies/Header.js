@@ -6,7 +6,7 @@ import { blue } from '@mui/material/colors';
 const Header = () => {
   return (
     <div>
-        <Box style={{ width: "100%", backgroundColor: blue[800], position: "sticky", top: 0, zIndex: 99 }}>
+        <Box style={{ width: "100%", backgroundColor: blue[800], position: "fixed", top: 0, zIndex: 99 }}>
         <Grid container direction="row" justifyContent="space-between" style={{ width:"30%", padding: 20 }}>
             <Grid item>
             <Link href="/about">

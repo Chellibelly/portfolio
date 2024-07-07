@@ -1,26 +1,27 @@
 import { Typography, Box, Grid } from '@mui/material';
 import Image from 'next/image';
-import SurveyQuestionsGraphic from '../../public/Survey_Questions.png';
-import QuantitativeAnswersGraphic from '../../public/Quantitative_Answers.png';
+import SurveyQuestionsGraphic from '../../../public/Survey_Questions.png';
+import QuantitativeAnswersGraphic from '../../../public/Quantitative_Answers.png';
 
-import SurveyQuotesPainpoints from "../../public/Survey_quotes_painpoints.png";
-import SurveyQuotes from "../../public/Survey_Quotes.png";
+import SurveyQuotesPainpoints from "../../../public/Survey_quotes_painpoints.png";
+import SurveyQuotes from "../../../public/Survey_Quotes.png";
 
-import BenchmarkHotelBestWestern from "../../public/Hotel_Best_Western.png";
-import BenchmarkHotelHilton from "../../public/Hotel_Hilton.png";
-import BenchmarkHotelMarriot from "../../public/Hotel_Marriot.png";
+import BenchmarkHotelBestWestern from "../../../public/Hotel_Best_Western.png";
+import BenchmarkHotelHilton from "../../../public/Hotel_Hilton.png";
+import BenchmarkHotelMarriot from "../../../public/Hotel_Marriot.png";
 
-import BestWesternNotes from "../../public/Benchmark_Notes_Example_Best_Western.png";
-import HiltonNotes from "../../public/Benchmark_Notes_Example_Hilton.png";
-import MarriotNotes from "../../public/Benchmark_Notes_Example_Marriot.png";
+import BestWesternNotes from "../../../public/Benchmark_Notes_Example_Best_Western.png";
+import HiltonNotes from "../../../public/Benchmark_Notes_Example_Hilton.png";
+import MarriotNotes from "../../../public/Benchmark_Notes_Example_Marriot.png";
 
-import UsabilityQuotesPainpoints from "../../public/Usability_Quotes_painpoints.png";
-import UsabilityQuotes from "../../public/Usability_quotes.png";
-import HeuristicsGraphic from '../../public/Heuristics.png';
-import PersonaTomas from '../../public/Persona_Tomas.png';
-import PersonaRachel from '../../public/Persona_Rachel.png';
-import PersonaLinda from '../../public/Persona_Linda.png';
-import ProcessResearchGraphic from '../../public/Process_Research.png';
+import UsabilityQuotesPainpoints from "../../../public/Usability_Quotes_painpoints.png";
+import UsabilityQuotes from "../../../public/Usability_quotes.png";
+import HeuristicsGraphic from '../../../public/Heuristics.png';
+import PersonaTomas from '../../../public/Persona_Tomas.png';
+import PersonaRachel from '../../../public/Persona_Rachel.png';
+import PersonaLinda from '../../../public/Persona_Linda.png';
+import PersonaMike from '../../../public/Persona_Mike.png';
+import ProcessResearchGraphic from '../../../public/Process_Research.png';
 
 import { blue } from '@mui/material/colors';
 
@@ -442,7 +443,7 @@ export default function Research() {
           <Grid item xs={5.5}>
               <Image
               className='graphic'
-              src={PersonaLinda}
+              src={PersonaMike}
               width="100%"
               alt="Picture of the author"
             />

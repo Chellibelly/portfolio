@@ -1,12 +1,12 @@
 "use client"; 
 import React, { useState, useEffect, useRef } from 'react';
-import Header from './Header';
+import Header from './caseStudies/Header';
 import { Grid, List, ListItem, ListItemText, Box, Typography, Link } from '@mui/material';
-import Introduction from './Introduction';
-import Research from './Research';
-import Analysis from './Analysis';
-import Design from './Design';
-import Conclusion from './Conclusion';
+import Introduction from './caseStudies/Introduction';
+import Research from './caseStudies/Research';
+import Analysis from './caseStudies/Analysis';
+import Design from './caseStudies/Design';
+import Conclusion from './caseStudies/Conclusion';
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 import DrawIcon from '@mui/icons-material/Draw';
 import LightbulbIcon from '@mui/icons-material/Lightbulb';
@@ -53,7 +53,7 @@ const Home = () => {
   return (
     <div>
     <Header/>
-    <div style={{ padding: 20 }}>
+    <div style={{ padding: 20, marginTop: 75 }}>
     <Grid container>
       <Grid item xs={3}>
         <div className="column-b">
@@ -66,7 +66,7 @@ const Home = () => {
                   </Grid>
                   <Grid item xs={8} sx={{ marginTop: "10px" }}>
                     <Typography sx={{ fontSize: "24px", fontFamily: "Montserrat" }}>
-                    Problem
+                      Overview
                     </Typography>
                   </Grid>
                 </Grid></ListItemText>
