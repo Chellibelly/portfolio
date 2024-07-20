@@ -29,24 +29,19 @@ export default function AffinityGroupsList() {
                     </Typography>
                 </Box>
                 <Typography>
-                    <Typography>
-                        Amenities
-                    </Typography>
-                    <Box sx={{ listStyleType: 'disc', marginLeft: 5 }}>
-                        <Typography>Amenities should be shown clearly at each step in the process, including when selecting a hotel, when selecting a room, when selecting a rate, and in summaries. Amenities should include icons, but they should also be labelled in text for clarity. For example a "parking" icon isn't enough. What specifically are we trying to say about parking? Amenity filtering should be easily discoverable on hotel search page.</Typography>
-                    </Box>
+                    Amenities
                 </Typography>
+                <Box sx={{ listStyleType: 'disc', marginLeft: 5 }}>
+                    <Typography>Amenities should be shown clearly at each step in the process, including when selecting a hotel, when selecting a room, when selecting a rate, and in summaries. Amenities should include icons, but they should also be labelled in text for clarity. For example a "parking" icon isn't enough. What specifically are we trying to say about parking? Amenity filtering should be easily discoverable on hotel search page.</Typography>
+                </Box>
                 <Typography>
-                    <Typography>
-                        Reviews
-                    </Typography>
-                    <Box sx={{ listStyleType: 'disc', marginLeft: 5 }}>
-                        <Typography>Importance of reviews came up time and time throughout research. Many users consider one of the most important factor when trusting a hotel booking website or specific hotel quality. A simple 5-star reputable rating system such as TripAdvisor ratings should be present and prominent on each hotel result.</Typography>
-                    </Box>
+                    Reviews
                 </Typography>
+                <Box sx={{ listStyleType: 'disc', marginLeft: 5 }}>
+                    <Typography>Importance of reviews came up time and time throughout research. Many users consider one of the most important factor when trusting a hotel booking website or specific hotel quality. A simple 5-star reputable rating system such as TripAdvisor ratings should be present and prominent on each hotel result.</Typography>
+                </Box>
             </Grid>
         </Grid>
-
         <Grid container direction="row" sx={{ width: "100%" }}>
             <Grid item xs={2}>
                 <Typography sx={{ padding: "10px", height: "100%" }}>
