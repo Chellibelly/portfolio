@@ -55,8 +55,7 @@ const HomeMobile = () => {
       <Grid container direction="row" justifyContent="space-between" style={{ width:"50%", padding: 20 }}>
         <Grid item><Typography className="nav-link">About Me</Typography></Grid>
         <Grid item><Typography className="nav-link">My Case Study</Typography></Grid>
-        <Grid item><Typography className="nav-link">My Resume</Typography></Grid>
-        <Grid item><Typography className="nav-link">My Blog</Typography></Grid>
+        <Grid item><Typography className="nav-link">Resume</Typography></Grid>
       </Grid>
     </Box>
     <div style={{ padding: 20 }}>

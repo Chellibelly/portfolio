@@ -20,7 +20,7 @@ const Header = () => {
             </Grid>
             <Grid item>
             <Link href="/resume">
-                <Typography className="nav-link">My Resume</Typography>
+                <Typography className="nav-link">Resume</Typography>
             </Link>
             </Grid>
         </Grid>
