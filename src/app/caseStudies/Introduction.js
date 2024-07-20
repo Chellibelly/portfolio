@@ -39,7 +39,7 @@ export default function Introduction() {
           className='graphic'
           width={900}
           src={ProcessProblemGraphic}
-          alt="Picture of the author"
+          alt="An image of the UX process with the Problem step highlighted"
         />
         
         <Typography variant='h3' className='heading3'>What Would Success Look Like?</Typography>

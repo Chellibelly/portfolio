@@ -37,7 +37,7 @@ export default function Research() {
           src={ProcessResearchGraphic}
           width={900}
           height={500}
-          alt="Picture of the author"
+          alt="An image of the UX process with the Research step highlighted"
         />
         
         <Typography variant='h3' className='heading3'>I Am Not My User</Typography>
@@ -51,7 +51,7 @@ export default function Research() {
           src={SurveyQuestionsGraphic}
           width="100%"
           height={500}
-          alt="Picture of the author"
+          alt="An image of survey questions and reasons behind asking them"
         />
         
         <Typography variant='body1' className='paragraph'>After crafting the questions and getting the survey written in Google Forms, it was time to distribute. Since this was a school project, I had zero budget to work with. That being said, I needed volunteers. I reached out to friends, coworkers, colleagues, and family, looking for anyone I knew who had experienced booking hotels through websites before.</Typography>
@@ -67,7 +67,7 @@ export default function Research() {
           src={QuantitativeAnswersGraphic}
           width="100%"
           height={500}
-          alt="Picture of the author"
+          alt="An image of pie charts representing quantitative survey results"
         />
 
         <Typography variant='body1' className='paragraph'>When asked what task they were trying to complete, most respondents replied that they were trying to either book a stay or research and compare prices. Several mentioned selecting their chosen website because of good prices or being able to easily compare prices. Others mentioned using the site because they belong to a rewards or preferred program with the brand. Several also highlighted ease and quickness of use and reliability being the reason they use their favorite hotel booking websites.</Typography>
@@ -77,7 +77,7 @@ export default function Research() {
           src={SurveyQuotes}
           width="100%"
           height={500}
-          alt="Picture of the author"
+          alt="A collection of user opinion survey quotes"
         />
 
         <Typography variant='h3' className='heading3'>The Contradiction</Typography>
@@ -101,7 +101,7 @@ export default function Research() {
           src={SurveyQuotesPainpoints}
           width="100%"
           height={500}
-          alt="Picture of the author"
+          alt="A collection of user pain point survey quotes"
         />
 
         <Typography variant='h3' className='heading3'>Checking out the Competition and the Hunt for Conventions</Typography>
@@ -115,7 +115,7 @@ export default function Research() {
           src={HeuristicsGraphic}
           width="100%"
           height={900}
-          alt="Picture of the author"
+          alt="A graphic depicting mapping UX heuristics to categories"
         />
 
         <Typography variant='h3' className='heading3'>The Search for The Lucky Contestants</Typography>
@@ -143,7 +143,7 @@ export default function Research() {
               src={BenchmarkHotelHilton}
               width={900}
               height={500}
-              alt="Picture of the author"
+              alt="Hilton and Facts"
             />
           </Grid>
           <Grid item xs={4}>
@@ -152,7 +152,7 @@ export default function Research() {
               src={BenchmarkHotelMarriot}
               width={900}
               height={500}
-              alt="Picture of the author"
+              alt="Marriot Logo and Facts"
             />
           </Grid>
           <Grid item xs={4}>
@@ -161,7 +161,7 @@ export default function Research() {
               src={BenchmarkHotelBestWestern}
               width={900}
               height={500}
-              alt="Picture of the author"
+              alt="Best Western Logo and Facts"
             />
           </Grid>
         </Grid>
@@ -182,7 +182,7 @@ export default function Research() {
               src={HiltonNotes}
               width={900}
               height={500}
-              alt="Picture of the author"
+              alt="An example of notes taken on the Hilton website"
             />
           </Grid>
           <Grid item xs={5}>
@@ -191,7 +191,7 @@ export default function Research() {
               src={MarriotNotes}
               width={900}
               height={500}
-              alt="Picture of the author"
+              alt="An example of notes taken on the Marriot website"
             />
           </Grid>
           <Grid item xs={5}>
@@ -200,7 +200,7 @@ export default function Research() {
               src={BestWesternNotes}
               width={900}
               height={500}
-              alt="Picture of the author"
+              alt="An example of notes taken on the Best Western website"
             />
           </Grid>
         </Grid>
@@ -429,7 +429,7 @@ export default function Research() {
               className='graphic'
               src={PersonaTomas}
               width="100%"
-              alt="Picture of the author"
+              alt="A stock photograph of a woman representing Tomas"
             />
           </Grid>
           <Grid item xs={5.5}>
@@ -437,7 +437,7 @@ export default function Research() {
               className='graphic'
               src={PersonaRachel}
               width="100%"
-              alt="Picture of the author"
+              alt="A stock photograph of a woman representing Rachel"
             />
           </Grid>
           <Grid item xs={5.5}>
@@ -445,7 +445,7 @@ export default function Research() {
               className='graphic'
               src={PersonaMike}
               width="100%"
-              alt="Picture of the author"
+              alt="A stock photograph of a woman representing Mike"
             />
           </Grid>
           <Grid item xs={5.5}>
@@ -453,7 +453,7 @@ export default function Research() {
               className='graphic'
               src={PersonaLinda}
               width="100%"
-              alt="Picture of the author"
+              alt="A stock photograph of a woman representing Linda"
             />
           </Grid>
         </Grid>
@@ -482,7 +482,7 @@ After selecting a hotel, they would do a quick read-through of more detailed inf
           src={UsabilityQuotes}
           width="100%"
           height={500}
-          alt="Picture of the author"
+          alt="An image of quotes expressing user opinions"
         />
         
         <Typography variant='h3' className='heading3'>Pain Points</Typography>
@@ -493,7 +493,7 @@ After selecting a hotel, they would do a quick read-through of more detailed inf
           src={UsabilityQuotesPainpoints}
           width="100%"
           height={500}
-          alt="Picture of the author"
+          alt="An image of quotes expressing user pain points"
         />
 
         <Typography variant='h3' className='heading3'>Self-Reflection on an Exercise in Empathy</Typography>

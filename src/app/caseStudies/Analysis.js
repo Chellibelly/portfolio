@@ -52,7 +52,7 @@ export default function Analysis() {
           className='graphic'
           src={ProcessAnalysisGraphic}
           width={900}
-          alt="Picture of the author"
+          alt="An image of the UX process with the Analysis step highlighted"
         />
         
         <Typography variant='h3' className='heading3'>Was There Really a Problem to Solve?</Typography>
@@ -67,7 +67,7 @@ export default function Analysis() {
           className='graphic'
           src={WhiteboardPostItsGraphic}
           width="100%"
-          alt="Picture of the author"
+          alt="An image of a whiteboard with a collection of unsorted sticky notes"
         />
         
         <Typography variant='body1' className='paragraph'>My whiteboard was full of sticky note chaos, and I got to work grouping together any notes which seemed related. I grouped, and regrouped, and tweaked until each sticky note had a home that made sense. I then gave each group a topic name. I noticed some groups could be further refined into subgroups, and I broke those down and gave them their own labels. I ended up with this.</Typography>
@@ -76,7 +76,7 @@ export default function Analysis() {
           className='graphic'
           src={AffinityDiagramGraphic}
           width="100%"
-          alt="Picture of the author"
+          alt="An image of a whiteboard with a collection of categorized sticky notes"
         />
 
         <Typography variant='h3' className='heading3'>Takeaways</Typography>
@@ -177,14 +177,14 @@ export default function Analysis() {
           className='graphic'
           src={CustomerJourneyMapGraphic1}
           width="100%"
-          alt="Picture of the author"
+          alt="An image of a customer journey map (1 of 2)"
         />
         
         <Image
           className='graphic'
           src={CustomerJourneyMapGraphic2}
           width="100%"
-          alt="Picture of the author"
+          alt="An image of a customer journey map (2 of 2)"
         />
 
         <Typography variant='h3' className='heading3'>The Eureka Moment</Typography>
@@ -194,28 +194,28 @@ export default function Analysis() {
           <Grid item xs={3} sx={{ padding: "10px" }}>
             <Image
               src={CategoryHotelGraphic}
-              alt="Picture of the author"
+              alt="A graphic depicting a hotel information category"
             />
             <Typography sx={{...categoryLabel, color: "#4C2A61"}}>Hotel Quality & Amenities</Typography>
           </Grid>
           <Grid item xs={3} sx={{ padding: "10px" }}>
             <Image
               src={CategoryLocationGraphic}
-              alt="Picture of the author"
+              alt="A graphic depicting a hotel location category"
             />
             <Typography sx={{...categoryLabel, color: "#2A4361"}}>Hotel Location & Relation to Places of Interest</Typography>
           </Grid>
           <Grid item xs={3} sx={{ padding: "10px" }}>
             <Image
               src={CategoryPricingGraphic}
-              alt="Picture of the author"
+              alt="A graphic depicting a hotel pricing category"
             />
             <Typography sx={{...categoryLabel, color: "#225515"}}>Pricing & Rate Comparisons</Typography>
           </Grid>
           <Grid item xs={3} sx={{ padding: "10px" }}>
             <Image
               src={CategoryAccountGraphic}
-              alt="Picture of the author"
+              alt="A graphic depicting a hotel accounts category"
             />
             <Typography sx={{...categoryLabel, color: "#B88523"}}>Account &  Membership Programs</Typography>
           </Grid>

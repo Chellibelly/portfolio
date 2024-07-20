@@ -14,7 +14,7 @@ export default function Design() {
           className='graphic'
           src={ProcessDesignGraphic}
           width={900}
-          alt="Picture of the author"
+          alt="An image of the UX process with the Design step highlighted"
         />
 
         <Typography variant='body1' className='paragraph'>My analysis was complete and it was time to move on to design. I needed to translate my customer journey map into the actual screens that would compose the website. Each screen needed to serve a purpose, and I needed to define what interactions would take place on those screens to serve that purpose. I wanted to really focus on the goals on just the actions, intentions, and results expected from each screen without clouding anything with content positioning or styling or anything else. </Typography>
@@ -24,7 +24,7 @@ export default function Design() {
           className='graphic'
           src={FlowDiagramGraphic}
           width="100%"
-          alt="Picture of the author"
+          alt="An image of several screens with basic actions described in bullets"
         />
 
         <Typography variant='h3' className='heading3'>Sketches</Typography>
@@ -35,11 +35,11 @@ export default function Design() {
           className='graphic'
           src={SketchesGraphic}
           width="100%"
-          alt="Picture of the author"
+          alt="An image of high-fidelity design sketches arranged in a flowchart"
         />
         
         <Typography variant='h3' className='heading3'>Takeaways/Lessons Learned</Typography>
-        <Typography variant='body1' className='paragraph'>One lesion I learned through this exercise was that having artistic skills doesn’t necessarily make you a good designer. Aesthetics were not important here, and having the interaction designs I did previous to base the sketches off of helped me focus just on the functions or the screens, not the aesthetics. When I was done, I ended up with high enough fidelity designs to start on my prototype.</Typography>
+        <Typography variant='body1' className='paragraph'>One lesson I learned through this exercise was that having artistic skills doesn’t necessarily make you a good designer. Aesthetics were not important here, and having the interaction designs I did previous to base the sketches off of helped me focus just on the functions or the screens, not the aesthetics. When I was done, I ended up with high enough fidelity designs to start on my prototype.</Typography>
       </Box>
   );
 }
