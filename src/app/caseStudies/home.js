@@ -145,7 +145,7 @@ const Home = () => {
         </div>
       </Grid>
       <Grid item xs={10}>
-        <Box sx={{ height: 260, width: "100%", marginBottom: -6, backgroundColor: blue[200] }}>Some eye-catching thing to say or graphic</Box>
+        <Box sx={{ height: 260, width: "100%", marginBottom: -6, backgroundColor: blue[200] }}>Someto say or graphic</Box>
         <div className="column-a">
           <section id="introduction_section" ref={(el) => sectionRefs.current['introduction_section'] = el} style={{ paddingTop: 86 }}>
             <Introduction/>

@@ -6,10 +6,17 @@ import WhiteboardPostItsGraphic from '../../../public/Whiteboard_PostIts.jpg';
 import CustomerJourneyMapGraphic1 from '../../../public/Customer_Journey_Map_1.png';
 import CustomerJourneyMapGraphic2 from '../../../public/Customer_Journey_Map_2.png';
 import ProcessAnalysisGraphic from '../../../public/Process_Analysis.png';
+
 import CategoryHotelGraphic from '../../../public/Category_Hotel.png';
 import CategoryAccountGraphic from '../../../public/Category_Account.png';
 import CategoryPricingGraphic from '../../../public/Category_Pricing.png';
 import CategoryLocationGraphic from '../../../public/Category_Location.png';
+
+import CategoryHotelOpportunityGraphic from '../../../public/Category_Hotel_Opportunity.png';
+import CategoryAccountOpportunityGraphic from '../../../public/Category_Account_Opportunity.png';
+import CategoryPricingOpportunityGraphic from '../../../public/Category_Pricing_Opportunity.png';
+import CategoryLocationOpportunityGraphic from '../../../public/Category_Location_Opportunity.png';
+
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import { blue } from '@mui/material/colors';
 
@@ -190,36 +197,140 @@ export default function Analysis() {
         <Typography variant='h3' className='heading3'>The Eureka Moment</Typography>
         <Typography variant='body1' className='paragraph'>The glaring bottom line made evident from the affinity diagram and the customer journey map was that the prevailing problem seemed to be a complete lack of – or at least confusing - information, often assuming the user know something which they may not. This was something that was happening across every site I learned about, and highlighted by every user interviewed and surveyed. </Typography>
         <Typography variant='body1' className='paragraph'>This is the point where my goal became clearer than it had been. There may not some huge obvious problem we needed to rectify, but instead there was an opportunity to do better. A desirable hotel booking site was one that would follow a process set by others in the business, but would do so while being completely transparent. This would be something that would set it apart from the others, make it stand out, and make it shine. Areas of transparency I would need to focus on would predominantly fall into the following categories.</Typography>
+        
+        <Grid container direction="row" justifyContent="center">
+          <Grid item>
+            <Typography variant='h1'>The Other Guys</Typography>
+          </Grid>
+        </Grid>
+
+
         <Grid container direction="row">
           <Grid item xs={3} sx={{ padding: "10px" }}>
+            <Box sx={{ height: 100 }}>
+              <Typography sx={{...categoryLabel, color: "#4A4A4A"}}>Hotel Quality & Amenities</Typography>
+            </Box>
+            <Image
+              src={CategoryHotelOpportunityGraphic}
+              alt="A graphic depicting a hotel information category"
+            />
+            <Box>
+              <Typography>
+                Unknown hotel quality, limited hotel description, ambiguous amenity icons and labels, limited amenity descriptions
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid item xs={3} sx={{ padding: "10px" }}>
+            <Box sx={{ height: 100 }}>
+              <Typography sx={{...categoryLabel, color: "#4A4A4A"}}>Hotel Location & Relation to Places of Interest</Typography>
+            </Box>
+            <Image
+              src={CategoryLocationOpportunityGraphic}
+              alt="A graphic depicting a hotel location category"
+            />
+            <Box>
+              <Typography>
+                Unexpected search results, unclear relation to the area, airports, or places of interest
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid item xs={3} sx={{ padding: "10px" }}>
+            <Box sx={{ height: 100 }}>
+              <Typography sx={{...categoryLabel, color: "#4A4A4A"}}>Pricing & Rate Comparisons</Typography>
+            </Box>
+            <Image
+              src={CategoryPricingOpportunityGraphic}
+              alt="A graphic depicting a hotel pricing category"
+            />
+            <Box>
+              <Typography>
+                Unclear inclusions and limited descriptions of special rates, ambiguity between member and non-member rates, hidden fees, lack of pricing breakdowns
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid item xs={3} sx={{ padding: "10px" }}>
+            <Box sx={{ height: 100 }}>
+              <Typography sx={{...categoryLabel, color: "#4A4A4A"}}>Account &  Membership Programs</Typography>
+            </Box>
+            <Image
+              src={CategoryAccountOpportunityGraphic}
+              alt="A graphic depicting a hotel accounts category"
+            />
+            <Box>
+              <Typography>
+                Unintuitive membership opt-outs, unexplained perks or membership inclusions, not enough delineation between member and non-member options
+              </Typography>
+            </Box>
+          </Grid>
+        </Grid>
+
+        <Grid container direction="row" justifyContent="center">
+          <Grid item>
+            <Typography variant='h1'>Menagerie Hotels</Typography>
+          </Grid>
+        </Grid>
+
+
+        <Grid container direction="row">
+          <Grid item xs={3} sx={{ padding: "10px" }}>
+            <Box sx={{ height: 100 }}>
+              <Typography sx={{...categoryLabel, color: "#4C2A61"}}>Hotel Quality & Amenities</Typography>
+            </Box>
             <Image
               src={CategoryHotelGraphic}
               alt="A graphic depicting a hotel information category"
             />
-            <Typography sx={{...categoryLabel, color: "#4C2A61"}}>Hotel Quality & Amenities</Typography>
+            <Box>
+              <Typography>
+                Hotel quality rating prominently displayed, detailed hotel description, Clear amenity icons and labels, detailed amenity descriptions
+              </Typography>
+            </Box>
           </Grid>
           <Grid item xs={3} sx={{ padding: "10px" }}>
+            <Box sx={{ height: 100 }}>
+              <Typography sx={{...categoryLabel, color: "#2A4361"}}>Hotel Location & Relation to Places of Interest</Typography>
+            </Box>
             <Image
               src={CategoryLocationGraphic}
               alt="A graphic depicting a hotel location category"
             />
-            <Typography sx={{...categoryLabel, color: "#2A4361"}}>Hotel Location & Relation to Places of Interest</Typography>
+            <Box>
+              <Typography>
+                Search results based on location-only for simplicity, intuitive map view option for search results for clear relation to area, points out when close to airports or points of interest
+              </Typography>
+            </Box>
           </Grid>
           <Grid item xs={3} sx={{ padding: "10px" }}>
+            <Box sx={{ height: 100 }}>
+              <Typography sx={{...categoryLabel, color: "#225515"}}>Pricing & Rate Comparisons</Typography>
+            </Box>
             <Image
               src={CategoryPricingGraphic}
               alt="A graphic depicting a hotel pricing category"
             />
-            <Typography sx={{...categoryLabel, color: "#225515"}}>Pricing & Rate Comparisons</Typography>
+            <Box>
+              <Typography>
+                Clearly describes what is included in special rates, member and non-member rates clearly labeled and separated from each other, pricing breakdowns prominently displayed
+              </Typography>
+            </Box>
           </Grid>
           <Grid item xs={3} sx={{ padding: "10px" }}>
+            <Box sx={{ height: 100 }}>
+              <Typography sx={{...categoryLabel, color: "#B88523"}}>Account &  Membership Programs</Typography>
+            </Box>
             <Image
               src={CategoryAccountGraphic}
               alt="A graphic depicting a hotel accounts category"
             />
-            <Typography sx={{...categoryLabel, color: "#B88523"}}>Account &  Membership Programs</Typography>
+            <Box>
+              <Typography>
+                Clear opt-out of membership programs, fully explained perks and membership inclusions, plenty of delineation between member and non-member options
+              </Typography>
+            </Box>
           </Grid>
         </Grid>
+
+
       </Box>
   );
 }

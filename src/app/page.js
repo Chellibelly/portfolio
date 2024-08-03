@@ -14,6 +14,9 @@ import PsychologyAltIcon from '@mui/icons-material/PsychologyAlt';
 import StickyNote2SharpIcon from '@mui/icons-material/StickyNote2Sharp';
 import SchoolIcon from '@mui/icons-material/school';
 import { blue } from '@mui/material/colors';
+import LessonsLearned from './caseStudies/LessonsLearned';
+import Image from 'next/image';
+import HotelBackground from "../../public/temp_opening_image.png";
 
 const Home = () => {
   const [activeSection, setActiveSection] = useState(null);
@@ -53,7 +56,7 @@ const Home = () => {
   return (
     <div>
     <Header/>
-    <div style={{ padding: 20, marginTop: 75 }}>
+    <div style={{ padding: 10, marginTop: 60 }}>
     <Grid container>
       <Grid item xs={3}>
         <div className="column-b">
@@ -140,7 +143,36 @@ const Home = () => {
         </div>
       </Grid>
       <Grid item xs={8}>
-        <Box sx={{ height: 260, width: "100%", marginBottom: -6, backgroundColor: blue[200] }}>Some eye-catching thing to say or graphic</Box>
+        <Box style={{ height: 260, width: "100%", marginBottom: -6, position: "relative" }}>
+          <Image
+            className='graphic'
+            src={HotelBackground}
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              margin: 0, // Ensure no extra margin
+              display: "block" // Ensures the image is treated as a block element
+            }}
+            width="100%"
+            alt="An image of the UX process with the Analysis step highlighted"
+          />
+          <Grid container style={{ position: "absolute", top: '20%', width: "100%", justifyContent: "center" }}>
+          <Grid item xs={9} sx={{ position: "relative" }}>
+            <Box sx={{ position: 'relative', height: 200, width: '100%' }}>
+              <Box sx={{ backgroundColor: blue[100], padding: 3, height: '100%', width: '100%', opacity: 0.80, position: 'absolute', top: 0, left: 0, zIndex: 1}}/>
+                <Box sx={{ position: 'relative', height: '100%', width: '100%', zIndex: 2, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+                  <Typography sx={{ textAlign: 'center', fontFamily: 'Montserrat', fontSize: 40, mb: 2, color: blue[800], fontWeight: 600}}>
+                    The Menagerie Hotels Mobile Site
+                  </Typography>
+                  <Typography sx={{textAlign: 'center', color: blue[600], fontWeight: 600}} className='paragraph'>
+                    The story of how I transformed the online hotel booking experience for people who are fed up with being habitually left in the dark
+                  </Typography>
+                </Box>
+              </Box>
+            </Grid>
+          </Grid>
+        </Box>
         <div className="column-a">
           <section id="introduction_section" ref={(el) => sectionRefs.current['introduction_section'] = el} style={{ paddingTop: 86 }}>
             <Introduction/>
@@ -156,6 +188,9 @@ const Home = () => {
           </section>
           <section id="delivery_section" ref={(el) => sectionRefs.current['delivery_section'] = el} style={{ paddingTop: 86  }}>
             <Conclusion/>
+          </section>
+          <section id="conclusion_section" ref={(el) => sectionRefs.current['conclusion_section'] = el} style={{ paddingTop: 86  }}>
+            <LessonsLearned/>
           </section>
         </div>
       </Grid>
