@@ -432,7 +432,7 @@ export default function Research() {
           <Typography variant='body1' className='paragraph'>Now that I was starting to get an idea of what users wanted and what the booking process tends to look like on existing websites, it was time to go deeper and bridge the gap between the people and the software. I wanted to get organic. What could I learn by just watching some people use existing booking software? Would their real-time behaviors align with the assumptions I had formed so far? Would users feel confident in their actions? What points in the process would cause frustration? What else could I learn about their mental models? </Typography>
           <Typography variant='body1' className='paragraph'>It was time for some usability tests. Usability tests were going to be my best bet for witnessing real, organic reactions. I would be able to see expressions and body language in real time. I could observe what they actually do when they get stuck or confused, and how long it would take them to get back on track. </Typography>
           
-          <QuoteContainer quote="Good research is not about finding what you expect to find; it’s about finding what’s actually there." author="Margaret Mead"/>
+          <QuoteContainer quote="What people say, what people do, and what they say they do are entirely different things." author="Margaret Mead"/>
 
           <Typography variant='h3' className='heading3'>Selecting my Users</Typography>
           <Typography variant='body1' className='paragraph'>In total, I observed four usability test sessions with four different users. Two of those were prerecorded with another researcher, and I watched and took notes on the sessions for later analysis. The other two were conducted by me. </Typography>

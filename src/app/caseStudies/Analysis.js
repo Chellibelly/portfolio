@@ -235,7 +235,7 @@ export default function Analysis() {
             </Box>
           </Grid>
 
-        <QuoteContainer quote="Good research is not about finding what you expect to find; it’s about finding what’s actually there." author="Margaret Mead"/>
+        <QuoteContainer quote="Good research is not about finding what you expect to find; it’s about finding what’s actually there." author="Albert Szent-Györgyi"/>
 
         <Grid item xs={10}>
           <Typography variant='h3' className='heading3'>The Opportunity</Typography>
