@@ -13,10 +13,10 @@ import LightbulbIcon from '@mui/icons-material/Lightbulb';
 import PsychologyAltIcon from '@mui/icons-material/PsychologyAlt';
 import StickyNote2SharpIcon from '@mui/icons-material/StickyNote2Sharp';
 import SchoolIcon from '@mui/icons-material/school';
-import { blue } from '@mui/material/colors';
+import { blue, grey } from '@mui/material/colors';
 import LessonsLearned from './caseStudies/LessonsLearned';
 import Image from 'next/image';
-import HotelBackground from "../../public/temp_opening_image.png";
+import HotelBackground from "../../public/WorkPhotography/Work_Photo11.jpg"
 
 const Home = () => {
   const [activeSection, setActiveSection] = useState(null);
@@ -60,14 +60,14 @@ const Home = () => {
     <Grid container>
       <Grid item xs={3}>
         <div className="column-b">
-          <List component="nav" style={{ position: "fixed", width: 300 }}>
+          <List component="nav" style={{ position: "fixed", width: 250 }}>
             <ListItem onClick={() => handleSectionClick('introduction_section')} className={activeSection === 'introduction_section' ? 'active' : ''}>
               <ListItemText>
                 <Grid container direction="row">
-                  <Grid item xs={2} sx={{ marginRight: "10px" }}>
+                  <Grid item xs={3} sx={{ marginRight: "10px" }}>
                     <PsychologyAltIcon sx={{ fontSize: "50px" , color: blue[200]}} />
                   </Grid>
-                  <Grid item xs={8} sx={{ marginTop: "10px" }}>
+                  <Grid item xs={7} sx={{ marginTop: "10px" }}>
                     <Typography sx={{ fontSize: "24px", fontFamily: "Montserrat" }}>
                       Overview
                     </Typography>
@@ -77,10 +77,10 @@ const Home = () => {
             <ListItem onClick={() => handleSectionClick('research_section')} className={activeSection === 'research_section' ? 'active' : ''}>
               <ListItemText>
                 <Grid container direction="row">
-                  <Grid item xs={2} sx={{ marginRight: "10px" }}>
+                  <Grid item xs={3} sx={{ marginRight: "10px" }}>
                     <StickyNote2SharpIcon sx={{ fontSize: "50px" , color: blue[300]}} />
                   </Grid>
-                  <Grid item xs={8} sx={{ marginTop: "10px" }}>
+                  <Grid item xs={7} sx={{ marginTop: "10px" }}>
                     <Typography sx={{ fontSize: "24px", fontFamily: "Montserrat" }}>
                       Research
                     </Typography>
@@ -90,10 +90,10 @@ const Home = () => {
             <ListItem onClick={() => handleSectionClick('analysis_section')} className={activeSection === 'analysis_section' ? 'active' : ''}>
               <ListItemText>
                 <Grid container direction="row">
-                  <Grid item xs={2} sx={{ marginRight: "10px" }}>
+                  <Grid item xs={3} sx={{ marginRight: "10px" }}>
                     <LightbulbIcon sx={{ fontSize: "50px", color: blue[500] }} />
                   </Grid>
-                  <Grid item xs={8} sx={{ marginTop: "10px" }}>
+                  <Grid item xs={7} sx={{ marginTop: "10px" }}>
                     <Typography sx={{ fontSize: "24px", fontFamily: "Montserrat" }}>
                     Analysis
                     </Typography>
@@ -103,10 +103,10 @@ const Home = () => {
             <ListItem onClick={() => handleSectionClick('design_section')} className={activeSection === 'design_section' ? 'active' : ''}>
               <ListItemText>
                 <Grid container direction="row">
-                  <Grid item xs={2} sx={{ marginRight: "10px" }}>
+                  <Grid item xs={3} sx={{ marginRight: "10px" }}>
                     <DrawIcon sx={{ fontSize: "50px", color: blue[600] }} />
                   </Grid>
-                  <Grid item xs={8} sx={{ marginTop: "10px" }}>
+                  <Grid item xs={7} sx={{ marginTop: "10px" }}>
                     <Typography sx={{ fontSize: "24px", fontFamily: "Montserrat" }}>
                     Design
                     </Typography>
@@ -116,10 +116,10 @@ const Home = () => {
             <ListItem onClick={() => handleSectionClick('delivery_section')} className={activeSection === 'delivery_section' ? 'active' : ''}>
               <ListItemText>
                 <Grid container direction="row">
-                  <Grid item xs={2} sx={{ marginRight: "10px" }}>
+                  <Grid item xs={3} sx={{ marginRight: "10px" }}>
                     <PhoneAndroidIcon sx={{ fontSize: "50px", color: blue[800] }} />
                   </Grid>
-                  <Grid item xs={8} sx={{ marginTop: "10px" }}>
+                  <Grid item xs={7} sx={{ marginTop: "10px" }}>
                     <Typography sx={{ fontSize: "24px", fontFamily: "Montserrat" }}>
                     Delivery
                     </Typography>
@@ -129,10 +129,10 @@ const Home = () => {
             <ListItem onClick={() => handleSectionClick('conclusion_section')} className={activeSection === 'conclusion_section' ? 'active' : ''}>
               <ListItemText>
                 <Grid container direction="row">
-                  <Grid item xs={2} sx={{ marginRight: "10px" }}>
+                  <Grid item xs={3} sx={{ marginRight: "10px" }}>
                   <SchoolIcon sx={{ fontSize: "50px", color: blue[900] }} />
                   </Grid>
-                  <Grid item xs={8} sx={{ marginTop: "10px" }}>
+                  <Grid item xs={7} sx={{ marginTop: "10px" }}>
                     <Typography sx={{ fontSize: "24px", fontFamily: "Montserrat" }}>
                     Lessons
                     </Typography>
@@ -143,12 +143,13 @@ const Home = () => {
         </div>
       </Grid>
       <Grid item xs={8}>
-        <Box style={{ height: 260, width: "100%", marginBottom: -6, position: "relative" }}>
+        <Box style={{ height: 260, width: 'auto', marginBottom: -6, position: "relative" }}>
           <Image
             className='graphic'
             src={HotelBackground}
             style={{
               position: "absolute",
+              opacity: 0.80,
               top: 0,
               left: 0,
               margin: 0, // Ensure no extra margin
@@ -160,12 +161,12 @@ const Home = () => {
           <Grid container style={{ position: "absolute", top: '20%', width: "100%", justifyContent: "center" }}>
           <Grid item xs={9} sx={{ position: "relative" }}>
             <Box sx={{ position: 'relative', height: 200, width: '100%' }}>
-              <Box sx={{ backgroundColor: blue[100], padding: 3, height: '100%', width: '100%', opacity: 0.80, position: 'absolute', top: 0, left: 0, zIndex: 1}}/>
-                <Box sx={{ position: 'relative', height: '100%', width: '100%', zIndex: 2, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
-                  <Typography sx={{ textAlign: 'center', fontFamily: 'Montserrat', fontSize: 40, mb: 2, color: blue[800], fontWeight: 600}}>
+              <Box sx={{ backgroundColor: blue[100], padding: 3, height: '100%', width: '100%', opacity: 0.72, borderRadius: 5, position: 'absolute', top: 0, left: 0, zIndex: 1}}/>
+                <Box sx={{ position: 'relative', height: '200px', width: '200px100%', zIndex: 2, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: 2}}>
+                  <Typography sx={{ textAlign: 'center', fontFamily: 'Montserrat', fontSize: 40, mb: 2, color: grey[800], fontWeight: 600}}>
                     The Menagerie Hotels Mobile Site
                   </Typography>
-                  <Typography sx={{textAlign: 'center', color: blue[600], fontWeight: 600}} className='paragraph'>
+                  <Typography sx={{textAlign: 'center', color: grey[700], fontWeight: 600}} className='paragraph'>
                     The story of how I transformed the online hotel booking experience for people who are fed up with being habitually left in the dark
                   </Typography>
                 </Box>

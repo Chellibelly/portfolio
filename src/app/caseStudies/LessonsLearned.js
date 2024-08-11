@@ -1,62 +1,40 @@
-import { Typography, Box } from '@mui/material';
-import Image from 'next/image';
-import ProcessSolutionGraphic from '../../../public/Process_Solution.png';
-import PrototypeGraphic from '../../../public/Prototype.png';
-
-import DesignHotelInfo from '../../../public/Design_Hotel_Info.png';
-import DesignPricingInfo from '../../../public/Design_Pricing_Info.png';
-import DesignAccountInfo from '../../../public/Design_Account_Info.png';
-import DesignLocationInfo from '../../../public/Design_Location_Info.png';
-import DesignAdditional from '../../../public/Design_Additional_Catergories.png';
+import { Typography, Box, Grid, Link} from '@mui/material';
 
 export default function LessonsLearned() {
   return (
-      <Box>
-        <Typography variant='h1' className='heading1'>Lessons Learned</Typography>
-        <Typography variant='h2' className='heading2'>Lessons Learned</Typography>
+    <Grid container justifyItems="center" justifyContent="center">
+        <Grid item xs={10} sx={{ marginBottom: 10 }}>
+            <Typography variant='h1' className='heading1'>A Reflection on the Experience</Typography>
+            <Typography variant='h2' className='heading2'>Lessons Learned</Typography>
 
-        <Typography variant="body1" className='paragraph'>Understanding User Needs:  
-            Deeply researching and understanding user needs is crucial. 
-            Initial assumptions about user preferences may not always align with reality.
-            (You might have learned the importance of user interviews or surveys in identifying actual pain points and preferences.)
-        </Typography>
-        <Typography variant="body1" className='paragraph'>Iterative Design Process:  
-            The iterative design process is essential for refining and improving the user experience.
-            Feedback and testing help uncover issues that weren't apparent initially.
-            (Reflect on how early prototypes led to unexpected insights and how subsequent iterations improved the design.)
-        </Typography>
-        <Typography variant="body1" className='paragraph'>Balancing Aesthetics and Functionality:  
-            Aesthetic design must complement functionality. Striking a balance between visual appeal and usability is key to creating an effective user experience.
-            (Discuss any challenges you faced in maintaining this balance and how you addressed them.)
-        </Typography>
-        <Typography variant="body1" className='paragraph'>Importance of Usability Testing:  
-            Conducting usability tests with real users is invaluable. Observing users interact with your design can reveal issues and areas for improvement.
-            (Share insights from any usability testing you conducted and how it influenced your design decisions.)
-        </Typography>
-        <Typography variant="body1" className='paragraph'>Effective Communication and Collaboration:  
-            Clear communication and collaboration with stakeholders, mentors, or team members are vital for a successful project. Feedback from others can provide new perspectives and enhance your design.
-            (Mention how working with peers or receiving feedback helped refine your approach or overcome obstacles.)
-        </Typography>
-        <Typography variant="body1" className='paragraph'>Time Management:  
-            Managing time effectively is crucial in a project with multiple phases. Prioritizing tasks and setting realistic deadlines can lead to a more organized workflow.
-            (Reflect on how you managed your time throughout the project and any strategies that worked or didn’t work for you.)
-        </Typography>
-        <Typography variant="body1" className='paragraph'>Adapting to Constraints:  
-            Design constraints (such as limited resources or technical limitations) can influence the final outcome. Learning to adapt and innovate within constraints is a valuable skill.
-            (Describe any constraints you encountered and how you adapted your design to address them.)
-        </Typography>
-        <Typography variant="body1" className='paragraph'>Learning from Mistakes:  
-            Mistakes are an opportunity for growth. Identifying what went wrong and understanding why helps in avoiding similar issues in future projects.
-            (Share a specific mistake you made and how you learned from it, along with the steps you took to correct or mitigate it.)
-        </Typography>
-        <Typography variant="body1" className='paragraph'>Incorporating Feedback:  
-            Constructive feedback is essential for growth. Being open to critique and using it to improve your design is an important aspect of the design process.
-            (Reflect on how feedback from your peers or mentors helped shape your final design and what you learned from it.)
-        </Typography>
-        <Typography variant="body1" className='paragraph'>Understanding the Full UX Lifecycle:  
-            The UX process involves multiple stages, from research to prototyping to testing. Gaining experience in each stage provides a comprehensive understanding of UX design.
-            (Highlight your experiences with different stages of the UX process and how they contributed to your overall learning.)
-        </Typography>
-      </Box>
+            <Typography variant='h3' className='heading3'>
+                Technical skills through the UX lifecycle
+            </Typography>
+            <Typography variant="body1" className='paragraph'>
+                Throughout this project, I picked up and practiced a variety of skills and programs imperative to conducting effective user research, analysis, and design. I wrote, administered, and collected responses to a survey consisting of both qualitative and quantitative questions. I conducted benchmark research on a handful of products to establish baselines. I led, recorded, and took notes on usability tests using Zoom and screen mirroring technology. 
+            </Typography>
+            <Typography variant="body1" className='paragraph'>
+                I analyzed important feedback through whiteboarding an affinity diagram. I created customer personas and mapped sentiments and journeys using Miro. Finally, I designed wireframes and web screens in low, medium, and high fidelity through both physical and digital mediums – paper, pencils, Miro, Photoshop, and Figma – culminating in a working annotated prototype in Figma.
+            </Typography>
+            <Typography variant='h3' className='heading3'>
+                The importance of user research and expecting the unexpected
+            </Typography>
+            <Typography variant="body1" className='paragraph'>
+                Without the research that I conducted, there is no way I would have been able to come up with designs that fully realized user goals and needs. Learning about past frustrations users have had with similar software revealed so much about potential opportunities and eventually led to my “eureka moment” about where I needed to put most of focus while designing. 
+            </Typography>
+            <Typography variant="body1" className='paragraph'>
+                I had to be flexible and let the research guide me, putting my own opinions aside, disproving my assumptions multiple time. I had to watch people struggle and hold my tongue because experiencing the struggle was so important to building empathy and making discoveries. Those discoveries were the heart of this entire project. I learned firsthand that without listening, witnessing, and appreciating user sentiment and testaments, designing functional software that actually solves a problem for both the business and the customer is simply not possible, full stop.
+            </Typography>
+            <Typography variant='h3' className='heading3'>
+                Final thoughts
+            </Typography>
+            <Typography variant="body1" className='paragraph'>
+                Thank you for reading about my story on this case study. I am so grateful that I had this opportunity and experience. It was more interesting and enjoyable than I even imagined it would be, and I learned so many new things. My UX journey does not stop here. It can’t. This field is so important to me and so important to the field of technology. I have a lot to learn, and I’m just getting started. 
+            </Typography>
+            <Typography variant="body1" className='paragraph'>
+                If you'd like to learn more about me, check out my <Link href="/about">about me</Link> page or <Link href="/resume">my resume</Link>.
+            </Typography>
+        </Grid>
+      </Grid>
   );
 }

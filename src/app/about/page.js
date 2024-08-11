@@ -36,6 +36,9 @@ const About = () => {
                 I recently completed a professional diploma in UX research and design, 
                 and I’m ready to take the next step in my career. 
               </Typography>
+              <Typography className="heading5" sx={{ marginTop: 4 }} variant="h4">
+                My interests
+              </Typography>
             </Grid>
           </Grid>
         </Box>
