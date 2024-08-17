@@ -229,12 +229,6 @@ export default function Analysis() {
           <Typography variant='body1' className='paragraph'>This is the point where my goal became clearer than it had been. There may not some huge obvious problem we needed to rectify, but instead there was an opportunity to do better. A desirable hotel booking site was one that would follow a process set by others in the business, but would do so while being completely transparent and forthcoming with information.</Typography>
         </Grid>
 
-        <Grid item xs={12} sx={{ marginBottom: 5 }}>
-            <Box sx={{ border: `5px solid ${blue[800]}` }}>
-              “Good research is not about finding what you expect to find; it’s about finding what’s actually there.” – Margaret Mead
-            </Box>
-          </Grid>
-
         <QuoteContainer quote="Good research is not about finding what you expect to find; it’s about finding what’s actually there." author="Albert Szent-Györgyi"/>
 
         <Grid item xs={10}>

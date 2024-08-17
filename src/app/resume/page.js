@@ -58,7 +58,7 @@ const ResumePage = () => {
               </Typography>
             </Box>
             <Typography className="heading5" sx={{ textAlign: "center" }}>
-              <EmailIcon sx={{ marginRight: 1 }}/>cvidrine@email.com&nbsp;&nbsp;|&nbsp;&nbsp;
+              <EmailIcon sx={{ marginRight: 1 }}/>chelsea.vidrine2&nbsp;&nbsp;|&nbsp;&nbsp;
               <LocalPhoneIcon sx={{ marginRight: 1 }}/>470-546-2359
             </Typography>
             <Typography sx={{ textAlign: "center", marginTop: -2, fontSize: 20, color: blue[600], cursor: "pointer" }}>

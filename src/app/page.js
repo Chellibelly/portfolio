@@ -16,7 +16,8 @@ import SchoolIcon from '@mui/icons-material/school';
 import { blue, grey } from '@mui/material/colors';
 import LessonsLearned from './caseStudies/LessonsLearned';
 import Image from 'next/image';
-import HotelBackground from "../../public/WorkPhotography/Work_Photo11.jpg"
+import HotelBackground from "../../public/WorkPhotography/Work_Photo11.jpg";
+import Opening from "../../public/opening.png";
 
 const Home = () => {
   const [activeSection, setActiveSection] = useState(null);
@@ -143,7 +144,17 @@ const Home = () => {
         </div>
       </Grid>
       <Grid item xs={8}>
-        <Box style={{ height: 260, width: 'auto', marginBottom: -6, position: "relative" }}>
+          <Image
+            className='graphic'
+            src={Opening}
+            style={{
+              margin: 0,
+              marginBottom: -30
+            }}
+            width="100%"
+            alt="Menagerie Hotels - a mobile site. The story of The story of how I transformed the online hotel booking experience for people who are fed up with being habitually left in the dark"
+          />
+        {false && <Box style={{ height: 260, width: 'auto', marginBottom: -6, position: "relative" }}>
           <Image
             className='graphic'
             src={HotelBackground}
@@ -163,17 +174,17 @@ const Home = () => {
             <Box sx={{ position: 'relative', height: 200, width: '100%' }}>
               <Box sx={{ backgroundColor: blue[100], padding: 3, height: '100%', width: '100%', opacity: 0.72, borderRadius: 5, position: 'absolute', top: 0, left: 0, zIndex: 1}}/>
                 <Box sx={{ position: 'relative', height: '200px', width: '200px100%', zIndex: 2, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: 2}}>
-                  <Typography sx={{ textAlign: 'center', fontFamily: 'Montserrat', fontSize: 40, mb: 2, color: grey[800], fontWeight: 600}}>
+                  <Typography sx={{ textAlign: 'center', fontFamily: 'Roboto', fontSize: 40, mb: 2, fontWeight: 400}}>
                     The Menagerie Hotels Mobile Site
                   </Typography>
-                  <Typography sx={{textAlign: 'center', color: grey[700], fontWeight: 600}} className='paragraph'>
+                  <Typography variant="body1" sx={{textAlign: 'center', fontFamily: 'Roboto', color: grey[900], fontWeight: 500, fontSize: 21, width: 600}}>
                     The story of how I transformed the online hotel booking experience for people who are fed up with being habitually left in the dark
                   </Typography>
                 </Box>
               </Box>
             </Grid>
           </Grid>
-        </Box>
+        </Box>}
         <div className="column-a">
           <section id="introduction_section" ref={(el) => sectionRefs.current['introduction_section'] = el} style={{ paddingTop: 86 }}>
             <Introduction/>

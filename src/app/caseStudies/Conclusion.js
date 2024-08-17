@@ -85,8 +85,8 @@ export default function Conclusion() {
           />
         </Grid>
         <Grid item xs={10}>
-          <Typography variant="body1" className='paragraph'>
           <Typography variant='h3' className='heading3'>Sharing with Stakeholders</Typography>
+          <Typography variant="body1" className='paragraph'>
             If this were a real design for a real company, the project would not have ended here. So, let’s pretend for a moment that it was real, and I’ll explain how I would have proceeded from here. After finishing the annotated screen designs and prototype, the next step for me would most likely be to round up all of the important shareholders of the product – other designers, project and product managers, copywriters, legal, developers, and whoever else this product would be important to. 
           </Typography>
           <Typography variant='h3' className='heading3'>Don't Forget About the Business's Bottomline</Typography>
@@ -94,9 +94,7 @@ export default function Conclusion() {
             The goal of sharing would be multifaceted. Ideally, there would be communication touch points occurring throughout the entire design process and this would be one of many checks to ensure everyone is still aligned with the problem we’re solving and agree that this is the solution to test. I would also ensure the solution is technically feasible and the development team understands exactly what to build, going into detail on all UI interactions and answering any questions they have.
           </Typography>
         </Grid>
-
         <QuoteContainer quote="Good design is good business. When you focus on designing a great experience for your users, your business will benefit." author="Jared Spool"/>
-
         <Grid item xs={10} sx={{ marginBottom: -5 }}>
           <Typography variant='h3' className='heading3'>Iterate, Iterate, and then Iterate Some More</Typography>
           <Typography variant="body1" className='paragraph'>
