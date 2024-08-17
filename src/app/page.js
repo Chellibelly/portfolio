@@ -144,16 +144,17 @@ const Home = () => {
         </div>
       </Grid>
       <Grid item xs={8}>
+        <Box sx={{ marginBottom: -5 }}>
           <Image
             className='graphic'
             src={Opening}
             style={{
-              margin: 0,
-              marginBottom: -30
+              margin: "0 auto",
             }}
             width="100%"
             alt="Menagerie Hotels - a mobile site. The story of The story of how I transformed the online hotel booking experience for people who are fed up with being habitually left in the dark"
           />
+        </Box>
         {false && <Box style={{ height: 260, width: 'auto', marginBottom: -6, position: "relative" }}>
           <Image
             className='graphic'
