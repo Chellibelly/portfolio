@@ -12,7 +12,7 @@ import KSULogo from '../../../public/KSU.png';
 import AaronsTechLogo from '../../../public/aarons_tech_logo.jpg';
 import Header from "../caseStudies/Header";
 import Image from 'next/image';
-import { blue } from '@mui/material/colors';
+import { blue, red, green, yellow } from '@mui/material/colors';
 
 const sectionHeader = {
   fontSize: "24px",
@@ -22,7 +22,6 @@ const sectionHeader = {
 };
 
 const driveCard = {
-  backgroundColor: "gainsboro",
   padding: 2,
   height: "100%"
 }
@@ -30,7 +29,8 @@ const driveCard = {
 const driveTitle = {
   fontFamily: "Montserrat", 
   textAlign: "center",
-  marginBottom: 2
+  marginBottom: 2,
+  fontWeight: "bold"
 }
 
 const handleDownload = () => {
@@ -83,9 +83,9 @@ const ResumePage = () => {
 
             <Grid container justifyContent="space-between" sx={{ marginBottom: 5 }}>
               <Grid item xs={3.8}>
-                <Paper sx={driveCard}>
+                <Paper sx={{...driveCard, backgroundColor: red[50]}}>
                   <Typography sx={driveTitle}>
-                    <FavoriteBorderIcon sx={{ fontSize: 50 }}/><br/>
+                    <FavoriteBorderIcon sx={{ fontSize: 50, color: red[300] }}/><br/>
                     PASSION
                   </Typography>
                   <Typography className='paragraph-med'>
@@ -100,9 +100,9 @@ const ResumePage = () => {
               </Grid>
 
               <Grid item xs={3.8}>
-              <Paper sx={driveCard}>
+              <Paper sx={{...driveCard, backgroundColor: yellow[50]}}>
                 <Typography sx={driveTitle}>
-                  <PsychologyAltIcon sx={{ fontSize: 50 }} /><br/>
+                  <PsychologyAltIcon sx={{ fontSize: 50, color: yellow[700] }} /><br/>
                   CURIOSITY
                 </Typography>
                 <Typography className='paragraph-med'>
@@ -123,9 +123,9 @@ const ResumePage = () => {
             </Grid>
             
             <Grid item xs={3.8}>
-              <Paper sx={driveCard}>
+              <Paper sx={{...driveCard, backgroundColor: green[50]}}>
                 <Typography sx={driveTitle}>
-                  <GroupsIcon sx={{ fontSize: 50 }} /><br/>
+                  <GroupsIcon sx={{ fontSize: 50, color: green[300] }} /><br/>
                   COMPASSION
                 </Typography>
                 <Typography className='paragraph-med'>
@@ -149,7 +149,7 @@ const ResumePage = () => {
             <List sx={{ listStyleType: 'disc', marginLeft: 5, marginBottom: 4 }}>
               <ListItem sx={{ display: 'list-item'}}>
                 <Typography variant='body1' sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                  User Research (Mixed methods)
+                  User Research (Mixed methods) & Usability testing
                 </Typography>
               </ListItem>
               <ListItem sx={{ display: 'list-item' }}>
@@ -164,7 +164,7 @@ const ResumePage = () => {
               </ListItem>
               <ListItem sx={{ display: 'list-item' }}>
                 <Typography variant='body1' sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                  Coding: HTML, CSS & JavaScript w/ React
+                  <u>Coding</u>: HTML, CSS, JavaScript w/ React (Next.js), .NET, SQL
                 </Typography>
               </ListItem>
             </List>

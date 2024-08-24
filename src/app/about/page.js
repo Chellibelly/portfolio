@@ -33,6 +33,7 @@ const About = () => {
               </Paper>
             </Grid>
             <Grid item xs={7}>
+              <Typography variant="h4" sx={{ fontFamily: "Playpen Sans" }}>My History</Typography>
               <Typography className="heading5" sx={{ marginTop: 4 }} variant="h5">
                 I've worked for the past seven years in the software development space as an engineer, designer, leader, and certified problem-solver.
               </Typography>
@@ -44,6 +45,7 @@ const About = () => {
           </Grid>
           <Grid container justifyContent="space-around" sx={{ marginBottom: 5 }}>
           <Grid item xs={7}>
+            <Typography variant="h4" sx={{ fontFamily: "Playpen Sans" }}>My Future</Typography>
             <Typography className="heading5" sx={{ marginTop: 4 }} variant="h5">
               Recently my journey has taken me into the field of UX. I've always been interested in usability, human psychology, and design, even before I knew UX existed. 
               I've worked with UX professionals over the last several years as a part of my job as a software engineer, and I'm ready to take my career in the direction of research and design.
@@ -83,6 +85,7 @@ const About = () => {
               </Paper>
             </Grid>
             <Grid item xs={7}>
+            <Typography variant="h4" sx={{ fontFamily: "Playpen Sans" }}>My Present</Typography>
             <Typography className="heading5" sx={{ marginTop: 4 }} variant="h5">
               When I'm not working or honing my technology skills, I enjoy travelling with husband and our adorable black lab, Badger. 
               I like to frequent coffee shops, meet new people, draw, craft, crochet, decorate, and play games of both the board and video variety.

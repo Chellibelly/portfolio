@@ -32,7 +32,7 @@ export default function LessonsLearned() {
                 Thank you for reading about my story on this case study. I am so grateful that I had this opportunity and experience. It was more interesting and enjoyable than I even imagined it would be, and I learned so many new things. My UX journey does not stop here. It can’t. This field is so important to me and so important to the field of technology. I have a lot to learn, and I’m just getting started. 
             </Typography>
             <Typography variant="body1" className='paragraph'>
-                If you'd like to learn more about me, check out my <Link href="/about">about me</Link> page or <Link href="/resume">my resume</Link>.
+                If you'd like to learn more about me, check out my <Link href="/about">about me</Link> page or <Link href="/resume">my resume</Link>. You can also see what project(s) I'm currently working on <Link href="/currentProjects">here</Link>.
             </Typography>
         </Grid>
       </Grid>

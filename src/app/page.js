@@ -54,6 +54,42 @@ const Home = () => {
     }
   };
 
+  const containerStyle = {
+    position: 'relative',
+    width: '100%',
+    marginBottom: -34
+};
+
+const imageWrapperStyle = {
+    position: 'relative',
+    width: '100%',
+    height: '100%',
+    opacity: '0.9'
+};
+
+const imageStyle = {
+    objectFit: 'cover',
+};
+
+const overlayStyle = {
+  position: 'absolute',
+  bottom: '15%', // Center the overlay vertically with respect to the image height
+  left: '50%',
+  transform: 'translateX(-50%)',
+  width: '70%', // Adjust the width of the overlay
+  height: '70%', // Adjust the height of the overlay
+  backgroundColor: 'rgba(255, 255, 255, 0.8)', // White with 80% transparency
+  color: 'black', // Text color
+  display: 'flex',
+  flexDirection: 'column', // Arrange Typography components vertically
+  alignItems: 'center',
+  justifyContent: 'center',
+  textAlign: 'center',
+  padding: '20px', // Adjust padding as needed
+  boxSizing: 'border-box',
+  zIndex: 10, // Ensure overlay is on top
+};
+
   return (
     <div>
     <Header/>
@@ -144,7 +180,30 @@ const Home = () => {
         </div>
       </Grid>
       <Grid item xs={8}>
-        <Box sx={{ marginBottom: -5 }}>
+
+      <div style={containerStyle}>
+            <div style={imageWrapperStyle}>
+                <Image
+                    src={HotelBackground}
+                    alt='alt'
+                    style={imageStyle}
+                    width="100%"
+                />
+            </div>
+            <div style={overlayStyle}>
+              <Box sx={{ padding: 1 }}>
+              <Typography sx={{ textAlign: 'center', fontFamily: 'Roboto', fontSize: 36, fontWeight: 400}}>
+                    The Menagerie Hotels Mobile Site
+                  </Typography><br/>
+                  <Typography variant="body1" sx={{textAlign: 'center', fontFamily: 'Roboto', color: grey[900], fontWeight: 500, fontSize: 20, width: 600}}>
+                    The story of how I transformed the online hotel booking experience for people who are fed up with being habitually left in the dark
+                  </Typography>
+              </Box>
+            </div>
+        </div>
+
+
+        {false && <Box sx={{ marginBottom: -5 }}>
           <Image
             className='graphic'
             src={Opening}
@@ -154,38 +213,8 @@ const Home = () => {
             width="100%"
             alt="Menagerie Hotels - a mobile site. The story of The story of how I transformed the online hotel booking experience for people who are fed up with being habitually left in the dark"
           />
-        </Box>
-        {false && <Box style={{ height: 260, width: 'auto', marginBottom: -6, position: "relative" }}>
-          <Image
-            className='graphic'
-            src={HotelBackground}
-            style={{
-              position: "absolute",
-              opacity: 0.80,
-              top: 0,
-              left: 0,
-              margin: 0, // Ensure no extra margin
-              display: "block" // Ensures the image is treated as a block element
-            }}
-            width="100%"
-            alt="An image of the UX process with the Analysis step highlighted"
-          />
-          <Grid container style={{ position: "absolute", top: '20%', width: "100%", justifyContent: "center" }}>
-          <Grid item xs={9} sx={{ position: "relative" }}>
-            <Box sx={{ position: 'relative', height: 200, width: '100%' }}>
-              <Box sx={{ backgroundColor: blue[100], padding: 3, height: '100%', width: '100%', opacity: 0.72, borderRadius: 5, position: 'absolute', top: 0, left: 0, zIndex: 1}}/>
-                <Box sx={{ position: 'relative', height: '200px', width: '200px100%', zIndex: 2, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: 2}}>
-                  <Typography sx={{ textAlign: 'center', fontFamily: 'Roboto', fontSize: 40, mb: 2, fontWeight: 400}}>
-                    The Menagerie Hotels Mobile Site
-                  </Typography>
-                  <Typography variant="body1" sx={{textAlign: 'center', fontFamily: 'Roboto', color: grey[900], fontWeight: 500, fontSize: 21, width: 600}}>
-                    The story of how I transformed the online hotel booking experience for people who are fed up with being habitually left in the dark
-                  </Typography>
-                </Box>
-              </Box>
-            </Grid>
-          </Grid>
         </Box>}
+        
         <div className="column-a">
           <section id="introduction_section" ref={(el) => sectionRefs.current['introduction_section'] = el} style={{ paddingTop: 86 }}>
             <Introduction/>
