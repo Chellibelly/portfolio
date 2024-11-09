@@ -12,7 +12,7 @@ import DrawIcon from '@mui/icons-material/Draw';
 import LightbulbIcon from '@mui/icons-material/Lightbulb';
 import PsychologyAltIcon from '@mui/icons-material/PsychologyAlt';
 import StickyNote2SharpIcon from '@mui/icons-material/StickyNote2Sharp';
-import SchoolIcon from '@mui/icons-material/school';
+import SchoolIcon from '@mui/icons-material/School';
 import { blue, grey } from '@mui/material/colors';
 import LessonsLearned from './caseStudies/LessonsLearned';
 import Image from 'next/image';

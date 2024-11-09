@@ -17,7 +17,7 @@ import BestWesternNotes from "../../../public/Benchmark_Notes_Example_Best_Weste
 import HiltonNotes from "../../../public/Benchmark_Notes_Example_Hilton.png";
 import MarriotNotes from "../../../public/Benchmark_Notes_Example_Marriot.png";
 
-import UsabilityQuotesPainpoints from "../../../public/Usability_Quotes_painpoints.png";
+import UsabilityQuotesPainpoints from "../../../public/Usability_Quotes_Painpoints.png";
 import UsabilityQuotes from "../../../public/Usability_quotes.png";
 import HeuristicsGraphic from '../../../public/Heuristics.png';
 import PersonaTomas from '../../../public/Persona_Tomas.png';
