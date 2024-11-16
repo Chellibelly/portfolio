@@ -47,8 +47,8 @@ const ResumeContainerMobile = () => {
   return (
     <div>
       <HeaderMobile/>
-      <Box container direction="column" justifyContent="center" sx={{ display: "flex", justifyContent: "center", backgroundColor: blue[100]}}>
-          <Box sx={{ maxWidth: "60%", padding: 5, marginTop: 10, marginBottom: 5, backgroundColor: "white" }}>
+      <Box container direction="column" justifyContent="center" sx={{ display: "flex", justifyContent: "center" }}>
+          <Box sx={{ maxWidth: "100%", padding: 5, marginTop: 5, marginBottom: 5, backgroundColor: "white" }}>
             <Box sx={{ marginBottom: 5 }}>
               <Typography className="heading1" sx={{ textAlign: "center" }} variant="h1">
                 CHELSEA L. VIDRINE
@@ -173,7 +173,7 @@ const ResumeContainerMobile = () => {
             </Typography>
 
             <Grid container alignContent="center" alignItems="center" sx={{ marginTop: -3 }}>
-              <Grid item>
+              <Grid item xs={3} sx={{ mr: 3 }}>
                 <Image
                   className='graphic'
                   src={AaronsTechLogo}
@@ -181,13 +181,14 @@ const ResumeContainerMobile = () => {
                   alt="Aaron's Tech Logo"
                 />
               </Grid>
-              <Grid item>
-                <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px" }}>Software Engineer at Aaron’s INC</Typography>
+              <Grid item sx={8}>
+                <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px", fontWeight: "bold" }}>Software Engineer</Typography>
+                <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px" }}>Aaron’s INC</Typography>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>March 2017 – currently employed</Typography>
               </Grid>   
             </Grid>
 
-            <List sx={{ listStyleType: 'disc', marginLeft: 18, marginTop: -3 }}>
+            <List sx={{ listStyleType: 'disc', marginLeft: 5 }}>
               <ListItem sx={{ display: 'list-item' }}>
                 <Typography variant='body1' sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
                   <b>Engineering Effective Customer Experiences</b><br/>
@@ -224,7 +225,7 @@ const ResumeContainerMobile = () => {
               EDUCATION
             </Typography>
             <Grid container alignContent="center" alignItems="center">
-              <Grid item>
+              <Grid item xs={3} sx={{ mr: 3 }}>
                 <Image
                   className='graphic'
                   src={UXDILogo}
@@ -232,13 +233,14 @@ const ResumeContainerMobile = () => {
                   alt="UXDI Logo"
                 />
               </Grid>
-              <Grid item>
-                <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px" }}>UX Professional Diploma – Awarded May 2024</Typography>
-                <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>UX Design Institute (Accredited by Glascow Caledonian University)</Typography>
+              <Grid item xs={8}>
+                <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px", fontWeight: "bold" }}>UX Professional Diploma</Typography>
+                <Typography sx={{ fontFamily: "Montserrat", fontSize: "18px" }}>Awarded May 2024</Typography>
+                <Typography sx={{ fontFamily: "Montserrat", fontSize: "18px" }}>UX Design Institute (Accredited by Glascow Caledonian University)</Typography>
               </Grid>   
             </Grid>
-            <Grid container alignContent="center" alignItems="center" sx={{ marginTop: -4 }}>
-              <Grid item>
+            <Grid container alignContent="center" alignItems="center" sx={{ marginTop: 3 }}>
+              <Grid item xs={3} sx={{ mr: 3 }}>
                 <Image
                   className='graphic'
                   src={KSULogo}
@@ -246,10 +248,11 @@ const ResumeContainerMobile = () => {
                   alt="KSU logo"
                 />
               </Grid>
-              <Grid item>
-                <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px" }}>BA Applied Computer Science – Awarded December 2016</Typography>
-                <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>Kennesaw State University</Typography>
-                <Typography sx={{ fontFamily: "Montserrat", fontSize: "14px" }}>Magna Cum Laude</Typography>
+              <Grid item xs={8}>
+                <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px", fontWeight: "bold" }}>BA Applied Computer Science</Typography>
+                <Typography sx={{ fontFamily: "Montserrat", fontSize: "18px" }}>Awarded December 2016</Typography>
+                <Typography sx={{ fontFamily: "Montserrat", fontSize: "18px" }}>Kennesaw State University</Typography>
+                <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>Magna Cum Laude</Typography>
               </Grid>             
             </Grid>
           </Box>
