@@ -1,7 +1,7 @@
 "use client"; 
 import React from 'react';
 import { useMediaQuery } from 'react-responsive';
-import AboutContainer from './aboutContainer';
+import AboutContainer from './AboutContainer2';
 import AboutContainerMobile from './AboutContainerMobile';
 
 const AboutPage = () => {
