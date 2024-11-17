@@ -1,9 +1,8 @@
 "use client"; 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import HeaderMobile from '../HeaderMobile';
 import { Box, Typography } from '@mui/material';
 import Introduction from './Introduction';
-import Research from './Research';
 import Analysis from './Analysis';
 import Design from './Design';
 import Conclusion from './Conclusion';
@@ -12,6 +11,7 @@ import { grey } from '@mui/material/colors';
 import Image from 'next/image';
 import HotelBackground from "../../../public/WorkPhotography/Work_Photo_Mobile.jpg";
 import Opening from "../../../public/opening.png";
+import ResearchMobile from './ResearchMobile';
 
 const HotelsContainerMobile = () => {
   const sectionRefs = useRef({});
@@ -93,7 +93,7 @@ const overlayStyle = {
             <Introduction/>
           </section>
           <section id="research_section" ref={(el) => sectionRefs.current['research_section'] = el} style={{ paddingTop: 86  }}>
-            <Research/>
+            <ResearchMobile/>
           </section>
           <section id="analysis_section" ref={(el) => sectionRefs.current['analysis_section'] = el} style={{ paddingTop: 86  }}>
             <Analysis/>
