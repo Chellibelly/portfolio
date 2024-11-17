@@ -2,7 +2,6 @@
 import React, {  } from 'react';
 import { Grid, List, ListItem, Box, Typography, Paper } from '@mui/material';
 import EmailIcon from '@mui/icons-material/Email';
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import DownloadIcon from '@mui/icons-material/Download';
 import GroupsIcon from '@mui/icons-material/Groups';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
@@ -10,28 +9,17 @@ import PsychologyAltIcon from '@mui/icons-material/PsychologyAlt';
 import UXDILogo from '../../../public/UXDI.png';
 import KSULogo from '../../../public/KSU.png';
 import AaronsTechLogo from '../../../public/aarons_tech_logo.jpg';
+import MimedxLogo from '../../../public/mimedx_logo.png';
 import HeaderMobile from "../HeaderMobile";
 import Image from 'next/image';
-import { blue, red, green, yellow } from '@mui/material/colors';
+import { blue, grey } from '@mui/material/colors';
 
 const sectionHeader = {
-  fontSize: "24px",
+  fontSize: "26px",
   fontFamily: "Montserrat",
   marginBottom: "16px",
-  marginTop: 3
+  marginTop: 4,
 };
-
-const driveCard = {
-  padding: 2,
-  height: "100%"
-}
-
-const driveTitle = {
-  fontFamily: "Montserrat", 
-  textAlign: "center",
-  marginBottom: 2,
-  fontWeight: "bold"
-}
 
 const handleDownload = () => {
   const url = '/resume.pdf'; // Relative path from the public directory
@@ -48,8 +36,8 @@ const ResumeContainerMobile = () => {
     <div>
       <HeaderMobile/>
       <Box container direction="column" justifyContent="center" sx={{ display: "flex", justifyContent: "center" }}>
-          <Box sx={{ maxWidth: "100%", padding: 5, marginTop: 5, marginBottom: 5, backgroundColor: "white" }}>
-            <Box sx={{ marginBottom: 5 }}>
+          <Box sx={{ maxWidth: "100%", padding: 3, marginTop: 3, marginBottom: 5 }}>
+            <Box sx={{ marginBottom: 3 }}>
               <Typography className="heading1" sx={{ textAlign: "center" }} variant="h1">
                 CHELSEA L. VIDRINE
               </Typography>
@@ -58,8 +46,7 @@ const ResumeContainerMobile = () => {
               </Typography>
             </Box>
             <Typography className="heading5" sx={{ textAlign: "center" }}>
-              <EmailIcon sx={{ marginRight: 1 }}/>chelsea.vidrine2&nbsp;&nbsp;|&nbsp;&nbsp;
-              <LocalPhoneIcon sx={{ marginRight: 1 }}/>470-546-2359
+              <EmailIcon sx={{ marginRight: 1 }}/>chelsea.vidrine2
             </Typography>
             <Typography sx={{ textAlign: "center", marginTop: -2, fontSize: 20, color: blue[600], cursor: "pointer" }}>
                 <button onClick={handleDownload}><DownloadIcon/>Download Resume PDF</button>
@@ -68,192 +55,203 @@ const ResumeContainerMobile = () => {
               MISSION
             </Typography>
             <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-              I am an IT professional with 7+ years of experience as a software
-              engineer. I am looking to leverage my development expertise and
-              passion for user interfaces to transition into a UX role. I have years of
-              professional experience communicating with stakeholders and UX
-              leaders to translate user needs into functional interfaces that both
-              drive positive user engagement and meet business objectives. I
-              recently completed a professional diploma in UX research and
-              design, and I’m ready to take the next step in my career.
+              I am a UX researcher and designer with 7+ years of experience as a software engineer. I have professional experience communicating with stakeholders and UX leaders to translate user needs into functional interfaces that both drive positive user engagement and meet business objectives. I’m looking to take the next step in my career and grow my UX skills with an innovative and forward-thinking business.
             </Typography>
+            <Box sx={{ mt: 2, mb: 2 }}>
+              <hr style={{ borderColor: grey[400] }}/>
+            </Box>
             <Typography sx={sectionHeader}>
               WHAT DRIVES ME?
             </Typography>
-
-            <Grid container justifyContent="space-between" sx={{ marginBottom: 5 }}>
-              <Grid item xs={3.8}>
-                <Paper sx={{...driveCard, backgroundColor: red[50]}}>
-                  <Typography sx={driveTitle}>
-                    <FavoriteBorderIcon sx={{ fontSize: 50, color: red[300] }}/><br/>
-                    PASSION
-                  </Typography>
-                  <Typography className='paragraph-med'>
-                    Passion is the most important
-                    trait to my career. Without
-                    passion, top-quality products
-                    and solutions are not
-                    possible. Passion fuels my
-                    output every single day.
-                  </Typography>
-                </Paper>
+            <Box sx={{ mb: 3 }}>
+              <Grid container>
+                <Grid item>
+                  <FavoriteBorderIcon sx={{ fontSize: 40, color: blue[400] }}/>
+                </Grid>
+                <Grid item>
+                  <Typography sx={{ fontSize: 16, ml: "5px", mt: "6px", fontWeight: "bold", fontFamily: "Montserrat" }}>PASSION</Typography>
+                </Grid>
               </Grid>
-
-              <Grid item xs={3.8}>
-              <Paper sx={{...driveCard, backgroundColor: yellow[50]}}>
-                <Typography sx={driveTitle}>
-                  <PsychologyAltIcon sx={{ fontSize: 50, color: yellow[700] }} /><br/>
-                  CURIOSITY
-                </Typography>
-                <Typography className='paragraph-med'>
-                  I am a lover of exploration
-                  and discovery. I like to ask
-                  “why?” Why does
-                  engagement dip during this
-                  part of the process? Why
-                  are our competitors having
-                  better success that us? Why
-                  is the customer feeling this
-                  way? My curious mind helps
-                  me to conduct effective
-                  research and solve difficult
-                  problems.
-                </Typography>
-              </Paper>
-            </Grid>
-            
-            <Grid item xs={3.8}>
-              <Paper sx={{...driveCard, backgroundColor: green[50]}}>
-                <Typography sx={driveTitle}>
-                  <GroupsIcon sx={{ fontSize: 50, color: green[300] }} /><br/>
-                  COMPASSION
-                </Typography>
-                <Typography className='paragraph-med'>
-                  Compassion leads to
-                  excellent user interfaces. I
-                  don’t produce anything
-                  without first considering
-                  what impact it will have on
-                  my users’ needs, emotions,
-                  limitations, and
-                  understanding. 
-                </Typography>
-              </Paper>
-            </Grid>
-
-            </Grid>
-
+              <Typography sx={{ mt: 1, ml: 1, fontFamily: "Montserrat" }}>
+                Passion fuels my output. I care deeply about my users and their ability to achieve their goals.
+              </Typography>
+            </Box>
+            <Box sx={{ mb: 3 }}>
+              <Grid container>
+                <Grid item>
+                  <GroupsIcon sx={{ fontSize: 40, color: blue[400] }} /><br/>
+                </Grid>
+                <Grid item>
+                  <Typography sx={{ fontSize: 16, ml: "5px", mt: "6px", fontWeight: "bold", fontFamily: "Montserrat" }}>COMPASSION</Typography>
+                </Grid>
+              </Grid>
+              <Typography sx={{ mt: 1, ml: 1, fontFamily: "Montserrat" }}>
+                I focus on the impact each product will have on the needs, emotions, and understanding of my users.
+              </Typography>
+            </Box>
+            <Box sx={{ mb: 3 }}>
+              <Grid container>
+                <Grid item>
+                  <PsychologyAltIcon sx={{ fontSize: 40, color: blue[700] }} />
+                </Grid>
+                <Grid item>
+                  <Typography sx={{ fontSize: 16, ml: "5px", mt: "6px", fontWeight: "bold", fontFamily: "Montserrat" }}>CURIOSITY</Typography>
+                </Grid>
+              </Grid>
+              <Typography sx={{ mt: 1, ml: 1, fontFamily: "Montserrat" }}>
+                Why does engagement dip during this process? Why are our competitors so successful? Why is adoption lower than anticipated? My curiosity and love for discovery fuels effective research and problem-solving.
+              </Typography>
+            </Box>
+            <Box sx={{ mt: 2, mb: 2 }}>
+              <hr style={{ borderColor: grey[400] }}/>
+            </Box>
             <Typography sx={sectionHeader}>
-              TECHNICAL SKILLS
+              SKILLS
             </Typography>
-            <List sx={{ listStyleType: 'disc', marginLeft: 5, marginBottom: 4 }}>
-              <ListItem sx={{ display: 'list-item'}}>
-                <Typography variant='body1' sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                  User Research (Mixed methods) & Usability testing
-                </Typography>
-              </ListItem>
-              <ListItem sx={{ display: 'list-item' }}>
-                <Typography variant='body1' sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                  Wireframing & flowcharting (Miro)
-                </Typography>
-              </ListItem>
-              <ListItem sx={{ display: 'list-item' }}>
-                <Typography variant='body1' sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                  Design, Prototyping, & Annotation (Figma)
-                </Typography>
-              </ListItem>
-              <ListItem sx={{ display: 'list-item' }}>
-                <Typography variant='body1' sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                  <u>Coding</u>: HTML, CSS, JavaScript w/ React (Next.js), .NET, SQL
-                </Typography>
-              </ListItem>
-            </List>
+            <Box sx={{ mb: 3 }}>
+              <Typography sx={{ fontSize: 17, fontWeight: "bold", fontFamily: "Montserrat", mb: 1 }}>
+                User Research & Data Analysis
+              </Typography>
+              <Typography sx={{ fontSize: 16, fontFamily: "Montserrat" }}>
+                Surveys, A/B testing, usability testing, notetaking, competitor research, affinity diagraming, user journeys
+              </Typography>
+            </Box>
+            <Box sx={{ mb: 3 }}>
+              <Typography sx={{ fontSize: 17, fontWeight: "bold", fontFamily: "Montserrat", mb: 1 }}>
+                Design
+              </Typography>
+              <Typography sx={{ fontSize: 16, fontFamily: "Montserrat" }}>
+                Miro, Figma, sketching, wireframing, flowcharts, interactions, prototyping, annotation, knowledge of modern design principles
+              </Typography>
+            </Box>
+            <Box sx={{ mb: 3 }}>
+              <Typography sx={{ fontSize: 17, fontWeight: "bold", fontFamily: "Montserrat", mb: 1 }}>
+                Development
+              </Typography>
+              <Typography sx={{ fontSize: 16, fontFamily: "Montserrat" }}>
+                HTML, JavaScript, CSS, React.js, Material Design, Tailwind, .NET, SQL
+              </Typography>
+            </Box>
+            <Box sx={{ mb: 3 }}>
+              <Typography sx={{ fontSize: 17, fontWeight: "bold", fontFamily: "Montserrat", mb: 1 }}>
+                Leadership
+              </Typography>
+              <Typography sx={{ fontSize: 16, fontFamily: "Montserrat" }}>
+                Project coordination, stakeholder management, presentations
+              </Typography>
+            </Box>
+            <Box sx={{ mt: 2, mb: 2 }}>
+              <hr style={{ borderColor: grey[400] }}/>
+            </Box>
             <Typography sx={sectionHeader}>
               CAREER EXPERIENCE
             </Typography>
-
-            <Grid container alignContent="center" alignItems="center" sx={{ marginTop: -3 }}>
-              <Grid item xs={3} sx={{ mr: 3 }}>
+            <Grid container alignContent="center" alignItems="center" sx={{ mt: 3, mb: 2 }}>
+              <Grid item sx={{ mr: 3 }}>
                 <Image
-                  className='graphic'
                   src={AaronsTechLogo}
                   width={80}
                   alt="Aaron's Tech Logo"
                 />
               </Grid>
-              <Grid item sx={8}>
+              <Grid item>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px", fontWeight: "bold" }}>Software Engineer</Typography>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px" }}>Aaron’s INC</Typography>
-                <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>March 2017 – currently employed</Typography>
+                <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>Since March 2017</Typography>
               </Grid>   
             </Grid>
-
-            <List sx={{ listStyleType: 'disc', marginLeft: 5 }}>
+            <List sx={{ listStyleType: 'disc', marginLeft: 3 }}>
               <ListItem sx={{ display: 'list-item' }}>
                 <Typography variant='body1' sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                  <b>Engineering Effective Customer Experiences</b><br/>
+                  <b>Solved Business Problems through Leadership</b><br/>
                   <span>
-                    I develop and support products which drive customer
-                    acquisition, onboarding, and retention. I’ve driven
-                    company profits by putting the focus on the user and
-                    creating positive user experiences through tools that
-                    are effective, intuitive, delightful and accessible.
+                    Took responsibility during the pandemic by leading the development on a fully remote web application which allowed stores to do business with customers without direct physical contact, increasing the percentage of closed deals by 60% during the height of the pandemic and an additional 40% since 2022.
                   </span>
                 </Typography>
               </ListItem>
               <ListItem sx={{ display: 'list-item' }}>
                 <Typography variant='body1' sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                  <b>Solutioning in a Collaborative and Agile Environment</b><br/>
+                  <b>Engineered Effective Customer Experiences</b><br/>
                   <span>
-                    Together with a small, highly collaborative team of
-                    managers, designers, and developers, I work every
-                    day to design, develop, test, and deploy solutions in a
-                    fast, iterative, and agile manner.
+                    Developed and supported products which drive customer acquisition, onboarding, and retention. I reduced rental application drop-out rate and average completion time by 50% through effective, intuitive, user-focused UI design.
                   </span>
                 </Typography>
               </ListItem>
               <ListItem sx={{ display: 'list-item' }}>
                 <Typography variant='body1' sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                  <b>Growing Through Flexibility and Well-roundedness</b><br/>
+                  <b>Collaborated Daily in an Agile (Lean) Environment</b><br/>
                   <span>
-                    Throughout my years at Aaron’s, I have gained experience in an array of technologies from front end to back end to data management, always eager to pick up new skills and learn new things. 
+                    Together with a team of talented managers, designers, and developers, I’ve iterated to design, develop, test, and deploy solutions quickly. Working closely with our Payments team, I’ve deployed software which has been used to enroll nearly two million customer agreements in auto-pay.
                   </span>
                 </Typography>
               </ListItem>
             </List>
+            <Grid container alignContent="center" alignItems="center" sx={{ mt: 3, mb: 2 }}>
+              <Grid item sx={{ mr: 3 }}>
+                <Image
+                  src={MimedxLogo}
+                  width={80}
+                  alt="Mimedx Logo"
+                />
+              </Grid>
+              <Grid item>
+                <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px", fontWeight: "bold" }}>QA Professional </Typography>
+                <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px" }}>MiMedx</Typography>
+                <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>Dec. 2014 - Mar. 2018</Typography>
+              </Grid>   
+            </Grid>
+            <List sx={{ listStyleType: 'disc', marginLeft: 3 }}>
+              <ListItem sx={{ display: 'list-item' }}>
+                <Typography variant='body1' sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
+                  <b>Demonstrated Excellent Quality Control and Data Accuracy</b><br/>
+                  <span>
+                    Reviewed and validated product processing records, ensuring SOP compliance and reducing error in product release
+                  </span>
+                </Typography>
+              </ListItem>
+              <ListItem sx={{ display: 'list-item' }}>
+                <Typography variant='body1' sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
+                  <b>Improved Team Process and Efficiency</b><br/>
+                  <span>
+                    Implemented a digital platform for task management and team communication and collaboration, nearly doubling project turnaround time and number of records reviewed 
+                  </span>
+                </Typography>
+              </ListItem>
+            </List>
+            <Box sx={{ mt: 2, mb: 2 }}>
+              <hr style={{ borderColor: grey[400] }}/>
+            </Box>
             <Typography sx={sectionHeader}>
               EDUCATION
             </Typography>
-            <Grid container alignContent="center" alignItems="center">
-              <Grid item xs={3} sx={{ mr: 3 }}>
+            <Grid container alignContent="center" alignItems="center" sx={{ mt: 3, mb: 2 }}>
+              <Grid item sx={{ mr: 3 }}>
                 <Image
-                  className='graphic'
                   src={UXDILogo}
                   width={80}
                   alt="UXDI Logo"
                 />
               </Grid>
-              <Grid item xs={8}>
-                <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px", fontWeight: "bold" }}>UX Professional Diploma</Typography>
-                <Typography sx={{ fontFamily: "Montserrat", fontSize: "18px" }}>Awarded May 2024</Typography>
-                <Typography sx={{ fontFamily: "Montserrat", fontSize: "18px" }}>UX Design Institute (Accredited by Glascow Caledonian University)</Typography>
+              <Grid item sx={7}>
+                <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px", fontWeight: "bold" }}>UX Diploma</Typography>
+                <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px" }}>Awarded May 2024</Typography>
+                <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>UX Design Institute</Typography>
               </Grid>   
             </Grid>
-            <Grid container alignContent="center" alignItems="center" sx={{ marginTop: 3 }}>
-              <Grid item xs={3} sx={{ mr: 3 }}>
+            <Grid container alignContent="center" alignItems="center" sx={{ mt: 3, mb: 2 }}>
+              <Grid item sx={{ mr: 3 }}>
                 <Image
-                  className='graphic'
                   src={KSULogo}
                   width={80}
-                  alt="KSU logo"
+                  alt="KSU Logo"
                 />
               </Grid>
-              <Grid item xs={8}>
-                <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px", fontWeight: "bold" }}>BA Applied Computer Science</Typography>
-                <Typography sx={{ fontFamily: "Montserrat", fontSize: "18px" }}>Awarded December 2016</Typography>
-                <Typography sx={{ fontFamily: "Montserrat", fontSize: "18px" }}>Kennesaw State University</Typography>
+              <Grid item sx={7}>
+              <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px", fontWeight: "bold" }}>BA Applied<br/> Computer Science</Typography>
+                <Typography sx={{ fontFamily: "Montserrat", fontSize: "18px" }}>Awarded Dec. 2016</Typography>
+                <Typography sx={{ fontFamily: "Montserrat", fontSize: "18px" }}>Kennesaw State<br/> University</Typography>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>Magna Cum Laude</Typography>
-              </Grid>             
+              </Grid>   
             </Grid>
           </Box>
       </Box>

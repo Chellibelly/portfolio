@@ -13,12 +13,12 @@ const AboutContainerMobile = () => {
     <div>
       <HeaderMobile/>
       <Box display="flex" alignItems="center" height="100vh" flexDirection="column" style={{marginBottom: "500px"}}>
-      <Typography variant="h1" sx={{ textAlign: "center", fontSize: 100, mb: 5, mt: 5, fontFamily: "Playpen Sans", color: blue[300]}}>
+      <Typography variant="h1" sx={{ textAlign: "center", fontSize: 80, mb: 5, mt: 5, fontFamily: "Playpen Sans", color: blue[300]}}>
             Hi, I'm Chelsea!
       </Typography>
       <Image
         src={Headshot}
-        width={400}
+        width={300}
         alt="A photo of Chelsea"
       />
       <Typography variant="h4" sx={{ fontFamily: "Playpen Sans", margin: 3 }}>My History</Typography>
@@ -31,7 +31,7 @@ const AboutContainerMobile = () => {
       </Typography>
       <Image
         src={Photo2}
-        width={400}
+        width={300}
         alt="A photo of Chelsea"
         style={{ marginTop: "50px" }}
       />
@@ -45,7 +45,7 @@ const AboutContainerMobile = () => {
       </Typography>
       <Image
         src={Photo3}
-        width={400}
+        width={300}
         alt="A photo of Chelsea"
         style={{ marginTop: "50px" }}
       />
