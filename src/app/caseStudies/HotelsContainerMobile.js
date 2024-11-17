@@ -10,7 +10,7 @@ import Conclusion from './Conclusion';
 import LessonsLearned from './LessonsLearned';
 import { grey } from '@mui/material/colors';
 import Image from 'next/image';
-import HotelBackground from "../../../public/WorkPhotography/Work_Photo11.jpg";
+import HotelBackground from "../../../public/WorkPhotography/Work_Photo_Mobile.jpg";
 import Opening from "../../../public/opening.png";
 
 const HotelsContainerMobile = () => {
@@ -26,7 +26,7 @@ const imageWrapperStyle = {
     position: 'relative',
     width: '100%',
     height: '100%',
-    opacity: '0.9'
+    opacity: '0.4'
 };
 
 const imageStyle = {
@@ -40,7 +40,6 @@ const overlayStyle = {
   transform: 'translateX(-50%)',
   width: '70%', // Adjust the width of the overlay
   height: '70%', // Adjust the height of the overlay
-  backgroundColor: 'rgba(255, 255, 255, 0.8)', // White with 80% transparency
   color: 'black', // Text color
   display: 'flex',
   flexDirection: 'column', // Arrange Typography components vertically
@@ -67,10 +66,10 @@ const overlayStyle = {
             </div>
             <div style={overlayStyle}>
               <Box sx={{ padding: 1 }}>
-              <Typography sx={{ textAlign: 'center', fontFamily: 'Roboto', fontSize: 36, fontWeight: 400}}>
-                    The Menagerie Hotels Mobile Site
+              <Typography sx={{ textAlign: 'center', fontFamily: 'Roboto', fontSize: 30, fontWeight: 400}}>
+                    The Menagerie Hotels<br/> Mobile Site
                   </Typography><br/>
-                  <Typography variant="body1" sx={{textAlign: 'center', fontFamily: 'Roboto', color: grey[900], fontWeight: 500, fontSize: 20, width: 600}}>
+                  <Typography variant="body1" sx={{textAlign: 'center', fontFamily: 'Roboto', color: grey[900], fontWeight: 600, fontSize: 20, width: 300}}>
                     The story of how I transformed the online hotel booking experience for people who are fed up with being habitually left in the dark
                   </Typography>
               </Box>
