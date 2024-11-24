@@ -193,7 +193,7 @@ const overlayStyle = {
             <div style={overlayStyle}>
               <Box sx={{ padding: 1 }}>
               <Typography sx={{ textAlign: 'center', fontFamily: 'Roboto', fontSize: 36, fontWeight: 400}}>
-                    The Menagerie Hotels Mobile Site
+                    Menagerie Hotels Mobile
                   </Typography><br/>
                   <Typography variant="body1" sx={{textAlign: 'center', fontFamily: 'Roboto', color: grey[900], fontWeight: 500, fontSize: 20, width: 600}}>
                     The story of how I transformed the online hotel booking experience for people who are fed up with being habitually left in the dark

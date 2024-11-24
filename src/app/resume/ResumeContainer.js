@@ -58,7 +58,7 @@ const ResumeContainer = () => {
               </Typography>
             </Box>
             <Typography className="heading5" sx={{ textAlign: "center" }}>
-              <EmailIcon sx={{ marginRight: 1 }}/>chelsea.vidrine2
+              <EmailIcon sx={{ marginRight: 1 }}/>chelsea.vidrine2@gmail.com
             </Typography>
             <Typography sx={{ textAlign: "center", marginTop: -2, fontSize: 20, color: blue[600], cursor: "pointer" }}>
                 <button onClick={handleDownload}><DownloadIcon/>Download Resume PDF</button>

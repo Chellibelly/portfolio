@@ -54,8 +54,8 @@ export default function Analysis() {
         <Grid item xs={10}>
           <Typography variant='h1' className='heading1'>The Forest Through the Trees</Typography>
           <Typography variant='h2' className='heading2'>The Analysis</Typography>
-          <Typography variant='body1' className='paragraph'>During my time earning my UX diploma, my instructor used an analogy I don’t ever think I’ll forget because I think it was a good one, but mostly because it was accompanied by a gross video clip of ground beef moving through a meat grinder. The analogy was that all of the research you do is the meat in the meat grinder. Analysis is about taking that meat and turning it into something. I had my meat. I had piles of notes, and it was time to find meaning in all the chaos.</Typography>
-          <Typography variant='body1' className='paragraph'>For some direction, I decided to go back and review my goal: to make a desirable product. At the beginning of this story, when I decided on that goal, I didn’t exactly know what a desirable hotel booking website was, but now with my research in hand, I was hoping I would be able to figure out exactly what desirable meant in this context.</Typography>
+          <Typography variant='body1' className='paragraph'>During my time earning my UX diploma, my instructor used an analogy I don’t ever think I’ll forget because I think it was a good one, but mostly because it was accompanied by a gross video clip of ground beef moving through a meat grinder. The point was, research is just raw material, and analysis is where you turn it into something useful. I had my "meat" - had piles of notes - and it was time to find meaning in all the chaos.</Typography>
+          <Typography variant='body1' className='paragraph'>For some direction, I revisited my goal: creating a desirable product. When I first set that goal, I wasn’t sure what a desirable hotel booking site looked like. But now, with my research in hand, I hoped I could finally figure it out.</Typography>
         </Grid>
         
         <Grid item xs={12}>
@@ -69,16 +69,15 @@ export default function Analysis() {
         
         <Grid item xs={10} sx={{ marginTop: 5, marginBottom: 5 }}>
           <Typography variant='h3' className='heading3'>Was There Really a Problem to Solve?</Typography>
-          <Typography variant='body1' className='paragraph'>Although I was eager to find meaning in all the data, I couldn’t help but to wonder at this point whether or not there was a good enough reason to build this. What’s the real problem we’re solving? If this were a real endeavor to build this product, would we end up building something that isn’t any more desirable than any of the long-standing competitor products out there already? It wasn’t obvious to me (yet). </Typography>
+          <Typography variant='body1' className='paragraph'>I was excited to dig into the data, but I couldn’t help wondering: was there a real need for this? What problem were we solving? If we actually built this, would it be any better than the well-established competitors out there? At that point, I wasn’t so sure.</Typography>
         </Grid>
 
         <QuoteContainer quote="People don't want to buy a quarter-inch drill. They want a quarter-inch hole!" author="Theodore Levitt"/>
 
         <Grid item xs={10} sx={{ marginBottom: 5 }}>
-          <Typography variant='h3' className='heading3'>Triangulation Time</Typography>
-          <Typography variant='body1' className='paragraph'>Another metaphor I like has to do with “seeing the forest through the trees.” More or less, this metaphor means being able to draw the larger meaning, or bigger picture, out of the parts. I realized I had some trees. I had data on who my users were, what the hotel booking process looked like, how my users interact with the process, and what sorts of feelings and experiences they’ve had when doing so. I decided that I needed something that would represent those trees together as a forest. This is where my affinity diagram came in.</Typography>
+          <Typography variant='h3' className='heading3'>Triangulating: I Should Buy a Bigger White Board</Typography>
+          <Typography variant='body1' className='paragraph'>Another metaphor I like has to do with “seeing the forest through the trees.” More or less, this metaphor means being able to draw the larger meaning, or bigger picture, out of the parts. I realized I had some trees. </Typography>
           <Typography variant='body1' className='paragraph'>I learned that an affinity diagram is a method of triangulation where raw data is grouped into more meaningful categories to make sense of it. Rather than defining the categories up front, instead I would group like data together first, then based on the commonalities, define the groups that formed. In this way, natural groupings would form and help me decide what’s important without biasing the groupings with my own opinions. Essentially, this process would allow the data to speak for itself.</Typography>
-          <Typography variant='h3' className='heading3'>The Process (I Should Have Bought a Bigger White Board)</Typography>
           <Typography variant='body1' className='paragraph'>My process consisted of setting myself up with stacks of sticky notes of varying colors, my office white board, and whiteboard markers. I focused on one research result set at a time, traversing through the survey results, benchmark research notes, interview answers, and usability videos and notes, spending about 10 minutes with each. I examined each, writing any significant factor down on a sticky note. When I was finished, I stuck each note on the whiteboard.</Typography>
         </Grid>
         
@@ -93,7 +92,7 @@ export default function Analysis() {
        
         <Grid item xs={10} sx={{ marginBottom: 5 }}>
           <Typography variant='h3' className='heading3'>Building the Affinity Diagram</Typography>
-          <Typography variant='body1' className='paragraph'>My whiteboard was full of sticky note chaos, and I got to work grouping together any notes which seemed related. I grouped, and regrouped, and tweaked until each sticky note had a home that made sense. I then gave each group a topic name. I noticed some groups could be further refined into subgroups, and I broke those down and gave them their own labels. I ended up with this.</Typography>
+          <Typography variant='body1' className='paragraph'>My whiteboard was a mess of sticky notes, but I started grouping related ones together. I kept adjusting, moving things around until everything had its place. Then, I gave each group a name. Some groups needed further breakdown, so I created subgroups and labeled those too. In the end, I had a clearer picture of everything.</Typography>
         </Grid>
       
         <Grid item xs={12}>
@@ -107,15 +106,8 @@ export default function Analysis() {
 
         <Grid item xs={10} sx={{ marginBottom: 5 }}>
         <Typography variant='h3' className='heading3'>Areas of Importance Exposed</Typography>
-        <Typography variant='body1' className='paragraph'>I ended up with nine different categories: filtering, account, look & feel, hotel information, extras, room selection, navigation, date selection, and pricing.</Typography>
-        <Typography variant='body1' className='paragraph'>It seemed clear to me
-          that the groupings that resulted mirrored what users described as most
-          important to them. The largest group with the most post it notes (many
-          of which were stacked) was the Hotel Information group. Much of the
-          research reflected user sentiment that information on hotels wasn’t
-          forthcoming or clear enough. This sentiment can be subdivided into
-          three major groups that came up many times in research – hotel
-          location, hotel amenities, and hotel reviews.
+        <Typography variant='body1' className='paragraph'>I ended up with nine categories: filtering, account, look & feel, hotel info, extras, room selection, navigation, date selection, and pricing.</Typography>
+        <Typography variant='body1' className='paragraph'>The groupings seemed to line up with what users had emphasized as most important. The Hotel Information category had the most sticky notes—users often felt the info about hotels wasn’t clear enough. Within that group, three key themes kept coming up: location, amenities, and reviews.
         </Typography>
         </Grid>
         
@@ -204,7 +196,7 @@ export default function Analysis() {
 
         <Grid item xs={10} sx={{ marginBottom: 5 }}>
           <Typography variant='h3' className='heading3'>The Customer Journey Map</Typography>
-          <Typography variant='body1' className='paragraph'>Now that I had groups of focus pulled from my affinity diagram and I had defined the steps of the journey, it was time to get a little more organized and flesh out the journey by adding all of the user goals, behaviors, and sentiments on top of it. This would help me form a blueprint for the first steps of the actual design. With a customer journey map, I'd be able to start visualizing the information architecture of the website and the guidelines, opportunities, and purposes of screen.</Typography>
+          <Typography variant='body1' className='paragraph'>Now that I had my focus areas from the affinity diagram and defined the journey steps, it was time to organize everything. I added the user goals, behaviors, and sentiments to create a customer journey map. This would give me a clearer picture of the website’s information architecture and help guide the design by identifying key screen purposes, opportunities, and guidelines.</Typography>
         </Grid>
         
         <Grid item xs={12}>

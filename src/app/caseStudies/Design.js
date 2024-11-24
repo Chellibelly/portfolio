@@ -8,7 +8,7 @@ export default function Design() {
   return (
       <Grid container justifyItems="center" justifyContent="center">
         <Grid item xs={10}>
-          <Typography variant='h1' className='heading1'>Enter Paper, Pencils, & Pixels</Typography>
+          <Typography variant='h1' className='heading1'>Paper, Pencils, & Pixels</Typography>
           <Typography variant='h2' className='heading2'>The Design</Typography>
         </Grid>
         <Grid item xs={10}>
