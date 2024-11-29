@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { useMediaQuery } from 'react-responsive';
 import { Typography, Box, Grid, List, ListItem, Button } from '@mui/material';
 import AffinityGroupList from './AffinityGroupsList';
+import AffinityGroupListMobile from './AffinityGroupListMobile';
 import Image from 'next/image';
 import AffinityDiagramGraphic from '../../../public/Affinity_Diagram.jpg';
 import WhiteboardPostItsGraphic from '../../../public/Whiteboard_PostIts.jpg';
@@ -25,6 +27,10 @@ import QuoteContainer from './QuoteContainer';
 
 
 export default function Analysis() {
+
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 1224px)'
+  })
 
   const categoryLabel = {
     textAlign: "center", 
@@ -125,7 +131,7 @@ export default function Analysis() {
         </Grid>
         
         <Box>
-          <AffinityGroupList/>
+          {isDesktopOrLaptop ? <AffinityGroupList/> : <AffinityGroupListMobile/>}
         </Box>
 
         <Grid item xs={10}>
