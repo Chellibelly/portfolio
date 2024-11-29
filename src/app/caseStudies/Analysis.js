@@ -1,4 +1,5 @@
-import { Typography, Box, Grid } from '@mui/material';
+import React, { useState } from 'react';
+import { Typography, Box, Grid, List, ListItem, Button } from '@mui/material';
 import AffinityGroupList from './AffinityGroupsList';
 import Image from 'next/image';
 import AffinityDiagramGraphic from '../../../public/Affinity_Diagram.jpg';
@@ -18,7 +19,8 @@ import CategoryPricingOpportunityGraphic from '../../../public/Category_Pricing_
 import CategoryLocationOpportunityGraphic from '../../../public/Category_Location_Opportunity.png';
 
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import { blue } from '@mui/material/colors';
+
+import { blue, grey } from '@mui/material/colors';
 import QuoteContainer from './QuoteContainer';
 
 
@@ -49,12 +51,23 @@ export default function Analysis() {
     fontWeight: "bold"
   };
 
+  const [journeyMap1Expanded, setJourneyMap1Expanded] = useState(false);
+  const [journeyMap2Expanded, setJourneyMap2Expanded] = useState(false);
+
+  const handleJourneyMap1Toggle = () => {
+    setJourneyMap1Expanded(!journeyMap1Expanded);
+  };
+
+  const handleJourneyMap2Toggle = () => {
+    setJourneyMap2Expanded(!journeyMap2Expanded);
+  };
+
   return (
       <Grid container justifyItems="center" justifyContent="center">
         <Grid item xs={10}>
           <Typography variant='h1' className='heading1'>The Forest Through the Trees</Typography>
           <Typography variant='h2' className='heading2'>The Analysis</Typography>
-          <Typography variant='body1' className='paragraph'>During my time earning my UX diploma, my instructor used an analogy I don’t ever think I’ll forget because I think it was a good one, but mostly because it was accompanied by a gross video clip of ground beef moving through a meat grinder. The point was, research is just raw material, and analysis is where you turn it into something useful. I had my "meat" - had piles of notes - and it was time to find meaning in all the chaos.</Typography>
+          <Typography variant='body1' className='paragraph'>One of my favorite methaphors has to do with “seeing the forest through the trees.” More or less, this means being able to draw the larger meaning, or bigger picture, out of the parts. I definitely had a bunch of trees - piles of research notes. Through analysis, I was hoping to make sense out of it all.</Typography>
           <Typography variant='body1' className='paragraph'>For some direction, I revisited my goal: creating a desirable product. When I first set that goal, I wasn’t sure what a desirable hotel booking site looked like. But now, with my research in hand, I hoped I could finally figure it out.</Typography>
         </Grid>
         
@@ -69,16 +82,16 @@ export default function Analysis() {
         
         <Grid item xs={10} sx={{ marginTop: 5, marginBottom: 5 }}>
           <Typography variant='h3' className='heading3'>Was There Really a Problem to Solve?</Typography>
-          <Typography variant='body1' className='paragraph'>I was excited to dig into the data, but I couldn’t help wondering: was there a real need for this? What problem were we solving? If we actually built this, would it be any better than the well-established competitors out there? At that point, I wasn’t so sure.</Typography>
+          <Typography variant='body1' className='paragraph'>I was excited to dig into the data, but I couldn’t help wondering: was there a real need for this? What problem were we solving? If we actually built this, would it be any better than the competitors?</Typography>
         </Grid>
 
         <QuoteContainer quote="People don't want to buy a quarter-inch drill. They want a quarter-inch hole!" author="Theodore Levitt"/>
 
         <Grid item xs={10} sx={{ marginBottom: 5 }}>
-          <Typography variant='h3' className='heading3'>Triangulating: I Should Buy a Bigger White Board</Typography>
-          <Typography variant='body1' className='paragraph'>Another metaphor I like has to do with “seeing the forest through the trees.” More or less, this metaphor means being able to draw the larger meaning, or bigger picture, out of the parts. I realized I had some trees. </Typography>
-          <Typography variant='body1' className='paragraph'>I learned that an affinity diagram is a method of triangulation where raw data is grouped into more meaningful categories to make sense of it. Rather than defining the categories up front, instead I would group like data together first, then based on the commonalities, define the groups that formed. In this way, natural groupings would form and help me decide what’s important without biasing the groupings with my own opinions. Essentially, this process would allow the data to speak for itself.</Typography>
-          <Typography variant='body1' className='paragraph'>My process consisted of setting myself up with stacks of sticky notes of varying colors, my office white board, and whiteboard markers. I focused on one research result set at a time, traversing through the survey results, benchmark research notes, interview answers, and usability videos and notes, spending about 10 minutes with each. I examined each, writing any significant factor down on a sticky note. When I was finished, I stuck each note on the whiteboard.</Typography>
+          <Typography variant='h3' className='heading3'>Triangulation (I Should Buy a Bigger White Board)</Typography>
+          <Typography variant='body1' className='paragraph'> </Typography>
+          <Typography variant='body1' className='paragraph'>I decided to start with an affinity diagram to organize all my notes. I grouped related data together first, then defined the categories based on commonalities. This way, natural groupings emerged, helping me focus on what's important without letting my own opinions influence the process. Essentially, it allowed the data to speak for itself.</Typography>
+          <Typography variant='body1' className='paragraph'>I gathered stacks of sticky notes in different colors, a whiteboard, and markers. I worked through one research set at a time—survey results, benchmark notes, interview answers, and usability videos—spending about 10 minutes on each. I wrote down key points on sticky notes and placed them on the whiteboard.</Typography>
         </Grid>
         
         <Grid item xs={12}>
@@ -116,25 +129,13 @@ export default function Analysis() {
         </Box>
 
         <Grid item xs={10}>
-        <Typography variant='h3' className='heading3'>A User Journey Was Beginning to Take Shape</Typography>
+        <Typography variant='h3' className='heading3'>A User Journey Taking Shape</Typography>
           <Typography variant='body1' className='paragraph'>
-            Many of the groups seemed to correspond to steps
-            of the process or screens. Room selection, date selection, pricing, and
-            account were major groups that we probably want to pay a great deal
-            of attention to during the rest of the design process, especially when
-            designing specific screens. 
+            Many of the groups I identified lined up with steps in the process or screens. Room selection, date selection, pricing, and account were key areas that would require close attention during the design, especially when focusing on specific screens.
           </Typography>
 
           <Typography variant='body1' className='paragraph'>
-            Navigation was also a major group the came out of research. We may
-            want to spend some time coming up with a good, solid navigation
-            pattern to help circumvent user concerns over where they are in the
-            process, how do they get to what they want, and what’s next.
-          </Typography>
-
-          <Typography variant='body1' className='paragraph'>
-            It felt important to me at this point, to define specific beats in the process that I was starting to visualize after the research and the affinity diagram excercise. 
-            There were about eight major parts of the booking journey where the user would need to complete tasks: home page (destination selection), date selection, hotel search, hotel selection, room selection, rate selection, add-ons, and booking completion (payment & contact details).
+            At this point, it felt crucial to define the key stages of the booking journey, which I had started to visualize through the research and affinity diagram. There were about eight major steps: home page (destination selection), date selection, hotel search, hotel selection, room selection, rate selection, add-ons, and booking completion (payment & contact details).
           </Typography>
         </Grid>
 
@@ -196,29 +197,102 @@ export default function Analysis() {
 
         <Grid item xs={10} sx={{ marginBottom: 5 }}>
           <Typography variant='h3' className='heading3'>The Customer Journey Map</Typography>
-          <Typography variant='body1' className='paragraph'>Now that I had my focus areas from the affinity diagram and defined the journey steps, it was time to organize everything. I added the user goals, behaviors, and sentiments to create a customer journey map. This would give me a clearer picture of the website’s information architecture and help guide the design by identifying key screen purposes, opportunities, and guidelines.</Typography>
+          <Typography variant='body1' className='paragraph'>With my focus areas from the affinity diagram and the journey steps defined, it was time to organize everything. I added user goals, behaviors, and sentiments to create a customer journey map. This helped me get a clearer picture of the website’s information architecture and guided the design by identifying key screen purposes, opportunities, and guidelines.</Typography>
         </Grid>
         
         <Grid item xs={12}>
-          <Image
-            className='graphic'
-            src={CustomerJourneyMapGraphic1}
-            width="100%"
-            alt="An image of a customer journey map (1 of 2)"
-          />
+
+        <Box>
+            {/* Preview image with fixed height */}
+            <Box
+              sx={{
+                height: journeyMap1Expanded ? 'auto' : '700px',
+                overflow: 'hidden',
+                position: 'relative',
+              }}
+            >
+              <Image
+                src={CustomerJourneyMapGraphic2}
+                width="100%"
+                alt="An image of a customer journey map (1 of 2)"
+                layout="responsive"
+                style={{
+                  objectFit: 'cover', // Maintain aspect ratio and prevent distortion
+                  transition: 'height 0.3s ease',
+                }} 
+              />
+            </Box>
+            {!journeyMap1Expanded &&
+            <Button
+              onClick={handleJourneyMap1Toggle}
+              variant="contained"
+              sx={{
+                width: '100%',            // Make the button take up the full width of the container
+                display: 'flex',          // Use flexbox to center content
+                justifyContent: 'center', // Center the text inside the button
+                padding: '10px',          // Add some padding for better visual appearance
+                backgroundColor: grey[200],
+                color: "black",
+                borderRadius: 0,
+                marginBottom: "50px",
+                '&:hover': {
+                  backgroundColor: blue[100], // Background color on hover
+                },
+              }}
+            >
+            {journeyMap1Expanded ? 'Show Less' : 'Show More'}
+            </Button>}
+          </Box>
+
+
+          <Box
+              sx={{
+                height: journeyMap2Expanded ? 'auto' : '700px',
+                overflow: 'hidden',
+                position: 'relative',
+              }}
+            >
+              <Image
+                src={CustomerJourneyMapGraphic1}
+                width="100%"
+                alt="An image of a customer journey map (1 of 2)"
+                layout="responsive"
+                style={{
+                  objectFit: 'cover', // Maintain aspect ratio and prevent distortion
+                  transition: 'height 0.3s ease',
+                }} 
+              />
+            </Box>
+
+            {!journeyMap2Expanded &&
+            <Button
+              onClick={handleJourneyMap2Toggle}
+              variant="contained"
+              sx={{
+                width: '100%',            // Make the button take up the full width of the container
+                display: 'flex',          // Use flexbox to center content
+                justifyContent: 'center', // Center the text inside the button
+                padding: '10px',          // Add some padding for better visual appearance
+                backgroundColor: grey[200],
+                color: "black",
+                borderRadius: 0,
+                '&:hover': {
+                  backgroundColor: blue[100], // Background color on hover
+                },
+              }}
+            >
+            {journeyMap2Expanded ? 'Show Less' : 'Show More'}
+            </Button>}
+         
+
           
-          <Image
-            className='graphic'
-            src={CustomerJourneyMapGraphic2}
-            width="100%"
-            alt="An image of a customer journey map (2 of 2)"
-          />
+          
         </Grid>
 
         <Grid item xs={10}>
           <Typography variant='h3' className='heading3'>The Eureka Moment</Typography>
-          <Typography variant='body1' className='paragraph'>The glaring bottom line made evident from the affinity diagram and the customer journey map was that the prevailing problem seemed to be a complete lack of – or at least confusing - information, often assuming the user knows something which they may not. This was something that was happening across every site I learned about, and highlighted by every user interviewed and surveyed. </Typography>
-          <Typography variant='body1' className='paragraph'>This is the point where my goal became clearer than it had been. There may not some huge obvious problem we needed to rectify, but instead there was an opportunity to do better. A desirable hotel booking site was one that would follow a process set by others in the business, but would do so while being completely transparent and forthcoming with information.</Typography>
+          <Typography variant='body1' className='paragraph'>The glaring bottom line made evident from the affinity diagram and customer journey map was clear: the main issue was a lack of (or at least confusing) information, often assuming users knew things they didn’t. This was a consistent problem across every site I researched and was highlighted by every user interviewed and surveyed.</Typography>
+          <Typography variant='body1' className='paragraph'>At this point, my goal became much clearer. While there might not have been a glaring problem to fix, there was an opportunity to improve. A desirable hotel booking site would follow industry standards but do so with complete transparency, providing users with all the information they need at every step.</Typography>
         </Grid>
 
         <QuoteContainer quote="Good research is not about finding what you expect to find; it’s about finding what’s actually there." author="Albert Szent-Györgyi"/>
@@ -226,7 +300,7 @@ export default function Analysis() {
         <Grid item xs={10}>
           <Typography variant='h3' className='heading3'>The Opportunity</Typography>
           <Typography variant='body1' className='paragraph'>
-            Every user I'd listened to seemed to be screaming that what they wanted was to able to visualize their trip. And I wanted to do everything I could to deliver that picture. This would be something that would set it apart from the others, make it stand out, and make it shine. Areas of transparency I would need to focus on would predominantly fall into one of four categories: hotel quality & amenities, hotel location & relation to places of interest, pricing & rate comparisons, and account & membership programs.
+            My analysis thus far revealed that the key areas of transparency I needed to focus on fell into four main categories: hotel quality and amenities, hotel location and its relation to places of interest, pricing and rate comparisons, and account and membership programs.
           </Typography>
         </Grid>
         
@@ -239,59 +313,110 @@ export default function Analysis() {
 
         <Grid container direction="row">
           <Grid item xs={3} sx={{ padding: "10px" }}>
-            <Box sx={{ height: 100 }}>
-              <Typography sx={{...categoryLabel, color: "#4A4A4A"}}>Hotel Quality & Amenities</Typography>
-            </Box>
             <Image
               src={CategoryHotelOpportunityGraphic}
               alt="A graphic depicting a hotel information category"
             />
+            <Box sx={{ height: 100 }}>
+              <Typography sx={{...categoryLabel, color: "#4A4A4A"}}>Hotel Quality & Amenities</Typography>
+            </Box>
             <Box>
-              <Typography sx={{ textAlign: "center", marginTop: 2, fontFamily: "Montserrat" }}>
-                Unknown hotel quality, limited hotel description, ambiguous amenity icons and labels, limited amenity descriptions
-              </Typography>
+            <List sx={{ listStyleType: 'disc' }}>
+              <ListItem sx={{ display: 'list-item' }}>
+                <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
+                  Unknown hotel quality
+                </Typography>
+              </ListItem>
+              <ListItem sx={{ display: 'list-item' }}>
+                <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
+                  Limited hotel descriptions
+                </Typography>
+              </ListItem>
+              <ListItem sx={{ display: 'list-item' }}>
+                <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
+                  Ambiguous amenity icons, labels, and descriptions
+                </Typography>
+              </ListItem>
+            </List>
             </Box>
           </Grid>
           <Grid item xs={3} sx={{ padding: "10px" }}>
-            <Box sx={{ height: 100 }}>
-              <Typography sx={{...categoryLabel, color: "#4A4A4A"}}>Hotel Location & Relation to Places of Interest</Typography>
-            </Box>
             <Image
               src={CategoryLocationOpportunityGraphic}
               alt="A graphic depicting a hotel location category"
             />
+            <Box sx={{ height: 100 }}>
+              <Typography sx={{...categoryLabel, color: "#4A4A4A"}}>Hotel Location & Relation to Places of Interest</Typography>
+            </Box>
             <Box>
-              <Typography sx={{ textAlign: "center", marginTop: 2, fontFamily: "Montserrat" }}>
-                Unexpected search results, unclear relation to the area, airports, or places of interest
-              </Typography>
+              <List sx={{ listStyleType: 'disc' }}>
+                <ListItem sx={{ display: 'list-item' }}>
+                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
+                  Unexpected search results
+                  </Typography>
+                </ListItem>
+                <ListItem sx={{ display: 'list-item' }}>
+                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
+                    Unclear relation to the area, airports, or places of interest
+                  </Typography>
+                </ListItem>
+              </List>
             </Box>
           </Grid>
           <Grid item xs={3} sx={{ padding: "10px" }}>
-            <Box sx={{ height: 100 }}>
-              <Typography sx={{...categoryLabel, color: "#4A4A4A"}}>Pricing & Rate Comparisons</Typography>
-            </Box>
             <Image
               src={CategoryPricingOpportunityGraphic}
               alt="A graphic depicting a hotel pricing category"
             />
+            <Box sx={{ height: 100 }}>
+              <Typography sx={{...categoryLabel, color: "#4A4A4A"}}>Pricing & Rate Comparisons</Typography>
+            </Box>
             <Box>
-              <Typography sx={{ textAlign: "center", marginTop: 2, fontFamily: "Montserrat" }}>
-                Unclear inclusions and limited descriptions of special rates, ambiguity between member and non-member rates, hidden fees, lack of pricing breakdowns
-              </Typography>
+              <List sx={{ listStyleType: 'disc' }}>
+                <ListItem sx={{ display: 'list-item' }}>
+                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
+                    Unclear inclusions and limited descriptions of special rates
+                  </Typography>
+                </ListItem>
+                <ListItem sx={{ display: 'list-item' }}>
+                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
+                    Ambiguity between member and non-member rates
+                  </Typography>
+                </ListItem>
+                <ListItem sx={{ display: 'list-item' }}>
+                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
+                   Lack of pricing breakdowns and hidden fees
+                  </Typography>
+                </ListItem>
+              </List>
             </Box>
           </Grid>
           <Grid item xs={3} sx={{ padding: "10px" }}>
-            <Box sx={{ height: 100 }}>
-              <Typography sx={{...categoryLabel, color: "#4A4A4A"}}>Account &  Membership Programs</Typography>
-            </Box>
             <Image
               src={CategoryAccountOpportunityGraphic}
               alt="A graphic depicting a hotel accounts category"
             />
+            <Box sx={{ height: 100 }}>
+              <Typography sx={{...categoryLabel, color: "#4A4A4A"}}>Account &  Membership Programs</Typography>
+            </Box>
             <Box>
-              <Typography sx={{ textAlign: "center", marginTop: 2, fontFamily: "Montserrat" }}>
-                Unintuitive membership opt-outs, unexplained perks or membership inclusions, not enough delineation between member and non-member options
-              </Typography>
+              <List sx={{ listStyleType: 'disc' }}>
+                <ListItem sx={{ display: 'list-item' }}>
+                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
+                    Unintuitive membership opt-outs
+                  </Typography>
+                </ListItem>
+                <ListItem sx={{ display: 'list-item' }}>
+                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
+                    Unexplained perks or membership inclusions
+                  </Typography>
+                </ListItem>
+                <ListItem sx={{ display: 'list-item' }}>
+                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
+                    Insufficient distinction between member and non-member options
+                  </Typography>
+                </ListItem>
+              </List>
             </Box>
           </Grid>
         </Grid>
@@ -305,63 +430,120 @@ export default function Analysis() {
 
         <Grid container direction="row">
           <Grid item xs={3} sx={{ padding: "10px" }}>
-            <Box sx={{ height: 100 }}>
-              <Typography sx={{...categoryLabel, color: "#4C2A61"}}>Hotel Quality & Amenities</Typography>
-            </Box>
             <Image
               className='graphic'
               src={CategoryHotelGraphic}
               alt="A graphic depicting a hotel information category"
             />
+            <Box sx={{ height: 100 }}>
+              <Typography sx={{...categoryLabel, color: "#4C2A61"}}>Hotel Quality & Amenities</Typography>
+            </Box>
             <Box>
-              <Typography sx={{ textAlign: "center", marginTop: 2, fontFamily: "Montserrat" }}>
-                Hotel quality rating prominently displayed, detailed hotel description, Clear amenity icons and labels, detailed amenity descriptions
-              </Typography>
+
+              <List sx={{ listStyleType: 'disc' }}>
+                <ListItem sx={{ display: 'list-item' }}>
+                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
+                    Hotel quality rating prominently displayed
+                  </Typography>
+                </ListItem>
+                <ListItem sx={{ display: 'list-item' }}>
+                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
+                    Detailed hotel description
+                  </Typography>
+                </ListItem>
+                <ListItem sx={{ display: 'list-item' }}>
+                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
+                    Clear amenity icons, labels,and descriptions
+                  </Typography>
+                </ListItem>
+              </List>
             </Box>
           </Grid>
           <Grid item xs={3} sx={{ padding: "10px" }}>
-            <Box sx={{ height: 100 }}>
-              <Typography sx={{...categoryLabel, color: "#2A4361"}}>Hotel Location & Relation to Places of Interest</Typography>
-            </Box>
             <Image
               className='graphic'
               src={CategoryLocationGraphic}
               alt="A graphic depicting a hotel location category"
             />
+            <Box sx={{ height: 100 }}>
+              <Typography sx={{...categoryLabel, color: "#2A4361"}}>Hotel Location & Relation to Places of Interest</Typography>
+            </Box>
             <Box>
-              <Typography sx={{ textAlign: "center", marginTop: 2, fontFamily: "Montserrat" }}>
-                Search results based on location-only for simplicity, intuitive map view option for search results for clear relation to area, points out when close to airports or points of interest
-              </Typography>
+              <List sx={{ listStyleType: 'disc' }}>
+                <ListItem sx={{ display: 'list-item' }}>
+                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
+                    Search results based on location-only for simplicity
+                  </Typography>
+                </ListItem>
+                <ListItem sx={{ display: 'list-item' }}>
+                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
+                    Intuitive map view options for search results, providing clear relationships to the area
+                  </Typography>
+                </ListItem>
+                <ListItem sx={{ display: 'list-item' }}>
+                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
+                    Emphasizes when close to airports or points of interest
+                  </Typography>
+                </ListItem>
+              </List>
             </Box>
           </Grid>
           <Grid item xs={3} sx={{ padding: "10px" }}>
-            <Box sx={{ height: 100 }}>
-              <Typography sx={{...categoryLabel, color: "#225515"}}>Pricing & Rate Comparisons</Typography>
-            </Box>
             <Image
               className='graphic'
               src={CategoryPricingGraphic}
               alt="A graphic depicting a hotel pricing category"
             />
+            <Box sx={{ height: 100 }}>
+              <Typography sx={{...categoryLabel, color: "#225515"}}>Pricing & Rate Comparisons</Typography>
+            </Box>
             <Box>
-              <Typography sx={{ textAlign: "center", marginTop: 2, fontFamily: "Montserrat" }}>
-                Clearly describes what is included in special rates, member and non-member rates clearly labeled and separated from each other, pricing breakdowns prominently displayed
-              </Typography>
+              <List sx={{ listStyleType: 'disc' }}>
+                <ListItem sx={{ display: 'list-item' }}>
+                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
+                    Clearly describes what is included in special rates
+                  </Typography>
+                </ListItem>
+                <ListItem sx={{ display: 'list-item' }}>
+                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
+                    Member and non-member rates clearly labeled and separated from each other
+                  </Typography>
+                </ListItem>
+                <ListItem sx={{ display: 'list-item' }}>
+                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
+                    pricing breakdowns prominently displayed
+                  </Typography>
+                </ListItem>
+              </List>
             </Box>
           </Grid>
           <Grid item xs={3} sx={{ padding: "10px" }}>
-            <Box sx={{ height: 100 }}>
-              <Typography sx={{...categoryLabel, color: "#B88523"}}>Account &  Membership Programs</Typography>
-            </Box>
             <Image
               className='graphic'
               src={CategoryAccountGraphic}
               alt="A graphic depicting a hotel accounts category"
             />
+            <Box sx={{ height: 100 }}>
+              <Typography sx={{...categoryLabel, color: "#B88523"}}>Account &  Membership Programs</Typography>
+            </Box>
             <Box>
-              <Typography sx={{ textAlign: "center", marginTop: 2, fontFamily: "Montserrat" }}>
-                Clear opt-out of membership programs, fully explained perks and membership inclusions, plenty of delineation between member and non-member options
-              </Typography>
+              <List sx={{ listStyleType: 'disc' }}>
+                <ListItem sx={{ display: 'list-item' }}>
+                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
+                    Clear opt-out of membership programs
+                  </Typography>
+                </ListItem>
+                <ListItem sx={{ display: 'list-item' }}>
+                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
+                    Fully explained perks and membership inclusions
+                  </Typography>
+                </ListItem>
+                <ListItem sx={{ display: 'list-item' }}>
+                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
+                    Plenty of delineation between member and non-member options
+                  </Typography>
+                </ListItem>
+              </List>
             </Box>
           </Grid>
         </Grid>

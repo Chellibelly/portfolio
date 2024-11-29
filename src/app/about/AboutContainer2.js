@@ -33,25 +33,25 @@ const AboutContainer = () => {
               </Paper>
             </Grid>
             <Grid item xs={7}>
-              <Typography variant="h4" sx={{ fontFamily: "Playpen Sans" }}>My History</Typography>
+              <Typography variant="h4" sx={{ fontFamily: "Playpen Sans" }}>What I do</Typography>
               <Typography className="heading5" sx={{ marginTop: 4 }} variant="h5">
-                I've worked for the past seven years in the software development space as an engineer, designer, leader, and certified problem-solver.
+                I've always been interested in usability, human psychology, and design - well before I knew "UX/UI" existed. 
+                I've worked with UX professionals over the last several years as a part of my job as a software engineer, and I'm ready to take my career in the direction of research and design.
               </Typography>
               <Typography className="heading5" sx={{ marginTop: 1 }} variant="h5">
-                I've worked with various stakeholders and IT professionals to deliver software solutions in an agile environment both in office and remotely. 
-                I've built a toolbox of a variety of programming languages including JavaScript (React.js), CSS, HTML5, C#, and SQL. 
-              </Typography>
+                I have both a Bachelor's degree in Applied Computer Science and a professional diploma in UX. During my UX program, I took on a <Link href="/">case study</Link> and learned the ins and outs of mixed research methods, usability testing, analysis, wireframing, high-fidelity design, and prototyping.
+              </Typography>   
             </Grid>
           </Grid>
           <Grid container justifyContent="space-around" sx={{ marginBottom: 5 }}>
           <Grid item xs={7}>
-            <Typography variant="h4" sx={{ fontFamily: "Playpen Sans" }}>My Future</Typography>
+            <Typography variant="h4" sx={{ fontFamily: "Playpen Sans" }}>Where I've Been</Typography>
             <Typography className="heading5" sx={{ marginTop: 4 }} variant="h5">
-              Recently my journey has taken me into the field of UX. I've always been interested in usability, human psychology, and design, even before I knew UX existed. 
-              I've worked with UX professionals over the last several years as a part of my job as a software engineer, and I'm ready to take my career in the direction of research and design.
+              I've worked for the past seven years in the software development space as an engineer, designer, leader, and certified problem-solver.
             </Typography>
             <Typography className="heading5" sx={{ marginTop: 1 }} variant="h5">
-              I have a Bachelor's degree in Applied Computer Science under my belt, and I recently attained a professional diploma in UX. During the program, I took on a <Link href="/">case study</Link> and learned the ins and outs of mixed research methods, usability testing, analysis, wireframing, high-fidelity design, and prototyping.
+              I've worked with various stakeholders and IT professionals to deliver software solutions in an agile environment both in office and remotely. 
+              I've built a toolbox of a variety of programming languages including JavaScript (React.js), CSS, HTML5, C#, and SQL. 
             </Typography>
             </Grid>
             <Grid item xs={3}>
@@ -85,7 +85,7 @@ const AboutContainer = () => {
               </Paper>
             </Grid>
             <Grid item xs={7}>
-            <Typography variant="h4" sx={{ fontFamily: "Playpen Sans" }}>My Present</Typography>
+            <Typography variant="h4" sx={{ fontFamily: "Playpen Sans" }}>Who I am</Typography>
             <Typography className="heading5" sx={{ marginTop: 4 }} variant="h5">
               When I'm not working or honing my technology skills, I enjoy travelling with husband and our adorable black lab, Badger. 
               I like to frequent coffee shops, meet new people, draw, craft, crochet, decorate, and play games of both the board and video variety.
