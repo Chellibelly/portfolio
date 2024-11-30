@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
-import { Typography, Box, Grid, List, ListItem, Button } from '@mui/material';
+import { Typography, Box, Grid, List, ListItem, Button, Divider } from '@mui/material';
+import CheckIcon from '@mui/icons-material/Check';
+import CloseIcon from '@mui/icons-material/Close';
 import AffinityGroupList from './AffinityGroupsList';
 import AffinityGroupListMobile from './AffinityGroupListMobile';
 import Image from 'next/image';
@@ -137,10 +139,6 @@ export default function Analysis() {
         <Grid item xs={10}>
         <Typography variant='h3' className='heading3'>A User Journey Taking Shape</Typography>
           <Typography variant='body1' className='paragraph'>
-            Many of the groups I identified lined up with steps in the process or screens. Room selection, date selection, pricing, and account were key areas that would require close attention during the design, especially when focusing on specific screens.
-          </Typography>
-
-          <Typography variant='body1' className='paragraph'>
             At this point, it felt crucial to define the key stages of the booking journey, which I had started to visualize through the research and affinity diagram. There were about eight major steps: home page (destination selection), date selection, hotel search, hotel selection, room selection, rate selection, add-ons, and booking completion (payment & contact details).
           </Typography>
         </Grid>
@@ -212,7 +210,7 @@ export default function Analysis() {
             {/* Preview image with fixed height */}
             <Box
               sx={{
-                height: journeyMap1Expanded ? 'auto' : '700px',
+                height: journeyMap1Expanded ? 'auto' : isDesktopOrLaptop ? '700px' : '400px',
                 overflow: 'hidden',
                 position: 'relative',
               }}
@@ -253,7 +251,7 @@ export default function Analysis() {
 
           <Box
               sx={{
-                height: journeyMap2Expanded ? 'auto' : '700px',
+                height: journeyMap2Expanded ? 'auto' : isDesktopOrLaptop ? '700px' : '400px',
                 overflow: 'hidden',
                 position: 'relative',
               }}
@@ -275,15 +273,15 @@ export default function Analysis() {
               onClick={handleJourneyMap2Toggle}
               variant="contained"
               sx={{
-                width: '100%',            // Make the button take up the full width of the container
-                display: 'flex',          // Use flexbox to center content
-                justifyContent: 'center', // Center the text inside the button
-                padding: '10px',          // Add some padding for better visual appearance
+                width: '100%',            
+                display: 'flex',          
+                justifyContent: 'center', 
+                padding: '10px',          
                 backgroundColor: grey[200],
                 color: "black",
                 borderRadius: 0,
                 '&:hover': {
-                  backgroundColor: blue[100], // Background color on hover
+                  backgroundColor: blue[100], 
                 },
               }}
             >
@@ -304,253 +302,430 @@ export default function Analysis() {
         <QuoteContainer quote="Good research is not about finding what you expect to find; it’s about finding what’s actually there." author="Albert Szent-Györgyi"/>
 
         <Grid item xs={10}>
-          <Typography variant='h3' className='heading3'>The Opportunity</Typography>
+          <Typography variant='h3' className='heading3'>Opportunities</Typography>
           <Typography variant='body1' className='paragraph'>
             My analysis thus far revealed that the key areas of transparency I needed to focus on fell into four main categories: hotel quality and amenities, hotel location and its relation to places of interest, pricing and rate comparisons, and account and membership programs.
           </Typography>
         </Grid>
-        
-        <Grid container direction="row" justifyContent="center" sx={{ marginBottom: 3, marginTop: 5 }}>
-          <Grid item>
-            <Typography sx={{ fontSize: 50, fontFamily: "Montserrat" }}>The Other Guys</Typography>
-          </Grid>
-        </Grid>
 
 
-        <Grid container direction="row">
-          <Grid item xs={3} sx={{ padding: "10px" }}>
+
+        {/*New Quality*/}
+        <Grid container direction="row" justifyContent="flex-start" sx={{ marginTop: 5 }}>
+          {isDesktopOrLaptop && <Grid item xs={3} sx={{ 
+              display: 'flex',         
+              flexDirection: 'column', 
+              justifyContent: "center",
+              marginRight: 1 }}>
+            <Typography sx={{...categoryLabel, color: blue[700], fontSize: 26}}>Hotel Quality & Amenities</Typography>
+          </Grid>}
+          <Grid item xs={isDesktopOrLaptop ? 4 : 6} sx={{
+              display: 'flex',         
+              flexDirection: 'column', 
+              alignItems: 'center',
+            }}>
             <Image
-              src={CategoryHotelOpportunityGraphic}
-              alt="A graphic depicting a hotel information category"
-            />
-            <Box sx={{ height: 100 }}>
-              <Typography sx={{...categoryLabel, color: "#4A4A4A"}}>Hotel Quality & Amenities</Typography>
-            </Box>
-            <Box>
-            <List sx={{ listStyleType: 'disc' }}>
-              <ListItem sx={{ display: 'list-item' }}>
-                <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
+                src={CategoryHotelOpportunityGraphic}
+                alt="A graphic depicting a hotel information category"
+                width={isDesktopOrLaptop ? 200 : 160}
+              />
+            <Typography sx={{ ...categoryLabel }}>The Other Guys</Typography>
+            <List>
+              <ListItem sx={{ display: 'flex', alignItems: 'center' }}> {/* Use flex layout for list item */}
+                <CloseIcon sx={{ color: 'red', marginRight: 1 }} /> {/* Check icon */}
+                <Typography
+                  sx={{
+                    fontFamily: '"Montserrat", sans-serif', // Custom font
+                    fontSize: '16px'
+                  }}
+                >
                   Unknown hotel quality
                 </Typography>
               </ListItem>
-              <ListItem sx={{ display: 'list-item' }}>
-                <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
+              <ListItem sx={{ display: 'flex', alignItems: 'center' }}>
+                <CloseIcon sx={{ color: 'red', marginRight: 1 }} />
+                <Typography
+                  sx={{
+                    fontFamily: '"Montserrat", sans-serif', // Custom font
+                    fontSize: '16px'
+                  }}
+                >
                   Limited hotel descriptions
                 </Typography>
               </ListItem>
-              <ListItem sx={{ display: 'list-item' }}>
-                <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
+              <ListItem sx={{ display: 'flex', alignItems: 'center' }}>
+                <CloseIcon sx={{ color: 'red', marginRight: 1 }} />
+                <Typography
+                  sx={{
+                    fontFamily: '"Montserrat", sans-serif', // Custom font
+                    fontSize: '16px'
+                  }}
+                >
                   Ambiguous amenity icons, labels, and descriptions
                 </Typography>
               </ListItem>
             </List>
-            </Box>
           </Grid>
-          <Grid item xs={3} sx={{ padding: "10px" }}>
+          <Grid item xs={isDesktopOrLaptop ? 4 : 6} sx={{               
+              display: 'flex',         
+              flexDirection: 'column', 
+              alignItems: 'center',
+               }}>
             <Image
-              src={CategoryLocationOpportunityGraphic}
-              alt="A graphic depicting a hotel location category"
-            />
-            <Box sx={{ height: 100 }}>
-              <Typography sx={{...categoryLabel, color: "#4A4A4A"}}>Hotel Location & Relation to Places of Interest</Typography>
-            </Box>
-            <Box>
-              <List sx={{ listStyleType: 'disc' }}>
-                <ListItem sx={{ display: 'list-item' }}>
-                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
+                src={CategoryHotelGraphic}
+                alt="A graphic depicting a hotel information category"
+                width={isDesktopOrLaptop ? 200 : 160}
+              />
+              <Typography sx={{ ...categoryLabel }}>Opportunities</Typography>
+            <List>
+              <ListItem sx={{ display: 'flex', alignItems: 'center' }}> {/* Use flex layout for list item */}
+                <CheckIcon sx={{ color: 'green', marginRight: 1 }} /> {/* Check icon */}
+                <Typography
+                  sx={{
+                    fontFamily: '"Montserrat", sans-serif', // Custom font
+                    fontSize: '16px'
+                  }}
+                >
+                  Hotel quality rating prominently displayed
+                </Typography>
+              </ListItem>
+              <ListItem sx={{ display: 'flex', alignItems: 'center' }}>
+                <CheckIcon sx={{ color: 'green', marginRight: 1 }} />
+                <Typography
+                  sx={{
+                    fontFamily: '"Montserrat", sans-serif', // Custom font
+                    fontSize: '16px'
+                  }}
+                >
+                  Detailed hotel description
+                </Typography>
+              </ListItem>
+              <ListItem sx={{ display: 'flex', alignItems: 'center' }}>
+                <CheckIcon sx={{ color: 'green', marginRight: 1 }} />
+                <Typography
+                  sx={{
+                    fontFamily: '"Montserrat", sans-serif', // Custom font
+                    fontSize: '16px'
+                  }}
+                >
+                  Clear amenity icons, labels,and descriptions
+                </Typography>
+              </ListItem>
+            </List>
+          </Grid>
+        </Grid>
+        <Grid item xs={12}>
+          <Divider sx={{ width: '100%', marginTop: 2 }} /> {/* Ensures it spans full width */}
+        </Grid>
+
+
+        {/*New Location*/}
+        <Grid container direction="row" justifyContent="flex-start" sx={{ marginTop: 5 }}>
+          {isDesktopOrLaptop && <Grid item xs={3} sx={{ 
+              display: 'flex',         
+              flexDirection: 'column', 
+              justifyContent: "center",
+              marginRight: 1 }}>
+            <Typography sx={{...categoryLabel, color: blue[700], fontSize: 24}}>Hotel Location & Relation to Places of Interest</Typography>
+          </Grid>}
+          <Grid item xs={isDesktopOrLaptop ? 4 : 6} sx={{
+              display: 'flex',         
+              flexDirection: 'column', 
+              alignItems: 'center' 
+            }}>
+            <Image
+                src={CategoryLocationOpportunityGraphic}
+                alt="A graphic depicting a hotel information category"
+                width={isDesktopOrLaptop ? 200 : 160}
+              />
+            <Typography sx={{ ...categoryLabel }}>The Other Guys</Typography>
+            <List>
+              <ListItem sx={{ display: 'flex', alignItems: 'center' }}> {/* Use flex layout for list item */}
+                <CloseIcon sx={{ color: 'red', marginRight: 1 }} /> {/* Check icon */}
+                <Typography
+                  sx={{
+                    fontFamily: '"Montserrat", sans-serif', // Custom font
+                    fontSize: '16px'
+                  }}
+                >
                   Unexpected search results
-                  </Typography>
-                </ListItem>
-                <ListItem sx={{ display: 'list-item' }}>
-                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                    Unclear relation to the area, airports, or places of interest
-                  </Typography>
-                </ListItem>
-              </List>
-            </Box>
+                </Typography>
+              </ListItem>
+              <ListItem sx={{ display: 'flex', alignItems: 'center' }}>
+                <CloseIcon sx={{ color: 'red', marginRight: 1 }} />
+                <Typography
+                  sx={{
+                    fontFamily: '"Montserrat", sans-serif', // Custom font
+                    fontSize: '16px'
+                  }}
+                >
+                  Unclear relation to the area, airports, or places of interest
+                </Typography>
+              </ListItem>
+            </List>
           </Grid>
-          <Grid item xs={3} sx={{ padding: "10px" }}>
+          <Grid item xs={isDesktopOrLaptop ? 4 : 6} sx={{               
+              display: 'flex',         
+              flexDirection: 'column', 
+              alignItems: 'center'  }}>
             <Image
-              src={CategoryPricingOpportunityGraphic}
-              alt="A graphic depicting a hotel pricing category"
-            />
-            <Box sx={{ height: 100 }}>
-              <Typography sx={{...categoryLabel, color: "#4A4A4A"}}>Pricing & Rate Comparisons</Typography>
-            </Box>
-            <Box>
-              <List sx={{ listStyleType: 'disc' }}>
-                <ListItem sx={{ display: 'list-item' }}>
-                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                    Unclear inclusions and limited descriptions of special rates
-                  </Typography>
-                </ListItem>
-                <ListItem sx={{ display: 'list-item' }}>
-                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                    Ambiguity between member and non-member rates
-                  </Typography>
-                </ListItem>
-                <ListItem sx={{ display: 'list-item' }}>
-                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                   Lack of pricing breakdowns and hidden fees
-                  </Typography>
-                </ListItem>
-              </List>
-            </Box>
-          </Grid>
-          <Grid item xs={3} sx={{ padding: "10px" }}>
-            <Image
-              src={CategoryAccountOpportunityGraphic}
-              alt="A graphic depicting a hotel accounts category"
-            />
-            <Box sx={{ height: 100 }}>
-              <Typography sx={{...categoryLabel, color: "#4A4A4A"}}>Account &  Membership Programs</Typography>
-            </Box>
-            <Box>
-              <List sx={{ listStyleType: 'disc' }}>
-                <ListItem sx={{ display: 'list-item' }}>
-                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                    Unintuitive membership opt-outs
-                  </Typography>
-                </ListItem>
-                <ListItem sx={{ display: 'list-item' }}>
-                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                    Unexplained perks or membership inclusions
-                  </Typography>
-                </ListItem>
-                <ListItem sx={{ display: 'list-item' }}>
-                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                    Insufficient distinction between member and non-member options
-                  </Typography>
-                </ListItem>
-              </List>
-            </Box>
+                src={CategoryLocationGraphic}
+                alt="A graphic depicting a hotel information category"
+                width={isDesktopOrLaptop ? 200 : 160}
+              />
+            <Typography sx={{ ...categoryLabel }}>Opportunities</Typography>
+            <List>
+              <ListItem sx={{ display: 'flex', alignItems: 'center' }}> {/* Use flex layout for list item */}
+                <CheckIcon sx={{ color: 'green', marginRight: 1 }} /> {/* Check icon */}
+                <Typography
+                  sx={{
+                    fontFamily: '"Montserrat", sans-serif', // Custom font
+                    fontSize: '16px'
+                  }}
+                >
+                  Search results based on location-only for simplicity
+                </Typography>
+              </ListItem>
+              <ListItem sx={{ display: 'flex', alignItems: 'center' }}>
+                <CheckIcon sx={{ color: 'green', marginRight: 1 }} />
+                <Typography
+                  sx={{
+                    fontFamily: '"Montserrat", sans-serif', // Custom font
+                    fontSize: '16px'
+                  }}
+                >
+                  Intuitive map view options for search results, providing clear relationships to the area
+                </Typography>
+              </ListItem>
+              <ListItem sx={{ display: 'flex', alignItems: 'center' }}>
+                <CheckIcon sx={{ color: 'green', marginRight: 1 }} />
+                <Typography
+                  sx={{
+                    fontFamily: '"Montserrat", sans-serif', // Custom font
+                    fontSize: '16px'
+                  }}
+                >
+                  Emphasizes when close to airports or points of interest
+                </Typography>
+              </ListItem>
+            </List>
           </Grid>
         </Grid>
-
-        <Grid container direction="row" justifyContent="center" sx={{ marginBottom: 3, marginTop: 6 }}>
-          <Grid item>
-            <Typography sx={{ fontSize: 50, fontFamily: "Montserrat" }}>Menagerie Hotels</Typography>
-          </Grid>
+        <Grid item xs={12}>
+          <Divider sx={{ width: '100%', marginTop: 2 }} /> {/* Ensures it spans full width */}
         </Grid>
 
 
-        <Grid container direction="row">
-          <Grid item xs={3} sx={{ padding: "10px" }}>
-            <Image
-              className='graphic'
-              src={CategoryHotelGraphic}
-              alt="A graphic depicting a hotel information category"
-            />
-            <Box sx={{ height: 100 }}>
-              <Typography sx={{...categoryLabel, color: "#4C2A61"}}>Hotel Quality & Amenities</Typography>
-            </Box>
-            <Box>
 
-              <List sx={{ listStyleType: 'disc' }}>
-                <ListItem sx={{ display: 'list-item' }}>
-                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                    Hotel quality rating prominently displayed
-                  </Typography>
-                </ListItem>
-                <ListItem sx={{ display: 'list-item' }}>
-                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                    Detailed hotel description
-                  </Typography>
-                </ListItem>
-                <ListItem sx={{ display: 'list-item' }}>
-                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                    Clear amenity icons, labels,and descriptions
-                  </Typography>
-                </ListItem>
-              </List>
-            </Box>
-          </Grid>
-          <Grid item xs={3} sx={{ padding: "10px" }}>
+        {/*New Pricing*/}
+        <Grid container direction="row" justifyContent="flex-start" sx={{ marginTop: 5 }}>
+          {isDesktopOrLaptop && <Grid item xs={3} sx={{ 
+              display: 'flex',         
+              flexDirection: 'column', 
+              justifyContent: "center",
+              marginRight: 1 }}>
+            <Typography sx={{...categoryLabel, color: blue[700], fontSize: 26}}>Pricing & Rate Comparisons</Typography>
+          </Grid>}
+          <Grid item xs={isDesktopOrLaptop ? 4 : 6} sx={{
+              display: 'flex',         
+              flexDirection: 'column', 
+              alignItems: 'center' 
+            }}>
             <Image
-              className='graphic'
-              src={CategoryLocationGraphic}
-              alt="A graphic depicting a hotel location category"
-            />
-            <Box sx={{ height: 100 }}>
-              <Typography sx={{...categoryLabel, color: "#2A4361"}}>Hotel Location & Relation to Places of Interest</Typography>
-            </Box>
-            <Box>
-              <List sx={{ listStyleType: 'disc' }}>
-                <ListItem sx={{ display: 'list-item' }}>
-                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                    Search results based on location-only for simplicity
-                  </Typography>
-                </ListItem>
-                <ListItem sx={{ display: 'list-item' }}>
-                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                    Intuitive map view options for search results, providing clear relationships to the area
-                  </Typography>
-                </ListItem>
-                <ListItem sx={{ display: 'list-item' }}>
-                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                    Emphasizes when close to airports or points of interest
-                  </Typography>
-                </ListItem>
-              </List>
-            </Box>
+                src={CategoryPricingOpportunityGraphic}
+                alt="A graphic depicting a hotel information category"
+                width={isDesktopOrLaptop ? 200 : 160}
+              />
+            <Typography sx={{ ...categoryLabel }}>The Other Guys</Typography>
+            <List>
+              <ListItem sx={{ display: 'flex', alignItems: 'center' }}> {/* Use flex layout for list item */}
+                <CloseIcon sx={{ color: 'red', marginRight: 1 }} /> {/* Check icon */}
+                <Typography
+                  sx={{
+                    fontFamily: '"Montserrat", sans-serif', // Custom font
+                    fontSize: '16px'
+                  }}
+                >
+                  Unclear inclusions and limited descriptions of special rates
+                </Typography>
+              </ListItem>
+              <ListItem sx={{ display: 'flex', alignItems: 'center' }}>
+                <CloseIcon sx={{ color: 'red', marginRight: 1 }} />
+                <Typography
+                  sx={{
+                    fontFamily: '"Montserrat", sans-serif', // Custom font
+                    fontSize: '16px'
+                  }}
+                >
+                  Ambiguity between member and non-member rates
+                </Typography>
+              </ListItem>
+              <ListItem sx={{ display: 'flex', alignItems: 'center' }}>
+                <CloseIcon sx={{ color: 'red', marginRight: 1 }} />
+                <Typography
+                  sx={{
+                    fontFamily: '"Montserrat", sans-serif', // Custom font
+                    fontSize: '16px'
+                  }}
+                >
+                  Lack of pricing breakdowns and hidden fees
+                </Typography>
+              </ListItem>
+            </List>
           </Grid>
-          <Grid item xs={3} sx={{ padding: "10px" }}>
+          <Grid item xs={isDesktopOrLaptop ? 4 : 6} sx={{               
+              display: 'flex',         
+              flexDirection: 'column', 
+              alignItems: 'center'  }}>
             <Image
-              className='graphic'
-              src={CategoryPricingGraphic}
-              alt="A graphic depicting a hotel pricing category"
-            />
-            <Box sx={{ height: 100 }}>
-              <Typography sx={{...categoryLabel, color: "#225515"}}>Pricing & Rate Comparisons</Typography>
-            </Box>
-            <Box>
-              <List sx={{ listStyleType: 'disc' }}>
-                <ListItem sx={{ display: 'list-item' }}>
-                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                    Clearly describes what is included in special rates
-                  </Typography>
-                </ListItem>
-                <ListItem sx={{ display: 'list-item' }}>
-                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                    Member and non-member rates clearly labeled and separated from each other
-                  </Typography>
-                </ListItem>
-                <ListItem sx={{ display: 'list-item' }}>
-                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                    pricing breakdowns prominently displayed
-                  </Typography>
-                </ListItem>
-              </List>
-            </Box>
+                src={CategoryPricingGraphic}
+                alt="A graphic depicting a hotel information category"
+                width={isDesktopOrLaptop ? 200 : 160}
+              />
+            <Typography sx={{ ...categoryLabel }}>Opportunities</Typography>
+            <List>
+              <ListItem sx={{ display: 'flex', alignItems: 'center' }}> {/* Use flex layout for list item */}
+                <CheckIcon sx={{ color: 'green', marginRight: 1 }} /> {/* Check icon */}
+                <Typography
+                  sx={{
+                    fontFamily: '"Montserrat", sans-serif', // Custom font
+                    fontSize: '16px'
+                  }}
+                >
+                  Clearly describes what is included in special rates
+                </Typography>
+              </ListItem>
+              <ListItem sx={{ display: 'flex', alignItems: 'center' }}>
+                <CheckIcon sx={{ color: 'green', marginRight: 1 }} />
+                <Typography
+                  sx={{
+                    fontFamily: '"Montserrat", sans-serif', // Custom font
+                    fontSize: '16px'
+                  }}
+                >
+                  Member and non-member rates clearly labeled and separated from each other
+                </Typography>
+              </ListItem>
+              <ListItem sx={{ display: 'flex', alignItems: 'center' }}>
+                <CheckIcon sx={{ color: 'green', marginRight: 1 }} />
+                <Typography
+                  sx={{
+                    fontFamily: '"Montserrat", sans-serif', // Custom font
+                    fontSize: '16px'
+                  }}
+                >
+                  Pricing breakdowns prominently displayed
+                </Typography>
+              </ListItem>
+            </List>
           </Grid>
-          <Grid item xs={3} sx={{ padding: "10px" }}>
+        </Grid>
+        <Grid item xs={12}>
+          <Divider sx={{ width: '100%', marginTop: 2 }} /> {/* Ensures it spans full width */}
+        </Grid>
+
+
+        {/*New Account*/}
+        <Grid container direction="row" justifyContent="flex-start" sx={{ marginTop: 5 }}>
+          {isDesktopOrLaptop && <Grid item xs={3} sx={{ 
+              display: 'flex',         
+              flexDirection: 'column', 
+              justifyContent: "center",
+              marginRight: 1 }}>
+            <Typography sx={{...categoryLabel, color: blue[700], fontSize: 26}}>Account &  Membership Programs</Typography>
+          </Grid>}
+          <Grid item xs={isDesktopOrLaptop ? 4 : 6} sx={{
+              display: 'flex',         
+              flexDirection: 'column', 
+              alignItems: 'center' 
+            }}>
             <Image
-              className='graphic'
-              src={CategoryAccountGraphic}
-              alt="A graphic depicting a hotel accounts category"
-            />
-            <Box sx={{ height: 100 }}>
-              <Typography sx={{...categoryLabel, color: "#B88523"}}>Account &  Membership Programs</Typography>
-            </Box>
-            <Box>
-              <List sx={{ listStyleType: 'disc' }}>
-                <ListItem sx={{ display: 'list-item' }}>
-                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                    Clear opt-out of membership programs
-                  </Typography>
-                </ListItem>
-                <ListItem sx={{ display: 'list-item' }}>
-                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                    Fully explained perks and membership inclusions
-                  </Typography>
-                </ListItem>
-                <ListItem sx={{ display: 'list-item' }}>
-                  <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                    Plenty of delineation between member and non-member options
-                  </Typography>
-                </ListItem>
-              </List>
-            </Box>
+                src={CategoryAccountOpportunityGraphic}
+                alt="A graphic depicting a hotel information category"
+                width={isDesktopOrLaptop ? 200 : 160}
+              />
+            <Typography sx={{ ...categoryLabel }}>The Other Guys</Typography>
+            <List>
+              <ListItem sx={{ display: 'flex', alignItems: 'center' }}> {/* Use flex layout for list item */}
+                <CloseIcon sx={{ color: 'red', marginRight: 1 }} /> {/* Check icon */}
+                <Typography
+                  sx={{
+                    fontFamily: '"Montserrat", sans-serif', // Custom font
+                    fontSize: '16px'
+                  }}
+                >
+                  Unintuitive membership opt-outs
+                </Typography>
+              </ListItem>
+              <ListItem sx={{ display: 'flex', alignItems: 'center' }}>
+                <CloseIcon sx={{ color: 'red', marginRight: 1 }} />
+                <Typography
+                  sx={{
+                    fontFamily: '"Montserrat", sans-serif', // Custom font
+                    fontSize: '16px'
+                  }}
+                >
+                  Unexplained perks or membership inclusions
+                </Typography>
+              </ListItem>
+              <ListItem sx={{ display: 'flex', alignItems: 'center' }}>
+                <CloseIcon sx={{ color: 'red', marginRight: 1 }} />
+                <Typography
+                  sx={{
+                    fontFamily: '"Montserrat", sans-serif', // Custom font
+                    fontSize: '16px'
+                  }}
+                >
+                  Insufficient distinction between member and non-member options
+                </Typography>
+              </ListItem>
+            </List>
+          </Grid>
+          <Grid item xs={isDesktopOrLaptop ? 4 : 6} sx={{               
+              display: 'flex',         
+              flexDirection: 'column', 
+              alignItems: 'center'  }}>
+            <Image
+                src={CategoryAccountGraphic}
+                alt="A graphic depicting a hotel information category"
+                width={isDesktopOrLaptop ? 200 : 160}
+              />
+            <Typography sx={{ ...categoryLabel }}>Opportunities</Typography>
+            <List>
+              <ListItem sx={{ display: 'flex', alignItems: 'center' }}> {/* Use flex layout for list item */}
+                <CheckIcon sx={{ color: 'green', marginRight: 1 }} /> {/* Check icon */}
+                <Typography
+                  sx={{
+                    fontFamily: '"Montserrat", sans-serif', // Custom font
+                    fontSize: '16px'
+                  }}
+                >
+                  Clear opt-out of membership programs
+                </Typography>
+              </ListItem>
+              <ListItem sx={{ display: 'flex', alignItems: 'center' }}>
+                <CheckIcon sx={{ color: 'green', marginRight: 1 }} />
+                <Typography
+                  sx={{
+                    fontFamily: '"Montserrat", sans-serif', // Custom font
+                    fontSize: '16px'
+                  }}
+                >
+                  Fully explained perks and membership inclusions
+                </Typography>
+              </ListItem>
+              <ListItem sx={{ display: 'flex', alignItems: 'center' }}>
+                <CheckIcon sx={{ color: 'green', marginRight: 1 }} />
+                <Typography
+                  sx={{
+                    fontFamily: '"Montserrat", sans-serif', // Custom font
+                    fontSize: '16px'
+                  }}
+                >
+                  Plenty of delineation between member and non-member options
+                </Typography>
+              </ListItem>
+            </List>
           </Grid>
         </Grid>
       </Grid>

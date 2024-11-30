@@ -35,15 +35,12 @@ export default function MenuAppBar() {
   };
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+    <Box sx={{ display: 'flex' }}>
+      <AppBar component="nav">
         <Toolbar>
             <div>
               <IconButton
                 size="large"
-                aria-label="account of current user"
-                aria-controls="menu-appbar"
-                aria-haspopup="true"
                 onClick={handleMenu}
                 color="inherit"
               >
