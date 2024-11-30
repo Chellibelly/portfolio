@@ -12,7 +12,7 @@ const AboutContainerMobile = () => {
   return (
     <div>
       <HeaderMobile/>
-      <Box display="flex" alignItems="center" height="100vh" flexDirection="column" style={{marginBottom: "500px"}}>
+      <Box display="flex" alignItems="center" height="100vh" flexDirection="column" style={{marginBottom: "500px", marginTop: "50px"}}>
       <Typography variant="h1" sx={{ textAlign: "center", fontSize: 80, mb: 5, mt: 5, fontFamily: "Playpen Sans", color: blue[300]}}>
             Hi, I'm Chelsea!
       </Typography>
@@ -24,10 +24,10 @@ const AboutContainerMobile = () => {
       <Typography variant="h4" sx={{ fontFamily: "Playpen Sans", margin: 3 }}>What I do</Typography>
       <Typography className="heading5" sx={{ ml: 3, mr: 3 }} variant="h5">
       I've always been interested in usability, human psychology, and design - well before I knew "UX/UI" existed. 
-      I've worked with UX professionals over the last several years as a part of my job as a software engineer, and I'm ready to take my career in the direction of research and design.
+      Over the years, I've collaborated with UX professionals in my role as a software engineer, and now I’m ready to pivot my career toward research and design.
       </Typography>
       <Typography className="heading5" sx={{ ml: 3, mr: 3 }} variant="h5">
-      I have both a Bachelor's degree in Applied Computer Science and a professional diploma in UX. During my UX program, I took on a <Link href="/">case study</Link> and learned the ins and outs of mixed research methods, usability testing, analysis, wireframing, high-fidelity design, and prototyping.
+        I have both a Bachelor's degree in Applied Computer Science and a professional diploma in UX. During my UX program, I took on a <Link href="/">case study</Link> where I gained hands-on experience with mixed research methods, usability testing, analysis, wireframing, high-fidelity design, and prototyping.
       </Typography>
 
       <Image
@@ -38,11 +38,10 @@ const AboutContainerMobile = () => {
       />
       <Typography variant="h4" sx={{ fontFamily: "Playpen Sans", margin: 3 }}>Where I've Been</Typography>
       <Typography className="heading5" sx={{ ml: 3, mr: 3 }} variant="h5">
-        I've worked for the past seven years in the software development space as an engineer, designer, leader, and certified problem-solver.
+        For the past seven years, I've worked in software development as an engineer, designer, leader, and certified problem-solver.
       </Typography>
       <Typography className="heading5" sx={{ ml: 3, mr: 3 }} variant="h5">
-        I've worked with various stakeholders and IT professionals to deliver software solutions in an agile environment both in office and remotely. 
-        I've built a toolbox of a variety of programming languages including JavaScript (React.js), CSS, HTML5, C#, and SQL. 
+        I've collaborated with stakeholders and IT professionals to deliver software solutions in agile environments, both in-office and remotely. Over time, I’ve built a diverse toolbox, including skills in JavaScript (React.js), CSS, HTML5, C#, and SQL.
       </Typography>
 
       <Image
@@ -53,12 +52,10 @@ const AboutContainerMobile = () => {
       />
       <Typography variant="h4" sx={{ fontFamily: "Playpen Sans", margin: 3 }}>Who I Am</Typography>
       <Typography className="heading5" sx={{ ml: 3, mr: 3 }} variant="h5">
-        When I'm not working or honing my technology skills, I enjoy travelling with husband and our adorable black lab, Badger. 
-        I like to frequent coffee shops, meet new people, draw, craft, crochet, decorate, and play games of both the board and video variety.
+      When I'm not working or sharpening my tech skills, I love traveling and exploring nature with my husband and our adorable black lab, Badger. I enjoy visiting coffee shops and breweries, meeting new people, drawing, crafting, crocheting, decorating, and playing both board and video games.
       </Typography>
         <Typography className="heading5" sx={{ ml: 3, mr: 3 }} variant="h5">
-        Recently, I've been facinated with artificial intelligence, game theory & gamification of mundane tasks, and accessibility; 
-        basically I'm interested in anything that makes tech a little more awesome. 
+          Lately, I've been fascinated by gamification, AR, artificial intelligence, and physical and cognitive accessibility — basically anything that makes tech even more awesome.
         </Typography>
       <Typography className="heading5" variant="h5">
         <b>Let's connect!</b>

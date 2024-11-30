@@ -6,10 +6,6 @@ import QuantitativeAnswersGraphic from '../../../public/Quantitative_Answers.png
 import SurveyQuotesPainpoints from "../../../public/Survey_quotes_painpoints.png";
 import SurveyQuotes from "../../../public/Survey_Quotes.png";
 
-import BenchmarkHotelBestWestern from "../../../public/Hotel_Best_Western.png";
-import BenchmarkHotelHilton from "../../../public/Hotel_Hilton.png";
-import BenchmarkHotelMarriot from "../../../public/Hotel_Marriot.png";
-
 import Zoom1 from "../../../public/Zoom1.png";
 import Zoom3 from "../../../public/Zoom3.png";
 

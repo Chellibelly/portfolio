@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import { Typography, Box, Grid, Button } from '@mui/material';
+import { Typography, Box, Grid } from '@mui/material';
 import Image from 'next/image';
+import { useMediaQuery } from 'react-responsive';
 import ProcessSolutionGraphic from '../../../public/Process_Solution.png';
-import PrototypeGraphic from '../../../public/Prototype.png';
-
 import DesignHotelInfo from '../../../public/Design_Hotel_Info.png';
 import DesignPricingInfo from '../../../public/Design_Pricing_Info.png';
 import DesignAccountInfo from '../../../public/Design_Account_Info.png';
@@ -12,11 +11,11 @@ import DesignAdditional from '../../../public/Design_Additional_Catergories.png'
 
 import QuoteContainer from './QuoteContainer';
 
-import { blue, grey } from '@mui/material/colors';
-
-
 export default function Conclusion() {
   const [fullDesignExpanded, setFullDesignExpanded] = useState(false);
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 1224px)'
+  })
 
   const handleToggle = () => {
     setFullDesignExpanded(!fullDesignExpanded);
@@ -84,53 +83,20 @@ export default function Conclusion() {
           <Typography variant="body1" className='paragraph'>And voila! After working through a bit of learning curve with Figma and a few days and building and rebuilding components, I finally had a collection of high-fidelity annotated screens and a working prototype for an entire hotel booking workflow from homepage to checkout!</Typography>
         </Grid>
         <Grid item xs={12}>
-
-
-        <Box>
-            {/* Preview image with fixed height */}
-            <Box
-              sx={{
-                height: fullDesignExpanded ? 'auto' : '400px',
-                overflow: 'hidden',
-                position: 'relative',
-              }}
-            >
-              <Image 
-                src={PrototypeGraphic} 
-                alt="An image of screenshots taken from the website prototype" 
-                layout="responsive"  // This ensures the image maintains its aspect ratio
-                width="100%"         // Example width; adjust based on your image
-                style={{
-                  objectFit: 'cover', // Maintain aspect ratio and prevent distortion
-                  transition: 'height 0.3s ease',
-                }} 
-              />
-            </Box>
-
-            {!fullDesignExpanded &&
-            <Button
-              onClick={handleToggle}
-              variant="contained"
-              sx={{
-                width: '100%',            // Make the button take up the full width of the container
-                display: 'flex',          // Use flexbox to center content
-                justifyContent: 'center', // Center the text inside the button
-                padding: '10px',          // Add some padding for better visual appearance
-                backgroundColor: grey[200],
-                color: "black",
-                borderRadius: 0,
-                '&:hover': {
-                  backgroundColor: blue[100], // Background color on hover
-                },
-              }}
-            >
-            {fullDesignExpanded ? 'Show Less' : 'Show More'}
-            </Button>}
-          </Box>
-
-
-
-
+        <Box 
+          sx={{
+            display: 'flex',
+            justifyContent: 'center', // Horizontally center
+            alignItems: 'center',     // Vertically center
+            marginTop: 5,
+            marginBottom: 5
+          }}
+        >
+          <video width={isDesktopOrLaptop ? "50%" : "90%"} height="auto" controls>
+            <source src="/Prototype_recording.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </Box>
         </Grid>
         <Grid item xs={10}>
           <Typography variant='h3' className='heading3'>Stakeholders and the Business</Typography>

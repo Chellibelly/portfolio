@@ -1,7 +1,7 @@
 import { Typography, Box, Grid } from '@mui/material';
 import Image from 'next/image';
 import SurveyQuestionsGraphic from '../../../public/Survey_Questions.png';
-import QuantitativeAnswersGraphic from '../../../public/Quantitative_Answers.png';
+import QuantitativeAnswersGraphic from '../../../public/Quantitative_Answers_Mobile.png';
 
 import SurveyQuotesPainpoints from "../../../public/Survey_quotes_painpoints_Mobile.png";
 import SurveyQuotes from "../../../public/Survey_Quotes_Mobile.png";
@@ -137,30 +137,24 @@ export default function Research() {
         
 
         <Grid container direction="row" justifyContent="space-around">
-          <Grid item xs={4}>
+          <Grid item>
             <Image
               className='graphic'
               src={HiltonNotes}
-              width={900}
-              height={500}
               alt="An example of notes taken on the Hilton website"
             />
           </Grid>
-          <Grid item xs={4}>
+          <Grid item>
             <Image
               className='graphic'
               src={MarriotNotes}
-              width={900}
-              height={500}
               alt="An example of notes taken on the Marriot website"
             />
           </Grid>
-          <Grid item xs={4}>
+          <Grid item>
             <Image
               className='graphic'
               src={BestWesternNotes}
-              width={900}
-              height={500}
               alt="An example of notes taken on the Best Western website"
             />
           </Grid>
