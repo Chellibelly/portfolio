@@ -133,7 +133,7 @@ export default function Design() {
           </Box>
         </Grid>
         <Grid item xs={10} sx={{ marginBottom: -5 }}>
-          <Typography variant='h3' className='heading3'>Note: Pretty Drawings != Good Design</Typography>
+          <Typography variant='h3' className='heading3'>Note: Pretty Design Doesn't Equal Good Design</Typography>
           <Typography variant='body1' className='paragraph'>One key lesson I learned through this exercise was that artistic skills don’t necessarily make you a good designer. Aesthetics weren’t the focus here. Having the interaction designs from earlier allowed me to concentrate purely on the functionality of the screens, not the look. By the end, I had high enough fidelity designs to move forward with creating my prototype.</Typography>
         </Grid>
       </Grid>

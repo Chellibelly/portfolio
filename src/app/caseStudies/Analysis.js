@@ -96,7 +96,7 @@ export default function Analysis() {
         <QuoteContainer quote="People don't want to buy a quarter-inch drill. They want a quarter-inch hole!" author="Theodore Levitt"/>
 
         <Grid item xs={10} sx={{ marginBottom: 5 }}>
-          <Typography variant='h3' className='heading3'>Triangulation (I Should Buy a Bigger White Board)</Typography>
+          <Typography variant='h3' className='heading3'>Triangulation</Typography>
           <Typography variant='body1' className='paragraph'> </Typography>
           <Typography variant='body1' className='paragraph'>I decided to start with an affinity diagram to organize all my notes. I grouped related data together first, then defined the categories based on commonalities. This way, natural groupings emerged, helping me focus on what's important without letting my own opinions influence the process. Essentially, it allowed the data to speak for itself.</Typography>
           <Typography variant='body1' className='paragraph'>I gathered stacks of sticky notes in different colors, a whiteboard, and markers. I worked through one research set at a time—survey results, benchmark notes, interview answers, and usability videos—spending about 10 minutes on each. I wrote down key points on sticky notes and placed them on the whiteboard.</Typography>
@@ -148,51 +148,37 @@ export default function Analysis() {
             <Box style={numberBackgroundStyle}><Typography style={numberTextStyle}>1</Typography></Box>
             <Typography sx={{textAlign: "center", fontWeight: "bold", fontFamily: "Montserrat" }}>Home Page (destination selection)</Typography>
           </Grid>
-          <Grid item sx={{ marginTop: 4.5 }}>
-            <ArrowRightAltIcon sx={{ fontSize: 40 }}/>
-          </Grid>
+
           <Grid item sx={{ backgroundColor: "lightgray", width: 250, height: 80, marginTop: 2}}>
             <Box style={numberBackgroundStyle}><Typography style={numberTextStyle}>2</Typography></Box>
             <Typography sx={{textAlign: "center", fontWeight: "bold", fontFamily: "Montserrat" }}>Date Selection</Typography>
           </Grid>
-          <Grid item sx={{ marginTop: 4.5 }}>
-            <ArrowRightAltIcon sx={{ fontSize: 40 }}/>
-          </Grid>
+
           <Grid item sx={{ backgroundColor: "lightgray", width: 250, height: 80, marginTop: 2}}>
             <Box style={numberBackgroundStyle}><Typography style={numberTextStyle}>3</Typography></Box>
             <Typography sx={{textAlign: "center", fontWeight: "bold", fontFamily: "Montserrat" }}>Search, sort, & filter hotels</Typography>
           </Grid>
-          <Grid item sx={{ marginTop: 4.5 }}>
-            <ArrowRightAltIcon sx={{ fontSize: 40 }}/>
-          </Grid>
+
           <Grid item sx={{ backgroundColor: "lightgray", width: 250, height: 80, marginTop: 2}}>
             <Box style={numberBackgroundStyle}><Typography style={numberTextStyle}>4</Typography></Box>
             <Typography sx={{textAlign: "center", fontWeight: "bold", fontFamily: "Montserrat" }}>Compare hotel results & select a hotel</Typography>
           </Grid>
-          <Grid item sx={{ marginTop: 4.5 }}>
-            <ArrowRightAltIcon sx={{ fontSize: 40 }}/>
-          </Grid>
+
           <Grid item sx={{ backgroundColor: "lightgray", width: 250, height: 80, marginTop: 2}}>
             <Box style={numberBackgroundStyle}><Typography style={numberTextStyle}>5</Typography></Box>
             <Typography sx={{textAlign: "center", fontWeight: "bold", fontFamily: "Montserrat" }}>Compare hotel rooms & select a room</Typography>
           </Grid>
-          <Grid item sx={{ marginTop: 4.5 }}>
-            <ArrowRightAltIcon sx={{ fontSize: 40 }}/>
-          </Grid>
+
           <Grid item sx={{ backgroundColor: "lightgray", width: 250, height: 80, marginTop: 2}}>
             <Box style={numberBackgroundStyle}><Typography style={numberTextStyle}>6</Typography></Box>
             <Typography sx={{textAlign: "center", fontWeight: "bold", fontFamily: "Montserrat" }}>Select a rate</Typography>
           </Grid>
-          <Grid item sx={{ marginTop: 4.5 }}>
-            <ArrowRightAltIcon sx={{ fontSize: 40 }}/>
-          </Grid>
+
           <Grid item sx={{ backgroundColor: "lightgray", width: 250, height: 80, marginTop: 2}}>
             <Box style={numberBackgroundStyle}><Typography style={numberTextStyle}>7</Typography></Box>
             <Typography sx={{textAlign: "center", fontWeight: "bold", fontFamily: "Montserrat" }}>Choose or skip add-ons</Typography>
           </Grid>
-          <Grid item sx={{ marginTop: 4.5 }}>
-            <ArrowRightAltIcon sx={{ fontSize: 40 }}/>
-          </Grid>
+
           <Grid item sx={{ backgroundColor: "lightgray", width: 250, height: 80, marginTop: 2}}>
             <Box style={numberBackgroundStyle}><Typography style={numberTextStyle}>8</Typography></Box>
             <Typography sx={{textAlign: "center", fontWeight: "bold", fontFamily: "Montserrat" }}>Complete the booking</Typography>

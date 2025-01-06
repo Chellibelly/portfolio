@@ -41,20 +41,11 @@ export default function Research() {
             alt="An image of the UX process with the Research step highlighted"
           />
         </Grid>
-        <Grid item xs={10} sx={{ marginBottom: 5}}>
+        <Grid item xs={10}>
           <Typography variant='h3' className='heading3'>I Am Not My User</Typography>
           <Typography variant='body1' className='paragraph'>Starting with basically nothing, I needed to cast a wide net. I wanted to know what past experiences, contexts, goals, and struggles real people have had when booking hotels online. To cast such a net, I decided to use a survey. A survey could give me both quantitative data to identify patterns and qualitative data to uncover deeper insights and reveal emotional responses.</Typography>
           <Typography variant='h3' className='heading3'>The Survey Questions</Typography>
           <Typography variant='body1' className='paragraph'>I decided to use Google Forms because it was free, familiar to me, and easy to use and distribute. I came up with a total of seven questions, an easily digestible amount that would take less than five minutes to answer.</Typography>
-        </Grid>
-        
-        <Grid item xs={12}>
-          <Image
-            className='graphic'
-            src={SurveyQuestionsGraphic}
-            width="100%"
-            alt="An image of survey questions and reasons behind asking them"
-          />
         </Grid>
         
         <Grid item xs={10}>
