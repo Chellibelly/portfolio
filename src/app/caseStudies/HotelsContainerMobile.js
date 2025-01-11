@@ -26,7 +26,8 @@ const imageWrapperStyle = {
     position: 'relative',
     width: '100%',
     height: '100%',
-    opacity: '0.4'
+    opacity: '0.3',
+    marginTop: 55
 };
 
 const imageStyle = {
@@ -66,11 +67,11 @@ const overlayStyle = {
             </div>
             <div style={overlayStyle}>
               <Box sx={{ padding: 1 }}>
-              <Typography sx={{ textAlign: 'center', fontFamily: 'Roboto', fontSize: 30, fontWeight: 400}}>
-                    The Menagerie Hotels<br/> Mobile Site
+              <Typography sx={{ textAlign: 'center', fontFamily: 'montserrat', fontSize: 26, fontWeight: 600}}>
+                    Menagerie Hotels<br/>Mobile
                   </Typography><br/>
-                  <Typography variant="body1" sx={{textAlign: 'center', fontFamily: 'Roboto', color: grey[900], fontWeight: 600, fontSize: 20, width: 300}}>
-                    The story of how I transformed the online hotel booking experience for people who are fed up with being habitually left in the dark
+                  <Typography variant="body1" sx={{textAlign: 'center', fontFamily: 'montserrat', color: grey[900], fontWeight: 600, fontSize: 20, width: 320}}>
+                  My journey transforming the online hotel booking experience for people fed up with being left in the dark. 
                   </Typography>
               </Box>
             </div>

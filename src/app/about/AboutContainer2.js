@@ -6,15 +6,15 @@ import Image from 'next/image';
 import Headshot from '../../../public/Headshot.jpg';
 import Photo2 from '../../../public/Photo_2.jpg';
 import Photo3 from '../../../public/Photo_3.jpg';
-import { blue } from '@mui/material/colors';
+import { blue, blueGrey } from '@mui/material/colors';
 
 const AboutContainer = () => {
   return (
     <div>
       <Header/>
-      <Box container direction="column" justifyContent="center" sx={{ display: "flex", justifyContent: "center", backgroundColor: blue[100]}}>
+      <Box container direction="column" justifyContent="center" sx={{ display: "flex", justifyContent: "center", backgroundColor: blueGrey[50]}}>
         <Box sx={{ maxWidth: "75%", padding: 5, marginTop: 12, marginBottom: 5, backgroundColor: "white" }}>
-        <Typography variant="h1" sx={{ textAlign: "center", fontSize: 100, marginBottom: 10, fontFamily: "Playpen Sans", color: blue[300]}}>
+        <Typography variant="h1" sx={{ textAlign: "center", fontSize: 100, marginBottom: 10, fontFamily: "Playpen Sans", color: blueGrey[500]}}>
             Hi, I'm Chelsea!
         </Typography>
          <Grid container justifyContent="space-around" sx={{ marginBottom: 5 }}>

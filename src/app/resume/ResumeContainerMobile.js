@@ -12,7 +12,7 @@ import AaronsTechLogo from '../../../public/aarons_tech_logo.jpg';
 import MimedxLogo from '../../../public/mimedx_logo.png';
 import HeaderMobile from "../HeaderMobile";
 import Image from 'next/image';
-import { blue, grey } from '@mui/material/colors';
+import { blueGrey, grey } from '@mui/material/colors';
 
 const sectionHeader = {
   fontSize: "26px",
@@ -35,7 +35,7 @@ const ResumeContainerMobile = () => {
   return (
     <div>
       <HeaderMobile/>
-      <Box container direction="column" justifyContent="center" sx={{ display: "flex", justifyContent: "center" }}>
+      <Box container direction="column" justifyContent="center" sx={{ display: "flex", justifyContent: "center", marginTop: 5 }}>
           <Box sx={{ maxWidth: "100%", padding: 3, marginTop: 3, marginBottom: 5 }}>
             <Box sx={{ marginBottom: 3 }}>
               <Typography className="heading1" sx={{ textAlign: "center" }} variant="h1">
@@ -48,7 +48,7 @@ const ResumeContainerMobile = () => {
             <Typography className="heading5" sx={{ textAlign: "center" }}>
               <EmailIcon sx={{ marginRight: 1 }}/>chelsea.vidrine2@gmail.com
             </Typography>
-            <Typography sx={{ textAlign: "center", marginTop: -2, fontSize: 20, color: blue[600], cursor: "pointer" }}>
+            <Typography sx={{ textAlign: "center", marginTop: -2, fontSize: 20, color: blueGrey[600], cursor: "pointer" }}>
                 <button onClick={handleDownload}><DownloadIcon/>Download Resume PDF</button>
               </Typography>
             <Typography sx={sectionHeader}>
@@ -66,7 +66,7 @@ const ResumeContainerMobile = () => {
             <Box sx={{ mb: 3 }}>
               <Grid container>
                 <Grid item>
-                  <FavoriteBorderIcon sx={{ fontSize: 40, color: blue[400] }}/>
+                  <FavoriteBorderIcon sx={{ fontSize: 40, color: blueGrey[400] }}/>
                 </Grid>
                 <Grid item>
                   <Typography sx={{ fontSize: 16, ml: "5px", mt: "6px", fontWeight: "bold", fontFamily: "Montserrat" }}>PASSION</Typography>
@@ -79,7 +79,7 @@ const ResumeContainerMobile = () => {
             <Box sx={{ mb: 3 }}>
               <Grid container>
                 <Grid item>
-                  <GroupsIcon sx={{ fontSize: 40, color: blue[400] }} /><br/>
+                  <GroupsIcon sx={{ fontSize: 40, color: blueGrey[400] }} /><br/>
                 </Grid>
                 <Grid item>
                   <Typography sx={{ fontSize: 16, ml: "5px", mt: "6px", fontWeight: "bold", fontFamily: "Montserrat" }}>COMPASSION</Typography>
@@ -92,7 +92,7 @@ const ResumeContainerMobile = () => {
             <Box sx={{ mb: 3 }}>
               <Grid container>
                 <Grid item>
-                  <PsychologyAltIcon sx={{ fontSize: 40, color: blue[700] }} />
+                  <PsychologyAltIcon sx={{ fontSize: 40, color: blueGrey[700] }} />
                 </Grid>
                 <Grid item>
                   <Typography sx={{ fontSize: 16, ml: "5px", mt: "6px", fontWeight: "bold", fontFamily: "Montserrat" }}>CURIOSITY</Typography>

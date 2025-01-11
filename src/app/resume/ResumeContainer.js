@@ -12,7 +12,7 @@ import AaronsTechLogo from '../../../public/aarons_tech_logo.jpg';
 import MimedxLogo from '../../../public/mimedx_logo.png';
 import Header from "../Header";
 import Image from 'next/image';
-import { blue, grey } from '@mui/material/colors';
+import { blueGrey, grey } from '@mui/material/colors';
 
 const sectionHeader = {
   fontSize: "24px",
@@ -47,7 +47,7 @@ const ResumeContainer = () => {
   return (
     <div>
       <Header/>
-      <Box container direction="column" justifyContent="center" sx={{ display: "flex", justifyContent: "center", backgroundColor: blue[100]}}>
+      <Box container direction="column" justifyContent="center" sx={{ display: "flex", justifyContent: "center", backgroundColor: blueGrey[50]}}>
           <Box sx={{ maxWidth: "70%", padding: 5, marginTop: 10, marginBottom: 5, backgroundColor: "white" }}>
             <Box sx={{ marginBottom: 5 }}>
               <Typography className="heading1" sx={{ textAlign: "center" }} variant="h1">
@@ -60,7 +60,7 @@ const ResumeContainer = () => {
             <Typography className="heading5" sx={{ textAlign: "center" }}>
               <EmailIcon sx={{ marginRight: 1 }}/>chelsea.vidrine2@gmail.com
             </Typography>
-            <Typography sx={{ textAlign: "center", marginTop: -2, fontSize: 20, color: blue[600], cursor: "pointer" }}>
+            <Typography sx={{ textAlign: "center", marginTop: -2, fontSize: 20, color: blueGrey[600], cursor: "pointer" }}>
                 <button onClick={handleDownload}><DownloadIcon/>Download Resume PDF</button>
               </Typography>
             <Typography sx={sectionHeader}>
@@ -77,7 +77,7 @@ const ResumeContainer = () => {
               <Grid item xs={3.8}>
                 <Paper sx={{...driveCard, backgroundColor: grey[50]}}>
                   <Typography sx={driveTitle}>
-                    <FavoriteBorderIcon sx={{ fontSize: 50, color: blue[400] }}/><br/>
+                    <FavoriteBorderIcon sx={{ fontSize: 50, color: blueGrey[400] }}/><br/>
                     PASSION
                   </Typography>
                   <Typography className='paragraph-med'>
@@ -89,7 +89,7 @@ const ResumeContainer = () => {
               <Grid item xs={3.8}>
               <Paper sx={{...driveCard, backgroundColor: grey[50]}}>
                 <Typography sx={driveTitle}>
-                  <PsychologyAltIcon sx={{ fontSize: 50, color: blue[700] }} /><br/>
+                  <PsychologyAltIcon sx={{ fontSize: 50, color: blueGrey[700] }} /><br/>
                   CURIOSITY
                 </Typography>
                 <Typography className='paragraph-med'>
@@ -102,7 +102,7 @@ const ResumeContainer = () => {
             <Grid item xs={3.8}>
               <Paper sx={{...driveCard, backgroundColor: grey[50]}}>
                 <Typography sx={driveTitle}>
-                  <GroupsIcon sx={{ fontSize: 50, color: blue[400] }} /><br/>
+                  <GroupsIcon sx={{ fontSize: 50, color: blueGrey[400] }} /><br/>
                   COMPASSION
                 </Typography>
                 <Typography className='paragraph-med'>

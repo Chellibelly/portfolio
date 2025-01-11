@@ -15,10 +15,25 @@ import Face3Icon from '@mui/icons-material/Face3';
 import WorkIcon from '@mui/icons-material/Work';
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 import DrawIcon from '@mui/icons-material/Draw';
-import { blue } from '@mui/material/colors';
+import { blueGrey } from '@mui/material/colors';
 
-export default function MenuAppBar() {
+export default function HeaderMobile() {
   const [anchorEl, setAnchorEl] = React.useState(null);
+  const [pageName, setPageName] = React.useState('');
+
+  React.useEffect(() => {
+    const path = window.location.pathname;
+    const pathSegments = path.split('/');
+    const lastSegment = pathSegments[pathSegments.length - 1];
+    let pageName = lastSegment ? lastSegment.charAt(0).toUpperCase() + lastSegment.slice(1) : 'Home';
+    if (pageName === "Home") {
+      pageName = "My Case Study";
+    }
+    if (pageName === "CurrentProject") {
+      pageName = "Current Projects";
+    }
+    setPageName(pageName);
+  }, []);
 
   const handleMenu = (event) => {
     setAnchorEl(event.currentTarget);
@@ -36,7 +51,7 @@ export default function MenuAppBar() {
 
   return (
     <Box sx={{ display: 'flex' }}>
-      <AppBar component="nav">
+      <AppBar component="nav" style={{ backgroundColor: blueGrey[900] }}>
         <Toolbar>
             <div>
               <IconButton
@@ -64,7 +79,7 @@ export default function MenuAppBar() {
                 <MenuItem sx={{ padding: 2 }} onClick={handleClose}>
                     <Grid container>
                         <Grid item sx={{ mr: 2 }}>
-                            <Face3Icon sx={{ fontSize: "30px", color: blue[800] }}/>
+                            <Face3Icon sx={{ fontSize: "30px", color: blueGrey[900] }}/>
                         </Grid>
                         <Grid item>
                             <Link href="/about" sx={{ textDecoration: "none" }}>
@@ -77,7 +92,7 @@ export default function MenuAppBar() {
                 <MenuItem sx={{ padding: 2 }} onClick={handleClose}>
                     <Grid container>
                         <Grid item sx={{ mr: 2 }}>
-                            <WorkIcon sx={{ fontSize: "30px", color: blue[800] }}/>
+                            <WorkIcon sx={{ fontSize: "30px", color: blueGrey[900] }}/>
                         </Grid>
                         <Grid item>
                           <Link href="/resume" sx={{ textDecoration: "none" }}>
@@ -90,7 +105,7 @@ export default function MenuAppBar() {
                 <MenuItem sx={{ padding: 2 }} onClick={handleClose}>
                     <Grid container>
                         <Grid item sx={{ mr: 2 }}>
-                            <PhoneAndroidIcon sx={{ fontSize: "30px", color: blue[800] }}/>
+                            <PhoneAndroidIcon sx={{ fontSize: "30px", color: blueGrey[900] }}/>
                         </Grid>
                         <Grid item>
                           <Link href="/" sx={{ textDecoration: "none" }}>
@@ -103,7 +118,7 @@ export default function MenuAppBar() {
                 <MenuItem sx={{ padding: 2 }} onClick={handleClose}>
                     <Grid container>
                         <Grid item sx={{ mr: 2 }}>
-                            <DrawIcon sx={{ fontSize: "30px", color: blue[800] }}/>
+                            <DrawIcon sx={{ fontSize: "30px", color: blueGrey[900] }}/>
                         </Grid>
                         <Grid item>
                           <Link href="/currentProjects" sx={{ textDecoration: "none" }}>
@@ -114,6 +129,7 @@ export default function MenuAppBar() {
                 </MenuItem>
               </Menu>
             </div>
+            <Typography>{pageName}</Typography> {/* Dynamically set the page name */}
         </Toolbar>
       </AppBar>
     </Box>

@@ -6,14 +6,14 @@ import Image from 'next/image';
 import Headshot from '../../../public/Headshot_Rounded.png';
 import Photo2 from '../../../public/Photo2_Rounded.png';
 import Photo3 from '../../../public/Photo3_Rounded.png';
-import { blue } from '@mui/material/colors';
+import { blueGrey } from '@mui/material/colors';
 
 const AboutContainerMobile = () => {
   return (
     <div>
       <HeaderMobile/>
       <Box display="flex" alignItems="center" height="100vh" flexDirection="column" style={{marginBottom: "500px", marginTop: "50px"}}>
-      <Typography variant="h1" sx={{ textAlign: "center", fontSize: 80, mb: 5, mt: 5, fontFamily: "Playpen Sans", color: blue[300]}}>
+      <Typography variant="h1" sx={{ textAlign: "center", fontSize: 80, mb: 5, mt: 5, fontFamily: "Playpen Sans", color: blueGrey[400]}}>
             Hi, I'm Chelsea!
       </Typography>
       <Image
@@ -63,7 +63,7 @@ const AboutContainerMobile = () => {
       <Typography className="heading6" variant="h6" sx={{ marginTop: -2 }}>
         chelsea.vidrine2@gmail.com
       </Typography>
-      <Typography className="heading6" variant="h6" sx={{ textDecoration: "underline", marginTop: -3, color: blue[500] }}>
+      <Typography className="heading6" variant="h6" sx={{ textDecoration: "underline", marginTop: -3, color: blueGrey[500] }}>
         <a href="https://www.linkedin.com/in/chelsea-vidrine/"target="_blank" title="Share on LinkedIn">
           My LinkedIn
         </a>
