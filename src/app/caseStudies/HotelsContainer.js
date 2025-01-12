@@ -183,6 +183,7 @@ const overlayStyle = {
               style={{width: "70vw", marginTop: 40}}
             />    
           </Grid>
+          
           <Grid item style={{ width: "70vw" }}>
             <section id="introduction_section" ref={(el) => sectionRefs.current['introduction_section'] = el} style={{ paddingTop: 86 }}>
               <Introduction/>
@@ -208,26 +209,7 @@ const overlayStyle = {
     </Grid>
     </div>
 
-    {false && <div style={containerStyle}>
-            <div style={imageWrapperStyle}>
-                <Image
-                    src={HotelBackground}
-                    alt='alt'
-                    style={imageStyle}
-                    width="100%"
-                />
-            </div>
-            <div style={overlayStyle}>
-              <Box sx={{ padding: 1 }}>
-              <Typography sx={{ textAlign: 'center', fontFamily: 'Roboto', fontSize: 36, fontWeight: 400}}>
-                    Menagerie Hotels Mobile
-                  </Typography><br/>
-                  <Typography variant="body1" sx={{textAlign: 'center', fontFamily: 'Roboto', color: grey[900], fontWeight: 500, fontSize: 20, width: 600}}>
-                    The story of how I transformed the online hotel booking experience for people who are fed up with being habitually left in the dark
-                  </Typography>
-              </Box>
-            </div>
-        </div>}
+
 
 
 
