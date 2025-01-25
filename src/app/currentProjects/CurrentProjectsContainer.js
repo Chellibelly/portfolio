@@ -20,12 +20,17 @@ const CurrentProjectsContainer = () => {
                 />
             </Grid>
             <Grid item xs={6} sx={{ marginTop: 6}}>
-                <Typography variant='h1' className="heading1">My current project in progress:</Typography>
+                <Typography variant='h1' className="heading1">A Project in Progress</Typography>
                 <Typography variant='h2' className="heading2">
-                    A Life Management application that's much, much more than a to-do list
+                  A Life Management Application
                 </Typography>
                 <Typography variant='body1' className="paragraph">
-                    <b>Problem to Solve:</b> As adults, we often end up with a mix of to-do lists, from tasks like "write a will" to "do the laundry," all cluttered together. Our goals usually get split across various lists, calendars, apps, or even just kept in our heads—sometimes forgotten until we’re reminded. These lists often lack the organization needed to help balance short-term chores with long-term goals <br/><br/>My goal is to understand how lists like these make people feel about their lives and levels of productivity and how we can make it easier to stay organized, manage deadlines, and track goals.<br/><br/><b>More to come!</b>
+                    <b>Problem to Solve:</b> 
+                    As adults, we have ever-growing to-do lists comprised of tasks spanning from "do the laundry” to “schedule dentist appointment” to “write a will.” Our goals are split across various lists, notebooks, calendars, and apps.
+                    <br/><br/>
+                    My goal is to understand how people feel about the way they manage their goals and productivity. My mission if to design a way to make it easier to stay organized, manage deadlines, and track goals and milestones.
+                    <br/><br/>
+                    <b>More to come!</b>
                 </Typography>
             </Grid>
         </Grid> 
