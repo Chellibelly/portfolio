@@ -9,7 +9,7 @@ const CurrentProjectsContainerMobile = () => {
   return (
     <div>
       <HeaderMobile/>
-      <Box display="flex" alignItems="center" height="100vh" flexDirection="column" style={{marginBottom: "500px", marginTop: 50}}>
+      <Box display="flex" alignItems="center" height="100vh" flexDirection="column" style={{marginBottom: "380px", marginTop: 50}}>
         <Typography variant='h1' className="heading1" sx={{ margin: 3 }}>A Project in Progress</Typography>
         <Typography variant='h2' className="heading2" sx={{ ml: 3, mr: 3 }}>
           A Life Management Application
@@ -25,7 +25,6 @@ const CurrentProjectsContainerMobile = () => {
           My goal is to find out how lists like these make people feel about their lives and levels of productivity and what would better help them keep organized, manage their deadlines, and keep track of their goals much more easily.
           <br/><br/>
           <b>More to come!</b>
-          <br/><br/><br/>
         </Typography>
       </Box>
     </div>
