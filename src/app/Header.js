@@ -20,8 +20,8 @@ const Header = () => {
     <div>
         <Box style={{ width: "100%", backgroundColor: blueGrey[900], position: "fixed", top: 0, zIndex: 99 }}>
         <Grid container direction="row" justifyContent="space-around" style={{ width:"50%" }}>
-            <Grid item xs={3} className={pageName === "About" ? "nav-section-active" : "nav-section"}>
-                <Link href="/about" className={pageName === "About" ? "nav-link-active" : "nav-link"}>
+            <Grid item xs={3} className={pageName === "Home" ? "nav-section-active" : "nav-section"}>
+                <Link href="/" className={pageName === "Home" ? "nav-link-active" : "nav-link"}>
                     <Typography sx={navText}>About Me</Typography>
                 </Link>
             </Grid>
@@ -30,9 +30,9 @@ const Header = () => {
                     <Typography sx={navText}>Resume</Typography>
                 </Link>
             </Grid>
-            <Grid item xs={3} className={pageName === "Home" ? "nav-section-active" : "nav-section"}>
-                <Link href="/" className={pageName === "Home" ? "nav-link-active" : "nav-link"}>
-                    <Typography sx={navText}>My Case Study</Typography>
+            <Grid item xs={3} className={pageName === "CaseStudies" ? "nav-section-active" : "nav-section"}>
+                <Link href="/caseStudies" className={pageName === "CaseStudies" ? "nav-link-active" : "nav-link"}>
+                    <Typography sx={navText}>UX Case Study</Typography>
                 </Link>
             </Grid>
             <Grid item xs={3} className={pageName === "CurrentProjects" ? "nav-section-active" : "nav-section"}>

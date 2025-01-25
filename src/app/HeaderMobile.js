@@ -27,10 +27,13 @@ export default function HeaderMobile() {
     const lastSegment = pathSegments[pathSegments.length - 1];
     let pageName = lastSegment ? lastSegment.charAt(0).toUpperCase() + lastSegment.slice(1) : 'Home';
     if (pageName === "Home") {
-      pageName = "My Case Study";
+      pageName = "About Me";
     }
-    if (pageName === "CurrentProject") {
+    if (pageName === "CurrentProjects") {
       pageName = "Current Projects";
+    }
+    if (pageName === "CaseStudies") {
+      pageName = "UX Case Study";
     }
     setPageName(pageName);
   }, []);
@@ -82,7 +85,7 @@ export default function HeaderMobile() {
                             <Face3Icon sx={{ fontSize: "30px", color: blueGrey[900] }}/>
                         </Grid>
                         <Grid item>
-                            <Link href="/about" sx={{ textDecoration: "none" }}>
+                            <Link href="/" sx={{ textDecoration: "none" }}>
                                 <Typography sx={menuFont}>About Me</Typography>
                             </Link>
                         </Grid>
@@ -108,8 +111,8 @@ export default function HeaderMobile() {
                             <PhoneAndroidIcon sx={{ fontSize: "30px", color: blueGrey[900] }}/>
                         </Grid>
                         <Grid item>
-                          <Link href="/" sx={{ textDecoration: "none" }}>
-                            <Typography sx={menuFont}>My Case Study</Typography>
+                          <Link href="/caseStudies" sx={{ textDecoration: "none" }}>
+                            <Typography sx={menuFont}>UX Case Study</Typography>
                           </Link>
                         </Grid>
                     </Grid>
