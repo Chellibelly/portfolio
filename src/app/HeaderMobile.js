@@ -48,7 +48,7 @@ export default function HeaderMobile() {
 
   const menuFont = {
     fontFamily: "Montserrat",
-    fontSize: 26,
+    fontSize: 20,
     color: "black"
   };
 
@@ -82,7 +82,7 @@ export default function HeaderMobile() {
                 <MenuItem sx={{ padding: 2 }} onClick={handleClose}>
                     <Grid container>
                         <Grid item sx={{ mr: 2 }}>
-                            <Face3Icon sx={{ fontSize: "30px", color: blueGrey[900] }}/>
+                            <Face3Icon sx={{ fontSize: "24px", color: blueGrey[900] }}/>
                         </Grid>
                         <Grid item>
                             <Link href="/" sx={{ textDecoration: "none" }}>
@@ -95,7 +95,7 @@ export default function HeaderMobile() {
                 <MenuItem sx={{ padding: 2 }} onClick={handleClose}>
                     <Grid container>
                         <Grid item sx={{ mr: 2 }}>
-                            <WorkIcon sx={{ fontSize: "30px", color: blueGrey[900] }}/>
+                            <WorkIcon sx={{ fontSize: "24px", color: blueGrey[900] }}/>
                         </Grid>
                         <Grid item>
                           <Link href="/resume" sx={{ textDecoration: "none" }}>
@@ -108,7 +108,7 @@ export default function HeaderMobile() {
                 <MenuItem sx={{ padding: 2 }} onClick={handleClose}>
                     <Grid container>
                         <Grid item sx={{ mr: 2 }}>
-                            <PhoneAndroidIcon sx={{ fontSize: "30px", color: blueGrey[900] }}/>
+                            <PhoneAndroidIcon sx={{ fontSize: "24px", color: blueGrey[900] }}/>
                         </Grid>
                         <Grid item>
                           <Link href="/caseStudies" sx={{ textDecoration: "none" }}>
@@ -121,7 +121,7 @@ export default function HeaderMobile() {
                 <MenuItem sx={{ padding: 2 }} onClick={handleClose}>
                     <Grid container>
                         <Grid item sx={{ mr: 2 }}>
-                            <DrawIcon sx={{ fontSize: "30px", color: blueGrey[900] }}/>
+                            <DrawIcon sx={{ fontSize: "24px", color: blueGrey[900] }}/>
                         </Grid>
                         <Grid item>
                           <Link href="/currentProjects" sx={{ textDecoration: "none" }}>

@@ -8,7 +8,7 @@ import Design from './Design';
 import Conclusion from './Conclusion';
 import LessonsLearned from './LessonsLearned';
 import Analysis from './Analysis';
-import { blue, grey } from '@mui/material/colors';
+import { grey } from '@mui/material/colors';
 import Image from 'next/image';
 import HotelBackground from "../../../public/WorkPhotography/Work_Photo_Mobile.jpg";
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
@@ -51,7 +51,7 @@ const HotelsContainerMobile = () => {
     });
 
     // Function to determine if a section is long or short
-    const isLongSection = (section) => section.clientHeight > 800; // You can adjust the threshold here
+    const isLongSection = (section) => section.clientHeight > 750; // You can adjust the threshold here
 
     // Observe each section with the appropriate observer
     sections.forEach(section => {
@@ -122,15 +122,6 @@ const HotelsContainerMobile = () => {
           onChange={handleChangeSection}
           fullWidth
           variant="filled"
-          sx={{
-            backgroundColor: blue[100],
-            '& .MuiSelect-select': {
-              backgroundColor: blue[100],
-            },
-            '& .MuiMenu-paper': {
-              backgroundColor: blue[100],
-            }
-          }}
         >
           {sections.map(section => (
             <MenuItem key={section.id} value={section.id}>
@@ -151,7 +142,7 @@ const HotelsContainerMobile = () => {
 
       <div style={{ padding: 5 }}>
         <div style={{ position: 'relative', width: '100%', marginBottom: -34 }}>
-          <div style={{ position: 'relative', width: '100%', height: '100%', opacity: '0.3', marginTop: 55 }}>
+          <div style={{ position: 'relative', width: '100%', height: '100%', opacity: '0.25', marginTop: 55 }}>
             <Image
               src={HotelBackground}
               alt="alt"
