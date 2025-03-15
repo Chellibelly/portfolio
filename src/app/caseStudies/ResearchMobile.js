@@ -393,4 +393,6 @@ const ResearchMobile = forwardRef((props, ref) => {
   );
 });
 
+ResearchMobile.displayName = 'ResearchMobile'; 
+
 export default ResearchMobile;
