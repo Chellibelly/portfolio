@@ -13,6 +13,7 @@ import MimedxLogo from '../../../public/mimedx_logo.png';
 import Header from "../Header";
 import Image from 'next/image';
 import { blueGrey, grey } from '@mui/material/colors';
+import * as globalStyles from '../styles/globalStyleConsts';
 
 const sectionHeader = {
   fontSize: "24px",
@@ -50,14 +51,14 @@ const ResumeContainer = () => {
       <Box container direction="column" justifyContent="center" sx={{ display: "flex", justifyContent: "center", backgroundColor: blueGrey[50]}}>
           <Box sx={{ maxWidth: "70%", padding: 5, marginTop: 10, marginBottom: 5, backgroundColor: "white" }}>
             <Box sx={{ marginBottom: 5 }}>
-              <Typography className="heading1" sx={{ textAlign: "center" }} variant="h1">
+              <Typography sx={{ ...globalStyles.heading1, textAlign: "center" }} variant="h1">
                 CHELSEA L. VIDRINE
               </Typography>
-              <Typography className="heading3" sx={{ textAlign: "center" }}>
+              <Typography sx={{ ...globalStyles.heading3, textAlign: "center" }}>
                 UX RESEARCH & DESIGN
               </Typography>
             </Box>
-            <Typography className="heading5" sx={{ textAlign: "center" }}>
+            <Typography sx={{ ...globalStyles.heading5, textAlign: "center" }}>
               <EmailIcon sx={{ marginRight: 1 }}/>chelsea.vidrine2@gmail.com
             </Typography>
             <Typography sx={{ textAlign: "center", marginTop: -2, fontSize: 20, color: blueGrey[600], cursor: "pointer" }}>
@@ -80,7 +81,7 @@ const ResumeContainer = () => {
                     <FavoriteBorderIcon sx={{ fontSize: 50, color: blueGrey[400] }}/><br/>
                     PASSION
                   </Typography>
-                  <Typography className='paragraph-med'>
+                  <Typography sx={globalStyles.paragraphMed}>
                     Passion fuels my output. I care deeply about my users and their ability to achieve their goals.
                   </Typography>
                 </Paper>
@@ -92,7 +93,7 @@ const ResumeContainer = () => {
                   <PsychologyAltIcon sx={{ fontSize: 50, color: blueGrey[700] }} /><br/>
                   CURIOSITY
                 </Typography>
-                <Typography className='paragraph-med'>
+                <Typography sx={globalStyles.paragraphMed}>
                   Why does engagement dip during this process? Why are our competitors so successful? Why is adoption lower than anticipated? My curiosity and love for discovery fuels effective research and problem-solving.
                   problems.
                 </Typography>
@@ -105,7 +106,7 @@ const ResumeContainer = () => {
                   <GroupsIcon sx={{ fontSize: 50, color: blueGrey[400] }} /><br/>
                   COMPASSION
                 </Typography>
-                <Typography className='paragraph-med'>
+                <Typography sx={globalStyles.paragraphMed}>
                   I focus on the impact each product will have on the needs, emotions, and understanding of my users.
                 </Typography>
               </Paper>
@@ -159,12 +160,13 @@ const ResumeContainer = () => {
 
             <Grid container alignContent="center" alignItems="center" sx={{ marginTop: -3 }}>
               <Grid item>
-                <Image
-                  className='graphic'
-                  src={AaronsTechLogo}
-                  width={80}
-                  alt="Aaron's Tech Logo"
-                />
+                <Box sx={globalStyles.graphic}>
+                  <Image
+                    src={AaronsTechLogo}
+                    width={80}
+                    alt="Aaron's Tech Logo"
+                  />
+                </Box>
               </Grid>
               <Grid item>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px" }}>Software Engineer at Aaron’s INC</Typography>
@@ -201,12 +203,13 @@ const ResumeContainer = () => {
 
             <Grid container alignContent="center" alignItems="center" sx={{ marginTop: -3 }}>
               <Grid item>
-                <Image
-                  className='graphic'
-                  src={MimedxLogo}
-                  width={80}
-                  alt="Mimedx Logo"
-                />
+                <Box sx={globalStyles.graphic}>
+                  <Image
+                    src={MimedxLogo}
+                    width={80}
+                    alt="Mimedx Logo"
+                  />
+                </Box>
               </Grid>
               <Grid item>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px" }}>Software Engineer at Aaron’s INC</Typography>
@@ -238,12 +241,13 @@ const ResumeContainer = () => {
             </Typography>
             <Grid container alignContent="center" alignItems="center">
               <Grid item>
-                <Image
-                  className='graphic'
-                  src={UXDILogo}
-                  width={80}
-                  alt="UXDI Logo"
-                />
+                <Box sx={globalStyles.graphic}>
+                  <Image
+                    src={UXDILogo}
+                    width={80}
+                    alt="UXDI Logo"
+                  />
+                </Box>
               </Grid>
               <Grid item>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px" }}>UX Professional Diploma – May 2024</Typography>
@@ -252,12 +256,13 @@ const ResumeContainer = () => {
             </Grid>
             <Grid container alignContent="center" alignItems="center" sx={{ marginTop: -4 }}>
               <Grid item>
-                <Image
-                  className='graphic'
-                  src={KSULogo}
-                  width={80}
-                  alt="KSU logo"
-                />
+                <Box sx={globalStyles.graphic}>
+                  <Image
+                    src={KSULogo}
+                    width={80}
+                    alt="KSU logo"
+                  />
+                </Box>
               </Grid>
               <Grid item>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px" }}>BA Applied Computer Science – December 2016</Typography>

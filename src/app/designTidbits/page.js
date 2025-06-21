@@ -1,10 +1,10 @@
 "use client"; 
 import React, { useEffect, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
-import AboutContainer from './about/AboutContainer2'
-import AboutContainerMobile from './about/AboutContainerMobile';
+import DesignTidbitsContainer from './DesignTidbitsContainer';
+import DesignTidbitsMobile from './DesignTidbitsMobile';
 
-const AboutPage = () => {
+const DesignTidbitsPage = () => {
   const [hasMounted, setHasMounted] = useState(false);
   const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 1224px)' });
 
@@ -16,12 +16,13 @@ const AboutPage = () => {
     return null; // or a loading spinner if needed
   }
 
+
   return (
     <div>
-      {isDesktopOrLaptop && <AboutContainer/>}
-      {!isDesktopOrLaptop && <AboutContainerMobile/>}
+      {isDesktopOrLaptop && <DesignTidbitsContainer/>}
+      {!isDesktopOrLaptop && <DesignTidbitsMobile/>}
     </div>
   );
 };
 
-export default AboutPage;
+export default DesignTidbitsPage;

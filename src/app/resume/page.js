@@ -1,13 +1,20 @@
 "use client"; 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import ResumeContainer from './ResumeContainer';
 import ResumeContainerMobile from './ResumeContainerMobile';
 
 const ResumePage = () => {
-  const isDesktopOrLaptop = useMediaQuery({
-    query: '(min-width: 1224px)'
-  })
+  const [hasMounted, setHasMounted] = useState(false);
+  const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 1224px)' });
+
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
+
+  if (!hasMounted) {
+    return null; // or a loading spinner if needed
+  }
 
   return (
     <div>

@@ -25,113 +25,120 @@ import ProcessResearchGraphic from '../../../public/Process_Research.png';
 import QuoteContainer from './QuoteContainer';
 
 import { blue, grey } from '@mui/material/colors';
+import * as globalStyles from '../styles/globalStyleConsts';
 
 export default function Research() {
   return (
       <Grid container justifyItems="center" justifyContent="center">
         <Grid item xs={10}>
-          <Typography variant='h1' className='heading1'>Tell Me How you <i>Really</i> Feel</Typography>
-          <Typography variant='h2' className='heading2'>The Research</Typography>
-          <Typography variant='body1' className='paragraph'>Focusing on my goal of creating a desirable product, I needed to understand why people use hotel booking websites. What are their actual goals and expectations? What success stories or frusterations could provide insights into their needs? I knew what I wanted to know, and <i><b>I</b></i> knew I wasn’t the person to tell me.</Typography>
+          <Typography variant='h1' sx={globalStyles.heading1}>Tell Me How you <i>Really</i> Feel</Typography>
+          <Typography variant='h2' sx={globalStyles.heading2}>The Research</Typography>
+          <Typography variant='body1' sx={globalStyles.paragraph}>Focusing on my goal of creating a desirable product, I needed to understand why people use hotel booking websites. What are their actual goals and expectations? What success stories or frusterations could provide insights into their needs? I knew what I wanted to know, and <i><b>I</b></i> knew I wasn’t the person to tell me.</Typography>
         </Grid>
         <Grid item xs={12}>
-          <Image
-            className='graphic'
-            src={ProcessResearchGraphic}
-            alt="An image of the UX process with the Research step highlighted"
-          />
+          <Box sx={globalStyles.graphic}>
+            <Image
+              src={ProcessResearchGraphic}
+              alt="An image of the UX process with the Research step highlighted"
+            />
+          </Box>
         </Grid>
         <Grid item xs={10} sx={{ marginBottom: 5}}>
-          <Typography variant='h3' className='heading3'>I Am Not My User</Typography>
-          <Typography variant='body1' className='paragraph'>Starting with basically nothing, I needed to cast a wide net. I wanted to know what past experiences, contexts, goals, and struggles real people have had when booking hotels online. To cast such a net, I decided to use a survey. A survey could give me both quantitative data to identify patterns and qualitative data to uncover deeper insights and reveal emotional responses.</Typography>
-          <Typography variant='h3' className='heading3'>The Survey Questions</Typography>
-          <Typography variant='body1' className='paragraph'>I decided to use Google Forms because it was free, familiar to me, and easy to use and distribute. I came up with a total of seven questions, an easily digestible amount that would take less than five minutes to answer.</Typography>
+          <Typography variant='h3' sx={globalStyles.heading3}>I Am Not My User</Typography>
+          <Typography variant='body1' sx={globalStyles.paragraph}>Starting with basically nothing, I needed to cast a wide net. I wanted to know what past experiences, contexts, goals, and struggles real people have had when booking hotels online. To cast such a net, I decided to use a survey. A survey could give me both quantitative data to identify patterns and qualitative data to uncover deeper insights and reveal emotional responses.</Typography>
+          <Typography variant='h3' sx={globalStyles.heading3}>The Survey Questions</Typography>
+          <Typography variant='body1' sx={globalStyles.paragraph}>I decided to use Google Forms because it was free, familiar to me, and easy to use and distribute. I came up with a total of seven questions, an easily digestible amount that would take less than five minutes to answer.</Typography>
         </Grid>
         
         <Grid item xs={12}>
-          <Image
-            className='graphic'
-            src={SurveyQuestionsGraphic}
-            width="100%"
-            alt="An image of survey questions and reasons behind asking them"
-          />
+          <Box sx={globalStyles.graphic}>
+            <Image
+              src={SurveyQuestionsGraphic}
+              width="100%"
+              alt="An image of survey questions and reasons behind asking them"
+            />
+          </Box>
         </Grid>
         
         <Grid item xs={10}>
-          <Typography variant='h3' className='heading3'>Rallying the Troops</Typography>
-          <Typography variant='body1' className='paragraph'>I reached out to friends, coworkers, and family, seeking anyone with experience booking hotels online. After a couple weeks (and a few reminders) I had survey responses from twelve lovely volunteers, and a good handful of useful insights. These insights weren’t definitive by any means, but they would help me to form testable assumptions which proved very valuable later.</Typography>
+          <Typography variant='h3' sx={globalStyles.heading3}>Rallying the Troops</Typography>
+          <Typography variant='body1' sx={globalStyles.paragraph}>I reached out to friends, coworkers, and family, seeking anyone with experience booking hotels online. After a couple weeks (and a few reminders) I had survey responses from twelve lovely volunteers, and a good handful of useful insights. These insights weren’t definitive by any means, but they would help me to form testable assumptions which proved very valuable later.</Typography>
           
-          <Typography variant='body1' className='paragraph'></Typography>
-          <Typography variant='h3' className='heading3'>Goals, Context, and Behavior</Typography>
-          <Typography variant='body1' className='paragraph'>Most respondents reported that proximity to activities in the area is the most important thing to them when looking for a hotel. Additionally, a large portion of respondents also reported that they spent the <i>majority</i> of their efforts filtering hotel amenities and browsing through search results.</Typography>
+          <Typography variant='body1' sx={globalStyles.paragraph}></Typography>
+          <Typography variant='h3' sx={globalStyles.heading3}>Goals, Context, and Behavior</Typography>
+          <Typography variant='body1' sx={globalStyles.paragraph}>Most respondents reported that proximity to activities in the area is the most important thing to them when looking for a hotel. Additionally, a large portion of respondents also reported that they spent the <i>majority</i> of their efforts filtering hotel amenities and browsing through search results.</Typography>
         </Grid>
         
         <Grid item xs={12}>
-          <Image
-            className='graphic'
-            src={QuantitativeAnswersGraphic}
-            width="100%"
-            alt="An image of pie charts representing quantitative survey results"
-          />
+          <Box sx={globalStyles.graphic}>
+            <Image
+              src={QuantitativeAnswersGraphic}
+              width="100%"
+              alt="An image of pie charts representing quantitative survey results"
+            />
+          </Box>
         </Grid>
 
         <Grid item xs={10} sx={{ marginTop: 5, marginBottom: 5 }}>
-          <Typography variant='body1' className='paragraph'>When asked what task they were trying to complete, most respondents replied that they were either booking or comparing prices. Several mentioned specifically choosing sites with the best prices or which supported easy price comparisons. Others mentioned using sites where they belonged to a rewards program with the brand. Several highlighted ease, speed, and reliability as key attributes of their favorite booking sites.</Typography>
+          <Typography variant='body1' sx={globalStyles.paragraph}>When asked what task they were trying to complete, most respondents replied that they were either booking or comparing prices. Several mentioned specifically choosing sites with the best prices or which supported easy price comparisons. Others mentioned using sites where they belonged to a rewards program with the brand. Several highlighted ease, speed, and reliability as key attributes of their favorite booking sites.</Typography>
         </Grid>
 
         <Grid item xs={12}>
-          <Image
-            className='graphic'
-            src={SurveyQuotes}
-            width="100%"
-            alt="A collection of user opinion survey quotes"
-          />
+          <Box sx={globalStyles.graphic}>
+            <Image
+              src={SurveyQuotes}
+              width="100%"
+              alt="A collection of user opinion survey quotes"
+            />
+          </Box>
         </Grid>
 
         <Grid item xs={10}>
-          <Typography variant='h3' className='heading3'>The Contradiction</Typography>
-          <Typography variant='body1' className='paragraph'>An interesting contradiction emerged in the survey results. Most respondents said that proximity to activities in the area was the most important factor to them. However, almost none mentioned it when describing their goals or interactions. I found this apparent contradiction interesting, but reminded myself not to jump to conclusions. I was only just scratching the surface of my research.</Typography>
+          <Typography variant='h3' sx={globalStyles.heading3}>The Contradiction</Typography>
+          <Typography variant='body1' sx={globalStyles.paragraph}>An interesting contradiction emerged in the survey results. Most respondents said that proximity to activities in the area was the most important factor to them. However, almost none mentioned it when describing their goals or interactions. I found this apparent contradiction interesting, but reminded myself not to jump to conclusions. I was only just scratching the surface of my research.</Typography>
         </Grid>
         <Grid item xs={10}>
-          <Typography variant='h3' className='heading3'>The Pain</Typography>
-          <Typography variant='body1' className='paragraph'>
+          <Typography variant='h3' sx={globalStyles.heading3}>The Pain</Typography>
+          <Typography variant='body1' sx={globalStyles.paragraph}>
             Out of all of the questions I asked, the longest and most detailed answers came in response to the last question on the survey: "What would you change?" It was clear that even though some respondents were answering questions about an experience they had weeks to months ago, their frustrations stuck with them.
           </Typography>
         </Grid>
 
         <Grid item xs={12}>
-          <Image
-            className='graphic'
-            src={SurveyQuotesPainpoints}
-            width="100%"
-            height={500}
-            alt="A collection of user pain point survey quotes"
-          />
+          <Box sx={globalStyles.graphic}>
+            <Image
+              src={SurveyQuotesPainpoints}
+              width="100%"
+              height={500}
+              alt="A collection of user pain point survey quotes"
+            />
+          </Box>
         </Grid>
 
         <Grid item xs={10}>
-          <Typography variant='h3' className='heading3'>Checking out the Competition and Hunting for Conventions</Typography>
-          <Typography variant='body1' className='paragraph'>Having gathered some basic data about user needs through my survey, I wanted to see how other hotel websites were addressing (or failing to address) them, discover conventions, and form a baseline. To minimize my personal bias, I set rules for myself. From a set of twelve UX design principles, I came up with a small set of categories I could focus on. My categories were navigation and order, saving time or effort, alignment with user goals, expectations, and forthcomingness.</Typography>
+          <Typography variant='h3' sx={globalStyles.heading3}>Checking out the Competition and Hunting for Conventions</Typography>
+          <Typography variant='body1' sx={globalStyles.paragraph}>Having gathered some basic data about user needs through my survey, I wanted to see how other hotel websites were addressing (or failing to address) them, discover conventions, and form a baseline. To minimize my personal bias, I set rules for myself. From a set of twelve UX design principles, I came up with a small set of categories I could focus on. My categories were navigation and order, saving time or effort, alignment with user goals, expectations, and forthcomingness.</Typography>
         
         </Grid>
 
         <Grid item xs={12}>
-          <Image
-            className='graphic'
-            src={HeuristicsGraphic}
-            width="100%"
-            height={900}
-            alt="A graphic depicting mapping UX heuristics to categories"
-          />
+          <Box sx={globalStyles.graphic}>
+            <Image
+              src={HeuristicsGraphic}
+              width="100%"
+              height={900}
+              alt="A graphic depicting mapping UX heuristics to categories"
+            />
+          </Box>
         </Grid>
 
         <Grid item xs={10} sx={{ marginTop: 5, marginBottom: 5 }}>
-          <Typography variant='h3' className='heading3'>The Lucky Contestants</Typography>
-          <Typography variant='body1' className='paragraph'>
+          <Typography variant='h3' sx={globalStyles.heading3}>The Lucky Contestants</Typography>
+          <Typography variant='body1' sx={globalStyles.paragraph}>
             With a clear lens for analysis with the help of my defined categories, I was ready to pick some websites to examine. 
             I focused on well-established companies who likely have the resources to optimize their websites. I landed on Hilton, Marriott, and Best Western. All three brands have been around for over fifty years and have thousands of active users. Hilton and Marriott were mentioned multiple times in survey answers. Best Western stands out with its franchisee-operated locations and budget-friendly reputation. 
           </Typography>
-          <Typography variant='body1' className='paragraph'>
+          <Typography variant='body1' sx={globalStyles.paragraph}>
             With my target site chosen and a big cup of coffee, I began walking through the booking process on each mobile site. I took screenshots and jotted notes on anything interesting. 
           </Typography>
         </Grid>
@@ -139,39 +146,42 @@ export default function Research() {
 
         <Grid container direction="row" justifyContent="space-around">
           <Grid item xs={4}>
-            <Image
-              className='graphic'
-              src={HiltonNotes}
-              width={900}
-              height={500}
-              alt="An example of notes taken on the Hilton website"
-            />
+            <Box sx={globalStyles.graphic}>
+              <Image
+                src={HiltonNotes}
+                width={900}
+                height={500}
+                alt="An example of notes taken on the Hilton website"
+              />
+            </Box>
           </Grid>
           <Grid item xs={4}>
-            <Image
-              className='graphic'
-              src={MarriotNotes}
-              width={900}
-              height={500}
-              alt="An example of notes taken on the Marriot website"
-            />
+            <Box sx={globalStyles.graphic}>
+              <Image
+                src={MarriotNotes}
+                width={900}
+                height={500}
+                alt="An example of notes taken on the Marriot website"
+              />
+            </Box>
           </Grid>
           <Grid item xs={4}>
-            <Image
-              className='graphic'
-              src={BestWesternNotes}
-              width={900}
-              height={500}
-              alt="An example of notes taken on the Best Western website"
-            />
+            <Box sx={globalStyles.graphic}>
+              <Image
+                src={BestWesternNotes}
+                width={900}
+                height={500}
+                alt="An example of notes taken on the Best Western website"
+              />
+            </Box>
           </Grid>
         </Grid>
         
        
   
         <Grid item xs={10} sx={{ marginBottom: 5 }}>
-          <Typography variant='h3' className='heading3'>The Good, the Bad, and the Conventional</Typography>
-          <Typography variant='body1' className='paragraph'>
+          <Typography variant='h3' sx={globalStyles.heading3}>The Good, the Bad, and the Conventional</Typography>
+          <Typography variant='body1' sx={globalStyles.paragraph}>
             I discovered a few interesting things through this exercise. For one, there was certainly a conventional pattern to the steps through the booking process. Each site more or less took me through the same steps to complete my booking. Anyone who has used these sites has likely shaped a mental model off of this pattern.
             Beyond the process, I identified several key insights that fell easily into my categories.
           </Typography>
@@ -278,50 +288,52 @@ export default function Research() {
           </Grid>
         </Grid>
         <Grid item xs={10} sx={{ marginBottom: 5 }}>
-          <Typography variant='h3' className='heading3'>The Importance of Observation</Typography>
+          <Typography variant='h3' sx={globalStyles.heading3}>The Importance of Observation</Typography>
           
-          <Typography variant='body1' className='paragraph'>
+          <Typography variant='body1' sx={globalStyles.paragraph}>
             With a better understanding of user needs and the typical booking process, I wanted to see for myself how real people interacted with existing booking websites. Would their behaviors align with my assumptions? Would they feel confident? Where would frustration arise, and what could I learn about their mental models?
             Getting the answers to these questions and more would be possible with usability tests, allowing me to observe users’ expressions, body language, and confusion in real time and organically.
           </Typography>
 
           <QuoteContainer quote="What people say, what people do, and what they say they do are entirely different things." author="Margaret Mead"/>
 
-          <Typography variant='h3' className='heading3'>Selecting Users and Setting Up</Typography>
+          <Typography variant='h3' sx={globalStyles.heading3}>Selecting Users and Setting Up</Typography>
                
-          <Typography variant='body1' className='paragraph'>I observed four usability test session, each with a different user. I selected participants with hotel booking experience but from different backgrounds to see if their approaches varied. The tests were conducted via Zoom and LetsView (a screen mirroring app). A few days before the session, I emailed participants an outline explaining the test, its purpose, the expected duration, and instructions for installing and using the necessary software. </Typography>
+          <Typography variant='body1' sx={globalStyles.paragraph}>I observed four usability test session, each with a different user. I selected participants with hotel booking experience but from different backgrounds to see if their approaches varied. The tests were conducted via Zoom and LetsView (a screen mirroring app). A few days before the session, I emailed participants an outline explaining the test, its purpose, the expected duration, and instructions for installing and using the necessary software. </Typography>
 
           </Grid>
 
           <Grid item xs={12}>
-            <Image
-              className='graphic'
-              src={Zoom3}
-              width="100%"
-              alt="An image of pie charts representing quantitative survey results"
-            />
+            <Box sx={globalStyles.graphic}>
+              <Image
+                src={Zoom3}
+                width="100%"
+                alt="An image of pie charts representing quantitative survey results"
+              />
+            </Box>
           </Grid>
           
           <Grid item xs={10} sx={{ marginBottom: 5 }}>
-            <Typography variant='h3' className='heading3'>Getting Comfortable</Typography>
-            <Typography variant='body1' className='paragraph'>
+            <Typography variant='h3' sx={globalStyles.heading3}>Getting Comfortable</Typography>
+            <Typography variant='body1' sx={globalStyles.paragraph}>
               Once the technology was set up, I took time and care to ensure my participants were comfortable. I clarified that we testing the website - not them - and emphasized that there were no mistakes — only insights. I encouraged them to ask questions, but explained that I might not answer all to maintain the test’s integrity.
               I asked them to take their time and think aloud, sharing their actions, thoughts, and impressions of the screens. Finally, I explained the test structure and expectations as well as confirmed they were okay with the session being recorded.
             </Typography>
           </Grid>
 
           <Grid item xs={12}>
-            <Image
-              className='graphic'
-              src={Zoom1}
-              width="100%"
-              alt="An image of pie charts representing quantitative survey results"
-            />
+            <Box sx={globalStyles.graphic}>
+              <Image
+                src={Zoom1}
+                width="100%"
+                alt="An image of pie charts representing quantitative survey results"
+              />
+            </Box>
           </Grid>
             
           <Grid item xs={10} sx={{ marginBottom: 5 }}>
-            <Typography variant='h3' className='heading3'>Depth interviews: Getting to Know the Participants</Typography>
-            <Typography variant='body1' className='paragraph'>
+            <Typography variant='h3' sx={globalStyles.heading3}>Depth interviews: Getting to Know the Participants</Typography>
+            <Typography variant='body1' sx={globalStyles.paragraph}>
               Each of the four tests began with a short interview to understand the users' backgrounds, behaviors, and context for using the software. I asked about their occupations, location, booking habits, priorities when booking, and recent booking experiences.
               Their responses helped me create four user personas, which I later used to design the customer journey.
             </Typography>
@@ -329,80 +341,86 @@ export default function Research() {
 
         <Grid container direcion="row" justifyContent="space-around" xs={12}>
           <Grid item xs={5.5}>
+            <Box sx={globalStyles.graphic}>
               <Image
-              className='graphic'
-              src={PersonaTomas}
-              width="100%"
-              alt="A stock photograph of a woman representing Tomas"
-            />
+                src={PersonaTomas}
+                width="100%"
+                alt="A stock photograph of a woman representing Tomas"
+              />
+            </Box>
           </Grid>
           <Grid item xs={5.5}>
+            <Box sx={globalStyles.graphic}>
               <Image
-              className='graphic'
-              src={PersonaRachel}
-              width="100%"
-              alt="A stock photograph of a woman representing Rachel"
-            />
+                src={PersonaRachel}
+                width="100%"
+                alt="A stock photograph of a woman representing Rachel"
+              />
+            </Box>
           </Grid>
           <Grid item xs={5.5}>
+            <Box sx={globalStyles.graphic}>
               <Image
-              className='graphic'
-              src={PersonaMike}
-              width="100%"
-              alt="A stock photograph of a woman representing Mike"
-            />
+                src={PersonaMike}
+                width="100%"
+                alt="A stock photograph of a woman representing Mike"
+              />
+            </Box>
           </Grid>
           <Grid item xs={5.5}>
+            <Box sx={globalStyles.graphic}>
               <Image
-              className='graphic'
-              src={PersonaLinda}
-              width="100%"
-              alt="A stock photograph of a woman representing Linda"
-            />
+                src={PersonaLinda}
+                width="100%"
+                alt="A stock photograph of a woman representing Linda"
+              />
+            </Box>
           </Grid>
         </Grid>
         <Grid item xs={10} sx={{ marginBottom: 5 }}>
-          <Typography variant='h3' className='heading3'>Conducting the Usability Tests</Typography>
-          <Typography variant='body1' className='paragraph'>After each depth interview concluded, it was time for the exciting part – testing the usability of the websites. Each participant was tasked with booking a hotel in a specified city for a weekend on two different sites – two of the sites I examined during my benchmark research. I watched what they were doing, reminded them to talk through their thoughts if they got quiet, and asked follow-up questions when needed, being as careful as possible not to bias the tests.</Typography>
-          <Typography variant='body1' className='paragraph'>Each session took about an hour. After they finished the tasks, I asked how they felt about the experience—what surprised them, what they liked or didn’t like, and if they thought anything was missing. I wrapped up by thanking them for their time and letting them know how helpful their feedback was for my research.</Typography>
+          <Typography variant='h3' sx={globalStyles.heading3}>Conducting the Usability Tests</Typography>
+          <Typography variant='body1' sx={globalStyles.paragraph}>After each depth interview concluded, it was time for the exciting part – testing the usability of the websites. Each participant was tasked with booking a hotel in a specified city for a weekend on two different sites – two of the sites I examined during my benchmark research. I watched what they were doing, reminded them to talk through their thoughts if they got quiet, and asked follow-up questions when needed, being as careful as possible not to bias the tests.</Typography>
+          <Typography variant='body1' sx={globalStyles.paragraph}>Each session took about an hour. After they finished the tasks, I asked how they felt about the experience—what surprised them, what they liked or didn’t like, and if they thought anything was missing. I wrapped up by thanking them for their time and letting them know how helpful their feedback was for my research.</Typography>
         
         </Grid>
 
         <QuoteContainer quote="Efficiency is doing things right; effectiveness is doing the right things." author="Peter Drucker"/>
 
         <Grid item xs={10}>  
-          <Typography variant='h3' className='heading3'>Notable Behaviors</Typography>
-          <Typography variant='body1' className='paragraph'>
+          <Typography variant='h3' sx={globalStyles.heading3}>Notable Behaviors</Typography>
+          <Typography variant='body1' sx={globalStyles.paragraph}>
             Participants all remarked on colorful, on-theme imagery and photos of hotels. Imagery seemed very important, especially on the homepage. Each user began the same way: by looking for a place to enter their desired destination and dates. On the hotel results page, they focused on finding the most appealing hotel with good ratings at the lowest price. They also seemed to love seeing ratings. 
           </Typography>
-          <Typography variant='body1' className='paragraph'>
+          <Typography variant='body1' sx={globalStyles.paragraph}>
             After selecting a hotel, they quickly reviewed the amenities if available, then moved on to the room selection page. Here, they compared prices and room features, scrolling up and down the page until they found a match closest to what they were looking for.
           </Typography>
         </Grid>
         <Grid item xs={12}>
-          <Image
-            className='graphic'
-            src={UsabilityQuotes}
-            width="100%"
-            alt="An image of quotes expressing user opinions"
-          />
+          <Box sx={globalStyles.graphic}>
+            <Image
+              src={UsabilityQuotes}
+              width="100%"
+              alt="An image of quotes expressing user opinions"
+            />
+          </Box>
         </Grid>
         <Grid item xs={10} sx={{ marginBottom: 5 }}>
-          <Typography variant='h3' className='heading3'>Pain Points</Typography>
-          <Typography variant='body1' className='paragraph'>Pain points encountered by the participants included overwhelming or unexpected search results, unconventional or confusing date picker controls, lack of clear and descriptive information about the hotels and amenities, unclear sorting options, confusing rates and promotions that weren't easy to compare, and unclear lines drawn between member and non-member options.</Typography>
+          <Typography variant='h3' sx={globalStyles.heading3}>Pain Points</Typography>
+          <Typography variant='body1' sx={globalStyles.paragraph}>Pain points encountered by the participants included overwhelming or unexpected search results, unconventional or confusing date picker controls, lack of clear and descriptive information about the hotels and amenities, unclear sorting options, confusing rates and promotions that weren't easy to compare, and unclear lines drawn between member and non-member options.</Typography>
         </Grid>
         <Grid item xs={12}>
-          <Image
-            className='graphic'
-            src={UsabilityQuotesPainpoints}
-            width="100%"
-            alt="An image of quotes expressing user pain points"
-          />
+          <Box sx={globalStyles.graphic}>
+            <Image
+              src={UsabilityQuotesPainpoints}
+              width="100%"
+              alt="An image of quotes expressing user pain points"
+            />
+          </Box>
         </Grid>
         <Grid item xs={10} sx={{ marginBottom: -5 }}>
-          <Typography variant='h3' className='heading3'>An Exercise in Empathy</Typography>
-          <Typography variant='body1' className='paragraph'>Watching people struggle is painful, but important. Not everyone works through problems in the same way, and completing the task isn’t everything if the journey was painful. I didn’t want to bias the data, but I also didn’t want my users to feel bad about themselves. With one participant in particular, I could tell she was getting anxious and blaming herself, and it took everything I had not to jump in and console her.</Typography>
-          <Typography variant='body1' className='paragraph'>Looking back, I can see where I could’ve done things differently. Next time, I won’t agree with or justify their frustrations, and I won’t jump in with solutions. Instead, I’ll show empathy, give them some space to figure things out, and ask them to share what they’re feeling or trying to do when they get stuck.</Typography>
+          <Typography variant='h3' sx={globalStyles.heading3}>An Exercise in Empathy</Typography>
+          <Typography variant='body1' sx={globalStyles.paragraph}>Watching people struggle is painful, but important. Not everyone works through problems in the same way, and completing the task isn’t everything if the journey was painful. I didn’t want to bias the data, but I also didn’t want my users to feel bad about themselves. With one participant in particular, I could tell she was getting anxious and blaming herself, and it took everything I had not to jump in and console her.</Typography>
+          <Typography variant='body1' sx={globalStyles.paragraph}>Looking back, I can see where I could’ve done things differently. Next time, I won’t agree with or justify their frustrations, and I won’t jump in with solutions. Instead, I’ll show empathy, give them some space to figure things out, and ask them to share what they’re feeling or trying to do when they get stuck.</Typography>
         </Grid>
       </Grid>
   );

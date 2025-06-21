@@ -13,6 +13,7 @@ import MimedxLogo from '../../../public/mimedx_logo.png';
 import HeaderMobile from "../HeaderMobile";
 import Image from 'next/image';
 import { blueGrey, grey } from '@mui/material/colors';
+import * as globalStyles from '../styles/globalStyleConsts';
 
 const sectionHeader = {
   fontSize: "26px",
@@ -38,14 +39,14 @@ const ResumeContainerMobile = () => {
       <Box container direction="column" justifyContent="center" sx={{ display: "flex", justifyContent: "center", marginTop: 5 }}>
           <Box sx={{ maxWidth: "100%", padding: 3, marginTop: 3, marginBottom: 5 }}>
             <Box sx={{ marginBottom: 3 }}>
-              <Typography className="heading1" sx={{ textAlign: "center" }} variant="h1">
+              <Typography sx={{ ...globalStyles.heading1, textAlign: "center" }} variant="h1">
                 CHELSEA L. VIDRINE
               </Typography>
-              <Typography className="heading3" sx={{ textAlign: "center" }}>
+              <Typography sx={{ ...globalStyles.heading3, textAlign: "center" }}>
                 UX RESEARCH & DESIGN
               </Typography>
             </Box>
-            <Typography className="heading5" sx={{ textAlign: "center" }}>
+            <Typography sx={{ ...globalStyles.heading5, textAlign: "center" }}>
               <EmailIcon sx={{ marginRight: 1 }}/>chelsea.vidrine2@gmail.com
             </Typography>
             <Typography sx={{ textAlign: "center", marginTop: -2, fontSize: 20, color: blueGrey[600], cursor: "pointer" }}>

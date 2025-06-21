@@ -16,9 +16,8 @@ import StickyNote2SharpIcon from '@mui/icons-material/StickyNote2Sharp';
 import SchoolIcon from '@mui/icons-material/School';
 import { grey, blueGrey } from '@mui/material/colors';
 import Image from 'next/image';
-import HotelBackground from "../../../public/WorkPhotography/Work_Photo11.jpg";
 import MenagerieHotelsHeader from "../../../public/Menagerie_Hotels_Header.png";
-import Opening from "../../../public/opening.png";
+import * as globalStyles from '../styles/globalStyleConsts';
 
 const HotelsContainer = () => {
   const [activeSection, setActiveSection] = useState(null);
@@ -55,43 +54,13 @@ const HotelsContainer = () => {
     }
   };
 
-const imageWrapperStyle = {
-    position: 'relative',
-    width: '100%',
-    height: '100%',
-    opacity: '0.9'
-};
-
-const imageStyle = {
-    objectFit: 'cover',
-};
-
-const overlayStyle = {
-  position: 'absolute',
-  bottom: '15%', 
-  left: '50%',
-  transform: 'translateX(-50%)',
-  width: '70%', 
-  height: '70%', 
-  backgroundColor: 'rgba(255, 255, 255, 0.8)', 
-  color: 'black', 
-  display: 'flex',
-  flexDirection: 'column', 
-  alignItems: 'center',
-  justifyContent: 'center',
-  textAlign: 'center',
-  padding: '20px', 
-  boxSizing: 'border-box',
-  zIndex: 10
-};
-
   return (
     <div>
     <Header/>
     <div style={{ marginTop: 60 }}>
     <Grid container>
       <Grid item xs={2} sx={{ backgroundColor: blueGrey[800]}}>
-        <div className="column-b" style={{ backgroundColor: "black" }}>
+        <div style={{ ...globalStyles.columnB, backgroundColor: "black" }}>
           <List component="nav" style={{ position: "fixed", width: 250 }}>
             <ListItem onClick={() => handleSectionClick('introduction_section')} style={activeSection === 'introduction_section' ? { backgroundColor: blueGrey[100]} : {}}>
               <ListItemText>
@@ -208,11 +177,6 @@ const overlayStyle = {
       </Grid>
     </Grid>
     </div>
-
-
-
-
-
     </div>
   );
 };

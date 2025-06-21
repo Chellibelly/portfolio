@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { Typography, Box, Grid, List, ListItem, Button, Divider } from '@mui/material';
 import CheckIcon from '@mui/icons-material/Check';
@@ -26,13 +26,21 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 import { blue, grey } from '@mui/material/colors';
 import QuoteContainer from './QuoteContainer';
+import * as globalStyles from '../styles/globalStyleConsts';
 
 
 export default function Analysis() {
+const [isDesktopOrLaptop, setIsDesktopOrLaptop] = useState(false);
 
-  const isDesktopOrLaptop = useMediaQuery({
-    query: '(min-width: 1224px)'
-  })
+useEffect(() => {
+  const mediaQuery = window.matchMedia('(min-width: 1224px)');
+  const updateMatch = () => setIsDesktopOrLaptop(mediaQuery.matches);
+
+  updateMatch(); // Initial check
+  mediaQuery.addEventListener('change', updateMatch);
+
+  return () => mediaQuery.removeEventListener('change', updateMatch);
+}, []);
 
   const categoryLabel = {
     textAlign: "center", 
@@ -73,62 +81,66 @@ export default function Analysis() {
   return (
       <Grid container justifyItems="center" justifyContent="center">
         <Grid item xs={10}>
-          <Typography variant='h1' className='heading1'>The Forest Through the Trees</Typography>
-          <Typography variant='h2' className='heading2'>The Analysis</Typography>
-          <Typography variant='body1' className='paragraph'>One of my favorite methaphors has to do with “seeing the forest through the trees.” More or less, this means being able to draw the larger meaning, or bigger picture, out of the parts. I definitely had a bunch of trees - piles of research notes. Through analysis, I was hoping to make sense out of it all.</Typography>
-          <Typography variant='body1' className='paragraph'>For some direction, I revisited my goal: creating a desirable product. When I first set that goal, I wasn’t sure what a desirable hotel booking site looked like. But now, with my research in hand, I hoped I could finally figure it out.</Typography>
+          <Typography variant='h1' sx={globalStyles.heading1}>The Forest Through the Trees</Typography>
+          <Typography variant='h2' sx={globalStyles.heading2}>The Analysis</Typography>
+          <Typography variant='body1' sx={globalStyles.paragraph}>One of my favorite methaphors has to do with “seeing the forest through the trees.” More or less, this means being able to draw the larger meaning, or bigger picture, out of the parts. I definitely had a bunch of trees - piles of research notes. Through analysis, I was hoping to make sense out of it all.</Typography>
+          <Typography variant='body1' sx={globalStyles.paragraph}>For some direction, I revisited my goal: creating a desirable product. When I first set that goal, I wasn’t sure what a desirable hotel booking site looked like. But now, with my research in hand, I hoped I could finally figure it out.</Typography>
         </Grid>
         
         <Grid item xs={12}>
-          <Image
-            className='graphic'
-            src={ProcessAnalysisGraphic}
-            width="100%"
-            alt="An image of the UX process with the Analysis step highlighted"
-          />
+          <Box sx={globalStyles.graphic}>
+            <Image
+              src={ProcessAnalysisGraphic}
+              width="100%"
+              alt="An image of the UX process with the Analysis step highlighted"
+            />
+          </Box>
         </Grid>
         
         <Grid item xs={10} sx={{ marginTop: 5, marginBottom: 5 }}>
-          <Typography variant='h3' className='heading3'>Was There Really a Problem to Solve?</Typography>
-          <Typography variant='body1' className='paragraph'>I was excited to dig into the data, but I couldn’t help wondering: was there a real need for this? What problem were we solving? If we actually built this, would it be any better than the competitors?</Typography>
+          <Typography variant='h3' sx={globalStyles.heading3}>Was There Really a Problem to Solve?</Typography>
+          <Typography variant='body1' sx={globalStyles.paragraph}>I was excited to dig into the data, but I couldn’t help wondering: was there a real need for this? What problem were we solving? If we actually built this, would it be any better than the competitors?</Typography>
         </Grid>
 
         <QuoteContainer quote="People don't want to buy a quarter-inch drill. They want a quarter-inch hole!" author="Theodore Levitt"/>
 
         <Grid item xs={10} sx={{ marginBottom: 5 }}>
-          <Typography variant='h3' className='heading3'>Triangulation</Typography>
-          <Typography variant='body1' className='paragraph'> </Typography>
-          <Typography variant='body1' className='paragraph'>I decided to start with an affinity diagram to organize all my notes. I grouped related data together first, then defined the categories based on commonalities. This way, natural groupings emerged, helping me focus on what's important without letting my own opinions influence the process. Essentially, it allowed the data to speak for itself.</Typography>
-          <Typography variant='body1' className='paragraph'>I gathered stacks of sticky notes in different colors, a whiteboard, and markers. I worked through one research set at a time—survey results, benchmark notes, interview answers, and usability videos—spending about 10 minutes on each. I wrote down key points on sticky notes and placed them on the whiteboard.</Typography>
+          <Typography variant='h3' sx={globalStyles.heading3}>Triangulation</Typography>
+          <Typography variant='body1' sx={globalStyles.paragraph}> </Typography>
+          <Typography variant='body1' sx={globalStyles.paragraph}>I decided to start with an affinity diagram to organize all my notes. I grouped related data together first, then defined the categories based on commonalities. This way, natural groupings emerged, helping me focus on what's important without letting my own opinions influence the process. Essentially, it allowed the data to speak for itself.</Typography>
+          <Typography variant='body1' sx={globalStyles.paragraph}>I gathered stacks of sticky notes in different colors, a whiteboard, and markers. I worked through one research set at a time—survey results, benchmark notes, interview answers, and usability videos—spending about 10 minutes on each. I wrote down key points on sticky notes and placed them on the whiteboard.</Typography>
         </Grid>
         
         <Grid item xs={12}>
-          <Image
-            className='graphic'
-            src={WhiteboardPostItsGraphic}
-            width="100%"
-            alt="An image of a whiteboard with a collection of unsorted sticky notes"
-          />
+          <Box sx={globalStyles.graphic}>
+            <Image
+              src={WhiteboardPostItsGraphic}
+              width="100%"
+              alt="An image of a whiteboard with a collection of unsorted sticky notes"
+            />
+          </Box>
         </Grid>
        
         <Grid item xs={10} sx={{ marginBottom: 5 }}>
-          <Typography variant='h3' className='heading3'>Building the Affinity Diagram</Typography>
-          <Typography variant='body1' className='paragraph'>My whiteboard was a mess of sticky notes, but I started grouping related ones together. I kept adjusting, moving things around until everything had its place. Then, I gave each group a name. Some groups needed further breakdown, so I created subgroups and labeled those too. In the end, I had a clearer picture of everything.</Typography>
+          <Typography variant='h3' sx={globalStyles.heading3}>Building the Affinity Diagram</Typography>
+          <Typography variant='body1' sx={globalStyles.paragraph}>My whiteboard was a mess of sticky notes, but I started grouping related ones together. I kept adjusting, moving things around until everything had its place. Then, I gave each group a name. Some groups needed further breakdown, so I created subgroups and labeled those too. In the end, I had a clearer picture of everything.</Typography>
         </Grid>
       
         <Grid item xs={12}>
-          <Image
-            className='graphic'
-            src={AffinityDiagramGraphic}
-            width="100%"
-            alt="An image of a whiteboard with a collection of categorized sticky notes"
-          />
+          <Box sx={globalStyles.graphic}>
+            <Image
+              sx={globalStyles.graphic}
+              src={AffinityDiagramGraphic}
+              width="100%"
+              alt="An image of a whiteboard with a collection of categorized sticky notes"
+            />
+          </Box>
         </Grid>
 
         <Grid item xs={10} sx={{ marginBottom: 5 }}>
-        <Typography variant='h3' className='heading3'>Areas of Importance Exposed</Typography>
-        <Typography variant='body1' className='paragraph'>I ended up with nine categories: filtering, account, look & feel, hotel info, extras, room selection, navigation, date selection, and pricing.</Typography>
-        <Typography variant='body1' className='paragraph'>The groupings seemed to line up with what users had emphasized as most important. The Hotel Information category had the most sticky notes—users often felt the info about hotels wasn’t clear enough. Within that group, three key themes kept coming up: location, amenities, and reviews.
+        <Typography variant='h3' sx={globalStyles.heading3}>Areas of Importance Exposed</Typography>
+        <Typography variant='body1' sx={globalStyles.paragraph}>I ended up with nine categories: filtering, account, look & feel, hotel info, extras, room selection, navigation, date selection, and pricing.</Typography>
+        <Typography variant='body1' sx={globalStyles.paragraph}>The groupings seemed to line up with what users had emphasized as most important. The Hotel Information category had the most sticky notes—users often felt the info about hotels wasn’t clear enough. Within that group, three key themes kept coming up: location, amenities, and reviews.
         </Typography>
         </Grid>
         
@@ -137,8 +149,8 @@ export default function Analysis() {
         </Box>
 
         <Grid item xs={10}>
-        <Typography variant='h3' className='heading3'>A User Journey Taking Shape</Typography>
-          <Typography variant='body1' className='paragraph'>
+        <Typography variant='h3' sx={globalStyles.heading3}>A User Journey Taking Shape</Typography>
+          <Typography variant='body1' sx={globalStyles.paragraph}>
             At this point, it felt crucial to define the key stages of the booking journey, which I had started to visualize through the research and affinity diagram. There were about eight major steps: home page (destination selection), date selection, hotel search, hotel selection, room selection, rate selection, add-ons, and booking completion (payment & contact details).
           </Typography>
         </Grid>
@@ -186,8 +198,8 @@ export default function Analysis() {
         </Grid>
 
         <Grid item xs={10} sx={{ marginBottom: 5 }}>
-          <Typography variant='h3' className='heading3'>The Customer Journey Map</Typography>
-          <Typography variant='body1' className='paragraph'>With my focus areas from the affinity diagram and the journey steps defined, it was time to organize everything. I added user goals, behaviors, and sentiments to create a customer journey map. This helped me get a clearer picture of the website’s information architecture and guided the design by identifying key screen purposes, opportunities, and guidelines.</Typography>
+          <Typography variant='h3' sx={globalStyles.heading3}>The Customer Journey Map</Typography>
+          <Typography variant='body1' sx={globalStyles.paragraph}>With my focus areas from the affinity diagram and the journey steps defined, it was time to organize everything. I added user goals, behaviors, and sentiments to create a customer journey map. This helped me get a clearer picture of the website’s information architecture and guided the design by identifying key screen purposes, opportunities, and guidelines.</Typography>
         </Grid>
         
         <Grid item xs={12}>
@@ -280,16 +292,16 @@ export default function Analysis() {
         </Grid>
 
         <Grid item xs={10}>
-          <Typography variant='h3' className='heading3'>The Eureka Moment</Typography>
-          <Typography variant='body1' className='paragraph'>The glaring bottom line made evident from the affinity diagram and customer journey map was clear: the main issue was a lack of (or at least confusing) information, often assuming users knew things they didn’t. This was a consistent problem across every site I researched and was highlighted by every user interviewed and surveyed.</Typography>
-          <Typography variant='body1' className='paragraph'>At this point, my goal became much clearer. While there might not have been a glaring problem to fix, there was an opportunity to improve. A desirable hotel booking site would follow industry standards but do so with complete transparency, providing users with all the information they need at every step.</Typography>
+          <Typography variant='h3' sx={globalStyles.heading3}>The Eureka Moment</Typography>
+          <Typography variant='body1' sx={globalStyles.paragraph}>The glaring bottom line made evident from the affinity diagram and customer journey map was clear: the main issue was a lack of (or at least confusing) information, often assuming users knew things they didn’t. This was a consistent problem across every site I researched and was highlighted by every user interviewed and surveyed.</Typography>
+          <Typography variant='body1' sx={globalStyles.paragraph}>At this point, my goal became much clearer. While there might not have been a glaring problem to fix, there was an opportunity to improve. A desirable hotel booking site would follow industry standards but do so with complete transparency, providing users with all the information they need at every step.</Typography>
         </Grid>
 
         <QuoteContainer quote="Good research is not about finding what you expect to find; it’s about finding what’s actually there." author="Albert Szent-Györgyi"/>
 
         <Grid item xs={10}>
-          <Typography variant='h3' className='heading3'>Opportunities</Typography>
-          <Typography variant='body1' className='paragraph'>
+          <Typography variant='h3' sx={globalStyles.heading3}>Opportunities</Typography>
+          <Typography variant='body1' sx={globalStyles.paragraph}>
             My analysis thus far revealed that the key areas of transparency I needed to focus on fell into four main categories: hotel quality and amenities, hotel location and its relation to places of interest, pricing and rate comparisons, and account and membership programs.
           </Typography>
         </Grid>

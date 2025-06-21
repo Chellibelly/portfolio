@@ -1,10 +1,10 @@
 "use client"; 
 import React, { useEffect, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
-import AboutContainer from './about/AboutContainer2'
-import AboutContainerMobile from './about/AboutContainerMobile';
+import LifeManagementAppContainer from './LifeManagementAppContainer';
+import LifeManagementAppMobile from './LifeManagementAppMobile';
 
-const AboutPage = () => {
+const LifeManagementAppPage = () => {
   const [hasMounted, setHasMounted] = useState(false);
   const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 1224px)' });
 
@@ -15,13 +15,13 @@ const AboutPage = () => {
   if (!hasMounted) {
     return null; // or a loading spinner if needed
   }
-
+  
   return (
     <div>
-      {isDesktopOrLaptop && <AboutContainer/>}
-      {!isDesktopOrLaptop && <AboutContainerMobile/>}
+      {isDesktopOrLaptop && <LifeManagementAppContainer/>}
+      {!isDesktopOrLaptop && <LifeManagementAppMobile/>}
     </div>
   );
 };
 
-export default AboutPage;
+export default LifeManagementAppPage;

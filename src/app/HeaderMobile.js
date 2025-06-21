@@ -29,11 +29,8 @@ export default function HeaderMobile() {
     if (pageName === "Home") {
       pageName = "About Me";
     }
-    if (pageName === "CurrentProjects") {
-      pageName = "Current Projects";
-    }
-    if (pageName === "CaseStudies") {
-      pageName = "UX Case Study";
+    if (pageName === "caseStudiesHome") {
+      pageName = "UX Case Studies";
     }
     setPageName(pageName);
   }, []);
@@ -111,21 +108,8 @@ export default function HeaderMobile() {
                             <PhoneAndroidIcon sx={{ fontSize: "24px", color: blueGrey[900] }}/>
                         </Grid>
                         <Grid item>
-                          <Link href="/caseStudies" sx={{ textDecoration: "none" }}>
-                            <Typography sx={menuFont}>UX Case Study</Typography>
-                          </Link>
-                        </Grid>
-                    </Grid>
-                </MenuItem>
-
-                <MenuItem sx={{ padding: 2 }} onClick={handleClose}>
-                    <Grid container>
-                        <Grid item sx={{ mr: 2 }}>
-                            <DrawIcon sx={{ fontSize: "24px", color: blueGrey[900] }}/>
-                        </Grid>
-                        <Grid item>
-                          <Link href="/currentProjects" sx={{ textDecoration: "none" }}>
-                            <Typography sx={menuFont}>Current Projects</Typography>
+                          <Link href="/caseStudiesHome" sx={{ textDecoration: "none" }}>
+                            <Typography sx={menuFont}>UX Case Studies</Typography>
                           </Link>
                         </Grid>
                     </Grid>

@@ -2,6 +2,7 @@
 import React, { } from 'react';
 import { Grid, Box, Typography, Link } from '@mui/material';
 import { blueGrey } from '@mui/material/colors';
+import * as globalStyles from './styles/globalStyleConsts';
 
 const Header = () => {
   const [pageName, setPageName] = React.useState('');
@@ -20,24 +21,31 @@ const Header = () => {
     <div>
         <Box style={{ width: "100%", backgroundColor: blueGrey[900], position: "fixed", top: 0, zIndex: 99 }}>
         <Grid container direction="row" justifyContent="space-around" style={{ width:"50%" }}>
-            <Grid item xs={3} className={pageName === "Home" ? "nav-section-active" : "nav-section"}>
-                <Link href="/" className={pageName === "Home" ? "nav-link-active" : "nav-link"}>
+            <Grid item xs={3} 
+            sx={pageName === "Home" ? globalStyles.navSectionActive : globalStyles.navSection}
+            >
+                <Link href="/" 
+                sx={pageName === "Home" ? globalStyles.navLinkActive : globalStyles.navLink}
+                >
                     <Typography sx={navText}>About Me</Typography>
                 </Link>
             </Grid>
-            <Grid item xs={3} className={pageName === "Resume" ? "nav-section-active" : "nav-section"}>
-                <Link href="/resume" className={pageName === "Resume" ? "nav-link-active" : "nav-link"}>
+            <Grid item xs={3} 
+            sx={pageName === "Resume" ? globalStyles.navSectionActive : globalStyles.navSection}
+            >
+                <Link href="/resume" 
+                sx={pageName === "Resume" ? globalStyles.navLinkActive : globalStyles.navLink}
+                >
                     <Typography sx={navText}>Resume</Typography>
                 </Link>
             </Grid>
-            <Grid item xs={3} className={pageName === "CaseStudies" ? "nav-section-active" : "nav-section"}>
-                <Link href="/caseStudies" className={pageName === "CaseStudies" ? "nav-link-active" : "nav-link"}>
-                    <Typography sx={navText}>UX Case Study</Typography>
-                </Link>
-            </Grid>
-            <Grid item xs={3} className={pageName === "CurrentProjects" ? "nav-section-active" : "nav-section"}>
-                <Link href="/currentProjects" className={pageName === "CurrentProjects" ? "nav-link-active" : "nav-link"}>
-                    <Typography sx={navText}>Current Projects</Typography>
+            <Grid item xs={3} 
+            sx={pageName === "CaseStudiesHome" ? globalStyles.navSectionActive : globalStyles.navSection}
+            >
+                <Link href="/caseStudiesHome" 
+                sx={pageName === "CaseStudiesHome" ? globalStyles.navLinkActive : globalStyles.navLink}
+                >
+                    <Typography sx={navText}>UX Case Studies</Typography>
                 </Link>
             </Grid>
         </Grid>

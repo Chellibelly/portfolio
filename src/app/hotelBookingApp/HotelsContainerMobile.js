@@ -180,7 +180,7 @@ const HotelsContainerMobile = () => {
           </div>
         </div>
 
-        <div className="column-a">
+        <div>
           {/* Sections to render */}
           <section
             id="introduction_section"
