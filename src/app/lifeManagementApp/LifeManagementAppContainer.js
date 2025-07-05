@@ -3,13 +3,13 @@ import React, {  } from 'react';
 import { Box, Grid, Paper, Typography, List, ListItem } from '@mui/material';
 import * as globalStyles from '../styles/globalStyleConsts';
 import Header from '../Header';
+import Image from 'next/image';
 import ToDoListImage from '../../../public/Next_Up_Project.png';
 import QualitativeAnswers from '../../../public/LM_Survey_Qual.png';
-import QuantitativeAnswers4 from '../../../public/LM_Quantitative_Answers_4.png';
 import CompetitorResearch from '../../../public/LM_Competitor_Research.png';
 import InterviewPersonas from '../../../public/Interview_Personas.png';
-
-import Image from 'next/image';
+import AffinityDiagram from '../../../public/LM_Affinity_Diagram_Full.jpg';
+import UserJourneys from '../../../public/LM_User_Journeys.png';
 
 const LifeManagementAppContainer = () => {
   return (
@@ -444,19 +444,291 @@ const LifeManagementAppContainer = () => {
 
 
         </Box>
-        <Box>
+        <Box sx={{ mt: 5 }}>
           <Typography sx={globalStyles.heading1}>
-            Analysis
+            Bridging the Gap: Mapping Needs <br/>to Opportunities
           </Typography>
+          <Typography variant="h2" sx={{ ...globalStyles.heading2, mt: 2 }}>
+            Research & Revelations
+          </Typography>
+          <Typography sx={{ ...globalStyles.paragraph }}>
+            After completing surveys, interviews, and competitive research, clear patterns began to emerge. While people use a variety of tools to manage their day-to-day responsibilities, very few had a cohesive system that supported both short-term task execution and long-term life management. Fragmentation, motivation challenges, memory reliance, and tool limitations consistently showed up across the data.
+          </Typography>
+          <Typography sx={{ ...globalStyles.paragraph }}>
+            Key themes I uncovered included:
+          </Typography>
+          <List sx={{ listStyleType: 'disc', marginLeft: 10 }}>
+            <ListItem sx={{ display: 'list-item' }}>
+              <Typography sx={{ ...globalStyles.paragraph, mt: 0, mb: 0 }}>
+                  <b>Fragmented systems:</b> Users juggle between apps, paper, and memory—resulting in gaps, forgetfulness, and task overload.
+              </Typography>
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              <Typography sx={{ ...globalStyles.paragraph, mt: 0, mb: 0 }}>
+                  <b>Tool overload vs. under-support:</b> People appreciate the strengths of individual tools (like reminders or calendars), but often feel those tools lack critical features—like prioritization, record-keeping, or integration.
+              </Typography>
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              <Typography sx={{ ...globalStyles.paragraph, mt: 0, mb: 0 }}>
+                  <b>Memory as a system:</b> Many users rely heavily on memory, emotion, or inbox searches to recall important dates—suggesting a need for better passive record-keeping.
+              </Typography>
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              <Typography sx={{ ...globalStyles.paragraph, mt: 0, mb: 0 }}>
+                  <b>Motivation & follow-through struggles:</b> Especially among users with ADHD or executive dysfunction, there was a desire for systems that offer emotional support, structure, or gamified motivation.
+              </Typography>
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              <Typography sx={{ ...globalStyles.paragraph, mt: 0, mb: 0 }}>
+                  <b>Customization & flexibility matter:</b> People want tools that work the way their brain works—not rigid templates or overwhelming interfaces.
+              </Typography>
+            </ListItem>
+          </List>
+          <Typography sx={{ ...globalStyles.paragraph }}>
+            These themes guided my next step: mapping out an affinity diagram to cluster similar needs, pain points, and desires. This helped me identify high-priority focus areas and begin shaping design directions rooted in real user struggles.
+          </Typography>
+          <Box sx={{ ...globalStyles.graphic, my: 4 }}>
+            <Image
+              src={AffinityDiagram}
+              style={{ width: '100%', height: 'auto', marginTop: 50 }}
+              alt={`Quantitative UX insight chart`}
+            />
+          </Box>
+          <Typography sx={{ ...globalStyles.paragraph, mt: 0, mb: 0 }}>
+            After organizing over 100 sticky notes, five primary categories emerged—each capturing a key dimension of life management struggles and needs. These were further refined into 25 subgroups, delving into user motivations, UI organization and structure, task management, record-keeping, and access:
+          </Typography>
+          <Typography sx={{ ...globalStyles.paragraph, mt: 3, mb: 0, fontWeight: "bold" }}>
+            1. Motivation & Focus
+          </Typography>
+          <List sx={{ listStyleType: 'disc', marginLeft: 10 }}>
+            <ListItem sx={{ display: 'list-item' }}>
+              <Typography sx={{ ...globalStyles.paragraph, mt: 0, mb: 0 }}>
+                  <b>Gamification –</b> Users are drawn to features that make productivity feel more like play.
+              </Typography>
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              <Typography sx={{ ...globalStyles.paragraph, mt: 0, mb: 0 }}>
+                  <b>Reward Systems –</b> Positive reinforcement, from check marks to streaks, keeps users engaged.
+              </Typography>
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              <Typography sx={{ ...globalStyles.paragraph, mt: 0, mb: 0 }}>
+                  <b>Emotional Support –</b> Some users seek affirmation, encouragement, or mental health-friendly experiences.
+              </Typography>
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              <Typography sx={{ ...globalStyles.paragraph, mt: 0, mb: 0 }}>
+                  <b>Neurodivergence –</b> Several respondents noted challenges tied to ADHD, executive dysfunction, or memory.
+              </Typography>
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              <Typography sx={{ ...globalStyles.paragraph, mt: 0, mb: 0 }}>
+                  <b>Distractions –</b> Social media, interruptions, and unstructured time often derail progress.
+              </Typography>
+            </ListItem>
+          </List>
+          <Typography sx={{ ...globalStyles.paragraph, mt: 3, mb: 0, fontWeight: "bold" }}>
+            2. Access, Sharing & Integration
+          </Typography>
+          <List sx={{ listStyleType: 'disc', marginLeft: 10 }}>
+            <ListItem sx={{ display: 'list-item' }}>
+              <Typography sx={{ ...globalStyles.paragraph, mt: 0, mb: 0 }}>
+                  <b>Sign-In Friction –</b> Log-in requirements and app switching are major sources of frustration.
+              </Typography>
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              <Typography sx={{ ...globalStyles.paragraph, mt: 0, mb: 0 }}>
+                  <b>Data Portability –</b> Users want the ability to move, export, or back up their data with ease.
+              </Typography>
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              <Typography sx={{ ...globalStyles.paragraph, mt: 0, mb: 0 }}>
+                  <b>Collaboration –</b> Some workflows require teamwork or shared lists, especially for families.
+              </Typography>
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              <Typography sx={{ ...globalStyles.paragraph, mt: 0, mb: 0 }}>
+                  <b>Cross-Device Sync –</b> Tools that sync across desktop and mobile win user loyalty.
+              </Typography>
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              <Typography sx={{ ...globalStyles.paragraph, mt: 0, mb: 0 }}>
+                  <b>App Integrations –</b> Popular apps often work best when connected with calendars, reminders, or other tools.
+              </Typography>
+            </ListItem>
+          </List>
+          <Typography sx={{ ...globalStyles.paragraph, mt: 3, mb: 0, fontWeight: "bold" }}>
+            3. Task Creation & Management
+          </Typography>
+          <List sx={{ listStyleType: 'disc', marginLeft: 10 }}>
+            <ListItem sx={{ display: 'list-item' }}>
+              <Typography sx={{ ...globalStyles.paragraph, mt: 0, mb: 0 }}>
+                  <b>Subtasks –</b> Users want to break larger goals into digestible pieces.
+              </Typography>
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              <Typography sx={{ ...globalStyles.paragraph, mt: 0, mb: 0 }}>
+                  <b>Scheduling & Repeating Tasks –</b> Flexibility around deadlines and routines is key.
+              </Typography>
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              <Typography sx={{ ...globalStyles.paragraph, mt: 0, mb: 0 }}>
+                  <b>Reminders & Notifications –</b> Time-based and contextual nudges help prevent forgetfulness.
+              </Typography>
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              <Typography sx={{ ...globalStyles.paragraph, mt: 0, mb: 0 }}>
+                  <b>Progress and Completion Tracking –</b> Users like visual cues, percentages, or milestones.
+              </Typography>
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              <Typography sx={{ ...globalStyles.paragraph, mt: 0, mb: 0 }}>
+                  <b>Analog/Skeuomorphic Desires –</b> Some people prefer tactile or familiar metaphors, like binders, calendars, or notebooks.
+              </Typography>
+            </ListItem>
+          </List>
+          <Typography sx={{ ...globalStyles.paragraph, mt: 3, mb: 0, fontWeight: "bold" }}>
+            4. Long-Term Planning & Record Keeping
+          </Typography>
+          <List sx={{ listStyleType: 'disc', marginLeft: 10 }}>
+            <ListItem sx={{ display: 'list-item' }}>
+              <Typography sx={{ ...globalStyles.paragraph, mt: 0, mb: 0 }}>
+                  <b>Planning Goals –</b> Users need structure for mid- and long-term objectives.
+              </Typography>
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              <Typography sx={{ ...globalStyles.paragraph, mt: 0, mb: 0 }}>
+                  <b>Archiving –</b> People want a way to preserve what's been done—not just delete it.
+              </Typography>
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              <Typography sx={{ ...globalStyles.paragraph, mt: 0, mb: 0 }}>
+                  <b>Reminders & Notifications –</b> Time-based and contextual nudges help prevent forgetfulness.
+              </Typography>
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              <Typography sx={{ ...globalStyles.paragraph, mt: 0, mb: 0 }}>
+                  <b>Journaling & Reflections –</b> Some users want to write about their process, not just track it.
+              </Typography>
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              <Typography sx={{ ...globalStyles.paragraph, mt: 0, mb: 0 }}>
+                  <b>Data Visualizations & Calendars –</b> Visual formats (timelines, graphs) help users make sense of time and progress.
+              </Typography>
+            </ListItem>
+          </List>
+          <Typography sx={{ ...globalStyles.paragraph, mt: 3, mb: 0, fontWeight: "bold" }}>
+            5. Organization & Prioritization
+          </Typography>
+          <List sx={{ listStyleType: 'disc', marginLeft: 10 }}>
+            <ListItem sx={{ display: 'list-item' }}>
+              <Typography sx={{ ...globalStyles.paragraph, mt: 0, mb: 0 }}>
+                  <b>Colors, Labels, Tags, & Icons –</b> Visual markers help users make quick mental connections.
+              </Typography>
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              <Typography sx={{ ...globalStyles.paragraph, mt: 0, mb: 0 }}>
+                  <b>Priority –</b> The ability to flag or rank importance was a recurring need.
+              </Typography>
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              <Typography sx={{ ...globalStyles.paragraph, mt: 0, mb: 0 }}>
+                  <b>Folders & Hierarchy –</b> Users crave clarity and structure in how tasks are grouped.
+              </Typography>
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              <Typography sx={{ ...globalStyles.paragraph, mt: 0, mb: 0 }}>
+                  <b>Search, Sorting, and Filters –</b> Tools should make it easy to find and manipulate entries.
+              </Typography>
+            </ListItem>
+            <ListItem sx={{ display: 'list-item' }}>
+              <Typography sx={{ ...globalStyles.paragraph, mt: 0, mb: 0 }}>
+                  <b>Customization –</b> One size doesn’t fit all; users want flexible interfaces that match their mental models.
+              </Typography>
+            </ListItem>
+          </List>
+          <Typography sx={{ ...globalStyles.paragraph, mt: 0, mb: 0 }}>
+            From the affinity diagram’s detailed themes, I pulled together the main user goals and actions. Laying these out as a user journey helps highlight what users expect, where they get stuck, and where we can make things better. The table below breaks down these key actions with user thoughts and ideas for features that can improve their experience.
+           </Typography>
+           <Box sx={{ ...globalStyles.graphic, my: 4 }}>
+            <Image
+              src={UserJourneys}
+              style={{ width: '100%', height: 'auto', marginTop: 50 }}
+              alt={`Quantitative UX insight chart`}
+            />
+          </Box>
         </Box>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <Box>
           <Typography sx={globalStyles.heading1}>
             Design
           </Typography>
+          1. Wireframes
+          2. High-Fidelity
+          3. Prototype
         </Box>
         <Box>
           <Typography sx={globalStyles.heading1}>
-            Conclusion
+            Usability test on Prototype
+          </Typography>
+           1. Intro
+          2. Video
+          3. Empathy map
+        </Box>
+        <Box>
+          <Typography sx={globalStyles.heading1}>
+            Next Steps
+          </Typography>
+          1. recommendations
+        </Box>
+              <Box>
+          <Typography sx={globalStyles.heading1}>
+            Lessons Learned
           </Typography>
         </Box>
       </Box>

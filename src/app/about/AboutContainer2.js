@@ -90,7 +90,7 @@ const AboutContainer = () => {
               When I'm not working or sharpening my tech skills, I love traveling and exploring nature with my husband and our adorable black lab, Badger. I enjoy visiting coffee shops and breweries, meeting new people, drawing, crafting, crocheting, decorating, and playing both board and video games.
             </Typography>
               <Typography sx={{ ...globalStyles.heading5, marginTop: 1 }} variant="h5">
-                Lately, I've been fascinated by gamification, AR, artificial intelligence, and physical and cognitive accessibility — basically anything that makes tech even more awesome.
+                Lately, I've been fascinated by gamification, AR, artificial intelligence, and physical and cognitive accessibility. Basically I'm into anything that makes tech even more awesome.
               </Typography>
             <Typography sx={globalStyles.heading5} variant="h5">
               <b>Let's connect!</b>

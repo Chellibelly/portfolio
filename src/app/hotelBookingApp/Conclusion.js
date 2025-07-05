@@ -33,7 +33,7 @@ export default function Conclusion() {
         <Grid item xs={10}>
           <Typography variant='h1' sx={globalStyles.heading1}>Bringing My Designs to Life</Typography>
           <Typography variant='h2' sx={globalStyles.heading2}>The Prototype</Typography>
-          <Typography variant="body1" sx={globalStyles.paragraph}>This was it—the moment to take all my sketched screens and turn them into something digital and high-fidelity, a prototype that could simulate working software well enough to present to stakeholders and engineers. A Prototype would be crucial in real-world UX design to reduce ambiguity, save time, and minimize risk. I used Figma - a popular and standard design tool - for this task.</Typography>
+          <Typography variant="body1" sx={globalStyles.paragraph}>This was it. This was the moment to take all my sketched screens and turn them into something digital and high-fidelity, a prototype that could simulate working software well enough to present to stakeholders and engineers. A Prototype would be crucial in real-world UX design to reduce ambiguity, save time, and minimize risk. I used Figma - a popular and standard design tool - for this task.</Typography>
         </Grid>
         <Grid item xs={12}>
           <Box sx={globalStyles.graphic}>
@@ -114,7 +114,7 @@ export default function Conclusion() {
         <Grid item xs={10}>
           <Typography variant='h3' sx={globalStyles.heading3}>Stakeholders and the Business</Typography>
           <Typography variant="body1" sx={globalStyles.paragraph}>
-          If this were a real design for an actual company, the project wouldn’t end here. Let’s pretend it is, and I’ll explain how I would have continued. After finalizing the annotated screen designs and prototype, the next step would be to gather all the key stakeholders—other designers, project and product managers, copywriters, legal, developers, and anyone else involved in the product and share the designs.
+          If this were a real design for an actual company, the project wouldn’t end here. Let’s pretend it is, and I’ll explain how I would have continued. After finalizing the annotated screen designs and prototype, the next step would be to gather all the key stakeholders, including other designers, product managers, copywriters, legal, developers, and anyone else involved in the product and share the designs.
           </Typography>
           <Typography variant="body1" sx={globalStyles.paragraph}>
           Ideally, there would be regular touch points throughout the design process, and this would be one of many checks to ensure everyone is still aligned on the problem we’re solving and agrees that this is the solution to test. I'd also make sure the development team understands the UI interactions and can build it as intended, addressing any questions, concerns, or suggestions they have.
@@ -124,7 +124,7 @@ export default function Conclusion() {
         <Grid item xs={10} sx={{ marginBottom: -5 }}>
           <Typography variant='h3' sx={globalStyles.heading3}>Iterate, Iterate, and then Iterate Some More</Typography>
           <Typography variant="body1" sx={globalStyles.paragraph}>
-            If the design needs adjustments, this is a time for negotiation—deciding what we can compromise on and how to adjust for technical limitations without losing key functionality. Creativity doesn’t stop when the design is delivered.
+            If the design needs adjustments, this is a time for negotiation, deciding what we can compromise on and how to adjust for technical limitations without losing key functionality. Creativity doesn’t stop when the design is delivered.
           </Typography>
           <Typography variant="body1" sx={globalStyles.paragraph}>
             Solving problems is an ongoing process. I’d continue to get creative to find the best solutions within our limitations. Plus, the design cycle doesn’t end after launch; deployed software opens the door for more research, testing, analysis, and continuous iterations.

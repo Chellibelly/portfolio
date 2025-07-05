@@ -108,7 +108,7 @@ useEffect(() => {
           <Typography variant='h3' sx={globalStyles.heading3}>Triangulation</Typography>
           <Typography variant='body1' sx={globalStyles.paragraph}> </Typography>
           <Typography variant='body1' sx={globalStyles.paragraph}>I decided to start with an affinity diagram to organize all my notes. I grouped related data together first, then defined the categories based on commonalities. This way, natural groupings emerged, helping me focus on what's important without letting my own opinions influence the process. Essentially, it allowed the data to speak for itself.</Typography>
-          <Typography variant='body1' sx={globalStyles.paragraph}>I gathered stacks of sticky notes in different colors, a whiteboard, and markers. I worked through one research set at a time—survey results, benchmark notes, interview answers, and usability videos—spending about 10 minutes on each. I wrote down key points on sticky notes and placed them on the whiteboard.</Typography>
+          <Typography variant='body1' sx={globalStyles.paragraph}>I gathered stacks of sticky notes in different colors, a whiteboard, and markers. I worked through one research set at a time (survey results, benchmark notes, interview answers, and usability videos) spending about 10 minutes on each. I wrote down key points on sticky notes and placed them on the whiteboard.</Typography>
         </Grid>
         
         <Grid item xs={12}>
@@ -140,7 +140,7 @@ useEffect(() => {
         <Grid item xs={10} sx={{ marginBottom: 5 }}>
         <Typography variant='h3' sx={globalStyles.heading3}>Areas of Importance Exposed</Typography>
         <Typography variant='body1' sx={globalStyles.paragraph}>I ended up with nine categories: filtering, account, look & feel, hotel info, extras, room selection, navigation, date selection, and pricing.</Typography>
-        <Typography variant='body1' sx={globalStyles.paragraph}>The groupings seemed to line up with what users had emphasized as most important. The Hotel Information category had the most sticky notes—users often felt the info about hotels wasn’t clear enough. Within that group, three key themes kept coming up: location, amenities, and reviews.
+        <Typography variant='body1' sx={globalStyles.paragraph}>The groupings seemed to line up with what users had emphasized as most important. The Hotel Information category had the most sticky notes. Users often felt the info about hotels wasn’t clear enough. Within that group, three key themes kept coming up: location, amenities, and reviews.
         </Typography>
         </Grid>
         

@@ -88,7 +88,7 @@ export default function Design() {
         </Grid>
         <Grid item xs={10}>
           <Typography variant='h3' sx={globalStyles.heading3}>Sketching the Screens</Typography>
-          <Typography variant='body1' sx={globalStyles.paragraph}>At this point, I felt I had enough to start sketching the design. Sketching would help me quickly get ideas down and translate the interaction notes into actual web controls like inputs and buttons, including their positions. The goal was to create realistic screen states—a low-fidelity draft I could later use for the prototype.</Typography>
+          <Typography variant='body1' sx={globalStyles.paragraph}>At this point, I felt I had enough to start sketching the design. Sketching would help me quickly get ideas down and translate the interaction notes into actual web controls like inputs and buttons, including their positions. The goal was to create realistic screen states, a low-fidelity draft I could later use for the prototype.</Typography>
           <Typography variant='body1' sx={globalStyles.paragraph}>I grabbed some pens and grid paper got to work. I chose controls and placements based on conventions I had found or to address usability issues. I kept things simple, focusing on opportunities within a happy path. I started with rough sketches and refined until I had some clean sketches which I could upload to a Miro board. Once in Miro, I added detailed annotations to explain the interactions and screen states (useful for developers and other stakeholders).</Typography>
         </Grid> 
         <Grid item xs={12}>

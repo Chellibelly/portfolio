@@ -316,7 +316,7 @@ export default function Research() {
           <Grid item xs={10} sx={{ marginBottom: 5 }}>
             <Typography variant='h3' sx={globalStyles.heading3}>Getting Comfortable</Typography>
             <Typography variant='body1' sx={globalStyles.paragraph}>
-              Once the technology was set up, I took time and care to ensure my participants were comfortable. I clarified that we testing the website - not them - and emphasized that there were no mistakes — only insights. I encouraged them to ask questions, but explained that I might not answer all to maintain the test’s integrity.
+              Once the technology was set up, I took time and care to ensure my participants were comfortable. I clarified that we testing the website (not them) and emphasized that there were no mistakes, only insights. I encouraged them to ask questions, but explained that I might not answer all to maintain the test’s integrity.
               I asked them to take their time and think aloud, sharing their actions, thoughts, and impressions of the screens. Finally, I explained the test structure and expectations as well as confirmed they were okay with the session being recorded.
             </Typography>
           </Grid>
@@ -380,7 +380,7 @@ export default function Research() {
         <Grid item xs={10} sx={{ marginBottom: 5 }}>
           <Typography variant='h3' sx={globalStyles.heading3}>Conducting the Usability Tests</Typography>
           <Typography variant='body1' sx={globalStyles.paragraph}>After each depth interview concluded, it was time for the exciting part – testing the usability of the websites. Each participant was tasked with booking a hotel in a specified city for a weekend on two different sites – two of the sites I examined during my benchmark research. I watched what they were doing, reminded them to talk through their thoughts if they got quiet, and asked follow-up questions when needed, being as careful as possible not to bias the tests.</Typography>
-          <Typography variant='body1' sx={globalStyles.paragraph}>Each session took about an hour. After they finished the tasks, I asked how they felt about the experience—what surprised them, what they liked or didn’t like, and if they thought anything was missing. I wrapped up by thanking them for their time and letting them know how helpful their feedback was for my research.</Typography>
+          <Typography variant='body1' sx={globalStyles.paragraph}>Each session took about an hour. After they finished the tasks, I asked how they felt about the experience, like what surprised them, what they liked or didn’t like, and if they thought anything was missing. I wrapped up by thanking them for their time and letting them know how helpful their feedback was for my research.</Typography>
         
         </Grid>
 

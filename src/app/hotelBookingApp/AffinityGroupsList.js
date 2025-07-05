@@ -36,7 +36,7 @@ export default function AffinityGroupsList() {
                     Amenities
                 </Typography>
                 <Box sx={{ listStyleType: 'disc', marginLeft: 5 }}>
-                    <Typography sx={{ fontFamily: "Montserrat", marginBottom: 2 }}>Amenities should be clear at every step—when choosing a hotel, room, rate, and in summaries. Use icons, but also label them for clarity. For example, a "parking" icon needs more detail—what exactly are we saying about parking? Amenity filters should be easy to find on the hotel search page.</Typography>
+                    <Typography sx={{ fontFamily: "Montserrat", marginBottom: 2 }}>Amenities should be clear at every step, including when choosing a hotel, room, rate, and in summaries. Use icons, but also label them for clarity. For example, a "parking" icon needs more detail. What exactly are we saying about parking? Amenity filters should be easy to find on the hotel search page.</Typography>
                 </Box>
                 <Typography sx={{ fontFamily: "Montserrat", fontWeight: "bold", marginBottom: 1 }}>
                     Reviews
@@ -68,7 +68,7 @@ export default function AffinityGroupsList() {
             </Grid>
             <Grid item xs={0.1}/>
             <Grid item xs={9.9} sx={{ padding: 4, backgroundColor: blue[50] }}>
-                <Typography sx={{ fontFamily: "Montserrat" }}>Users prefer a single calendar picker for selecting dates—something familiar, fast, intuitive, and easy to use, with an option to clear dates easily.</Typography>
+                <Typography sx={{ fontFamily: "Montserrat" }}>Users prefer a single calendar picker for selecting dates. It should be something familiar, fast, intuitive, and easy to use, with an option to clear dates easily.</Typography>
             </Grid>
         </Grid>
 
@@ -96,7 +96,7 @@ export default function AffinityGroupsList() {
             <Grid item xs={9.9} sx={{ padding: 4, backgroundColor: blue[50] }}>
                 <Box>
                     <Typography sx={{ fontFamily: "Montserrat" }}>
-                    Account creation or sign-in should be optional and clearly communicated as such, with an easy opt-out. However, membership perks should be explained—what they include and why they’re beneficial. Rewards offers should be easy to find and visually separate from other content.
+                    Account creation or sign-in should be optional and clearly communicated as such, with an easy opt-out. However, membership perks should be explained (what they include and why they’re beneficial). Rewards offers should be easy to find and visually separate from other content.
                     </Typography>
                 </Box>              
             </Grid>
@@ -137,7 +137,7 @@ export default function AffinityGroupsList() {
             </Grid>
             <Grid item xs={0.1}/>
             <Grid item xs={9.9} sx={{ padding: 4, backgroundColor: blue[50] }}>
-                <Typography sx={{ fontFamily: "Montserrat" }}>Many users mentioned brand loyalty, so logos and branding should be prominent. Imagery is also key—beautiful vacation and hotel photos should be bold and present throughout the booking process, from the homepage to the booking summary, to entice users and showcase quality.</Typography>                 
+                <Typography sx={{ fontFamily: "Montserrat" }}>Many users mentioned brand loyalty, so logos and branding should be prominent. Imagery is also key. Beautiful vacation and hotel photos should be bold and present throughout the booking process, from the homepage to the booking summary, to entice users and showcase quality.</Typography>                 
             </Grid>
         </Grid>
 
