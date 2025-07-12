@@ -10,6 +10,7 @@ import CompetitorResearch from '../../../public/LM_Competitor_Research.png';
 import InterviewPersonas from '../../../public/Interview_Personas.png';
 import AffinityDiagram from '../../../public/LM_Affinity_Diagram_Full.jpg';
 import UserJourneys from '../../../public/LM_User_Journeys.png';
+import InformationArchitecture from '../../../public/LM_Information_Architecture.png';
 
 const LifeManagementAppContainer = () => {
   return (
@@ -47,7 +48,8 @@ const LifeManagementAppContainer = () => {
                     Project Overview
                   </Typography>
                   <Typography variant='body1' sx={globalStyles.paragraph}>
-                      As adults, our responsibilities span a wide spectrum from everyday tasks like “do the laundry” to long-term priorities like “write a will.” Our to-dos, goals, and milestones are often fragmented across notebooks, sticky notes, apps, and calendar events. 
+                      “I wish that one app stored all of the data/goals in one place — financial, budget, calendar, chores, etc.” – Survey Respondent
+                      <br/><br/>As adults, our responsibilities stretch from everyday chores like laundry to big life priorities like writing a will. Our to-dos, goals, and milestones often live scattered across notebooks, sticky notes, apps, and calendar events.
                       <br/><br/>I wanted to create something more unified: a tool not just for daily productivity, but for managing life as a whole. My initial mission was to design a life management app that makes it easier to stay organized, manage deadlines, and track progress toward personal goals and milestones.
                       <br/><br/>But through user research, a clearer theme began to emerge: many people, especially those with ADHD, anxiety, or executive dysfunction, struggled not because they lacked goals, but because they lacked systems that supported memory, focus, and follow-through. That insight shifted the direction of the project. What emerged was a flexible system that motivates daily productivity, memory support, and long-term goal tracking and record-keeping.
                   </Typography>
@@ -706,29 +708,89 @@ const LifeManagementAppContainer = () => {
 
         <Box>
           <Typography sx={globalStyles.heading1}>
-            Design
+            Designing for Flexibility & Follow-Through
           </Typography>
-          1. Wireframes
-          2. High-Fidelity
-          3. Prototype
+          <Typography variant="h2" sx={{ ...globalStyles.heading2, mt: 2 }}>
+            Information architecture, wireframes, and high-fidelity screen design
+          </Typography>
+          <Typography sx={{ ...globalStyles.paragraph }}>With a clearer understanding of where existing tools fall short, I began designing an experience that better supports real user needs — especially for those who struggle with motivation, mental load, or staying on top of daily tasks. I focused on reducing friction, surfacing what matters most, and creating moments of encouragement and clarity. The design process was guided by real user feedback, mental models, and emotional needs uncovered during research, resulting in a solution that feels supportive, flexible, and genuinely helpful.</Typography>
+          <Typography sx={{ ...globalStyles.paragraph }}>Information Architecture</Typography>
+          <Typography sx={{ ...globalStyles.paragraph }}>To support users in staying focused, feeling in control, and making meaningful progress, I designed an information architecture that emphasizes quick access, clear categories, and flexible navigation. The structure needed to accommodate both short-term actions and long-term planning without overwhelming users — especially those struggling with distractions, executive dysfunction, or complex routines.</Typography>
+          <Typography sx={{ ...globalStyles.paragraph }}>I structured the app around five primary sections accessible via a persistent bottom navigation bar: Notes, Tasks, Goals, Rewards, and Settings. Each section serves a distinct purpose but is designed to flow seamlessly into the others—helping users move from brainstorming to execution to reflection, without losing momentum. The navigation is intentionally minimal to reduce cognitive overload while still offering the flexibility needed for varied workflows and attention styles.</Typography>
+          <Typography sx={{ ...globalStyles.paragraph }}>Below is the app’s information architecture, organized into five main sections. This structure directly supports users’ needs for focus, flexibility, and follow-through by clearly separating key flows and allowing easy navigation between capturing ideas, managing tasks, tracking goals, and earning rewards.</Typography>
+          <Image
+              src={InformationArchitecture}
+              style={{ width: '100%', height: 'auto', marginTop: 20 }}
+              alt={`Quantitative UX insight chart`}
+            />
+          <Typography sx={{ ...globalStyles.paragraph }}>
+            This design phase brought the insights from user research to life through carefully considered structures, interactions, and features. Rather than chasing novelty, I focused on solving real usability pain points — especially around organization, memory support, and task overwhelm. Each section of the app reflects user goals and habits uncovered through research, balancing flexibility with structure, and depth with simplicity. While the visual design supports clarity and calm, it’s the thoughtful functionality that turns this tool into something people can actually rely on.
+          </Typography>
         </Box>
         <Box>
           <Typography sx={globalStyles.heading1}>
-            Usability test on Prototype
+            Looking Ahead
           </Typography>
-           1. Intro
-          2. Video
-          3. Empathy map
+          <Typography variant="h2" sx={{ ...globalStyles.heading2, mt: 2 }}>
+            Next Steps & Iteration
+          </Typography>
+          <Typography sx={{ ...globalStyles.paragraph }}>
+            This case study reflects the full end-to-end process of research, analysis, design, and rationale — and I’m proud of how far the project has come. The next step is to build a working prototype and conduct usability testing to validate assumptions, uncover friction points, and continue refining the experience.
+            Longer-term, I'd like to explore:
+            Onboarding and personalization flows to support different user types (e.g., students, creatives, neurodivergent users)
+            Data syncing and privacy considerations
+            Expanded reward mechanics to sustain motivation over time
+            For now, this project represents a thoughtful and research-driven approach to solving real-life planning challenges — and a strong foundation for future iteration.
+          </Typography>
+          <Typography sx={{ ...globalStyles.paragraph }}>
+            This case study represents the first full design cycle of my life management app — from early research through to detailed screen design. While the current version thoughtfully addresses many user needs around focus, flexibility, and follow-through, no product is ever truly finished. I view this as a strong foundation to build from, not an endpoint.
+            Looking ahead, my next priority is to create an interactive prototype of the app using Figma or a similar tool. This will allow for usability testing with real users, especially those who identified as neurodivergent during my initial research. I’m particularly interested in testing how intuitive the task creation flow is, whether users feel supported in connecting daily tasks to larger goals, and how motivating the rewards system truly is in practice.
+            Based on those learnings, I plan to refine key flows, polish interactions, and explore areas where the interface can better support memory, clarity, and autonomy. Longer term, I’d love to partner with a developer or continue into low-code tools to bring the app to life and further test its impact.
+          </Typography>
         </Box>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <Box>
-          <Typography sx={globalStyles.heading1}>
-            Next Steps
-          </Typography>
-          1. recommendations
-        </Box>
-              <Box>
           <Typography sx={globalStyles.heading1}>
             Lessons Learned
+          </Typography>
+          <Typography sx={{ ...globalStyles.paragraph }}>
+            - Narrowing the target audience sharpened the design focus. Initially, I aimed to build an all-encompassing life management app for everyone, but research revealed that neurodivergent users and those with executive dysfunction had unique needs that were often unmet by existing solutions. Focusing on supporting memory, motivation, and flexibility for these users gave the app clearer purpose and more meaningful features.
+            - Skeuomorphic elements and analog cues can be comforting and motivating. Including touches like the spiral notebook background in Notes was inspired by user preferences for tactile, familiar interfaces that help with memory and focus. This reinforced that sometimes blending digital with analog-like design can improve usability, especially for neurodivergent users.
+            - Feature complexity must be balanced with ease of use. The Tasks section, while feature-rich to support prioritization, effort estimation, and subtasks, had to stay intuitive enough to avoid overwhelming users who might already struggle with focus or executive function.
+            - Flexibility in workflows is crucial. Allowing users to move tasks between Today and Backlog, customize categories and labels, and tie tasks to long-term goals emerged as critical for helping users stay on track without feeling locked into rigid systems.
+            - User research is an ongoing process, not a one-time step. The iterative discovery process revealed nuances in user needs and frustrations that guided feature prioritization and design decisions. I’m committed to continuing user testing and iteration to refine the app’s usability and impact.
           </Typography>
         </Box>
       </Box>
