@@ -50,6 +50,8 @@ const cardStyle = {
         sx={{ mt: 0 }}
       >
         <Link href="/hotelBookingApp" sx={{ textDecoration: 'none'}}>
+        {false && <Typography sx={{ maxWidth: 200 }}>A UX Design Institute Diploma Project</Typography>}
+          {false && <Typography sx={{ maxWidth: 200 }}>Check out this case study if you want to see an entire detailed design process and all of my deliverables</Typography>}
           <Paper sx={cardStyleNavigate}>
             <Grid container direction="column" justifyContent="center" alignItems="center">
               <Grid item>
@@ -70,6 +72,8 @@ const cardStyle = {
           </Paper>
         </Link>
         <Link sx={{ textDecoration: 'none'}}>
+        {false && <Typography sx={{ maxWidth: 200 }}>A personal passion project</Typography>}
+        {false && <Typography sx={{ maxWidth: 200 }}>Check out this case study if want to see how I define and solution for problems</Typography>}
           <Paper sx={cardStyle}>
             <Grid container direction="column" justifyContent="center" alignItems="center">
               <Grid item>
@@ -90,6 +94,8 @@ const cardStyle = {
           </Paper>
         </Link>
         <Link sx={{ textDecoration: 'none'}}>
+        {false && <Typography sx={{ maxWidth: 200 }}>Selected Work Projects</Typography>}
+        {false && <Typography sx={{ maxWidth: 200 }}>Check out this case study if you want to see smaller design projects I've completed for companies I've worked for and how I collaborate with stakeholders to deliver real data-backed results</Typography>}
           <Paper sx={cardStyle}>
             <Grid container direction="column" justifyContent="center" alignItems="center">
               <Grid item>
