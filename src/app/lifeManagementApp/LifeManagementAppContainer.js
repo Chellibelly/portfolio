@@ -29,6 +29,11 @@ import LMScreenGoalsActive from '../../../public/LM_Screen_Goals_Active.png';
 import LMScreenGoalsGoal from '../../../public/LM_Screen_Goals_Goal.png';
 import LMScreenGoalMilestone from '../../../public/LM_Screen_Goals_Milestone.png';
 
+import LMScreenRewardsCreation from '../../../public/LM_Screens_Rewards_Creation.png';
+import LMScreenRewardsInProgress from '../../../public/LM_Screens_Rewards_InProgress.png';
+import LMScreenRewardsInventory from '../../../public/LM_Screens_Rewards_Inventory.png';
+import LMScreenRewardsShop from '../../../public/LM_Screens_Rewards_Shop.png';
+
 const LifeManagementAppContainer = () => {
   return (
     <div>
@@ -631,7 +636,7 @@ const LifeManagementAppContainer = () => {
             <Grid item xs={4}>
               <Box sx={globalStyles.graphic}>
                 <Image
-                  src={LMScreenTasksToday}
+                  src={LMScreenRewardsInventory}
                   width="100%"
                   alt="Image of screen: tasks - today"
                 />
@@ -664,7 +669,7 @@ const LifeManagementAppContainer = () => {
             <Grid item xs={4}>
               <Box sx={globalStyles.graphic}>
                 <Image
-                  src={LMScreenTasksToday}
+                  src={LMScreenRewardsInProgress}
                   width="100%"
                   alt="Image of screen: tasks - today"
                 />
@@ -677,7 +682,7 @@ const LifeManagementAppContainer = () => {
             <Grid item xs={4}>
               <Box sx={globalStyles.graphic}>
                 <Image
-                  src={LMScreenTasksToday}
+                  src={LMScreenRewardsCreation}
                   width="100%"
                   alt="Image of screen: tasks - today"
                 />
@@ -716,7 +721,7 @@ const LifeManagementAppContainer = () => {
             <Grid item xs={4}>
               <Box sx={globalStyles.graphic}>
                 <Image
-                  src={LMScreenTasksToday}
+                  src={LMScreenRewardsShop}
                   width="100%"
                   alt="Image of screen: tasks - today"
                 />
