@@ -1,4 +1,7 @@
 "use client"; 
+
+//TODO: build out suggestions screen and add it back in
+
 import React, {  } from 'react';
 import { Box, Grid, Paper, Typography, List, ListItem } from '@mui/material';
 import * as globalStyles from '../styles/globalStyleConsts';
@@ -11,6 +14,20 @@ import InterviewPersonas from '../../../public/Interview_Personas.png';
 import AffinityDiagram from '../../../public/LM_Affinity_Diagram_Full.jpg';
 import UserJourneys from '../../../public/LM_User_Journeys.png';
 import InformationArchitecture from '../../../public/LM_Information_Architecture.png';
+
+import LMScreenTasksToday from '../../../public/LM_Screen_Tasks_Today.png';
+import LMScreenTasksArchive from '../../../public/LM_Screen_Tasks_Archive.png';
+import LMScreenTasksBacklog from '../../../public/LM_Screen_Tasks_Backlog.png';
+import LMScreenTasksCardStructure from '../../../public/LM_Screen_Tasks_Card_Structure.png';
+import LMScreenTasksSuggestions from '../../../public/LM_Screen_Tasks_Suggestions.png';
+
+import LMScreenNotesConvert from '../../../public/LM_Screen_Notes_Convert.png';
+import LMScreenNotesEdit from '../../../public/LM_Screen_Notes_Edit.png';
+import LMScreenNotesStructure from '../../../public/LM_Screen_Notes_Structure.png';
+
+import LMScreenGoalsActive from '../../../public/LM_Screen_Goals_Active.png';
+import LMScreenGoalsGoal from '../../../public/LM_Screen_Goals_Goal.png';
+import LMScreenGoalMilestone from '../../../public/LM_Screen_Goals_Milestone.png';
 
 const LifeManagementAppContainer = () => {
   return (
@@ -37,10 +54,8 @@ const LifeManagementAppContainer = () => {
               justifyContent: "center",
               backgroundColor: "white",
             }}
-          >
-            
-          <Grid container justifyContent="center" justifyItems="center">
-            
+          >     
+          <Grid container justifyContent="center" justifyItems="center">     
               <Grid item xs={4} sx={{ marginRight: 8 }}>
                 <Box sx={globalStyles.graphic}>
                   <Image
@@ -51,13 +66,9 @@ const LifeManagementAppContainer = () => {
                 </Box>
               </Grid>
               <Grid item xs={7} sx={{ marginTop: 3}}>
-                  
-                 
-                  <Typography variant='body1' sx={globalStyles.paragraph}>
-                      
+                  <Typography variant='body1' sx={globalStyles.paragraph}> 
                       <br/><br/>As adults, our responsibilities stretch from everyday chores like laundry to big life priorities like writing a will. Our to-dos, goals, and milestones often live scattered across notebooks, sticky notes, apps, and calendar events.
                       <br/><br/>I wanted to create something more unified: a tool not just for daily productivity, but for managing life as a whole. My initial mission was to design a life management app that makes it easier to stay organized, manage deadlines, and track progress toward personal goals and milestones.
-                     
                   </Typography>
               </Grid>
           </Grid> 
@@ -303,83 +314,127 @@ const LifeManagementAppContainer = () => {
               style={{ width: '100%', height: 'auto', marginTop: 20 }}
               alt={`Quantitative UX insight chart`}
             />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
           <Typography variant="h2" sx={{ ...globalStyles.heading2, mt: 2 }}>
             Section Features
           </Typography>
           <Typography sx={{ ...globalStyles.paragraph }}>
             This design phase brought the insights from user research to life through carefully considered structures, interactions, and features. Rather than chasing novelty, I focused on solving real usability pain points — especially around organization, memory support, and task overwhelm. Each section of the app reflects user goals and habits uncovered through research, balancing flexibility with structure, and depth with simplicity. While the visual design supports clarity and calm, it’s the thoughtful functionality that turns this tool into something people can actually rely on.
           </Typography>
-
-          <Typography sx={{ color: "red" }}>[INSERT TASKS SKETCHES]</Typography>
-          
-          
           <Typography variant="h3" sx={{ ...globalStyles.heading2, mt: 2 }}>
             Tasks
           </Typography>
-          <Typography sx={{ color: "blue" }}>Include a structure overview here</Typography>
-          <Typography sx={{ color: "red" }}>[INSERT TODAY TAB SCREENS]</Typography>
-          <Typography sx={globalStyles.paragraph}>
-            Today tab
-          </Typography>
-          <Typography sx={globalStyles.paragraph}>
-            The Tasks section of the app is what the user sees when they open it. It consists of three tabs: Today, Backlog, and Archive. The today tab is the default active tab and is designed to bring today’s plan into focus for the user, isolating what’s relevant for now and reducing overload. It’s the daily checklist composed of tasks and subtasks. These tasks can be ordered and filtered according the user’s preferences from the top of the screen, and new tasks can be easily added. 
-          </Typography>
-          <Typography sx={{ color: "red" }}>[BUILD AND INSERT SUGGESTIONS ASSISTANT SCREENS]</Typography>
-          <Typography sx={globalStyles.paragraph}>
-            Suggestions Assistant
-          </Typography>
-          <Typography sx={globalStyles.paragraph}>
-            A “suggestions” feature offers low-friction guidance without being prescriptive. The decision to add the suggestions feature was born from users expressing the desire for reminders about important tasks but without being interruptive. The app will suggest bringing in backlog items that were on previous daily lists but not completed, tasks which have been designated as low effort, and tasks which are approaching their user-defined due date. If the user likes any of the suggestions, they can pull them into today’s task list with the click of a button.
-          </Typography>
-          <Typography sx={{ color: "red" }}>[INSERT TASK CREATION SCREENS]</Typography>
-          <Typography sx={globalStyles.paragraph}>
-            Task Card Structure
-          </Typography>
-          <Typography sx={globalStyles.paragraph}>
-            Features displayed on each task card were selected carefully based on user feedback and needs. Many users complained about other apps not allowing them to break down large tasks into smaller parts in a visually structured way or designate priority and weight. I wanted to include everything users found most useful when interacting with tasks without cluttering up the UI. 
-          </Typography>
-          <Typography sx={globalStyles.paragraph}>
-            Optional subtasks can be added to any goal and are indented to maintain visual hierarchy while reinforcing parent-child relationships. Priority and effort indicators to help users make decisions based on their time and energy levels. Users can give meaning to tasks by adding icons, due dates (with options to repeat on a schedule), categories (displayed as colored labels), and linked goals. Everything is optional but accessible for full flexibility and organizational support.
-          </Typography>
-          <Typography sx={{ color: "red" }}>[INSERT BACKLOGS SCREENS, INCLUDING CALENDAR]</Typography>
-          <Typography sx={globalStyles.paragraph}>
-            The Backlog
-          </Typography>
-          <Typography sx={globalStyles.paragraph}>
-            The Backlog tab is a unique way to keep a list of tasks available to pull in to today’s to-do list whenever the user is ready to tackle them. It acts as a holding area for all tasks not currently scheduled. This differs from most to-do apps that most often do not include a concept of tasks to do outside of what’s accomplishable today or on a specifically designated day. Those types of apps might be good for people who keep on top of their tasks easily and accomplish everything they set out to do every day, but for many users, that just isn’t realistic. 
-          </Typography>
-          <Typography sx={globalStyles.paragraph}>
-            The backlog was built for flexibility too. Users can filter the backlog by priority, category, and whether a task has a due date, or switch to a calendar view to visually scan when tasks are due. Tons of users described calendars as extremely important to them, so it was imperative for me to include a calendar view. Including the calendar in the backlog is meant to help users check their task due dates at a glance and plan ahead to determine which tasks are best to pull in every day. 
-          </Typography>
-          <Typography sx={{ color: "red" }}>[INCLUDE ARCHIVE SCREENS]</Typography>
-          <Typography sx={globalStyles.paragraph}>
-            Archive
-          </Typography>
-          <Typography sx={globalStyles.paragraph}>
-            The Archive tab gives users a way to find and reflect on what’s been completed and when. Users can sort and search through completed tasks in either a list or folder-like category view, mirroring mental models familiar from physical file systems. This both reinforces a sense of progress and accomplishment, and aids memory and recall. 
-          </Typography>
-          <Typography sx={globalStyles.paragraph}>
-            As an example, maybe a user has a feeling their dog might be overdo for a vaccine but can’t remember when the last they were vaccinated. Rather than having to call up the vet or scanning through thousands of emails in hopes of finding a receipt, they may be able to simply search the archive for a task with associated keywords to find the completed date of the last time they were in for their vaccines. 
-          </Typography>
+          <Typography sx={globalStyles.paragraph}>The Tasks section of the app is what the user sees when they open it. It consists of three tabs: Today, Backlog, and Archive. Each tab has a specific purpose and features that support that purpose. Let's explore them.</Typography>
+          <Grid container justifyContent="space-around" alignItems="center">
+            <Grid item xs={4}>
+              <Box sx={globalStyles.graphic}>
+                <Image
+                  src={LMScreenTasksToday}
+                  width="100%"
+                  alt="Image of screen: tasks - today"
+                />
+              </Box>
+            </Grid>
+            <Grid item xs={7}>
+              <Typography sx={globalStyles.paragraph}>
+                Today tab
+              </Typography>
+              <Typography sx={globalStyles.paragraph}>
+                The today tab is the default active tab and is designed to bring today’s plan into focus for the user, isolating what’s relevant for now and reducing overload. It’s the daily checklist composed of tasks and subtasks. 
+                <br /><br />
+                These tasks can be ordered and filtered according the user’s preferences from the top of the screen, and new tasks can be easily added. 
+              </Typography>
+            </Grid>
+          </Grid>
+          <Grid container justifyContent="space-around" alignItems="center">
+            <Grid item xs={7}>
+              <Typography sx={globalStyles.paragraph}>
+                Suggestions Assistant
+              </Typography>
+              <Typography sx={globalStyles.paragraph}>
+                 Within the today tab, a “suggestions” feature offers low-friction guidance without being prescriptive. The decision to add the suggestions feature was born from users expressing the desire for reminders about important tasks but without being interruptive. 
+                 <br/><br/>The app will suggest bringing in backlog items that were on previous daily lists but not completed, tasks which have been designated as low effort, and tasks which are approaching their user-defined due date. 
+                 <br/><br/>If the user likes any of the suggestions, they can pull them into today’s task list with the click of a button.
+              </Typography>
+            </Grid>
+            <Grid item xs={4}>
+              <Box sx={globalStyles.graphic}>
+                <Image
+                  src={LMScreenTasksSuggestions}
+                  width="100%"
+                  alt="Image of screen: tasks - today"
+                />
+              </Box>
+            </Grid>
+          </Grid>
+          <Grid container justifyContent="space-around" alignItems="center">
+            <Grid item xs={4}>
+              <Box sx={globalStyles.graphic}>
+                <Image
+                  src={LMScreenTasksCardStructure}
+                  width="100%"
+                  alt="Image of screen: tasks - today"
+                />
+              </Box>
+            </Grid>
+            <Grid item xs={7}>
+              <Typography sx={globalStyles.paragraph}>
+                Task Card Structure
+              </Typography>
+              <Typography sx={globalStyles.paragraph}>
+                Features displayed on each task card were selected carefully based on user feedback and needs. Many users complained about other apps not allowing them to break down large tasks into smaller parts in a visually structured way or designate priority and weight. I wanted to include everything users found most useful when interacting with tasks without cluttering up the UI. 
+              </Typography>
+              <Typography sx={globalStyles.paragraph}>
+                Optional subtasks can be added to any goal and are indented to maintain visual hierarchy while reinforcing parent-child relationships. Priority and effort indicators to help users make decisions based on their time and energy levels. Users can give meaning to tasks by adding icons, due dates (with options to repeat on a schedule), categories (displayed as colored labels), and linked goals. Everything is optional but accessible for full flexibility and organizational support.
+              </Typography>
+            </Grid>
+          </Grid>
+          <Grid container justifyContent="space-around" alignItems="center">
+            <Grid item xs={7}>
+              <Typography sx={globalStyles.paragraph}>
+                The Backlog
+              </Typography>
+              <Typography sx={globalStyles.paragraph}>
+                The Backlog tab is a unique way to keep a list of tasks available to pull in to today’s to-do list whenever the user is ready to tackle them. It acts as a holding area for all tasks not currently scheduled. This differs from most to-do apps that most often do not include a concept of tasks to do outside of what’s accomplishable today or on a specifically designated day. Those types of apps might be good for people who keep on top of their tasks easily and accomplish everything they set out to do every day, but for many users, that just isn’t realistic. 
+              </Typography>
+              <Typography sx={globalStyles.paragraph}>
+                The backlog was built for flexibility too. Users can filter the backlog by priority, category, and whether a task has a due date, or switch to a calendar view to visually scan when tasks are due. Tons of users described calendars as extremely important to them, so it was imperative for me to include a calendar view. Including the calendar in the backlog is meant to help users check their task due dates at a glance and plan ahead to determine which tasks are best to pull in every day. 
+              </Typography>
+            </Grid>
+            <Grid item xs={4}>
+              <Box sx={globalStyles.graphic}>
+                <Image
+                  src={LMScreenTasksBacklog}
+                  width="100%"
+                  alt="Image of screen: tasks - today"
+                />
+              </Box>
+            </Grid>
+          </Grid>
+          <Grid container justifyContent="space-around" alignItems="center">
+            <Grid item xs={4}>
+              <Box sx={globalStyles.graphic}>
+                <Image
+                  src={LMScreenTasksArchive}
+                  width="100%"
+                  alt="Image of screen: tasks - today"
+                />
+              </Box>
+            </Grid>
+            <Grid item xs={7}>
+              <Typography sx={globalStyles.paragraph}>
+                Archive
+              </Typography>
+              <Typography sx={globalStyles.paragraph}>
+                The Archive tab gives users a way to find and reflect on what’s been completed and when. Users can sort and search through completed tasks in either a list or folder-like category view, mirroring mental models familiar from physical file systems. This both reinforces a sense of progress and accomplishment, and aids memory and recall. 
+              </Typography>
+              <Typography sx={globalStyles.paragraph}>
+                As an example, maybe a user has a feeling their dog might be overdo for a vaccine but can’t remember when the last they were vaccinated. Rather than having to call up the vet or scanning through thousands of emails in hopes of finding a receipt, they may be able to simply search the archive for a task with associated keywords to find the completed date of the last time they were in for their vaccines. 
+              </Typography>
+            </Grid>
+          </Grid>
 
 
-          <Typography sx={{ color: "red" }}>[INSERT NOTES SKETCHES]</Typography>
+
           <Typography variant="h3" sx={{ ...globalStyles.heading2, mt: 2 }}>
             Notes
           </Typography>
@@ -396,39 +451,84 @@ const LifeManagementAppContainer = () => {
           <Typography sx={globalStyles.paragraph}>
             That being said, the opportunity was there to provide a designated space for these sporadic thoughts, I designed what you could describe as a sort of mental inbox or brain dump. This is what became the “Notes” section of my app. The Notes section was designed to offer a fast, low-friction way to capture thoughts in the moment, without the cognitive overhead of deciding where they belong or how they’ll be used. Whether a user is in a meeting, on a jog, or lying awake at night, they can jot down an idea quickly and sort it out later.
           </Typography>
-          <Typography sx={{ color: "red" }}>[INSERT RELATED SCREENS]</Typography>
-          <Typography sx={globalStyles.paragraph}>
-            Structure
-          </Typography>
-          <Typography sx={globalStyles.paragraph}>
-            Users can either view their notes by their own defined folder or can search through all of their notes with search text, ordering, toggling, and filtering options. Like in other areas of the app, I kept in mind how important colors are to users and included the option to defined each folder the user with a unique color. 
-          </Typography>
-          <Typography sx={globalStyles.paragraph}>
-            Research also showed that many users like the ability to “pin” important things that they want easy access to, so I added a pin and unpin feature to each note. 
-          </Typography>
-          <Typography sx={globalStyles.paragraph}>
-            A fun detail I added was to display the notes on top of a background meant to look like a spiral notebook to add in a little skeuomorphism to reinforce the comfort and familiarity many users expressed they enjoy when writing their tasks down in physical notebooks and scratchpads.  
-          </Typography>
-          <Typography sx={{ color: "red" }}>[INSERT RELATED SCREENS]</Typography>
-          <Typography sx={globalStyles.paragraph}>
-            Creating & Editing Notes
-          </Typography>
-          <Typography sx={globalStyles.paragraph}>
-            There was a lot of flexibility designed into creating and editing notes in order to support user needs and incorporate the most important conventions users are used to having in notes-focused apps like OneNote and (other notes app) without turning the tool into a full-blown, complicated note-taking suite.
-          </Typography>
-          <Typography sx={globalStyles.paragraph}>
-            Users can choose between keyboard typing mode or handwriting mode (another nod to analog comfort and neurodivergent preferences). To support light formatting, users can toggle basic styles: bullets, bold, italics, and underline. They can also attach supporting media like voice recordings, photos, or PDFs. 
-          </Typography>
-          <Typography sx={{ color: "red" }}>[INSERT RELATED SCREENS]</Typography>
-          <Typography sx={globalStyles.paragraph}>
-            Converting notes to tasks
-          </Typography>
-          <Typography sx={globalStyles.paragraph}>
-            Although they certainly aren’t obligated to do so, the idea behind notes is to park ideas to be turned into tasks later, so the mechanism to do so is displayed prominently from both the note editing modal and in each note card when viewing a list, so notes can be seamlessly converted into tasks, giving users a clear path from inspiration to execution.
-          </Typography>
 
 
-          <Typography sx={{ color: "red" }}>[INSERT NOTES SKETCHES]</Typography>
+
+          <Grid container justifyContent="space-around" alignItems="center">
+            <Grid item xs={4}>
+              <Box sx={globalStyles.graphic}>
+                <Image
+                  src={LMScreenNotesStructure}
+                  width="100%"
+                  alt="Image of screen: tasks - today"
+                />
+              </Box>
+            </Grid>
+            <Grid item xs={7}>
+              <Typography sx={globalStyles.paragraph}>
+                Structure
+              </Typography>
+              <Typography sx={globalStyles.paragraph}>
+                Users can either view their notes by their own defined folder or can search through all of their notes with search text, ordering, toggling, and filtering options. Like in other areas of the app, I kept in mind how important colors are to users and included the option to defined each folder the user with a unique color. 
+              </Typography>
+              <Typography sx={globalStyles.paragraph}>
+                Research also showed that many users like the ability to “pin” important things that they want easy access to, so I added a pin and unpin feature to each note. 
+              </Typography>
+              <Typography sx={globalStyles.paragraph}>
+                A fun detail I added was to display the notes on top of a background meant to look like a spiral notebook to add in a little skeuomorphism to reinforce the comfort and familiarity many users expressed they enjoy when writing their tasks down in physical notebooks and scratchpads.  
+              </Typography>
+            </Grid>
+          </Grid>
+
+
+
+          <Grid container justifyContent="space-around" alignItems="center">
+            <Grid item xs={7}>
+              <Typography sx={globalStyles.paragraph}>
+                Creating & Editing Notes
+              </Typography>
+              <Typography sx={globalStyles.paragraph}>
+                There was a lot of flexibility designed into creating and editing notes in order to support user needs and incorporate the most important conventions users are used to having in notes-focused apps like OneNote and (other notes app) without turning the tool into a full-blown, complicated note-taking suite.
+              </Typography>
+              <Typography sx={globalStyles.paragraph}>
+                Users can choose between keyboard typing mode or handwriting mode (another nod to analog comfort and neurodivergent preferences). To support light formatting, users can toggle basic styles: bullets, bold, italics, and underline. They can also attach supporting media like voice recordings, photos, or PDFs. 
+              </Typography>
+            </Grid>
+            <Grid item xs={4}>
+              <Box sx={globalStyles.graphic}>
+                <Image
+                  src={LMScreenNotesEdit}
+                  width="100%"
+                  alt="Image of screen: tasks - today"
+                />
+              </Box>
+            </Grid>
+          </Grid>
+
+
+
+          <Grid container justifyContent="space-around" alignItems="center">
+            <Grid item xs={4}>
+              <Box sx={globalStyles.graphic}>
+                <Image
+                  src={LMScreenNotesConvert}
+                  width="100%"
+                  alt="Image of screen: tasks - today"
+                />
+              </Box>
+            </Grid>
+            <Grid item xs={7}>
+              <Typography sx={globalStyles.paragraph}>
+                Converting notes to tasks
+              </Typography>
+              <Typography sx={globalStyles.paragraph}>
+                Although they certainly aren’t obligated to do so, the idea behind notes is to park ideas to be turned into tasks later, so the mechanism to do so is displayed prominently from both the note editing modal and in each note card when viewing a list, so notes can be seamlessly converted into tasks, giving users a clear path from inspiration to execution.
+              </Typography>
+            </Grid>
+          </Grid>
+        
+
+
           <Typography variant="h3" sx={{ ...globalStyles.heading2, mt: 2 }}>
             Goals
           </Typography>
@@ -442,76 +542,190 @@ const LifeManagementAppContainer = () => {
           <Typography sx={globalStyles.paragraph}>
             The Goals section was designed to help users support their ambitions by bringing overwhelming long-term aspirations into focus, breaking them down into actionable steps, and giving more purpose and direction to each daily checklist task item by connecting them to broader milestones. This is more than the day-to-day task lists that most productivity apps are. It’s the bigger picture that turns a to-do app into a life management tool.
           </Typography>
-          <Typography sx={{ color: "red" }}>[INSERT RELATED SCREENS]</Typography>
-          <Typography sx={globalStyles.paragraph}>
-            Structure
-          </Typography>
-          <Typography sx={globalStyles.paragraph}>
-            The Goals section is broken into an active goals tab and an archived goals tab. Active tab, users see an at-a-glance list of all goals currently in progress. Each goal card includes a user-selected icon and title for quick visual recognition, a progress bar and written milestone count (e.g. “3/5 milestones completed”), and an optional due date. Users can sort their goals by progress or upcoming due date, helping them prioritize what matters most.
-          </Typography>
-          <Typography sx={globalStyles.paragraph}>
-            The goal archive tab keeps record of all previously completed goal and completion date. By separating active and completed goals, the interface stays clean while also serving as a record-keeping space, something several users noted they lacked in other tools.
-          </Typography>
-          <Typography sx={{ color: "red" }}>[INSERT RELATED SCREENS]</Typography>
-          <Typography sx={globalStyles.paragraph}>
-            Creating and Managing Goals
-          </Typography>
-          <Typography sx={globalStyles.paragraph}>
-            Consistent with other sections of the app, there’s flexibility in goal creation. The user defines the title, description, due date, any relevant media files to attach, and goal milestones. Milestones function as building blocks of the larger goal. For example, a goal like "Record an album" might include milestones such as “write music,” “record and mix songs,” “create album cover,” and “list for distribution.” Each milestone can have its own due date and details. Under each milestone, the user can add a list of related tasks, mark them complete, or move them to the task backlog.
-          </Typography>
 
 
-          <Typography sx={{ color: "red" }}>[INSERT REWARDS SKETCHES]</Typography>
+          <Grid container justifyContent="space-around" alignItems="center">
+            <Grid item xs={4}>
+              <Box sx={globalStyles.graphic}>
+                <Image
+                  src={LMScreenGoalsActive}
+                  width="100%"
+                  alt="Image of screen: tasks - today"
+                />
+              </Box>
+            </Grid>
+            <Grid item xs={7}>
+              <Typography sx={globalStyles.paragraph}>
+                Goals Overview
+              </Typography>
+              <Typography sx={globalStyles.paragraph}>
+                The Goals section is broken into an active goals tab and an archived goals tab. Active tab, users see an at-a-glance list of all goals currently in progress. Each goal card includes a user-selected icon and title for quick visual recognition, a progress bar and written milestone count (e.g. “3/5 milestones completed”), and an optional due date. Users can sort their goals by progress or upcoming due date, helping them prioritize what matters most.
+              </Typography>
+              <Typography sx={globalStyles.paragraph}>
+                The goal archive tab keeps record of all previously completed goal and completion date. By separating active and completed goals, the interface stays clean while also serving as a record-keeping space, something several users noted they lacked in other tools.
+              </Typography>
+            </Grid>
+          </Grid>
+
+
+
+          <Grid container justifyContent="space-around" alignItems="center">
+            <Grid item xs={7}>
+              <Typography sx={globalStyles.paragraph}>
+                Creating and Managing Goals
+              </Typography>
+              <Typography sx={globalStyles.paragraph}>
+                Consistent with other sections of the app, there’s flexibility in goal creation. The user defines the title, description, due date, any relevant media files to attach, and goal milestones. Milestones function as building blocks of the larger goal. For example, a goal like "Record an album" might include milestones such as “write music,” “record and mix songs,” “create album cover,” and “list for distribution.” Each milestone can have its own due date and details. Under each milestone, the user can add a list of related tasks, mark them complete, or move them to the task backlog.
+              </Typography>
+            </Grid>
+            <Grid item xs={4}>
+              <Box sx={globalStyles.graphic}>
+                <Image
+                  src={LMScreenGoalsGoal}
+                  width="100%"
+                  alt="Image of screen: tasks - today"
+                />
+              </Box>
+            </Grid>
+          </Grid>
+
+
+          <Grid container justifyContent="space-around" alignItems="center">
+            <Grid item xs={4}>
+              <Box sx={globalStyles.graphic}>
+                <Image
+                  src={LMScreenGoalMilestone}
+                  width="100%"
+                  alt="Image of screen: tasks - today"
+                />
+              </Box>
+            </Grid>
+            <Grid item xs={7}>
+              <Typography sx={globalStyles.paragraph}>
+                Milestones
+              </Typography>
+              <Typography sx={globalStyles.paragraph}>
+                The Goals section is broken into an active goals tab and an archived goals tab. Active tab, users see an at-a-glance list of all goals currently in progress. Each goal card includes a user-selected icon and title for quick visual recognition, a progress bar and written milestone count (e.g. “3/5 milestones completed”), and an optional due date. Users can sort their goals by progress or upcoming due date, helping them prioritize what matters most.
+              </Typography>
+              <Typography sx={globalStyles.paragraph}>
+                The goal archive tab keeps record of all previously completed goal and completion date. By separating active and completed goals, the interface stays clean while also serving as a record-keeping space, something several users noted they lacked in other tools.
+              </Typography>
+            </Grid>
+          </Grid>
+
+
+
           <Typography variant="h3" sx={{ ...globalStyles.heading2, mt: 2 }}>
             Rewards
           </Typography>
-
           <Typography sx={globalStyles.paragraph}>
             Purpose
           </Typography>
           <Typography sx={globalStyles.paragraph}>
             As revealed by research, the backbone behind any good productivity tool is the ability to keep the user engaged and motivated. When users lose that motivation, not only do they struggle to accomplish their goals, but they will likely also decrease use of or altogether abandon the tool. Grounded in research findings that highlighted how gamification and rewards boost user engagement, especially for neurodivergent users, this section was born.
           </Typography>
-          <Typography sx={{ color: "red" }}>[INSERT RELATED SCREENS]</Typography>
-          <Typography sx={globalStyles.paragraph}>
-            The Dilemma with motivation – it’s personal 
-          </Typography>
-          <Typography sx={globalStyles.paragraph}>
-            Believe it or not, I found this section to be one of the most difficult sections of the app to design because I wanted to design something that would work well for all users. Many express that they really enjoy gamification for encouraging follow-through, but not all users would be interested in a full-blown “game.” Even in the realms of gamification, not all users are interested in the same types of rewards. One user might find it fun to gain experience points and spend them to upgrade or decorate an avatar, for example, but the “designing a cutesy mascot” or “leveling up a bad-ass adventurer” aspect wouldn’t appeal to others at all. 
-          </Typography>
-          <Typography sx={globalStyles.paragraph}>
-            Supported by my research analysis, I ultimately decided to reconcile the differences users undoubtedly have in their motivators by bringing a “touch” of gamification to this section and giving users a lot of freedom and customization in defining what kinds of things motivate them on a personal level, what types of incentives they find meaningful enough to work for, and what they think those rewards are worth them to personally.
-          </Typography>
-          <Typography sx={{ color: "red" }}>[INSERT RELATED SCREENS]</Typography>
-          <Typography sx={globalStyles.paragraph}>
-            Structure
-          </Typography>
-          <Typography sx={globalStyles.paragraph}>
-            The Rewards section is broken into three tabs: In Progress, Shop, and Inventory. In-progress is the “home” section of this section. It shows the list of active achievements the user is working toward. These achievements are framed around meaningful milestones like “complete 10 subtasks”, “complete 5 goals”, “turn 5 notes into tasks”, or “complete tasks from 5 different categories.” Each in-progress item includes a progress bar with visual and written tracking (e.g., 3/10 milestones complete) and the number of rewards points it grants upon completion. This area also includes a dropdown menu to sort achievements by progress or reward value to help users visualize their momentum and choose what to work toward next.
-          </Typography>
-          <Typography sx={{ color: "red" }}>[INSERT RELATED SCREENS]</Typography>
-          <Typography sx={globalStyles.paragraph}>
-            “In-progress” achievement creation – a design trade-off
-          </Typography>
-          <Typography sx={globalStyles.paragraph}>
-             When creating a new achievement the user wants to work toward, I wanted to include flexibility depending on the user’s needs. For example, maybe a particular user wants to be better about returning to their notes and turning them into tasks or maybe they have been putting off their “school” related tasks and wants to be motivated to get more of those done. 
-          </Typography>
-          <Typography sx={globalStyles.paragraph}>
-            They should be able to get rewards to motivate them to do those specific things. However, in the spirit of helping the user track these and removing a bit of the “honor” system some users expressed encourage them to “cheat,” I wanted the app to be able to track the progress toward these things automatically. 
-          </Typography>
-          <Typography sx={globalStyles.paragraph}>
-            The compromise I came up with was to include flexible templates that both the user and app could understand – the idea being that when creating each one, the user could select from a variety of predefined drop-down options to build it. For example, users can define: Complete [10] [Subtasks]Complete [5] [Tasks] in category [Fitness]Turn [3] notes into tasks. This allows for creative goal-setting while ensuring trackability.
-          </Typography>
-          <Typography sx={{ color: "red" }}>[INSERT RELATED SCREENS]</Typography>
-          <Typography sx={globalStyles.paragraph}>
-            The Point Shop
-          </Typography>
-          <Typography sx={globalStyles.paragraph}>
-            The Shop tab is a virtual storefront of rewards users can spend their points on. Rewards are displayed as shop items in a list, each with its own description, point cost, and button to redeem. Above the list, the user can see their point wallet balance and tap a button to add a new reward. 
-          </Typography>
-          <Typography sx={globalStyles.paragraph}>
-            Like the achievements in progress, these rewards are user-defined. However, in contrast to the creating an achievement in progress, reward creation is full open-ended. Users decide the reward and assign a point cost based on what that reward is worth to them personally. This freedom allows users to tap into whatever motivates them most. It can be a coffee outing, a couple hours of guilt-free video gaming, a Friday night pizza delivery, a trip to the beach, you name it – it’s completely up to the user based on their personal incentives.
-          </Typography>
+
+
+
+          <Grid container justifyContent="space-around" alignItems="center">
+            <Grid item xs={4}>
+              <Box sx={globalStyles.graphic}>
+                <Image
+                  src={LMScreenTasksToday}
+                  width="100%"
+                  alt="Image of screen: tasks - today"
+                />
+              </Box>
+            </Grid>
+            <Grid item xs={7}>
+              <Typography sx={globalStyles.paragraph}>
+                The Dilemma with motivation – it’s personal 
+              </Typography>
+              <Typography sx={globalStyles.paragraph}>
+                Believe it or not, I found this section to be one of the most difficult sections of the app to design because I wanted to design something that would work well for all users. Many express that they really enjoy gamification for encouraging follow-through, but not all users would be interested in a full-blown “game.” Even in the realms of gamification, not all users are interested in the same types of rewards. One user might find it fun to gain experience points and spend them to upgrade or decorate an avatar, for example, but the “designing a cutesy mascot” or “leveling up a bad-ass adventurer” aspect wouldn’t appeal to others at all. 
+              </Typography>
+              <Typography sx={globalStyles.paragraph}>
+                Supported by my research analysis, I ultimately decided to reconcile the differences users undoubtedly have in their motivators by bringing a “touch” of gamification to this section and giving users a lot of freedom and customization in defining what kinds of things motivate them on a personal level, what types of incentives they find meaningful enough to work for, and what they think those rewards are worth them to personally.
+              </Typography>
+            </Grid>
+          </Grid>
+
+
+
+          <Grid container justifyContent="space-around" alignItems="center">
+            <Grid item xs={7}>
+              <Typography sx={globalStyles.paragraph}>
+                Structure
+              </Typography>
+             <Typography sx={globalStyles.paragraph}>
+                The Rewards section is broken into three tabs: In Progress, Shop, and Inventory. In-progress is the “home” section of this section. It shows the list of active achievements the user is working toward. These achievements are framed around meaningful milestones like “complete 10 subtasks”, “complete 5 goals”, “turn 5 notes into tasks”, or “complete tasks from 5 different categories.” Each in-progress item includes a progress bar with visual and written tracking (e.g., 3/10 milestones complete) and the number of rewards points it grants upon completion. This area also includes a dropdown menu to sort achievements by progress or reward value to help users visualize their momentum and choose what to work toward next.
+              </Typography>
+            </Grid>
+            <Grid item xs={4}>
+              <Box sx={globalStyles.graphic}>
+                <Image
+                  src={LMScreenTasksToday}
+                  width="100%"
+                  alt="Image of screen: tasks - today"
+                />
+              </Box>
+            </Grid>
+          </Grid>
+
+
+          <Grid container justifyContent="space-around" alignItems="center">
+            <Grid item xs={4}>
+              <Box sx={globalStyles.graphic}>
+                <Image
+                  src={LMScreenTasksToday}
+                  width="100%"
+                  alt="Image of screen: tasks - today"
+                />
+              </Box>
+            </Grid>
+            <Grid item xs={7}>
+               <Typography sx={globalStyles.paragraph}>
+                “In-progress” achievement creation – a design trade-off
+              </Typography>
+              <Typography sx={globalStyles.paragraph}>
+                When creating a new achievement the user wants to work toward, I wanted to include flexibility depending on the user’s needs. For example, maybe a particular user wants to be better about returning to their notes and turning them into tasks or maybe they have been putting off their “school” related tasks and wants to be motivated to get more of those done. 
+              </Typography>
+              <Typography sx={globalStyles.paragraph}>
+                They should be able to get rewards to motivate them to do those specific things. However, in the spirit of helping the user track these and removing a bit of the “honor” system some users expressed encourage them to “cheat,” I wanted the app to be able to track the progress toward these things automatically. 
+              </Typography>
+              <Typography sx={globalStyles.paragraph}>
+                The compromise I came up with was to include flexible templates that both the user and app could understand – the idea being that when creating each one, the user could select from a variety of predefined drop-down options to build it. For example, users can define: Complete [10] [Subtasks]Complete [5] [Tasks] in category [Fitness]Turn [3] notes into tasks. This allows for creative goal-setting while ensuring trackability.
+              </Typography>
+            </Grid>
+          </Grid>
+
+        
+    
+          <Grid container justifyContent="space-around" alignItems="center">
+            <Grid item xs={7}>
+                <Typography sx={globalStyles.paragraph}>
+                  The Point Shop
+                </Typography>
+                <Typography sx={globalStyles.paragraph}>
+                  The Shop tab is a virtual storefront of rewards users can spend their points on. Rewards are displayed as shop items in a list, each with its own description, point cost, and button to redeem. Above the list, the user can see their point wallet balance and tap a button to add a new reward. 
+                </Typography>
+                <Typography sx={globalStyles.paragraph}>
+                  Like the achievements in progress, these rewards are user-defined. However, in contrast to the creating an achievement in progress, reward creation is full open-ended. Users decide the reward and assign a point cost based on what that reward is worth to them personally. This freedom allows users to tap into whatever motivates them most. It can be a coffee outing, a couple hours of guilt-free video gaming, a Friday night pizza delivery, a trip to the beach, you name it – it’s completely up to the user based on their personal incentives.
+                </Typography>
+            </Grid>
+            <Grid item xs={4}>
+              <Box sx={globalStyles.graphic}>
+                <Image
+                  src={LMScreenTasksToday}
+                  width="100%"
+                  alt="Image of screen: tasks - today"
+                />
+              </Box>
+            </Grid>
+          </Grid>
+
+
+          
           
 
         </Box>
