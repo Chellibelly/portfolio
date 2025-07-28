@@ -4,13 +4,13 @@ import Image from 'next/image';
 import { Box, Grid, Paper, Typography, Link } from '@mui/material';
 import Header from '../Header';
 import MenagerieHotelsHero from '../../../public/Menagerie_Hotels_Hero.png';
-import LifeManagementHero from '../../../public/Life_Management_Hero_UC.png';
-import DesignTidbits from '../../../public/Design_Tidbits_UC.png';
+import LifeManagementHero from '../../../public/Life_Management_Hero.png';
+import DesignTidbits from '../../../public/Design_Tidbits.png';
 import * as globalStyles from '../styles/globalStyleConsts';
 
 const CaseStudiesHomeContainer = () => {
 const cardStyle = {
-  height: 460,
+  height: 500,
   width: 380,
   m: 2,
   transition: 'all 0.3s',
@@ -20,7 +20,7 @@ const cardStyle = {
 };
 
   const cardStyleNavigate = {
-  height: 460,
+  height: 500,
   width: 380,
   m: 2,
   transition: 'transform 0.3s, box-shadow 0.3s',
@@ -38,7 +38,7 @@ const cardStyle = {
       <Typography
           variant="h4"
           align="center"
-          sx={{ ...globalStyles.heading1, mb: 3 }}
+          sx={{ ...globalStyles.heading1, mb: 1.5 }}
         >
           Check out my work!
       </Typography>
@@ -47,11 +47,9 @@ const cardStyle = {
         direction="row"
         justifyContent="center"
         alignItems="center"
-        sx={{ mt: 0 }}
+        sx={{ mt: 0, pb: 10 }}
       >
         <Link href="/hotelBookingApp" sx={{ textDecoration: 'none'}}>
-        {false && <Typography sx={{ maxWidth: 200 }}>A UX Design Institute Diploma Project</Typography>}
-          {false && <Typography sx={{ maxWidth: 200 }}>Check out this case study if you want to see an entire detailed design process and all of my deliverables</Typography>}
           <Paper sx={cardStyleNavigate}>
             <Grid container direction="column" justifyContent="center" alignItems="center">
               <Grid item>
@@ -63,18 +61,15 @@ const cardStyle = {
                 />
               </Grid>
               <Grid item sx={{ p: 2 }}>
-                <h1 style={{ ...globalStyles.heading4, textAlign: "center", fontWeight: 600 }}>Hotel Booking Tool</h1>
-                <p style={{ ...globalStyles.paragraph, textAlign: "center", fontSize: 16 }}>
-                  My journey transforming the hotel booking process for people fed up with being habitually left in the dark
-                </p>
+                <h1 style={{ ...globalStyles.heading4, textAlign: "center", fontWeight: 600 }}>Menagerie Hotels<br/>Booking Website</h1>
+                <h2 style={{ ...globalStyles.heading6, textAlign: "center", marginTop: -10, fontStyle: "italic" }}>UXDI Diploma Project</h2>
+                <p>Click here if you're looking for a full, detailed, end-to-end case study organized to demonstrate my grasp of the <b>UX process</b>.</p>
               </Grid>
             </Grid>           
           </Paper>
         </Link>
-        <Link sx={{ textDecoration: 'none'}}>
-        {false && <Typography sx={{ maxWidth: 200 }}>A personal passion project</Typography>}
-        {false && <Typography sx={{ maxWidth: 200 }}>Check out this case study if want to see how I define and solution for problems</Typography>}
-          <Paper sx={cardStyle}>
+        <Link href="/lifeManagementApp" sx={{ textDecoration: 'none'}}>
+          <Paper sx={cardStyleNavigate}>
             <Grid container direction="column" justifyContent="center" alignItems="center">
               <Grid item>
                 <Image
@@ -85,17 +80,14 @@ const cardStyle = {
                 />
               </Grid>
               <Grid item sx={{ p: 2 }}>
-                <h1 style={{ ...globalStyles.heading4, textAlign: "center", fontWeight: 600 }}>Life Management App</h1>
-                <p style={{ ...globalStyles.paragraph, textAlign: "center", fontSize: 16 }}>
-                 My goal is to understand how people feel about the way they manage their goals and productivity. My mission if to design a way to make it easier to stay organized, manage deadlines, and track goals and milestones.
-                </p>
+                <h1 style={{ ...globalStyles.heading4, textAlign: "center", fontWeight: 600 }}>Life Management App<br/>(name pending)</h1>
+                <h2 style={{ ...globalStyles.heading6, textAlign: "center", marginTop: -10, fontStyle: "italic" }}>Personal Passion Project</h2>
+                <p>Click here if you're curious how I translate research into deliverables, presented in a layout focused on identifying real <b>problems and solutions</b>.</p>
               </Grid>
             </Grid>   
           </Paper>
         </Link>
         <Link sx={{ textDecoration: 'none'}}>
-        {false && <Typography sx={{ maxWidth: 200 }}>Selected Work Projects</Typography>}
-        {false && <Typography sx={{ maxWidth: 200 }}>Check out this case study if you want to see smaller design projects I've completed for companies I've worked for and how I collaborate with stakeholders to deliver real data-backed results</Typography>}
           <Paper sx={cardStyle}>
             <Grid container direction="column" justifyContent="center" alignItems="center">
               <Grid item>
@@ -108,10 +100,9 @@ const cardStyle = {
               </Grid>
               <Grid item sx={{ p: 2 }}>
                 <h1 style={{ ...globalStyles.heading4, textAlign: "center", fontWeight: 600 }}>Professional Highlights</h1>
-                <p style={{ ...globalStyles.paragraph, textAlign: "center", fontSize: 16 }}>
-                  Impactful features I've designed professionally
-                </p>
-              </Grid>
+                <h2 style={{ ...globalStyles.heading6, textAlign: "center", marginTop: -10, fontStyle: "italic" }}>Selected Career Projects</h2>
+                <p>Click here if you want a peek into how I collaborate with cross-functional teams to ship real features backed by research, stakeholder alignment, and <b>real measurable results</b>.</p>
+              </Grid>    
             </Grid>   
           </Paper>
         </Link>

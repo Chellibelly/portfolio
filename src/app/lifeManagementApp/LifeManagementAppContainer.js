@@ -1,12 +1,14 @@
 "use client"; 
 
 //TODO: build out suggestions screen and add it back in
+//TODO: build out goal templates screen and add it back in
 
 import React, {  } from 'react';
 import { Box, Grid, Paper, Typography, List, ListItem } from '@mui/material';
 import * as globalStyles from '../styles/globalStyleConsts';
 import Header from '../Header';
 import Image from 'next/image';
+import QuoteContainer from '../hotelBookingApp/QuoteContainer';
 import ToDoListImage from '../../../public/Next_Up_Project.png';
 import QualitativeAnswers from '../../../public/LM_Survey_Qual.png';
 import CompetitorResearch from '../../../public/LM_Competitor_Research.png';
@@ -14,6 +16,8 @@ import InterviewPersonas from '../../../public/Interview_Personas.png';
 import AffinityDiagram from '../../../public/LM_Affinity_Diagram_Full.jpg';
 import UserJourneys from '../../../public/LM_User_Journeys.png';
 import InformationArchitecture from '../../../public/LM_Information_Architecture.png';
+
+import LMWireframes from '../../../public/LM_Wireframes.png';
 
 import LMScreenTasksToday from '../../../public/LM_Screen_Tasks_Today.png';
 import LMScreenTasksArchive from '../../../public/LM_Screen_Tasks_Archive.png';
@@ -49,9 +53,12 @@ const LifeManagementAppContainer = () => {
        <Typography variant='h2' sx={globalStyles.heading2}>
           Project Overview
       </Typography>
-      <Typography>
-        “I wish that one app stored all of the data/goals in one place — financial, budget, calendar, chores, etc.” – Survey Respondent
-      </Typography>
+      <Box sx={{ ml: -10 }}>
+        <QuoteContainer 
+          quote="I wish that one app stored all of the data/goals in one place — financial, budget, calendar, chores, etc."
+          author="Survey Respondent"
+        />
+      </Box>
         <Box
             container
             sx={{
@@ -152,12 +159,12 @@ const LifeManagementAppContainer = () => {
         <Box sx={{ ...globalStyles.graphic, my: 4 }}>
           <Image
             src={CompetitorResearch}
-            style={{ width: '100%', height: 'auto' }}
+            style={{ width: '100%', height: 'auto', marginTop: 50 }}
             alt={`Quantitative UX insight chart`}
           />
         </Box>
         </Box>
-        <Box sx={{ mt: 5 }}>
+        <Box sx={{ mt: 10 }}>
           <Typography sx={globalStyles.heading1}>
             Bridging the Gap
           </Typography>
@@ -250,11 +257,6 @@ const LifeManagementAppContainer = () => {
               alt={`Quantitative UX insight chart`}
             />
           </Box>
-          <Typography variant="h3" sx={{ ...globalStyles.heading3 }}>An Unexpected Discovery About My Target Audience</Typography>
-          <Typography sx={{ color: "red" }}>[FLESH THIS SECTION OUT]</Typography>
-          <Typography sx={{ ...globalStyles.paragraph }}>
-             I can't move on from this section before mentioning this - Through user research, a clearer theme began to emerge: many people, especially those with ADHD, anxiety, or executive dysfunction, struggled not because they lacked goals, but because they lacked systems that supported memory, focus, and follow-through. That insight shifted the direction of the project. What emerged was a flexible system that motivates daily productivity, memory support, and long-term goal tracking and record-keeping.
-          </Typography>
         </Box>
 
 
@@ -302,7 +304,7 @@ const LifeManagementAppContainer = () => {
 
 
 
-        <Box>
+        <Box sx={{ mt: 10 }}>
           <Typography sx={globalStyles.heading1}>
             Designing for Flexibility & Follow-Through
           </Typography>
@@ -310,7 +312,7 @@ const LifeManagementAppContainer = () => {
             Information architecture, wireframes, and high-fidelity screen design
           </Typography>
           <Typography sx={{ ...globalStyles.paragraph }}>With a clearer understanding of where existing tools fall short, I began designing an experience that better supports real user needs — especially for those who struggle with motivation, mental load, or staying on top of daily tasks. I focused on reducing friction, surfacing what matters most, and creating moments of encouragement and clarity. The design process was guided by real user feedback, mental models, and emotional needs uncovered during research, resulting in a solution that feels supportive, flexible, and genuinely helpful.</Typography>
-          <Typography sx={{ ...globalStyles.paragraph }}>Information Architecture</Typography>
+          <Typography variant="h3" sx={{ ...globalStyles.heading3 }}>Information Architecture</Typography>
           <Typography sx={{ ...globalStyles.paragraph }}>To support users in staying focused, feeling in control, and making meaningful progress, I designed an information architecture that emphasizes quick access, clear categories, and flexible navigation. The structure needed to accommodate both short-term actions and long-term planning without overwhelming users — especially those struggling with distractions, executive dysfunction, or complex routines.</Typography>
           <Typography sx={{ ...globalStyles.paragraph }}>I structured the app around five primary sections accessible via a persistent bottom navigation bar: Notes, Tasks, Goals, Rewards, and Settings. Each section serves a distinct purpose but is designed to flow seamlessly into the others—helping users move from brainstorming to execution to reflection, without losing momentum. The navigation is intentionally minimal to reduce cognitive overload while still offering the flexibility needed for varied workflows and attention styles.</Typography>
           <Typography sx={{ ...globalStyles.paragraph }}>Below is the app’s information architecture, organized into five main sections. This structure directly supports users’ needs for focus, flexibility, and follow-through by clearly separating key flows and allowing easy navigation between capturing ideas, managing tasks, tracking goals, and earning rewards.</Typography>
@@ -319,13 +321,26 @@ const LifeManagementAppContainer = () => {
               style={{ width: '100%', height: 'auto', marginTop: 20 }}
               alt={`Quantitative UX insight chart`}
             />
-          <Typography variant="h2" sx={{ ...globalStyles.heading2, mt: 2 }}>
-            Section Features
+          
+
+
+          <Typography variant="h3" sx={{ ...globalStyles.heading3 }}>Early Wireframes</Typography>
+          <Typography sx={{ ...globalStyles.paragraph }}>
+            Before diving into visual design, I sketched out rough wireframes to test layout ideas, explore information hierarchy based on the information architecture, and ensure that the app’s navigation would stay simple and cognitively light for users who struggle with focus. These wireframes helped me spot early issues—like an overwhelming task layout and unclear affordances in goal-tracking, and gave me a foundation to test structure before committing to visual polish.
           </Typography>
+         
+          <Image
+              src={LMWireframes}
+              style={{ width: '100%', height: 'auto', marginTop: 70 }}
+              alt={`Quantitative UX insight chart`}
+            />
+
+
+          <Typography variant="h3" sx={{ ...globalStyles.heading3 }}>Section Features</Typography>
           <Typography sx={{ ...globalStyles.paragraph }}>
             This design phase brought the insights from user research to life through carefully considered structures, interactions, and features. Rather than chasing novelty, I focused on solving real usability pain points — especially around organization, memory support, and task overwhelm. Each section of the app reflects user goals and habits uncovered through research, balancing flexibility with structure, and depth with simplicity. While the visual design supports clarity and calm, it’s the thoughtful functionality that turns this tool into something people can actually rely on.
           </Typography>
-          <Typography variant="h3" sx={{ ...globalStyles.heading2, mt: 2 }}>
+          <Typography variant="h3" sx={{ ...globalStyles.heading4, mt: 2 }}>
             Tasks
           </Typography>
           <Typography sx={globalStyles.paragraph}>The Tasks section of the app is what the user sees when they open it. It consists of three tabs: Today, Backlog, and Archive. Each tab has a specific purpose and features that support that purpose. Let's explore them.</Typography>
@@ -340,7 +355,7 @@ const LifeManagementAppContainer = () => {
               </Box>
             </Grid>
             <Grid item xs={7}>
-              <Typography sx={globalStyles.paragraph}>
+              <Typography sx={{ ...globalStyles.paragraph, fontStyle: "italic" }}>
                 Today tab
               </Typography>
               <Typography sx={globalStyles.paragraph}>
@@ -350,9 +365,9 @@ const LifeManagementAppContainer = () => {
               </Typography>
             </Grid>
           </Grid>
-          <Grid container justifyContent="space-around" alignItems="center">
+          {false && <Grid container justifyContent="space-around" alignItems="center">
             <Grid item xs={7}>
-              <Typography sx={globalStyles.paragraph}>
+              <Typography sx={{ ...globalStyles.paragraph, fontStyle: "italic" }}>
                 Suggestions Assistant
               </Typography>
               <Typography sx={globalStyles.paragraph}>
@@ -370,19 +385,10 @@ const LifeManagementAppContainer = () => {
                 />
               </Box>
             </Grid>
-          </Grid>
-          <Grid container justifyContent="space-around" alignItems="center">
-            <Grid item xs={4}>
-              <Box sx={globalStyles.graphic}>
-                <Image
-                  src={LMScreenTasksCardStructure}
-                  width="100%"
-                  alt="Image of screen: tasks - today"
-                />
-              </Box>
-            </Grid>
+          </Grid>}
+          <Grid container justifyContent="space-around" alignItems="center" >
             <Grid item xs={7}>
-              <Typography sx={globalStyles.paragraph}>
+              <Typography sx={{ ...globalStyles.paragraph, fontStyle: "italic" }}>
                 Task Card Structure
               </Typography>
               <Typography sx={globalStyles.paragraph}>
@@ -392,19 +398,17 @@ const LifeManagementAppContainer = () => {
                 Optional subtasks can be added to any goal and are indented to maintain visual hierarchy while reinforcing parent-child relationships. Priority and effort indicators to help users make decisions based on their time and energy levels. Users can give meaning to tasks by adding icons, due dates (with options to repeat on a schedule), categories (displayed as colored labels), and linked goals. Everything is optional but accessible for full flexibility and organizational support.
               </Typography>
             </Grid>
+            <Grid item xs={4}>
+              <Box sx={globalStyles.graphic}>
+                <Image
+                  src={LMScreenTasksCardStructure}
+                  width="100%"
+                  alt="Image of screen: tasks - today"
+                />
+              </Box>
+            </Grid>
           </Grid>
           <Grid container justifyContent="space-around" alignItems="center">
-            <Grid item xs={7}>
-              <Typography sx={globalStyles.paragraph}>
-                The Backlog
-              </Typography>
-              <Typography sx={globalStyles.paragraph}>
-                The Backlog tab is a unique way to keep a list of tasks available to pull in to today’s to-do list whenever the user is ready to tackle them. It acts as a holding area for all tasks not currently scheduled. This differs from most to-do apps that most often do not include a concept of tasks to do outside of what’s accomplishable today or on a specifically designated day. Those types of apps might be good for people who keep on top of their tasks easily and accomplish everything they set out to do every day, but for many users, that just isn’t realistic. 
-              </Typography>
-              <Typography sx={globalStyles.paragraph}>
-                The backlog was built for flexibility too. Users can filter the backlog by priority, category, and whether a task has a due date, or switch to a calendar view to visually scan when tasks are due. Tons of users described calendars as extremely important to them, so it was imperative for me to include a calendar view. Including the calendar in the backlog is meant to help users check their task due dates at a glance and plan ahead to determine which tasks are best to pull in every day. 
-              </Typography>
-            </Grid>
             <Grid item xs={4}>
               <Box sx={globalStyles.graphic}>
                 <Image
@@ -414,19 +418,21 @@ const LifeManagementAppContainer = () => {
                 />
               </Box>
             </Grid>
+            <Grid item xs={7}>
+              <Typography sx={{ ...globalStyles.paragraph, fontStyle: "italic" }}>
+                The Backlog
+              </Typography>
+              <Typography sx={globalStyles.paragraph}>
+                The Backlog tab is a unique way to keep a list of tasks available to pull in to today’s to-do list whenever the user is ready to tackle them. It acts as a holding area for all tasks not currently scheduled. This differs from most to-do apps that most often do not include a concept of tasks to do outside of what’s accomplishable today or on a specifically designated day. Those types of apps might be good for people who keep on top of their tasks easily and accomplish everything they set out to do every day, but for many users, that just isn’t realistic. 
+              </Typography>
+              <Typography sx={globalStyles.paragraph}>
+                The backlog was built for flexibility too. Users can filter the backlog by priority, category, and whether a task has a due date, or switch to a calendar view to visually scan when tasks are due. Tons of users described calendars as extremely important to them, so it was imperative for me to include a calendar view. Including the calendar in the backlog is meant to help users check their task due dates at a glance and plan ahead to determine which tasks are best to pull in every day. 
+              </Typography>
+            </Grid>
           </Grid>
           <Grid container justifyContent="space-around" alignItems="center">
-            <Grid item xs={4}>
-              <Box sx={globalStyles.graphic}>
-                <Image
-                  src={LMScreenTasksArchive}
-                  width="100%"
-                  alt="Image of screen: tasks - today"
-                />
-              </Box>
-            </Grid>
             <Grid item xs={7}>
-              <Typography sx={globalStyles.paragraph}>
+              <Typography sx={{ ...globalStyles.paragraph, fontStyle: "italic" }}>
                 Archive
               </Typography>
               <Typography sx={globalStyles.paragraph}>
@@ -436,15 +442,24 @@ const LifeManagementAppContainer = () => {
                 As an example, maybe a user has a feeling their dog might be overdo for a vaccine but can’t remember when the last they were vaccinated. Rather than having to call up the vet or scanning through thousands of emails in hopes of finding a receipt, they may be able to simply search the archive for a task with associated keywords to find the completed date of the last time they were in for their vaccines. 
               </Typography>
             </Grid>
+            <Grid item xs={4}>
+              <Box sx={globalStyles.graphic}>
+                <Image
+                  src={LMScreenTasksArchive}
+                  width="100%"
+                  alt="Image of screen: tasks - today"
+                />
+              </Box>
+            </Grid>
           </Grid>
 
 
 
-          <Typography variant="h3" sx={{ ...globalStyles.heading2, mt: 2 }}>
+          <Typography variant="h4" sx={{ ...globalStyles.heading4, mt: 2 }}>
             Notes
           </Typography>
 
-          <Typography sx={globalStyles.paragraph}>
+          <Typography sx={{ ...globalStyles.paragraph, fontStyle: "italic" }}>
             Purpose
           </Typography>
           <Typography sx={globalStyles.paragraph}>
@@ -470,7 +485,7 @@ const LifeManagementAppContainer = () => {
               </Box>
             </Grid>
             <Grid item xs={7}>
-              <Typography sx={globalStyles.paragraph}>
+              <Typography sx={{ ...globalStyles.paragraph, fontStyle: "italic" }}>
                 Structure
               </Typography>
               <Typography sx={globalStyles.paragraph}>
@@ -489,7 +504,7 @@ const LifeManagementAppContainer = () => {
 
           <Grid container justifyContent="space-around" alignItems="center">
             <Grid item xs={7}>
-              <Typography sx={globalStyles.paragraph}>
+              <Typography sx={{ ...globalStyles.paragraph, fontStyle: "italic" }}>
                 Creating & Editing Notes
               </Typography>
               <Typography sx={globalStyles.paragraph}>
@@ -523,7 +538,7 @@ const LifeManagementAppContainer = () => {
               </Box>
             </Grid>
             <Grid item xs={7}>
-              <Typography sx={globalStyles.paragraph}>
+              <Typography sx={{ ...globalStyles.paragraph, fontStyle: "italic" }}>
                 Converting notes to tasks
               </Typography>
               <Typography sx={globalStyles.paragraph}>
@@ -534,11 +549,11 @@ const LifeManagementAppContainer = () => {
         
 
 
-          <Typography variant="h3" sx={{ ...globalStyles.heading2, mt: 2 }}>
+          <Typography variant="h4" sx={{ ...globalStyles.heading4, mt: 2 }}>
             Goals
           </Typography>
 
-          <Typography sx={globalStyles.paragraph}>
+          <Typography sx={{ ...globalStyles.paragraph, fontStyle: "italic" }}>
             Purpose
           </Typography>
           <Typography sx={globalStyles.paragraph}>
@@ -560,7 +575,7 @@ const LifeManagementAppContainer = () => {
               </Box>
             </Grid>
             <Grid item xs={7}>
-              <Typography sx={globalStyles.paragraph}>
+              <Typography sx={{ ...globalStyles.paragraph, fontStyle: "italic" }}>
                 Goals Overview
               </Typography>
               <Typography sx={globalStyles.paragraph}>
@@ -576,11 +591,12 @@ const LifeManagementAppContainer = () => {
 
           <Grid container justifyContent="space-around" alignItems="center">
             <Grid item xs={7}>
-              <Typography sx={globalStyles.paragraph}>
+              <Typography sx={{ ...globalStyles.paragraph, fontStyle: "italic" }}>
                 Creating and Managing Goals
               </Typography>
               <Typography sx={globalStyles.paragraph}>
-                Consistent with other sections of the app, there’s flexibility in goal creation. The user defines the title, description, due date, any relevant media files to attach, and goal milestones. Milestones function as building blocks of the larger goal. For example, a goal like "Record an album" might include milestones such as “write music,” “record and mix songs,” “create album cover,” and “list for distribution.” Each milestone can have its own due date and details. Under each milestone, the user can add a list of related tasks, mark them complete, or move them to the task backlog.
+                Consistent with other sections of the app, there’s flexibility in goal creation. The user defines the title, description, due date, any relevant media files to attach, and goal milestones. 
+                <br/><br/>Milestones function as building blocks of the larger goal. For example, a goal like "Record an album" might include milestones such as “write music,” “record and mix songs,” “create album cover,” and “list for distribution.”
               </Typography>
             </Grid>
             <Grid item xs={4}>
@@ -606,24 +622,22 @@ const LifeManagementAppContainer = () => {
               </Box>
             </Grid>
             <Grid item xs={7}>
-              <Typography sx={globalStyles.paragraph}>
+              <Typography sx={{ ...globalStyles.paragraph, fontStyle: "italic" }}>
                 Milestones
               </Typography>
               <Typography sx={globalStyles.paragraph}>
-                The Goals section is broken into an active goals tab and an archived goals tab. Active tab, users see an at-a-glance list of all goals currently in progress. Each goal card includes a user-selected icon and title for quick visual recognition, a progress bar and written milestone count (e.g. “3/5 milestones completed”), and an optional due date. Users can sort their goals by progress or upcoming due date, helping them prioritize what matters most.
-              </Typography>
-              <Typography sx={globalStyles.paragraph}>
-                The goal archive tab keeps record of all previously completed goal and completion date. By separating active and completed goals, the interface stays clean while also serving as a record-keeping space, something several users noted they lacked in other tools.
+                When a user clicks on a milestone or clicks the button to create a new one, they are taken to a seperate screen dedicated to milestone details. 
+                <br/><br/>Each milestone can have its own title, due date and details, including a short description and media files.  Under each milestone, the user can add a list of related tasks, sort them, move them to the task backlog, or mark them complete.
               </Typography>
             </Grid>
           </Grid>
 
 
 
-          <Typography variant="h3" sx={{ ...globalStyles.heading2, mt: 2 }}>
+          <Typography variant="h4" sx={{ ...globalStyles.heading4, mt: 2 }}>
             Rewards
           </Typography>
-          <Typography sx={globalStyles.paragraph}>
+          <Typography sx={{ ...globalStyles.paragraph, fontStyle: "italic" }}>
             Purpose
           </Typography>
           <Typography sx={globalStyles.paragraph}>
@@ -643,14 +657,17 @@ const LifeManagementAppContainer = () => {
               </Box>
             </Grid>
             <Grid item xs={7}>
-              <Typography sx={globalStyles.paragraph}>
+              <Typography sx={{ ...globalStyles.paragraph, fontStyle: "italic" }}>
                 The Dilemma with motivation – it’s personal 
               </Typography>
               <Typography sx={globalStyles.paragraph}>
-                Believe it or not, I found this section to be one of the most difficult sections of the app to design because I wanted to design something that would work well for all users. Many express that they really enjoy gamification for encouraging follow-through, but not all users would be interested in a full-blown “game.” Even in the realms of gamification, not all users are interested in the same types of rewards. One user might find it fun to gain experience points and spend them to upgrade or decorate an avatar, for example, but the “designing a cutesy mascot” or “leveling up a bad-ass adventurer” aspect wouldn’t appeal to others at all. 
+                Believe it or not, I found this to be one of the most difficult sections of the app to design because I wanted something that would work well for all users. Many express that they really enjoy gamification for encouraging follow-through, but not all users are interested in a full-blown “game.” Even within the realm of gamification, not everyone is motivated by the same types of rewards.
               </Typography>
               <Typography sx={globalStyles.paragraph}>
-                Supported by my research analysis, I ultimately decided to reconcile the differences users undoubtedly have in their motivators by bringing a “touch” of gamification to this section and giving users a lot of freedom and customization in defining what kinds of things motivate them on a personal level, what types of incentives they find meaningful enough to work for, and what they think those rewards are worth them to personally.
+                Some users might find it fun to gain experience points and spend them to upgrade or decorate an avatar, but the idea of designing a cutesy mascot or leveling up an avatar doesn’t appeal to everyone. And forcing users into a single style of motivation felt counter to the flexibility I was aiming for throughout the app.
+              </Typography>
+              <Typography sx={globalStyles.paragraph}>
+                Supported by my research analysis, I ultimately decided to bring just a touch of gamification to this section, while giving users a lot of freedom and customization. They define what motivates them, what kinds of incentives feel meaningful, and what those rewards are worth to them personally.
               </Typography>
             </Grid>
           </Grid>
@@ -659,11 +676,13 @@ const LifeManagementAppContainer = () => {
 
           <Grid container justifyContent="space-around" alignItems="center">
             <Grid item xs={7}>
-              <Typography sx={globalStyles.paragraph}>
+              <Typography sx={{ ...globalStyles.paragraph, fontStyle: "italic" }}>
                 Structure
               </Typography>
              <Typography sx={globalStyles.paragraph}>
-                The Rewards section is broken into three tabs: In Progress, Shop, and Inventory. In-progress is the “home” section of this section. It shows the list of active achievements the user is working toward. These achievements are framed around meaningful milestones like “complete 10 subtasks”, “complete 5 goals”, “turn 5 notes into tasks”, or “complete tasks from 5 different categories.” Each in-progress item includes a progress bar with visual and written tracking (e.g., 3/10 milestones complete) and the number of rewards points it grants upon completion. This area also includes a dropdown menu to sort achievements by progress or reward value to help users visualize their momentum and choose what to work toward next.
+                The Rewards section is broken into three tabs: In Progress, Shop, and Inventory. In-progress is the “home” section of this section. It shows the list of active achievements the user is working toward. 
+                <br/><br/>These achievements are framed around meaningful milestones like “complete 10 subtasks”, “complete 5 goals”, “turn 5 notes into tasks”, or “complete tasks from 5 different categories.” Each in-progress item includes a progress bar with visual and written tracking (e.g., 3/10 milestones complete) and the number of rewards points it grants upon completion. 
+                <br/><br/>This area also includes a dropdown menu to sort achievements by progress or reward value to help users visualize their momentum and choose what to work toward next.
               </Typography>
             </Grid>
             <Grid item xs={4}>
@@ -678,7 +697,7 @@ const LifeManagementAppContainer = () => {
           </Grid>
 
 
-          <Grid container justifyContent="space-around" alignItems="center">
+          {false && <Grid container justifyContent="space-around" alignItems="center">
             <Grid item xs={4}>
               <Box sx={globalStyles.graphic}>
                 <Image
@@ -689,7 +708,7 @@ const LifeManagementAppContainer = () => {
               </Box>
             </Grid>
             <Grid item xs={7}>
-               <Typography sx={globalStyles.paragraph}>
+               <Typography sx={{ ...globalStyles.paragraph, fontStyle: "italic" }}>
                 “In-progress” achievement creation – a design trade-off
               </Typography>
               <Typography sx={globalStyles.paragraph}>
@@ -702,22 +721,11 @@ const LifeManagementAppContainer = () => {
                 The compromise I came up with was to include flexible templates that both the user and app could understand – the idea being that when creating each one, the user could select from a variety of predefined drop-down options to build it. For example, users can define: Complete [10] [Subtasks]Complete [5] [Tasks] in category [Fitness]Turn [3] notes into tasks. This allows for creative goal-setting while ensuring trackability.
               </Typography>
             </Grid>
-          </Grid>
+          </Grid>}
 
         
     
           <Grid container justifyContent="space-around" alignItems="center">
-            <Grid item xs={7}>
-                <Typography sx={globalStyles.paragraph}>
-                  The Point Shop
-                </Typography>
-                <Typography sx={globalStyles.paragraph}>
-                  The Shop tab is a virtual storefront of rewards users can spend their points on. Rewards are displayed as shop items in a list, each with its own description, point cost, and button to redeem. Above the list, the user can see their point wallet balance and tap a button to add a new reward. 
-                </Typography>
-                <Typography sx={globalStyles.paragraph}>
-                  Like the achievements in progress, these rewards are user-defined. However, in contrast to the creating an achievement in progress, reward creation is full open-ended. Users decide the reward and assign a point cost based on what that reward is worth to them personally. This freedom allows users to tap into whatever motivates them most. It can be a coffee outing, a couple hours of guilt-free video gaming, a Friday night pizza delivery, a trip to the beach, you name it – it’s completely up to the user based on their personal incentives.
-                </Typography>
-            </Grid>
             <Grid item xs={4}>
               <Box sx={globalStyles.graphic}>
                 <Image
@@ -727,12 +735,19 @@ const LifeManagementAppContainer = () => {
                 />
               </Box>
             </Grid>
+            <Grid item xs={7}>
+                <Typography sx={{ ...globalStyles.paragraph, fontStyle: "italic" }}>
+                  The Point Shop
+                </Typography>
+                <Typography sx={globalStyles.paragraph}>
+                  The Shop tab is a virtual storefront of rewards users can spend their points on. Rewards are displayed as shop items in a list, each with its own description, point cost, and button to redeem. Above the list, the user can see their point wallet balance and tap a button to add a new reward. 
+                </Typography>
+                <Typography sx={globalStyles.paragraph}>
+                  Like the achievements in progress, these rewards are user-defined. However, in contrast to the creating an achievement in progress, reward creation is full open-ended. Users decide the reward and assign a point cost based on what that reward is worth to them personally. 
+                  <br/><br/>This freedom allows users to tap into whatever motivates them most. It can be a coffee outing, a couple hours of guilt-free video gaming, a Friday night pizza delivery, a trip to the beach, you name it – it’s completely up to the user based on their personal incentives.
+                </Typography>
+            </Grid>
           </Grid>
-
-
-          
-          
-
         </Box>
 
 
@@ -755,25 +770,22 @@ const LifeManagementAppContainer = () => {
 
 
 
-        <Box>
+        <Box sx={{ mt: 10 }}>
           <Typography sx={globalStyles.heading1}>
-            Looking Ahead
+            Final Thoughts and Next Steps
           </Typography>
           <Typography variant="h2" sx={{ ...globalStyles.heading2, mt: 2 }}>
-            Next Steps & Iteration
+            Learning to truly understand an audience
           </Typography>
           <Typography sx={{ ...globalStyles.paragraph }}>
-            This case study reflects the full end-to-end process of research, analysis, design, and rationale — and I’m proud of how far the project has come. The next step is to build a working prototype and conduct usability testing to validate assumptions, uncover friction points, and continue refining the experience.
-            Longer-term, I'd like to explore:
-            Onboarding and personalization flows to support different user types (e.g., students, creatives, neurodivergent users)
-            Data syncing and privacy considerations
-            Expanded reward mechanics to sustain motivation over time
-            For now, this project represents a thoughtful and research-driven approach to solving real-life planning challenges — and a strong foundation for future iteration.
+           When I first started this project, I assumed everyone struggled with memory, focus, and getting things done. But the deeper I got into research, the more I realized that not all struggles are created equal. Neurodivergent users, especially those dealing with ADHD, anxiety, or executive dysfunction, weren’t just having a harder time. In fact, they were being let down by tools that didn’t work for how their brains operate.
           </Typography>
           <Typography sx={{ ...globalStyles.paragraph }}>
-            This case study represents the first full design cycle of my life management app — from early research through to detailed screen design. While the current version thoughtfully addresses many user needs around focus, flexibility, and follow-through, no product is ever truly finished. I view this as a strong foundation to build from, not an endpoint.
-            Looking ahead, my next priority is to create an interactive prototype of the app using Figma or a similar tool. This will allow for usability testing with real users, especially those who identified as neurodivergent during my initial research. I’m particularly interested in testing how intuitive the task creation flow is, whether users feel supported in connecting daily tasks to larger goals, and how motivating the rewards system truly is in practice.
-            Based on those learnings, I plan to refine key flows, polish interactions, and explore areas where the interface can better support memory, clarity, and autonomy. Longer term, I’d love to partner with a developer or continue into low-code tools to bring the app to life and further test its impact.
+           That shifted everything for me. Instead of trying to build something for the masses, I focused on designing for the folks who needed the most support, and honestly, that made the work better. I added more flexibility, more cues for memory and focus, and more room for users to work the way they actually work, not how some ideal productivity model says they “should.”
+          </Typography>
+          <Typography sx={{ ...globalStyles.paragraph }}>
+            I’m proud of where this ended up, but I’m not done yet. My next goal is to build a clickable prototype and get it in front of real users through usability testing sessions to see how well it holds up. I want to validate whether the app truly supports autonomy, reduces friction, and motivates sustained engagement. 
+            Designing this case study reminded me what UX is all about. It’s about staying curious, listening closely, and being willing to rethink everything when the people you’re designing for show you a better direction.
           </Typography>
         </Box>
 
@@ -787,18 +799,7 @@ const LifeManagementAppContainer = () => {
 
 
 
-        <Box>
-          <Typography sx={globalStyles.heading1}>
-            Lessons Learned
-          </Typography>
-          <Typography sx={{ ...globalStyles.paragraph }}>
-            - Narrowing the target audience sharpened the design focus. Initially, I aimed to build an all-encompassing life management app for everyone, but research revealed that neurodivergent users and those with executive dysfunction had unique needs that were often unmet by existing solutions. Focusing on supporting memory, motivation, and flexibility for these users gave the app clearer purpose and more meaningful features.
-            - Skeuomorphic elements and analog cues can be comforting and motivating. Including touches like the spiral notebook background in Notes was inspired by user preferences for tactile, familiar interfaces that help with memory and focus. This reinforced that sometimes blending digital with analog-like design can improve usability, especially for neurodivergent users.
-            - Feature complexity must be balanced with ease of use. The Tasks section, while feature-rich to support prioritization, effort estimation, and subtasks, had to stay intuitive enough to avoid overwhelming users who might already struggle with focus or executive function.
-            - Flexibility in workflows is crucial. Allowing users to move tasks between Today and Backlog, customize categories and labels, and tie tasks to long-term goals emerged as critical for helping users stay on track without feeling locked into rigid systems.
-            - User research is an ongoing process, not a one-time step. The iterative discovery process revealed nuances in user needs and frustrations that guided feature prioritization and design decisions. I’m committed to continuing user testing and iteration to refine the app’s usability and impact.
-          </Typography>
-        </Box>
+      
       </Box>
     </div>
   );

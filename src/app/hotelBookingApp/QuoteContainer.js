@@ -1,7 +1,7 @@
 import { Typography, Box, Grid } from '@mui/material';
 import { grey, blue } from '@mui/material/colors';
 
-export default function QuoteContainer({quote, author}) {
+export default function QuoteContainer({quote, author, width}) {
 
   return (
       <Grid container justifyContent="center" justifyItems="center">

@@ -5,7 +5,6 @@ import { Box, Grid, Paper, Typography, Link } from '@mui/material';
 import Header from '../Header';
 import MenagerieHotelsHero from '../../../public/Menagerie_Hotels_Hero.png';
 import LifeManagementHero from '../../../public/Life_Management_Hero_UC.png';
-import DesignTidbits from '../../../public/Design_Tidbits_UC.png';
 import HeaderMobile from '../HeaderMobile';
 import * as globalStyles from '../styles/globalStyleConsts';
 
@@ -15,7 +14,7 @@ const CaseStudiesHomeMobile = () => {
   };
 
 const cardStyle = {
-  height: 420,
+  height: 520,
   width: 320,
   m: 2,
   transition: 'all 0.3s',
@@ -25,7 +24,7 @@ const cardStyle = {
 };
 
   const cardStyleNavigate = {
-  height: 420,
+  height: 500,
   width: 320,
   m: 2,
   transition: 'transform 0.3s, box-shadow 0.3s',
@@ -53,10 +52,9 @@ const cardStyle = {
                 />
               </Grid>
               <Grid item sx={{ p: 2 }}>
-                <h1 style={{ ...globalStyles.heading5, textAlign: "center", fontWeight: 600 }}>Hotel Booking App</h1>
-                <p style={{ ...globalStyles.paragraph, textAlign: "center", fontSize: 14 }}>
-                  My journey transforming the hotel booking process for people fed up with being habitually left in the dark
-                </p>
+                <h1 style={{ ...globalStyles.heading4, textAlign: "center", fontWeight: 600 }}>Menagerie Hotels<br/>Booking Website</h1>
+                <h2 style={{ ...globalStyles.heading6, textAlign: "center", marginTop: -10, fontStyle: "italic" }}>UXDI Diploma Project</h2>
+                <p>Tap here if you're looking for a full, detailed, end-to-end case study organized to demonstrate my grasp of the <b>UX process</b>.</p>
               </Grid>
             </Grid>           
           </Paper>
@@ -73,34 +71,14 @@ const cardStyle = {
                 />
               </Grid>
               <Grid item sx={{ p: 2 }}>
-                <h1 style={{ ...globalStyles.heading5, textAlign: "center", fontWeight: 600 }}>Life Management App</h1>
-                <p style={{ ...globalStyles.paragraph, textAlign: "center", fontSize: 14 }}>
-                  My goal is to understand how people feel about the way they manage their goals and productivity. My mission if to design a way to make it easier to stay organized, manage deadlines, and track goals and milestones.
-                </p>
+                <h1 style={{ ...globalStyles.heading4, textAlign: "center", fontWeight: 600 }}>Life Management App<br/>(name pending)</h1>
+                <h2 style={{ ...globalStyles.heading6, textAlign: "center", marginTop: -10, fontStyle: "italic" }}>Personal Passion Project</h2>
+                <p>Click here if you're curious how I translate research into deliverables, presented in a layout focused on identifying real <b>problems and solutions</b>.</p>
               </Grid>
             </Grid>   
           </Paper>
         </Link>
-        <Link sx={{ textDecoration: 'none'}}>
-          <Paper sx={cardStyle}>
-            <Grid container direction="column" justifyContent="center" alignItems="center">
-              <Grid item>
-                <Image
-                  src={DesignTidbits}
-                  width={320}
-                  alt="Design Tidbits Hero"
-                  style={imageStyle}
-                />
-              </Grid>
-              <Grid item sx={{ p: 2 }}>
-                <h1 style={{ ...globalStyles.heading5, textAlign: "center", fontWeight: 600 }}>Design Tidbits</h1>
-                <p style={{ ...globalStyles.paragraph, textAlign: "center", fontSize: 14 }}>
-                  Impactful features I've designed professionally
-                </p>
-              </Grid>
-            </Grid>   
-          </Paper>
-        </Link>
+       
       </Grid>
     </Box>
   );
