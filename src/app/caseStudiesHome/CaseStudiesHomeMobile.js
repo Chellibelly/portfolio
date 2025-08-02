@@ -5,23 +5,18 @@ import { Box, Grid, Paper, Typography, Link } from '@mui/material';
 import Header from '../Header';
 import MenagerieHotelsHero from '../../../public/Menagerie_Hotels_Hero.png';
 import LifeManagementHero from '../../../public/Life_Management_Hero.png';
+import DesignTidbits from '../../../public/Design_Tidbits.png';
 import HeaderMobile from '../HeaderMobile';
 import * as globalStyles from '../styles/globalStyleConsts';
+import PasswordModal from './PasswordModal';
+
 
 const CaseStudiesHomeMobile = () => {
+  const [accessModalOpen, setAccessModalOpen] = React.useState(false);
+
   const imageStyle = {
     margin: "auto", borderTopLeftRadius: 4, borderTopRightRadius: 4
   };
-
-const cardStyle = {
-  height: 520,
-  width: 320,
-  m: 2,
-  transition: 'all 0.3s',
-  '&:hover': {
-    cursor: 'not-allowed',
-  }
-};
 
   const cardStyleNavigate = {
   height: 500,
@@ -39,6 +34,7 @@ const cardStyle = {
     <Box>
       <HeaderMobile/>
       <Typography sx={{...globalStyles.heading1, mt:10, textAlign: "center" }}>Check out my work!</Typography>
+      <PasswordModal open={accessModalOpen} handleClose={() => setAccessModalOpen(false)}/>
       <Grid container direction="row" justifyContent="center" alignItems="center" sx={{ mt: 2 }}>
         <Link href="/hotelBookingApp" sx={{ textDecoration: 'none'}}>
           <Paper sx={cardStyleNavigate}>
@@ -71,9 +67,28 @@ const cardStyle = {
                 />
               </Grid>
               <Grid item sx={{ p: 2 }}>
-                <h1 style={{ ...globalStyles.heading4, textAlign: "center", fontWeight: 600 }}>Life Management App<br/>(name pending)</h1>
+                <h1 style={{ ...globalStyles.heading4, textAlign: "center", fontWeight: 600 }}>Life Management Hero<br/>(working name)</h1>
                 <h2 style={{ ...globalStyles.heading6, textAlign: "center", marginTop: -10, fontStyle: "italic" }}>Personal Passion Project</h2>
                 <p>Click here if you're curious how I translate research into deliverables, presented in a layout focused on identifying real <b>problems and solutions</b>.</p>
+              </Grid>
+            </Grid>   
+          </Paper>
+        </Link>
+        <Link onClick={setAccessModalOpen} sx={{ textDecoration: 'none'}}>
+          <Paper sx={cardStyleNavigate}>
+            <Grid container direction="column" justifyContent="center" alignItems="center">
+              <Grid item>
+                <Image
+                  src={DesignTidbits}
+                  width={320}
+                  alt="Life Management App Hero"
+                  style={imageStyle}
+                />
+              </Grid>
+              <Grid item sx={{ p: 2 }}>
+                <h1 style={{ ...globalStyles.heading4, textAlign: "center", fontWeight: 600 }}>Professional Highlights</h1>
+                <h2 style={{ ...globalStyles.heading6, textAlign: "center", marginTop: -10, fontStyle: "italic" }}>Selected Career Projects</h2>
+                <p>Click here if you want a peek into how I collaborate with cross-functional teams to ship real features backed by research, stakeholder alignment, and <b>real measurable results</b>.</p>
               </Grid>
             </Grid>   
           </Paper>

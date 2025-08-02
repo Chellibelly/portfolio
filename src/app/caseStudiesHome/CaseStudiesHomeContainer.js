@@ -1,14 +1,17 @@
 "use client"; 
 import React, {  } from 'react';
 import Image from 'next/image';
-import { Box, Grid, Paper, Typography, Link } from '@mui/material';
+import { Box, Grid, Paper, Typography, Link, Button } from '@mui/material';
 import Header from '../Header';
 import MenagerieHotelsHero from '../../../public/Menagerie_Hotels_Hero.png';
 import LifeManagementHero from '../../../public/Life_Management_Hero.png';
 import DesignTidbits from '../../../public/Design_Tidbits.png';
 import * as globalStyles from '../styles/globalStyleConsts';
+import PasswordModal from './PasswordModal';
 
 const CaseStudiesHomeContainer = () => {
+const [accessModalOpen, setAccessModalOpen] = React.useState(false);
+
 const cardStyle = {
   height: 500,
   width: 380,
@@ -42,6 +45,7 @@ const cardStyle = {
         >
           Check out my work!
       </Typography>
+      <PasswordModal open={accessModalOpen} handleClose={() => setAccessModalOpen(false)}/>
       <Grid
         container
         direction="row"
@@ -80,15 +84,15 @@ const cardStyle = {
                 />
               </Grid>
               <Grid item sx={{ p: 2 }}>
-                <h1 style={{ ...globalStyles.heading4, textAlign: "center", fontWeight: 600 }}>Life Management App<br/>(name pending)</h1>
+                <h1 style={{ ...globalStyles.heading4, textAlign: "center", fontWeight: 600 }}>Life Management Hero<br/>(working name)</h1>
                 <h2 style={{ ...globalStyles.heading6, textAlign: "center", marginTop: -10, fontStyle: "italic" }}>Personal Passion Project</h2>
                 <p>Click here if you're curious how I translate research into deliverables, presented in a layout focused on identifying real <b>problems and solutions</b>.</p>
               </Grid>
             </Grid>   
           </Paper>
         </Link>
-        <Link sx={{ textDecoration: 'none'}}>
-          <Paper sx={cardStyle}>
+        <Link onClick={setAccessModalOpen} sx={{ textDecoration: 'none'}}>
+          <Paper sx={cardStyleNavigate}>
             <Grid container direction="column" justifyContent="center" alignItems="center">
               <Grid item>
                 <Image

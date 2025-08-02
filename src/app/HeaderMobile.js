@@ -26,7 +26,6 @@ export default function HeaderMobile() {
     const pathSegments = path.split('/');
     const lastSegment = pathSegments[pathSegments.length - 1];
     let pageName = lastSegment ? lastSegment.charAt(0).toUpperCase() + lastSegment.slice(1) : 'Home';
-    debugger;
     if (pageName === "Home") {
       pageName = "About Me";
     }
@@ -37,7 +36,7 @@ export default function HeaderMobile() {
       pageName = "UX Case Studies";
     }
     if (pageName === "LifeManagementApp") {
-      pageName = "Life Management App"
+      pageName = "Life Management Hero"
     }
     setPageName(pageName);
   }, []);
