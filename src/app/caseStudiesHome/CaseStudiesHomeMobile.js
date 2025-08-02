@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { Box, Grid, Paper, Typography, Link } from '@mui/material';
 import Header from '../Header';
 import MenagerieHotelsHero from '../../../public/Menagerie_Hotels_Hero.png';
-import LifeManagementHero from '../../../public/Life_Management_Hero_UC.png';
+import LifeManagementHero from '../../../public/Life_Management_Hero.png';
 import HeaderMobile from '../HeaderMobile';
 import * as globalStyles from '../styles/globalStyleConsts';
 
@@ -59,8 +59,8 @@ const cardStyle = {
             </Grid>           
           </Paper>
         </Link>
-        <Link sx={{ textDecoration: 'none'}}>
-          <Paper sx={cardStyle}>
+        <Link href="/lifeManagementApp" sx={{ textDecoration: 'none'}}>
+          <Paper sx={cardStyleNavigate}>
             <Grid container direction="column" justifyContent="center" alignItems="center">
               <Grid item>
                 <Image
