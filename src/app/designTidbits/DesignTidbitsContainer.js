@@ -7,6 +7,12 @@ import SimplePayBefore from '../../../public/Simple_Pay_Before.png';
 import SimplePayAfter from '../../../public/Simple_Pay_After.png';
 import VerificationBefore from '../../../public/Verification_Before.png';
 import VerificationAfter from '../../../public/Verification_After.png';
+import ProtectionProgramsDetailsBefore from '../../../public/Protection_Programs_Details_Before.png';
+import ProtectionProgramsDetailsAfter from '../../../public/Protection_Programs_Details_After.png';
+import ProtectionProgramsOptOutBefore from '../../../public/Protection_Opt_Out_Before.png';
+import ProtectionProgramsOptOutAfter from '../../../public/Protection_Opt_Out_After.png';
+import SettingsManager from '../../../public/Settings_Manager.png';
+import LocalizationManager from '../../../public/Localization_Manager.png';
 import Header from '../Header';
 
 const padText = {
@@ -117,11 +123,44 @@ const DesignTidbitsContainer = () => {
             </Typography>
             <Typography sx={{...globalStyles.paragraph}}>
               Two optional protection programs were described with long, text-heavy blocks that users struggled to compare and differentiate. To address this, I designed a side-by-side comparison chart with program names on one axis and program perks on the other. Checkmarks and X’s visually indicated which perks each program included, with an added “combo” column to highlight the benefits of enrolling in both. This graphical representation made it easier for users to understand their options and make informed choices quickly.
-            </Typography>
-            <Typography sx={{...globalStyles.paragraph, color: "red"}}>
-              [Image placeholder: Comparison chart graphic]
-            </Typography>
+            </Typography>      
           </Box>
+
+          <Grid container justifyContent="center" alignItems="center" sx={{ mt: 10 }}>
+            <Grid item xs={5} sx={{mr: 5 }}>
+              <Image
+                src={ProtectionProgramsDetailsBefore}
+                alt="Life Management App Hero"
+                style={{ margin: "auto", borderTopLeftRadius: 4, borderTopRightRadius: 4 }}
+              />
+            </Grid>
+            <Grid item xs={5}>
+              <Image
+                src={ProtectionProgramsDetailsAfter}
+                alt="Life Management App Hero"
+                style={{ margin: "auto", borderTopLeftRadius: 4, borderTopRightRadius: 4 }}
+              />
+            </Grid>
+          </Grid>
+
+          <Grid container justifyContent="center" alignItems="center" sx={{ mt: 10 }}>
+            <Grid item xs={5} sx={{mr: 5 }}>
+              <Image
+                src={ProtectionProgramsOptOutAfter}
+                alt="Life Management App Hero"
+                style={{ margin: "auto", borderTopLeftRadius: 4, borderTopRightRadius: 4 }}
+              />
+            </Grid>
+            <Grid item xs={5}>
+              <Image
+                src={ProtectionProgramsOptOutBefore}
+                alt="Life Management App Hero"
+                style={{ margin: "auto", borderTopLeftRadius: 4, borderTopRightRadius: 4 }}
+              />
+            </Grid>
+          </Grid>
+
+
         </Box>
         {false && <Box sx={{ mt: 5 }}>
           <Box sx={padText}>     
@@ -154,12 +193,16 @@ const DesignTidbitsContainer = () => {
             <Typography sx={globalStyles.paragraph}>
               By owning this project end-to-end, I ensured the tool was both technically feasible and user-friendly for our internal developer audience. The result has been significant efficiency gains, with rollout targeting times reportedly reduced from hours to minutes, along with considerable cost savings by replacing expensive third-party licenses. This scalable solution supports ongoing growth and increasingly complex use cases, enabling our teams to run more experiments and deliver features faster. I continue to work with users to gather feedback and improve the tool further.
             </Typography>
-            <Typography sx={{...globalStyles.paragraph, color: "red"}}>
-              [Image placeholder: Early sketches and wireframes]
-              <br/>
-              [Image placeholder: Final Settings Manager dashboard screenshots]
-            </Typography>
+            
           </Box>
+          
+              <Image
+                src={SettingsManager}
+                alt="Life Management App Hero"
+                style={{ margin: "auto", borderTopLeftRadius: 4, borderTopRightRadius: 4 }}
+              />
+         
+
           
         </Box>
         <Box sx={{ mt: 5 }}>
@@ -176,12 +219,12 @@ const DesignTidbitsContainer = () => {
             <Typography sx={globalStyles.paragraph}>
               This tool not only streamlined the localization process but also ensured compliance with legal requirements that prohibited the use of AI translators. It significantly reduced dependency on engineering for content updates and enabled faster, more accurate translation management across multiple languages. Early adoption metrics indicate a 40% reduction in content update turnaround time and a 25% decrease in translation errors reported by users.
             </Typography>
-            <Typography sx={{...globalStyles.paragraph, color: "red"}}>
-              [Image placeholder: Localization Manager dashboard screenshot]
-              <br/>
-              [Image placeholder: Example of key-value pairs and dynamic content injection]
-            </Typography>
           </Box>
+          <Image
+                src={LocalizationManager}
+                alt="Life Management App Hero"
+                style={{ margin: "auto", borderTopLeftRadius: 4, borderTopRightRadius: 4 }}
+              />
           <br/>
           <br/>
           <br/>
