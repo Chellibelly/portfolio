@@ -28,7 +28,7 @@ const AboutContainerMobile = () => {
       Over the years, I've collaborated with UX professionals in my role as a software engineer, and now I’m ready to pivot my career toward research and design.
       </Typography>
       <Typography sx={{ ...globalStyles.heading5, ml: 3, mr: 3 }} variant="h5">
-        I have both a Bachelor's degree in Applied Computer Science and a professional diploma in UX. During my UX program, I took on a <Link href="/">case study</Link> where I gained hands-on experience with mixed research methods, usability testing, analysis, wireframing, high-fidelity design, and prototyping.
+       I have both a Bachelor's degree in Applied Computer Science and a professional diploma in UX. During my UX program, I took on a case study where I gained hands-on experience with mixed research methods, usability testing, analysis, wireframing, high-fidelity design, and prototyping. Since then, I've designed other features as part of both personal and professional projects. You can check out some of my design work <Link href="/caseStudiesHome">here</Link>!
       </Typography>
 
       <Image

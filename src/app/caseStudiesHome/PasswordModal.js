@@ -30,7 +30,11 @@ export default function PasswordModal({ open, handleClose }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();     // Prevent default form submit
-    setError(true);
+    if (password != 'lucky'){
+      setError(true);
+    } else {
+      window.location.pathname = "/designTidbits"
+    }
     setPassword('');
   };
 
@@ -70,7 +74,7 @@ export default function PasswordModal({ open, handleClose }) {
               textAlign="center"
               sx={{ px: 2 }}
             >
-              Ask me for the password <b><i>or</i></b> check out my other projects (no password required!)
+              If you don't have the password, just ask! <br/><b><i>or</i></b><br/> check out my other projects <br/>(no password required!)
             </Typography>
 
             <TextField

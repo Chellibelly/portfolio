@@ -33,10 +33,13 @@ export default function HeaderMobile() {
       pageName = "Menagerie Hotels";
     }
     if (pageName === "CaseStudiesHome") {
-      pageName = "UX Case Studies";
+      pageName = "UX Design Work";
     }
     if (pageName === "LifeManagementApp") {
       pageName = "Life Management Hero"
+    }
+    if (pageName === "DesignTidbits") {
+      pageName = "Professional Highlights"
     }
     setPageName(pageName);
   }, []);
@@ -115,7 +118,7 @@ export default function HeaderMobile() {
                         </Grid>
                         <Grid item>
                           <Link href="/caseStudiesHome" sx={{ textDecoration: "none" }}>
-                            <Typography sx={menuFont}>UX Case Studies</Typography>
+                            <Typography sx={menuFont}>UX Design Work</Typography>
                           </Link>
                         </Grid>
                     </Grid>

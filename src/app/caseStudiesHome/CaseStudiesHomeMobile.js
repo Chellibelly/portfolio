@@ -88,11 +88,12 @@ const CaseStudiesHomeMobile = () => {
               <Grid item sx={{ p: 2 }}>
                 <h1 style={{ ...globalStyles.heading4, textAlign: "center", fontWeight: 600 }}>Professional Highlights</h1>
                 <h2 style={{ ...globalStyles.heading6, textAlign: "center", marginTop: -10, fontStyle: "italic" }}>Selected Career Projects</h2>
-                <p>Click here if you want a peek into how I collaborate with cross-functional teams to ship real features backed by research, stakeholder alignment, and <b>real measurable results</b>.</p>
+                <p>Click here if you want a peek into how I collaborate with cross-functional teams to ship real features backed by research, stakeholder alignment, and <b>real-world results</b>.</p>
               </Grid>
             </Grid>   
           </Paper>
         </Link>
+        
        
       </Grid>
     </Box>

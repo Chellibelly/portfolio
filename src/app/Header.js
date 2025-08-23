@@ -45,7 +45,7 @@ const Header = () => {
                 <Link href="/caseStudiesHome" 
                 sx={pageName === "CaseStudiesHome" ? globalStyles.navLinkActive : globalStyles.navLink}
                 >
-                    <Typography sx={navText}>UX Case Studies</Typography>
+                    <Typography sx={navText}>UX Design Work</Typography>
                 </Link>
             </Grid>
         </Grid>
