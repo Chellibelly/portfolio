@@ -29,7 +29,7 @@ const DesignTidbitsMobile = () => {
           </Typography>
           <Image
             src={DesignTidbitsCollage}
-            alt="Life Management App Hero"
+            alt="Design Highlights Hero"
             style={{ margin: "auto", marginTop: 50, marginBottom: 70 }}
           />
           <Typography sx={globalStyles.paragraph}>
@@ -61,12 +61,12 @@ const DesignTidbitsMobile = () => {
           </Box>
           <Image
             src={SimplePayBefore}
-            alt="Life Management App Hero"
+            alt="Simple Pay Design - Before"
             style={{ margin: "auto" }}
           />
           <Image
             src={SimplePayAfter}
-            alt="Life Management App Hero"
+            alt="Simple Pay Design - After"
             style={{ margin: "auto", marginTop: 30 }}
           />
           <Box sx={padText}>
@@ -82,12 +82,12 @@ const DesignTidbitsMobile = () => {
           </Box>
           <Image
             src={VerificationBefore}
-            alt="Life Management App Hero"
+            alt="Customer Verification Screenshots - Before"
             style={{ margin: "auto", marginTop: 30 }}
           />
           <Image
             src={VerificationAfter}
-            alt="Life Management App Hero"
+            alt="Customer Verification Screenshots - After"
             style={{ margin: "auto", marginTop: 30 }}
           />
           <Box sx={padText}>
@@ -99,24 +99,16 @@ const DesignTidbitsMobile = () => {
               <br/><br/>To address this, I designed a side-by-side comparison chart with program names on one axis and program perks on the other. Checkmarks and X’s indicated which perks each program included, with an added “combo” column to highlight the benefits of enrolling in both. This graphical representation made it easier for users to understand their options and make informed choices quickly.
             </Typography>      
           </Box>
-
           <Image
             src={ProtectionProgramsDetailsBefore}
-            alt="Life Management App Hero"
+            alt="Protection Programs screenshots - Before"
             style={{ margin: "auto", marginTop: 30 }}
           />
           <Image
             src={ProtectionProgramsDetailsAfter}
-            alt="Life Management App Hero"
+            alt="Protection Programs screenshots - After"
             style={{ margin: "auto", marginTop: 30 }}
           />
-
-         
-
-
-          
-
-
         </Box>
         {false && <Box sx={{ mt: 5 }}>
           <Box sx={padText}>     
@@ -153,7 +145,7 @@ const DesignTidbitsMobile = () => {
           </Box>
               <Image
                 src={SettingsManager}
-                alt="Life Management App Hero"
+                alt="Settings Manager Screenshots"
                 style={{ margin: "auto", marginTop: 50 }}
               />
         </Box>
@@ -177,10 +169,9 @@ const DesignTidbitsMobile = () => {
           </Box>
           <Image
             src={LocalizationManager}
-            alt="Life Management App Hero"
+            alt="Copy Hero Screenshots"
             style={{ margin: "auto", marginTop: 50 }}
           />
-
           <Box sx={padText}>
             <Typography sx={globalStyles.heading2}>
               Thank you!

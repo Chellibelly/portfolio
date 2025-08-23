@@ -32,10 +32,10 @@ const DesignTidbitsContainer = () => {
             Career Highlights: Real UX Projects with Real Impact
           </Typography>
           <Image
-                src={DesignTidbitsCollage}
-                alt="Life Management App Hero"
-                style={{ margin: "auto", marginTop: 50, marginBottom: 70 }}
-              />
+            src={DesignTidbitsCollage}
+            alt="Design Highlights Hero"
+            style={{ margin: "auto", marginTop: 50, marginBottom: 70 }}
+          />
           <Typography sx={globalStyles.paragraph}>
             Welcome to a glimpse of some highlights of work I've done professionally! These projects showcase how I solve real-world problems across a variety of contexts, from building powerful internal tools to simplifying complex customer experiences through thoughtful design.
           </Typography>
@@ -52,9 +52,6 @@ const DesignTidbitsContainer = () => {
               In several projects, I tackled complex and wordy content that was causing confusion and cognitive overload for both customers and store associates. These areas included critical information about autopay options, customer verification, and protection programs. The existing text-heavy layouts made it difficult for users to quickly grasp the essentials, leading to mistakes, frustration, and reduced confidence in decision-making. My goal was to redesign these sections with clear, visually engaging layouts that break down information into digestible parts and guide users step-by-step.
             </Typography>
           </Box>
-          
-      
-      
           <Box sx={padText}>
             <Typography sx={{...globalStyles.heading4, mt: 5}}>
               Simple Pay
@@ -66,27 +63,22 @@ const DesignTidbitsContainer = () => {
               I restructured this into a visually segmented interface with clearly separated sections, supported by icons and simple graphics to illustrate each payment option and its effects. This redesign helped users scan and understand their choices faster, reducing support calls and boosting confidence in autopay enrollment.
             </Typography>
           </Box>
-
           <Grid container justifyContent="center" alignItems="center" sx={{ mt: 10 }}>
             <Grid item xs={4} sx={{mr: 5 }}>
               <Image
                 src={SimplePayBefore}
-                alt="Life Management App Hero"
+                alt="Simple Pay Design - Before"
                 style={{ margin: "auto", borderTopLeftRadius: 4, borderTopRightRadius: 4 }}
               />
             </Grid>
             <Grid item xs={4}>
               <Image
                 src={SimplePayAfter}
-                alt="Life Management App Hero"
+                alt="Simple Pay Design - After"
                 style={{ margin: "auto", borderTopLeftRadius: 4, borderTopRightRadius: 4 }}
               />
             </Grid>
           </Grid>
-          
-
-
-
           <Box sx={padText}>
             <Typography sx={{...globalStyles.heading4, mt: 10}}>
               Customer Verification
@@ -98,28 +90,22 @@ const DesignTidbitsContainer = () => {
               I transformed this process into a clear, step-by-step flow, visually separating each verification task with concise action points and inline validation determination. This clarity improved compliance and reduced errors significantly.
             </Typography>
           </Box>
-         
-
-
           <Grid container justifyContent="center" alignItems="center" sx={{ mt: 10 }}>
             <Grid item xs={4} sx={{mr: 5 }}>
               <Image
                 src={VerificationBefore}
-                alt="Life Management App Hero"
+                alt="Customer Verification Screenshots - Before"
                 style={{ margin: "auto", borderTopLeftRadius: 4, borderTopRightRadius: 4 }}
               />
             </Grid>
             <Grid item xs={5}>
               <Image
                 src={VerificationAfter}
-                alt="Life Management App Hero"
+                alt="Customer Verification Screenshots - After"
                 style={{ margin: "auto", borderTopLeftRadius: 4, borderTopRightRadius: 4 }}
               />
             </Grid>
           </Grid>
-          
-
-
           <Box sx={padText}>
             <Typography sx={{...globalStyles.heading4, mt: 10}}>
               Protection Programs
@@ -129,42 +115,38 @@ const DesignTidbitsContainer = () => {
               <br/><br/>To address this, I designed a side-by-side comparison chart with program names on one axis and program perks on the other. Checkmarks and X’s indicated which perks each program included, with an added “combo” column to highlight the benefits of enrolling in both. This graphical representation made it easier for users to understand their options and make informed choices quickly.
             </Typography>      
           </Box>
-
           <Grid container justifyContent="center" alignItems="center" sx={{ mt: 10 }}>
             <Grid item xs={4} sx={{mr: 5 }}>
               <Image
                 src={ProtectionProgramsDetailsBefore}
-                alt="Life Management App Hero"
+                alt="Protection Programs screenshots - Before"
                 style={{ margin: "auto", borderTopLeftRadius: 4, borderTopRightRadius: 4 }}
               />
             </Grid>
             <Grid item xs={4}>
               <Image
                 src={ProtectionProgramsDetailsAfter}
-                alt="Life Management App Hero"
+                alt="Protection Programs screenshots - After"
                 style={{ margin: "auto", borderTopLeftRadius: 4, borderTopRightRadius: 4 }}
               />
             </Grid>
           </Grid>
-
           <Grid container justifyContent="center" alignItems="center" sx={{ mt: 10 }}>
             <Grid item xs={4} sx={{mr: 5 }}>
               <Image
                 src={ProtectionProgramsOptOutAfter}
-                alt="Life Management App Hero"
+                alt="Protection Programs Screenshots - After"
                 style={{ margin: "auto", borderTopLeftRadius: 4, borderTopRightRadius: 4 }}
               />
             </Grid>
             <Grid item xs={4}>
               <Image
                 src={ProtectionProgramsOptOutBefore}
-                alt="Life Management App Hero"
+                alt="Protection Programs Screenshots - Before"
                 style={{ margin: "auto", borderTopLeftRadius: 4, borderTopRightRadius: 4 }}
               />
             </Grid>
           </Grid>
-
-
         </Box>
         {false && <Box sx={{ mt: 5 }}>
           <Box sx={padText}>     
@@ -201,7 +183,7 @@ const DesignTidbitsContainer = () => {
           </Box>
               <Image
                 src={SettingsManager}
-                alt="Life Management App Hero"
+                alt="Settings Manager Screenshots"
                 style={{ margin: "auto", marginTop: 70, width: "80%" }}
               />
         </Box>
@@ -225,10 +207,9 @@ const DesignTidbitsContainer = () => {
           </Box>
           <Image
             src={LocalizationManager}
-            alt="Life Management App Hero"
+            alt="Copy Hero Screenshots"
             style={{ margin: "auto", marginTop: 70, width: "80%" }}
           />
-
           <Box sx={padText}>
             <Typography sx={globalStyles.heading2}>
               Thank you!
