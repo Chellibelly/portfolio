@@ -21,7 +21,7 @@ export default function LessonsLearned() {
                 The importance of user research and expecting the unexpected
             </Typography>
             <Typography variant="body1" sx={globalStyles.paragraph}>
-                Without the research, I wouldn’t have been able to create designs that truly met user goals and needs. Learning about users' past frustrations with similar software uncovered key opportunities and led to my “eureka moment” about where to focus my design efforts.
+                Research revealed users’ frustrations and opportunities, guiding my “eureka moment” for design focus.
             </Typography>
             <Typography variant="body1" sx={globalStyles.paragraph}>
                 I had to stay flexible and let the research guide me, setting aside my own opinions and disproving assumptions along the way. Watching users struggle, while difficult, was crucial for building empathy and making key discoveries. Those discoveries were the core of the project. I learned that without listening to and understanding user sentiment, designing functional software that truly solves a problem for both the business and the customer isn’t possible.

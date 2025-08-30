@@ -1,4 +1,9 @@
 
+export const sectionStyle = {
+  paddingTop: { xs: 80, sm: 86 },
+  paddingBottom: 60,
+};
+
 export const heading1 = {
   fontSize: { xs: '28px', sm: '48px' },
   fontFamily: 'Montserrat',

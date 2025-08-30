@@ -92,26 +92,13 @@ useEffect(() => {
         <QuoteContainer quote="People don't want to buy a quarter-inch drill. They want a quarter-inch hole!" author="Theodore Levitt"/>
 
         <Grid item xs={10} sx={{ marginBottom: 5 }}>
-          <Typography variant='h3' sx={globalStyles.heading3}>Triangulation</Typography>
+          <Typography variant='h3' sx={globalStyles.heading3}>Building an Affinity Diagram</Typography>
           <Typography variant='body1' sx={globalStyles.paragraph}> </Typography>
-          <Typography variant='body1' sx={globalStyles.paragraph}>I decided to start with an affinity diagram to organize all my notes. I grouped related data together first, then defined the categories based on commonalities. This way, natural groupings emerged, helping me focus on what's important without letting my own opinions influence the process. Essentially, it allowed the data to speak for itself.</Typography>
-          <Typography variant='body1' sx={globalStyles.paragraph}>I gathered stacks of sticky notes in different colors, a whiteboard, and markers. I worked through one research set at a time (survey results, benchmark notes, interview answers, and usability videos) spending about 10 minutes on each. I wrote down key points on sticky notes and placed them on the whiteboard.</Typography>
-        </Grid>
+          <Typography variant='body1' sx={globalStyles.paragraph}>To make sense of all my research, I created an affinity diagram. I wrote key points from surveys, benchmarks, interviews, and usability tests on sticky notes and began grouping related ideas.categories based on commonalities. This way, natural groupings emerged, helping me focus on what's important without letting my own opinions influence the process. Essentially, it allowed the data to speak for itself.</Typography>
+          <Typography variant='body1' sx={globalStyles.paragraph}>The whiteboard quickly became a colorful mess, but moving notes around revealed natural patterns. I named each group and added subgroups where needed. By the end, I had a clear picture of the main themes and priorities, letting the data speak for itself.</Typography>
         
-        <Grid item xs={12}>
-          <Box sx={globalStyles.graphic}>
-            <Image
-              src={WhiteboardPostItsGraphic}
-              width="100%"
-              alt="An image of a whiteboard with a collection of unsorted sticky notes"
-            />
-          </Box>
         </Grid>
-       
-        <Grid item xs={10} sx={{ marginBottom: 5 }}>
-          <Typography variant='h3' sx={globalStyles.heading3}>Building the Affinity Diagram</Typography>
-          <Typography variant='body1' sx={globalStyles.paragraph}>My whiteboard was a mess of sticky notes, but I started grouping related ones together. I kept adjusting, moving things around until everything had its place. Then, I gave each group a name. Some groups needed further breakdown, so I created subgroups and labeled those too. In the end, I had a clearer picture of everything.</Typography>
-        </Grid>
+      
       
         <Grid item xs={12}>
           <Box sx={globalStyles.graphic}>

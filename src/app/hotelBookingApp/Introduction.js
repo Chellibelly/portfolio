@@ -11,9 +11,12 @@ export default function Introduction() {
       <Grid item xs={10}>
         <Typography variant='h1' sx={globalStyles.heading1}>Setting the Stage</Typography>
         <Typography variant='h2' sx={globalStyles.heading2}>Purpose and Measurements of Success</Typography>
-        <Typography variant='body1' sx={globalStyles.paragraph}>Welcome to the story of my first journey in UX! It was exciting, challenging, and enlightening in ways I hadn't anticipated. My task sounded both straightforward and ambitious: design the mobile version of a new hotel booking website.</Typography>
-        <Typography variant='body1' sx={globalStyles.paragraph}>I would need to create a working prototype from nothing, but to focus only on the process of booking a hotel room. As a solo designer on this project, I would be the lead (and only) researcher and designer.</Typography>
-        <Typography variant='body1' sx={globalStyles.paragraph}>With no baseline metrics, it was challenging to determine how I would measure success up front. After some thought, I settled on a simple goal to give me a meaningful direction: <i><b>to create a desirable product.</b></i></Typography>
+        <Typography variant='body1' sx={globalStyles.paragraph}>
+          My first ever project in UX was exciting, challenging, and enlightening. My task was to design the mobile version of a hotel booking website.
+          I would need to create a working prototype from nothing, but to focus only on the process of booking a hotel room. As a solo designer on this project, I would be the lead (and only) researcher and designer.
+        </Typography>
+        <Typography variant='body1' sx={globalStyles.paragraph}>With no baseline metrics, it was challenging to determine how I would measure success up front. After some thought, I settled on a simple goal to give me a meaningful direction: <i><b>to create a desirable product.</b></i>
+        </Typography>
       </Grid>
      
       <Grid item xs={12}>

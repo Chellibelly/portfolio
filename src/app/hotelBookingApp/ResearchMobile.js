@@ -37,12 +37,8 @@ const ResearchMobile = forwardRef((props, ref) => {
       <Typography variant='body1' sx={globalStyles.paragraph}>
         Focusing on my goal of creating a desirable product, I needed to understand why people use hotel booking websites. What are their actual goals and expectations? What success stories and struggles could provide insights into their needs?
       </Typography>
-    </Grid>
-   
-    <Grid item xs={10} ref={ref}>
-      <Typography variant='h3' sx={globalStyles.heading3}>The Survey</Typography>
       <Typography variant='body1' sx={globalStyles.paragraph}>
-        I decided to start with a survey so I could start gathering both quantitative data and qualitative data to identify patterns and uncover insights and emotions. Google Forms was free, familiar to me, and easy to use and distribute. I came up with a total of seven questions, focusing on what I thought might reveal the most interesting insights. I reached out to friends, coworkers, and family, seeking anyone with experience booking hotels online, and I ended up with a total of 12 completed surveys.
+        To get started, I created a seven-question survey in Google Forms to gather both quantitative and qualitative data from friends, coworkers, and family with hotel booking experience, ultimately collecting 12 responses.
       </Typography>
     </Grid>
     
@@ -86,7 +82,7 @@ const ResearchMobile = forwardRef((props, ref) => {
     <Grid item xs={10} ref={ref}>
       <Typography variant='h3' sx={globalStyles.heading3}>The Pain</Typography>
       <Typography variant='body1' sx={globalStyles.paragraph}>
-        Out of all of the questions I asked, the longest and most detailed answers came in response to the last question on the survey: "What would you change?" It was clear that even though some respondents were answering questions about an experience they had weeks to months ago, their frustrations stuck with them.
+        Of the questions I asked, the longest and most detailed answers came in response to the last question on the survey: "What would you change?" It was clear that even though some respondents were answering questions about an experience they had weeks to months ago, their frustrations stuck with them.
       </Typography>
     </Grid>
 
@@ -236,19 +232,22 @@ const ResearchMobile = forwardRef((props, ref) => {
       </Grid>
     </Grid>
     <Grid item ref={ref} xs={10} sx={{ marginBottom: 5 }}>
-      <Typography variant='h3' sx={globalStyles.heading3}>The Importance of Observation</Typography>
+      <Typography variant='h3' sx={globalStyles.heading3}>The Importance of Observation: Usability Testing</Typography>
       
-      <Typography variant='body1' sx={globalStyles.paragraph}>
-        With a better understanding of user needs and the typical booking process, I wanted to see for myself how real people interacted with existing booking websites. Would their behaviors align with my assumptions? Would they feel confident? Where would frustration arise, and what could I learn about their mental models?
-        Getting the answers to these questions and more would be possible with usability tests, allowing me to observe users’ expressions, body language, and confusion in real time and organically.
+     <Typography variant='body1' sx={globalStyles.paragraph}>
+        With a better understanding of user needs and the typical booking process, I wanted to see for myself how people interacted with existing booking websites in real time to learn whether or not behaviors and body language aligned with my assumptions, identify points of confusion, and understand their mental models in real time.
       </Typography>
 
-      <QuoteContainer quote="What people say, what people do, and what they say they do are entirely different things." author="Margaret Mead"/>
+      <Typography variant='body1' sx={globalStyles.paragraph}>
+        I ran four remote usability tests with participants from different backgrounds who had hotel booking experience. I made sure they were comfortable, emphasized that there were no mistakes (only insights) and encouraged think-aloud feedback throughout the session.
+      </Typography>
 
-      <Typography variant='h3' sx={globalStyles.heading3}>Selecting Users and Setting Up</Typography>
-           
-      <Typography variant='body1' sx={globalStyles.paragraph}>I observed four usability test session, each with a different user. I selected participants with hotel booking experience but from different backgrounds to see if their approaches varied. The tests were conducted via Zoom and LetsView (a screen mirroring app). A few days before the session, I emailed participants an outline explaining the test, its purpose, the expected duration, and instructions for installing and using the necessary software. </Typography>
+      <Typography variant='body1' sx={globalStyles.paragraph}>
+        Each participant was asked to book a hotels on two different websites while I observed their actions and asked follow-up questions when needed. Afterwards, I gathered reflections on what surprised them, what they liked and didn't like, and what features they felt were missing.
+      </Typography>
+     
 
+     
       </Grid>
 
       <Grid item ref={ref} xs={12}>
@@ -261,77 +260,16 @@ const ResearchMobile = forwardRef((props, ref) => {
         </Box>
       </Grid>
       
-      <Grid item ref={ref} xs={10} sx={{ marginBottom: 5 }}>
-        <Typography variant='h3' sx={globalStyles.heading3}>Getting Comfortable</Typography>
-        <Typography variant='body1' sx={globalStyles.paragraph}>
-          Once the technology was set up, I took time and care to ensure my participants were comfortable. I clarified that we testing the website (not them) and emphasized that there were no mistakes, only insights. I encouraged them to ask questions, but explained that I might not answer all to maintain the test’s integrity.
-          I asked them to take their time and think aloud, sharing their actions, thoughts, and impressions of the screens. Finally, I explained the test structure and expectations as well as confirmed they were okay with the session being recorded.
-        </Typography>
-      </Grid>
 
-      <Grid item ref={ref} xs={12}>
-        <Box sx={globalStyles.graphic}>
-          <Image
-            src={Zoom1}
-            width="100%"
-            alt="An image of pie charts representing quantitative survey results"
-          />
-        </Box>
-      </Grid>
+
         
-      <Grid item ref={ref} xs={10} sx={{ marginBottom: 5 }}>
-        <Typography variant='h3' sx={globalStyles.heading3}>Depth interviews: Getting to Know the Participants</Typography>
-        <Typography variant='body1' sx={globalStyles.paragraph}>
-          Each of the four tests began with a short interview to understand the users' backgrounds, behaviors, and context for using the software. I asked about their occupations, location, booking habits, priorities when booking, and recent booking experiences.
-          Their responses helped me create four user personas, which I later used to design the customer journey.
-        </Typography>
-      </Grid>
 
-    <Grid container direcion="row" justifyContent="space-around" xs={12}>
-      <Grid item ref={ref}>
-        <Box sx={globalStyles.graphic}>
-          <Image
-            src={PersonaTomas}
-            width="100%"
-            alt="A stock photograph of a woman representing Tomas"
-          />
-        </Box>
-      </Grid>
-      <Grid item ref={ref}>
-        <Box sx={globalStyles.graphic}>
-          <Image
-            src={PersonaRachel}
-            width="100%"
-            alt="A stock photograph of a woman representing Rachel"
-          />
-        </Box>
-      </Grid>
-      <Grid item ref={ref}>
-        <Box sx={globalStyles.graphic}>
-          <Image
-            src={PersonaMike}
-            width="100%"
-            alt="A stock photograph of a woman representing Mike"
-          />
-        </Box>
-      </Grid>
-      <Grid item ref={ref}>
-        <Box sx={globalStyles.graphic}>
-          <Image
-            src={PersonaLinda}
-            width="100%"
-            alt="A stock photograph of a woman representing Linda"
-          />
-        </Box>
-      </Grid>
-    </Grid>
-    <Grid item ref={ref} xs={10}>
-      <Typography variant='h3' sx={globalStyles.heading3}>Conducting the Usability Tests</Typography>
-      <Typography variant='body1' sx={globalStyles.paragraph}>After each depth interview concluded, each participant was tasked with booking a hotel in a specified city for a weekend on two different hotel booking. I watched what they were doing, reminded them to talk through their thoughts if they got quiet, and asked follow-up questions when needed, being as careful as possible not to bias the tests.</Typography>
-      <Typography variant='body1' sx={globalStyles.paragraph}>Each session took about an hour. After they finished the tasks, I asked how they felt about the experience, like what surprised them, what they liked or didn’t like, and if they thought anything was missing. I wrapped up by thanking them for their time and letting them know how helpful their feedback was for my research.</Typography>
-    </Grid>
 
-    <QuoteContainer quote="Efficiency is doing things right; effectiveness is doing the right things." author="Peter Drucker"/>
+  
+
+   
+
+    
 
     <Grid item ref={ref} xs={10}>  
       <Typography variant='h3' sx={globalStyles.heading3}>Notable Behaviors</Typography>

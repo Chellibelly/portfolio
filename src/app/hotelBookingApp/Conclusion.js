@@ -33,12 +33,11 @@ export default function Conclusion() {
         <Grid item xs={10}>
           <Typography variant='h1' sx={globalStyles.heading1}>Bringing My Designs to Life</Typography>
           <Typography variant='h2' sx={globalStyles.heading2}>The Prototype</Typography>
-          <Typography variant="body1" sx={globalStyles.paragraph}>This was it. This was the moment to take all my sketched screens and turn them into something digital and high-fidelity, a prototype that could simulate working software well enough to present to stakeholders and engineers. A Prototype would be crucial in real-world UX design to reduce ambiguity, save time, and minimize risk. I used Figma - a popular and standard design tool - for this task.</Typography>
-        </Grid>
-        <Grid item xs={10} sx={{ marginBottom: 5 }}>
-          <Typography variant='h3' sx={globalStyles.heading3}>Transparency Design</Typography>
+          <Typography variant="body1" sx={globalStyles.paragraph}>
+            It was finally time to take my sketched screens and turn them into something digital and high-fidelity, a prototype that could simulate working software for stakeholders and engineers in a real-world scenario to reduce ambiguity, save time, and minimize risk. 
+          </Typography>
           <Typography variant="body1" sx={globalStyles.paragraph}>I put a lot of focus on the major opportunity I had found – to design my site to be completely transparent and informative regarding hotel quality and amenities, hotel location and relation to places of interest, pricing and rate comparisons, and account and membership programs.</Typography>
-        </Grid>  
+        </Grid>
         <Grid item xs={12}>
           <Box sx={globalStyles.graphic}>
           <Image
