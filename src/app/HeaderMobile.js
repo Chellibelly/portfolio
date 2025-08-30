@@ -36,7 +36,7 @@ export default function HeaderMobile() {
       pageName = "UX Design Work";
     }
     if (pageName === "LifeManagementApp") {
-      pageName = "Life Management Hero"
+      pageName = "KorkBoard"
     }
     if (pageName === "DesignTidbits") {
       pageName = "Professional Highlights"
