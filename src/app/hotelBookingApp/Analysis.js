@@ -85,22 +85,9 @@ useEffect(() => {
           <Typography variant='h2' sx={globalStyles.heading2}>The Analysis</Typography>
           <Typography variant='body1' sx={globalStyles.paragraph}>One of my favorite methaphors has to do with “seeing the forest through the trees.” More or less, this means being able to draw the larger meaning, or bigger picture, out of the parts. I definitely had a bunch of trees - piles of research notes. Through analysis, I was hoping to make sense out of it all.</Typography>
           <Typography variant='body1' sx={globalStyles.paragraph}>For some direction, I revisited my goal: creating a desirable product. When I first set that goal, I wasn’t sure what a desirable hotel booking site looked like. But now, with my research in hand, I hoped I could finally figure it out.</Typography>
+          <Typography variant='body1' sx={globalStyles.paragraph}>I was excited to dig into the data, but I couldn’t help wondering: was there a real need for this? What problem were we solving, and how would this website stand up to competitors?</Typography>
         </Grid>
         
-        <Grid item xs={12}>
-          <Box sx={globalStyles.graphic}>
-            <Image
-              src={ProcessAnalysisGraphic}
-              width="100%"
-              alt="An image of the UX process with the Analysis step highlighted"
-            />
-          </Box>
-        </Grid>
-        
-        <Grid item xs={10} sx={{ marginTop: 5, marginBottom: 5 }}>
-          <Typography variant='h3' sx={globalStyles.heading3}>Was There Really a Problem to Solve?</Typography>
-          <Typography variant='body1' sx={globalStyles.paragraph}>I was excited to dig into the data, but I couldn’t help wondering: was there a real need for this? What problem were we solving? If we actually built this, would it be any better than the competitors?</Typography>
-        </Grid>
 
         <QuoteContainer quote="People don't want to buy a quarter-inch drill. They want a quarter-inch hole!" author="Theodore Levitt"/>
 
@@ -148,59 +135,14 @@ useEffect(() => {
           {isDesktopOrLaptop ? <AffinityGroupList/> : <AffinityGroupListMobile/>}
         </Box>
 
-        <Grid item xs={10}>
+        <Grid item xs={10} sx={{ mb: 5, mt: 5 }}>
         <Typography variant='h3' sx={globalStyles.heading3}>A User Journey Taking Shape</Typography>
           <Typography variant='body1' sx={globalStyles.paragraph}>
             At this point, it felt crucial to define the key stages of the booking journey, which I had started to visualize through the research and affinity diagram. There were about eight major steps: home page (destination selection), date selection, hotel search, hotel selection, room selection, rate selection, add-ons, and booking completion (payment & contact details).
           </Typography>
-        </Grid>
-
-        <Grid container direction="row" sx={{ width: "100%", margin: 5 }}>
-          <Grid item sx={{ backgroundColor: "lightgray", width: 250, height: 80, marginTop: 2 }}>
-            <Box style={numberBackgroundStyle}><Typography style={numberTextStyle}>1</Typography></Box>
-            <Typography sx={{textAlign: "center", fontWeight: "bold", fontFamily: "Montserrat" }}>Home Page (destination selection)</Typography>
-          </Grid>
-
-          <Grid item sx={{ backgroundColor: "lightgray", width: 250, height: 80, marginTop: 2}}>
-            <Box style={numberBackgroundStyle}><Typography style={numberTextStyle}>2</Typography></Box>
-            <Typography sx={{textAlign: "center", fontWeight: "bold", fontFamily: "Montserrat" }}>Date Selection</Typography>
-          </Grid>
-
-          <Grid item sx={{ backgroundColor: "lightgray", width: 250, height: 80, marginTop: 2}}>
-            <Box style={numberBackgroundStyle}><Typography style={numberTextStyle}>3</Typography></Box>
-            <Typography sx={{textAlign: "center", fontWeight: "bold", fontFamily: "Montserrat" }}>Search, sort, & filter hotels</Typography>
-          </Grid>
-
-          <Grid item sx={{ backgroundColor: "lightgray", width: 250, height: 80, marginTop: 2}}>
-            <Box style={numberBackgroundStyle}><Typography style={numberTextStyle}>4</Typography></Box>
-            <Typography sx={{textAlign: "center", fontWeight: "bold", fontFamily: "Montserrat" }}>Compare hotel results & select a hotel</Typography>
-          </Grid>
-
-          <Grid item sx={{ backgroundColor: "lightgray", width: 250, height: 80, marginTop: 2}}>
-            <Box style={numberBackgroundStyle}><Typography style={numberTextStyle}>5</Typography></Box>
-            <Typography sx={{textAlign: "center", fontWeight: "bold", fontFamily: "Montserrat" }}>Compare hotel rooms & select a room</Typography>
-          </Grid>
-
-          <Grid item sx={{ backgroundColor: "lightgray", width: 250, height: 80, marginTop: 2}}>
-            <Box style={numberBackgroundStyle}><Typography style={numberTextStyle}>6</Typography></Box>
-            <Typography sx={{textAlign: "center", fontWeight: "bold", fontFamily: "Montserrat" }}>Select a rate</Typography>
-          </Grid>
-
-          <Grid item sx={{ backgroundColor: "lightgray", width: 250, height: 80, marginTop: 2}}>
-            <Box style={numberBackgroundStyle}><Typography style={numberTextStyle}>7</Typography></Box>
-            <Typography sx={{textAlign: "center", fontWeight: "bold", fontFamily: "Montserrat" }}>Choose or skip add-ons</Typography>
-          </Grid>
-
-          <Grid item sx={{ backgroundColor: "lightgray", width: 250, height: 80, marginTop: 2}}>
-            <Box style={numberBackgroundStyle}><Typography style={numberTextStyle}>8</Typography></Box>
-            <Typography sx={{textAlign: "center", fontWeight: "bold", fontFamily: "Montserrat" }}>Complete the booking</Typography>
-          </Grid>
-        </Grid>
-
-        <Grid item xs={10} sx={{ marginBottom: 5 }}>
-          <Typography variant='h3' sx={globalStyles.heading3}>The Customer Journey Map</Typography>
           <Typography variant='body1' sx={globalStyles.paragraph}>With my focus areas from the affinity diagram and the journey steps defined, it was time to organize everything. I added user goals, behaviors, and sentiments to create a customer journey map. This helped me get a clearer picture of the website’s information architecture and guided the design by identifying key screen purposes, opportunities, and guidelines.</Typography>
         </Grid>
+
         
         <Grid item xs={12}>
 
@@ -291,7 +233,7 @@ useEffect(() => {
           
         </Grid>
 
-        <Grid item xs={10}>
+        <Grid item xs={10} sx={{ mb: 5, mt: 5 }}>
           <Typography variant='h3' sx={globalStyles.heading3}>The Eureka Moment</Typography>
           <Typography variant='body1' sx={globalStyles.paragraph}>The glaring bottom line made evident from the affinity diagram and customer journey map was clear: the main issue was a lack of (or at least confusing) information, often assuming users knew things they didn’t. This was a consistent problem across every site I researched and was highlighted by every user interviewed and surveyed.</Typography>
           <Typography variant='body1' sx={globalStyles.paragraph}>At this point, my goal became much clearer. While there might not have been a glaring problem to fix, there was an opportunity to improve. A desirable hotel booking site would follow industry standards but do so with complete transparency, providing users with all the information they need at every step.</Typography>
@@ -299,7 +241,7 @@ useEffect(() => {
 
         <QuoteContainer quote="Good research is not about finding what you expect to find; it’s about finding what’s actually there." author="Albert Szent-Györgyi"/>
 
-        <Grid item xs={10}>
+        <Grid item xs={10} sx={{ mt: 5 }}>
           <Typography variant='h3' sx={globalStyles.heading3}>Opportunities</Typography>
           <Typography variant='body1' sx={globalStyles.paragraph}>
             My analysis thus far revealed that the key areas of transparency I needed to focus on fell into four main categories: hotel quality and amenities, hotel location and its relation to places of interest, pricing and rate comparisons, and account and membership programs.

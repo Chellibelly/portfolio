@@ -13,12 +13,19 @@ export default function Introduction() {
         <Typography variant='h2' sx={globalStyles.heading2}>Purpose and Measurements of Success</Typography>
         <Typography variant='body1' sx={globalStyles.paragraph}>Welcome to the story of my first journey in UX! It was exciting, challenging, and enlightening in ways I hadn't anticipated. My task sounded both straightforward and ambitious: design the mobile version of a new hotel booking website.</Typography>
         <Typography variant='body1' sx={globalStyles.paragraph}>I would need to create a working prototype from nothing, but to focus only on the process of booking a hotel room. As a solo designer on this project, I would be the lead (and only) researcher and designer.</Typography>
+        <Typography variant='body1' sx={globalStyles.paragraph}>With no baseline metrics, it was challenging to determine how I would measure success up front. After some thought, I settled on a simple goal to give me a meaningful direction: <i><b>to create a desirable product.</b></i></Typography>
       </Grid>
-      <Grid item xs={10}>
-        <Typography variant='h3' sx={globalStyles.heading3}>What Would Success Look Like?</Typography>
-        <Typography variant='body1' sx={globalStyles.paragraph}>Defining success proved difficult at this point. This was going to be a new product for a fictional company. With no stakeholders or baseline metrics, what could I measure? I couldn’t compare revenue or costs. I couldn’t increase customer acquisition and retention or decrease drop out rate. So instead, I set a simple goal: <i><b>to create a desirable product.</b></i></Typography>
-      </Grid>
-      <QuoteContainer quote="A problem well-stated is a problem half-solved." author="Charles F. Kettering"/>
+     
+      <Grid item xs={12}>
+                <Box sx={globalStyles.graphic}>
+                  <Image
+                    src={ProcessProblemGraphic}
+                    width="100%"
+                    alt="An image of the UX process with the Solution step highlighted"
+                  />
+                </Box>
+              </Grid>
+    
     </Grid>
   );
 }

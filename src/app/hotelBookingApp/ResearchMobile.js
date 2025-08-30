@@ -34,30 +34,23 @@ const ResearchMobile = forwardRef((props, ref) => {
     <Grid item xs={10} ref={ref}>
       <Typography variant='h1' sx={globalStyles.heading1}>Tell Me How you <i>Really</i> Feel</Typography>
       <Typography variant='h2' sx={globalStyles.heading2}>The Research</Typography>
-      <Typography variant='body1' sx={globalStyles.paragraph}>Focusing on my goal of creating a desirable product, I needed to understand why people use hotel booking websites. What are their actual goals and expectations? What success stories or frusterations could provide insights into their needs? I knew what I wanted to know, and <i><b>I</b></i> knew I wasn’t the person to tell me.</Typography>
+      <Typography variant='body1' sx={globalStyles.paragraph}>
+        Focusing on my goal of creating a desirable product, I needed to understand why people use hotel booking websites. What are their actual goals and expectations? What success stories and struggles could provide insights into their needs?
+      </Typography>
     </Grid>
-    <Grid item xs={12} ref={ref}>
-      <Box sx={globalStyles.graphic}>
-        <Image
-          src={ProcessResearchGraphic}
-          alt="An image of the UX process with the Research step highlighted"
-        />
-      </Box>
-    </Grid>
+   
     <Grid item xs={10} ref={ref}>
-      <Typography variant='h3' sx={globalStyles.heading3}>I Am Not My User</Typography>
-      <Typography variant='body1' sx={globalStyles.paragraph}>Starting with basically nothing, I needed to cast a wide net. I wanted to know what past experiences, contexts, goals, and struggles real people have had when booking hotels online. To cast such a net, I decided to use a survey. A survey could give me both quantitative data to identify patterns and qualitative data to uncover deeper insights and reveal emotional responses.</Typography>
-      <Typography variant='h3' sx={globalStyles.heading3}>The Survey Questions</Typography>
-      <Typography variant='body1' sx={globalStyles.paragraph}>I decided to use Google Forms because it was free, familiar to me, and easy to use and distribute. I came up with a total of seven questions, an easily digestible amount that would take less than five minutes to answer.</Typography>
+      <Typography variant='h3' sx={globalStyles.heading3}>The Survey</Typography>
+      <Typography variant='body1' sx={globalStyles.paragraph}>
+        I decided to start with a survey so I could start gathering both quantitative data and qualitative data to identify patterns and uncover insights and emotions. Google Forms was free, familiar to me, and easy to use and distribute. I came up with a total of seven questions, focusing on what I thought might reveal the most interesting insights. I reached out to friends, coworkers, and family, seeking anyone with experience booking hotels online, and I ended up with a total of 12 completed surveys.
+      </Typography>
     </Grid>
     
     <Grid item xs={10} ref={ref}>
-      <Typography variant='h3' sx={globalStyles.heading3}>Rallying the Troops</Typography>
-      <Typography variant='body1' sx={globalStyles.paragraph}>I reached out to friends, coworkers, and family, seeking anyone with experience booking hotels online. After a couple weeks (and a few reminders) I had survey responses from twelve lovely volunteers, and a good handful of useful insights. These insights weren’t definitive by any means, but they would help me to form testable assumptions which proved very valuable later.</Typography>
-      
-      <Typography variant='body1' sx={globalStyles.paragraph}></Typography>
-      <Typography variant='h3' sx={globalStyles.heading3}>Goals, Context, and Behavior</Typography>
-      <Typography variant='body1' sx={globalStyles.paragraph}>Most respondents reported that proximity to activities in the area is the most important thing to them when looking for a hotel. Additionally, a large portion of respondents also reported that they spent the <i>majority</i> of their efforts filtering hotel amenities and browsing through search results.</Typography>
+      <Typography variant='h3' sx={globalStyles.heading3}>Goals</Typography>
+      <Typography variant='body1' sx={globalStyles.paragraph}>
+        The survey results were full of insights. These insights weren’t definitive by any means, but they would help me to form testable assumptions which proved very valuable later. Most respondents reported that proximity to activities in the area is the most important thing to them when looking for a hotel. Additionally, a large portion of respondents also reported that they spent the majority of their efforts filtering hotel amenities and browsing through search results.
+      </Typography>
     </Grid>
     
     <Grid item xs={12} ref={ref}> 
@@ -71,7 +64,13 @@ const ResearchMobile = forwardRef((props, ref) => {
     </Grid>
 
     <Grid item xs={10} ref={ref} sx={{ marginTop: 5, marginBottom: 5 }}>
-      <Typography variant='body1' sx={globalStyles.paragraph}>When asked what task they were trying to complete, most respondents replied that they were either booking or comparing prices. Several mentioned specifically choosing sites with the best prices or which supported easy price comparisons. Others mentioned using sites where they belonged to a rewards program with the brand. Several highlighted ease, speed, and reliability as key attributes of their favorite booking sites.</Typography>
+      <Typography variant='h3' sx={globalStyles.heading3}>Context and Behavior</Typography>
+      <Typography variant='body1' sx={globalStyles.paragraph}>
+        When asked what task they were trying to complete, most respondents replied that they were either booking or comparing prices. Several mentioned specifically choosing sites with the best prices or which supported easy price comparisons. Others mentioned using sites where they belonged to a rewards program with the brand. Several highlighted ease, speed, and reliability as key attributes of their favorite booking sites.
+      </Typography>
+      <Typography variant='body1' sx={globalStyles.paragraph}>
+        An interesting contradiction emerged in the survey results. Most respondents said that proximity to activities in the area was the most important factor to them. However, almost none mentioned it when describing their goals or interactions. I found this apparent contradiction interesting, but reminded myself not to jump to conclusions. I was only just scratching the surface of my research.
+      </Typography>
     </Grid>
 
     <Grid item xs={12} ref={ref}>
@@ -84,10 +83,6 @@ const ResearchMobile = forwardRef((props, ref) => {
       </Box>
     </Grid>
 
-    <Grid item xs={10} ref={ref}>
-      <Typography variant='h3' sx={globalStyles.heading3}>The Contradiction</Typography>
-      <Typography variant='body1' sx={globalStyles.paragraph}>An interesting contradiction emerged in the survey results. Most respondents said that proximity to activities in the area was the most important factor to them. However, almost none mentioned it when describing their goals or interactions. I found this apparent contradiction interesting, but reminded myself not to jump to conclusions. I was only just scratching the surface of my research.</Typography>
-    </Grid>
     <Grid item xs={10} ref={ref}>
       <Typography variant='h3' sx={globalStyles.heading3}>The Pain</Typography>
       <Typography variant='body1' sx={globalStyles.paragraph}>
@@ -106,8 +101,15 @@ const ResearchMobile = forwardRef((props, ref) => {
     </Grid>
 
     <Grid item xs={10} ref={ref}>
-      <Typography variant='h3' sx={globalStyles.heading3}>Checking out the Competition and Hunting for Conventions</Typography>
-      <Typography variant='body1' sx={globalStyles.paragraph}>Having gathered some basic data about user needs through my survey, I wanted to see how other hotel websites were addressing (or failing to address) them, discover conventions, and form a baseline. To minimize my personal bias, I set rules for myself. From a set of twelve UX design principles, I came up with a small set of categories I could focus on. My categories were navigation and order, saving time or effort, alignment with user goals, expectations, and forthcomingness.</Typography>
+      <Typography variant='h3' sx={globalStyles.heading3}>Checking out the Competition</Typography>
+      <Typography variant='body1' sx={globalStyles.paragraph}>
+        <Typography variant='body1' sx={globalStyles.paragraph}>
+          Having gathered some basic data about user needs through my survey, I wanted to see how other hotel websites were addressing (or failing to address) them, discover conventions, and form a baseline. To minimize my personal bias, I set rules for myself. From a set of twelve UX design principles, I came up with a small set of categories I could focus on. My categories were navigation and order, saving time or effort, alignment with user goals, expectations, and forthcomingness.
+        </Typography> 
+        <Typography variant='body1' sx={globalStyles.paragraph}>
+          With a clear lens for analysis with the help of my defined categories, I was ready to pick some websites to examine. I focused on well-established companies who likely have the resources to optimize their websites as well as hotels mentioned in the survey responses
+        </Typography>
+      </Typography>
     
     </Grid>
 
@@ -122,44 +124,6 @@ const ResearchMobile = forwardRef((props, ref) => {
       </Box>
     </Grid>
 
-    <Grid item xs={10} ref={ref} sx={{ marginTop: 5, marginBottom: 5 }}>
-      <Typography variant='h3' sx={globalStyles.heading3}>The Lucky Contestants</Typography>
-      <Typography variant='body1' sx={globalStyles.paragraph}>
-        With a clear lens for analysis with the help of my defined categories, I was ready to pick some websites to examine. 
-        I focused on well-established companies who likely have the resources to optimize their websites. I landed on Hilton, Marriott, and Best Western. All three brands have been around for over fifty years and have thousands of active users. Hilton and Marriott were mentioned multiple times in survey answers. Best Western stands out with its franchisee-operated locations and budget-friendly reputation. 
-      </Typography>
-      <Typography variant='body1' sx={globalStyles.paragraph}>
-        With my target site chosen and a big cup of coffee, I began walking through the booking process on each mobile site. I took screenshots and jotted notes on anything interesting. 
-      </Typography>
-    </Grid>
-    
-
-    <Grid container direction="row" justifyContent="space-around">
-      <Grid item ref={ref}>
-        <Box sx={globalStyles.graphic}>
-          <Image
-            src={HiltonNotes}
-            alt="An example of notes taken on the Hilton website"
-          />
-        </Box>
-      </Grid>
-      <Grid item ref={ref}>
-        <Box sx={globalStyles.graphic}>
-          <Image
-            src={MarriotNotes}
-            alt="An example of notes taken on the Marriot website"
-          />
-        </Box>
-      </Grid>
-      <Grid item ref={ref}>
-        <Box sx={globalStyles.graphic}>
-          <Image
-            src={BestWesternNotes}
-            alt="An example of notes taken on the Best Western website"
-          />
-        </Box>
-      </Grid>
-    </Grid>
     
    
 
@@ -361,11 +325,10 @@ const ResearchMobile = forwardRef((props, ref) => {
         </Box>
       </Grid>
     </Grid>
-    <Grid item ref={ref} xs={10} sx={{ marginBottom: 5 }}>
+    <Grid item ref={ref} xs={10}>
       <Typography variant='h3' sx={globalStyles.heading3}>Conducting the Usability Tests</Typography>
-      <Typography variant='body1' sx={globalStyles.paragraph}>After each depth interview concluded, it was time for the exciting part – testing the usability of the websites. Each participant was tasked with booking a hotel in a specified city for a weekend on two different sites – two of the sites I examined during my benchmark research. I watched what they were doing, reminded them to talk through their thoughts if they got quiet, and asked follow-up questions when needed, being as careful as possible not to bias the tests.</Typography>
+      <Typography variant='body1' sx={globalStyles.paragraph}>After each depth interview concluded, each participant was tasked with booking a hotel in a specified city for a weekend on two different hotel booking. I watched what they were doing, reminded them to talk through their thoughts if they got quiet, and asked follow-up questions when needed, being as careful as possible not to bias the tests.</Typography>
       <Typography variant='body1' sx={globalStyles.paragraph}>Each session took about an hour. After they finished the tasks, I asked how they felt about the experience, like what surprised them, what they liked or didn’t like, and if they thought anything was missing. I wrapped up by thanking them for their time and letting them know how helpful their feedback was for my research.</Typography>
-    
     </Grid>
 
     <QuoteContainer quote="Efficiency is doing things right; effectiveness is doing the right things." author="Peter Drucker"/>

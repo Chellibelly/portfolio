@@ -18,7 +18,7 @@ export const heading3 = {
   fontSize: { xs: '20px', sm: '28px' },
   fontFamily: 'Montserrat',
   fontWeight: 500,
-  marginTop: '50px',
+  marginTop: '30px',
   marginBottom: '22px',
 };
 

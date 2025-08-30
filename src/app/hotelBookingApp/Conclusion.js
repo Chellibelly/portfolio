@@ -35,15 +35,6 @@ export default function Conclusion() {
           <Typography variant='h2' sx={globalStyles.heading2}>The Prototype</Typography>
           <Typography variant="body1" sx={globalStyles.paragraph}>This was it. This was the moment to take all my sketched screens and turn them into something digital and high-fidelity, a prototype that could simulate working software well enough to present to stakeholders and engineers. A Prototype would be crucial in real-world UX design to reduce ambiguity, save time, and minimize risk. I used Figma - a popular and standard design tool - for this task.</Typography>
         </Grid>
-        <Grid item xs={12}>
-          <Box sx={globalStyles.graphic}>
-            <Image
-              src={ProcessSolutionGraphic}
-              width="100%"
-              alt="An image of the UX process with the Solution step highlighted"
-            />
-          </Box>
-        </Grid>
         <Grid item xs={10} sx={{ marginBottom: 5 }}>
           <Typography variant='h3' sx={globalStyles.heading3}>Transparency Design</Typography>
           <Typography variant="body1" sx={globalStyles.paragraph}>I put a lot of focus on the major opportunity I had found – to design my site to be completely transparent and informative regarding hotel quality and amenities, hotel location and relation to places of interest, pricing and rate comparisons, and account and membership programs.</Typography>
@@ -111,25 +102,16 @@ export default function Conclusion() {
           </video>
         </Box>
         </Grid>
-        <Grid item xs={10}>
+        <Grid item xs={10} sx={{ mb: 5 }}>
           <Typography variant='h3' sx={globalStyles.heading3}>Stakeholders and the Business</Typography>
           <Typography variant="body1" sx={globalStyles.paragraph}>
-          If this were a real design for an actual company, the project wouldn’t end here. Let’s pretend it is, and I’ll explain how I would have continued. After finalizing the annotated screen designs and prototype, the next step would be to gather all the key stakeholders, including other designers, product managers, copywriters, legal, developers, and anyone else involved in the product and share the designs.
+            In a real-world project, the work wouldn’t end here. After finalizing the annotated screen designs and prototype, the next step would be to gather all the key stakeholders, including other designers, product managers, copywriters, legal, developers, and anyone else involved in the product and share the designs. Ideally, there would be regular touch points throughout the design process, and this would be one of many checks to ensure alignment, clarify interactions, and address questions.
           </Typography>
           <Typography variant="body1" sx={globalStyles.paragraph}>
-          Ideally, there would be regular touch points throughout the design process, and this would be one of many checks to ensure everyone is still aligned on the problem we’re solving and agrees that this is the solution to test. I'd also make sure the development team understands the UI interactions and can build it as intended, addressing any questions, concerns, or suggestions they have.
+            Adjustments and compromises would be negotiated to balance technical limitations with key functionality. Creativity and problem-solving continue beyond delivery, with post-launch research, testing, and iterations driving ongoing improvements.
           </Typography>
         </Grid>
         <QuoteContainer quote="Good design is good business. When you focus on designing a great experience for your users, your business will benefit." author="Jared Spool"/>
-        <Grid item xs={10} sx={{ marginBottom: -5 }}>
-          <Typography variant='h3' sx={globalStyles.heading3}>Iterate, Iterate, and then Iterate Some More</Typography>
-          <Typography variant="body1" sx={globalStyles.paragraph}>
-            If the design needs adjustments, this is a time for negotiation, deciding what we can compromise on and how to adjust for technical limitations without losing key functionality. Creativity doesn’t stop when the design is delivered.
-          </Typography>
-          <Typography variant="body1" sx={globalStyles.paragraph}>
-            Solving problems is an ongoing process. I’d continue to get creative to find the best solutions within our limitations. Plus, the design cycle doesn’t end after launch; deployed software opens the door for more research, testing, analysis, and continuous iterations.
-          </Typography>
-        </Grid>
       </Grid>
   );
 }
