@@ -177,7 +177,7 @@ const DesignTidbitsMobile = () => {
               Thank you!
             </Typography>
             <Typography sx={globalStyles.paragraph}>
-              Thank you for taking a look at my professional design highlights! To find out more, shoot me an email at chelsea.vidrine2@gmail.com. For a more in-depth look at my design process, please check out my other <Link href="/caseStudiesHome">case studies</Link>! 
+              Thank you for taking a look at my professional design highlights! To find out more, shoot me an email at chelsea.vidrine2@gmail.com. For a more in-depth look at my design process, please check out my other <Link href="/portfolio">case studies</Link>! 
             </Typography>
           </Box>
           <br/>

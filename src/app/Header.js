@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <div>
         <Box style={{ width: "100%", backgroundColor: blueGrey[900], position: "fixed", top: 0, zIndex: 99 }}>
-        <Grid container direction="row" justifyContent="space-around" style={{ width:"50%" }}>
+        <Grid container direction="row" justifyContent="space-around" style={{ width:"60%" }}>
             <Grid item xs={3} 
             sx={pageName === "Home" ? globalStyles.navSectionActive : globalStyles.navSection}
             >
@@ -40,12 +40,12 @@ const Header = () => {
                 </Link>
             </Grid>
             <Grid item xs={3} 
-            sx={pageName === "CaseStudiesHome" ? globalStyles.navSectionActive : globalStyles.navSection}
+            sx={pageName === "Portfolio" ? globalStyles.navSectionActive : globalStyles.navSection}
             >
-                <Link href="/caseStudiesHome" 
-                sx={pageName === "CaseStudiesHome" ? globalStyles.navLinkActive : globalStyles.navLink}
+                <Link href="/portfolio" 
+                sx={pageName === "Portfolio" ? globalStyles.navLinkActive : globalStyles.navLink}
                 >
-                    <Typography sx={navText}>UX Design Work</Typography>
+                    <Typography sx={navText}>Selected UX Work</Typography>
                 </Link>
             </Grid>
         </Grid>

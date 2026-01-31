@@ -43,7 +43,7 @@ const ResumeContainerMobile = () => {
                 CHELSEA L. VIDRINE
               </Typography>
               <Typography sx={{ ...globalStyles.heading3, textAlign: "center" }}>
-                UX RESEARCH & DESIGN
+                UX DESIGNER
               </Typography>
             </Box>
             <Typography sx={{ ...globalStyles.heading5, textAlign: "center" }}>
@@ -53,10 +53,14 @@ const ResumeContainerMobile = () => {
                 <button onClick={handleDownload}><DownloadIcon/>Download Resume PDF</button>
               </Typography>
             <Typography sx={sectionHeader}>
-              MISSION
+              SUMMARY
             </Typography>
             <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-              I am a UX researcher and designer with 7+ years of experience as a software engineer. I have professional experience communicating with stakeholders and UX leaders to translate user needs into functional interfaces that both drive positive user engagement and meet business objectives. I’m looking to take the next step in my career and grow my UX skills with an innovative and forward-thinking business.
+              Passionate UX Designer with experience improving complex retail
+              and e-commerce products through research-driven design and
+              cross-functional collaboration. Focused on reducing friction in highvolume customer journeys and delivering measurable business
+              impact by partnering closely with product managers, engineers, and
+              users on agile teams.
             </Typography>
             <Box sx={{ mt: 2, mb: 2 }}>
               <hr style={{ borderColor: grey[400] }}/>
@@ -111,34 +115,42 @@ const ResumeContainerMobile = () => {
             </Typography>
             <Box sx={{ mb: 3 }}>
               <Typography sx={{ fontSize: 17, fontWeight: "bold", fontFamily: "Montserrat", mb: 1 }}>
-                User Research & Data Analysis
+                UX Research & Analysis
               </Typography>
               <Typography sx={{ fontSize: 16, fontFamily: "Montserrat" }}>
-                Surveys, A/B testing, usability testing, notetaking, competitor research, affinity diagraming, user journeys
+                User interviews, surveys, usability testing, A/B testing, competitive analysis, insight synthesis (affinity mapping), journey mapping, personas
               </Typography>
             </Box>
             <Box sx={{ mb: 3 }}>
               <Typography sx={{ fontSize: 17, fontWeight: "bold", fontFamily: "Montserrat", mb: 1 }}>
-                Design
+                Interaction & UI Design
               </Typography>
               <Typography sx={{ fontSize: 16, fontFamily: "Montserrat" }}>
-                Miro, Figma, sketching, wireframing, flowcharts, interactions, prototyping, annotation, knowledge of modern design principles
+                Information architecture, user flows, task flows, wireframing, prototyping, interaction design, design systems, component libraries, accessibility-aware design
               </Typography>
             </Box>
             <Box sx={{ mb: 3 }}>
               <Typography sx={{ fontSize: 17, fontWeight: "bold", fontFamily: "Montserrat", mb: 1 }}>
-                Development
+                Design Tools
               </Typography>
               <Typography sx={{ fontSize: 16, fontFamily: "Montserrat" }}>
-                HTML, JavaScript, CSS, React.js, Material Design, Tailwind, .NET, SQL
+                Figma, Miro, Adobe, Photoshop, Material Design, Google Analytics
               </Typography>
             </Box>
             <Box sx={{ mb: 3 }}>
               <Typography sx={{ fontSize: 17, fontWeight: "bold", fontFamily: "Montserrat", mb: 1 }}>
-                Leadership
+                Leadership, Collaboration, & Delivery
               </Typography>
               <Typography sx={{ fontSize: 16, fontFamily: "Montserrat" }}>
-                Project coordination, stakeholder management, presentations
+                Stakeholder collaboration in Agile (Lean/Scrum) environments, design handoff, annotation, crossfunctional iteration
+              </Typography>
+            </Box>
+            <Box sx={{ mb: 3 }}>
+              <Typography sx={{ fontSize: 17, fontWeight: "bold", fontFamily: "Montserrat", mb: 1 }}>
+                Technical Fluency
+              </Typography>
+              <Typography sx={{ fontSize: 16, fontFamily: "Montserrat" }}>
+                React, JavaScript, TypeScript, HTML5, CSS, Tailwind, SQL
               </Typography>
             </Box>
             <Box sx={{ mt: 2, mb: 2 }}>
@@ -156,7 +168,7 @@ const ResumeContainerMobile = () => {
                 />
               </Grid>
               <Grid item>
-                <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px", fontWeight: "bold" }}>Software Engineer</Typography>
+                <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px", fontWeight: "bold" }}>Sr. Software Engineer</Typography>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px" }}>Aaron’s INC</Typography>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>Since March 2017</Typography>
               </Grid>   
@@ -164,26 +176,26 @@ const ResumeContainerMobile = () => {
             <List sx={{ listStyleType: 'disc', marginLeft: 3 }}>
               <ListItem sx={{ display: 'list-item' }}>
                 <Typography variant='body1' sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                  <b>Solved Business Problems through Leadership</b><br/>
-                  <span>
-                    Took responsibility during the pandemic by leading the development on a fully remote web application which allowed stores to do business with customers without direct physical contact, increasing the percentage of closed deals by 60% during the height of the pandemic and an additional 40% since 2022.
-                  </span>
+                  Improved customer acquisition and onboarding by identifying
+                  friction through user feedback and usability insights,
+                  redesigning UI flows to reduce application drop-off and
+                  completion time by 50%
                 </Typography>
               </ListItem>
               <ListItem sx={{ display: 'list-item' }}>
                 <Typography variant='body1' sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                  <b>Engineered Effective Customer Experiences</b><br/>
-                  <span>
-                    Developed and supported products which drive customer acquisition, onboarding, and retention. I reduced rental application drop-out rate and average completion time by 50% through effective, intuitive, user-focused UI design.
-                  </span>
+                  Partnered with UX team to implement a fully remote web
+                  application, expanding business operation online during the
+                  COVID pandemic, streamlining onboarding and engagement
+                  through interactive front-end components in React,
+                  contributing to a 60% increase in closed deals.
                 </Typography>
               </ListItem>
               <ListItem sx={{ display: 'list-item' }}>
                 <Typography variant='body1' sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                  <b>Collaborated Daily in an Agile (Lean) Environment</b><br/>
-                  <span>
-                    Together with a team of talented managers, designers, and developers, I’ve iterated to design, develop, test, and deploy solutions quickly. Working closely with our Payments team, I’ve deployed software which has been used to enroll nearly two million customer agreements in auto-pay.
-                  </span>
+                  Worked cross-functionally with designers, product partners,
+                  and developers in an Agile environment to iterate on userfacing solutions, supporting nearly two million customer
+                  enrollments in loyalty and auto-payment programs.
                 </Typography>
               </ListItem>
             </List>
@@ -196,7 +208,7 @@ const ResumeContainerMobile = () => {
                 />
               </Grid>
               <Grid item>
-                <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px", fontWeight: "bold" }}>QA Professional </Typography>
+                <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px", fontWeight: "bold" }}>Quality Assurance Specialist</Typography>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px" }}>MiMedx</Typography>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>Dec. 2014 - Mar. 2018</Typography>
               </Grid>   
@@ -204,18 +216,15 @@ const ResumeContainerMobile = () => {
             <List sx={{ listStyleType: 'disc', marginLeft: 3 }}>
               <ListItem sx={{ display: 'list-item' }}>
                 <Typography variant='body1' sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                  <b>Demonstrated Excellent Quality Control and Data Accuracy</b><br/>
-                  <span>
-                    Reviewed and validated product processing records, ensuring SOP compliance and reducing error in product release
-                  </span>
+                  Ensured accuracy and compliance of high-volume
+                  documentation in a regulated environment, reducing errors
+                  through consistent quality review and process adherence.
                 </Typography>
               </ListItem>
               <ListItem sx={{ display: 'list-item' }}>
                 <Typography variant='body1' sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                  <b>Improved Team Process and Efficiency</b><br/>
-                  <span>
-                    Implemented a digital platform for task management and team communication and collaboration, nearly doubling project turnaround time and number of records reviewed 
-                  </span>
+                  Improved team efficiency by introducing a digital tasktracking and communication workflow, nearly doubling
+                  review throughput and project turnaround time.
                 </Typography>
               </ListItem>
             </List>

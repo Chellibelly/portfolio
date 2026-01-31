@@ -32,8 +32,8 @@ export default function HeaderMobile() {
     if (pageName === "HotelBookingApp") {
       pageName = "Menagerie Hotels";
     }
-    if (pageName === "CaseStudiesHome") {
-      pageName = "UX Design Work";
+    if (pageName === "Portfolio") {
+      pageName = "Selected UX Work";
     }
     if (pageName === "LifeManagementApp") {
       pageName = "KorkBoard"
@@ -117,8 +117,8 @@ export default function HeaderMobile() {
                             <PhoneAndroidIcon sx={{ fontSize: "24px", color: blueGrey[900] }}/>
                         </Grid>
                         <Grid item>
-                          <Link href="/caseStudiesHome" sx={{ textDecoration: "none" }}>
-                            <Typography sx={menuFont}>UX Design Work</Typography>
+                          <Link href="/portfolio" sx={{ textDecoration: "none" }}>
+                            <Typography sx={menuFont}>Selected UX Works</Typography>
                           </Link>
                         </Grid>
                     </Grid>

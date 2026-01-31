@@ -24,11 +24,10 @@ const AboutContainerMobile = () => {
       />
       <Typography variant="h4" sx={{ fontFamily: "Playpen Sans", margin: 3 }}>What I do</Typography>
       <Typography sx={{ ...globalStyles.heading5, ml: 3, mr: 3 }} variant="h5">
-      I've always been interested in usability, human psychology, and design - well before I knew "UX/UI" existed. 
-      Over the years, I've collaborated with UX professionals in my role as a software engineer, and now I’m ready to pivot my career toward research and design.
+        I design digital experiences grounded in user research, usability testing, and iterative design. After many years of collaborating with UX teams as a software engineer, I formally transitioned into UX through a professional diploma program, where I led a full end-to-end case study using mixed research methods, synthesis, wireframing, high-fidelity design, and prototyping.
       </Typography>
       <Typography sx={{ ...globalStyles.heading5, ml: 3, mr: 3 }} variant="h5">
-       I have both a Bachelor's degree in Applied Computer Science and a professional diploma in UX. During my UX program, I took on a case study where I gained hands-on experience with mixed research methods, usability testing, analysis, wireframing, high-fidelity design, and prototyping. Since then, I've designed other features as part of both personal and professional projects. You can check out some of my design work <Link href="/caseStudiesHome">here</Link>!
+        Today, I consistently apply both design and engineering perspectives to create impactful and scalable solutions. I've had a hand in designing and delivering numerous projects, both personally and professionally.
       </Typography>
 
       <Image
@@ -39,7 +38,7 @@ const AboutContainerMobile = () => {
       />
       <Typography variant="h4" sx={{ fontFamily: "Playpen Sans", margin: 3 }}>Where I've Been</Typography>
       <Typography sx={{ ...globalStyles.heading5, ml: 3, mr: 3 }} variant="h5">
-        For the past seven years, I've worked in software development as an engineer, designer, leader, and certified problem-solver.
+        Backed by a degree in Computer Science, for the past 8+ years, I’ve worked in software development as an engineer, designer, problem-solver, and leader. I’ve partnered with stakeholders and cross-functional teams to ship production software in agile environments, both in-office and fully remotely. My technical toolkit includes React, JavaScript, HTML, CSS, C#, and SQL.
       </Typography>
       <Typography sx={{ ...globalStyles.heading5, ml: 3, mr: 3 }} variant="h5">
         I've collaborated with stakeholders and IT professionals to deliver software solutions in agile environments, both in-office and remotely. Over time, I’ve built a diverse toolbox, including skills in JavaScript (React.js), CSS, HTML5, C#, and SQL.
@@ -53,10 +52,10 @@ const AboutContainerMobile = () => {
       />
       <Typography variant="h4" sx={{ fontFamily: "Playpen Sans", margin: 3 }}>Who I Am</Typography>
       <Typography sx={{ ...globalStyles.heading5, ml: 3, mr: 3 }} variant="h5">
-      When I'm not working or sharpening my tech skills, I love traveling and exploring nature with my husband and our adorable black lab, Badger. I enjoy visiting coffee shops and breweries, meeting new people, drawing, crafting, crocheting, decorating, and playing both board and video games.
+      When I'm not working or sharpening my tech skills, I love traveling and exploring nature with my husband and our adorable black lab, Badger. One of my exploration goals is to visit every U.S. National Park (10 down, lots to go!). I also enjoy visiting coffee shops, meeting new people, drawing, crafting, decorating, and playing both board and video games. 
       </Typography>
         <Typography sx={{ ...globalStyles.heading5, ml: 3, mr: 3 }} variant="h5">
-          Lately, I've been fascinated by gamification, AR, artificial intelligence, and physical and cognitive accessibility. Basically I'm into anything that makes tech even more awesome.
+          Lately, I've been fascinated by gamification, ARGs, AI, psychology, and cognitive accessibility. I’m especially interested in anything that makes technology more inclusive and engaging.
         </Typography>
       <Typography sx={globalStyles.heading5} variant="h5">
         <b>Let's connect!</b>

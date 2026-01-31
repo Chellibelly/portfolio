@@ -39,11 +39,10 @@ const cardStyle = {
       <Header/>
       <Box sx={{ pt: '90px' }}>
       <Typography
-          variant="h4"
           align="center"
-          sx={{ ...globalStyles.heading1, mb: 1.5 }}
+          sx={{ ...globalStyles.heading1, mb: 2, fontSize: 24, width: "50%", margin: "0 auto" }}
         >
-          Check out my work!
+          Explore selected UX case studies demonstrating my design and problem-solving process and impact!
       </Typography>
       <PasswordModal open={accessModalOpen} handleClose={() => setAccessModalOpen(false)}/>
       <Grid
@@ -65,9 +64,9 @@ const cardStyle = {
                 />
               </Grid>
               <Grid item sx={{ p: 2 }}>
-                <h1 style={{ ...globalStyles.heading4, textAlign: "center", fontWeight: 600 }}>Menagerie Hotels<br/><span style={{...globalStyles.heading5}}>Booking Website</span></h1>
-                <h2 style={{ ...globalStyles.heading6, textAlign: "center", marginTop: -10, fontStyle: "italic" }}>UXDI Diploma Project</h2>
-                <p>Click here if you're looking for a full, detailed, end-to-end case study organized to demonstrate my grasp of the <b>UX process</b>.</p>
+                <h1 style={{ ...globalStyles.heading4, textAlign: "center", fontWeight: 600 }}>Menagerie Hotels</h1>
+                <h2 style={{ ...globalStyles.heading6, textAlign: "center", marginTop: -10, fontStyle: "italic" }}>End-to-End UX Case Study</h2>
+                <p>A comprehensive UX case study completed as part of my UX Design Institute diploma, demonstrating research, synthesis, ideation, wireframing, and high-fidelity design across a full design lifecycle.</p>
               </Grid>
             </Grid>           
           </Paper>
@@ -84,9 +83,9 @@ const cardStyle = {
                 />
               </Grid>
               <Grid item sx={{ p: 2 }}>
-                <h1 style={{ ...globalStyles.heading4, textAlign: "center", fontWeight: 600 }}>KorkBoard<br/><span style={{...globalStyles.heading5}}>A Life Management App</span></h1>
-                <h2 style={{ ...globalStyles.heading6, textAlign: "center", marginTop: -10, fontStyle: "italic" }}>Personal Passion Project</h2>
-                <p>Click here if you're curious how I translate research into deliverables, presented in a layout focused on identifying real <b>problems and solutions</b>.</p>
+                <h1 style={{ ...globalStyles.heading4, textAlign: "center", fontWeight: 600 }}>KorkBoard</h1>
+                <h2 style={{ ...globalStyles.heading6, textAlign: "center", marginTop: -10, fontStyle: "italic" }}>Problem-to-Solution UX Project</h2>
+                <p>A self-directed project exploring how qualitative research and usability insights translate into clear problem statements, design solutions, and practical UX deliverables.</p>
               </Grid>
             </Grid>   
           </Paper>
@@ -104,8 +103,8 @@ const cardStyle = {
               </Grid>
               <Grid item sx={{ p: 2 }}>
                 <h1 style={{ ...globalStyles.heading4, textAlign: "center", fontWeight: 600 }}>Professional Highlights</h1>
-                <h2 style={{ ...globalStyles.heading6, textAlign: "center", marginTop: -10, fontStyle: "italic" }}>Selected Career Projects</h2>
-                <p>Click here if you want a peek into how I collaborate with cross-functional teams to ship real features backed by research, stakeholder alignment, and <b>real-world results</b>.</p>
+                <h2 style={{ ...globalStyles.heading6, textAlign: "center", marginTop: -10, fontStyle: "italic" }}>Selected Industry Work</h2>
+                <p>A collection of real-world product contributions showcasing collaboration with designers, engineers, and stakeholders to ship real user-facing features backed by research, alignment, and measurable outcomes.</p>
               </Grid>    
             </Grid>   
           </Paper>

@@ -63,7 +63,7 @@ export default function PasswordModal({ open, handleClose }) {
 
         <form onSubmit={handleSubmit}>
           <Stack spacing={3} alignItems="center" mt={2}>
-            <Typography id="password-modal-title" variant="h6" textAlign="center">
+            <Typography id="password-modal-title" variant="h6" textAlign="center" sx={{ fontFamily: "Montserrat" }}>
               Enter Password
             </Typography>
 
@@ -72,7 +72,7 @@ export default function PasswordModal({ open, handleClose }) {
               variant="body2"
               color="text.secondary"
               textAlign="center"
-              sx={{ px: 2 }}
+              sx={{ px: 2, fontFamily: "Montserrat" }}
             >
               If you don't have the password, just ask! <br/><b><i>or</i></b><br/> check out my other projects <br/>(no password required!)
             </Typography>
