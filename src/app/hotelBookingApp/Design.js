@@ -29,7 +29,7 @@ export default function Design() {
 
       <Grid item xs={10}>
         <Typography variant='body1' sx={globalStyles.paragraph}>
-          With my analysis complete, it was time to move on to design. I needed to translate the customer journey map into the actual screens of the website. Each screen had to serve a clear purpose and allow interactions which would support that purpose. My focus was on the goals, actions, intentions, and expected results of each screen.
+          With analysis complete, I translated the customer journey map into the the website’s screens. Each screen had to serve a clear purpose and allow interactions which would support that purpose. My focus was on the goals, actions, intentions, and expected results of each screen.
         </Typography>
       </Grid>
 
@@ -80,7 +80,7 @@ export default function Design() {
       <Grid item xs={10} sx={{ mb: 5 }}>
         <Typography variant='h3' sx={globalStyles.heading3}>Sketching the Screens</Typography>
         <Typography variant='body1' sx={globalStyles.paragraph}>
-          At this point, I began sketching the design to quickly translate interaction notes into realistic screen states. Using pens and grid paper, I chose controls and placements based on conventions and usability insights, keeping the focus on the happy path. Once refined, I uploaded the sketches to Miro and added annotations to explain interactions for developers and stakeholders. This process reinforced an important lesson. Aesthetics don’t make a design good. Functionality and clarity do. By the end, I had designs ready to evolve into a prototype.
+          Next, I translated interaction notes into realistic screen states through hand-drawn sketches. I chose controls and placements based on conventions and usability insights, keeping the focus on the happy path. Once refined, I uploaded the sketches to a Miro board and added annotations to explain interactions for developers and stakeholders. This process reinforced an important lesson. Aesthetics don’t make a design good. Functionality and clarity do.
         </Typography>
       </Grid>
 

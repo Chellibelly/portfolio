@@ -24,7 +24,7 @@ const HotelsContainerMobile = () => {
   const [isSelecting, setIsSelecting] = useState(false);
 
   const sections = [
-    { id: "introduction_section", label: "Part 1/5 - Overview" },
+    { id: "introduction_section", label: "Part 1/5 - Introduction" },
     { id: "research_section", label: "Part 2/5 - Research" },
     { id: "analysis_section", label: "Part 3/5 - Analysis" },
     { id: "design_section", label: "Part 4/5 - Design" },

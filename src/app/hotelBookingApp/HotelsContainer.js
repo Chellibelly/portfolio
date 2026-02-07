@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Header from '../Header';
 import { Grid, List, ListItem, ListItemText, Box, Typography, Link } from '@mui/material';
+import Overview from './Overview';
 import Introduction from './Introduction';
 import Research from './Research';
 import Analysis from './Analysis';
@@ -70,7 +71,7 @@ const HotelsContainer = () => {
                   </Grid>
                   <Grid item xs={7} sx={{ marginTop: "10px" }}>
                     <Typography sx={{ fontSize: "24px", fontFamily: "Montserrat", color: activeSection === 'introduction_section' ? blueGrey[900] : "white" }}>
-                      Overview
+                      Introduction
                     </Typography>
                   </Grid>
                 </Grid></ListItemText>
@@ -154,6 +155,7 @@ const HotelsContainer = () => {
           </Grid>
           
           <Grid item style={{ width: "70vw" }}>
+            <Overview/>
             <section id="introduction_section" ref={(el) => sectionRefs.current['introduction_section'] = el} style={{ paddingTop: 86 }}>
               <Introduction/>
             </section>

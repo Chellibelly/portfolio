@@ -7,23 +7,11 @@ import QuantitativeAnswersGraphic from '../../../public/Quantitative_Answers_Mob
 import SurveyQuotesPainpoints from "../../../public/Survey_quotes_painpoints_Mobile.png";
 import SurveyQuotes from "../../../public/Survey_Quotes_Mobile.png";
 
-import Zoom1 from "../../../public/Zoom1.png";
 import Zoom3 from "../../../public/Zoom3.png";
-
-import BestWesternNotes from "../../../public/Benchmark_Notes_Example_Best_Western.png";
-import HiltonNotes from "../../../public/Benchmark_Notes_Example_Hilton.png";
-import MarriotNotes from "../../../public/Benchmark_Notes_Example_Marriot.png";
 
 import UsabilityQuotesPainpoints from "../../../public/Usability_Quotes_Painpoints_Mobile.png";
 import UsabilityQuotes from "../../../public/Usability_quotes_Mobile.png";
 import HeuristicsGraphic from '../../../public/Heuristics.png';
-import PersonaTomas from '../../../public/Persona_Tomas.png';
-import PersonaRachel from '../../../public/Persona_Rachel.png';
-import PersonaLinda from '../../../public/Persona_Linda.png';
-import PersonaMike from '../../../public/Persona_Mike.png';
-import ProcessResearchGraphic from '../../../public/Process_Research.png';
-
-import QuoteContainer from './QuoteContainer';
 
 import { blue, grey } from '@mui/material/colors';
 import * as globalStyles from '../styles/globalStyleConsts';
@@ -100,38 +88,10 @@ const ResearchMobile = forwardRef((props, ref) => {
       <Typography variant='h3' sx={globalStyles.heading3}>Checking out the Competition</Typography>
       <Typography variant='body1' sx={globalStyles.paragraph}>
         <Typography variant='body1' sx={globalStyles.paragraph}>
-          Having gathered some basic data about user needs through my survey, I wanted to see how other hotel websites were addressing (or failing to address) them, discover conventions, and form a baseline. To minimize my personal bias, I set rules for myself. From a set of twelve UX design principles, I came up with a small set of categories I could focus on. My categories were navigation and order, saving time or effort, alignment with user goals, expectations, and forthcomingness.
-        </Typography> 
-        <Typography variant='body1' sx={globalStyles.paragraph}>
-          With a clear lens for analysis with the help of my defined categories, I was ready to pick some websites to examine. I focused on well-established companies who likely have the resources to optimize their websites as well as hotels mentioned in the survey responses
-        </Typography>
-      </Typography>
-    
-    </Grid>
-
-    <Grid item xs={12} ref={ref}>
-      <Box sx={globalStyles.graphic}>
-        <Image
-          src={HeuristicsGraphic}
-          width="100%"
-          height={900}
-          alt="A graphic depicting mapping UX heuristics to categories"
-        />
-      </Box>
-    </Grid>
-
-    
-   
-
-    <Grid item ref={ref} xs={10} sx={{ marginBottom: 5 }}>
-      <Typography variant='h3' sx={globalStyles.heading3}>The Good, the Bad, and the Conventional</Typography>
-      <Typography variant='body1' sx={globalStyles.paragraph}>
-        I discovered a few interesting things through this exercise. For one, there was certainly a conventional pattern to the steps through the booking process. Each site more or less took me through the same steps to complete my booking. Anyone who has used these sites has likely shaped a mental model off of this pattern.
-        Beyond the process, I identified several key insights that fell easily into my categories.
+         With survey insights in hand, I wanted to see how other hotel websites were addressing (or failing to address) user goals, discover conventions, and form a baseline. I focused on well-established sites and hotels cited by survey participants, using a small set of categories to minimize bias: expectations, navigation and order, saving time/effort, alignment with user goals, and forthcomingness.
+        </Typography>      
       </Typography>
     </Grid>
-  
-   
     <Grid container direction="row" justifyContent="space-around" sx={{ margin: 3 }}>
       <Grid item ref={ref} sx={{ backgroundColor: blue[50], padding: 2 }}>
           <Typography sx={{ ...globalStyles.heading6, textAlign: "center", height: 50, fontWeight: "bold" }}>Alignment with User Goals</Typography>
@@ -237,40 +197,22 @@ const ResearchMobile = forwardRef((props, ref) => {
      <Typography variant='body1' sx={globalStyles.paragraph}>
         With a better understanding of user needs and the typical booking process, I wanted to see for myself how people interacted with existing booking websites in real time to learn whether or not behaviors and body language aligned with my assumptions, identify points of confusion, and understand their mental models in real time.
       </Typography>
-
-      <Typography variant='body1' sx={globalStyles.paragraph}>
+     <Typography variant='body1' sx={globalStyles.paragraph}>
         I ran four remote usability tests with participants from different backgrounds who had hotel booking experience. I made sure they were comfortable, emphasized that there were no mistakes (only insights) and encouraged think-aloud feedback throughout the session.
       </Typography>
-
       <Typography variant='body1' sx={globalStyles.paragraph}>
         Each participant was asked to book a hotels on two different websites while I observed their actions and asked follow-up questions when needed. Afterwards, I gathered reflections on what surprised them, what they liked and didn't like, and what features they felt were missing.
       </Typography>
-     
-
-     
       </Grid>
-
       <Grid item ref={ref} xs={12}>
         <Box sx={globalStyles.graphic}>
           <Image
             src={Zoom3}
             width="100%"
-            alt="An image of pie charts representing quantitative survey results"
+            alt="An image usability testing"
           />
         </Box>
       </Grid>
-      
-
-
-        
-
-
-  
-
-   
-
-    
-
     <Grid item ref={ref} xs={10}>  
       <Typography variant='h3' sx={globalStyles.heading3}>Notable Behaviors</Typography>
       <Typography variant='body1' sx={globalStyles.paragraph}>

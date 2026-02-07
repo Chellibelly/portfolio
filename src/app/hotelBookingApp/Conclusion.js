@@ -34,9 +34,8 @@ export default function Conclusion() {
           <Typography variant='h1' sx={globalStyles.heading1}>Bringing My Designs to Life</Typography>
           <Typography variant='h2' sx={globalStyles.heading2}>The Prototype</Typography>
           <Typography variant="body1" sx={globalStyles.paragraph}>
-            It was finally time to take my sketched screens and turn them into something digital and high-fidelity, a prototype that could simulate working software for stakeholders and engineers in a real-world scenario to reduce ambiguity, save time, and minimize risk. 
+            I took my sketched screens and turned them into a high-fidelity digital prototype in Figma. This allowed me to simulate a working hotel booking workflow, reducing ambiguity, saving time, and minimizing risk. The prototype focused on the major opportunities I uncovered: full transparency around hotel quality and amenities, location, pricing, rate comparisons, and account/membership features.
           </Typography>
-          <Typography variant="body1" sx={globalStyles.paragraph}>I put a lot of focus on the major opportunity I had found – to design my site to be completely transparent and informative regarding hotel quality and amenities, hotel location and relation to places of interest, pricing and rate comparisons, and account and membership programs.</Typography>
         </Grid>
         <Grid item xs={12}>
           <Box sx={globalStyles.graphic}>
@@ -69,21 +68,8 @@ export default function Conclusion() {
           </Box>
         </Grid>
         <Grid item xs={10}>
-          <Typography variant='h3' sx={globalStyles.heading3}>Other Important Areas of Focus</Typography>
-          <Typography variant="body1" sx={globalStyles.paragraph}>The other key areas identified in the analysis phase, especially from my affinity diagram, included navigation, date selection, extras and add-ons, and the overall look and feel. It was important to design these elements using established conventions while also addressing issues and negative feedback to make my site more user-friendly and delightful compared to the other guys.</Typography>
-        </Grid>
-        <Grid item xs={12}>
-          <Box sx={globalStyles.graphic}>
-            <Image
-              src={DesignAdditional}
-              width="100%"
-              alt="An image of screenshots taken from the website prototype"
-            />
-          </Box>
-        </Grid>
-        <Grid item xs={10}>
           <Typography variant='h3' sx={globalStyles.heading3}>The Results</Typography>
-          <Typography variant="body1" sx={globalStyles.paragraph}>And voila! After working through a bit of learning curve with Figma and a few days and building and rebuilding components, I finally had a collection of high-fidelity annotated screens and a working prototype for an entire hotel booking workflow from homepage to checkout!</Typography>
+          <Typography variant="body1" sx={globalStyles.paragraph}>After iterating through Figma’s components and refining interactions, I had a complete set of annotated screens and a working prototype covering the full booking flow—from homepage to checkout.</Typography>
         </Grid>
         <Grid item xs={12}>
         <Box 

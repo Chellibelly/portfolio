@@ -7,6 +7,8 @@ import QuantitativeAnswersGraphic from '../../../public/Quantitative_Answers.png
 import SurveyQuotesPainpoints from "../../../public/Survey_quotes_painpoints.png";
 import SurveyQuotes from "../../../public/Survey_Quotes.png";
 import Zoom3 from "../../../public/Zoom3.png";
+import UsabilityQuotes from "../../../public/usability_quotes.png";
+import UsabilityPainPoints from "../../../public/usability_quotes_painpoints.png";
 import HeuristicsGraphic from '../../../public/Heuristics.png';
 
 export default function Research() {
@@ -51,9 +53,6 @@ export default function Research() {
         <Typography sx={globalStyles.paragraph}>
           When asked what task they were trying to complete, most respondents replied that they were either booking or comparing prices. Several mentioned specifically choosing sites with the best prices or which supported easy price comparisons. Others mentioned using sites where they belonged to a rewards program with the brand. Several highlighted ease, speed, and reliability as key attributes of their favorite booking sites.
         </Typography>
-        <Typography sx={globalStyles.paragraph}>
-          An interesting contradiction emerged in the survey results. Most respondents said that proximity to activities in the area was the most important factor to them. However, almost none mentioned it when describing their goals or interactions. I found this apparent contradiction interesting, but reminded myself not to jump to conclusions. I was only just scratching the surface of my research.
-        </Typography>
       </Grid>
 
       <Grid item xs={12} sm={10}>
@@ -80,10 +79,8 @@ export default function Research() {
       <Grid item xs={12} sm={10}>
         <Typography variant='h3' sx={globalStyles.heading3}>Checking out the Competition</Typography>
         <Typography sx={globalStyles.paragraph}>
-          Having gathered some basic data about user needs through my survey, I wanted to see how other hotel websites were addressing (or failing to address) them, discover conventions, and form a baseline. To minimize my personal bias, I set rules for myself. From a set of twelve UX design principles, I came up with a small set of categories I could focus on. My categories were navigation and order, saving time or effort, alignment with user goals, expectations, and forthcomingness.
-        </Typography>
-        <Typography sx={globalStyles.paragraph}>
-          With a clear lens for analysis with the help of my defined categories, I was ready to pick some websites to examine. I focused on well-established companies who likely have the resources to optimize their websites as well as hotels mentioned in the survey responses.
+          With survey insights in hand, I wanted to see how other hotel websites were addressing (or failing to address) user goals, discover conventions, and form a baseline. 
+          I focused on well-established sites and hotels cited by survey participants, using a small set of categories to minimize bias: expectations, navigation and order, saving time/effort, alignment with user goals, and forthcomingness.
         </Typography>
       </Grid>
 
@@ -92,6 +89,67 @@ export default function Research() {
           <Image src={HeuristicsGraphic} alt="Mapping UX heuristics to categories" style={{ width: '100%', height: 'auto' }} />
         </Box>
       </Grid>
+
+      {/* usability testing */}
+      <Grid item xs={12} sm={10}>
+        <Typography variant='h3' sx={globalStyles.heading3}>The Importance of Observation: Usability Testing</Typography>
+        <Typography sx={globalStyles.paragraph}>
+         With a better understanding of user needs and the typical booking process, I wanted to see for myself how people interacted with existing booking websites in real time to learn whether or not behaviors and body language aligned with my assumptions, identify points of confusion, and understand their mental models in real time.
+        </Typography>
+        <Typography sx={globalStyles.paragraph}>
+         I ran four remote usability tests with participants from different backgrounds who had hotel booking experience. I made sure they were comfortable, emphasized that there were no mistakes (only insights) and encouraged think-aloud feedback throughout the session.
+        </Typography>
+        <Typography sx={globalStyles.paragraph}>
+          Each participant was asked to book a hotels on two different websites while I observed their actions and asked follow-up questions when needed. Afterwards, I gathered reflections on what surprised them, what they liked and didn't like, and what features they felt were missing.
+        </Typography>
+      </Grid>
+        
+        <Grid item xs={12} sm={10}>
+          <Box sx={globalStyles.graphic}>
+              <Image src={Zoom3} alt="An image of a usability test participant" style={{ width: '100%', height: 'auto' }} />
+          </Box>
+        </Grid>
+        
+        <Grid item xs={12} sm={10}>
+          <Typography variant='h3' sx={globalStyles.heading3}>Notable Behaviors</Typography>
+          <Typography sx={globalStyles.paragraph}>
+            Participants all remarked on colorful, on-theme imagery and photos of hotels. Imagery seemed very important, especially on the homepage. Each user began the same way: by looking for a place to enter their desired destination and dates. On the hotel results page, they focused on finding the most appealing hotel with good ratings at the lowest price. They also seemed to love seeing ratings.
+          </Typography>
+          <Typography sx={globalStyles.paragraph}>
+            After selecting a hotel, they quickly reviewed the amenities if available, then moved on to the room selection page. Here, they compared prices and room features, scrolling up and down the page until they found a match closest to what they were looking for.
+          </Typography>
+        </Grid>
+
+        <Grid item xs={12} sm={10}>
+          <Box sx={globalStyles.graphic}>
+              <Image src={UsabilityQuotes} alt="An image of a usability test participant" style={{ width: '100%', height: 'auto' }} />
+          </Box>
+        </Grid>
+
+        <Grid item xs={12} sm={10}>
+          <Typography variant='h3' sx={globalStyles.heading3}>Pain Points</Typography>
+          <Typography sx={globalStyles.paragraph}>
+            Pain points encountered by the participants included overwhelming or unexpected search results, unconventional or confusing date picker controls, lack of clear and descriptive information about the hotels and amenities, unclear sorting options, confusing rates and promotions that weren't easy to compare, and unclear lines drawn between member and non-member options.
+          </Typography>
+        </Grid>
+      
+        <Grid item xs={12} sm={10}>
+          <Box sx={globalStyles.graphic}>
+              <Image src={UsabilityPainPoints} alt="An image of a usability test participant" style={{ width: '100%', height: 'auto' }} />
+          </Box>
+        </Grid>
+
+        <Grid item xs={12} sm={10}>
+          <Typography variant='h3' sx={globalStyles.heading3}>An Exercise in Empathy</Typography>
+          <Typography sx={globalStyles.paragraph}>
+            Watching people struggle is painful, but important. Not everyone works through problems in the same way, and completing the task isn’t everything if the journey was painful. I didn’t want to bias the data, but I also didn’t want my users to feel bad about themselves. With one participant in particular, I could tell she was getting anxious and blaming herself, and it took everything I had not to jump in and console her.
+          </Typography>
+          <Typography sx={globalStyles.paragraph}>
+            Looking back, I can see where I could’ve done things differently. Next time, I won’t agree with or justify their frustrations, and I won’t jump in with solutions. Instead, I’ll show empathy, give them some space to figure things out, and ask them to share what they’re feeling or trying to do when they get stuck.
+          </Typography>
+        </Grid>
+
+
 
     </Grid>
   );
