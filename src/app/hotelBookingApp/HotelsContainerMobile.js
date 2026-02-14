@@ -28,7 +28,6 @@ const HotelsContainerMobile = () => {
     { id: "research_section", label: "Part 2/5 - Research" },
     { id: "analysis_section", label: "Part 3/5 - Analysis" },
     { id: "design_section", label: "Part 4/5 - Design" },
-    { id: "delivery_section", label: "Part 5/5 - Delivery" },
     { id: "lessons_section", label: "Lessons Learned" },
   ];
 
@@ -104,8 +103,6 @@ const HotelsContainerMobile = () => {
         return <LightbulbIcon/>;
       case "design_section":
         return <DrawIcon/>;
-      case "delivery_section":
-        return <PhoneAndroidIcon/>;
       case "lessons_section":
         return <SchoolIcon/>;
       default:
@@ -209,13 +206,6 @@ const HotelsContainerMobile = () => {
             style={{ paddingTop: 86 }}
           >
             <Design />
-          </section>
-          <section
-            id="delivery_section"
-            ref={(el) => sectionRefs.current["delivery_section"] = el}
-            style={{ paddingTop: 86 }}
-          >
-            <Conclusion />
           </section>
           <section
             id="lessons_section"

@@ -4,14 +4,11 @@ import Image from 'next/image';
 import SurveyQuestionsGraphic from '../../../public/Survey_Questions.png';
 import QuantitativeAnswersGraphic from '../../../public/Quantitative_Answers_Mobile.png';
 
-import SurveyQuotesPainpoints from "../../../public/Survey_quotes_painpoints_Mobile.png";
-import SurveyQuotes from "../../../public/Survey_Quotes_Mobile.png";
+import SurveyQuotes from "../../../public/survey_quotes_combined_mobile.png";
 
 import Zoom3 from "../../../public/Zoom3.png";
 
-import UsabilityQuotesPainpoints from "../../../public/Usability_Quotes_Painpoints_Mobile.png";
-import UsabilityQuotes from "../../../public/Usability_quotes_Mobile.png";
-import HeuristicsGraphic from '../../../public/Heuristics.png';
+import UsabilityQuotes from "../../../public/Usability_quotes_combined_mobile.png";
 
 import { blue, grey } from '@mui/material/colors';
 import * as globalStyles from '../styles/globalStyleConsts';
@@ -48,12 +45,9 @@ const ResearchMobile = forwardRef((props, ref) => {
     </Grid>
 
     <Grid item xs={10} ref={ref} sx={{ marginTop: 5, marginBottom: 5 }}>
-      <Typography variant='h3' sx={globalStyles.heading3}>Context and Behavior</Typography>
+      <Typography variant='h3' sx={globalStyles.heading3}>Context, Behavior, and Pain</Typography>
       <Typography variant='body1' sx={globalStyles.paragraph}>
-        When asked what task they were trying to complete, most respondents replied that they were either booking or comparing prices. Several mentioned specifically choosing sites with the best prices or which supported easy price comparisons. Others mentioned using sites where they belonged to a rewards program with the brand. Several highlighted ease, speed, and reliability as key attributes of their favorite booking sites.
-      </Typography>
-      <Typography variant='body1' sx={globalStyles.paragraph}>
-        An interesting contradiction emerged in the survey results. Most respondents said that proximity to activities in the area was the most important factor to them. However, almost none mentioned it when describing their goals or interactions. I found this apparent contradiction interesting, but reminded myself not to jump to conclusions. I was only just scratching the surface of my research.
+        When asked about tasks, most participants were booking or comparing prices or looking for the best value. Others mentioned using sites where they belonged to a rewards program with the brand.  Speed, ease, and reliability were common priorities. Respondents also shared frustrations with unclear information or confusing flows, which stuck with them even several months after their experience.
       </Typography>
     </Grid>
 
@@ -64,23 +58,6 @@ const ResearchMobile = forwardRef((props, ref) => {
         width="100%"
         alt="A collection of user opinion survey quotes"
       />
-      </Box>
-    </Grid>
-
-    <Grid item xs={10} ref={ref}>
-      <Typography variant='h3' sx={globalStyles.heading3}>The Pain</Typography>
-      <Typography variant='body1' sx={globalStyles.paragraph}>
-        Of the questions I asked, the longest and most detailed answers came in response to the last question on the survey: "What would you change?" It was clear that even though some respondents were answering questions about an experience they had weeks to months ago, their frustrations stuck with them.
-      </Typography>
-    </Grid>
-
-    <Grid item xs={12} ref={ref}>
-      <Box sx={globalStyles.graphic}>
-        <Image
-          src={SurveyQuotesPainpoints}
-          width="100%"
-          alt="A collection of user pain point survey quotes"
-        />
       </Box>
     </Grid>
 
@@ -192,16 +169,12 @@ const ResearchMobile = forwardRef((props, ref) => {
       </Grid>
     </Grid>
     <Grid item ref={ref} xs={10} sx={{ marginBottom: 5 }}>
-      <Typography variant='h3' sx={globalStyles.heading3}>The Importance of Observation: Usability Testing</Typography>
-      
-     <Typography variant='body1' sx={globalStyles.paragraph}>
+      <Typography variant='h3' sx={globalStyles.heading3}>Usability Testing: The Importance of Observation </Typography>
+      <Typography sx={globalStyles.paragraph}>
         With a better understanding of user needs and the typical booking process, I wanted to see for myself how people interacted with existing booking websites in real time to learn whether or not behaviors and body language aligned with my assumptions, identify points of confusion, and understand their mental models in real time.
       </Typography>
-     <Typography variant='body1' sx={globalStyles.paragraph}>
-        I ran four remote usability tests with participants from different backgrounds who had hotel booking experience. I made sure they were comfortable, emphasized that there were no mistakes (only insights) and encouraged think-aloud feedback throughout the session.
-      </Typography>
-      <Typography variant='body1' sx={globalStyles.paragraph}>
-        Each participant was asked to book a hotels on two different websites while I observed their actions and asked follow-up questions when needed. Afterwards, I gathered reflections on what surprised them, what they liked and didn't like, and what features they felt were missing.
+      <Typography sx={globalStyles.paragraph}>
+        I ran remote usability tests with participants experienced in booking hotels. They completed tasks on two different sites while thinking aloud. I observed actions, asked follow-ups, and collected reflections on surprises, likes, dislikes, and missing features.
       </Typography>
       </Grid>
       <Grid item ref={ref} xs={12}>
@@ -214,12 +187,15 @@ const ResearchMobile = forwardRef((props, ref) => {
         </Box>
       </Grid>
     <Grid item ref={ref} xs={10}>  
-      <Typography variant='h3' sx={globalStyles.heading3}>Notable Behaviors</Typography>
-      <Typography variant='body1' sx={globalStyles.paragraph}>
-        Participants all remarked on colorful, on-theme imagery and photos of hotels. Imagery seemed very important, especially on the homepage. Each user began the same way: by looking for a place to enter their desired destination and dates. On the hotel results page, they focused on finding the most appealing hotel with good ratings at the lowest price. They also seemed to love seeing ratings. 
+      <Typography variant='h3' sx={globalStyles.heading3}>Behaviors, Frusterations, and an Excercise in Empathy</Typography>
+      <Typography sx={globalStyles.paragraph}>
+        Participants all remarked on colorful, inviting imagery, particularly on the home page. Each user began by looking for a place to enter their desired destination and dates. On the hotel results page, they focused on finding the most appealing hotel with good ratings at the lowest price and the best amenities. 
       </Typography>
-      <Typography variant='body1' sx={globalStyles.paragraph}>
-        After selecting a hotel, they quickly reviewed the amenities if available, then moved on to the room selection page. Here, they compared prices and room features, scrolling up and down the page until they found a match closest to what they were looking for.
+      <Typography sx={globalStyles.paragraph}>
+        Pain points included overwhelming or unexpected search results, confusing date pickers, lack of clear and descriptive information about the hotels and amenities, unclear sorting options, confusing rates and promotions that weren't easy to compare, and unclear lines drawn between member and non-member options.
+      </Typography>
+      <Typography sx={globalStyles.paragraph}>
+        Watching people struggle is painful. Not everyone works through problems in the same way, and completing the task isn’t everything if the journey is painful. This exercise truly taught me to step back, observe without bias, and focus on understanding feelings and strategies with empathy, not control.
       </Typography>
     </Grid>
     <Grid item ref={ref} xs={12}>
@@ -230,24 +206,6 @@ const ResearchMobile = forwardRef((props, ref) => {
           alt="An image of quotes expressing user opinions"
         />
       </Box>
-    </Grid>
-    <Grid item ref={ref} xs={10} sx={{ marginBottom: 5 }}>
-      <Typography variant='h3' sx={globalStyles.heading3}>Pain Points</Typography>
-      <Typography variant='body1' sx={globalStyles.paragraph}>Pain points encountered by the participants included overwhelming or unexpected search results, unconventional or confusing date picker controls, lack of clear and descriptive information about the hotels and amenities, unclear sorting options, confusing rates and promotions that weren't easy to compare, and unclear lines drawn between member and non-member options.</Typography>
-    </Grid>
-    <Grid item ref={ref} xs={12}>
-      <Box sx={globalStyles.graphic}>
-        <Image
-          src={UsabilityQuotesPainpoints}
-          width="100%"
-          alt="An image of quotes expressing user pain points"
-        />
-      </Box>
-    </Grid>
-    <Grid item ref={ref} xs={10} sx={{ marginBottom: -5 }}>
-      <Typography variant='h3' sx={globalStyles.heading3}>An Exercise in Empathy</Typography>
-      <Typography variant='body1' sx={globalStyles.paragraph}>Watching people struggle is painful, but important. Not everyone works through problems in the same way, and completing the task isn’t everything if the journey was painful. I didn’t want to bias the data, but I also didn’t want my users to feel bad about themselves. With one participant in particular, I could tell she was getting anxious and blaming herself, and it took everything I had not to jump in and console her.</Typography>
-      <Typography variant='body1' sx={globalStyles.paragraph}>Looking back, I can see where I could’ve done things differently. Next time, I won’t agree with or justify their frustrations, and I won’t jump in with solutions. Instead, I’ll show empathy, give them some space to figure things out, and ask them to share what they’re feeling or trying to do when they get stuck.</Typography>
     </Grid>
   </Grid>
   );

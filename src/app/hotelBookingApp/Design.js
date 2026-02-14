@@ -5,10 +5,21 @@ import FlowDiagramGraphic from '../../../public/Flow_Diagram.png';
 import SketchesGraphic from '../../../public/Sketches.png';
 import ProcessDesignGraphic from '../../../public/Process_Design.png';
 
+import ProcessSolutionGraphic from '../../../public/Process_Solution.png';
+import DesignHotelInfo from '../../../public/Design_Hotel_Info.png';
+import DesignPricingInfo from '../../../public/Design_Pricing_Info.png';
+import DesignAccountInfo from '../../../public/Design_Account_Info.png';
+import DesignLocationInfo from '../../../public/Design_Location_Info.png';
+import DesignAdditional from '../../../public/Design_Additional_Catergories.png';
+
+import { useMediaQuery } from 'react-responsive';
+
 import { blue, grey } from '@mui/material/colors';
 import * as globalStyles from '../styles/globalStyleConsts';
 
 export default function Design() {
+  const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 1224px)' });
+
   const [informationArchitectureExpanded, setInformationArchitectureExpanded] = useState(false);
   const [sketchesExpanded, setSketchesExpanded] = useState(false);
 
@@ -120,6 +131,64 @@ export default function Design() {
           </Button>
         </Box>
       </Grid>
+
+        <Grid item xs={10}>
+          <Typography variant='h3' sx={globalStyles.heading3}>High-Fidelity Screens</Typography>
+          <Typography variant="body1" sx={globalStyles.paragraph}>
+            I took my sketched screens and turned them into a high-fidelity digital prototype in Figma. This allowed me to simulate a working hotel booking workflow, reducing ambiguity, saving time, and minimizing risk. The prototype focused on the major opportunities I uncovered: full transparency around hotel quality and amenities, location, pricing, rate comparisons, and account/membership features.
+          </Typography>
+        </Grid>
+        <Grid item xs={12}>
+          <Box sx={globalStyles.graphic}>
+          <Image
+            src={DesignHotelInfo}
+            width="100%"
+            alt="An image of screenshots taken from the website prototype"
+          />
+          </Box>
+          <Box sx={globalStyles.graphic}>
+            <Image
+              src={DesignLocationInfo}
+              width="100%"
+              alt="An image of screenshots taken from the website prototype"
+            />
+          </Box>
+          <Box sx={globalStyles.graphic}>
+            <Image
+              src={DesignPricingInfo}
+              width="100%"
+              alt="An image of screenshots taken from the website prototype"
+            />
+          </Box>
+          <Box sx={globalStyles.graphic}>
+            <Image
+              src={DesignAccountInfo}
+              width="100%"
+              alt="An image of screenshots taken from the website prototype"
+            />
+          </Box>
+        </Grid>
+        <Grid item xs={10}>
+          <Typography variant='h3' sx={globalStyles.heading3}>The Prototype</Typography>
+          <Typography variant="body1" sx={globalStyles.paragraph}>After iterating through Figma’s components and refining interactions, I had a complete set of annotated screens and a working prototype covering the full booking flow—from homepage to checkout.</Typography>
+        </Grid>
+        <Grid item xs={12}>
+        <Box 
+          sx={{
+            display: 'flex',
+            justifyContent: 'center', // Horizontally center
+            alignItems: 'center',     // Vertically center
+            marginTop: 5,
+            marginBottom: 5
+          }}
+        >
+          <video width={isDesktopOrLaptop ? "50%" : "90%"} height="auto" controls>
+            <source src="/Prototype_recording.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </Box>
+        </Grid>
+
     </Grid>
   );
 }

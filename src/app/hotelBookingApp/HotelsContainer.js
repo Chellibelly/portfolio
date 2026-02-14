@@ -115,19 +115,6 @@ const HotelsContainer = () => {
                   </Grid>
                 </Grid></ListItemText>
             </ListItem>
-            <ListItem onClick={() => handleSectionClick('delivery_section')} style={activeSection === 'delivery_section' ? { backgroundColor: blueGrey[100]} : {}}>
-              <ListItemText>
-                <Grid container direction="row">
-                  <Grid item xs={3} sx={{ marginRight: "10px" }}>
-                    <PhoneAndroidIcon sx={{ fontSize: "50px", color: activeSection === 'delivery_section' ? blueGrey[900] : "white" }} />
-                  </Grid>
-                  <Grid item xs={7} sx={{ marginTop: "10px" }}>
-                    <Typography sx={{ fontSize: "24px", fontFamily: "Montserrat", color: activeSection === 'delivery_section' ? blueGrey[900] : "white" }}>
-                    Delivery
-                    </Typography>
-                  </Grid>
-                </Grid></ListItemText>
-            </ListItem>
             <ListItem onClick={() => handleSectionClick('conclusion_section')} style={activeSection === 'conclusion_section' ? { backgroundColor: blueGrey[100]} : {}}>
               <ListItemText>
                 <Grid container direction="row">
@@ -167,9 +154,6 @@ const HotelsContainer = () => {
             </section>
             <section id="design_section" ref={(el) => sectionRefs.current['design_section'] = el} style={{ paddingTop: 86  }}>
               <Design/>
-            </section>
-            <section id="delivery_section" ref={(el) => sectionRefs.current['delivery_section'] = el} style={{ paddingTop: 86  }}>
-              <Conclusion/>
             </section>
             <section id="conclusion_section" ref={(el) => sectionRefs.current['conclusion_section'] = el} style={{ paddingTop: 86  }}>
               <LessonsLearned/>

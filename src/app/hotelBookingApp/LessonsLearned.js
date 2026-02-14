@@ -8,6 +8,14 @@ export default function LessonsLearned() {
             <Typography variant='h1' sx={globalStyles.heading1}>A Reflection on the Experience</Typography>
             <Typography variant='h2' sx={globalStyles.heading2}>Lessons Learned</Typography>
 
+                      <Typography variant='h3' sx={globalStyles.heading3}>Stakeholders and the Business</Typography>
+                      <Typography variant="body1" sx={globalStyles.paragraph}>
+                        In a real-world project, the work wouldn’t end here. After finalizing the annotated screen designs and prototype, the next step would be to gather all the key stakeholders, including other designers, product managers, copywriters, legal, developers, and anyone else involved in the product and share the designs. Ideally, there would be regular touch points throughout the design process, and this would be one of many checks to ensure alignment, clarify interactions, and address questions.
+                      </Typography>
+                      <Typography variant="body1" sx={globalStyles.paragraph}>
+                        Adjustments and compromises would be negotiated to balance technical limitations with key functionality. Creativity and problem-solving continue beyond delivery, with post-launch research, testing, and iterations driving ongoing improvements.
+                      </Typography>
+            
             <Typography variant='h3' sx={globalStyles.heading3}>
                 Technical skills through the UX lifecycle
             </Typography>

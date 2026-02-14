@@ -6,7 +6,7 @@ import CheckIcon from "@mui/icons-material/Check";
 import CloseIcon from "@mui/icons-material/Close";
 import AffinityGroupList from "./AffinityGroupsList";
 import AffinityGroupListMobile from "./AffinityGroupListMobile";
-import QuoteContainer from "./QuoteContainer";
+import OpportunitiesGraphic from "../../../public/Desktop_opportunities_graphic.png";
 import * as globalStyles from "../styles/globalStyleConsts";
 
 // Graphics
@@ -96,7 +96,7 @@ const OpportunitySection = ({
 
         <Grid item xs={isDesktop ? 4 : 6} sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
           <Image src={graphicOther} alt={`${title} - The Other Guys`} width={isDesktop ? 200 : 160} />
-          <Typography sx={{ ...categoryLabel }}>The Other Guys</Typography>
+          <Typography sx={{ ...categoryLabel }}>Current Experience</Typography>
           {otherList.map((item, idx) => (
             <Box key={idx} sx={{ display: "flex", alignItems: "center", mt: 1 }}>
               <CloseIcon sx={{ color: "red", mr: 1 }} />
@@ -144,16 +144,7 @@ export default function Analysis() {
           The Analysis
         </Typography>
         <Typography variant="body1" sx={globalStyles.paragraph}>
-          At this point in the project, I had piles of research notes. For some direction, I decided to revisit my goal of creating a desirable product. What does a good hotel booking experience actually look like, and what would make <i>my</i> app be more desirable than the competition?
-        </Typography>
-      </Grid>
-
-      <Grid item xs={10} sx={{ mb: 5 }}>
-        <Typography variant="h3" sx={globalStyles.heading3}>
-          Building an Affinity Diagram
-        </Typography>
-        <Typography variant="body1" sx={globalStyles.paragraph}>
-          To make sense of all my research, I created an affinity diagram. I captured research insights on sticky notes and grouped them into related categories. This process allowed the data to speak for itself, revealing natural patterns without letting my biases influence the outcome. Out of the process emerged a clear picture of the main themes and priorities, grouped in nine main categories: filtering, account, look & feel, hotel info, extras, room selection, navigation, date selection, and pricing.
+          At this stage, I had piles of research notes. In an effort to make sense of all of the research, I started with sticky notes and a whiteboard. I wanted to allow natural patterns and insights to emerge and the most important areas of focus to materialize, so I developed an affinity diagram.
         </Typography>
       </Grid>
 
@@ -169,10 +160,21 @@ export default function Analysis() {
 
       <Grid item xs={10} sx={{ mb: 5, mt: 5 }}>
         <Typography variant="h3" sx={globalStyles.heading3}>
+          Affinity Diagram Insights
+        </Typography>
+        <Typography variant="body1" sx={globalStyles.paragraph}>
+          When the sticky notes were all placed and grouped, nine core areas of importance had surfaced: hotel information (location, amenities, and reviews), room selection, date selection, pricing, accounts/memberhips, filtering, extras/add-ons, look/feel, and navigation.
+        </Typography>
+      </Grid>
+
+      <Box>{isDesktopOrLaptop ? <AffinityGroupList /> : <AffinityGroupListMobile />}</Box>
+
+      <Grid item xs={10} sx={{ mb: 5, mt: 5 }}>
+        <Typography variant="h3" sx={globalStyles.heading3}>
           User Journey
         </Typography>
         <Typography variant="body1" sx={globalStyles.paragraph}>
-          I mapped the eight key stages of the booking journey: home page, date selection, hotel search, hotel selection, room selection, rate selection, add-ons, and booking completion. Adding user goals, behaviors, and sentiments turned this into a customer journey map. This helped me get a clearer picture of the website’s information architecture and guided the design by identifying key screen purposes, opportunities, and guidelines.
+          I then mapped the eight key stages of the booking journey, from destination search to checkout, and layered in user goals, behaviors, pain points, mental models, and sentiments to create a customer journey map. This clarified the site’s information architecture and helped define each screen’s purpose and opportunities.
         </Typography>
       </Grid>
 
@@ -183,28 +185,30 @@ export default function Analysis() {
 
       <Grid item xs={10} sx={{ mb: 5, mt: 5 }}>
         <Typography variant="h3" sx={globalStyles.heading3}>
-          Key Insights & My Eureka Moment
+          My Eureka Moment: Key Insights and Opportunies
         </Typography>
         <Typography variant="body1" sx={globalStyles.paragraph}>
-          The glaring bottom line made evident from the affinity diagram and customer journey map was clear: the main issue was a lack of (or at least confusing) information, often assuming users knew things they didn’t. This was a consistent problem across every site I researched and was highlighted by every user interviewed and surveyed.
+          Synthesizing the affinity diagram and journey map revealed a glaringly consistent theme highlighted by everyone who I interviewed and surveyed. Users were missing critical information throughout the booking flow. Many sites assumed prior knowledge, leaving people unsure about location, amenities, pricing, and what was actually included.
         </Typography>
         <Typography variant="body1" sx={globalStyles.paragraph}>
-          My goal became clear. While there might not have been a glaring problem to fix, there was an opportunity to improve. A desirable hotel booking site would follow industry standards but do so with complete transparency, providing users with all the information they need at every step.
+          This was my “aha” moment. The goal wasn’t to reinvent hotel booking, but to capitalize on an opportunity to remove ambiguity. A desirable experience would follow conventions but do so with transparency at every step, helping users feel informed and confident in their decisions.
+        </Typography>
+        <Typography variant="body1" sx={globalStyles.paragraph}>
+            The key areas of transparency I needed to focus on fell into four main categories: hotel quality and amenities, hotel location and its relation to places of interest, pricing and rate comparisons, and account and membership programs.
         </Typography>
       </Grid>
+      {isDesktopOrLaptop &&
+      <Grid item xs={12}>
+        <Box sx={globalStyles.graphic}>
+          <Image
+            src={OpportunitiesGraphic}
+            width="100%"
+            alt="An image of a list of design opportunites"
+          />
+        </Box>
+      </Grid>}
 
-      <Box>{isDesktopOrLaptop ? <AffinityGroupList /> : <AffinityGroupListMobile />}</Box>
-
-      <Grid item xs={10} sx={{ mt: 5 }}>
-        <Typography variant="h3" sx={globalStyles.heading3}>
-          Opportunities
-        </Typography>
-        <Typography variant="body1" sx={globalStyles.paragraph}>
-          The key areas of transparency I needed to focus on fell into four main categories: hotel quality and amenities, hotel location and its relation to places of interest, pricing and rate comparisons, and account and membership programs.
-        </Typography>
-      </Grid>
-
-      <OpportunitySection
+      {!isDesktopOrLaptop && <OpportunitySection
         title="Hotel Quality & Amenities"
         graphicOther={CategoryHotelOpportunityGraphic}
         graphicOpportunity={CategoryHotelGraphic}
@@ -219,9 +223,9 @@ export default function Analysis() {
           "Clear amenity icons, labels, and descriptions",
         ]}
         isDesktop={isDesktopOrLaptop}
-      />
+      />}
 
-      <OpportunitySection
+      {!isDesktopOrLaptop && <OpportunitySection
         title="Hotel Location & Relation to Places of Interest"
         graphicOther={CategoryLocationOpportunityGraphic}
         graphicOpportunity={CategoryLocationGraphic}
@@ -235,9 +239,9 @@ export default function Analysis() {
           "Emphasizes when close to airports or points of interest",
         ]}
         isDesktop={isDesktopOrLaptop}
-      />
+      />}
 
-      <OpportunitySection
+      {!isDesktopOrLaptop && <OpportunitySection
         title="Pricing & Rate Comparisons"
         graphicOther={CategoryPricingOpportunityGraphic}
         graphicOpportunity={CategoryPricingGraphic}
@@ -252,9 +256,9 @@ export default function Analysis() {
           "Pricing breakdowns prominently displayed",
         ]}
         isDesktop={isDesktopOrLaptop}
-      />
+      />}
 
-      <OpportunitySection
+      {!isDesktopOrLaptop && <OpportunitySection
         title="Account & Membership Programs"
         graphicOther={CategoryAccountOpportunityGraphic}
         graphicOpportunity={CategoryAccountGraphic}
@@ -269,7 +273,9 @@ export default function Analysis() {
           "Plenty of delineation between member and non-member options",
         ]}
         isDesktop={isDesktopOrLaptop}
-      />
+      />}
+
+
     </Grid>
   );
 }
