@@ -6,42 +6,43 @@ export default function LessonsLearned() {
     <Grid container justifyItems="center" justifyContent="center">
         <Grid item xs={10} sx={{ marginBottom: 10 }}>
             <Typography variant='h1' sx={globalStyles.heading1}>A Reflection on the Experience</Typography>
-            <Typography variant='h2' sx={globalStyles.heading2}>Lessons Learned</Typography>
-
-                      <Typography variant='h3' sx={globalStyles.heading3}>Stakeholders and the Business</Typography>
-                      <Typography variant="body1" sx={globalStyles.paragraph}>
-                        In a real-world project, the work wouldn’t end here. After finalizing the annotated screen designs and prototype, the next step would be to gather all the key stakeholders, including other designers, product managers, copywriters, legal, developers, and anyone else involved in the product and share the designs. Ideally, there would be regular touch points throughout the design process, and this would be one of many checks to ensure alignment, clarify interactions, and address questions.
-                      </Typography>
-                      <Typography variant="body1" sx={globalStyles.paragraph}>
-                        Adjustments and compromises would be negotiated to balance technical limitations with key functionality. Creativity and problem-solving continue beyond delivery, with post-launch research, testing, and iterations driving ongoing improvements.
-                      </Typography>
+            <Typography variant='h2' sx={globalStyles.heading2}>Takeaways</Typography>
             
             <Typography variant='h3' sx={globalStyles.heading3}>
-                Technical skills through the UX lifecycle
+                Growing as a Designer through Practice and Process
             </Typography>
             <Typography variant="body1" sx={globalStyles.paragraph}>
-                Throughout this project, I practiced a variety of skills and tools essential for effective user research, analysis, and design. I wrote and administered a survey with both qualitative and quantitative questions, conducted benchmark research on several products to establish baselines, and led usability tests, recording and taking notes using Zoom and screen mirroring technology.
+                Leading this project end to end strengthened my confidence in navigating ambiguity, synthesizing research, and turning insights into design decisions. Even as a school project, it gave me a realistic sense of what it takes to own a UX process. I practiced a variety of skills and tools essential for effective user research, analysis, and design. 
             </Typography>
             <Typography variant="body1" sx={globalStyles.paragraph}>
-                I analyzed feedback by whiteboarding an affinity diagram, created customer personas, and mapped sentiments and journeys using Miro. I designed wireframes and web screens in low, medium, and high fidelity using paper, pencils, Miro, Photoshop, and Figma, ultimately culminating in a working, annotated prototype in Figma.
+                I wrote and administered a qual/quant survey, conducted benchmark research to establish baselines, and led usability tests. I effectively analyzed feedback by whiteboarding an affinity diagram and mapped sentiments and journeys. I designed wireframes and web screens, ultimately culminating in a working, annotated Figma prototype.
             </Typography>
+
             <Typography variant='h3' sx={globalStyles.heading3}>
-                The importance of user research and expecting the unexpected
+                Letting Research Lead
             </Typography>
             <Typography variant="body1" sx={globalStyles.paragraph}>
-                Research revealed users’ frustrations and opportunities, guiding my “eureka moment” for design focus.
+                This project reinforced how critical user research is to meaningful design. My initial assumptions about there being little need for “just another hotel booking site” shifted once I started listening to real users. Observing frustration firsthand, especially during usability testing, deepened my empathy and clarified just where clarity was breaking down.
+            </Typography>
+
+            <Typography variant='h3' sx={globalStyles.heading3}>Iteration, Stakeholders and the Bottom-line</Typography>
+            <Typography variant="body1" sx={globalStyles.paragraph}>
+              In a real product environment, this work would continue through stakeholder reviews, technical discussions, and iteration. Designers don’t work in isolation. Regular touch points early and often with product managers, engineering, legal, and marketing are essential to ensuring alignment.
             </Typography>
             <Typography variant="body1" sx={globalStyles.paragraph}>
-                I had to stay flexible and let the research guide me, setting aside my own opinions and disproving assumptions along the way. Watching users struggle, while difficult, was crucial for building empathy and making key discoveries. Those discoveries were the core of the project. I learned that without listening to and understanding user sentiment, designing functional software that truly solves a problem for both the business and the customer isn’t possible.
+              Adjustments and compromises would be negotiated to balance technical limitations with key functionality. Creativity and problem-solving continue beyond delivery, with post-launch research, testing, and iterations driving ongoing improvements.
             </Typography>
+            
+          
+          
             <Typography variant='h3' sx={globalStyles.heading3}>
                 Final thoughts
             </Typography>
             <Typography variant="body1" sx={globalStyles.paragraph}>
-                Thank you for reading about my journey in this case study. I'm incredibly grateful for the opportunity and experience. It turned out to be even more interesting and enjoyable than I expected, and I learned so much. My UX journey doesn’t end here. This field means so much to me and is crucial to technology. I have a lot to learn, and I’m just getting started.
+                Menagerie Hotels gave me hands-on experience leading a full UX process, from discovery through delivery. It challenged my assumptions, sharpened my research skills, and reinforced the importance of designing with empathy and clarity.
             </Typography>
             <Typography variant="body1" sx={globalStyles.paragraph}>
-                If you'd like to learn more about me, check out my <Link href="/">about me</Link> page.
+                I’m excited to continue growing as a UX designer and applying these lessons to real-world products.
             </Typography>
         </Grid>
       </Grid>

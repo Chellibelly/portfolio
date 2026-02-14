@@ -123,7 +123,7 @@ const HotelsContainer = () => {
                   </Grid>
                   <Grid item xs={7} sx={{ marginTop: "10px" }}>
                     <Typography sx={{ fontSize: "24px", fontFamily: "Montserrat", color: activeSection === 'conclusion_section' ? blueGrey[900] : "white" }}>
-                    Lessons
+                      Takeaways
                     </Typography>
                   </Grid>
                 </Grid></ListItemText>

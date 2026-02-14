@@ -3,9 +3,7 @@ import { Typography, Box, Grid, Button } from '@mui/material';
 import Image from 'next/image';
 import FlowDiagramGraphic from '../../../public/Flow_Diagram.png';
 import SketchesGraphic from '../../../public/Sketches.png';
-import ProcessDesignGraphic from '../../../public/Process_Design.png';
 
-import ProcessSolutionGraphic from '../../../public/Process_Solution.png';
 import DesignHotelInfo from '../../../public/Design_Hotel_Info.png';
 import DesignPricingInfo from '../../../public/Design_Pricing_Info.png';
 import DesignAccountInfo from '../../../public/Design_Account_Info.png';
@@ -34,20 +32,20 @@ export default function Design() {
   return (
     <Grid container justifyItems="center" justifyContent="center">
       <Grid item xs={10}>
-        <Typography variant='h1' sx={globalStyles.heading1}>Paper, Pencils, & Pixels</Typography>
+        <Typography variant='h1' sx={globalStyles.heading1}>From Insights to Interfaces</Typography>
         <Typography variant='h2' sx={globalStyles.heading2}>The Design</Typography>
       </Grid>
 
       <Grid item xs={10}>
         <Typography variant='body1' sx={globalStyles.paragraph}>
-          With analysis complete, I translated the customer journey map into the the website’s screens. Each screen had to serve a clear purpose and allow interactions which would support that purpose. My focus was on the goals, actions, intentions, and expected results of each screen.
+          With analysis complete, I translated the customer journey into a structured set of screens, each with a clear purpose and set of user actions. My focus was on designing predictable flows that reduced cognitive load and supported confident decision-making.
         </Typography>
       </Grid>
 
       <Grid item xs={10} sx={{ marginBottom: 5 }}>
         <Typography variant='h3' sx={globalStyles.heading3}>Information Architecture</Typography>
         <Typography variant='body1' sx={globalStyles.paragraph}>
-          I set up a Miro board and began building the website's information architecture. I added screens as rectangles, one by one, and filled each with bullet points outlining the necessary interactions. I used my customer journey map and affinity diagram as guides throughout the process.
+          I mapped the booking journey in Miro, defining each screen’s controls, interactions, and responses to user actions. Using the journey map and affinity diagram as guides, I built an information architecture that followed the defined user journey and prioritized conventions, usability, purpose, and clarity. 
         </Typography>
       </Grid>
 
@@ -91,7 +89,7 @@ export default function Design() {
       <Grid item xs={10} sx={{ mb: 5 }}>
         <Typography variant='h3' sx={globalStyles.heading3}>Sketching the Screens</Typography>
         <Typography variant='body1' sx={globalStyles.paragraph}>
-          Next, I translated interaction notes into realistic screen states through hand-drawn sketches. I chose controls and placements based on conventions and usability insights, keeping the focus on the happy path. Once refined, I uploaded the sketches to a Miro board and added annotations to explain interactions for developers and stakeholders. This process reinforced an important lesson. Aesthetics don’t make a design good. Functionality and clarity do.
+          I sketched key screen states by hand, choosing layouts and controls based on my research insights. My goal was to design for the happy path while ensuring critical information stayed visible throughout the flow. This stage reinforced an important lesson: aesthetics alone don’t make a design good. Clarity and function do.
         </Typography>
       </Grid>
 
@@ -133,9 +131,9 @@ export default function Design() {
       </Grid>
 
         <Grid item xs={10}>
-          <Typography variant='h3' sx={globalStyles.heading3}>High-Fidelity Screens</Typography>
+          <Typography variant='h3' sx={globalStyles.heading3}>High-Fidelity UI</Typography>
           <Typography variant="body1" sx={globalStyles.paragraph}>
-            I took my sketched screens and turned them into a high-fidelity digital prototype in Figma. This allowed me to simulate a working hotel booking workflow, reducing ambiguity, saving time, and minimizing risk. The prototype focused on the major opportunities I uncovered: full transparency around hotel quality and amenities, location, pricing, rate comparisons, and account/membership features.
+            I translated my sketches into high-fidelity screens in Figma, focusing on clarity, consistency, transparency, and reducing user uncertainty at every step of the booking flow. This is where research insights became concrete UI decisions, including clear pricing summaries, labeled amenities, visible ratings, intuitive date selection, and straightforward membership options. I annotated the designs to document interaction logic and explain how key research findings shaped layout, content hierarchy, and controls.
           </Typography>
         </Grid>
         <Grid item xs={12}>
@@ -169,8 +167,8 @@ export default function Design() {
           </Box>
         </Grid>
         <Grid item xs={10}>
-          <Typography variant='h3' sx={globalStyles.heading3}>The Prototype</Typography>
-          <Typography variant="body1" sx={globalStyles.paragraph}>After iterating through Figma’s components and refining interactions, I had a complete set of annotated screens and a working prototype covering the full booking flow—from homepage to checkout.</Typography>
+          <Typography variant='h3' sx={globalStyles.heading3}>The Interactive Prototype</Typography>
+          <Typography variant="body1" sx={globalStyles.paragraph}>After iterating through Figma’s components and refining interactions, I built a complete prototype simulating the end-to-end booking experience, from homepage through checkout. Building the prototype allowed me to test interaction patterns, validate screen flow, and experience the product as a real user would. This proved to be critial in surfacing small gaps and and necessary refinements before finalizing the design.</Typography>
         </Grid>
         <Grid item xs={12}>
         <Box 

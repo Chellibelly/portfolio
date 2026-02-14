@@ -71,7 +71,7 @@ const LifeManagementAppMobile = () => {
       { id: "research_section", label: "Part 2/5 - Research" },
       { id: "analysis_section", label: "Part 3/5 - Analysis" },
       { id: "design_section", label: "Part 4/5 - Design" },
-      { id: "lessons_section", label: "Lessons Learned" },
+      { id: "lessons_section", label: "Takeaways" },
     ];
   
     const handleIntersection = (entries) => {

@@ -20,6 +20,7 @@ const Introduction = () => {
           My first project in UX was exciting, challenging, and enlightening. I was the sole designer and researcher, responsible for creating a working prototype focused entirely on the hotel booking process.
           With no baseline metrics, I defined a simple but meaningful goal to guide the work: <i><b>to create a desirable product.</b></i>
         </Typography>
+        <Typography variant="body1" sx={globalStyles.paragraph}>Before we move on to my research strategy, I should mention that my initial "desireable product" goal would later shift to a more meaningful goal when research revealed to me that my initial assumption that there may not be a need for "just another hotel booking site" was completely wrong. We'll get to that.</Typography>
       </Grid>
       <Grid item xs={12}>
         <Box sx={globalStyles.graphic}>
