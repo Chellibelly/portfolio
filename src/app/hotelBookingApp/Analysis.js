@@ -144,7 +144,7 @@ export default function Analysis() {
           The Analysis
         </Typography>
         <Typography variant="body1" sx={globalStyles.paragraph}>
-          At this stage, I had piles of research notes. In an effort to make sense of all of the research, I started with sticky notes and a whiteboard. I wanted to allow natural patterns and insights to emerge and the most important areas of focus to materialize, so I developed an affinity diagram.
+          At this stage, I had piles of research notes. In an effort to make sense of all of the research, I started with sticky notes and a whiteboard. I wanted to allow <b>natural patterns</b> and insights to emerge and the most important <b>areas of focus</b> to materialize, so I developed an <b>affinity diagram</b>.
         </Typography>
       </Grid>
 
@@ -163,7 +163,7 @@ export default function Analysis() {
           Affinity Diagram Insights
         </Typography>
         <Typography variant="body1" sx={globalStyles.paragraph}>
-          When the sticky notes were all placed and grouped, nine core areas of importance had surfaced: hotel information (location, amenities, and reviews), room selection, date selection, pricing, accounts/memberhips, filtering, extras/add-ons, look/feel, and navigation.
+          When the sticky notes were all placed and grouped, <b>nine core areas of importance</b> had surfaced: hotel information (location, amenities, and reviews), room selection, date selection, pricing, accounts/memberships, filtering, extras/add-ons, look/feel, and navigation.
         </Typography>
       </Grid>
 
@@ -174,7 +174,7 @@ export default function Analysis() {
           User Journey
         </Typography>
         <Typography variant="body1" sx={globalStyles.paragraph}>
-          I then mapped the eight key stages of the booking journey, from destination search to checkout, and layered in user goals, behaviors, pain points, mental models, and sentiments to create a customer journey map. This clarified the site’s information architecture and helped define each screen’s purpose and opportunities.
+          I then mapped the <b>eight key stages</b> of the booking journey, from destination search to checkout, and layered in user goals, behaviors, pain points, mental models, and sentiments to create a <b>customer journey map</b>. This clarified the site’s information architecture and helped define each screen’s purpose and opportunities.
         </Typography>
       </Grid>
 
@@ -185,13 +185,13 @@ export default function Analysis() {
 
       <Grid item xs={10} sx={{ mb: 5, mt: 5 }}>
         <Typography variant="h3" sx={globalStyles.heading3}>
-          My Eureka Moment: Key Insights and Opportunies
+          The <i>"Why"</i>: Key Insights and Opportunities
         </Typography>
         <Typography variant="body1" sx={globalStyles.paragraph}>
-          Synthesizing the affinity diagram and journey map revealed a glaringly consistent theme highlighted by everyone who I interviewed and surveyed. Users were missing critical information throughout the booking flow. Many sites assumed prior knowledge, leaving people unsure about location, amenities, pricing, and what was actually included.
+          Synthesizing the affinity diagram and journey map revealed the <i>"why"</i> that I had been looking for through a clear, consistent theme. Users were <b>missing critical information</b> throughout the booking flow. Many sites assumed prior knowledge, leaving people unsure about location, amenities, pricing, and what was actually included. What followed was <b>frustration and often loss of customer loyalty</b>.
         </Typography>
         <Typography variant="body1" sx={globalStyles.paragraph}>
-          This was my “aha” moment. The goal wasn’t to reinvent hotel booking, but to capitalize on an opportunity to remove ambiguity. A desirable experience would follow conventions but do so with transparency at every step, helping users feel informed and confident in their decisions.
+          The goal wasn’t to reinvent hotel booking, but to capitalize on an <b>opportunity to remove ambiguity</b>. A desirable experience would follow conventions but do so with transparency at every step, helping users feel informed and confident in their decisions.
         </Typography>
         <Typography variant="body1" sx={globalStyles.paragraph}>
             The key areas of transparency I needed to focus on fell into four main categories: hotel quality and amenities, hotel location and its relation to places of interest, pricing and rate comparisons, and account and membership programs.

@@ -9,40 +9,33 @@ export default function LessonsLearned() {
             <Typography variant='h2' sx={globalStyles.heading2}>Takeaways</Typography>
             
             <Typography variant='h3' sx={globalStyles.heading3}>
-                Growing as a Designer through Practice and Process
+                Growth through Process
             </Typography>
             <Typography variant="body1" sx={globalStyles.paragraph}>
-                Leading this project end to end strengthened my confidence in navigating ambiguity, synthesizing research, and turning insights into design decisions. Even as a school project, it gave me a realistic sense of what it takes to own a UX process. I practiced a variety of skills and tools essential for effective user research, analysis, and design. 
+                Leading this project end-to-end strengthened my ability to <b>navigate ambiguity</b>, synthesize research, and <b>translate insights into effective design solutions</b>. From surveys and competitive research to usability testing and affinity mapping, I owned the full UX process, resulting in a working, annotated prototype representing a full user journey.
             </Typography>
-            <Typography variant="body1" sx={globalStyles.paragraph}>
-                I wrote and administered a qual/quant survey, conducted benchmark research to establish baselines, and led usability tests. I effectively analyzed feedback by whiteboarding an affinity diagram and mapped sentiments and journeys. I designed wireframes and web screens, ultimately culminating in a working, annotated Figma prototype.
-            </Typography>
-
             <Typography variant='h3' sx={globalStyles.heading3}>
                 Letting Research Lead
             </Typography>
             <Typography variant="body1" sx={globalStyles.paragraph}>
-                This project reinforced how critical user research is to meaningful design. My initial assumptions about there being little need for “just another hotel booking site” shifted once I started listening to real users. Observing frustration firsthand, especially during usability testing, deepened my empathy and clarified just where clarity was breaking down.
+                User research drove the project’s direction. Initial assumptions about there being little need for <i>“just another hotel booking site”</i> were quickly challenged once I listened to and <b>observed users</b> interact with real platforms. Watching frustration firsthand clarified pain points, showed me where the clarity was breaking down, and <b>surfaced opportunities</b> that would have been invisible without research-led design.
             </Typography>
 
-            <Typography variant='h3' sx={globalStyles.heading3}>Iteration, Stakeholders and the Bottom-line</Typography>
+            <Typography variant='h3' sx={globalStyles.heading3}>Design in Context</Typography>
             <Typography variant="body1" sx={globalStyles.paragraph}>
-              In a real product environment, this work would continue through stakeholder reviews, technical discussions, and iteration. Designers don’t work in isolation. Regular touch points early and often with product managers, engineering, legal, and marketing are essential to ensuring alignment.
+              In a real product environment, this work would continue through stakeholder reviews, technical discussions, and <b>iteration</b>. Designers don’t work in isolation. Regular touch points early and often with product managers, engineering, legal, and marketing are essential to <b>ensuring alignment</b>.
             </Typography>
             <Typography variant="body1" sx={globalStyles.paragraph}>
-              Adjustments and compromises would be negotiated to balance technical limitations with key functionality. Creativity and problem-solving continue beyond delivery, with post-launch research, testing, and iterations driving ongoing improvements.
+              Adjustments and compromises would be negotiated to <b>balance technical limitations</b> with key functionality. Creativity and problem-solving continue beyond delivery, with post-launch research, testing, and iterations <b>driving ongoing improvements</b>.
             </Typography>
             
           
           
             <Typography variant='h3' sx={globalStyles.heading3}>
-                Final thoughts
+                Looking Forward
             </Typography>
             <Typography variant="body1" sx={globalStyles.paragraph}>
-                Menagerie Hotels gave me hands-on experience leading a full UX process, from discovery through delivery. It challenged my assumptions, sharpened my research skills, and reinforced the importance of designing with empathy and clarity.
-            </Typography>
-            <Typography variant="body1" sx={globalStyles.paragraph}>
-                I’m excited to continue growing as a UX designer and applying these lessons to real-world products.
+                Menagerie Hotels reinforced that meaningful design stems from understanding users, validating assumptions, and making informed decisions. The project sharpened my research and design skills, and strengthened my confidence in leading UX initiatives from problem identification to prototype delivery. I’m eager to apply these lessons to real-world challenges and continue refining my practice.
             </Typography>
         </Grid>
       </Grid>
