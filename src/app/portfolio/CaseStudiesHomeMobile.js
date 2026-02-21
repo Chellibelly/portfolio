@@ -19,7 +19,7 @@ const CaseStudiesHomeMobile = () => {
   };
 
   const cardStyleNavigate = {
-  height: 500,
+  height: 420,
   width: 320,
   m: 2,
   transition: 'transform 0.3s, box-shadow 0.3s',
@@ -33,7 +33,8 @@ const CaseStudiesHomeMobile = () => {
   return (
     <Box>
       <HeaderMobile/>
-      <Typography sx={{...globalStyles.heading3, mt:10, textAlign: "center" }}>Explore selected UX case studies demonstrating my design and problem-solving process and impact!</Typography>
+      <Box sx={{ height: 80 }}/>
+      <Typography sx={{...globalStyles.heading3, textAlign: "center", maxWidth: "80%", margin: "0 auto", marginBottom: 5 }}>Explore selected UX case studies demonstrating my design and problem-solving process and impact!</Typography>
       <PasswordModal open={accessModalOpen} handleClose={() => setAccessModalOpen(false)}/>
       <Grid container direction="row" justifyContent="center" alignItems="center" sx={{ mt: 2 }}>
         <Link href="/hotelBookingApp" sx={{ textDecoration: 'none'}}>
@@ -49,29 +50,9 @@ const CaseStudiesHomeMobile = () => {
               </Grid>
               <Grid item sx={{ p: 2 }}>
                 <h1 style={{ ...globalStyles.heading4, textAlign: "center", fontWeight: 600 }}>Freebird Hotels</h1>
-                <h2 style={{ ...globalStyles.heading6, textAlign: "center", marginTop: -10, fontStyle: "italic" }}>End-to-End UX Case Study</h2>
-                <p>A comprehensive UX case study completed as part of my UX Design Institute diploma, demonstrating research, synthesis, ideation, wireframing, and high-fidelity design across a full design lifecycle.</p>
+                <h2 style={{ ...globalStyles.heading6, textAlign: "center", marginTop: -10, fontStyle: "italic" }}>Fully detailed end-to-end case study demonstrating <b>design process</b> thinking</h2>
               </Grid>
             </Grid>           
-          </Paper>
-        </Link>
-        <Link href="/lifeManagementApp" sx={{ textDecoration: 'none'}}>
-          <Paper sx={cardStyleNavigate}>
-            <Grid container direction="column" justifyContent="center" alignItems="center">
-              <Grid item>
-                <Image
-                  src={LifeManagementHero}
-                  width={320}
-                  alt="Life Management App Hero"
-                  style={imageStyle}
-                />
-              </Grid>
-              <Grid item sx={{ p: 2 }}>
-                <h1 style={{ ...globalStyles.heading4, textAlign: "center", fontWeight: 600 }}>KorkBoard</h1>
-                <h2 style={{ ...globalStyles.heading6, textAlign: "center", marginTop: -10, fontStyle: "italic" }}>Problem-to-Solution UX Project</h2>
-                <p>A self-directed project exploring how qualitative research and usability insights translate into clear problem statements, design solutions, and practical UX deliverables.</p>
-              </Grid>
-            </Grid>   
           </Paper>
         </Link>
         <Link onClick={setAccessModalOpen} sx={{ textDecoration: 'none'}}>
@@ -87,14 +68,29 @@ const CaseStudiesHomeMobile = () => {
               </Grid>
               <Grid item sx={{ p: 2 }}>
                 <h1 style={{ ...globalStyles.heading4, textAlign: "center", fontWeight: 600 }}>Professional Highlights</h1>
-                <h2 style={{ ...globalStyles.heading6, textAlign: "center", marginTop: -10, fontStyle: "italic" }}>Selected Industry Work</h2>
-                <p>A collection of real-world product contributions showcasing collaboration with designers, engineers, and stakeholders to ship real user-facing features backed by research, alignment, and measurable outcomes.</p>
+                <h2 style={{ ...globalStyles.heading6, textAlign: "center", marginTop: -10, fontStyle: "italic" }}>Selected Industry Work demonstrating design of impactful <b>shipped real-world user-facing features</b> and cross-functional collaboration</h2>
               </Grid>
             </Grid>   
           </Paper>
         </Link>
-        
-       
+        <Link href="/lifeManagementApp" sx={{ textDecoration: 'none'}}>
+          <Paper sx={{ ...cardStyleNavigate, mb: 10 }}>
+            <Grid container direction="column" justifyContent="center" alignItems="center">
+              <Grid item>
+                <Image
+                  src={LifeManagementHero}
+                  width={320}
+                  alt="Life Management App Hero"
+                  style={imageStyle}
+                />
+              </Grid>
+              <Grid item sx={{ p: 2 }}>
+                <h1 style={{ ...globalStyles.heading4, textAlign: "center", fontWeight: 600 }}>KorkBoard</h1>
+                <h2 style={{ ...globalStyles.heading6, textAlign: "center", marginTop: -10, fontStyle: "italic" }}>Problem-to-Solution UX Project demonstrating <b>problem solving</b> proficiency</h2>
+              </Grid>
+            </Grid>   
+          </Paper>
+        </Link>
       </Grid>
     </Box>
   );

@@ -6,7 +6,7 @@ import CheckIcon from "@mui/icons-material/Check";
 import CloseIcon from "@mui/icons-material/Close";
 import AffinityGroupList from "./AffinityGroupsList";
 import AffinityGroupListMobile from "./AffinityGroupListMobile";
-import OpportunitiesGraphic from "../../../public/Desktop_opportunities_graphic.png";
+import OpportunitiesGraphic from "../../../public/Desktop_Opportunities_Graphic.png";
 import * as globalStyles from "../styles/globalStyleConsts";
 
 // Graphics

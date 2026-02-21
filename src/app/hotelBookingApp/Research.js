@@ -4,7 +4,7 @@ import * as globalStyles from '../styles/globalStyleConsts';
 
 import SurveyQuotes from "../../../public/Survey_Quotes_Combined.png";
 import Zoom3 from "../../../public/Zoom3.png";
-import UsabilityQuotes from "../../../public/usability_quotes_combined.png";
+import UsabilityQuotes from "../../../public/Usability_Quotes_Combined.png";
 import CompetitiveAnalysisGraphic from '../../../public/Benchmark_Insights.png';
 
 export default function Research() {
