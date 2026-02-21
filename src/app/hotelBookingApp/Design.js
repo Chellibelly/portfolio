@@ -4,7 +4,7 @@ import Image from 'next/image';
 import FlowDiagramGraphic from '../../../public/Flow_Diagram.png';
 import SketchesGraphic from '../../../public/Sketches.png';
 
-import DesignHotelInfo from '../../../public/Design_Hotel_Info.jpg';
+import DesignHotelInfo from '../../../public/Design_Hotel_Info_V2.jpg';
 import DesignPricingInfo from '../../../public/Design_Pricing_Info.jpg';
 import DesignAccountInfo from '../../../public/Design_Account_Info.jpg';
 import DesignLocationInfo from '../../../public/Design_Location_Info.jpg';

@@ -1,9 +1,9 @@
 import React, { forwardRef } from 'react';
 import { Typography, Box, Grid } from '@mui/material';
 import Image from 'next/image';
-import SurveyQuotes from "../../../public/Survey_Quotes_Combined_Mobile.png";
+import SurveyQuotes from "../../../public/Survey_Quotes_Combined_Mobile_V2.png";
 import Zoom3 from "../../../public/Zoom3.png";
-import UsabilityQuotes from "../../../public/Usability_Quotes_Combined_Mobile.png";
+import UsabilityQuotes from "../../../public/Usability_Quotes_Combined_Mobile_V2.png";
 import { blue, grey } from '@mui/material/colors';
 import * as globalStyles from '../styles/globalStyleConsts';
 
