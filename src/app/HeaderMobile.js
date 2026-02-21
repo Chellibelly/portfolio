@@ -30,7 +30,7 @@ export default function HeaderMobile() {
       pageName = "About Me";
     }
     if (pageName === "HotelBookingApp") {
-      pageName = "Menagerie Hotels";
+      pageName = "Freebird Hotels";
     }
     if (pageName === "Portfolio") {
       pageName = "Selected UX Work";

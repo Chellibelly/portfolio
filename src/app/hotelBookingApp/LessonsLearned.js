@@ -35,7 +35,7 @@ export default function LessonsLearned() {
                 Looking Forward
             </Typography>
             <Typography variant="body1" sx={globalStyles.paragraph}>
-                Menagerie Hotels reinforced that meaningful design stems from understanding users, validating assumptions, and making informed decisions. The project sharpened my research and design skills, and strengthened my confidence in leading UX initiatives from problem identification to prototype delivery. I’m eager to apply these lessons to real-world challenges and continue refining my practice.
+                Freebird Hotels reinforced that meaningful design stems from understanding users, validating assumptions, and making informed decisions. The project sharpened my research and design skills, and strengthened my confidence in leading UX initiatives from problem identification to prototype delivery. I’m eager to apply these lessons to real-world challenges and continue refining my practice.
             </Typography>
         </Grid>
       </Grid>

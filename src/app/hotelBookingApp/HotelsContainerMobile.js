@@ -166,7 +166,7 @@ const HotelsContainerMobile = () => {
           }}>
             <Box sx={{ padding: 1 }}>
               <Typography sx={{ textAlign: 'center', fontFamily: 'montserrat', fontSize: 26, fontWeight: 600 }}>
-                Menagerie Hotels<br />Mobile
+                Freebird Hotels<br />Mobile
               </Typography><br />
               <Typography variant="body1" sx={{
                 textAlign: 'center', fontFamily: 'montserrat', color: grey[900], fontWeight: 600, fontSize: 20, width: 320

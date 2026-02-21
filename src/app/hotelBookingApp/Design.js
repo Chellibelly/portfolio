@@ -4,11 +4,11 @@ import Image from 'next/image';
 import FlowDiagramGraphic from '../../../public/Flow_Diagram.png';
 import SketchesGraphic from '../../../public/Sketches.png';
 
-import DesignHotelInfo from '../../../public/Design_Hotel_Info.png';
-import DesignPricingInfo from '../../../public/Design_Pricing_Info.png';
-import DesignAccountInfo from '../../../public/Design_Account_Info.png';
-import DesignLocationInfo from '../../../public/Design_Location_Info.png';
-import DesignAdditional from '../../../public/Design_Additional_Catergories.png';
+import DesignHotelInfo from '../../../public/Design_Hotel_Info.jpg';
+import DesignPricingInfo from '../../../public/Design_Pricing_Info.jpg';
+import DesignAccountInfo from '../../../public/Design_Account_Info.jpg';
+import DesignLocationInfo from '../../../public/Design_Location_Info.jpg';
+import DesignAdditional from '../../../public/Design_Additional_Categories.jpg';
 
 import { useMediaQuery } from 'react-responsive';
 
@@ -161,6 +161,13 @@ export default function Design() {
           <Box sx={globalStyles.graphic}>
             <Image
               src={DesignAccountInfo}
+              width="100%"
+              alt="An image of screenshots taken from the website prototype"
+            />
+          </Box>
+          <Box sx={globalStyles.graphic}>
+            <Image
+              src={DesignAdditional}
               width="100%"
               alt="An image of screenshots taken from the website prototype"
             />

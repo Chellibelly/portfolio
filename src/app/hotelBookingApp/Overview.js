@@ -7,7 +7,7 @@ export default function Overview() {
     <Grid container justifyItems="center" justifyContent="center">
         <Grid item xs={10} sx={{ mt: 5 }}>
             <Typography variant='h1' sx={globalStyles.heading1}>Project Summary</Typography>
-            <Typography variant='h2' sx={globalStyles.heading2}>Menagerie Hotels TL;DR</Typography>
+            <Typography variant='h2' sx={globalStyles.heading2}>Freebird Hotels TL;DR</Typography>
 
             <Typography variant='h3' sx={globalStyles.heading3}>
                 Project Context & Scope

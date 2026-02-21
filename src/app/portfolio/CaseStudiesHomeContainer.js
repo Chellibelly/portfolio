@@ -3,7 +3,7 @@ import React, {  } from 'react';
 import Image from 'next/image';
 import { Box, Grid, Paper, Typography, Link, Button } from '@mui/material';
 import Header from '../Header';
-import MenagerieHotelsHero from '../../../public/Menagerie_Hotels_Hero.png';
+import FreebirdHotelsHero from '../../../public/Freebird_Hotels_Hero.png';
 import LifeManagementHero from '../../../public/Life_Management_Hero.png';
 import DesignTidbits from '../../../public/Design_Tidbits.png';
 import * as globalStyles from '../styles/globalStyleConsts';
@@ -57,14 +57,14 @@ const cardStyle = {
             <Grid container direction="column" justifyContent="center" alignItems="center">
               <Grid item>
                 <Image
-                  src={MenagerieHotelsHero}
+                  src={FreebirdHotelsHero}
                   width={380}
                   alt="Hotel Booking App Hero"
                   style={{ margin: "auto", borderTopLeftRadius: 4, borderTopRightRadius: 4 }}
                 />
               </Grid>
               <Grid item sx={{ p: 2 }}>
-                <h1 style={{ ...globalStyles.heading4, textAlign: "center", fontWeight: 600 }}>Menagerie Hotels</h1>
+                <h1 style={{ ...globalStyles.heading4, textAlign: "center", fontWeight: 600 }}>Freebird Hotels</h1>
                 <h2 style={{ ...globalStyles.heading6, textAlign: "center", marginTop: -10, fontStyle: "italic" }}>End-to-End UX Case Study</h2>
                 <p>A comprehensive UX case study completed as part of my UX Design Institute diploma, demonstrating research, synthesis, ideation, wireframing, and high-fidelity design across a full design lifecycle.</p>
               </Grid>
