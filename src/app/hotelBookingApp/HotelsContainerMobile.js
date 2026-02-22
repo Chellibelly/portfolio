@@ -5,18 +5,17 @@ import { Grid, Box, Typography, MenuItem, Select } from '@mui/material';
 import Introduction from './Introduction';
 import ResearchMobile from './ResearchMobile';
 import Design from './Design';
-import Conclusion from './Conclusion';
 import LessonsLearned from './LessonsLearned';
 import Analysis from './Analysis';
 import { grey } from '@mui/material/colors';
 import Image from 'next/image';
 import HotelBackground from "../../../public/WorkPhotography/Work_Photo_Mobile.jpg";
-import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 import DrawIcon from '@mui/icons-material/Draw';
 import LightbulbIcon from '@mui/icons-material/Lightbulb';
 import PsychologyAltIcon from '@mui/icons-material/PsychologyAlt';
 import StickyNote2SharpIcon from '@mui/icons-material/StickyNote2Sharp';
 import SchoolIcon from '@mui/icons-material/School';
+import Overview from './Overview';
 
 const HotelsContainerMobile = () => {
   const sectionRefs = useRef({});
@@ -178,6 +177,9 @@ const HotelsContainerMobile = () => {
         </div>
 
         <div>
+          <Box sx={{ mt: 5 }}>
+            <Overview/>
+          </Box>
           {/* Sections to render */}
           <section
             id="introduction_section"

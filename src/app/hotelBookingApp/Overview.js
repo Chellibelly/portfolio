@@ -13,7 +13,7 @@ export default function Overview() {
                 Project Context & Scope
             </Typography>
             <Typography variant="body1" sx={globalStyles.paragraph}>
-                I completed this project as part of the UX Design Institute diploma, leading a solo effort to design a full hotel booking experience, from research through a working, high-fidelity prototype.
+                I completed this project as part of the UX Design Institute diploma program, leading a solo effort to design a full hotel booking experience, from research through a working, high-fidelity prototype.
             </Typography>
             
             <Typography variant='h3' sx={globalStyles.heading3}>
@@ -34,7 +34,7 @@ export default function Overview() {
                 Outcome
             </Typography>
             <Typography variant="body1" sx={globalStyles.paragraph}>
-              I delivered a fully annotated Figma prototype covering the end-to-end booking flow, with clear pricing summaries, labeled amenities, intuitive date selection, and straightforward account and membership flows.
+              I delivered a fully annotated Figma prototype covering the end-to-end booking flow, with clear pricing summaries, full hotel descriptions, labeled amenities, intuitive date selection, and straightforward account and membership flows.
             </Typography>
            
             <Typography variant='h3' sx={globalStyles.heading3}>

@@ -18,19 +18,9 @@ export default function LessonsLearned() {
                 Letting Research Lead
             </Typography>
             <Typography variant="body1" sx={globalStyles.paragraph}>
-                User research drove the project’s direction. Initial assumptions about there being little need for <i>“just another hotel booking site”</i> were quickly challenged once I listened to and <b>observed users</b> interact with real platforms. Watching frustration firsthand clarified pain points, showed me where the clarity was breaking down, and <b>surfaced opportunities</b> that would have been invisible without research-led design.
+                User research drove the project’s direction. Initial assumptions about there being little need for <i>“just another hotel booking site”</i> were quickly challenged once I listened to and <b>observed users</b> interact with real platforms. Watching frustration firsthand clarified pain points, showed me where information was breaking down, and <b>surfaced opportunities</b> that would have been invisible without research-led design.
             </Typography>
 
-            <Typography variant='h3' sx={globalStyles.heading3}>Design in Context</Typography>
-            <Typography variant="body1" sx={globalStyles.paragraph}>
-              In a real product environment, this work would continue through stakeholder reviews, technical discussions, and <b>iteration</b>. Designers don’t work in isolation. Regular touch points early and often with product managers, engineering, legal, and marketing are essential to <b>ensuring alignment</b>.
-            </Typography>
-            <Typography variant="body1" sx={globalStyles.paragraph}>
-              Adjustments and compromises would be negotiated to <b>balance technical limitations</b> with key functionality. Creativity and problem-solving continue beyond delivery, with post-launch research, testing, and iterations <b>driving ongoing improvements</b>.
-            </Typography>
-            
-          
-          
             <Typography variant='h3' sx={globalStyles.heading3}>
                 Looking Forward
             </Typography>

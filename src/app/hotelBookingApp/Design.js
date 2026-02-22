@@ -89,7 +89,7 @@ export default function Design() {
       <Grid item xs={10} sx={{ mb: 5 }}>
         <Typography variant='h3' sx={globalStyles.heading3}>Sketching the Screens</Typography>
         <Typography variant='body1' sx={globalStyles.paragraph}>
-          I sketched key screen states by hand, choosing layouts and controls based on my research insights. My goal was to design for the happy path while ensuring critical information stayed visible throughout the flow. This stage reinforced an important lesson: aesthetics alone don’t make a design good. Usability and function do.
+          I sketched key screen states by hand. I chose layouts, controls, and content hierarchy based on my research insights. My goal was to focus on clarity and design for the happy path while ensuring key functionality.
         </Typography>
       </Grid>
 
@@ -133,7 +133,7 @@ export default function Design() {
         <Grid item xs={10}>
           <Typography variant='h3' sx={globalStyles.heading3}>High-Fidelity UI</Typography>
           <Typography variant="body1" sx={globalStyles.paragraph}>
-            I turned the sketches into high-fidelity screens in <b>Figma</b>, translating research insights into concrete UI decisions, including clear pricing summaries, labeled amenities, visible ratings, intuitive date selection, and straightforward membership options. Designs were annotated to document interaction logic and show how findings shaped layout, content hierarchy, and controls.
+            I turned the sketches into high-fidelity screens in <b>Figma</b>, translating the sketches into concrete UI decisions. Guided by my four aforementioned transparency categories, I made sure to include clear pricing summaries, labeled amenities, visible ratings, intuitive date selection, and straightforward membership options.
           </Typography>
         </Grid>
         <Grid item xs={12}>

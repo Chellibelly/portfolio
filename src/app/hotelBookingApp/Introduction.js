@@ -17,7 +17,7 @@ const Introduction = () => {
           Purpose
         </Typography>
         <Typography variant="body1" sx={globalStyles.paragraph}>
-          I completed this project as part of the UX Design Institute program. The assignment was to design a <b>full hotel booking experience, end to end</b>, demonstrating the complete design process.
+          I completed this project as part of the UX Design Institute diploma program. The assignment was to design a <b>full hotel booking experience, end to end</b>, demonstrating the complete design process.
         </Typography>
         <Typography variant="body1" sx={globalStyles.paragraph}>
           The brief defined the <i>“what,”</i> but not the <i>“why.”</i> In a saturated market dominated by established platforms, designing <i>another booking site</i> without a clearly defined <b>user problem</b> would not produce an impactful solution.

@@ -210,6 +210,15 @@ const DesignTidbitsContainer = () => {
             alt="Copy Hero Screenshots"
             style={{ margin: "auto", marginTop: 70, width: "80%" }}
           />
+          {false && <Box sx={padText}>
+            <Typography variant='h3' sx={globalStyles.heading3}>Design in Context</Typography>
+            <Typography variant="body1" sx={globalStyles.paragraph}>
+              In a real product environment, this work would continue through stakeholder reviews, technical discussions, and <b>iteration</b>. Designers don’t work in isolation. Regular touch points early and often with product managers, engineering, legal, and marketing are essential to <b>ensuring alignment</b>.
+            </Typography>
+            <Typography variant="body1" sx={globalStyles.paragraph}>
+              Adjustments and compromises would be negotiated to <b>balance technical limitations</b> with key functionality. Creativity and problem-solving continue beyond delivery, with post-launch research, testing, and iterations <b>driving ongoing improvements</b>.
+            </Typography>
+          </Box>}
           <Box sx={padText}>
             <Typography sx={globalStyles.heading2}>
               Thank you!
