@@ -38,6 +38,8 @@ import LMScreenRewardsInProgress from '../../../public/LM_Screens_Rewards_InProg
 import LMScreenRewardsInventory from '../../../public/LM_Screens_Rewards_Inventory.png';
 import LMScreenRewardsShop from '../../../public/LM_Screens_Rewards_Shop.png';
 
+import KorkBoardHero from '../../../public/KorkBoard_Hero.png';
+
 const LifeManagementAppContainer = () => {
   return (
     <div>
@@ -49,16 +51,42 @@ const LifeManagementAppContainer = () => {
           padding: 5,
           mt: 10
         }}
-      ><Typography variant='h1' sx={globalStyles.heading1}>A life full of lists, but no roadmap</Typography>
+      >
+        <Image
+          src={KorkBoardHero}
+          alt="KorkBoard Hero image"
+          layout="responsive"
+          style={{ objectFit: "cover", transition: "height 0.3s ease" }}
+        />
+        <Paper elevation={3} sx={{ p: 2, mt: 5, mb: 10 }}>
+          <Typography variant='h1' sx={globalStyles.heading1}>Project Summary</Typography>
+            <Typography variant='h2' sx={globalStyles.heading2}>
+                KorkBoard TLDR;
+            </Typography>
+            <Typography variant='body1' sx={globalStyles.paragraph}> 
+                <b>Challenge:</b> non-linear, lots of flexibility, ease on cognitive load maintains motivation and follow-through
+            </Typography>
+            <Typography variant='body1' sx={globalStyles.paragraph}> 
+                <b>Audience:</b> those with the need for more structure, anxiety jugglers, poor memory, unique thinking patterns, often neurodivergencies
+            </Typography>
+            <Typography variant='body1' sx={globalStyles.paragraph}> 
+                <b>Problem:</b> lack of an "everything tool" that supports both long term and short term recall and follow-through, cover everything without too much feature creep, Every feature should have a purpose and flow seamlessly with the rest of the app
+             </Typography>
+             <Typography variant='body1' sx={globalStyles.paragraph}> 
+                <b>Insights:</b> Issues with existing products, flexibility required. Colors, labels, calendars, notes. Follow-through depends on ease of use. Motivation can be found through personalized rewards, mimic tendency for notes to become tasks and goal. Long-term robust goal trackers are not common
+             </Typography>
+             <Typography variant='body1' sx={globalStyles.paragraph}> 
+                <b>Outcomes:</b> Flexible, highly visual app that marries note-taking, task lists, long-term goals together and motivates through rewards
+             </Typography>
+             <Typography variant='body1' sx={globalStyles.paragraph}> 
+                <b>Takeaways:</b> Pull lessons learned, homing in on the correct audience and designing for them results in a better product. [CHAT HAS IDEAS]
+             </Typography>
+        </Paper>
+      
+        <Typography variant='h1' sx={globalStyles.heading1}>A life full of lists, but no roadmap</Typography>
        <Typography variant='h2' sx={globalStyles.heading2}>
           Project Overview
       </Typography>
-      <Box sx={{ ml: -10 }}>
-        <QuoteContainer 
-          quote="I wish that one app stored all of the data/goals in one place — financial, budget, calendar, chores, etc."
-          author="Survey Respondent"
-        />
-      </Box>
         <Box
             container
             sx={{
