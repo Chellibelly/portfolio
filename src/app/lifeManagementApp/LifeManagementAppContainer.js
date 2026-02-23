@@ -63,23 +63,34 @@ const LifeManagementAppContainer = () => {
             <Typography variant='h2' sx={globalStyles.heading2}>
                 KorkBoard TLDR;
             </Typography>
-            <Typography variant='body1' sx={globalStyles.paragraph}> 
-                <b>Challenge:</b> non-linear, lots of flexibility, ease on cognitive load maintains motivation and follow-through
+             <Typography variant='body1' sx={globalStyles.paragraph}> 
+              <b>Context & Problem:</b> KorkBoard is a self-initiated exploration of how people might organize their lives within a single visual workspace. Most productivity tools specialize in either note-taking, short-term task management, goal tracking, or record-keeping. This separation fragments mental workflows and weakens momentum, leading to inconsistent follow-through.
             </Typography>
             <Typography variant='body1' sx={globalStyles.paragraph}> 
-                <b>Audience:</b> those with the need for more structure, anxiety jugglers, poor memory, unique thinking patterns, often neurodivergencies
+                <b>Challenge:</b> The primary challenge was balancing flexibility and structure within a unified productivity system. The design needed to support non-linear workflows, reduce cognitive load, and foster motivation all while resisting feature creep or overwhelming the user.
+            </Typography>
+            <Typography variant='body1' sx={globalStyles.paragraph}>
+              <b>Process:</b> Led end-to-end research and design, beginning with surveys, interviews, and competitive analysis. Insights informed the development of a flexible, non-linear information architecture and high-fidelity prototype, which was evaluated and refined through usability testing.
             </Typography>
             <Typography variant='body1' sx={globalStyles.paragraph}> 
-                <b>Problem:</b> lack of an "everything tool" that supports both long term and short term recall and follow-through, cover everything without too much feature creep, Every feature should have a purpose and flow seamlessly with the rest of the app
+                <b>Insights:</b>
+                <List sx={{ listStyleType: 'disc', ml: 5 }}>
+                  <ListItem sx={{ display: 'list-item' }}>
+                    Users often rely on a mix of apps, planners, notebooks, and spreadsheets because no single tool supports the full spectrum of thinking, planning, and execution. Many users express desire for a cohesive system.
+                  </ListItem>
+                  <ListItem sx={{ display: 'list-item' }}>
+                    Visual scaffolding (color cues, spatial organization, adaptable layouts) and flexibility are essential, but complexity in customization quickly becomes overwhelming, especially for neurodivergent users or those experiencing executive dysfunction or mental fatigue.
+                  </ListItem>
+                  <ListItem sx={{ display: 'list-item' }}>
+                    Motivation isn’t one size fits all, and tools should support many types of motivators. Effective systems must support multiple paths to reinforcement rather than a single incentive model.
+                  </ListItem>
+                </List>
              </Typography>
              <Typography variant='body1' sx={globalStyles.paragraph}> 
-                <b>Insights:</b> Issues with existing products, flexibility required. Colors, labels, calendars, notes. Follow-through depends on ease of use. Motivation can be found through personalized rewards, mimic tendency for notes to become tasks and goal. Long-term robust goal trackers are not common
+                <b>Outcomes:</b> Delivered a high-fidelity, interactive prototype that unifies note-taking, task management, and long-term planning within a single visual system. Usability testing validated the balance between flexibility and structure, with users responding positively to visual cues and reward-based motivation.
              </Typography>
              <Typography variant='body1' sx={globalStyles.paragraph}> 
-                <b>Outcomes:</b> Flexible, highly visual app that marries note-taking, task lists, long-term goals together and motivates through rewards
-             </Typography>
-             <Typography variant='body1' sx={globalStyles.paragraph}> 
-                <b>Takeaways:</b> Pull lessons learned, homing in on the correct audience and designing for them results in a better product. [CHAT HAS IDEAS]
+                <b>Takeaways:</b> Designing for a clearly defined audience produces stronger systems than designing for “everyone.” Supporting non-linear thinkers requires embedding structure subtly rather than imposing rigid frameworks. Most importantly, true flexibility depends on intentional constraint. Without guardrails, freedom quickly becomes chaos.
              </Typography>
         </Paper>
       
