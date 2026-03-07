@@ -39,7 +39,7 @@ const AboutContainer = () => {
                 I design digital experiences grounded in user research, usability testing, and iterative design. After many years of collaborating with UX teams as a software engineer, I formally transitioned into UX through a professional diploma program, where I led a full end-to-end case study using mixed research methods, synthesis, wireframing, high-fidelity design, and prototyping.
               </Typography>
               <Typography sx={{ ...globalStyles.heading5, marginTop: 4 }} variant="h5">
-                Today, I consistently apply both design and engineering perspectives to create impactful and scalable solutions. I've had a hand in designing and delivering numerous projects, both personally and professionally.
+                Today, I consistently apply both design and engineering perspectives to create impactful solutions. I've had a hand in designing and delivering numerous projects, both personally and professionally.
               </Typography>
             </Grid>
           </Grid>

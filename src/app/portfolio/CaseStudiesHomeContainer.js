@@ -84,7 +84,7 @@ const cardStyle = {
               </Grid>
               <Grid item sx={{ p: 2 }}>
                 <h1 style={{ ...globalStyles.heading4, textAlign: "center", fontWeight: 600 }}>Professional Highlights</h1>
-                <h2 style={{ ...globalStyles.heading6, textAlign: "center", marginTop: -10, fontStyle: "italic" }}>Selected Industry Work demonstrating design of impactful <b>shipped real-worlduser-facing features</b> and cross-functional collaboration</h2>
+                <h2 style={{ ...globalStyles.heading6, textAlign: "center", marginTop: -10, fontStyle: "italic" }}>Selected Industry Work demonstrating design of impactful <b>shipped real-world user-facing features</b> and cross-functional collaboration</h2>
               </Grid>    
             </Grid>   
           </Paper>

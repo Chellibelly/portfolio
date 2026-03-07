@@ -209,8 +209,8 @@ const LifeManagementAppMobile = () => {
             />
           </Box>
           <Typography variant='body1' sx={globalStyles.paragraph}> 
-              <br/><br/>As adults, our responsibilities stretch from everyday chores like laundry to big life priorities like writing a will. Our to-dos, goals, and milestones often live scattered across notebooks, sticky notes, apps, and calendar events.
-              <br/><br/>I wanted to create something more unified: a tool not just for daily productivity, but for managing life as a whole. My initial mission was to design a life management app that makes it easier to stay organized, manage deadlines, and track progress toward personal goals and milestones.
+              <br/><br/>Adult responsibilities range from everyday chores like laundry to long-term priorities like financial planning or healthcare management. Yet the information needed to manage these responsibilities is often scattered across notebooks, apps, calendars, and mental reminders.
+              <br/><br/>KorkBoard began as an exploration into how a single system might better support both day-to-day execution and long-term life management within one cohesive workspace, addressing issues of staying organized, managing deadlines, and tracking progress toward personal goals in one “life management app.”
           </Typography>
           <Box sx={globalStyles.graphic}>
             <Image
@@ -232,27 +232,20 @@ const LifeManagementAppMobile = () => {
             }}
           >
             <Typography sx={globalStyles.heading1}>
-              Finding the Disconnect
+              Understanding the Problem
             </Typography>
             <Typography variant="h2" sx={{ ...globalStyles.heading2 }}>
-              Research & Revelations
+              Research & Key Insights
             </Typography>    
-            <Typography variant="h3" sx={{ ...globalStyles.heading3 }}>Justifing My Idea with a Survey</Typography>
+            <Typography variant="h3" sx={{ ...globalStyles.heading3 }}>Testing the Initial Hypothesis</Typography>
             <Typography sx={{ ...globalStyles.paragraph }}>
-              I began my research with a survey to gather both quantitative and qualitative data. I put the survey together using Google Forms, and ended up with 15 respondents. I focused my survey questions on answering the dominating questions I had that led me to want to take on this project in the first place.
+              To understand how people manage daily responsibilities alongside long-term goals, I conducted a mixed-method survey exploring organization habits, tool usage, and productivity challenges. 
             </Typography>
             <Typography sx={{ ...globalStyles.paragraph }}>
-              How do people organize their daily lists and long-term goals?
-              What types of tasks do they consider most important to track?
-              What tools do people use to manage these things, and what do they like about them?
-              What frustrations or limitations do have they experienced with existing productivity tools?
-              What factors commonly derail them from staying productive?
+              Participants relied on a combination of apps, planners, calendars, and memory, with no single system supporting their full range of needs. Many expressed a desire for a unified workspace connecting planning, execution, and long-term tracking.
             </Typography>
             <Typography sx={{ ...globalStyles.paragraph }}>
-              Survey responses revealed a wealth of early insights. For one, most participants used a mix of apps, paper planners, and calendars. No single tool covered their full range of needs.
-              However, respondents expressed a desire for a holistic system to track all aspects of life in one place.
-              Customization and simplicity are top priorities. Tools like Google Calendar and Notes were praised for cross-device sync, but criticized for being clunky, limited in features, or unavailable offline. 
-              Finally, distractions and executive dysfunction, often linked to ADHD and depression, emerged as major obstacles, with many describing struggles with motivation, focus, and mental fatigue.
+              Customization and simplicity emerged as competing priorities. While tools like Google Calendar and Notes were valued for accessibility, users reported clunkiness, limited features, and difficulty maintaining momentum. Distraction, mental fatigue, and executive dysfunction frequently disrupted follow-through, with most users describing struggles with motivation and focus.
             </Typography>
             <Box sx={{ ...globalStyles.graphic, my: 4 }}>
               <Image
@@ -261,19 +254,15 @@ const LifeManagementAppMobile = () => {
                 alt={`Quantitative UX insight chart`}
               />
             </Box>
-            <Typography variant="h3" sx={{ ...globalStyles.heading3 }}>Learning About Recall through User Interviews</Typography>
+            <Typography variant="h3" sx={{ ...globalStyles.heading3 }}>Understanding Memory & Recall Through Interviews</Typography>
             <Typography sx={{ ...globalStyles.paragraph }}>
-              To explore how people record, recall, and locate important life information, I conducted short, semi-structured interviews with three participants with a predefined set of questions, followed with questions I came up with on the spot to find out more details about each of the participants initial answers. Each was asked a series of prompts designed to assess their memory, storage methods, and retrieval habits related to real-life milestone events.
+              To better understand how people store and retrieve important life information, I conducted interviews with three participants where I asked how they would locate real-world information such as medical appointments, lease dates, or maintenance records. 
             </Typography>
             <Typography sx={{ ...globalStyles.paragraph }}>
-              Rather than asking participants to directly answer personal questions, I asked them to reflect on whether they knew the answers, and how they would go about finding them if not.
-              I asked them how they would go about finding information about their last doctor's appointment, car maintenance, the date their last signed their lease, and their pet's most recent vet visit what it was for (e.g. what meds might have been prescribed?).
+              One participant relied heavily on digital search when details couldn’t be recalled, most commonly looking through emails, online portals, and calendar histories. Another explained that for her, recall was often tied to life events or emotional anchors. The third maintained physical records in a binder, but admitted retrieving information was often slow or cumbersome.
             </Typography>
             <Typography sx={{ ...globalStyles.paragraph }}>
-              The interviews revealed a lot. digital search is most people’s go-to when they can’t recall details. Email inboxes, digital portals (like Kaiser or a vet app), and calendar histories were common sources.
-              Memory often relies on associations and life events like job changes, moves, or emotional memories (“I remember because it was right before my first day at work”).
-              Paper record-keeping is common. One person kept a binder organized by topic, but had to flip through stacked documents to find what she was looking for. 
-              Finally, long-term memory was variable, with most feeling confident recalling general timeframes, but not specific dates.
+              Overall, participants felt confident remembering general timeframes but struggled with precise details, highlighting an opportunity for passive record-keeping and searchable history within a life-management system.
             </Typography>
             <Box sx={{ ...globalStyles.graphic, my: 4 }}>
              <Image
@@ -284,16 +273,13 @@ const LifeManagementAppMobile = () => {
             </Box>
             <Typography variant="h3" sx={{ ...globalStyles.heading3 }}>Exploring Existing Apps and Reviews</Typography>
             <Typography sx={{ ...globalStyles.paragraph }}>
-                To understand the landscape of existing tools and identify gaps that my life‑management app could fill, I analyzed twelve popular apps across six categories. I selected these apps based on recommendations in online productivity forums and mentions from my survey respondents. 
-                The categories of apps I looked into included calendar apps like Google Calendar, Spreadsheets like Excel and Google Sheets, Note-taking apps like Evernote and Notion, to-do lists like Todoist, Kanban boards like Trello and Asana, and gamified habit trackers like Habitica and Finch.
+               To understand how current productivity tools support life management, I analyzed twelve popular apps spanning calendars, note-taking tools, task managers, spreadsheets, and productivity apps, and habit trackers.
             </Typography>
             <Typography sx={{ ...globalStyles.paragraph }}>
-              From user voices, I identified multiple patterns. 
-              Most tools excel at one slice of life‑management (scheduling, notes, tasks, or motivation) but none seems to offer end‑to‑end coverage.
-              Reviewers repeatedly call for better integration between events, tasks, and milestones. They want “one source of truth,” color‑coding, and reliable reminders across contexts.
-              Power users love spreadsheets and note-taking apps for flexibility, but novices are overwhelmed; conversely, lightweight apps lack depth.
-              Gamification boosts engagement, but can alienate users who just want to get to meet their needs quickly.
-              Search and recall are pain points. Calendar and Notes apps promise search, but users still struggle with inconsistent notifications or buried lists.      
+              Reviews revealed that most tools excel at a single function (scheduling, notes, tasks, or motivation) but none support true end-to-end life management. Users repeatedly expressed a desire for one “source of truth” connecting events, tasks, and long-term goals.
+            </Typography>
+            <Typography sx={{ ...globalStyles.paragraph }}>
+              Powerful tools like spreadsheets and modular note systems offer depth but overwhelm casual users, while simpler apps lack structure for long-term planning. Gamification improves engagement for some users but alienates others seeking efficiency over play. Search and recall remained persistent pain points, with users struggling to locate important information. Color-coding, visuals, and a reliable reminder system were highlighted as important for most users.
             </Typography>
             <Box sx={{ ...globalStyles.graphic, my: 4 }}>
               <Image
@@ -316,19 +302,10 @@ const LifeManagementAppMobile = () => {
               Analysis & Insights
             </Typography>
             <Typography sx={{ ...globalStyles.paragraph }}>
-              After completing surveys, interviews, and competitive research, clear patterns began to emerge. While people use a variety of tools to manage their day-to-day responsibilities, very few had a cohesive system that supported both short-term task execution and long-term life management. Fragmentation, motivation challenges, memory reliance, and tool limitations consistently showed up across the data.
+              Across methods, recurring challenges emerged: fragmented workflows, reliance on memory for recall (often resulting in forgetfulness), motivation drop-off due to task overload or lack of rewarding/gamified systems, and tools that either lacked flexibility or introduced overwhelming complexity. Additionally, especially among users with ADHD or executive dysfunction, there was a strong desire for tools that support non-linear thinking and frequent distractions without sacrificing structure.
             </Typography>
             <Typography sx={{ ...globalStyles.paragraph }}>
-              I uncovered several key themes. 
-              Systems are fragmented. Users juggle between apps, paper, and memory—resulting in gaps, forgetfulness, and task overload.
-              Even when people do appreciate the strengths of individual tools, often they feel those tools lack critical features—like prioritization, record-keeping, or integration.
-              Many users rely heavily on memory, emotion, or inbox searches to recall important dates—suggesting a need for better passive record-keeping.
-              Especially among users with ADHD or executive dysfunction, there was a desire for systems that offer emotional support, structure, or gamified motivation.
-              People want tools that work the way their brain works—not rigid templates or overwhelming interfaces.
-            </Typography>
-
-            <Typography sx={{ ...globalStyles.paragraph }}>
-              These themes guided my next step: mapping out an affinity diagram to cluster similar needs, pain points, and desires. This helped me identify high-priority focus areas and begin shaping design directions rooted in real user struggles.
+              Affinity mapping helped translate these patterns into five core focus areas, shown below, which became the foundation for KorkBoard’s design approach.
             </Typography>
             <Box sx={{ ...globalStyles.graphic, my: 4 }}>
               <Image
@@ -344,55 +321,35 @@ const LifeManagementAppMobile = () => {
               Motivation & Focus
             </Typography>
             <Typography sx={{ ...globalStyles.paragraph }}>
-              Many users are drawn to features that make productivity feel more like play. 
-              Positive reinforcement, from check marks to streaks, keeps users engaged.
-              Some users seek affirmation, encouragement, or mental health-friendly experiences.
-              Several respondents noted challenges tied to ADHD, executive dysfunction, or memory.
-              Social media, interruptions, and unstructured time often derail progress.
+              Many users are drawn to features that make productivity feel more like play. Positive reinforcement and progress visibility keep users engaged during low-energy or distracted states and interruptions. 
             </Typography>
             <Typography sx={{ ...globalStyles.paragraph, mt: 3, mb: 0, fontWeight: "bold" }}>
               Access
             </Typography>
             <Typography sx={{ ...globalStyles.paragraph }}>
-              Log-in requirements and app switching are major sources of frustration.
-              Users want the ability to move, export, or back up their data with ease.
-              Some workflows require teamwork or shared lists, especially for families.
-              Tools that sync across desktop and mobile win user loyalty.
-              Popular apps often work best when connected with calendars, reminders, or other tools.
+              Log-in requirements and app switching are major sources of frustration. Seamless cross-device access, minimal login friction, and integrations reduce disruption.
             </Typography>
             <Typography sx={{ ...globalStyles.paragraph, mt: 3, mb: 0, fontWeight: "bold" }}>
               Task Creation & Management
             </Typography>
             <Typography sx={{ ...globalStyles.paragraph }}>
-              Users want to break larger goals into digestible pieces. 
-              Flexibility around deadlines and routines is key.
-              Time-based and contextual nudges help prevent forgetfulness.
-              Users like visual cues, percentages, or milestones.
-              Some people prefer tactile or familiar metaphors, like binders, calendars, or notebooks.
+              Users want to break larger goals into digestible pieces. Flexible scheduling and visual cues like percentages and milestones are key. Many users enjoy metaphors involving real-world trackers like calendars or notebooks.
             </Typography>
             <Typography sx={{ ...globalStyles.paragraph, mt: 3, mb: 0, fontWeight: "bold" }}>
               Long-Term Planning & Record Keeping
             </Typography>
             <Typography sx={{ ...globalStyles.paragraph }}>
-              Users need structure for mid- and long-term objectives.
-              People want a way to preserve what's been done—not just delete it.
-              Time-based and contextual nudges help prevent forgetfulness.
-              Some users want to write about their process, not just track it.
-              Visual formats help users make sense of time and progress.
+              Users need persistent histories that preserve progress and support recall beyond daily task completion. Time-based and contextual nudges help prevent forgetfulness. Visual formats help users make sense of time and progress.
             </Typography>
             <Typography sx={{ ...globalStyles.paragraph, mt: 3, mb: 0, fontWeight: "bold" }}>
               Organization & Prioritization
             </Typography>
             <Typography sx={{ ...globalStyles.paragraph }}>
-              Visual markers like colors, labels, tags, and icons help users make quick mental connections.
-              The ability to flag or rank importance was a recurring need.
-              Users crave clarity and structure in how tasks are grouped. Folders and hierarchy were mentioned as common needs.
-              Tools should make it easy to find and manipulate entries. Well-built features for searching, sorting, and filtering are appreciate and help users meet their goals.
-              One size doesn’t fit all; users want customization and flexible interfaces that match their mental models.
+              Searching, sorting, and filtering allow users to quickly locate tasks and records. Visual markers like colors, labels, and icons help users to categorize at a glance. The ability to group, tag, flag as important, and organize in folders promotes user-defined organization and information hierarchy, enabling them to align tools with their mental models. 
             </Typography>
             <Typography variant="h3" sx={{ ...globalStyles.heading3 }}>Understanding Common User Journeys</Typography>
             <Typography sx={{ ...globalStyles.paragraph, mt: 0, mb: 0 }}>
-              From the affinity diagram’s detailed themes, I pulled together the main user goals and actions. Laying these out as a user journey helps highlight what users expect, where they get stuck, and where we can make things better. The table below breaks down these key actions with user thoughts and ideas for features that can improve their experience.
+              These focus areas informed the definition of core user journeys, clarifying how users move between capturing ideas, planning work, executing tasks, and reflecting on progress.
              </Typography>
              <Box sx={{ ...globalStyles.graphic, my: 4 }}>
               <Image
@@ -414,11 +371,10 @@ const LifeManagementAppMobile = () => {
             <Typography variant="h2" sx={{ ...globalStyles.heading2, mt: 2 }}>
               Information architecture, wireframes, and high-fidelity screen design
             </Typography>
-            <Typography sx={{ ...globalStyles.paragraph }}>With a clearer understanding of where existing tools fall short, I began designing an experience that better supports real user needs — especially for those who struggle with motivation, mental load, or staying on top of daily tasks. I focused on reducing friction, surfacing what matters most, and creating moments of encouragement and clarity. The design process was guided by real user feedback, mental models, and emotional needs uncovered during research, resulting in a solution that feels supportive, flexible, and genuinely helpful.</Typography>
+            <Typography sx={{ ...globalStyles.paragraph }}>With a clearer understanding of where existing tools fall short, I began designing an experience that better supports real user needs, particularly for those struggling with motivation, mental load, and distractions. I focused on reducing friction, surfacing what matters most, and creating moments of encouragement and clarity. The result was a unified life-manager that feels supportive, flexible, and genuinely helpful for those who need it most.</Typography>
             <Typography variant="h3" sx={{ ...globalStyles.heading3 }}>Information Architecture</Typography>
-            <Typography sx={{ ...globalStyles.paragraph }}>To support users in staying focused, feeling in control, and making meaningful progress, I designed an information architecture that emphasizes quick access, clear categories, and flexible navigation. The structure needed to accommodate both short-term actions and long-term planning without overwhelming users — especially those struggling with distractions, executive dysfunction, or complex routines.</Typography>
-            <Typography sx={{ ...globalStyles.paragraph }}>I structured the app around five primary sections accessible via a persistent bottom navigation bar: Notes, Tasks, Goals, Rewards, and Settings. Each section serves a distinct purpose but is designed to flow seamlessly into the others—helping users move from brainstorming to execution to reflection, without losing momentum. The navigation is intentionally minimal to reduce cognitive overload while still offering the flexibility needed for varied workflows and attention styles.</Typography>
-            <Typography sx={{ ...globalStyles.paragraph }}>Below is the app’s information architecture, organized into five main sections. This structure directly supports users’ needs for focus, flexibility, and follow-through by clearly separating key flows and allowing easy navigation between capturing ideas, managing tasks, tracking goals, and earning rewards.</Typography>
+            <Typography sx={{ ...globalStyles.paragraph }}>To help users stay focused, feel in control, and make meaningful progress, I designed an information architecture emphasizing quick access, clear categories, and flexible navigation.</Typography>
+            <Typography sx={{ ...globalStyles.paragraph }}>Below is the app’s information architecture, organized into four primary sections, accessible via a persistent bottom navigation bar: Notes, Tasks, Goals, and Rewards. Each section serves a distinct purpose but flows seamlessly into the others, helping users move from capturing ideas, to creating tasks, to bigger picture goal management without losing momentum. The minimal navigation reduces cognitive overload while still supporting varied workflows and attention styles.</Typography>
             <Image
                 src={InformationArchitecture}
                 style={{ width: '100%', height: 'auto', marginTop: 20 }}
@@ -426,7 +382,10 @@ const LifeManagementAppMobile = () => {
               />
             <Typography variant="h3" sx={{ ...globalStyles.heading3 }}>Early Wireframes</Typography>
             <Typography sx={{ ...globalStyles.paragraph }}>
-              Before diving into visual design, I sketched out rough wireframes to test layout ideas, explore information hierarchy based on the information architecture, and ensure that the app’s navigation would stay simple and cognitively light for users who struggle with focus. These wireframes helped me spot early issues—like an overwhelming task layout and unclear affordances in goal-tracking, and gave me a foundation to test structure before committing to visual polish.
+              Before moving into visual design, I created rough wireframes to test layout ideas and explore the information hierarchy defined in the architecture. The goal was to ensure navigation remained simple and cognitively light.
+            </Typography>
+            <Typography sx={{ ...globalStyles.paragraph }}>
+              These early wireframes helped surface issues such as overwhelming task layouts and unclear affordances in goal tracking, providing a foundation to refine structure before committing to high-fidelity visuals.
             </Typography>
             <Image
                 src={LMWireframes}
@@ -435,12 +394,12 @@ const LifeManagementAppMobile = () => {
               />
             <Typography variant="h3" sx={{ ...globalStyles.heading3 }}>Section Features</Typography>
             <Typography sx={{ ...globalStyles.paragraph }}>
-              This design phase brought the insights from user research to life through carefully considered structures, interactions, and features. Rather than chasing novelty, I focused on solving real usability pain points — especially around organization, memory support, and task overwhelm. Each section of the app reflects user goals and habits uncovered through research, balancing flexibility with structure, and depth with simplicity. While the visual design supports clarity and calm, it’s the thoughtful functionality that turns this tool into something people can actually rely on.
+              This phase brought research insights to life through considered structures, interactions, and features. The focus was on addressing real usability pain points, especially around organization, memory support, and motivation. Each section of the app reflects user goals and habits uncovered in research, balancing flexibility with structure and depth with simplicity. The visual design supports clarity and calm, but the functionality ensures users can rely on the tool to get things done.
             </Typography>
             <Typography variant="h3" sx={{ ...globalStyles.heading4, mt: 5 }}>
               Tasks
             </Typography>
-            <Typography sx={globalStyles.paragraph}>The Tasks section of the app is what the user sees when they open it. It consists of three tabs: Today, Backlog, and Archive. Each tab has a specific purpose and features that support that purpose. Let's explore them.</Typography>       
+            <Typography sx={globalStyles.paragraph}>The Tasks section is the app’s home screen, designed to help users focus on what matters today while keeping longer-term tasks visible and manageable. It is divided into three tabs: Today, Backlog, and Archive, each serving a distinct purpose.</Typography>       
             <Typography sx={screenFeatureTitle}>
               Today tab
             </Typography>
