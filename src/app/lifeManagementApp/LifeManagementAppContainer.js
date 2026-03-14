@@ -63,17 +63,20 @@ const LifeManagementAppContainer = () => {
             <Typography variant='h2' sx={globalStyles.heading2}>
                 KorkBoard TL;DR
             </Typography>
+            <Typography variant='h3' sx={globalStyles.heading3}>Context & Problem</Typography>
              <Typography variant='body1' sx={globalStyles.paragraph}> 
-              <b>Context & Problem:</b> KorkBoard is a self-initiated exploration of how people might organize their lives within a single visual workspace. Most productivity tools specialize in either note-taking, short-term task management, goal tracking, or record-keeping. This separation fragments mental workflows and weakens momentum, leading to inconsistent follow-through.
+              KorkBoard is a self-initiated exploration of how people might organize their lives within a single visual workspace. Most productivity tools specialize in either note-taking, short-term task management, goal tracking, or record-keeping. This separation fragments mental workflows and weakens momentum, leading to inconsistent follow-through.
             </Typography>
+            <Typography variant='h3' sx={globalStyles.heading3}>Challenge</Typography>
             <Typography variant='body1' sx={globalStyles.paragraph}> 
-                <b>Challenge:</b> The primary challenge was balancing flexibility and structure within a unified productivity system. The design needed to support non-linear workflows, reduce cognitive load, and foster motivation all while resisting feature creep or overwhelming the user.
+              The primary challenge was balancing flexibility and structure within a unified productivity system. The design needed to support non-linear workflows, reduce cognitive load, and foster motivation all while resisting feature creep or overwhelming the user.
             </Typography>
+            <Typography variant='h3' sx={globalStyles.heading3}>Process</Typography>
             <Typography variant='body1' sx={globalStyles.paragraph}>
-              <b>Process:</b> Led end-to-end research and design, beginning with surveys, interviews, and competitive analysis. Insights informed the development of a flexible, non-linear information architecture and high-fidelity prototype, which was evaluated and refined through usability testing.
+              Led end-to-end research and design, beginning with surveys, interviews, and competitive analysis. Insights informed the development of a flexible, non-linear information architecture and high-fidelity prototype, which was evaluated and refined through usability testing.
             </Typography>
+            <Typography variant='h3' sx={globalStyles.heading3}>Insights</Typography>
             <Typography variant='body1' sx={globalStyles.paragraph}> 
-                <b>Insights:</b>
                 <List sx={{ listStyleType: 'disc', ml: 5 }}>
                   <ListItem sx={{ display: 'list-item' }}>
                     Users often rely on a mix of apps, planners, notebooks, and spreadsheets because no single tool supports the full spectrum of thinking, planning, and execution. Many users express desire for a cohesive system.
@@ -86,11 +89,13 @@ const LifeManagementAppContainer = () => {
                   </ListItem>
                 </List>
              </Typography>
+             <Typography variant='h3' sx={globalStyles.heading3}>Outcomes</Typography>
              <Typography variant='body1' sx={globalStyles.paragraph}> 
-                <b>Outcomes:</b> Delivered a high-fidelity, interactive prototype that unifies note-taking, task management, and long-term planning within a single visual system. Usability testing validated the balance between flexibility and structure, with users responding positively to visual cues and reward-based motivation.
+                Delivered a high-fidelity, interactive prototype that unifies note-taking, task management, and long-term planning within a single visual system. Usability testing validated the balance between flexibility and structure, with users responding positively to visual cues and reward-based motivation.
              </Typography>
+             <Typography variant='h3' sx={globalStyles.heading3}>Takeaways</Typography>
              <Typography variant='body1' sx={globalStyles.paragraph}> 
-                <b>Takeaways:</b> Designing for a clearly defined audience produces stronger systems than designing for “everyone.” Supporting non-linear thinkers requires embedding structure subtly rather than imposing rigid frameworks. Most importantly, true flexibility depends on intentional constraint. Without guardrails, freedom quickly becomes chaos.
+                Designing for a clearly defined audience produces stronger systems than designing for “everyone.” Supporting non-linear thinkers requires embedding structure subtly rather than imposing rigid frameworks. Most importantly, true flexibility depends on intentional constraint. Without guardrails, freedom quickly becomes chaos.
              </Typography>
         </Paper>
       
