@@ -1,7 +1,7 @@
 "use client"; 
 import React, {  } from 'react';
 import * as globalStyles from '../styles/globalStyleConsts';
-import { Box, Grid, Typography, Link } from '@mui/material';
+import { Box, Grid, Paper, Typography, Link } from '@mui/material';
 import Image from 'next/image';
 import SimplePayBefore from '../../../public/Simple_Pay_Before.png';
 import SimplePayAfter from '../../../public/Simple_Pay_After.png';
@@ -9,181 +9,118 @@ import VerificationBefore from '../../../public/Verification_Before.png';
 import VerificationAfter from '../../../public/Verification_After.png';
 import ProtectionProgramsDetailsBefore from '../../../public/Protection_Programs_Details_Before.png';
 import ProtectionProgramsDetailsAfter from '../../../public/Protection_Programs_Details_After.png';
+import ProtectionProgramsOptOutBefore from '../../../public/Protection_Opt_Out_Before.png';
+import ProtectionProgramsOptOutAfter from '../../../public/Protection_Opt_Out_After.png';
 import SettingsManager from '../../../public/Settings_Manager.png';
-import LocalizationManager from '../../../public/Localization_Manager_Mobile.png';
+import LocalizationManager from '../../../public/Localization_Manager.png';
+import CopyHero from '../../../public/Copy_Hero_Thumbnail.png';
 import DesignTidbitsCollage from '../../../public/Design_Tidbits_Collage.png';
+import DigitalCheckoutOptionsBefore from '../../../public/Digital_Checkout_Options_Before.png';
+import DigitalCheckoutOptionsAfter from '../../../public/Digital_Checkout_Options_After.png';
+import DigitalCheckoutOptions from '../../../public/Digital_Checkout_Options.png';
+import SalesOrders from '../../../public/Sales_Orders.png';
+import SalesOrdersThumbnail from '../../../public/Sales_Orders_Small.png';
+import CustomerDetails from '../../../public/Customer_Details.png';
+
 import HeaderMobile from '../HeaderMobile';
+import ProjectCardMobile from './ProjectCardMobile';
 
 const padText = {
-  mt: 5, 
+  pl: 20, 
+  pr: 20
 }
 
 const DesignTidbitsMobile = () => {
   return (
     <Box>
       <HeaderMobile/>
-      <Grid container sx={{ height: "90vh", p: 3, mt: 5 }}>
-        <Box sx={padText}>
-          <Typography sx={{...globalStyles.heading1, mb: 5}}>
-            Career Highlights: Real UX Projects with Real Impact
+      <Grid
+        container
+        direction="column"
+        alignItems="center"  // centers horizontally
+        sx={{ minHeight: "90vh", p: 3, mt: 10 }}
+      >
+        <Image
+           src={DesignTidbitsCollage}
+           alt="Design Highlights Hero"
+           style={{ display: 'block', margin: '0 auto 20px auto' }}
+         />
+        {/* Hero Image & Intro */}
+        <Box sx={{ width: '100%', maxWidth: 900, mx: 'auto', mb: 6 }}>
+
+          <Typography sx={{ ...globalStyles.heading1}}>
+            Career Highlights:
           </Typography>
-          <Image
-            src={DesignTidbitsCollage}
-            alt="Design Highlights Hero"
-            style={{ margin: "auto", marginTop: 50, marginBottom: 70 }}
-          />
+          <Typography sx={{ ...globalStyles.heading2, mb: 5 }}>
+            <b>Real</b> UX Projects with <b>Real</b> Impact
+          </Typography>
           <Typography sx={globalStyles.paragraph}>
-            Welcome to a glimpse of some highlights of work I've done professionally! These projects showcase how I solve real-world problems across a variety of contexts, from building powerful internal tools to simplifying complex customer experiences through thoughtful design.
-          </Typography>
-          <Typography sx={globalStyles.paragraph}>
-            Here, you’ll find concise stories highlighting key problems, my approach to solving them, and the impact these solutions had. Whether it’s improving efficiency behind the scenes or creating clarity for users on the front lines, these tidbits reveal the practical and varied ways I bring user-centered thinking to life.
+            Welcome to a selection of professional projects highlighting how I solve real-world product challenges through user-centered design. These short case studies demonstrate my approach to simplifying complex experiences, improving internal tools, and reducing operational friction. Each example highlights the problem, the design approach I took, and the impact the solution had for users and the business.
           </Typography>
         </Box>
-        <Box>
-          <Box sx={padText}>
-            <Typography sx={globalStyles.heading2}>
-              Providing Clarity Through Visual Redesigns
-            </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              In several projects, I tackled complex and wordy content that was causing confusion and cognitive overload for both customers and store associates. These areas included critical information about autopay options, customer verification, and protection programs. The existing text-heavy layouts made it difficult for users to quickly grasp the essentials, leading to mistakes, frustration, and reduced confidence in decision-making. My goal was to redesign these sections with clear, visually engaging layouts that break down information into digestible parts and guide users step-by-step.
-            </Typography>
-          </Box>
-          <Box sx={padText}>
-            <Typography sx={{...globalStyles.heading4, mt: 5}}>
-              Simple Pay
-            </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              Our autopay system was previously explained through dense paragraphs filled with all kinds of dates and numbers which overwhelmed users and hid important details. 
-            </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              I restructured this into a visually segmented interface with clearly separated sections, supported by icons and simple graphics to illustrate each payment option and its effects. This redesign helped users scan and understand their choices faster, reducing support calls and boosting confidence in autopay enrollment.
-            </Typography>
-          </Box>
-          <Image
-            src={SimplePayBefore}
-            alt="Simple Pay Design - Before"
-            style={{ margin: "auto" }}
-          />
-          <Image
-            src={SimplePayAfter}
-            alt="Simple Pay Design - After"
-            style={{ margin: "auto", marginTop: 30 }}
-          />
-          <Box sx={padText}>
-            <Typography sx={{...globalStyles.heading4, mt: 5 }}>
-              Customer Verification
-            </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              My company sometimes required customer verification to mitigate and prevent fraud. The verification involved a multi-step process requiring store managers to confirm and validate customers' personal information. The original interface lumped the instructions and confirmation together, which led to users missing steps or making incorrect approval decisions.
-            </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              I transformed this process into a clear, step-by-step flow, visually separating each verification task with concise action points and inline validation determination. This clarity improved compliance and reduced errors significantly.
-            </Typography>
-          </Box>
-          <Image
-            src={VerificationBefore}
-            alt="Customer Verification Screenshots - Before"
-            style={{ margin: "auto", marginTop: 30 }}
-          />
-          <Image
-            src={VerificationAfter}
-            alt="Customer Verification Screenshots - After"
-            style={{ margin: "auto", marginTop: 30 }}
-          />
-          <Box sx={padText}>
-            <Typography sx={{...globalStyles.heading4, mt: 10}}>
-              Protection Programs
-            </Typography>
-            <Typography sx={{...globalStyles.paragraph}}>
-              Initially, two optional merchandise protection programs were described seperately in a list of bullets. Additionally, when deciding to opt out of either program, a lengthly paragraph explained what they would be missing out on and what they would be responsible for paying if they confirmed the opt out. Users expressed that they were struggling to compare and differentiate them, leading to being too overwhelmed to make a choice that was right for them. 
-              <br/><br/>To address this, I designed a side-by-side comparison chart with program names on one axis and program perks on the other. Checkmarks and X’s indicated which perks each program included, with an added “combo” column to highlight the benefits of enrolling in both. This graphical representation made it easier for users to understand their options and make informed choices quickly.
-            </Typography>      
-          </Box>
-          <Image
-            src={ProtectionProgramsDetailsBefore}
-            alt="Protection Programs screenshots - Before"
-            style={{ margin: "auto", marginTop: 30 }}
-          />
-          <Image
-            src={ProtectionProgramsDetailsAfter}
-            alt="Protection Programs screenshots - After"
-            style={{ margin: "auto", marginTop: 30 }}
-          />
-        </Box>
-        {false && <Box sx={{ mt: 5 }}>
-          <Box sx={padText}>     
-            <Typography sx={globalStyles.heading2}>Leads Hub</Typography>
-            <Typography sx={globalStyles.paragraph}>
-              Leads Hub is a crucial internal web application designed to help retail store managers and sales associates streamline the process of closing lease-to-own deals for furniture customers. Prior to its development, managers struggled with fragmented customer information spread across multiple systems, making follow-ups inconsistent and deal tracking inefficient. This often resulted in lost sales opportunities and frustrated staff, who lacked a centralized, easy-to-navigate interface to manage leads and customer histories effectively.
-            </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              My involvement included collaborating closely with UX designers and developers to build and refine this platform, ensuring the user experience matched the real-world workflows of store personnel. The dashboard consolidates all customer data — including lease applications from various channels, customer notes, payment balances, special programs, and purchase histories — into a clear, filterable interface. Managers can quickly access relevant information, communicate internally, quote additional merchandise, and monitor deal statuses without toggling between disparate tools. Features like real-time updates and intuitive filtering significantly reduce cognitive load and enable faster decision-making.
-            </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              Since its rollout, Leads Hub has improved deal closure rates and customer follow-up consistency, helping managers prioritize leads and provide more personalized service. Initial metrics suggest a 20% increase in deal closure efficiency and a 15% reduction in customer follow-up delays, with user satisfaction scores climbing steadily as feedback cycles continue. The system’s scalability supports growing sales volume and ongoing feature enhancements.
-            </Typography>
-          </Box>
-          <Typography sx={{...globalStyles.paragraph, color: "red"}}>
-            [Image placeholder: Dashboard overview and key interface elements]
-            <br/>
-            [Image placeholder: Workflow diagrams or user flow maps]
-          </Typography>
-        </Box>}
-        <Box sx={{ mt: 5 }}>
-          <Box sx={padText}>
-            <Typography sx={globalStyles.heading2}>Settings Manager</Typography>
-            <Typography sx={{ ...globalStyles.heading3, marginTop: -5 }}>Internal Feature Flag & Grouping Tool</Typography>
-            <Typography sx={globalStyles.paragraph}>
-              Settings Manager is an internal web application that I designed from the ground up, starting with hand sketches and evolving through close collaboration with developers to create a powerful tool tailored specifically for our teams’ needs. The goal was to address major pain points in managing feature flags and running experiments that we experienced with existing third-party solutions on the market. These platforms were too rigid and costly, lacking the customization required to handle complex user segmentation and evolving business rules.
-            </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              Before Settings Manager, developers and product teams faced a fragmented and inefficient workflow. Grouping users for feature rollouts was manual and error-prone, and targeting features to dynamic segments was difficult or impossible within the constraints of off-the-shelf tools. We needed a system that could handle nuanced group definitions such as grouping stores by region, ownership type, or other arbitrary traits. We also need to be able to enable bulk actions for efficient feature deployment. My design focused on building an intuitive hierarchy of features, from basic flag management to flexible group creation and streamlined rollout controls, all while providing clear visibility into active experiments and status updates.
-            </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              By owning this project end-to-end, I ensured the tool was both technically feasible and user-friendly for our internal developer audience. The result has been significant efficiency gains. This scalable solution supports ongoing growth and increasingly complex use cases, enabling our teams to run more experiments and deliver features faster. I continue to work with users to gather feedback and improve the tool further.
-            </Typography>          
-          </Box>
-              <Image
-                src={SettingsManager}
-                alt="Settings Manager Screenshots"
-                style={{ margin: "auto", marginTop: 50 }}
-              />
-        </Box>
-        <Box sx={{ mt: 3 }}>
-          <Box sx={padText}>
-            <Typography sx={globalStyles.heading2}>
-              Copy Hero
-            </Typography>
-            <Typography sx={{ ...globalStyles.heading3, marginTop: -5 }}>
-              In-House Multilingual Copy Management Tool
-            </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              I developed the Copy Hero tool to address a critical challenge: supporting multilingual content on our websites while maintaining strict legal compliance and avoiding unreliable machine translations. Before this tool existed, updating copy in multiple languages required significant developer time, cumbersome manual processes, and risked inconsistencies across sites. This slowed down content updates and made scaling to new languages difficult.
-            </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              I led the design of this in-house web application to empower developers, product managers, and marketing teams to manage multilingual copy efficiently. The system allows users to define “keys” representing pieces of copy, which can be loaded with translations in English, Spanish, or any future languages needed. These keys are then integrated into the website code, updating dynamically without additional developer effort. To support rich content, the tool also handles simple markup such as italics and bullet points, as well as data injection variables for personalized messages (e.g., “Thank you, [name]! Your total is $[total].”).
-            </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              This tool not only streamlined the localization process but also ensured compliance with legal requirements. It significantly reduced dependency on engineering for content updates and enabled faster, more accurate translation management across multiple languages.
-            </Typography>
-          </Box>
-          <Image
-            src={LocalizationManager}
-            alt="Copy Hero Screenshots"
-            style={{ margin: "auto", marginTop: 50 }}
-          />
-          <Box sx={padText}>
-            <Typography sx={globalStyles.heading2}>
-              Thank you!
-            </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              Thank you for taking a look at my professional design highlights! To find out more, shoot me an email at chelsea.vidrine2@gmail.com. For a more in-depth look at my design process, please check out my other <Link href="/portfolio">case studies</Link>! 
-            </Typography>
-          </Box>
-          <br/>
-          <br/>
-          <br/>
-        </Box>
+        <ProjectCardMobile
+          thumbnail={SalesOrdersThumbnail}
+          expandedImages={[SalesOrders, CustomerDetails]}
+          imageHeight={225}
+          title="1) Accelerating Lead Conversion through Rapid Digital Customer Onboarding"
+          problem="Leads from online channels were fragmented across systems, leaving store managers without a single view of follow-ups, spending potential, or order history. Managers spent extra time piecing together customer information, slowing conversions and frustrating customers unsure of next steps."
+          solution="We designed and implemented a centralized tool listing each lead with channel, date, spending power, sales history, and notes. Clicking a lead surfaces contact info, interaction history, and order data, allowing managers to generate orders directly from the app. The design was informed by observing store workflows and interviewing managers to understand pain points."
+          impact="By centralizing and bringing more visibility to lead data, managers acted faster with less fragmentation, the business achieved quicker conversions and higher conversion rates, and customers progressed smoothly through orders. This project reinforced the value of centralizing critical data and aligning interfaces to real user workflows."
+        />
+        <ProjectCardMobile
+          thumbnail={DigitalCheckoutOptionsAfter}
+          expandedImages={[DigitalCheckoutOptionsBefore, DigitalCheckoutOptionsAfter]}
+          title="2) Boosting Checkout Completion by Clarifying Access Options"
+          problem=
+          {<Typography sx={globalStyles.paragraph}>
+            Store associates helped customers complete digital checkout by directing them to a website where the customer would enter a unique access code. However, the associate interface implied that the primary way to start the process was by texting a link to the customer. When texting failed due to system outages, customers having difficulty with SMS, or customers not owning smartphones, associates often believed they were unable to complete checkout. 
+            <br/><br/>This misunderstanding stopped them in their tracks and led to regular support tickets from stores reporting they were unable to check out customers.
+          </Typography>}
+          solution="I reframed the task from “send a text” to “help the customer access the site” and introduced three clearly labeled, illustrated options: launch the checkout app, visit the website directly, or text a link. Observations and feedback informed which alternatives were most practical for associates."
+          impact="Support tickets dropped from 1–2 per week to zero. Associates could complete checkouts even without SMS, and customers moved through the process confidently. This reinforced that clarifying choices and surfacing alternative paths reduces operational friction without backend changes."
+        />
+        <ProjectCardMobile
+          thumbnail={VerificationAfter}
+          expandedImages={[VerificationBefore, VerificationAfter]}
+          imageHeight={350}
+          title="3) Reducing Errors in Customer Identity Verification"
+          problem="Managers were required to complete a two-step process of customer identity verification. They often missed one step or approved requests incorrectly because instructions and confirmation controls were grouped together as one action."
+          solution="I created a step-by-step flow that visually separated each verification task, included inline validation guidance, and split the action into multiple controls, with one concern per control. This approach was based on observing errors and identifying where users misunderstood or skipped steps."
+          impact="The new flow improved compliance, reduced verification errors and fraud risk, and improved manager confidence during verification tasks, helping to protect both the business and our customers. This highlighted the value of breaking complex processes into clear, sequential steps and guiding user attention."
+        />
+        <ProjectCardMobile
+          thumbnail={SimplePayAfter}
+          expandedImages={[SimplePayBefore, SimplePayAfter]}
+          title="4) Improving Payment Plan Understanding Through Visual Autopay Design"
+          problem="Dense paragraphs describing autopay schedules overwhelmed users, making it hard to anticipate draft dates or payment amounts. When unexpected amounts were drafted from customers’ accounts on dates they didn't expect, they were left confused, and subsequent steps had to be taken to update the schedule in another system."
+          solution="I redesigned the interface into visually segmented sections supported by icons and simple graphics, clarifying each detail of the autopay schedule, including recurrence frequency, date of the first draft, total amount of payments, and amount of each payment."
+          impact="Users could quickly scan and understand their plans, improving confidence and reducing scheduling corrections. The project reinforced that visual hierarchy and segmentation improve comprehension of complex information."
+        />
+        <ProjectCardMobile
+          thumbnail={ProtectionProgramsDetailsAfter}
+          expandedImages={[ProtectionProgramsDetailsBefore, ProtectionProgramsDetailsAfter]}
+          title="5) Increasing Protection Plan Adoption with Simple Feature Comparisons"
+          problem="Two optional merchandise protection programs were offered with dense text and bulleted lists on the same screen. Some users struggled to compare benefits, leading to cognitive overload and opt-outs."
+          solution="I designed a side-by-side comparison chart showing program benefits, including a “combo” column for enrolling in both. "
+          impact="The visual layout enabled faster comprehension, helping users make informed decisions quickly, opting into the programs that fit their needs."
+        />
+        <ProjectCardMobile
+          thumbnail={SettingsManager}
+          expandedImages={[SettingsManager]}
+          imageHeight={500}
+          title="6) Enabling Faster Feature Releases with Flexible Internal Flag Management"
+          problem="Third-party feature flag tools were expensive and inflexible to our delivery goals. Grouping users and deploying features relied on manual, error-prone workflows and limited experimentation."
+          solution="I designed a flexible web tool supporting dynamic segmentation, hierarchical feature organization, and streamlined bulk actions. Design decisions were informed by developer feedback and observing common workflow bottlenecks."
+          impact="Teams gained full control over rollouts, could run experiments faster, and deployed features more efficiently. The project reinforced the importance of designing internal tools that align with actual workflows and reduce friction."
+        />
+        <ProjectCardMobile
+          thumbnail={CopyHero}
+          expandedImages={[LocalizationManager]}
+          title="7) Empowering Teams to Manage Content Without Developer Dependencies"
+          problem="Updating multilingual content required developer effort, manual processes, and carried risks of inconsistency or errors."
+          solution="I designed a system that manages content “keys” with translations in English, Spanish, and additional languages. Keys integrate directly into the website code for dynamic updates and support formatting and personalized messaging. Design choices were informed by interviews with content editors and developers to understand bottlenecks."
+          impact="The tool streamlined localization workflows, reduced developer dependency, and improved accuracy and speed for content updates. This project highlighted the importance of designing systems that empower users while reducing operational dependencies."
+        />
       </Grid>
     </Box>
   );

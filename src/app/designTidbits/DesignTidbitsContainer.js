@@ -38,7 +38,7 @@ const DesignTidbitsContainer = () => {
         container
         direction="column"
         alignItems="center"  // centers horizontally
-        sx={{ minHeight: "90vh", p: 10 }}
+        sx={{ p: 10 }}
       >
         <Image
            src={DesignTidbitsCollage}
@@ -46,7 +46,7 @@ const DesignTidbitsContainer = () => {
            style={{ display: 'block', margin: '0 auto 20px auto' }}
          />
         {/* Hero Image & Intro */}
-        <Box sx={{ width: '100%', maxWidth: 900, mx: 'auto', mb: 6 }}>
+        <Box sx={{ width: '100%', maxWidth: 1000, mx: 'auto', mb: 6 }}>
 
           <Typography sx={{ ...globalStyles.heading1}}>
             Career Highlights:
@@ -62,64 +62,64 @@ const DesignTidbitsContainer = () => {
           thumbnail={SalesOrdersThumbnail}
           expandedImages={[SalesOrders, CustomerDetails]}
           imageHeight={225}
-          title="1) Converting Leads to Sales through Rapid Digital Customer Onboarding"
-          problem="Banding together with a team of developers and UXers, I helped design a digital tool, giving store managers a single view of all customer inquiries and leads generated from various application channels. Previously, leads were fragmented across systems with no unified visibility or filtering, making it difficult to track follow-ups, spending potential, and sales activity."
-          solution="The tool’s homepage lists each lead along with generation channel, creation date, spending power, sales history, and notes. Clicking a lead reveals contact details, interaction history, and order data. Managers can generate orders directly from the app."
-          impact="By centralizing and bringing more visibility to lead data, managers could work faster with less fragmentation, the business saw quicker conversions and higher conversion rates, and customers were guided seamlessly through the ordering process."
+          title="1) Accelerating Lead Conversion through Rapid Digital Customer Onboarding"
+          problem="Leads from online channels were fragmented across systems, leaving store managers without a single view of follow-ups, spending potential, or order history. Managers spent extra time piecing together customer information, slowing conversions and frustrating customers unsure of next steps."
+          solution="We designed and implemented a centralized tool listing each lead with channel, date, spending power, sales history, and notes. Clicking a lead surfaces contact info, interaction history, and order data, allowing managers to generate orders directly from the app. The design was informed by observing store workflows and interviewing managers to understand pain points."
+          impact="By centralizing and bringing more visibility to lead data, managers acted faster with less fragmentation, the business achieved quicker conversions and higher conversion rates, and customers progressed smoothly through orders. This project reinforced the value of centralizing critical data and aligning interfaces to real user workflows."
         />
         <ProjectCard
           thumbnail={DigitalCheckoutOptionsAfter}
           expandedImages={[DigitalCheckoutOptionsBefore, DigitalCheckoutOptionsAfter]}
-          title="2) Boosting Digital Checkouts by Clarifying Access Options"
+          title="2) Boosting Checkout Completion by Clarifying Access Options"
           problem=
           {<Typography sx={globalStyles.paragraph}>
             Store associates helped customers complete digital checkout by directing them to a website where the customer would enter a unique access code. However, the associate interface implied that the primary way to start the process was by texting a link to the customer. When texting failed due to system outages, customers having difficulty with SMS, or customers not owning smartphones, associates often believed they were unable to complete checkout. 
             <br/><br/>This misunderstanding stopped them in their tracks and led to regular support tickets from stores reporting they were unable to check out customers.
           </Typography>}
-          solution="I reframed the task from “send a text” to “help the customer access the site” and introduced three clearly labeled, illustrated options: launch the checkout app, visit the website directly, or text a link."
-          impact="Support tickets dropped from 1–2 per week to zero, as associates understood they could complete checkouts even when SMS was unavailable, eliminating a recurring operational issue without backend changes."
+          solution="I reframed the task from “send a text” to “help the customer access the site” and introduced three clearly labeled, illustrated options: launch the checkout app, visit the website directly, or text a link. Observations and feedback informed which alternatives were most practical for associates."
+          impact="Support tickets dropped from 1–2 per week to zero. Associates could complete checkouts even without SMS, and customers moved through the process confidently. This reinforced that clarifying choices and surfacing alternative paths reduces operational friction without backend changes."
         />
         <ProjectCard
           thumbnail={VerificationAfter}
           expandedImages={[VerificationBefore, VerificationAfter]}
           imageHeight={350}
-          title="3) Improving Accuracy in Customer Identity Verification"
+          title="3) Reducing Errors in Customer Identity Verification"
           problem="Managers were required to complete a two-step process of customer identity verification. They often missed one step or approved requests incorrectly because instructions and confirmation controls were grouped together as one action."
-          solution="I created a step-by-step flow that visually separated each verification task, included inline validation guidance, and split the action into multiple controls, with one concern per control."
-          impact="The new flow improved compliance and significantly reduced verification errors and fraud risk, protecting both the business and our customers."
+          solution="I created a step-by-step flow that visually separated each verification task, included inline validation guidance, and split the action into multiple controls, with one concern per control. This approach was based on observing errors and identifying where users misunderstood or skipped steps."
+          impact="The new flow improved compliance, reduced verification errors and fraud risk, and improved manager confidence during verification tasks, helping to protect both the business and our customers. This highlighted the value of breaking complex processes into clear, sequential steps and guiding user attention."
         />
         <ProjectCard
           thumbnail={SimplePayAfter}
           expandedImages={[SimplePayBefore, SimplePayAfter]}
-          title="4) Reducing Extra Steps by Demystifying Autopay Plans"
-          problem="Autopay plans explained through dense paragraphs with various dates, frequencies, and dollar amounts, made it difficult for users to understand the details of how much money would be taken and when. When unexpected amounts were drafted from their accounts on dates they didn't expect, they were left confused, and subsequent steps had to be taken to update the schedule in another system."
+          title="4) Improving Payment Plan Understanding Through Visual Autopay Design"
+          problem="Dense paragraphs describing autopay schedules overwhelmed users, making it hard to anticipate draft dates or payment amounts. When unexpected amounts were drafted from customers’ accounts on dates they didn't expect, they were left confused, and subsequent steps had to be taken to update the schedule in another system."
           solution="I redesigned the interface into visually segmented sections supported by icons and simple graphics, clarifying each detail of the autopay schedule, including recurrence frequency, date of the first draft, total amount of payments, and amount of each payment."
-          impact="Users could quickly scan and evaluate their plan, improving confidence and reducing the need for autopay scheduling corrections in other systems."
+          impact="Users could quickly scan and understand their plans, improving confidence and reducing scheduling corrections. The project reinforced that visual hierarchy and segmentation improve comprehension of complex information."
         />
         <ProjectCard
           thumbnail={ProtectionProgramsDetailsAfter}
           expandedImages={[ProtectionProgramsDetailsBefore, ProtectionProgramsDetailsAfter]}
-          title="5) Increasing Program Adoption through Feature Clarity and Simple Comparisons"
-          problem="The business offered two distinct, optional merchandise protection programs. The programs were offered at the same time on the same web screen and described in bulleted lists. Some customers struggled to compare and contrast the two and understand the differences between them, often leading to cognitive overload and program opt-outs"
-          solution="I designed a side-by-side comparison chart showing benefits across programs with checkmarks/X’s and a “combo” column for enrolling in both."
+          title="5) Increasing Protection Plan Adoption with Simple Feature Comparisons"
+          problem="Two optional merchandise protection programs were offered with dense text and bulleted lists on the same screen. Some users struggled to compare benefits, leading to cognitive overload and opt-outs."
+          solution="I designed a side-by-side comparison chart showing program benefits, including a “combo” column for enrolling in both. "
           impact="The visual layout enabled faster comprehension, helping users make informed decisions quickly, opting into the programs that fit their needs."
         />
         <ProjectCard
           thumbnail={SettingsManager}
           expandedImages={[SettingsManager]}
           imageHeight={500}
-          title="6) Fast, Flexible, and Customizable In-house Feature-Flagging"
-          problem="Existing third-party feature flag tools were expensive and inflexible to the goals of the development teams. Grouping users and managing rollouts relied on manual, error-prone workflows."
-          solution="I designed a flexible web tool that supports feature flagging through dynamic segmentation, hierarchical feature organization, and streamlined bulk actions for feature deployment."
-          impact="Teams had total control over their feature rollouts, and could run experiments and deploy features faster with much more flexibility."
+          title="6) Enabling Faster Feature Releases with Flexible Internal Flag Management"
+          problem="Third-party feature flag tools were expensive and inflexible to our delivery goals. Grouping users and deploying features relied on manual, error-prone workflows and limited experimentation."
+          solution="I designed a flexible web tool supporting dynamic segmentation, hierarchical feature organization, and streamlined bulk actions. Design decisions were informed by developer feedback and observing common workflow bottlenecks."
+          impact="Teams gained full control over rollouts, could run experiments faster, and deployed features more efficiently. The project reinforced the importance of designing internal tools that align with actual workflows and reduce friction."
         />
         <ProjectCard
           thumbnail={CopyHero}
           expandedImages={[LocalizationManager]}
-          title="7) Reducing Developer Dependence via Content Accessibility"
-          problem="Updating multilingual content required developer effort, manual processes, and carried risks of inconsistency or inaccurate translations."
-          solution="I designed a system that manages content “keys” with translations in English, Spanish, and other languages. These integrate directly into the website code for dynamic updates and support formatting and personalized messaging."
-          impact="The tool streamlined localization workflows, reduced developer dependency, and improved accuracy and speed for content updates across languages."
+          title="7) Empowering Teams to Manage Content Without Developer Dependencies"
+          problem="Updating multilingual content required developer effort, manual processes, and carried risks of inconsistency or errors."
+          solution="I designed a system that manages content “keys” with translations in English, Spanish, and additional languages. Keys integrate directly into the website code for dynamic updates and support formatting and personalized messaging. Design choices were informed by interviews with content editors and developers to understand bottlenecks."
+          impact="The tool streamlined localization workflows, reduced developer dependency, and improved accuracy and speed for content updates. This project highlighted the importance of designing systems that empower users while reducing operational dependencies."
         />
       </Grid>
     </Box>

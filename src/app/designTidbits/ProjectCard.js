@@ -28,7 +28,7 @@ const ProjectCard = ({
         sx={{
           p: 3,
           width: '100%',
-          maxWidth: 900,
+          maxWidth: 1000,
           borderRadius: 2,
           cursor: 'pointer',
         }}
