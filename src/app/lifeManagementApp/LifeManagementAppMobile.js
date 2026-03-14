@@ -4,7 +4,7 @@
 //TODO: build out goal templates screen and add it back in
 
 import React, { useRef, useState, useEffect } from 'react';
-import { Box, Grid, Select, Typography, MenuItem } from '@mui/material';
+import { Box, Grid, Paper, List, ListItem, Select, Typography, MenuItem } from '@mui/material';
 import * as globalStyles from '../styles/globalStyleConsts';
 import Image from 'next/image';
 import QuoteContainer from '../hotelBookingApp/QuoteContainer';
@@ -197,6 +197,43 @@ const LifeManagementAppMobile = () => {
             id="introduction_section"
             ref={(el) => sectionRefs.current["introduction_section"] = el}
         >
+
+        <Paper elevation={3} sx={{ p: 2, mt: 5, mb: 5 }}>
+          <Typography variant='h1' sx={globalStyles.heading1}>Project Summary</Typography>
+            <Typography variant='h2' sx={globalStyles.heading2}>
+                KorkBoard TL;DR
+            </Typography>
+             <Typography variant='body1' sx={globalStyles.paragraph}> 
+              <b>Context & Problem:</b> KorkBoard is a self-initiated exploration of how people might organize their lives within a single visual workspace. Most productivity tools specialize in either note-taking, short-term task management, goal tracking, or record-keeping. This separation fragments mental workflows and weakens momentum, leading to inconsistent follow-through.
+            </Typography>
+            <Typography variant='body1' sx={globalStyles.paragraph}> 
+                <b>Challenge:</b> The primary challenge was balancing flexibility and structure within a unified productivity system. The design needed to support non-linear workflows, reduce cognitive load, and foster motivation all while resisting feature creep or overwhelming the user.
+            </Typography>
+            <Typography variant='body1' sx={globalStyles.paragraph}>
+              <b>Process:</b> Led end-to-end research and design, beginning with surveys, interviews, and competitive analysis. Insights informed the development of a flexible, non-linear information architecture and high-fidelity prototype, which was evaluated and refined through usability testing.
+            </Typography>
+            <Typography variant='body1' sx={globalStyles.paragraph}> 
+                <b>Insights:</b>
+                <List sx={{ listStyleType: 'disc', ml: 5 }}>
+                  <ListItem sx={{ display: 'list-item' }}>
+                    Users often rely on a mix of apps, planners, notebooks, and spreadsheets because no single tool supports the full spectrum of thinking, planning, and execution. Many users express desire for a cohesive system.
+                  </ListItem>
+                  <ListItem sx={{ display: 'list-item' }}>
+                    Visual scaffolding (color cues, spatial organization, adaptable layouts) and flexibility are essential, but complexity in customization quickly becomes overwhelming, especially for neurodivergent users or those experiencing executive dysfunction or mental fatigue.
+                  </ListItem>
+                  <ListItem sx={{ display: 'list-item' }}>
+                    Motivation isn’t one size fits all, and tools should support many types of motivators. Effective systems must support multiple paths to reinforcement rather than a single incentive model.
+                  </ListItem>
+                </List>
+             </Typography>
+             <Typography variant='body1' sx={globalStyles.paragraph}> 
+                <b>Outcomes:</b> Delivered a high-fidelity, interactive prototype that unifies note-taking, task management, and long-term planning within a single visual system. Usability testing validated the balance between flexibility and structure, with users responding positively to visual cues and reward-based motivation.
+             </Typography>
+             <Typography variant='body1' sx={globalStyles.paragraph}> 
+                <b>Takeaways:</b> Designing for a clearly defined audience produces stronger systems than designing for “everyone.” Supporting non-linear thinkers requires embedding structure subtly rather than imposing rigid frameworks. Most importantly, true flexibility depends on intentional constraint. Without guardrails, freedom quickly becomes chaos.
+             </Typography>
+        </Paper>
+
           <Typography variant='h1' sx={globalStyles.heading1}>A life full of lists, but no roadmap</Typography>
           <Typography variant='h2' sx={globalStyles.heading2}>
             Project Overview
@@ -399,19 +436,17 @@ const LifeManagementAppMobile = () => {
             <Typography variant="h3" sx={{ ...globalStyles.heading4, mt: 5 }}>
               Tasks
             </Typography>
-            <Typography sx={globalStyles.paragraph}>The Tasks section is the app’s home screen, designed to help users focus on what matters today while keeping longer-term tasks visible and manageable. It is divided into three tabs: Today, Backlog, and Archive, each serving a distinct purpose.</Typography>       
+            <Typography sx={globalStyles.paragraph}>Research showed that users often feel overwhelmed by long lists and struggle to balance immediate responsibilities with future planning. To address this, I built the “Tasks” section of the app. Tasks is the app’s home screen. It’s designed to help users focus on what matters today while keeping longer-term tasks visible and manageable.</Typography>
             <Typography sx={screenFeatureTitle}>
-              Today tab
+              Three-Part Structure: Today, Backlog, Archive
             </Typography>
             <Typography sx={globalStyles.paragraph}>
-              The today tab is the default active tab and is designed to bring today’s plan into focus for the user, isolating what’s relevant for now and reducing overload. It’s the daily checklist composed of tasks and subtasks. 
-              <br /><br />
-              These tasks can be ordered and filtered according the user’s preferences from the top of the screen, and new tasks can be easily added. 
+              Tasks is divided into three focused views, each serving a different purpose. The today tab is the default active tab, the daily checklist designed to bring today’s plan into focus. The Backlog acts as a holding area for tasks not yet scheduled for today, allowing users to pull them into their daily plan when ready and preventing cognitive overload while preserving visibility. The archive maintains a searchable history of completed tasks, reinforcing a sense of progress and supporting memory and recall.
             </Typography>
             <Box sx={showCaseScreens}>
               <Image
                 src={LMScreenTasksToday}
-                width="100%"
+                style={{ padding: 50 }}
                 alt="Image of screen: tasks - today"
               />
             </Box>   
@@ -429,7 +464,7 @@ const LifeManagementAppMobile = () => {
                 <Box sx={globalStyles.graphic}>
                   <Image
                     src={LMScreenTasksSuggestions}
-                    width="100%"
+                    style={{ padding: 50 }}
                     alt="Image of screen: tasks - today"
                   />
                 </Box>
@@ -437,222 +472,170 @@ const LifeManagementAppMobile = () => {
              }
 
             <Typography sx={screenFeatureTitle}>
-              Task Card Structure
+              Task Card Design: Fully Optional Customization
             </Typography>
             <Typography sx={globalStyles.paragraph}>
-              Features displayed on each task card were selected carefully based on user feedback and needs. Many users complained about other apps not allowing them to break down large tasks into smaller parts in a visually structured way or designate priority and weight. I wanted to include everything users found most useful when interacting with tasks without cluttering up the UI. 
-            </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              Optional subtasks can be added to any goal and are indented to maintain visual hierarchy while reinforcing parent-child relationships. Priority and effort indicators to help users make decisions based on their time and energy levels. Users can give meaning to tasks by adding icons, due dates (with options to repeat on a schedule), categories (displayed as colored labels), and linked goals. Everything is optional but accessible for full flexibility and organizational support.
+              Task cards were designed to balance simplicity with optional depth. Users can keep tasks lightweight or enrich them with metadata such as color-coding, categories, due dates, subtasks, or goal links. Visual markers and hierarchy help users quickly assess priority and effort without forcing structure on those who prefer minimal input. The key design decision was constraint with choice: advanced organization is available, but never required.
             </Typography>
             <Box sx={showCaseScreens}>
               <Image
                 src={LMScreenTasksCardStructure}
-                width="100%"
+                style={{ padding: 50 }}
                 alt="Image of screen: tasks - today"
               />
             </Box>
            
             <Typography sx={screenFeatureTitle}>
-              The Backlog
+              Planning Without Pressure
             </Typography>
             <Typography sx={globalStyles.paragraph}>
-              The Backlog tab is a unique way to keep a list of tasks available to pull in to today’s to-do list whenever the user is ready to tackle them. It acts as a holding area for all tasks not currently scheduled. This differs from most to-do apps that most often do not include a concept of tasks to do outside of what’s accomplishable today or on a specifically designated day. Those types of apps might be good for people who keep on top of their tasks easily and accomplish everything they set out to do every day, but for many users, that just isn’t realistic. 
+              The Backlog supports flexible planning, including calendar-based organization, allowing users to preview workload without committing prematurely. This addresses a common research insight: users want visibility into future obligations without feeling locked into rigid schedules.
             </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              The backlog was built for flexibility too. Users can filter the backlog by priority, category, and whether a task has a due date, or switch to a calendar view to visually scan when tasks are due. Tons of users described calendars as extremely important to them, so it was imperative for me to include a calendar view. Including the calendar in the backlog is meant to help users check their task due dates at a glance and plan ahead to determine which tasks are best to pull in every day. 
-            </Typography>
+          
             <Box sx={showCaseScreens}>
               <Image
-                src={LMScreenTasksBacklog}
-                width="100%"
+                src={LMScreenTasksArchive}
+                style={{ padding: 50 }}
                 alt="Image of screen: tasks - today"
               />
             </Box>
            
-            <Typography sx={screenFeatureTitle}>
-              Archive
-            </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              The Archive tab gives users a way to find and reflect on what’s been completed and when. Users can sort and search through completed tasks in either a list or folder-like category view, mirroring mental models familiar from physical file systems. This both reinforces a sense of progress and accomplishment, and aids memory and recall. 
-            </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              As an example, maybe a user has a feeling their dog might be overdo for a vaccine but can’t remember when the last they were vaccinated. Rather than having to call up the vet or scanning through thousands of emails in hopes of finding a receipt, they may be able to simply search the archive for a task with associated keywords to find the completed date of the last time they were in for their vaccines. 
-            </Typography>
-             <Box sx={showCaseScreens}>
-              <Image
-                src={LMScreenTasksArchive}
-                width="100%"
-                alt="Image of screen: tasks - today"
-              />
-            </Box>
+          
             <Typography variant="h4" sx={{ ...globalStyles.heading4, mt: 5 }}>
               Notes
             </Typography>
-            <Typography sx={screenFeatureTitle}>
-              Purpose
-            </Typography>
+
             <Typography sx={globalStyles.paragraph}>
-              My research revealed that for many users have challenges with focus and forgetfulness, often juggling multiple priorities and busy schedules. Ideas about tasks and chores can arrive to busy minds at any (and often inconvenient) time and can disappear just as easily. 
-            </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              It seems that many productivity or task-list apps don’t quite have a great parking space for these quick fleeting thoughts. Instead, these apps are often built with too much structure, which slows or discourages capturing thoughts in the moment without the mental shift and focus to immediately create them as something actionable.
-            </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              That being said, the opportunity was there to provide a designated space for these sporadic thoughts, I designed what you could describe as a sort of mental inbox or brain dump. This is what became the “Notes” section of my app. The Notes section was designed to offer a fast, low-friction way to capture thoughts in the moment, without the cognitive overhead of deciding where they belong or how they’ll be used. Whether a user is in a meeting, on a jog, or lying awake at night, they can jot down an idea quickly and sort it out later.
+              Research revealed that many users struggle with focus and forgetfulness, juggling multiple priorities and busy schedules. Ideas can appear at any moment and disappear just as quickly. Traditional productivity apps often require too much structure, creating friction that discourages spontaneous capture.
             </Typography>
            
             <Typography sx={screenFeatureTitle}>
-              Structure
+              Designed for Capture First, Organization Later
             </Typography>
             <Typography sx={globalStyles.paragraph}>
-              Users can either view their notes by their own defined folder or can search through all of their notes with search text, ordering, toggling, and filtering options. Like in other areas of the app, I kept in mind how important colors are to users and included the option to defined each folder the user with a unique color. 
-            </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              Research also showed that many users like the ability to “pin” important things that they want easy access to, so I added a pin and unpin feature to each note. 
-            </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              A fun detail I added was to display the notes on top of a background meant to look like a spiral notebook to add in a little skeuomorphism to reinforce the comfort and familiarity many users expressed they enjoy when writing their tasks down in physical notebooks and scratchpads.  
+              The Notes section was designed as a mental inbox. Whether during a meeting, a jog, or late at night, it allows users to quickly jot down ideas in the moment without worrying about categorization or immediate action. A subtle skeuomorphic notebook aesthetic reinforces familiarity and reduces the intimidation often associated with highly structured productivity systems.
             </Typography>
             <Box sx={showCaseScreens}>
               <Image
                 src={LMScreenNotesStructure}
-                width="100%"
+                style={{ padding: 50 }}
                 alt="Image of screen: tasks - today"
               />
             </Box>
            
             <Typography sx={screenFeatureTitle}>
-              Creating & Editing Notes
+              Simple, low-structure note-taking and editing
             </Typography>
             <Typography sx={globalStyles.paragraph}>
-              There was a lot of flexibility designed into creating and editing notes in order to support user needs and incorporate the most important conventions users are used to having in notes-focused apps like OneNote and (other notes app) without turning the tool into a full-blown, complicated note-taking suite.
+              The notes editor incorporates flexibility and conventions that users are used to having in notes-focused apps without overcomplication. Users can freely jot ideas using typing or handwriting, reinforcing comfort and accessibility for different thinking styles. They can also attach media like voice recordings, photos, or PDFs to support details with visual and audio reminders.
             </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              Users can choose between keyboard typing mode or handwriting mode (another nod to analog comfort and neurodivergent preferences). To support light formatting, users can toggle basic styles: bullets, bold, italics, and underline. They can also attach supporting media like voice recordings, photos, or PDFs. 
-            </Typography>
+          
              <Box sx={showCaseScreens}>
               <Image
                 src={LMScreenNotesEdit}
-                width="100%"
+                style={{ padding: 50 }}
                 alt="Image of screen: tasks - today"
               />
             </Box>
            
             <Typography sx={screenFeatureTitle}>
-              Converting notes to tasks
+              Bridging Ideas to Action
             </Typography>
             <Typography sx={globalStyles.paragraph}>
-              Although they certainly aren’t obligated to do so, the idea behind notes is to park ideas to be turned into tasks later, so the mechanism to do so is displayed prominently from both the note editing modal and in each note card when viewing a list, so notes can be seamlessly converted into tasks, giving users a clear path from inspiration to execution.
+              Crucially, notes are not dead ends. Any note can be converted into a task with a single action, creating a seamless bridge between inspiration and execution. This connection supports the broader system goal: reducing friction between thinking, planning, and doing.
             </Typography>
              <Box sx={showCaseScreens}>
               <Image
                 src={LMScreenNotesConvert}
-                width="100%"
+                style={{ padding: 50 }}
                 alt="Image of screen: tasks - today"
               />
             </Box>
             <Typography variant="h4" sx={{ ...globalStyles.heading4, mt: 5 }}>
               Goals
             </Typography>
+            <Typography sx={globalStyles.paragraph}>
+              Most productivity tools emphasize daily task completion but neglect long-term direction. Research participants expressed frustration with losing sight of larger ambitions and resorting to spreadsheets, planners, or abandoning goal tracking altogether due to overwhelm.
+            </Typography>
+            <Typography sx={globalStyles.paragraph}>
+              The Goals section addresses this by breaking ambitious objectives into actionable steps, connecting everyday tasks to broader milestones. This turns a standard to-do system into an actual life management tool.
+            </Typography>
+
             <Typography sx={screenFeatureTitle}>
-              Purpose
+              Bringing Visibility to objectives and aspirations
             </Typography>
             <Typography sx={globalStyles.paragraph}>
-              Users expressed frustration that most apps focused only on short-term to-dos. They wanted a way to keep long-term aspirations visible and manageable, and to understand how their daily actions contributed to bigger progress. Many turned to Google Sheets or physical planners as workarounds. Others just don’t use any kind of tools for long-term tracking because they aren’t sure what to use or they find goal-tracking overwhelming. 
-            </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              The Goals section was designed to help users support their ambitions by bringing overwhelming long-term aspirations into focus, breaking them down into actionable steps, and giving more purpose and direction to each daily checklist task item by connecting them to broader milestones. This is more than the day-to-day task lists that most productivity apps are. It’s the bigger picture that turns a to-do app into a life management tool.
-            </Typography>
-           
-            <Typography sx={screenFeatureTitle}>
-              Goals Overview
-            </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              The Goals section is broken into an active goals tab and an archived goals tab. Active tab, users see an at-a-glance list of all goals currently in progress. Each goal card includes a user-selected icon and title for quick visual recognition, a progress bar and written milestone count (e.g. “3/5 milestones completed”), and an optional due date. Users can sort their goals by progress or upcoming due date, helping them prioritize what matters most.
-            </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              The goal archive tab keeps record of all previously completed goal and completion date. By separating active and completed goals, the interface stays clean while also serving as a record-keeping space, something several users noted they lacked in other tools.
+              The Goals section is split into active goals and archived goals. The Active goals tab displays all in-progress goals at a glance. Progress indicators provide visual momentum, helping users see advancement over time rather than relying on memory alone. The goal archive tab keeps record of all previously completed goals and their completion dates, providing a clean interface while preserving historical context.
             </Typography>
               <Box sx={showCaseScreens}>
               <Image
                 src={LMScreenGoalsActive}
-                width="100%"
+                style={{ padding: 50 }}
                 alt="Image of screen: tasks - today"
               />
             </Box>
            
             <Typography sx={screenFeatureTitle}>
-              Creating and Managing Goals
+              Progress Without Clutter
             </Typography>
             <Typography sx={globalStyles.paragraph}>
-              Consistent with other sections of the app, there’s flexibility in goal creation. The user defines the title, description, due date, any relevant media files to attach, and goal milestones. 
-              <br/><br/>Milestones function as building blocks of the larger goal. For example, a goal like "Record an album" might include milestones such as “write music,” “record and mix songs,” “create album cover,” and “list for distribution.”
+              Users define the title, description, due date, attachments, and goal milestones. Milestones serve as building blocks for larger goals. For example, a goal like “Record an album” might include milestones such as “write music,” “record songs,” “design album cover,” and “distribute album.”
             </Typography>   
             <Box sx={showCaseScreens}>
               <Image
                 src={LMScreenGoalsGoal}
-                width="100%"
+                style={{ padding: 50 }}
                 alt="Image of screen: tasks - today"
               />
             </Box>  
            
             <Typography sx={screenFeatureTitle}>
-              Milestones
+              From Ambition to Actionable steps
             </Typography>
             <Typography sx={globalStyles.paragraph}>
-              When a user clicks on a milestone or clicks the button to create a new one, they are taken to a seperate screen dedicated to milestone details. 
-              <br/><br/>Each milestone can have its own title, due date and details, including a short description and media files.  Under each milestone, the user can add a list of related tasks, sort them, move them to the task backlog, or mark them complete.
+              Milestones create visible progress while preventing large ambitions from feeling paralyzing. Each milestone can connect directly to related tasks, ensuring that daily checklists contribute meaningfully to long-term outcomes. This hierarchy (Goal → Milestone → Task) creates alignment across the system, reinforcing purpose behind everyday actions.
             </Typography>
             <Box sx={showCaseScreens}>
               <Image
                 src={LMScreenGoalMilestone}
-                width="100%"
+                style={{ padding: 50 }}
                 alt="Image of screen: tasks - today"
               />
             </Box>
             <Typography variant="h4" sx={{ ...globalStyles.heading4, mt: 5 }}>
               Rewards
-            </Typography>
-            <Typography sx={screenFeatureTitle}>
-              Purpose
-            </Typography>
+            </Typography> 
             <Typography sx={globalStyles.paragraph}>
-              As revealed by research, the backbone behind any good productivity tool is the ability to keep the user engaged and motivated. When users lose that motivation, not only do they struggle to accomplish their goals, but they will likely also decrease use of or altogether abandon the tool. Grounded in research findings that highlighted how gamification and rewards boost user engagement, especially for neurodivergent users, this section was born.
+              Sustained motivation emerged as a critical challenge in research. Many users described strong initial momentum followed by drop-off, especially during periods of stress, distraction, or mental fatigue. While gamification can increase engagement, it can alienate audiences when overdesigned. The Rewards section introduces a lightweight motivational layer that supports follow-through through flexibility and personalization without turning productivity into a game.
             </Typography>
            
             <Typography sx={screenFeatureTitle}>
-              The Dilemma with motivation – it’s personal 
+              The Challenge with motivation – it’s personal 
             </Typography>
             <Typography sx={globalStyles.paragraph}>
-              Believe it or not, I found this to be one of the most difficult sections of the app to design because I wanted something that would work well for all users. Many express that they really enjoy gamification for encouraging follow-through, but not all users are interested in a full-blown “game.” Even within the realm of gamification, not everyone is motivated by the same types of rewards.
+              Designing this section was tricky because motivation is highly individual. Some users enjoy gamified elements, like earning points or upgrading an avatar, while others prefer simpler, real-world incentives. Forcing a single style of motivation would conflict with the app’s emphasis on flexibility.
             </Typography>
             <Typography sx={globalStyles.paragraph}>
-              Some users might find it fun to gain experience points and spend them to upgrade or decorate an avatar, but the idea of designing a cutesy mascot or leveling up an avatar doesn’t appeal to everyone. And forcing users into a single style of motivation felt counter to the flexibility I was aiming for throughout the app.
-            </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              Supported by my research analysis, I ultimately decided to bring just a touch of gamification to this section, while giving users a lot of freedom and customization. They define what motivates them, what kinds of incentives feel meaningful, and what those rewards are worth to them personally.
+              To balance this, the section allows users to define what motivates them, set meaningful incentives, and determine how rewards relate to personal achievement. Gamification is present, but subtle, supporting engagement without imposing rigid systems.
             </Typography>
             <Box sx={showCaseScreens}>
               <Image
                 src={LMScreenRewardsInventory}
-                width="100%"
+                style={{ padding: 50 }}
                 alt="Image of screen: tasks - today"
               />
             </Box>
            
             <Typography sx={screenFeatureTitle}>
-              Structure
+              Flexible Reinforcement
             </Typography>
             <Typography sx={globalStyles.paragraph}>
-              The Rewards section is broken into three tabs: In Progress, Shop, and Inventory. In-progress is the “home” section of this section. It shows the list of active achievements the user is working toward. 
-              <br/><br/>These achievements are framed around meaningful milestones like “complete 10 subtasks”, “complete 5 goals”, “turn 5 notes into tasks”, or “complete tasks from 5 different categories.” Each in-progress item includes a progress bar with visual and written tracking (e.g., 3/10 milestones complete) and the number of rewards points it grants upon completion. 
-              <br/><br/>This area also includes a dropdown menu to sort achievements by progress or reward value to help users visualize their momentum and choose what to work toward next.
+              The Rewards section is divided into three tabs: In Progress, Shop, and Inventory. Users earn points by completing meaningful achievements such as finishing subtasks, progressing toward goals, or consistently engaging with the system. Progress indicators make effort visible, reinforcing momentum during low-energy periods. Rather than imposing a predefined reward model, users define what incentives matter to them and assign their own point values. 
             </Typography>
             <Box sx={showCaseScreens}>
               <Image
                 src={LMScreenRewardsInProgress}
-                width="100%"
+                style={{ padding: 50 }}
                 alt="Image of screen: tasks - today"
               />
             </Box>
@@ -673,26 +656,22 @@ const LifeManagementAppMobile = () => {
                 <Box sx={showCaseScreens}>
                   <Image
                     src={LMScreenRewardsCreation}
-                    width="100%"
+                    style={{ padding: 50 }}
                     alt="Image of screen: tasks - today"
                   />
                 </Box>
               </Box>
             }
             <Typography sx={screenFeatureTitle}>
-              The Point Shop
+              Encouragement through prize redemption
             </Typography>
             <Typography sx={globalStyles.paragraph}>
-              The Shop tab is a virtual storefront of rewards users can spend their points on. Rewards are displayed as shop items in a list, each with its own description, point cost, and button to redeem. Above the list, the user can see their point wallet balance and tap a button to add a new reward. 
-            </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              Like the achievements in progress, these rewards are user-defined. However, in contrast to the creating an achievement in progress, reward creation is full open-ended. Users decide the reward and assign a point cost based on what that reward is worth to them personally. 
-              <br/><br/>This freedom allows users to tap into whatever motivates them most. It can be a coffee outing, a couple hours of guilt-free video gaming, a Friday night pizza delivery, a trip to the beach, you name it – it’s completely up to the user based on their personal incentives.
-            </Typography>
+              The shop is a virtual storefront where users spend points earned from achievements. Reward creation is open-ended and user defined, allowing the user to determine what incentivizes them and assign point values accordingly. Users who enjoy gamified reinforcement can lean into it, while those who prefer a straightforward productivity tool can largely ignore it. This approach preserves autonomy while supporting multiple motivational styles within a single framework.
+            </Typography>    
              <Box sx={showCaseScreens}>
               <Image
                 src={LMScreenRewardsShop}
-                width="100%"
+                style={{ padding: 50 }}
                 alt="Image of screen: tasks - today"
               />
             </Box>
@@ -710,14 +689,13 @@ const LifeManagementAppMobile = () => {
               Learning to truly understand an audience
             </Typography>
             <Typography sx={{ ...globalStyles.paragraph }}>
-             When I first started this project, I assumed everyone struggled with memory, focus, and getting things done. But the deeper I got into research, the more I realized that not all struggles are created equal. Neurodivergent users, especially those dealing with ADHD, anxiety, or executive dysfunction, weren’t just having a harder time. In fact, they were being let down by tools that didn’t work for how their brains operate.
+             At the start of this project, I assumed most people struggled with memory, focus, and follow-through in similar ways. Research quickly challenged that assumption. Neurodivergent users, particularly those navigating ADHD, anxiety, or executive dysfunction, weren’t simply “less productive.” They were underserved by systems that didn’t align with how they think and process information.
             </Typography>
             <Typography sx={{ ...globalStyles.paragraph }}>
-             That shifted everything for me. Instead of trying to build something for the masses, I focused on designing for the folks who needed the most support, and honestly, that made the work better. I added more flexibility, more cues for memory and focus, and more room for users to work the way they actually work, not how some ideal productivity model says they “should.”
+             That insight reframed the entire project. Rather than designing for a generalized audience, I focused on supporting users who need more flexibility, clearer visual scaffolding, and multiple paths to motivation. Designing for this edge case strengthened the system as a whole. Structure became more intentional, flexibility more constrained, and every feature had to justify its cognitive cost.
             </Typography>
             <Typography sx={{ ...globalStyles.paragraph }}>
-              I’m proud of where this ended up, but I’m not done yet. My next goal is to build a clickable prototype and get it in front of real users through usability testing sessions to see how well it holds up. I want to validate whether the app truly supports autonomy, reduces friction, and motivates sustained engagement. 
-              Designing this case study reminded me what UX is all about. It’s about staying curious, listening closely, and being willing to rethink everything when the people you’re designing for show you a better direction.
+              Next, I plan to move beyond prototype validation into moderated usability testing to evaluate whether the system truly reduces friction, supports autonomy, and sustains engagement over time. This project reinforced a core belief. UX isn't about designing features the way you want your users to use them. Rather, it’s about understanding behavior deeply enough to design systems that genuinely fit the people using them.
             </Typography>
           </Box>
         </section>

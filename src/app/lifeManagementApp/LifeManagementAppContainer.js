@@ -337,7 +337,7 @@ const LifeManagementAppContainer = () => {
           <Typography variant="h3" sx={{ ...globalStyles.heading4, mt: 2 }}>
             Tasks
           </Typography>
-          <Typography sx={globalStyles.paragraph}>The Tasks section is the app’s home screen, designed to help users focus on what matters today while keeping longer-term tasks visible and manageable. It is divided into three tabs: Today, Backlog, and Archive, each serving a distinct purpose.</Typography>
+          <Typography sx={globalStyles.paragraph}>Research showed that users often feel overwhelmed by long lists and struggle to balance immediate responsibilities with future planning. To address this, I built the “Tasks” section of the app. Tasks is the app’s home screen. It’s designed to help users focus on what matters today while keeping longer-term tasks visible and manageable.</Typography>
           <Grid container justifyContent="space-around" alignItems="center">
             <Grid item xs={3}>
               <Box sx={globalStyles.graphic}>
@@ -350,10 +350,10 @@ const LifeManagementAppContainer = () => {
             </Grid>
             <Grid item xs={7}>
               <Typography sx={{ ...globalStyles.paragraph, fontStyle: "italic" }}>
-                Today tab
+                Three-Part Structure: Today, Backlog, Archive
               </Typography>
               <Typography sx={globalStyles.paragraph}>
-                The today tab is the default active tab and is designed to bring today’s plan into focus for the user. It’s the daily checklist. Tasks can be filtered or reordered according to user preferences, and new tasks and subtasks can be quickly added.
+                Tasks is divided into three focused views, each serving a different purpose. The today tab is the default active tab, the daily checklist designed to bring today’s plan into focus. The Backlog acts as a holding area for tasks not yet scheduled for today, allowing users to pull them into their daily plan when ready and preventing cognitive overload while preserving visibility. The archive maintains a searchable history of completed tasks, reinforcing a sense of progress and supporting memory and recall.
               </Typography>
             </Grid>
           </Grid>
@@ -378,13 +378,13 @@ const LifeManagementAppContainer = () => {
               </Box>
             </Grid>
           </Grid>}
-          <Grid container justifyContent="space-around" alignItems="center" sx={{ mt: -10 }}>
+          <Grid container justifyContent="space-around" alignItems="center">
             <Grid item xs={7}>
               <Typography sx={{ ...globalStyles.paragraph, fontStyle: "italic" }}>
-                Task Card Structure
+                Task Card Design: Fully Optional Customization
               </Typography>
               <Typography sx={globalStyles.paragraph}>
-                Task cards include features informed by user feedback. Subtasks are indented to maintain visual hierarchy. Indicators help users prioritize tasks based on time and effort involved. Icons, color-coded categories, due dates, and goal links help users define meaning to their tasks. Everything is optional but accessible for full flexibility.
+                Task cards were designed to balance simplicity with optional depth. Users can keep tasks lightweight or enrich them with metadata such as color-coding, categories, due dates, subtasks, or goal links. Visual markers and hierarchy help users quickly assess priority and effort without forcing structure on those who prefer minimal input. The key design decision was constraint with choice: advanced organization is available, but never required.
               </Typography>
             </Grid>
             <Grid item xs={4}>
@@ -401,59 +401,31 @@ const LifeManagementAppContainer = () => {
             <Grid item xs={4}>
               <Box sx={globalStyles.graphic}>
                 <Image
-                  src={LMScreenTasksBacklog}
-                  width={250}
-                  alt="Image of screen: tasks - today"
-                />
-              </Box>
-            </Grid>
-            <Grid item xs={7}>
-              <Typography sx={{ ...globalStyles.paragraph, fontStyle: "italic" }}>
-                The Backlog
-              </Typography>
-              <Typography sx={globalStyles.paragraph}>
-                The Backlog acts as a holding area for tasks not yet scheduled for today, allowing users to pull them into their daily plan when ready. Users can filter by priority, category, or due date, and switch to a calendar view for a visual overview. Including a calendar directly in the Backlog helps users plan ahead and better manage task timing.
-              </Typography>
-            </Grid>
-          </Grid>
-          <Grid container justifyContent="space-around" alignItems="center">
-            <Grid item xs={7}>
-              <Typography sx={{ ...globalStyles.paragraph, fontStyle: "italic" }}>
-                Archive
-              </Typography>
-              <Typography sx={globalStyles.paragraph}>
-                The Archive provides a searchable record of completed tasks, either as a list or in folder-like categories. This reinforces a sense of progress and supports memory and recall. For example, a user needing the date of their pet’s last vaccine could quickly search the archive instead of digging through emails or paperwork.
-              </Typography>
-            </Grid>
-            <Grid item xs={4}>
-              <Box sx={globalStyles.graphic}>
-                <Image
                   src={LMScreenTasksArchive}
                   width={250}
                   alt="Image of screen: tasks - today"
                 />
               </Box>
             </Grid>
+            <Grid item xs={7}>
+              <Typography sx={{ ...globalStyles.paragraph, fontStyle: "italic" }}>
+                Planning Without Pressure
+              </Typography>
+              <Typography sx={globalStyles.paragraph}>
+                The Backlog supports flexible planning, including calendar-based organization, allowing users to preview workload without committing prematurely. This addresses a common research insight: users want visibility into future obligations without feeling locked into rigid schedules.
+              </Typography>
+            </Grid>
           </Grid>
-
+      
 
 
           <Typography variant="h4" sx={{ ...globalStyles.heading4, mt: 2 }}>
             Notes
           </Typography>
 
-          <Typography sx={{ ...globalStyles.paragraph, fontStyle: "italic" }}>
-            Purpose
-          </Typography>
           <Typography sx={globalStyles.paragraph}>
-            Research revealed that many users struggle with focus and forgetfulness, juggling multiple priorities and busy schedules. Ideas can appear at any moment and disappear just as quickly. Traditional productivity apps often require too much structure, slowing or discouraging the capture of fleeting thoughts.
+            Research revealed that many users struggle with focus and forgetfulness, juggling multiple priorities and busy schedules. Ideas can appear at any moment and disappear just as quickly. Traditional productivity apps often require too much structure, creating friction that discourages spontaneous capture.
           </Typography>
-          <Typography sx={globalStyles.paragraph}>
-            To address this, I designed the Notes section as a mental inbox. Whether during a meeting, a jog, or late at night, it allows users to quickly jot down ideas in the moment without worrying about categorization or immediate action. Notes can be converted into tasks later, providing a bridge from inspiration to execution.
-          </Typography>
-
-
-
 
           <Grid container justifyContent="space-around" alignItems="center">
             <Grid item xs={4}>
@@ -467,13 +439,10 @@ const LifeManagementAppContainer = () => {
             </Grid>
             <Grid item xs={7}>
               <Typography sx={{ ...globalStyles.paragraph, fontStyle: "italic" }}>
-                Structure
+                Designed for Capture First, Organization Later
               </Typography>
               <Typography sx={globalStyles.paragraph}>
-                Users can view notes by user-defined folders or search across all notes with text search, filters, and sorting options. Each folder can be assigned a unique color, reflecting the research finding that visual cues aid organization. Users can also pin important notes for easy access.
-              </Typography>
-              <Typography sx={globalStyles.paragraph}>
-                For a touch of familiarity, notes are displayed on a background resembling a spiral notebook, adding skeuomorphic comfort reminiscent of physical notebooks, reflecting something many users expressed enjoying.
+                The Notes section was designed as a mental inbox. Whether during a meeting, a jog, or late at night, it allows users to quickly jot down ideas in the moment without worrying about categorization or immediate action. A subtle skeuomorphic notebook aesthetic reinforces familiarity and reduces the intimidation often associated with highly structured productivity systems.
               </Typography>
             </Grid>
           </Grid>
@@ -483,10 +452,10 @@ const LifeManagementAppContainer = () => {
           <Grid container justifyContent="space-around" alignItems="center">
             <Grid item xs={7}>
               <Typography sx={{ ...globalStyles.paragraph, fontStyle: "italic" }}>
-                Creating & Editing Notes
+                Simple, low-structure note-taking and editing
               </Typography>
               <Typography sx={globalStyles.paragraph}>
-                The notes editor incorporates flexibility and conventions that users are used to having in notes-focused apps without overcomplication. Users can choose between keyboard typing mode or handwriting. They can also attach media like voice recordings, photos, or PDFs. Basic styling and formatting include bullets, bolding, italics, and underlining. 
+                The notes editor incorporates flexibility and conventions that users are used to having in notes-focused apps without overcomplication. Users can freely jot ideas using typing or handwriting, reinforcing comfort and accessibility for different thinking styles. They can also attach media like voice recordings, photos, or PDFs to support details with visual and audio reminders.
               </Typography>
             </Grid>
             <Grid item xs={4}>
@@ -514,10 +483,10 @@ const LifeManagementAppContainer = () => {
             </Grid>
             <Grid item xs={7}>
               <Typography sx={{ ...globalStyles.paragraph, fontStyle: "italic" }}>
-                Converting notes to tasks
+                Bridging Ideas to Action
               </Typography>
               <Typography sx={globalStyles.paragraph}>
-                Notes can be seamlessly converted into tasks via a prominent button in the note editor or on the note card itself, creating a smooth path from capturing ideas to actionable items.
+                Crucially, notes are not dead ends. Any note can be converted into a task with a single action, creating a seamless bridge between inspiration and execution. This connection supports the broader system goal: reducing friction between thinking, planning, and doing.
               </Typography>
             </Grid>
           </Grid>
@@ -528,14 +497,11 @@ const LifeManagementAppContainer = () => {
             Goals
           </Typography>
 
-          <Typography sx={{ ...globalStyles.paragraph, fontStyle: "italic" }}>
-            Purpose
+          <Typography sx={globalStyles.paragraph}>
+            Most productivity tools emphasize daily task completion but neglect long-term direction. Research participants expressed frustration with losing sight of larger ambitions and resorting to spreadsheets, planners, or abandoning goal tracking altogether due to overwhelm.
           </Typography>
           <Typography sx={globalStyles.paragraph}>
-            Users often felt frustrated that most productivity apps focus solely on short-term tasks. They wanted a way to keep long-term aspirations visible and manageable, while understanding how daily actions contribute to bigger objectives. Many resorted to Google Sheets, physical planners, or simply abandoned goal-tracking due to overwhelm or lack of decent support tools.
-          </Typography>
-          <Typography sx={globalStyles.paragraph}>
-            The Goals section addresses this by breaking ambitious objectives into actionable steps, connecting everyday tasks to broader milestones, and helping users see meaningful progress. This turns a standard to-do system into an actual life management tool.
+            The Goals section addresses this by breaking ambitious objectives into actionable steps, connecting everyday tasks to broader milestones. This turns a standard to-do system into an actual life management tool.
           </Typography>
 
 
@@ -551,13 +517,10 @@ const LifeManagementAppContainer = () => {
             </Grid>
             <Grid item xs={7}>
               <Typography sx={{ ...globalStyles.paragraph, fontStyle: "italic" }}>
-                Goals Overview
+                Bringing Visibility to objectives and aspirations
               </Typography>
               <Typography sx={globalStyles.paragraph}>
-                The Goals section is split into active goals and archived goals. The Active goals tab displays all in-progress goals at a glance. Each card includes an icon, title, progress bar with milestone count (e.g., “3/5 milestones completed”), and an optional due date. Goals can be sorted by progress or upcoming due date, helping users prioritize effectively.
-              </Typography>
-              <Typography sx={globalStyles.paragraph}>
-                The goal archive tab keeps record of all previously completed goals and their completion dates, providing a clean interface while preserving historical context.
+                The Goals section is split into active goals and archived goals. The Active goals tab displays all in-progress goals at a glance. Progress indicators provide visual momentum, helping users see advancement over time rather than relying on memory alone. The goal archive tab keeps record of all previously completed goals and their completion dates, providing a clean interface while preserving historical context.
               </Typography>
             </Grid>
           </Grid>
@@ -567,7 +530,7 @@ const LifeManagementAppContainer = () => {
           <Grid container justifyContent="space-around" alignItems="center">
             <Grid item xs={7}>
               <Typography sx={{ ...globalStyles.paragraph, fontStyle: "italic" }}>
-                Creating and Managing Goals
+                Progress Without Clutter
               </Typography>
               <Typography sx={globalStyles.paragraph}>
                 Users define the title, description, due date, attachments, and goal milestones. Milestones serve as building blocks for larger goals. For example, a goal like “Record an album” might include milestones such as “write music,” “record songs,” “design album cover,” and “distribute album.”
@@ -597,10 +560,10 @@ const LifeManagementAppContainer = () => {
             </Grid>
             <Grid item xs={7}>
               <Typography sx={{ ...globalStyles.paragraph, fontStyle: "italic" }}>
-                Milestones
+                From Ambition to Actionable steps
               </Typography>
               <Typography sx={globalStyles.paragraph}>
-                Clicking a milestone opens a dedicated screen for details. Each milestone can include a title, due date, description, media attachments, and a list of related tasks. Tasks can be sorted, moved to the backlog, or marked complete, creating a clear path from long-term goals to day-to-day actions.
+                Milestones create visible progress while preventing large ambitions from feeling paralyzing. Each milestone can connect directly to related tasks, ensuring that daily checklists contribute meaningfully to long-term outcomes. This hierarchy (Goal → Milestone → Task) creates alignment across the system, reinforcing purpose behind everyday actions.
               </Typography>
             </Grid>
           </Grid>
@@ -610,11 +573,8 @@ const LifeManagementAppContainer = () => {
           <Typography variant="h4" sx={{ ...globalStyles.heading4, mt: 2 }}>
             Rewards
           </Typography>
-          <Typography sx={{ ...globalStyles.paragraph, fontStyle: "italic" }}>
-            Purpose
-          </Typography>
           <Typography sx={globalStyles.paragraph}>
-            Research revealed that motivation is the backbone of any productivity tool. When users lose motivation, goal completion and continued app engagement drop. Gamification and rewards, particularly for neurodivergent users, were shown to boost engagement and follow-through. The Rewards section was designed to help users stay motivated while maintaining flexibility and personalization.
+            Sustained motivation emerged as a critical challenge in research. Many users described strong initial momentum followed by drop-off, especially during periods of stress, distraction, or mental fatigue. While gamification can increase engagement, it can alienate audiences when overdesigned. The Rewards section introduces a lightweight motivational layer that supports follow-through through flexibility and personalization without turning productivity into a game.
           </Typography>
 
 
@@ -647,10 +607,10 @@ const LifeManagementAppContainer = () => {
           <Grid container justifyContent="space-around" alignItems="center">
             <Grid item xs={7}>
               <Typography sx={{ ...globalStyles.paragraph, fontStyle: "italic" }}>
-                Structure
+                Flexible Reinforcement
               </Typography>
              <Typography sx={globalStyles.paragraph}>
-               The Rewards section is divided into three tabs: In Progress, Shop, and Inventory. In-progress is the “home” section, showing milestones like “complete 10 subtasks” or “turn 5 notes into tasks.” Each item includes a progress bar (e.g., 3/10 completed) and the reward points earned upon completion. A dropdown menu allows sorting by progress or reward value to help users visualize their momentum and choose what to work toward next.
+               The Rewards section is divided into three tabs: In Progress, Shop, and Inventory. Users earn points by completing meaningful achievements such as finishing subtasks, progressing toward goals, or consistently engaging with the system. Progress indicators make effort visible, reinforcing momentum during low-energy periods. Rather than imposing a predefined reward model, users define what incentives matter to them and assign their own point values. 
               </Typography>
             </Grid>
             <Grid item xs={4}>
@@ -705,33 +665,14 @@ const LifeManagementAppContainer = () => {
             </Grid>
             <Grid item xs={7}>
                 <Typography sx={{ ...globalStyles.paragraph, fontStyle: "italic" }}>
-                  The Point Shop
+                  Encouragement through prize redemption
                 </Typography>
-                <Typography sx={globalStyles.paragraph}>
-                  The shop is a  virtual storefront where users spend points earned from achievements. Each reward includes a description, point cost, and redeem button. Adding rewards is open-ended and user defined, allowing the user to determine what incentivizes them and assign point values accordingly.
-                </Typography>
+                 <Typography sx={globalStyles.paragraph}>
+                  The shop is a virtual storefront where users spend points earned from achievements. Reward creation is open-ended and user defined, allowing the user to determine what incentivizes them and assign point values accordingly. Users who enjoy gamified reinforcement can lean into it, while those who prefer a straightforward productivity tool can largely ignore it. This approach preserves autonomy while supporting multiple motivational styles within a single framework.
+                 </Typography>
             </Grid>
           </Grid>
         </Box>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         <Box sx={{ mt: 10 }}>
