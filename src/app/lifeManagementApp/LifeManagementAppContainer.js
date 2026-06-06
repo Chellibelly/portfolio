@@ -91,7 +91,7 @@ const LifeManagementAppContainer = () => {
              </Typography>
              <Typography variant='h3' sx={globalStyles.heading3}>Outcomes</Typography>
              <Typography variant='body1' sx={globalStyles.paragraph}> 
-                Delivered a high-fidelity, interactive prototype that unifies note-taking, task management, and long-term planning within a single visual system. Usability testing validated the balance between flexibility and structure, with users responding positively to visual cues and reward-based motivation.
+                Delivered a high-fidelity, interactive prototype that unifies note-taking, task management, and long-term planning within a single visual system. Usability testing highlighted confusion in the app’s hierarchy and feature density, while also showing strong user engagement with rewards, seamless idea-to-task conversion, and visual progress-tracking features.
              </Typography>
              <Typography variant='h3' sx={globalStyles.heading3}>Takeaways</Typography>
              <Typography variant='body1' sx={globalStyles.paragraph}> 
@@ -679,6 +679,129 @@ const LifeManagementAppContainer = () => {
           </Grid>
         </Box>
 
+        <Typography variant="h3" sx={{ ...globalStyles.heading1, mb: 3, mt: 5}}>Learning through User Testing my Design</Typography>
+
+        <Typography sx={{ ...globalStyles.paragraph }}>
+          After developing my screens designs and prototype, in order to really test out my research-informed assumptions in real time, I conducted moderated usability testing with three participants ranging from low to high experience with productivity tools: Debbie, a pen-and-paper organizer; Jenny, a neurodivergent user with some experience using digital scheduling apps; and Bella, an experienced productivity app power user and self-described gamer. The tests uncovered some very interesting insights.
+        </Typography>
+
+
+
+      <Typography variant="h4" sx={{ ...globalStyles.heading2, mt: 3 }}>Users Struggled with Terminology and Information Hierarchy</Typography>
+        <Typography sx={{ ...globalStyles.paragraph }}>
+          While participants understood the app’s overall purpose, they consistently relied on their own mental models rather than the system’s definitions and organizational hierarchy. As a result, key terms like goals, milestones, tasks, subtasks, and achievements were often used interchangeably, reflecting how these concepts overlap in everyday language.
+        </Typography>
+        <Typography sx={{ ...globalStyles.paragraph }}>
+          The term “<i>milestone</i>” in particular caused confusion, with users misinterpreting it, replacing it with other terms, or feeling it added unnecessary complexity to the hierarchy.
+        </Typography>
+        <Typography sx={{ ...globalStyles.paragraph }}>
+          Overall, the layered terminology created friction rather than clarity. These findings informed the decision to simplify the hierarchy by removing “milestones” as a distinct concept.
+        </Typography>
+        <Grid container direction="row"  alignItems="stretch" sx={{ mb: 2 }}>
+          <Grid item sx={{ width: 3, backgroundColor: "#D3D3D3", mr: 2 }}/>
+          <Grid item xs={10}>
+            <Typography sx={{ ...globalStyles.paragraph, mb: 0, fontStyle: "italic" }}>
+              “I do like the sub-categories, or the milestones I mean.. You know, the subtasks.” 
+            </Typography>
+          </Grid>
+        </Grid>
+
+        <Box sx={{ mt: 5 }}>
+          <video width={"90%"} height="auto" controls>
+            <source src="/Usability_clips_TERMS_AND_HIERARCHY.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </Box>
+          
+
+
+
+        <Typography variant="h4" sx={{ ...globalStyles.heading2, mt: 5 }}>Users Valued the Support for Recall and Follow-Through</Typography>
+        <Typography sx={{ ...globalStyles.paragraph }}>
+          Participants highly valued the app's emphasis on recall and follow-through. The ability to capture ideas, revisit them later, and gradually transform them into goals and tasks resonated strongly with users. Features like the progress tracking, backlogging, and archiving were viewed aa safeguards against forgetting unfinished work, helping users feel more confident that important ideas wouldn't slip through the cracks."
+        </Typography>
+        <Grid container direction="row"  alignItems="stretch" sx={{ mb: 2 }}>
+          <Grid item sx={{ width: 3, backgroundColor: "#D3D3D3", mr: 2 }}/>
+          <Grid item xs={10}>
+            <Typography sx={{ ...globalStyles.paragraph, mb: 0, fontStyle: "italic" }}>
+              “Taking [a brainstorm] into an actionable item.. I like that a lot”
+            </Typography>
+          </Grid>
+        </Grid>
+        <Grid container direction="row" alignItems="stretch">
+          <Grid
+            item
+            sx={{
+              width: 3,
+              backgroundColor: "#D3D3D3",
+              mr: 2,
+            }}
+          />
+          <Grid item xs={10}>
+            <Typography sx={{ ...globalStyles.paragraph, mb: 0, fontStyle: "italic" }}>
+              “I really like that there’s a backlog because I hate when I don’t have time to do a thing and it just sits in my list of tasks, and I can’t complete it but I also can’t get it out of there”
+            </Typography>
+          </Grid>
+        </Grid>
+
+
+        <Box sx={{ mt: 5 }}>
+          <video width={"90%"} height="auto" controls>
+            <source src="/Usability_clips_FOLLOWTHRU.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </Box>
+
+
+
+        <Typography variant="h4" sx={{ ...globalStyles.heading2, mt: 5 }}>Too Many Features and Options Increased Cognitive Load</Typography>
+        <Typography sx={{ ...globalStyles.paragraph }}>
+          One of the primary design challenges was balancing flexibility with simplicity. While participants found many features valuable in isolation, several became overwhelmed by the number of layers, sorting systems, configuration options, and overlapping concepts throughout the app. This was especially apparent on task cards and task creation screens, where multiple indicators intended to aid decision-making instead created confusion. The findings reinforced the need to prioritize clarity and focus over feature completeness, including removing lower-value elements such as the “time required” attribute.
+        </Typography>
+        <Grid container direction="row"  alignItems="stretch" sx={{ mb: 2 }}>
+          <Grid item sx={{ width: 3, backgroundColor: "#D3D3D3", mr: 2 }}/>
+          <Grid item xs={10}>
+            <Typography sx={{ ...globalStyles.paragraph, mb: 0, fontStyle: "italic" }}>
+              “For me, it's too much. I’m going to get more distracted the more layers there are.” 
+            </Typography>
+          </Grid>
+        </Grid>
+
+
+
+        <Box sx={{ mt: 5 }}>
+          <video width={"90%"} height="auto" controls>
+            <source src="/Usability_clips_TASKS.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </Box>
+
+
+        <Typography variant="h4" sx={{ ...globalStyles.heading2, mt: 5 }}>The Rewards System Created Emotional Engagement and Motivation</Typography>
+        <Typography sx={{ ...globalStyles.paragraph }}>
+          Users showed visible excitement when interacting with the rewards system, responding positively to earning points, tracking progress, and the ability to define their own rewards. The concept was immediately understood across all experience levels, including users who did not identify as gamers.
+        </Typography>
+        <Typography sx={{ ...globalStyles.paragraph }}>
+          This level of enthusiasm was unexpected and highlighted the motivational potential of lightweight gamification in a productivity context. The key takeaway is to continue developing and expanding upon the rewards system while ensuring it remains approachable and supportive.
+        </Typography>
+        <Grid container direction="row"  alignItems="stretch" sx={{ mb: 2 }}>
+          <Grid item sx={{ width: 3, backgroundColor: "#D3D3D3", mr: 2 }}/>
+          <Grid item xs={10}>
+            <Typography sx={{ ...globalStyles.paragraph, mb: 0, fontStyle: "italic" }}>
+              “I love a reward. I don’t do anything unless there’s a reward.” 
+            </Typography>
+          </Grid>
+        </Grid>
+
+
+        <Box sx={{ mt: 5 }}>
+          <video width={"90%"} height="auto" controls>
+            <source src="/Usability_clips_REWARDS.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </Box>
+      
+
 
         <Box sx={{ mt: 10 }}>
           <Typography sx={globalStyles.heading1}>
@@ -694,7 +817,10 @@ const LifeManagementAppContainer = () => {
            That insight reframed the entire project. Rather than designing for a generalized audience, I focused on supporting users who need more flexibility, clearer visual scaffolding, and multiple paths to motivation. Designing for this edge case strengthened the system as a whole. Structure became more intentional, flexibility more constrained, and every feature had to justify its cognitive cost.
           </Typography>
           <Typography sx={{ ...globalStyles.paragraph }}>
-            Next, I plan to move beyond prototype validation into moderated usability testing to evaluate whether the system truly reduces friction, supports autonomy, and sustains engagement over time. This project reinforced a core belief. UX isn't about designing features the way you want your users to use them. Rather, it’s about understanding behavior deeply enough to design systems that genuinely fit the people using them.
+            Usability testing later validated some of these decisions while surfacing key areas for refinement. Participants responded strongly to the rewards system, visual progress tracking, and the ability to convert ideas into actionable tasks. However, they also highlighted friction around terminology, overlapping hierarchy concepts, and feature density, particularly in task creation.
+          </Typography>
+          <Typography sx={{ ...globalStyles.paragraph }}>
+            Moving forward, the next iteration of the design will focus on reducing cognitive load and clarifying system language by simplifying hierarchical relationships and removing or consolidating low-value attributes. 
           </Typography>
         </Box>
 
