@@ -3,6 +3,7 @@ import { Box, Paper, Typography, Collapse, IconButton } from '@mui/material';
 import * as globalStyles from '../styles/globalStyleConsts';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Image from 'next/image';
+import { blue, grey } from '@mui/material/colors';
 
 const ProjectCard = ({
   thumbnail,
@@ -13,6 +14,8 @@ const ProjectCard = ({
   scope,
   focus,
   impact,
+  blurbTitle,
+  blurb,
   problem,
   solution,
   result,
@@ -55,7 +58,7 @@ const ProjectCard = ({
             {/* Title + metadata */}
             <Box sx={{ flexGrow: 1 }}>
               <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                <Typography sx={{ ...globalStyles.heading4 }}>
+                <Typography sx={{ ...globalStyles.heading4, color: grey[800], fontWeight: "bold" }}>
                   {title}
                 </Typography>
                 <IconButton
@@ -77,7 +80,7 @@ const ProjectCard = ({
 
               {!expanded && (
                 <Typography sx={{ ...globalStyles.paragraph, fontSize: 18 }}>
-                  <b><i>Impact</i></b>: {impact}
+                  <b><i>{blurbTitle}</i></b>: {blurb}
                 </Typography>
               )}
             </Box>
@@ -86,9 +89,21 @@ const ProjectCard = ({
           {/* Collapsible details */}
           <Collapse in={expanded} timeout="auto" unmountOnExit>
             <Box>
-              {problem &&  <Typography sx={globalStyles.paragraph}>{problem}</Typography>}
-              {solution &&  <Typography sx={globalStyles.paragraph}>{solution}</Typography>}
-              {impact && <Typography sx={globalStyles.paragraph}>{impact}</Typography> }
+              {problem &&  
+              <Box sx={{ mb: 5 }}>
+                <Typography sx={globalStyles.heading5}><b>Challenge</b></Typography>
+                <Typography sx={globalStyles.paragraph}>{problem}</Typography>
+              </Box>}
+              {solution && 
+              <Box sx={{ mb: 5 }}>
+                <Typography sx={globalStyles.heading5}><b>Design Response</b></Typography>
+                <Typography sx={globalStyles.paragraph}>{solution}</Typography>
+              </Box>}
+              {impact && 
+              <Box>
+                <Typography sx={globalStyles.heading5}><b>Outcome</b></Typography>
+                <Typography sx={globalStyles.paragraph}>{impact}</Typography>
+              </Box>}
             </Box>
           </Collapse>
 

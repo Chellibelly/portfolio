@@ -361,12 +361,6 @@ const LifeManagementAppMobile = () => {
               Many users are drawn to features that make productivity feel more like play. Positive reinforcement and progress visibility keep users engaged during low-energy or distracted states and interruptions. 
             </Typography>
             <Typography sx={{ ...globalStyles.paragraph, mt: 3, mb: 0, fontWeight: "bold" }}>
-              Access
-            </Typography>
-            <Typography sx={{ ...globalStyles.paragraph }}>
-              Log-in requirements and app switching are major sources of frustration. Seamless cross-device access, minimal login friction, and integrations reduce disruption.
-            </Typography>
-            <Typography sx={{ ...globalStyles.paragraph, mt: 3, mb: 0, fontWeight: "bold" }}>
               Task Creation & Management
             </Typography>
             <Typography sx={{ ...globalStyles.paragraph }}>

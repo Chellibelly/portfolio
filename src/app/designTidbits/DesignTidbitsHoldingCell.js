@@ -30,7 +30,7 @@ const DesignTidbitsContainer = () => {
       <Grid container sx={{ height: "90vh", p: 10 }}>
         <Box sx={padText}>
           <Typography sx={{...globalStyles.heading1, mb: 5}}>
-            Career Highlights: Real UX Projects with Real Impact
+            Career Highlights: Selected Product Design Work
           </Typography>
           <Image
             src={DesignTidbitsCollage}

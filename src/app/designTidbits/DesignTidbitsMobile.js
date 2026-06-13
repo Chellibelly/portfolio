@@ -52,7 +52,7 @@ const DesignTidbitsMobile = () => {
             Career Highlights:
           </Typography>
           <Typography sx={{ ...globalStyles.heading2, mb: 5 }}>
-            <b>Real</b> UX Projects with <b>Real</b> Impact
+            Selected Product Design Work
           </Typography>
           <Typography sx={globalStyles.paragraph}>
             Welcome to a selection of professional projects highlighting how I solve real-world product challenges through user-centered design. These short case studies demonstrate my approach to simplifying complex experiences, improving internal tools, and reducing operational friction. Each example highlights the problem, the design approach I took, and the impact the solution had for users and the business.
@@ -62,10 +62,10 @@ const DesignTidbitsMobile = () => {
           thumbnail={SalesOrdersThumbnail}
           expandedImages={[SalesOrders, CustomerDetails]}
           imageHeight={225}
-          title="1) Accelerating Lead Conversion through Rapid Digital Customer Onboarding"
-          problem="Leads from online channels were fragmented across systems, leaving store managers without a single view of follow-ups, spending potential, or order history. Managers spent extra time piecing together customer information, slowing conversions and frustrating customers unsure of next steps."
-          solution="We designed and implemented a centralized tool listing each lead with channel, date, spending power, sales history, and notes. Clicking a lead surfaces contact info, interaction history, and order data, allowing managers to generate orders directly from the app. The design was informed by observing store workflows and interviewing managers to understand pain points."
-          impact="By centralizing and bringing more visibility to lead data, managers acted faster with less fragmentation, the business achieved quicker conversions and higher conversion rates, and customers progressed smoothly through orders. This project reinforced the value of centralizing critical data and aligning interfaces to real user workflows."
+          title="1) Centralizing Lead Data to Speed Up Customer Follow-Up"
+          problem="Leads from online channels were distributed across multiple systems, leaving store managers without a single view of customer follow-ups, purchasing capacity, or order history. To understand what had already happened and determine the next step, managers had to piece together information manually. This slowed customer follow-up and created an uncertain experience for customers waiting to continue their orders."
+          solution="I worked with product, design, and engineering to create a centralized lead-management tool shaped by store workflow observations and manager interviews. The interface helped managers evaluate, prioritize, and act on leads in one place by surfacing lead source, date, purchasing capacity, sales history, notes, contact details, prior interactions, and order information, allowing them to review customer context and begin an order without switching systems."
+          impact="Managers could review customer context, document interactions, and begin an order from one place rather than reconstructing information across separate systems. Feedback indicated that the centralized workflow made leads easier to prioritize and reduced the effort required to move customers toward an order. Additionally, internal reporting showed improved conversion rates after launch."
         />
         <ProjectCardMobile
           thumbnail={DigitalCheckoutOptionsAfter}
