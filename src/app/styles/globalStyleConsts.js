@@ -5,33 +5,25 @@ export const sectionStyle = {
 };
 
 export const heading1 = {
-  fontSize: { xs: '28px', sm: '48px' },
+  fontSize: { xs: '30px', sm: '40px' },
+  lineHeight: 1.15,
   fontFamily: 'Montserrat',
   fontWeight: 600,
-  marginBottom: '6px',
+  marginBottom: '8px',
 };
 
 export const heading2 = {
-  fontSize: { xs: '20px', sm: '30px' },
+  fontSize: { xs: '17px', sm: '21px' },
+  lineHeight: 1.5,
   fontStyle: 'italic',
   fontFamily: 'Montserrat',
   fontWeight: 400,
+  color: 'text.secondary',
   marginBottom: '36px',
 };
 
-export const heading3 = {
-  fontSize: { xs: '20px', sm: '28px' },
-  fontFamily: 'Montserrat',
-  fontWeight: 500,
-  marginTop: '30px',
-  marginBottom: '22px',
-};
-
-export const heading4 = {
-  fontSize: '24px',
-  fontFamily: 'Montserrat',
-  marginBottom: '22px',
-};
+export const heading3 = { fontSize: { xs: '22px', sm: '28px' }, lineHeight: 1.3, fontFamily: 'Montserrat', fontWeight: 600, marginTop: '30px', marginBottom: '18px', }; 
+export const heading4 = { fontSize: { xs: '20px', sm: '24px' }, lineHeight: 1.35, fontFamily: 'Montserrat', fontWeight: 600, marginTop: '24px', marginBottom: '14px', };
 
 export const heading5 = {
   fontSize: '20px',
@@ -46,19 +38,22 @@ export const heading6 = {
 };
 
 export const paragraph = {
-  fontSize: { xs: '16px', sm: '20px' },
+  fontSize: { xs: '16px', sm: '18px' },
+  lineHeight: 1.7,
   fontFamily: 'Montserrat',
-  marginBottom: '18px',
+  marginBottom: '20px',
 };
 
 export const paragraphMed = {
   fontSize: '14px',
+  lineHeight: 1.6,
   fontFamily: 'Montserrat',
   marginBottom: '18px',
 };
 
 export const paragraphSmall = {
   fontSize: '12px',
+  lineHeight: 1.6,
   fontFamily: 'Montserrat',
   marginBottom: '18px',
 };
@@ -89,7 +84,8 @@ export const navSectionActive = {
 };
 
 export const graphic = {
-  margin: { xs: '10px 0', sm: '24px' },
+  my: { xs: 1.25, sm: 3 },
+  mx: 0,
 };
 
 export const columnB = {
@@ -109,4 +105,38 @@ export const rootBackground = {
     transparent,
     rgb(0, 0, 0)
   ), rgb(0, 0, 0)`,
+};
+
+
+
+
+
+export const featureTitle = {
+  fontSize: { xs: '18px', sm: '20px' },
+  lineHeight: 1.4,
+  fontFamily: 'Montserrat',
+  fontWeight: 600,
+  marginBottom: '12px',
+};
+
+export const majorSection = {
+  mt: { xs: 9, md: 14 },
+};
+
+export const researchGraphic = {
+  width: '100%',
+  mt: { xs: 4, md: 5 },
+  mb: { xs: 6, md: 8 },
+};
+
+export const screenGraphic = {
+  width: '100%',
+  my: { xs: 2, md: 0 },
+};
+
+export const usabilityMedia = {
+  width: '100%',
+  maxWidth: '900px',
+  mt: { xs: 4, md: 5 },
+  mb: { xs: 6, md: 8 },
 };
