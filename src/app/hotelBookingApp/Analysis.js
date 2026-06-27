@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Grid, Typography, Box, Button, Divider } from "@mui/material";
+import { Grid, Typography, Box, Button, Divider, Collapse } from "@mui/material";
 import { blue, grey } from "@mui/material/colors";
 import Image from "next/image";
 import CheckIcon from "@mui/icons-material/Check";
@@ -8,6 +8,8 @@ import AffinityGroupList from "./AffinityGroupsList";
 import AffinityGroupListMobile from "./AffinityGroupListMobile";
 import OpportunitiesGraphic from "../../../public/Desktop_Opportunities_Graphic_V2.png";
 import * as globalStyles from "../styles/globalStyleConsts";
+
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 // Graphics
 import AffinityDiagramGraphic from "../../../public/Affinity_Diagram.jpg";
@@ -51,17 +53,20 @@ const ExpandableImage = ({ src, alt, isDesktop }) => {
         onClick={toggle}
         variant="contained"
         sx={{
-          width: "100%",
           display: "flex",
-          justifyContent: "center",
-          padding: "10px",
+          mx: "auto",
+          fontFamily: "Montserrat",
+          fontWeight: 600,
+          textTransform: "none",
+          fontSize: "16px",
           backgroundColor: grey[200],
           color: "black",
-          borderRadius: 0,
+          width: '100%',
+          p: 2,
           "&:hover": { backgroundColor: blue[100] },
         }}
       >
-        {expanded ? "Show Less" : "Show More"}
+        {expanded ? "SHOW MORE" : "SHOW LESS"}
       </Button>
     </Box>
   );
@@ -125,6 +130,7 @@ const OpportunitySection = ({
 
 export default function Analysis() {
   const [isDesktopOrLaptop, setIsDesktopOrLaptop] = useState(false);
+  const [affinityDetailsExpanded, setAffinityDetailsExpanded] = useState(false);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(min-width: 1224px)");
@@ -137,15 +143,19 @@ export default function Analysis() {
   return (
     <Grid container justifyContent="center">
       <Grid item xs={10}>
-        <Typography variant="h1" sx={globalStyles.heading1}>
-          The Forest Through the Trees
+        <Typography component="h2" sx={globalStyles.heading1}>
+          Seeing the Forest for the Trees
         </Typography>
-        <Typography variant="h2" sx={globalStyles.heading2}>
+        <Typography component="p" sx={globalStyles.heading2}>
           The Analysis
         </Typography>
         <Typography variant="body1" sx={globalStyles.paragraph}>
-          In an effort to make sense of althe piles of research I now had, I started with sticky notes and a whiteboard. I wanted to allow <b>natural patterns</b> and insights to emerge and the most important <b>areas of focus</b> to materialize, so I developed an <b>affinity diagram</b>.
+          By this point, I had survey responses, competitive findings, and usability notes, but I still did not have an answer to the question driving the project. What problem was I actually solving?
         </Typography>
+        <Typography variant="body1" sx={globalStyles.paragraph}>
+          To make sense of the research, I created an affinity diagram using sticky notes and a whiteboard. I grouped related observations without forcing them into predefined categories, allowing patterns to emerge naturally and helping the missing “why” finally come into focus.
+        </Typography>
+
       </Grid>
 
       <Grid item xs={12}>
@@ -167,7 +177,176 @@ export default function Analysis() {
         </Typography>
       </Grid>
 
-      <Box>{isDesktopOrLaptop ? <AffinityGroupList /> : <AffinityGroupListMobile />}</Box>
+      <Grid
+  container
+  spacing={2}
+  sx={{
+    px: { xs: 2, md: 0 },
+    mb: 3,
+  }}
+>
+  <Grid item xs={12} md={6}>
+    <Box
+      sx={{
+        height: "100%",
+        p: 3,
+        backgroundColor: blue[50],
+        borderRadius: 2,
+      }}
+    >
+      <Typography
+        component="h4"
+        sx={{
+          ...globalStyles.heading4,
+          mt: 0,
+        }}
+      >
+        Hotel Quality & Amenities
+      </Typography>
+
+      <Typography sx={{ ...globalStyles.paragraph, mb: 0 }}>
+        Users needed clearer information about hotel quality, reviews,
+        descriptions, and amenities. Icons alone were often too ambiguous to
+        support confident comparisons.
+      </Typography>
+    </Box>
+  </Grid>
+
+  <Grid item xs={12} md={6}>
+    <Box
+      sx={{
+        height: "100%",
+        p: 3,
+        backgroundColor: blue[50],
+        borderRadius: 2,
+      }}
+    >
+      <Typography
+        component="h4"
+        sx={{
+          ...globalStyles.heading4,
+          mt: 0,
+        }}
+      >
+        Hotel Location
+      </Typography>
+
+      <Typography sx={{ ...globalStyles.paragraph, mb: 0 }}>
+        Users wanted to understand how each hotel related to the surrounding
+        area, airports, activities, and other points of interest rather than
+        relying on an address alone.
+      </Typography>
+    </Box>
+  </Grid>
+
+  <Grid item xs={12} md={6}>
+    <Box
+      sx={{
+        height: "100%",
+        p: 3,
+        backgroundColor: blue[50],
+        borderRadius: 2,
+      }}
+    >
+      <Typography
+        component="h4"
+        sx={{
+          ...globalStyles.heading4,
+          mt: 0,
+        }}
+      >
+        Pricing & Rate Comparisons
+      </Typography>
+
+      <Typography sx={{ ...globalStyles.paragraph, mb: 0 }}>
+        Rate options needed to be easier to find, compare, and understand,
+        including what each price covered and how the total cost was
+        calculated.
+      </Typography>
+    </Box>
+  </Grid>
+
+  <Grid item xs={12} md={6}>
+    <Box
+      sx={{
+        height: "100%",
+        p: 3,
+        backgroundColor: blue[50],
+        borderRadius: 2,
+      }}
+    >
+      <Typography
+        component="h4"
+        sx={{
+          ...globalStyles.heading4,
+          mt: 0,
+        }}
+      >
+        Accounts & Membership Programs
+      </Typography>
+
+      <Typography sx={{ ...globalStyles.paragraph, mb: 0 }}>
+        Users needed clearer distinctions between member benefits, rewards
+        pricing, and optional account creation.
+      </Typography>
+    </Box>
+  </Grid>
+</Grid>
+
+      <Grid item xs={12}>
+        <Button
+          onClick={() =>
+            setAffinityDetailsExpanded((expanded) => !expanded)
+          }
+          aria-expanded={affinityDetailsExpanded}
+          aria-controls="affinity-category-details"
+          endIcon={
+            <ExpandMoreIcon
+              sx={{
+                transform: affinityDetailsExpanded
+                  ? "rotate(180deg)"
+                  : "rotate(0deg)",
+                transition: "transform 0.2s ease",
+              }}
+            />
+          }
+          sx={{
+            display: "flex",
+            mx: "auto",
+            mb: affinityDetailsExpanded ? 3 : 5,
+            fontFamily: "Montserrat",
+            fontWeight: 600,
+            textTransform: "none",
+            fontSize: "16px",
+            backgroundColor: grey[200],
+            color: "black",
+            width: '100%',
+            p: 2,
+            "&:hover": { backgroundColor: blue[100] },
+          }}
+        >
+          {affinityDetailsExpanded
+            ? "HIDE ALL NINE AFFINITY CATEGORIES"
+            : "VIEW ALL NINE AFFINITY CATEGORIES"}
+        </Button>
+
+        <Collapse
+          in={affinityDetailsExpanded}
+          timeout="auto"
+          unmountOnExit
+        >
+          <Box
+            id="affinity-category-details"
+            sx={{ mb: { xs: 6, md: 8 } }}
+          >
+            {isDesktopOrLaptop ? (
+              <AffinityGroupList />
+            ) : (
+              <AffinityGroupListMobile />
+            )}
+          </Box>
+        </Collapse>
+      </Grid>
 
       <Grid item xs={10} sx={{ mb: 5, mt: 5 }}>
         <Typography variant="h3" sx={globalStyles.heading3}>
@@ -178,7 +357,7 @@ export default function Analysis() {
         </Typography>
       </Grid>
 
-      <Grid item xs={10}>
+      <Grid item xs={12}>
         <ExpandableImage src={CustomerJourneyMapGraphic2} alt="Customer Journey Map 2" isDesktop={isDesktopOrLaptop} />
         <ExpandableImage src={CustomerJourneyMapGraphic1} alt="Customer Journey Map 1" isDesktop={isDesktopOrLaptop} />
       </Grid>
@@ -188,13 +367,13 @@ export default function Analysis() {
           The <i>"Why"</i>: Key Insights and Opportunities
         </Typography>
         <Typography variant="body1" sx={globalStyles.paragraph}>
-          Synthesizing the affinity diagram and journey map revealed the <i>"why"</i> that I had been looking for. Users were <b>missing critical information</b> throughout the booking flow. Many sites assumed prior knowledge, leaving people unsure about location, amenities, pricing, and what was actually included. What followed was <b>frustration and often loss of customer loyalty</b>.
+          Synthesizing the affinity diagram and customer journey map finally revealed the “why” I had been searching for. Across the research, the same pattern kept surfacing. Users could often complete the booking process, but they lacked the clarity needed to feel confident in their decisions.
         </Typography>
         <Typography variant="body1" sx={globalStyles.paragraph}>
-          The goal wasn’t to reinvent hotel booking, but to capitalize on an <b>opportunity to remove ambiguity</b>. An excellent experience would follow conventions but do so with transparency at every step, helping users feel informed and confident in their decisions.
+          Important details about <b>hotel quality, amenities, location, pricing, and membership benefits</b> were frequently missing, buried, or difficult to compare. Sites often assumed users understood labels, icons, rates, and programs that had never been clearly explained.
         </Typography>
         <Typography variant="body1" sx={globalStyles.paragraph}>
-            Key areas needing transparency fell into four main categories: hotel quality and amenities, hotel location and its relation to places of interest, pricing and rate comparisons, and account and membership programs.
+           The opportunity was not to reinvent hotel booking. It was to make the familiar experience more transparent by providing the right information at the right time and helping users make informed decisions with less uncertainty.
         </Typography>
       </Grid>
       {isDesktopOrLaptop &&

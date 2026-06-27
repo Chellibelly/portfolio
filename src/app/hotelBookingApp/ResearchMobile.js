@@ -11,8 +11,8 @@ const ResearchMobile = forwardRef((props, ref) => {
   return (
     <Grid container justifyItems="center" justifyContent="center" sx={{ minHeight: '100vh' }} ref={ref}>
     <Grid item xs={10} ref={ref}>
-      <Typography variant='h1' sx={globalStyles.heading1}>Collecting Initial Insights</Typography>
-      <Typography variant='h2' sx={globalStyles.heading2}>The Research</Typography>
+      <Typography component="h2" sx={globalStyles.heading1}>Collecting Initial Insights</Typography>
+      <Typography component="p" sx={globalStyles.heading2}>The Research</Typography>
       <Typography variant='body1' sx={globalStyles.paragraph}>
         First and foremost, I needed to understand why people use hotel booking websites. To get started, I created a <b>seven-question survey in Google Forms</b> to gather both quantitative and qualitative data from friends and collegues with hotel booking experience.
       </Typography>
@@ -121,45 +121,12 @@ const ResearchMobile = forwardRef((props, ref) => {
           Clear validation requirements and error messages help users understand what’s missing or incorrect.
         </Typography>
       </Grid>
-      <Grid item ref={ref} sx={{ backgroundColor: blue[50], padding: 2 }}>
-        <Typography sx={{ ...globalStyles.heading6, textAlign: "center", height: 50, fontWeight: "bold" }}>Saving Time/Effort</Typography>
-        <Typography variant='body2' sx={globalStyles.paragraphSmall}>
-          Auto-suggestions based on search criteria can help users as they type in their trip destination.
-        </Typography>
-        <Typography variant='body2' sx={globalStyles.paragraphSmall}>
-          Displaying common search filters and additional options a click away saves users time.
-        </Typography>
-        <Typography variant='body2' sx={globalStyles.paragraphSmall}>
-          An easy way to reset filters saves users from changing them manually.
-        </Typography>
-        <Typography variant='body2' sx={globalStyles.paragraphSmall}>
-          Forcing users to repeatedly decline offers can lead to frustration.
-        </Typography>
-        <Typography variant='body2' sx={globalStyles.paragraphSmall}>
-          Forcing users to select
-          card type is an
-          unconventional extra
-          step
-        </Typography>
-        <Typography variant='body2' sx={globalStyles.paragraphSmall}>
-          Clearing inputs when toggling options may force users to start over unnecessarily.
-        </Typography>
-      </Grid>
     </Grid>
     <Grid item ref={ref} xs={10} sx={{ marginBottom: 5 }}>
-      <Typography variant='h3' sx={globalStyles.heading3}>Usability Testing: Observation in Real Time</Typography>
-      <Typography sx={globalStyles.paragraph}>
-        To validate my assumptions and uncover friction points, I ran remote usability tests with <b>two participants</b> experienced in booking hotels. Each completed tasks on <b>two booking websites</b> while thinking aloud, allowing me to observe real-time behaviors and frustrations. I then asked follow-up questions and gathered reflections on what surprised them, what they liked, and what was missing.
-      </Typography>
-      </Grid>
-      <Grid item ref={ref} xs={12}>
-        <Box sx={globalStyles.graphic}>
-          <Image
-            src={Zoom3}
-            width="100%"
-            alt="An image usability testing"
-          />
-        </Box>
+      <Typography variant='h3' sx={globalStyles.heading3}>Comparative Usability Testing: Observation in Real Time</Typography>
+        <Typography sx={globalStyles.paragraph}>
+        The survey and competitor research gave me a broad view of users’ priorities and frustrations, but I wanted to see how those issues appeared during an actual booking experience. I conducted remote usability tests with two participants who regularly booked hotels online. Each participant completed tasks on two existing booking websites while thinking aloud, allowing me to observe where they hesitated, what information they searched for, and which parts of the experience caused confusion or frustration. I followed each session with questions about what surprised them, what worked well, and what felt missing.
+        </Typography>
       </Grid>
     <Grid item ref={ref} xs={10}>  
       <Typography variant='h3' sx={globalStyles.heading3}>Behaviors, Frustrations, and an Exercise in Empathy</Typography>
@@ -170,7 +137,7 @@ const ResearchMobile = forwardRef((props, ref) => {
         Pain points included overwhelming or unexpected search results, confusing date pickers, <b>lack of clear and descriptive information</b> about the hotels and amenities, confusing rates, and unclear lines drawn between member and non-member options.
       </Typography>
       <Typography sx={globalStyles.paragraph}>
-        Watching people struggle was a reminder that ability to complete tasks isn’t "a success" if the journey is <i>painful</i>. Watching people struggle was a reminder that ability to complete tasks isn’t "a success" if the journey is <i>painful</i>. This exercise truly taught me to step back and <b>observe and with empathy</b>, not control.
+        Watching participants complete the tasks while still feeling confused or frustrated reshaped how I thought about success. Task completion alone did not mean the experience was working well. The sessions taught me to step back, observe with empathy, and let users’ behavior reveal problems I might otherwise have missed.
       </Typography>
     </Grid>
     <Grid item ref={ref} xs={12}>

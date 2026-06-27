@@ -22,13 +22,13 @@ const HotelsContainerMobile = () => {
   const [currentSection, setCurrentSection] = useState("introduction_section");
   const [isSelecting, setIsSelecting] = useState(false);
 
-  const sections = [
-    { id: "introduction_section", label: "Part 1/5 - Introduction" },
-    { id: "research_section", label: "Part 2/5 - Research" },
-    { id: "analysis_section", label: "Part 3/5 - Analysis" },
-    { id: "design_section", label: "Part 4/5 - Design" },
-    { id: "lessons_section", label: "Lessons Learned" },
-  ];
+const sections = [
+  { id: "introduction_section", label: "1 of 5 — Overview" },
+  { id: "research_section", label: "2 of 5 — Research" },
+  { id: "analysis_section", label: "3 of 5 — Analysis" },
+  { id: "design_section", label: "4 of 5 — Design" },
+  { id: "lessons_section", label: "5 of 5 — Takeaways" },
+];
 
   const handleIntersection = (entries) => {
     entries.forEach(entry => {
@@ -141,7 +141,8 @@ const HotelsContainerMobile = () => {
           <div style={{ position: 'relative', width: '100%', height: '100%', opacity: '0.25', marginTop: 55 }}>
             <Image
               src={HotelBackground}
-              alt="alt"
+              alt="Freebird Hotels mobile hotel-booking case study"
+              aria-hidden="true"
               style={{ objectFit: 'cover' }}
               width="100%"
             />

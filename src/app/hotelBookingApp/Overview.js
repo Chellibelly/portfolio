@@ -6,8 +6,24 @@ export default function Overview() {
     <Paper elevation={3} sx={{  paddingBottom: 5 }}>
     <Grid container justifyItems="center" justifyContent="center">
         <Grid item xs={10} sx={{ mt: 5 }}>
-            <Typography variant='h1' sx={globalStyles.heading1}>Project Summary</Typography>
-            <Typography variant='h2' sx={globalStyles.heading2}>Freebird Hotels TL;DR</Typography>
+            <Typography
+            component="h1"
+            sx={{
+                position: 'absolute',
+                width: '1px',
+                height: '1px',
+                p: 0,
+                m: '-1px',
+                overflow: 'hidden',
+                clip: 'rect(0, 0, 0, 0)',
+                whiteSpace: 'nowrap',
+                border: 0,
+            }}
+            >
+            Freebird Hotels
+            </Typography>
+            <Typography component="h2" sx={globalStyles.heading1}>Project Summary</Typography>
+            <Typography component="p" sx={globalStyles.heading2}>Freebird Hotels TL;DR</Typography>
 
             <Typography variant='h3' sx={globalStyles.heading3}>
                 Project Context & Scope
@@ -27,7 +43,7 @@ export default function Overview() {
                 Key Insights
             </Typography>
             <Typography variant="body1" sx={globalStyles.paragraph}>
-                I found the "why" to be an overwhelming lack of clarity in critical information that users were after. They struggled to understand location, amenities, pricing, and membership benefits, often feeling unsure about what was included or how options compared. The opportunity wasn’t to reinvent booking, but to remove ambiguity and support confident decisions.
+                The research revealed the “why”: users lacked clarity around the critical information they needed to make a confident booking decision. They struggled to understand location, amenities, pricing, and membership benefits, often feeling unsure about what was included or how options compared. The opportunity wasn’t to reinvent booking, but to remove ambiguity and support confident decisions.
             </Typography>
 
             <Typography variant='h3' sx={globalStyles.heading3}>

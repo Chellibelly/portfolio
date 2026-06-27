@@ -5,27 +5,27 @@ export default function LessonsLearned() {
   return (
     <Grid container justifyItems="center" justifyContent="center">
         <Grid item xs={10} sx={{ marginBottom: 10 }}>
-            <Typography variant='h1' sx={globalStyles.heading1}>A Reflection on the Experience</Typography>
-            <Typography variant='h2' sx={globalStyles.heading2}>Takeaways</Typography>
+            <Typography component="h2" sx={globalStyles.heading1}>A Reflection on the Experience</Typography>
+            <Typography component="p" sx={globalStyles.heading2}>Takeaways</Typography>
             
             <Typography variant='h3' sx={globalStyles.heading3}>
                 Growth through Process
             </Typography>
             <Typography variant="body1" sx={globalStyles.paragraph}>
-                Leading this project end-to-end strengthened my ability to <b>navigate ambiguity</b>, synthesize research, and <b>translate insights into effective design solutions</b>. From surveys and competitive research to usability testing and affinity mapping, I owned the full UX process, resulting in a working, annotated prototype representing a full user journey.
+                Leading this project end to end strengthened my ability to navigate ambiguity, synthesize research, and translate insights into effective design decisions. From surveys and competitive research to usability testing and affinity mapping, I owned the full UX process and delivered a working, annotated prototype representing the complete booking journey.
             </Typography>
             <Typography variant='h3' sx={globalStyles.heading3}>
                 Letting Research Lead
             </Typography>
             <Typography variant="body1" sx={globalStyles.paragraph}>
-                User research drove the project’s direction. Initial assumptions about there being little need for <i>“just another hotel booking site”</i> were quickly challenged once I listened to and <b>observed users</b> interact with real platforms. Watching frustration firsthand clarified pain points, showed me where information was breaking down, and <b>surfaced opportunities</b> that would have been invisible without research-led design.
+                User research drove the project’s direction. My initial assumption that there might be little need for “just another hotel booking site” was challenged once I listened to users and observed them interacting with existing platforms. Watching their frustration firsthand revealed where information was breaking down and surfaced opportunities that would have remained invisible if I had moved directly into design.
             </Typography>
 
             <Typography variant='h3' sx={globalStyles.heading3}>
-                Looking Forward
+                Completing the Brief
             </Typography>
             <Typography variant="body1" sx={globalStyles.paragraph}>
-                Freebird Hotels reinforced that meaningful design stems from understanding users, validating assumptions, and making informed decisions. The project sharpened my research and design skills, and strengthened my confidence in leading UX initiatives from problem identification to prototype delivery. I’m eager to apply these lessons to real-world challenges and continue refining my practice.
+                The project concluded with a fully annotated, end-to-end prototype that fulfilled the diploma assignment. In a real product environment, the next step would be usability testing with the Freebird Hotels prototype before development. Within the scope of this project, however, the prototype was the intended final deliverable and completed the journey from an undefined “why” to a research-informed solution.
             </Typography>
         </Grid>
       </Grid>

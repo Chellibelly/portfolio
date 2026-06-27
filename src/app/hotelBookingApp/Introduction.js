@@ -10,30 +10,18 @@ const Introduction = () => {
   return (
     <Grid container justifyItems="center" justifyContent="center">
       <Grid item xs={10}>
-        <Typography variant="h1" sx={globalStyles.heading1}>
+        <Typography component="h2" sx={globalStyles.heading1}>
           Setting the Stage
         </Typography>
-        <Typography variant="h2" sx={globalStyles.heading2}>
+        <Typography component="p" sx={globalStyles.heading2}>
           Purpose
         </Typography>
         <Typography variant="body1" sx={globalStyles.paragraph}>
-          I completed this project as part of the UX Design Institute diploma program. The assignment was to design a <b>full hotel booking experience, end to end</b>, demonstrating the complete design process.
+          The assignment seemed straightforward. Design an end-to-end mobile hotel-booking experience. There was just one problem. The brief did not actually give me a problem to solve.
         </Typography>
         <Typography variant="body1" sx={globalStyles.paragraph}>
-          The brief defined the <i>“what,”</i> but not the <i>“why.”</i> In a saturated market dominated by established platforms, designing <i>another booking site</i> without a clearly defined <b>user problem</b> would not produce an impactful solution.
+          It defined the “what,” but left the “why” unknown. I knew what I was expected to design, but not what user need it should address or why another hotel-booking experience deserved to exist. Before I could begin designing screens, I first had to discover a problem worth solving.
         </Typography>
-        <Typography variant="body1" sx={globalStyles.paragraph}>
-          Rather than moving directly into the prescribed process, I reframed the project as an opportunity to first identify a meaningful problem to solve. To determine what that might be, I began with research.
-        </Typography>
-      </Grid>
-      <Grid item xs={12}>
-        <Box sx={globalStyles.graphic}>
-          <Image
-            src={ProcessProblemGraphic}
-            width="100%"
-            alt="An image usability testing"
-          />
-        </Box>
       </Grid>
     </Grid>
 )};

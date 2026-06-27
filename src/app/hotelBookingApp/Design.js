@@ -32,8 +32,8 @@ export default function Design() {
   return (
     <Grid container justifyItems="center" justifyContent="center">
       <Grid item xs={10}>
-        <Typography variant='h1' sx={globalStyles.heading1}>From Insights to Interfaces</Typography>
-        <Typography variant='h2' sx={globalStyles.heading2}>The Design</Typography>
+        <Typography component="h2" sx={globalStyles.heading1}>From Insights to Interfaces</Typography>
+        <Typography component="p" sx={globalStyles.heading2}>The Design</Typography>
       </Grid>
 
       <Grid item xs={10}>
@@ -70,18 +70,20 @@ export default function Design() {
             onClick={handleInformationArchitectureToggle}
             variant="contained"
             sx={{
-              width: '100%',
-              display: 'flex',
-              justifyContent: 'center',
-              padding: '10px',
+              display: "flex",
+              mx: "auto",
+              fontFamily: "Montserrat",
+              fontWeight: 600,
+              textTransform: "none",
+              fontSize: "16px",
               backgroundColor: grey[200],
-              color: 'black',
-              borderRadius: 0,
-              marginBottom: '50px',
-              '&:hover': { backgroundColor: blue[100] },
+              color: "black",
+              width: '100%',
+              p: 2,
+              "&:hover": { backgroundColor: blue[100] },
             }}
           >
-            {informationArchitectureExpanded ? 'Show Less' : 'Show More'}
+            {informationArchitectureExpanded ? 'SHOW LESS' : 'SHOW MORE'}
           </Button>
         </Box>
       </Grid>
@@ -114,18 +116,20 @@ export default function Design() {
             onClick={handleSketchesToggle}
             variant="contained"
             sx={{
-              width: '100%',
-              display: 'flex',
-              justifyContent: 'center',
-              padding: '10px',
+              display: "flex",
+              mx: "auto",
+              fontFamily: "Montserrat",
+              fontWeight: 600,
+              textTransform: "none",
+              fontSize: "16px",
               backgroundColor: grey[200],
-              color: 'black',
-              borderRadius: 0,
-              marginBottom: '50px',
-              '&:hover': { backgroundColor: blue[100] },
+              color: "black",
+              width: '100%',
+              p: 2,
+              "&:hover": { backgroundColor: blue[100] },
             }}
           >
-            {sketchesExpanded ? 'Show Less' : 'Show More'}
+            {sketchesExpanded ? 'SHOW LESS' : 'SHOW MORE'}
           </Button>
         </Box>
       </Grid>
@@ -134,6 +138,9 @@ export default function Design() {
           <Typography variant='h3' sx={globalStyles.heading3}>High-Fidelity UI</Typography>
           <Typography variant="body1" sx={globalStyles.paragraph}>
             I turned the sketches into high-fidelity screens in <b>Figma</b>, translating the sketches into concrete UI decisions. Guided by my four aforementioned transparency categories, I made sure to include clear pricing summaries, labeled amenities, visible ratings, intuitive date selection, and straightforward membership options.
+          </Typography>
+          <Typography variant="body1" sx={globalStyles.paragraph}>
+            Beyond the four primary transparency opportunities, I applied additional research insights throughout the broader booking flow. These included familiar navigation patterns, an intuitive date picker, clearly optional add-ons, accessible filtering, and inviting imagery that supported the hotel brand without distracting from the user’s goal.
           </Typography>
         </Grid>
         <Grid item xs={12}>
@@ -165,17 +172,10 @@ export default function Design() {
               alt="An image of screenshots taken from the website prototype"
             />
           </Box>
-          <Box sx={globalStyles.graphic}>
-            <Image
-              src={DesignAdditional}
-              width="100%"
-              alt="An image of screenshots taken from the website prototype"
-            />
-          </Box>
         </Grid>
         <Grid item xs={10}>
           <Typography variant='h3' sx={globalStyles.heading3}>The Interactive Prototype</Typography>
-          <Typography variant="body1" sx={globalStyles.paragraph}>After iterating through Figma’s components and refining interactions, I built a complete prototype simulating the end-to-end booking experience, from homepage through checkout. Through the prototype, I was able to <b>test interaction patterns, validate screen flow, and experience the product as a real user would</b>. This proved to be critical in surfacing small gaps and necessary refinements before finalizing the design.</Typography>
+          <Typography variant="body1" sx={globalStyles.paragraph}>After refining the screens and interactions in Figma, I built a complete prototype simulating the end-to-end booking experience from the homepage through checkout. Walking through the experience as a connected flow helped me check interaction patterns, identify missing states, and refine transitions that were difficult to evaluate in isolated screens. The result was a working prototype that demonstrated how the research-informed design decisions came together across the full journey.</Typography>
         </Grid>
         <Grid item xs={12}>
         <Box 

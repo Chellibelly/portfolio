@@ -65,7 +65,7 @@ const LifeManagementAppMobile = () => {
     const [isSelecting, setIsSelecting] = useState(false);
   
     const sections = [
-      { id: "introduction_section", label: "Part 1/5 - Overview" },
+      { id: "introduction_section", label: "Part 1/5 - Introduction" },
       { id: "research_section", label: "Part 2/5 - Research" },
       { id: "analysis_section", label: "Part 3/5 - Analysis" },
       { id: "design_section", label: "Part 4/5 - Design" },
@@ -198,7 +198,7 @@ const LifeManagementAppMobile = () => {
 
         <Paper elevation={3} sx={{ p: 2, mt: 5, mb: 5 }}>
           <Typography variant='h1' sx={globalStyles.heading1}>Project Summary</Typography>
-            <Typography variant='h2' sx={globalStyles.heading2}>
+            <Typography component="p" sx={globalStyles.heading2}>
                 KorkBoard TL;DR
             </Typography>     
               <Typography variant='body1' sx={globalStyles.paragraph}> 

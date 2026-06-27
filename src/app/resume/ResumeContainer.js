@@ -181,7 +181,7 @@ const ResumeContainer = () => {
                   />
                 </Box>
               </Grid>
-              <Grid item>
+              <Grid item sx={{ ml: 1 }}>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px" }}><b>Sr. Software Engineer</b> at Aaron’s INC</Typography>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>March 2017 – currently employed</Typography>
               </Grid>   
@@ -224,7 +224,7 @@ const ResumeContainer = () => {
                   />
                 </Box>
               </Grid>
-              <Grid item>
+              <Grid item sx={{ ml: 1 }}>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px" }}><b>Quality Assurance Specialist</b> at MiMedx</Typography>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>December 2014 - March 2018</Typography>
               </Grid>   
@@ -259,7 +259,7 @@ const ResumeContainer = () => {
                   />
                 </Box>
               </Grid>
-              <Grid item>
+              <Grid item sx={{ ml: 1 }}>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px" }}>UX Professional Diploma – May 2024</Typography>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>UX Design Institute (Accredited by Glascow Caledonian University)</Typography>
               </Grid>   
@@ -274,7 +274,7 @@ const ResumeContainer = () => {
                   />
                 </Box>
               </Grid>
-              <Grid item>
+              <Grid item sx={{ ml: 1 }}>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px" }}>BA Applied Computer Science – December 2016</Typography>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>Kennesaw State University</Typography>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "14px" }}>Magna Cum Laude</Typography>
