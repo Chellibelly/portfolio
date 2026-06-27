@@ -1,8 +1,5 @@
 "use client"; 
 
-//TODO: build out suggestions screen and add it back in
-//TODO: build out goal templates screen and add it back in
-
 import React, { useRef, useState, useEffect } from 'react';
 import { Box, Grid, Paper, List, ListItem, Select, Typography, MenuItem } from '@mui/material';
 import * as globalStyles from '../styles/globalStyleConsts';
@@ -11,9 +8,7 @@ import QuoteContainer from '../hotelBookingApp/QuoteContainer';
 import ToDoListImage from '../../../public/Next_Up_Project.png';
 import QualitativeAnswers from '../../../public/LM_Survey_Qual_Mobile.png';
 import CompetitorResearch from '../../../public/LM_Competitor_Research_Mobile.png';
-import InterviewPersonas from '../../../public/Interview_Personas_Mobile.png';
 import AffinityDiagram from '../../../public/LM_Affinity_Diagram_Mobile.png';
-import UserJourneys from '../../../public/LM_User_Journeys_Mobile.png';
 import InformationArchitecture from '../../../public/LM_Information_Architecture_Mobile.png';
 
 import LMWireframes from '../../../public/LM_Wireframes_Mobile.png';
@@ -45,6 +40,9 @@ import LightbulbIcon from '@mui/icons-material/Lightbulb';
 import PsychologyAltIcon from '@mui/icons-material/PsychologyAlt';
 import StickyNote2SharpIcon from '@mui/icons-material/StickyNote2Sharp';
 import SchoolIcon from '@mui/icons-material/School';
+
+const QuoteBlock = ({ children }) => ( <Box component="blockquote" sx={{ display: 'flex', alignItems: 'stretch', m: 0, mb: 2, }} > <Box aria-hidden="true" sx={{ width: '3px', flexShrink: 0, backgroundColor: '#D3D3D3', mr: 2, }} /> <Typography sx={{ ...globalStyles.paragraph, mb: 0, fontStyle: 'italic', }} > {children} </Typography> </Box> );
+
 
 const imageStyle = {
   margin: "auto"
@@ -202,52 +200,56 @@ const LifeManagementAppMobile = () => {
           <Typography variant='h1' sx={globalStyles.heading1}>Project Summary</Typography>
             <Typography variant='h2' sx={globalStyles.heading2}>
                 KorkBoard TL;DR
-            </Typography>
-             <Typography variant='body1' sx={globalStyles.paragraph}> 
-              <b>Context & Problem:</b> KorkBoard is a self-initiated exploration of how people might organize their lives within a single visual workspace. Most productivity tools specialize in either note-taking, short-term task management, goal tracking, or record-keeping. This separation fragments mental workflows and weakens momentum, leading to inconsistent follow-through.
-            </Typography>
+            </Typography>     
+              <Typography variant='body1' sx={globalStyles.paragraph}> 
+                <b>Project Overview:</b>
+              </Typography>
+              <List sx={{ listStyleType: 'disc', ml: 5, mt: -2 }}>
+                <ListItem sx={{ display: 'list-item' }}>
+                  <b>Role:</b> Product designer and researcher 
+                </ListItem>
+                <ListItem sx={{ display: 'list-item' }}>
+                 <b>Project type:</b> Self-initiated mobile app concept 
+                </ListItem>
+                <ListItem sx={{ display: 'list-item' }}>
+                  <b>Research:</b> Survey with 15 participants, 3 targeted interviews, analysis of 12 productivity tools, and 3 moderated usability tests 
+                </ListItem>
+                <ListItem sx={{ display: 'list-item' }}>
+                  <b>Deliverable:</b> High-fidelity interactive prototype 
+                </ListItem>
+                <ListItem sx={{ display: 'list-item' }}>
+                  <b>Status:</b> Tested concept with priorities identified for the next iteration
+                </ListItem>
+              </List>    
             <Typography variant='body1' sx={globalStyles.paragraph}> 
-                <b>Challenge:</b> The primary challenge was balancing flexibility and structure within a unified productivity system. The design needed to support non-linear workflows, reduce cognitive load, and foster motivation all while resisting feature creep or overwhelming the user.
+                <b>Problem:</b> People often manage ideas, daily responsibilities, long-term goals, and important records across disconnected apps, planners, spreadsheets, and memory. This fragmentation makes it harder to preserve context and follow through over time.
             </Typography>
             <Typography variant='body1' sx={globalStyles.paragraph}>
-              <b>Process:</b> Led end-to-end research and design, beginning with surveys, interviews, and competitive analysis. Insights informed the development of a flexible, non-linear information architecture and high-fidelity prototype, which was evaluated and refined through usability testing.
+              <b>Design Challenge:</b> How might one connected system support capture, planning, action, and recall without introducing the complexity and cognitive load users already struggle with?
             </Typography>
-            <Typography variant='body1' sx={globalStyles.paragraph}> 
-                <b>Insights:</b>
-                <List sx={{ listStyleType: 'disc', ml: 5 }}>
-                  <ListItem sx={{ display: 'list-item' }}>
-                    Users often rely on a mix of apps, planners, notebooks, and spreadsheets because no single tool supports the full spectrum of thinking, planning, and execution. Many users express desire for a cohesive system.
-                  </ListItem>
-                  <ListItem sx={{ display: 'list-item' }}>
-                    Visual scaffolding (color cues, spatial organization, adaptable layouts) and flexibility are essential, but complexity in customization quickly becomes overwhelming, especially for neurodivergent users or those experiencing executive dysfunction or mental fatigue.
-                  </ListItem>
-                  <ListItem sx={{ display: 'list-item' }}>
-                    Motivation isn’t one size fits all, and tools should support many types of motivators. Effective systems must support multiple paths to reinforcement rather than a single incentive model.
-                  </ListItem>
-                </List>
-             </Typography>
-             <Typography variant='body1' sx={globalStyles.paragraph}> 
-                <b>Outcomes:</b> Delivered a high-fidelity, interactive prototype that unifies note-taking, task management, and long-term planning within a single visual system. Usability testing validated the balance between flexibility and structure, with users responding positively to visual cues and reward-based motivation.
-             </Typography>
-             <Typography variant='body1' sx={globalStyles.paragraph}> 
-                <b>Takeaways:</b> Designing for a clearly defined audience produces stronger systems than designing for “everyone.” Supporting non-linear thinkers requires embedding structure subtly rather than imposing rigid frameworks. Most importantly, true flexibility depends on intentional constraint. Without guardrails, freedom quickly becomes chaos.
-             </Typography>
+            <Typography variant='body1' sx={globalStyles.paragraph}>
+              <b>Approach:</b>  I led the project from exploratory research through information architecture, interaction design, high-fidelity prototyping, and moderated usability testing. Research findings shaped a connected system for notes, tasks, goals, and personalized rewards.
+            </Typography>
+            <Typography variant='body1' sx={globalStyles.paragraph}>
+              <b>Results:</b>  Testing showed strong interest in low-friction idea capture, backlog and archive features, visible progress, and user-defined rewards. It also revealed that layered terminology, rigid hierarchy, and too many configuration options created unnecessary cognitive load, establishing clear priorities for the next iteration.
+            </Typography>  
         </Paper>
 
           <Typography variant='h1' sx={globalStyles.heading1}>A life full of lists, but no roadmap</Typography>
           <Typography variant='h2' sx={globalStyles.heading2}>
-            Project Overview
+            Project Context
           </Typography>
           <Box>
             <QuoteContainer
-              quote="I wish that one app stored all of the data/goals in one place — financial, budget, calendar, chores, etc."
-              author="Survey Respondent"
+              quote="I wish that one app stored all of my data and goals in one place — financial, budget, calendar, chores, etc."
+              author="Survey Participant"
               width="small"
             />
           </Box>
           <Typography variant='body1' sx={globalStyles.paragraph}> 
-              <br/><br/>Adult responsibilities range from everyday chores like laundry to long-term priorities like financial planning or healthcare management. Yet the information needed to manage these responsibilities is often scattered across notebooks, apps, calendars, and mental reminders.
-              <br/><br/>KorkBoard began as an exploration into how a single system might better support both day-to-day execution and long-term life management within one cohesive workspace, addressing issues of staying organized, managing deadlines, and tracking progress toward personal goals in one “life management app.”
+              <br/><br/>Adult responsibilities exist across different time horizons, from today’s chores and appointments to long-term goals, financial planning, healthcare, and household records. Yet the information needed to manage them is often scattered across calendars, notes, task apps, spreadsheets, paper planners, and memory.
+              <br/><br/>KorkBoard began with a simple question:
+              <br/><br/>How might one connected system support capture, planning, action, and recall without becoming another overwhelming productivity tool?
           </Typography>
           <Box sx={globalStyles.graphic}>
             <Image
@@ -274,16 +276,25 @@ const LifeManagementAppMobile = () => {
             <Typography variant="h2" sx={{ ...globalStyles.heading2 }}>
               Research & Key Insights
             </Typography>    
-            <Typography variant="h3" sx={{ ...globalStyles.heading3 }}>Testing the Initial Hypothesis</Typography>
+            <Typography variant="h3" sx={{ ...globalStyles.heading3 }}>Exploring How People Manage Everyday Life</Typography>
             <Typography sx={{ ...globalStyles.paragraph }}>
-              To understand how people manage daily responsibilities alongside long-term goals, I conducted a mixed-method survey exploring organization habits, tool usage, and productivity challenges. 
+              KorkBoard began with my own frustration after trying several productivity tools and still being unable to find one that connected everyday tasks, long-term goals, notes, and important records. To explore how others approached the same challenges, I surveyed 15 participants about what they tracked, which tools they used, and where those systems broke down.
             </Typography>
             <Typography sx={{ ...globalStyles.paragraph }}>
-              Participants relied on a combination of apps, planners, calendars, and memory, with no single system supporting their full range of needs. Many expressed a desire for a unified workspace connecting planning, execution, and long-term tracking.
+              Participants largely relied on familiar, low-friction tools such as calendars, phone notes, paper planners, and memory. Few used a dedicated task-management app for daily lists, while nearly half had no system for tracking achievements or milestones. Many cited frustrations with existing apps, including difficult or inconsistent interactions, organizational structures that did not match their mental models, or experiences that were not engaging enough to sustain long-term use.
             </Typography>
             <Typography sx={{ ...globalStyles.paragraph }}>
-              Customization and simplicity emerged as competing priorities. While tools like Google Calendar and Notes were valued for accessibility, users reported clunkiness, limited features, and difficulty maintaining momentum. Distraction, mental fatigue, and executive dysfunction frequently disrupted follow-through, with most users describing struggles with motivation and focus.
+              Several participants explicitly mentioned ADHD or executive-function challenges, while others described difficulty with attention, motivation, procrastination, and digital distraction. This shifted the project beyond consolidating tools: the system also needed to help people preserve context, recover after interruptions, and stay engaged without introducing more complexity.
             </Typography>
+          
+            <Typography variant="h3" sx={{ ...globalStyles.heading3 }}>A Targeted Look at Memory and Long-Term Recall</Typography>
+            <Typography sx={{ ...globalStyles.paragraph }}>
+              Because I was considering a searchable archive of completed activity, I conducted three follow-up interviews about how people retrieve past information such as appointment dates, receipts, and maintenance records. Participants relied on three different strategies: browsing physical records, reconstructing details through contextual memory, or searching digital sources such as email and online portals.
+            </Typography>
+            <Typography sx={{ ...globalStyles.paragraph }}>
+              These patterns supported preserving completed activity as searchable history and informed flexible retrieval through keywords, dates, categories, and related details.
+            </Typography>
+
             <Box sx={{ ...globalStyles.graphic, my: 4 }}>
               <Image
                 src={QualitativeAnswers}
@@ -291,33 +302,15 @@ const LifeManagementAppMobile = () => {
                 alt={`Quantitative UX insight chart`}
               />
             </Box>
-            <Typography variant="h3" sx={{ ...globalStyles.heading3 }}>Understanding Memory & Recall Through Interviews</Typography>
+
+            <Typography variant="h3" sx={{ ...globalStyles.heading3 }}>Exploring Existing Productivity Tools: What They Get Right and Where They Fall Short</Typography>
             <Typography sx={{ ...globalStyles.paragraph }}>
-              To better understand how people store and retrieve important life information, I conducted interviews with three participants where I asked how they would locate real-world information such as medical appointments, lease dates, or maintenance records. 
+               To understand how current products addressed the needs emerging from my survey, I reviewed 12 tools across calendars, spreadsheets, notes, task managers, project boards, and gamified productivity apps. I also analyzed public user reviews to identify recurring expectations, frustrations, and tradeoffs across categories.
             </Typography>
             <Typography sx={{ ...globalStyles.paragraph }}>
-              One participant relied heavily on digital search when details couldn’t be recalled, most commonly looking through emails, online portals, and calendar histories. Another explained that for her, recall was often tied to life events or emotional anchors. The third maintained physical records in a binder, but admitted retrieving information was often slow or cumbersome.
+              Users reported that powerful tools like spreadsheets and modular note systems offer depth but can be overwhelming, while simpler apps lack structure for long-term planning. Gamification improves engagement for some users but alienates others seeking efficiency over play. Search and recall remained persistent pain points, with users struggling to locate important information. Color-coding, visuals, and a reliable reminder system were highlighted as important for many users.
             </Typography>
-            <Typography sx={{ ...globalStyles.paragraph }}>
-              Overall, participants felt confident remembering general timeframes but struggled with precise details, highlighting an opportunity for passive record-keeping and searchable history within a life-management system.
-            </Typography>
-            <Box sx={{ ...globalStyles.graphic, my: 4 }}>
-             <Image
-               src={InterviewPersonas}
-               style={{ width: '100%', height: 'auto', marginTop: 50 }}
-               alt={`Quantitative UX insight chart`}
-             />
-            </Box>
-            <Typography variant="h3" sx={{ ...globalStyles.heading3 }}>Exploring Existing Apps and Reviews</Typography>
-            <Typography sx={{ ...globalStyles.paragraph }}>
-               To understand how current productivity tools support life management, I analyzed twelve popular apps spanning calendars, note-taking tools, task managers, spreadsheets, and productivity apps, and habit trackers.
-            </Typography>
-            <Typography sx={{ ...globalStyles.paragraph }}>
-              Reviews revealed that most tools excel at a single function (scheduling, notes, tasks, or motivation) but none support true end-to-end life management. Users repeatedly expressed a desire for one “source of truth” connecting events, tasks, and long-term goals.
-            </Typography>
-            <Typography sx={{ ...globalStyles.paragraph }}>
-              Powerful tools like spreadsheets and modular note systems offer depth but overwhelm casual users, while simpler apps lack structure for long-term planning. Gamification improves engagement for some users but alienates others seeking efficiency over play. Search and recall remained persistent pain points, with users struggling to locate important information. Color-coding, visuals, and a reliable reminder system were highlighted as important for most users.
-            </Typography>
+
             <Box sx={{ ...globalStyles.graphic, my: 4 }}>
               <Image
                 src={CompetitorResearch}
@@ -336,14 +329,12 @@ const LifeManagementAppMobile = () => {
               Bridging the Gap
             </Typography>
             <Typography variant="h2" sx={{ ...globalStyles.heading2 }}>
-              Analysis & Insights
+              Research Synthesis
             </Typography>
             <Typography sx={{ ...globalStyles.paragraph }}>
-              Across methods, recurring challenges emerged: fragmented workflows, reliance on memory for recall (often resulting in forgetfulness), motivation drop-off due to task overload or lack of rewarding/gamified systems, and tools that either lacked flexibility or introduced overwhelming complexity. Additionally, especially among users with ADHD or executive dysfunction, there was a strong desire for tools that support non-linear thinking and frequent distractions without sacrificing structure.
+              To synthesize the research, I organized observations from the survey, targeted recall interviews, and competitive review into an affinity diagram. Recurring behaviors, frustrations, and product expectations clustered into four areas: Motivation & Focus, Task Creation & Management, Long-Term Planning & Record Keeping, and Organization & Prioritization. Examining the overlap between these categories revealed three broader findings that defined the central tensions KorkBoard needed to address.
             </Typography>
-            <Typography sx={{ ...globalStyles.paragraph }}>
-              Affinity mapping helped translate these patterns into five core focus areas, shown below, which became the foundation for KorkBoard’s design approach.
-            </Typography>
+
             <Box sx={{ ...globalStyles.graphic, my: 4 }}>
               <Image
                 src={AffinityDiagram}
@@ -351,44 +342,70 @@ const LifeManagementAppMobile = () => {
                 alt={`Quantitative UX insight chart`}
               />
             </Box>
-            <Typography sx={{ ...globalStyles.paragraph, mt: 0, mb: 0 }}>
-              After organizing over 100 sticky notes, five primary categories emerged—each capturing a key dimension of life management struggles and needs. These were further refined into 25 subgroups, delving into user motivations, UI organization and structure, task management, record-keeping, and access:
+
+            <Typography sx={globalStyles.heading3}>Three Findings That Shaped the Product</Typography>
+
+            <Typography component="h4" sx={{ ...globalStyles.heading4, mt: 5, fontWeight: 600 }}>
+              Flexibility Is Valuable, but Complexity Creates New Barriers
             </Typography>
-            <Typography sx={{ ...globalStyles.paragraph, mt: 3, mb: 0, fontWeight: "bold" }}>
-              Motivation & Focus
+
+            <Typography sx={globalStyles.paragraph}>
+              Users wanted to organize information according to their own mental
+              models. Search, sorting, categories, tags, color-coding, and explicit
+              priority levels helped them distinguish information at a glance and
+              decide what to act on first. At the same time, too much setup or
+              hierarchy could make a productivity system feel like additional work,
+              suggesting that advanced organization should remain optional.
             </Typography>
-            <Typography sx={{ ...globalStyles.paragraph }}>
-              Many users are drawn to features that make productivity feel more like play. Positive reinforcement and progress visibility keep users engaged during low-energy or distracted states and interruptions. 
+
+            <Typography component="h4" sx={{ ...globalStyles.heading4, mt: 5, fontWeight: 600 }}>
+              Long-Term Goals Need a Clearer Path to Daily Action
             </Typography>
-            <Typography sx={{ ...globalStyles.paragraph, mt: 3, mb: 0, fontWeight: "bold" }}>
-              Task Creation & Management
+
+            <Typography sx={globalStyles.paragraph}>
+              Participants had more established systems for managing immediate
+              responsibilities than for tracking long-term goals and achievements.
+              Larger ambitions were easier to postpone, forget, or abandon when they
+              were not broken into manageable steps or connected to everyday actions.
             </Typography>
-            <Typography sx={{ ...globalStyles.paragraph }}>
-              Users want to break larger goals into digestible pieces. Flexible scheduling and visual cues like percentages and milestones are key. Many users enjoy metaphors involving real-world trackers like calendars or notebooks.
+
+            <Typography sx={globalStyles.paragraph}>
+              Users expressed a desire to track goals in one place, translate them
+              into smaller tasks, and see how daily effort contributed to something
+              larger. Visible progress and a record of completed goals could make
+              long-term planning feel more concrete and rewarding.
             </Typography>
-            <Typography sx={{ ...globalStyles.paragraph, mt: 3, mb: 0, fontWeight: "bold" }}>
-              Long-Term Planning & Record Keeping
+
+            <Typography component="h4" sx={{ ...globalStyles.heading4, mt: 5, fontWeight: 600 }}>
+              Follow-Through Requires More Than Planning
             </Typography>
-            <Typography sx={{ ...globalStyles.paragraph }}>
-              Users need persistent histories that preserve progress and support recall beyond daily task completion. Time-based and contextual nudges help prevent forgetfulness. Visual formats help users make sense of time and progress.
+
+            <Typography sx={globalStyles.paragraph}>
+              Participants described losing momentum during periods of distraction,
+              low energy, procrastination, or mental fatigue. Planning alone did not
+              guarantee that they would return to unfinished work, especially when
+              incomplete tasks disappeared from view or continued cluttering the
+              current day.
             </Typography>
-            <Typography sx={{ ...globalStyles.paragraph, mt: 3, mb: 0, fontWeight: "bold" }}>
-              Organization & Prioritization
+
+            <Typography sx={globalStyles.paragraph}>
+              Keeping unfinished work accessible, making progress visible, and
+              offering positive reinforcement could help users regain momentum.
+              Because motivation differed from person to person, the system needed
+              to support multiple forms of encouragement rather than imposing a
+              single gamified approach.
             </Typography>
-            <Typography sx={{ ...globalStyles.paragraph }}>
-              Searching, sorting, and filtering allow users to quickly locate tasks and records. Visual markers like colors, labels, and icons help users to categorize at a glance. The ability to group, tag, flag as important, and organize in folders promotes user-defined organization and information hierarchy, enabling them to align tools with their mental models. 
+
+            <Typography sx={globalStyles.heading3}>Design Criteria</Typography>
+
+            <Typography sx={globalStyles.paragraph}>
+              These findings became the criteria for the initial design: keep
+              organization flexible but lightweight, connect long-term goals to daily
+              action, and help users return to unfinished work after attention or plans
+              shifted. I used these priorities to shape the product’s information
+              architecture and core interactions.
             </Typography>
-            <Typography variant="h3" sx={{ ...globalStyles.heading3 }}>Understanding Common User Journeys</Typography>
-            <Typography sx={{ ...globalStyles.paragraph, mt: 0, mb: 0 }}>
-              These focus areas informed the definition of core user journeys, clarifying how users move between capturing ideas, planning work, executing tasks, and reflecting on progress.
-             </Typography>
-             <Box sx={{ ...globalStyles.graphic, my: 4 }}>
-              <Image
-                src={UserJourneys}
-                style={{ width: '100%', height: 'auto', marginTop: 50 }}
-                alt={`Quantitative UX insight chart`}
-              />
-            </Box>
+            
           </Box>
         </section>
         <section
@@ -400,275 +417,223 @@ const LifeManagementAppMobile = () => {
               Designing for Flexibility & Follow-Through
             </Typography>
             <Typography variant="h2" sx={{ ...globalStyles.heading2, mt: 2 }}>
-              Information architecture, wireframes, and high-fidelity screen design
+              Information architecture and high-fidelity screen design
             </Typography>
-            <Typography sx={{ ...globalStyles.paragraph }}>With a clearer understanding of where existing tools fall short, I began designing an experience that better supports real user needs, particularly for those struggling with motivation, mental load, and distractions. I focused on reducing friction, surfacing what matters most, and creating moments of encouragement and clarity. The result was a unified life-manager that feels supportive, flexible, and genuinely helpful for those who need it most.</Typography>
+            <Typography sx={{ ...globalStyles.paragraph }}>Using the three design criteria established through research, I shaped a system connecting quick capture, daily action, long-term progress, and personalized motivation. I translated the information architecture into a high-fidelity interactive prototype for usability testing.</Typography>
             <Typography variant="h3" sx={{ ...globalStyles.heading3 }}>Information Architecture</Typography>
-            <Typography sx={{ ...globalStyles.paragraph }}>To help users stay focused, feel in control, and make meaningful progress, I designed an information architecture emphasizing quick access, clear categories, and flexible navigation.</Typography>
-            <Typography sx={{ ...globalStyles.paragraph }}>Below is the app’s information architecture, organized into four primary sections, accessible via a persistent bottom navigation bar: Notes, Tasks, Goals, and Rewards. Each section serves a distinct purpose but flows seamlessly into the others, helping users move from capturing ideas, to creating tasks, to bigger picture goal management without losing momentum. The minimal navigation reduces cognitive overload while still supporting varied workflows and attention styles.</Typography>
+            <Typography sx={{ ...globalStyles.paragraph }}>I organized the app around four primary areas: Notes, Tasks, Goals, and Rewards, all accessible through a persistent bottom navigation bar. Each area supports a distinct need while remaining connected to the larger system: notes can become tasks, tasks can contribute to goals, completed activity can be preserved as searchable history, and progress can support personalized rewards.</Typography>
             <Image
                 src={InformationArchitecture}
                 style={{ width: '100%', height: 'auto', marginTop: 20 }}
                 alt={`Quantitative UX insight chart`}
               />
-            <Typography variant="h3" sx={{ ...globalStyles.heading3 }}>Early Wireframes</Typography>
+           
+            <Typography variant="h3" sx={{ ...globalStyles.heading3 }}>Key Screen & Interaction Decisions</Typography>
             <Typography sx={{ ...globalStyles.paragraph }}>
-              Before moving into visual design, I created rough wireframes to test layout ideas and explore the information hierarchy defined in the architecture. The goal was to ensure navigation remained simple and cognitively light.
+              With the product structure defined, I moved into screen design. I focused on four connected needs: keeping the current day manageable, making ideas easy to capture, linking daily action to long-term goals, and supporting motivation in a way users could personalize.
             </Typography>
-            <Typography sx={{ ...globalStyles.paragraph }}>
-              These early wireframes helped surface issues such as overwhelming task layouts and unclear affordances in goal tracking, providing a foundation to refine structure before committing to high-fidelity visuals.
-            </Typography>
-            <Image
-                src={LMWireframes}
-                style={{ width: '100%', height: 'auto', marginTop: 70 }}
-                alt={`Quantitative UX insight chart`}
-              />
-            <Typography variant="h3" sx={{ ...globalStyles.heading3 }}>Section Features</Typography>
-            <Typography sx={{ ...globalStyles.paragraph }}>
-              This phase brought research insights to life through considered structures, interactions, and features. The focus was on addressing real usability pain points, especially around organization, memory support, and motivation. Each section of the app reflects user goals and habits uncovered in research, balancing flexibility with structure and depth with simplicity. The visual design supports clarity and calm, but the functionality ensures users can rely on the tool to get things done.
-            </Typography>
+            
             <Typography variant="h3" sx={{ ...globalStyles.heading4, mt: 5 }}>
-              Tasks
+              Keeping Today Focused Without Losing Unfinished Work
             </Typography>
-            <Typography sx={globalStyles.paragraph}>Research showed that users often feel overwhelmed by long lists and struggle to balance immediate responsibilities with future planning. To address this, I built the “Tasks” section of the app. Tasks is the app’s home screen. It’s designed to help users focus on what matters today while keeping longer-term tasks visible and manageable.</Typography>
-            <Typography sx={screenFeatureTitle}>
-              Three-Part Structure: Today, Backlog, Archive
-            </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              Tasks is divided into three focused views, each serving a different purpose. The today tab is the default active tab, the daily checklist designed to bring today’s plan into focus. The Backlog acts as a holding area for tasks not yet scheduled for today, allowing users to pull them into their daily plan when ready and preventing cognitive overload while preserving visibility. The archive maintains a searchable history of completed tasks, reinforcing a sense of progress and supporting memory and recall.
-            </Typography>
+            <Typography sx={globalStyles.paragraph}>Tasks serves as KorkBoard’s home screen and is divided into Today, Backlog, and Archive. Today provides a focused daily checklist. The Backlog holds work that is unfinished, unscheduled, or simply not a priority for the current day, separating “not today” from “forgotten.” Completed tasks move into a searchable Archive so past activity can remain useful for progress tracking and recall.</Typography>
             <Box sx={showCaseScreens}>
               <Image
                 src={LMScreenTasksToday}
-                style={{ padding: 50 }}
+                style={{ padding: 30 }}
                 alt="Image of screen: tasks - today"
               />
             </Box>   
-            
-            {false && 
-              <Box>
-                <Typography sx={screenFeatureTitle}>
-                  Suggestions Assistant
-                </Typography>
-                <Typography sx={globalStyles.paragraph}>
-                   Within the today tab, a “suggestions” feature offers low-friction guidance without being prescriptive. The decision to add the suggestions feature was born from users expressing the desire for reminders about important tasks but without being interruptive. 
-                   <br/><br/>The app will suggest bringing in backlog items that were on previous daily lists but not completed, tasks which have been designated as low effort, and tasks which are approaching their user-defined due date. 
-                   <br/><br/>If the user likes any of the suggestions, they can pull them into today’s task list with the click of a button.
-                </Typography>
-                <Box sx={globalStyles.graphic}>
-                  <Image
-                    src={LMScreenTasksSuggestions}
-                    style={{ padding: 50 }}
-                    alt="Image of screen: tasks - today"
-                  />
-                </Box>
-              </Box>
-             }
 
-            <Typography sx={screenFeatureTitle}>
-              Task Card Design: Fully Optional Customization
+            <Typography variant="h3" sx={{ ...globalStyles.heading4, mt: 5 }}>
+              Daily Suggestions Help Users Decide How to Plan Their Day
             </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              Task cards were designed to balance simplicity with optional depth. Users can keep tasks lightweight or enrich them with metadata such as color-coding, categories, due dates, subtasks, or goal links. Visual markers and hierarchy help users quickly assess priority and effort without forcing structure on those who prefer minimal input. The key design decision was constraint with choice: advanced organization is available, but never required.
+            <Typography sx={globalStyles.paragraph}>Daily Suggestions helps users return to relevant work without adding another stream of notifications. It can surface an unfinished task from a previous day, an item approaching its due date, or a low-effort task that may be easier to complete during a low-energy period. Users can add a suggestion to Today with one action or ignore it.</Typography>
+            <Box sx={showCaseScreens}>
+              <Image
+                src={LMScreenTasksSuggestions}
+                style={{ padding: 30 }}
+                alt="Image of screen: tasks - today"
+              />
+            </Box>   
+
+            <Typography variant="h3" sx={{ ...globalStyles.heading4, mt: 5 }}>
+              Fully Optional Customization With Task Creation
             </Typography>
+            <Typography sx={globalStyles.paragraph}>Task creation begins with the essentials while allowing optional details such as priority, due dates, color-coding, categories, subtasks, and goal links. This was intended to support different organizational styles without requiring the same level of structure for every task.</Typography>
             <Box sx={showCaseScreens}>
               <Image
                 src={LMScreenTasksCardStructure}
-                style={{ padding: 50 }}
+                style={{ padding: 30 }}
                 alt="Image of screen: tasks - today"
               />
-            </Box>
-           
-            <Typography sx={screenFeatureTitle}>
-              Planning Without Pressure
-            </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              The Backlog supports flexible planning, including calendar-based organization, allowing users to preview workload without committing prematurely. This addresses a common research insight: users want visibility into future obligations without feeling locked into rigid schedules.
-            </Typography>
-          
-            <Box sx={showCaseScreens}>
-              <Image
-                src={LMScreenTasksArchive}
-                style={{ padding: 50 }}
-                alt="Image of screen: tasks - today"
-              />
-            </Box>
-           
-          
-            <Typography variant="h4" sx={{ ...globalStyles.heading4, mt: 5 }}>
-              Notes
-            </Typography>
+            </Box>   
 
-            <Typography sx={globalStyles.paragraph}>
-              Research revealed that many users struggle with focus and forgetfulness, juggling multiple priorities and busy schedules. Ideas can appear at any moment and disappear just as quickly. Traditional productivity apps often require too much structure, creating friction that discourages spontaneous capture.
+            <Typography variant="h3" sx={{ ...globalStyles.heading4, mt: 5 }}>
+              A Low-Friction Place to Capture Ideas
             </Typography>
-           
-            <Typography sx={screenFeatureTitle}>
-              Designed for Capture First, Organization Later
-            </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              The Notes section was designed as a mental inbox. Whether during a meeting, a jog, or late at night, it allows users to quickly jot down ideas in the moment without worrying about categorization or immediate action. A subtle skeuomorphic notebook aesthetic reinforces familiarity and reduces the intimidation often associated with highly structured productivity systems.
-            </Typography>
+            <Typography sx={globalStyles.paragraph}>Research showed that participants often relied on familiar, low-friction tools such as phone notes and paper notebooks to quickly capture ideas. KorkBoard’s Notes section was designed as a mental inbox where users could record an idea before deciding how to organize or act on it. The notebook-inspired visual treatment uses familiar cues, while the initial screen keeps capture lightweight and avoids requiring details upfront.</Typography>
             <Box sx={showCaseScreens}>
               <Image
                 src={LMScreenNotesStructure}
-                style={{ padding: 50 }}
+                style={{ padding: 30 }}
                 alt="Image of screen: tasks - today"
               />
-            </Box>
-           
-            <Typography sx={screenFeatureTitle}>
-              Simple, low-structure note-taking and editing
-            </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              The notes editor incorporates flexibility and conventions that users are used to having in notes-focused apps without overcomplication. Users can freely jot ideas using typing or handwriting, reinforcing comfort and accessibility for different thinking styles. They can also attach media like voice recordings, photos, or PDFs to support details with visual and audio reminders.
-            </Typography>
-          
-             <Box sx={showCaseScreens}>
-              <Image
-                src={LMScreenNotesEdit}
-                style={{ padding: 50 }}
-                alt="Image of screen: tasks - today"
-              />
-            </Box>
-           
-            <Typography sx={screenFeatureTitle}>
+            </Box>   
+
+            <Typography variant="h3" sx={{ ...globalStyles.heading4, mt: 5 }}>
               Bridging Ideas to Action
             </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              Crucially, notes are not dead ends. Any note can be converted into a task with a single action, creating a seamless bridge between inspiration and execution. This connection supports the broader system goal: reducing friction between thinking, planning, and doing.
-            </Typography>
-             <Box sx={showCaseScreens}>
-              <Image
-                src={LMScreenNotesConvert}
-                style={{ padding: 50 }}
-                alt="Image of screen: tasks - today"
-              />
-            </Box>
-            <Typography variant="h4" sx={{ ...globalStyles.heading4, mt: 5 }}>
-              Goals
-            </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              Most productivity tools emphasize daily task completion but neglect long-term direction. Research participants expressed frustration with losing sight of larger ambitions and resorting to spreadsheets, planners, or abandoning goal tracking altogether due to overwhelm.
-            </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              The Goals section addresses this by breaking ambitious objectives into actionable steps, connecting everyday tasks to broader milestones. This turns a standard to-do system into an actual life management tool.
-            </Typography>
-
-            <Typography sx={screenFeatureTitle}>
-              Bringing Visibility to objectives and aspirations
-            </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              The Goals section is split into active goals and archived goals. The Active goals tab displays all in-progress goals at a glance. Progress indicators provide visual momentum, helping users see advancement over time rather than relying on memory alone. The goal archive tab keeps record of all previously completed goals and their completion dates, providing a clean interface while preserving historical context.
-            </Typography>
-              <Box sx={showCaseScreens}>
-              <Image
-                src={LMScreenGoalsActive}
-                style={{ padding: 50 }}
-                alt="Image of screen: tasks - today"
-              />
-            </Box>
-           
-            <Typography sx={screenFeatureTitle}>
-              Progress Without Clutter
-            </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              Users define the title, description, due date, attachments, and goal milestones. Milestones serve as building blocks for larger goals. For example, a goal like “Record an album” might include milestones such as “write music,” “record songs,” “design album cover,” and “distribute album.”
-            </Typography>   
+            <Typography sx={globalStyles.paragraph}>Crucially, notes are not dead ends. Any note can be converted into a task with a single action, creating a seamless bridge between inspiration and execution. This connection supports the broader system goal: reducing friction between thinking, planning, and doing.</Typography>
             <Box sx={showCaseScreens}>
               <Image
-                src={LMScreenGoalsGoal}
-                style={{ padding: 50 }}
+                src={LMScreenNotesConvert}
+                style={{ padding: 30 }}
                 alt="Image of screen: tasks - today"
               />
-            </Box>  
-           
-            <Typography sx={screenFeatureTitle}>
-              From Ambition to Actionable steps
+            </Box>   
+
+            <Typography variant="h3" sx={{ ...globalStyles.heading4, mt: 5 }}>
+              Bringing Visibility to Objectives and Aspirations
             </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              Milestones create visible progress while preventing large ambitions from feeling paralyzing. Each milestone can connect directly to related tasks, ensuring that daily checklists contribute meaningfully to long-term outcomes. This hierarchy (Goal → Milestone → Task) creates alignment across the system, reinforcing purpose behind everyday actions.
+            <Typography sx={globalStyles.paragraph}>The Goals section explored how everyday tasks could remain connected to larger ambitions. The overview shows active goals and visible progress, helping users see movement that might otherwise be difficult to remember. Completed goals remain available as part of the user’s longer-term history.</Typography>
+            <Box sx={showCaseScreens}>
+              <Image
+                src={LMScreenGoalsActive}
+                style={{ padding: 30 }}
+                alt="Image of screen: tasks - today"
+              />
+            </Box>   
+
+            <Typography variant="h3" sx={{ ...globalStyles.heading4, mt: 5 }}>
+              Connecting Daily Action to Long-Term Goals
             </Typography>
+            <Typography sx={globalStyles.paragraph}>The initial design used a Goal → Milestone → Task hierarchy. Larger ambitions could be divided into stages, with each milestone linked to smaller tasks that appeared in the user’s daily workflow. This hierarchy was intended to make abstract goals more actionable and show how everyday effort contributed to long-term progress.</Typography>
             <Box sx={showCaseScreens}>
               <Image
                 src={LMScreenGoalMilestone}
-                style={{ padding: 50 }}
+                style={{ padding: 30 }}
                 alt="Image of screen: tasks - today"
               />
-            </Box>
-            <Typography variant="h4" sx={{ ...globalStyles.heading4, mt: 5 }}>
-              Rewards
-            </Typography> 
-            <Typography sx={globalStyles.paragraph}>
-              Sustained motivation emerged as a critical challenge in research. Many users described strong initial momentum followed by drop-off, especially during periods of stress, distraction, or mental fatigue. While gamification can increase engagement, it can alienate audiences when overdesigned. The Rewards section introduces a lightweight motivational layer that supports follow-through through flexibility and personalization without turning productivity into a game.
+            </Box>   
+
+            <Typography variant="h3" sx={{ ...globalStyles.heading4, mt: 5 }}>
+              Making Progress Visible and Trackable
             </Typography>
-           
-            <Typography sx={screenFeatureTitle}>
-              The Challenge with motivation – it’s personal 
-            </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              Designing this section was tricky because motivation is highly individual. Some users enjoy gamified elements, like earning points or upgrading an avatar, while others prefer simpler, real-world incentives. Forcing a single style of motivation would conflict with the app’s emphasis on flexibility.
-            </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              To balance this, the section allows users to define what motivates them, set meaningful incentives, and determine how rewards relate to personal achievement. Gamification is present, but subtle, supporting engagement without imposing rigid systems.
-            </Typography>
-            <Box sx={showCaseScreens}>
-              <Image
-                src={LMScreenRewardsInventory}
-                style={{ padding: 50 }}
-                alt="Image of screen: tasks - today"
-              />
-            </Box>
-           
-            <Typography sx={screenFeatureTitle}>
-              Flexible Reinforcement
-            </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              The Rewards section is divided into three tabs: In Progress, Shop, and Inventory. Users earn points by completing meaningful achievements such as finishing subtasks, progressing toward goals, or consistently engaging with the system. Progress indicators make effort visible, reinforcing momentum during low-energy periods. Rather than imposing a predefined reward model, users define what incentives matter to them and assign their own point values. 
-            </Typography>
+            <Typography sx={globalStyles.paragraph}>The Rewards home screen shows progress toward each achievement the user creates, making effort and momentum visible over time. Achievement creation required balancing personalization with automatic tracking. Completely open-ended achievements would be difficult for the system to measure, while fully predefined options would limit users to behaviors the app prescribed. Structured templates allow users to combine actions, quantities, and categories to create personalized achievements while keeping progress measurable.</Typography>
             <Box sx={showCaseScreens}>
               <Image
                 src={LMScreenRewardsInProgress}
-                style={{ padding: 50 }}
+                style={{ padding: 30 }}
                 alt="Image of screen: tasks - today"
               />
-            </Box>
-            {false && 
-              <Box>
-                 <Typography sx={screenFeatureTitle}>
-                  “In-progress” achievement creation – a design trade-off
-                </Typography>
-                <Typography sx={globalStyles.paragraph}>
-                  When creating a new achievement the user wants to work toward, I wanted to include flexibility depending on the user’s needs. For example, maybe a particular user wants to be better about returning to their notes and turning them into tasks or maybe they have been putting off their “school” related tasks and wants to be motivated to get more of those done. 
-                </Typography>
-                <Typography sx={globalStyles.paragraph}>
-                  They should be able to get rewards to motivate them to do those specific things. However, in the spirit of helping the user track these and removing a bit of the “honor” system some users expressed encourage them to “cheat,” I wanted the app to be able to track the progress toward these things automatically. 
-                </Typography>
-                <Typography sx={globalStyles.paragraph}>
-                  The compromise I came up with was to include flexible templates that both the user and app could understand – the idea being that when creating each one, the user could select from a variety of predefined drop-down options to build it. For example, users can define: Complete [10] [Subtasks]Complete [5] [Tasks] in category [Fitness]Turn [3] notes into tasks. This allows for creative goal-setting while ensuring trackability.
-                </Typography>
-                <Box sx={showCaseScreens}>
-                  <Image
-                    src={LMScreenRewardsCreation}
-                    style={{ padding: 50 }}
-                    alt="Image of screen: tasks - today"
-                  />
-                </Box>
-              </Box>
-            }
-            <Typography sx={screenFeatureTitle}>
-              Encouragement through prize redemption
+            </Box>   
+
+            <Typography variant="h3" sx={{ ...globalStyles.heading4, mt: 5 }}>
+              Letting Users Define What Motivates Them
             </Typography>
-            <Typography sx={globalStyles.paragraph}>
-              The shop is a virtual storefront where users spend points earned from achievements. Reward creation is open-ended and user defined, allowing the user to determine what incentivizes them and assign point values accordingly. Users who enjoy gamified reinforcement can lean into it, while those who prefer a straightforward productivity tool can largely ignore it. This approach preserves autonomy while supporting multiple motivational styles within a single framework.
-            </Typography>    
-             <Box sx={showCaseScreens}>
+            <Typography sx={globalStyles.paragraph}>Instead of prescribing badges or generic prizes, the Shop allows users to create rewards that feel meaningful to them and assign their own point values. This gives users control over what they are working toward, whether that is a purchase, an experience, time for a hobby, or another personally motivating incentive.</Typography>
+            <Box sx={showCaseScreens}>
               <Image
                 src={LMScreenRewardsShop}
-                style={{ padding: 50 }}
+                style={{ padding: 30 }}
                 alt="Image of screen: tasks - today"
               />
-            </Box>
+            </Box>   
+          </Box>
+          <Box sx={{ mt: 10 }}>
+            <Typography sx={globalStyles.heading1}>
+              Evaluating the Design
+            </Typography>
+            <Typography variant="h2" sx={{ ...globalStyles.heading2, mt: 2 }}>
+              Moderated Usability Testing
+            </Typography>
+            <Typography sx={{ ...globalStyles.paragraph }}>
+              After translating the screen designs into a high-fidelity interactive prototype, I conducted moderated usability tests with three participants representing different levels of experience with productivity tools: Debbie, a pen-and-paper organizer; Jenny, a neurodivergent participant who used digital scheduling tools; and Bella, an experienced productivity-app user and self-described gamer.
+            </Typography>
+            <Typography sx={{ ...globalStyles.paragraph }}>
+              The sessions evaluated whether participants could understand the product structure, complete core workflows, and make sense of the terminology and level of customization.
+            </Typography>
+
+        <Typography
+          component="h3"
+          sx={{ ...globalStyles.heading3, mt: 7 }}
+        >
+          Users Struggled with Terminology and Information Hierarchy
+        </Typography>
+        <Typography sx={{ ...globalStyles.paragraph }}>
+          While participants understood the app’s overall purpose, they consistently relied on their own mental models rather than the system’s definitions and organizational hierarchy. As a result, key terms like goals, milestones, tasks, subtasks, and achievements were often used interchangeably, reflecting how these concepts overlap in everyday language.
+        </Typography>
+        <Typography sx={{ ...globalStyles.paragraph }}>
+          The term “<i>milestone</i>” in particular caused confusion, with users misinterpreting it, replacing it with other terms, or feeling it added unnecessary complexity to the hierarchy.
+        </Typography>
+        <Typography sx={{ ...globalStyles.paragraph }}>
+          Overall, the layered terminology created friction rather than clarity. These findings informed the decision to simplify the hierarchy by removing “milestones” as a distinct concept.
+        </Typography>
+        <QuoteBlock> “I do like the sub-categories, or the milestones I mean... You know, the subtasks.” </QuoteBlock>
+
+
+        {/* Terminology and hierarchy */} <Box sx={globalStyles.usabilityMedia}> <video controls preload="metadata" style={{ width: '100%', height: 'auto', display: 'block', }} > <source src="/Usability_clips_TERMS_AND_HIERARCHY.mp4" type="video/mp4" /> Your browser does not support the video tag. </video> <Typography sx={{ ...globalStyles.paragraphMed, mt: 1.5, mb: 0, color: 'text.secondary', }} > Clip: Participant confusion around terminology and the Goal → Milestone → Task hierarchy. </Typography> </Box>
+          
+
+
+
+        <Typography
+          component="h3"
+          sx={{ ...globalStyles.heading3, mt: 7 }}
+        >
+          Users Valued the Support for Recall and Follow-Through
+        </Typography>
+        <Typography sx={{ ...globalStyles.paragraph }}>
+          Participants valued the app’s emphasis on recall and follow-through. The ability to capture ideas, revisit them later, and gradually transform them into goals and tasks resonated strongly. Features such as progress tracking, the Backlog, and the Archive were viewed as safeguards against forgetting unfinished work, helping participants feel more confident that important ideas would not slip through the cracks.
+        </Typography>
+
+        <QuoteBlock> “Taking [a brainstorm] into an actionable item.. I like that a lot” </QuoteBlock>
+
+        <QuoteBlock> “I really like that there’s a backlog because I hate when I don’t have time to do a thing and it just sits in my list of tasks, and I can’t complete it but I also can’t get it out of there” </QuoteBlock>
+
+
+       {/* Recall and follow-through */} <Box sx={globalStyles.usabilityMedia}> <video controls preload="metadata" style={{ width: '100%', height: 'auto', display: 'block', }} > <source src="/Usability_clips_FOLLOWTHRU.mp4" type="video/mp4" /> Your browser does not support the video tag. </video> <Typography sx={{ ...globalStyles.paragraphMed, mt: 1.5, mb: 0, color: 'text.secondary', }} > Clip: Participants responding positively to the Backlog, Archive, and note-to-task workflow. </Typography> </Box>
+
+
+
+        <Typography
+          component="h3"
+          sx={{ ...globalStyles.heading3, mt: 7 }}
+        >
+          Too Many Features and Options Increased Cognitive Load
+        </Typography>
+        <Typography sx={{ ...globalStyles.paragraph }}>
+          One of the primary design challenges was balancing flexibility with simplicity. While participants found many features valuable in isolation, several became overwhelmed by the number of layers, sorting systems, configuration options, and overlapping concepts throughout the app. This was especially apparent on task cards and task creation screens, where multiple indicators intended to aid decision-making instead created confusion. The findings reinforced the need to prioritize clarity and focus over feature completeness, including removing lower-value elements such as the “time required” attribute.
+        </Typography>
+        <QuoteBlock> “For me, it's too much. I’m going to get more distracted the more layers there are.”  </QuoteBlock>
+
+
+     {/* Task complexity */} <Box sx={globalStyles.usabilityMedia}> <video controls preload="metadata" style={{ width: '100%', height: 'auto', display: 'block', }} > <source src="/Usability_clips_TASKS.mp4" type="video/mp4" /> Your browser does not support the video tag. </video> <Typography sx={{ ...globalStyles.paragraphMed, mt: 1.5, mb: 0, color: 'text.secondary', }} > Clip: Participant feedback on feature density and the number of task options. </Typography> </Box>
+
+
+        <Typography
+          component="h3"
+          sx={{ ...globalStyles.heading3, mt: 7 }}
+        >
+          The Rewards System Created Emotional Engagement and Motivation
+        </Typography>
+        <Typography sx={{ ...globalStyles.paragraph }}>
+          Users showed visible excitement when interacting with the rewards system, responding positively to earning points, tracking progress, and the ability to define their own rewards. All three participants understood the concept, including users who did not identify as gamers.
+        </Typography>
+        <Typography sx={{ ...globalStyles.paragraph }}>
+          This level of enthusiasm was unexpected and highlighted the motivational potential of lightweight gamification in a productivity context. The key takeaway is to retain and refine the rewards system while ensuring it remains approachable and supportive.
+        </Typography>
+
+        <QuoteBlock> “I love a reward. I don’t do anything unless there’s a reward.”  </QuoteBlock>
+
+       {/* Rewards */} <Box sx={globalStyles.usabilityMedia}> <video controls preload="metadata" style={{ width: '100%', height: 'auto', display: 'block', }} > <source src="/Usability_clips_REWARDS.mp4" type="video/mp4" /> Your browser does not support the video tag. </video> <Typography sx={{ ...globalStyles.paragraphMed, mt: 1.5, mb: 0, color: 'text.secondary', }} > Clip: Participant reactions to visible progress and user-defined rewards. </Typography> </Box>
+      
+
+
+
+
+
           </Box>
         </section>
         <section
@@ -683,14 +648,16 @@ const LifeManagementAppMobile = () => {
               Learning to truly understand an audience
             </Typography>
             <Typography sx={{ ...globalStyles.paragraph }}>
-             At the start of this project, I assumed most people struggled with memory, focus, and follow-through in similar ways. Research quickly challenged that assumption. Neurodivergent users, particularly those navigating ADHD, anxiety, or executive dysfunction, weren’t simply “less productive.” They were underserved by systems that didn’t align with how they think and process information.
+             At the start of this project, I assumed people struggled with memory, focus, and follow-through in similar ways. Research challenged that assumption. Participants described different barriers, including attention, executive-function challenges, procrastination, low motivation, and difficulty maintaining systems that required too much setup.
             </Typography>
             <Typography sx={{ ...globalStyles.paragraph }}>
-             That insight reframed the entire project. Rather than designing for a generalized audience, I focused on supporting users who need more flexibility, clearer visual scaffolding, and multiple paths to motivation. Designing for this edge case strengthened the system as a whole. Structure became more intentional, flexibility more constrained, and every feature had to justify its cognitive cost.
+             This shifted the project away from designing for one “ideal” productivity workflow. Instead, I focused on flexible organization, clearer visual cues, and multiple forms of motivation while recognizing that every additional option carried a cognitive cost.
             </Typography>
             <Typography sx={{ ...globalStyles.paragraph }}>
-              Next, I plan to move beyond prototype validation into moderated usability testing to evaluate whether the system truly reduces friction, supports autonomy, and sustains engagement over time. This project reinforced a core belief. UX isn't about designing features the way you want your users to use them. Rather, it’s about understanding behavior deeply enough to design systems that genuinely fit the people using them.
+              Usability testing validated the value of the Backlog and Archive, the note-to-task workflow, visible progress, and user-defined rewards. It also revealed friction around terminology, overlapping hierarchy concepts, and feature density, particularly during task creation.
             </Typography>
+            <Typography component="h3" sx={globalStyles.heading3}> Next Iteration Priorities </Typography> 
+            <Typography sx={{ ...globalStyles.paragraph }}> The next iteration will remove milestones as a distinct layer, simplify task creation, reduce competing visual indicators, and clarify terminology across the system. These revisions are based on the usability findings and have not yet been retested. </Typography>
           </Box>
         </section>
       </Box>

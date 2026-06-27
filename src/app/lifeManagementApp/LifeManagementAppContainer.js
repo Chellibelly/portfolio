@@ -596,7 +596,9 @@ const LifeManagementAppContainer = () => {
           <Typography sx={{ ...globalStyles.paragraph }}>
            This shifted the project away from designing for one “ideal” productivity workflow. Instead, I focused on flexible organization, clearer visual cues, and multiple forms of motivation while recognizing that every additional option carried a cognitive cost.
           </Typography>
-          <Typography sx={globalStyles.paragraph}> Usability testing validated the value of the Backlog and Archive, the note-to-task workflow, visible progress, and user-defined rewards. It also revealed friction around terminology, overlapping hierarchy concepts, and feature density, particularly during task creation. </Typography> <Typography component="h3" sx={globalStyles.heading3}> Next Iteration Priorities </Typography> <Typography sx={{ ...globalStyles.paragraph, mb: 0 }}> The next iteration will remove milestones as a distinct layer, simplify task creation, reduce competing visual indicators, and clarify terminology across the system. These revisions are based on the usability findings and have not yet been retested. </Typography>
+          <Typography sx={globalStyles.paragraph}> Usability testing validated the value of the Backlog and Archive, the note-to-task workflow, visible progress, and user-defined rewards. It also revealed friction around terminology, overlapping hierarchy concepts, and feature density, particularly during task creation. </Typography> 
+          <Typography component="h3" sx={globalStyles.heading3}> Next Iteration Priorities </Typography> 
+          <Typography sx={{ ...globalStyles.paragraph, mb: 0 }}> The next iteration will remove milestones as a distinct layer, simplify task creation, reduce competing visual indicators, and clarify terminology across the system. These revisions are based on the usability findings and have not yet been retested. </Typography>
         </Box>
 
 
