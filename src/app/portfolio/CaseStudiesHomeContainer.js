@@ -65,8 +65,8 @@ const cardStyle = {
                 />
               </Grid>
               <Grid item sx={{ p: 2 }}>
-                <h1 style={{ ...globalStyles.heading4, textAlign: "center", fontWeight: 600 }}>Freebird Hotels</h1>
-                <h2 style={{ ...globalStyles.heading6, textAlign: "center", fontStyle: "italic" }}>Fully detailed end-to-end case study demonstrating <b>design process</b> thinking</h2>.
+                <h1 style={{ ...globalStyles.heading4, fontSize: 18, textAlign: "center", fontWeight: 600 }}>Freebird Hotels</h1>
+                <h2 style={{ ...globalStyles.heading6, fontSize: 16, textAlign: "center", fontStyle: "italic" }}>Fully detailed end-to-end case study demonstrating <b>design process</b> thinking</h2>.
               </Grid>
             </Grid>           
           </Paper>
@@ -83,8 +83,8 @@ const cardStyle = {
                 />
               </Grid>
               <Grid item sx={{ p: 2 }}>
-                <h1 style={{ ...globalStyles.heading4, textAlign: "center", fontWeight: 600 }}>Professional Highlights</h1>
-                <h2 style={{ ...globalStyles.heading6, textAlign: "center", marginTop: -10, fontStyle: "italic" }}>Selected Industry Work demonstrating design of impactful <b>shipped real-world user-facing features</b> and cross-functional collaboration</h2>
+                <h1 style={{ ...globalStyles.heading4, fontSize: 18, textAlign: "center", fontWeight: 600 }}>Professional Highlights</h1>
+                <h2 style={{ ...globalStyles.heading6, fontSize: 16, textAlign: "center", fontStyle: "italic" }}>Selected Industry Work demonstrating design of impactful <b>shipped real-world user-facing features</b> and cross-functional collaboration</h2>
               </Grid>    
             </Grid>   
           </Paper>
@@ -101,8 +101,8 @@ const cardStyle = {
                 />
               </Grid>
               <Grid item sx={{ p: 2 }}>
-                <h1 style={{ ...globalStyles.heading4, textAlign: "center", fontWeight: 600 }}>KorkBoard</h1>
-                <h2 style={{ ...globalStyles.heading6, textAlign: "center", marginTop: -10, fontStyle: "italic" }}>Problem-to-Solution UX Project demonstrating <b>problem solving</b> proficiency</h2>
+                <h1 style={{ ...globalStyles.heading4, fontSize: 18, textAlign: "center", fontWeight: 600 }}>KorkBoard</h1>
+                <h2 style={{ ...globalStyles.heading6, fontSize: 16, textAlign: "center", fontStyle: "italic" }}>Problem-to-Solution UX Project demonstrating <b>problem solving</b> proficiency</h2>
               </Grid>
             </Grid>   
           </Paper>

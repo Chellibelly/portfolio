@@ -86,15 +86,21 @@ const ProjectCardMobile = ({
         {/* Expanded content */}
         <Collapse in={expanded} timeout="auto" unmountOnExit>
           <Box sx={{ mt: 2 }}>
-            {problem && (
-              <Typography sx={globalStyles.paragraph}>{problem}</Typography>
-            )}
-            {solution && (
-              <Typography sx={globalStyles.paragraph}>{solution}</Typography>
-            )}
-            {impact && (
-              <Typography sx={globalStyles.paragraph}>{impact}</Typography>
-            )}
+            {problem &&  
+              <Box sx={{ mb: 5 }}>
+                <Typography sx={globalStyles.heading6}><b>Challenge</b></Typography>
+                <Typography sx={globalStyles.paragraph}>{problem}</Typography>
+              </Box>}
+              {solution && 
+              <Box sx={{ mb: 5 }}>
+                <Typography sx={globalStyles.heading6}><b>Design Response</b></Typography>
+                <Typography sx={globalStyles.paragraph}>{solution}</Typography>
+              </Box>}
+              {impact && 
+              <Box>
+                <Typography sx={globalStyles.heading6}><b>Outcome</b></Typography>
+                <Typography sx={globalStyles.paragraph}>{impact}</Typography>
+              </Box>}
           </Box>
         </Collapse>
 
