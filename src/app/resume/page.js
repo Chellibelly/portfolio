@@ -1,4 +1,5 @@
 "use client"; 
+export const dynamic = "force-static";
 import React, { useEffect, useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import ResumeContainer from './ResumeContainer';
