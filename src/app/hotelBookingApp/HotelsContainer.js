@@ -15,7 +15,7 @@ import StickyNote2SharpIcon from '@mui/icons-material/StickyNote2Sharp';
 import SchoolIcon from '@mui/icons-material/School';
 import { grey, blueGrey } from '@mui/material/colors';
 import Image from 'next/image';
-import MenagerieHotelsHeader from "../../../public/Menagerie_Hotels_Header.png";
+import MenagerieHotelsHeader from "../../../public/Menagerie_Hotels_Header.webp";
 import * as globalStyles from '../styles/globalStyleConsts';
 
 const HotelsContainer = () => {

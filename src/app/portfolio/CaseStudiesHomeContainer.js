@@ -3,7 +3,7 @@ import React, {  } from 'react';
 import Image from 'next/image';
 import { Box, Grid, Paper, Typography, Link, List, ListItem } from '@mui/material';
 import Header from '../Header';
-import FreebirdHotelsHero from '../../../public/Freebird_Hotels_Hero.png';
+import FreebirdHotelsHero from '../../../public/Freebird_Hotels_Hero.webp';
 import LifeManagementHero from '../../../public/Life_Management_Hero.png';
 import DesignTidbits from '../../../public/Design_Tidbits.png';
 import * as globalStyles from '../styles/globalStyleConsts';

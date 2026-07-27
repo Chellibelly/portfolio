@@ -5,10 +5,10 @@ import { Box, Grid, Paper, List, ListItem, Select, Typography, MenuItem } from '
 import * as globalStyles from '../styles/globalStyleConsts';
 import Image from 'next/image';
 import QuoteContainer from '../hotelBookingApp/QuoteContainer';
-import ToDoListImage from '../../../public/Next_Up_Project.png';
+import ToDoListImage from '../../../public/Next_Up_Project.webp';
 import QualitativeAnswers from '../../../public/LM_Survey_Qual_Mobile.png';
 import CompetitorResearch from '../../../public/LM_Competitor_Research_Mobile.png';
-import AffinityDiagram from '../../../public/LM_Affinity_Diagram_Mobile.png';
+import AffinityDiagram from '../../../public/LM_Affinity_Diagram_Mobile.webp';
 import InformationArchitecture from '../../../public/LM_Information_Architecture_Mobile.png';
 
 import LMWireframes from '../../../public/LM_Wireframes_Mobile.png';

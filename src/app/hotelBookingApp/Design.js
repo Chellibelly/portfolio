@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Typography, Box, Grid, Button } from '@mui/material';
 import Image from 'next/image';
 import FlowDiagramGraphic from '../../../public/Flow_Diagram.png';
-import SketchesGraphic from '../../../public/Sketches.png';
+import SketchesGraphic from '../../../public/Sketches.webp';
 
 import DesignHotelInfo from '../../../public/Design_Hotel_Info_V2.jpg';
 import DesignPricingInfo from '../../../public/Design_Pricing_Info.jpg';

@@ -3,7 +3,7 @@ import { Box, Grid, Paper, Typography } from '@mui/material';
 import * as globalStyles from '../styles/globalStyleConsts';
 import Header from '../Header';
 import Image from 'next/image';
-import ToDoListImage from '../../../public/Next_Up_Project.png';
+import ToDoListImage from '../../../public/Next_Up_Project.webp';
 import QualitativeAnswers from '../../../public/LM_Survey_Qual.png';
 import CompetitorResearch from '../../../public/LM_Competitor_Research.png';
 import AffinityDiagram from '../../../public/LM_Affinity_Diagram_Full.png';

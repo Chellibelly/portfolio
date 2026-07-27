@@ -12,7 +12,7 @@ import * as globalStyles from "../styles/globalStyleConsts";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 // Graphics
-import AffinityDiagramGraphic from "../../../public/Affinity_Diagram.jpg";
+import AffinityDiagramGraphic from "../../../public/Affinity_Diagram.webp";
 import CustomerJourneyMapGraphic1 from "../../../public/Customer_Journey_Map_1.png";
 import CustomerJourneyMapGraphic2 from "../../../public/Customer_Journey_Map_2.png";
 
