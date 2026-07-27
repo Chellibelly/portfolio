@@ -66,51 +66,6 @@ const ResumeContainerMobile = () => {
               <hr style={{ borderColor: grey[400] }}/>
             </Box>
             <Typography sx={sectionHeader}>
-              WHAT DRIVES ME?
-            </Typography>
-            <Box sx={{ mb: 3 }}>
-              <Grid container>
-                <Grid item>
-                  <FavoriteBorderIcon sx={{ fontSize: 40, color: blueGrey[400] }}/>
-                </Grid>
-                <Grid item>
-                  <Typography sx={{ fontSize: 16, ml: "5px", mt: "6px", fontWeight: "bold", fontFamily: "Montserrat" }}>PASSION</Typography>
-                </Grid>
-              </Grid>
-              <Typography sx={{ mt: 1, ml: 1, fontFamily: "Montserrat" }}>
-                Passion fuels my output. I care deeply about my users and their ability to achieve their goals.
-              </Typography>
-            </Box>
-            <Box sx={{ mb: 3 }}>
-              <Grid container>
-                <Grid item>
-                  <GroupsIcon sx={{ fontSize: 40, color: blueGrey[400] }} /><br/>
-                </Grid>
-                <Grid item>
-                  <Typography sx={{ fontSize: 16, ml: "5px", mt: "6px", fontWeight: "bold", fontFamily: "Montserrat" }}>COMPASSION</Typography>
-                </Grid>
-              </Grid>
-              <Typography sx={{ mt: 1, ml: 1, fontFamily: "Montserrat" }}>
-                I focus on the impact each product will have on the needs, emotions, and understanding of my users.
-              </Typography>
-            </Box>
-            <Box sx={{ mb: 3 }}>
-              <Grid container>
-                <Grid item>
-                  <PsychologyAltIcon sx={{ fontSize: 40, color: blueGrey[700] }} />
-                </Grid>
-                <Grid item>
-                  <Typography sx={{ fontSize: 16, ml: "5px", mt: "6px", fontWeight: "bold", fontFamily: "Montserrat" }}>CURIOSITY</Typography>
-                </Grid>
-              </Grid>
-              <Typography sx={{ mt: 1, ml: 1, fontFamily: "Montserrat" }}>
-                Why does engagement dip during this process? Why are our competitors so successful? Why is adoption lower than anticipated? My curiosity and love for discovery fuels effective research and problem-solving.
-              </Typography>
-            </Box>
-            <Box sx={{ mt: 2, mb: 2 }}>
-              <hr style={{ borderColor: grey[400] }}/>
-            </Box>
-            <Typography sx={sectionHeader}>
               SKILLS
             </Typography>
             <Box sx={{ mb: 3 }}>
@@ -118,23 +73,25 @@ const ResumeContainerMobile = () => {
                 UX Research & Analysis
               </Typography>
               <Typography sx={{ fontSize: 16, fontFamily: "Montserrat" }}>
-                User interviews, surveys, usability testing, A/B testing, competitive analysis, insight synthesis (affinity mapping), journey mapping, personas
+                User interviews, surveys, usability testing, requirements gathering, product discovery,
+                competitive analysis, affinity mapping, journey mapping,
+                research synthesis and data-informed design 
               </Typography>
             </Box>
             <Box sx={{ mb: 3 }}>
               <Typography sx={{ fontSize: 17, fontWeight: "bold", fontFamily: "Montserrat", mb: 1 }}>
-                Interaction & UI Design
+                Interaction & Product Design
               </Typography>
               <Typography sx={{ fontSize: 16, fontFamily: "Montserrat" }}>
-                Information architecture, user flows, task flows, wireframing, prototyping, interaction design, design systems, component libraries, accessibility-aware design
+                Information architecture, user flows, interaction design, complex workflow design, wireframing, prototyping, responsive design, design systems, component libraries, and accessibility informed by WCAG, UX writing, content design, and error-state messaging
               </Typography>
             </Box>
             <Box sx={{ mb: 3 }}>
               <Typography sx={{ fontSize: 17, fontWeight: "bold", fontFamily: "Montserrat", mb: 1 }}>
-                Design Tools
+                Facilitation & Collaboration
               </Typography>
               <Typography sx={{ fontSize: 16, fontFamily: "Montserrat" }}>
-                Figma, Miro, Adobe, Photoshop, Material Design, Google Analytics
+                Design jams and collaborative workshops, stakeholder presentations and cross-functional iteration, design handoff, annotations, design QA, and implementation review
               </Typography>
             </Box>
             <Box sx={{ mb: 3 }}>
@@ -147,10 +104,18 @@ const ResumeContainerMobile = () => {
             </Box>
             <Box sx={{ mb: 3 }}>
               <Typography sx={{ fontSize: 17, fontWeight: "bold", fontFamily: "Montserrat", mb: 1 }}>
+                Design, Analytics & AI Tools
+              </Typography>
+              <Typography sx={{ fontSize: 16, fontFamily: "Montserrat" }}>
+                Figma, UXPin, Miro, Google Analytics, Figma Make, Google Stitch, GitHub Copilot, Claude Code
+              </Typography>
+            </Box>
+            <Box sx={{ mb: 3 }}>
+              <Typography sx={{ fontSize: 17, fontWeight: "bold", fontFamily: "Montserrat", mb: 1 }}>
                 Technical Fluency
               </Typography>
               <Typography sx={{ fontSize: 16, fontFamily: "Montserrat" }}>
-                React, JavaScript, TypeScript, HTML5, CSS, Tailwind, SQL
+                React, JavaScript, TypeScript, HTML5, responsive CSS, SQL, C# .NET
               </Typography>
             </Box>
             <Box sx={{ mt: 2, mb: 2 }}>
@@ -169,33 +134,29 @@ const ResumeContainerMobile = () => {
               </Grid>
               <Grid item>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px", fontWeight: "bold" }}>Sr. Software Engineer</Typography>
-                <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px" }}>Aaron’s INC</Typography>
+                <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px" }}>Aaron’s</Typography>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>Since March 2017</Typography>
               </Grid>   
             </Grid>
             <List sx={{ listStyleType: 'disc', marginLeft: 3 }}>
               <ListItem sx={{ display: 'list-item' }}>
                 <Typography variant='body1' sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                  Improved customer acquisition and onboarding by identifying
-                  friction through user feedback and usability insights,
-                  redesigning UI flows to reduce application drop-off and
-                  completion time by 50%
+                  Led an end-to-end UX sprint for a unified payment workflow that allowed stores to process multiple customer agreement payments at once, replacing a repetitive agreement-by-agreement process; facilitated a design jam, validated needs with store users, iterated with design and product partners, and carried the approved solution through handoff and implementation.
                 </Typography>
               </ListItem>
               <ListItem sx={{ display: 'list-item' }}>
                 <Typography variant='body1' sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                  Partnered with UX team to implement a fully remote web
-                  application, expanding business operation online during the
-                  COVID pandemic, streamlining onboarding and engagement
-                  through interactive front-end components in React,
-                  contributing to a 60% increase in closed deals.
+                  Improved customer acquisition and onboarding by identifying friction through user feedback and usability insights, redesigning end-to-end UI flows to reduce application drop-off and completion time by 50%.
                 </Typography>
               </ListItem>
               <ListItem sx={{ display: 'list-item' }}>
                 <Typography variant='body1' sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                  Worked cross-functionally with designers, product partners,
-                  and developers in an Agile environment to iterate on userfacing solutions, supporting nearly two million customer
-                  enrollments in loyalty and auto-payment programs.
+                  Partnered with UX team to implement a fully remote web application, expanding business operation online during the COVID pandemic, streamlining onboarding and engagement through interactive flows, contributing to a 60% increase in closed deals.
+                </Typography>
+              </ListItem>
+              <ListItem sx={{ display: 'list-item' }}>
+                <Typography variant='body1' sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
+                  Collaborated with design, product, and engineering partners to iterate on loyalty and autopay experiences supporting nearly two million customer enrollments.
                 </Typography>
               </ListItem>
             </List>
@@ -216,15 +177,12 @@ const ResumeContainerMobile = () => {
             <List sx={{ listStyleType: 'disc', marginLeft: 3 }}>
               <ListItem sx={{ display: 'list-item' }}>
                 <Typography variant='body1' sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                  Ensured accuracy and compliance of high-volume
-                  documentation in a regulated environment, reducing errors
-                  through consistent quality review and process adherence.
+                  Ensured accuracy and compliance of high-volume documentation in a regulated environment, reducing errors through consistent quality review and process adherence.
                 </Typography>
               </ListItem>
               <ListItem sx={{ display: 'list-item' }}>
                 <Typography variant='body1' sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                  Improved team efficiency by introducing a digital tasktracking and communication workflow, nearly doubling
-                  review throughput and project turnaround time.
+                  Nearly doubled review throughput by introducing a digital task-tracking and communication workflow that improved team coordination and project turnaround.
                 </Typography>
               </ListItem>
             </List>
