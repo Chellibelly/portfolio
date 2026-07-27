@@ -78,7 +78,6 @@ export default function PasswordModal({ open, handleClose }) {
             </Typography>
 
             <TextField
-              type="password"
               label="Password"
               variant="outlined"
               value={password}
