@@ -215,7 +215,7 @@ const ResumeContainer = () => {
               <Grid item sx={{ ml: 1 }}>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px" }}><b>Quality Assurance Specialist</b> at MiMedx</Typography>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "14px" }}><i>Pharmaceuticals | Healthcare | Manufacturing</i></Typography>
-                <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>December 2014 - March 2018</Typography>
+                <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>December 2014 - March 2017</Typography>
               </Grid>   
             </Grid>
 

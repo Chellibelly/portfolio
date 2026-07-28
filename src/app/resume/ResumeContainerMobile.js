@@ -96,14 +96,6 @@ const ResumeContainerMobile = () => {
             </Box>
             <Box sx={{ mb: 3 }}>
               <Typography sx={{ fontSize: 17, fontWeight: "bold", fontFamily: "Montserrat", mb: 1 }}>
-                Leadership, Collaboration, & Delivery
-              </Typography>
-              <Typography sx={{ fontSize: 16, fontFamily: "Montserrat" }}>
-                Stakeholder collaboration in Agile (Lean/Scrum) environments, design handoff, annotation, crossfunctional iteration
-              </Typography>
-            </Box>
-            <Box sx={{ mb: 3 }}>
-              <Typography sx={{ fontSize: 17, fontWeight: "bold", fontFamily: "Montserrat", mb: 1 }}>
                 Design, Analytics & AI Tools
               </Typography>
               <Typography sx={{ fontSize: 16, fontFamily: "Montserrat" }}>
@@ -171,7 +163,7 @@ const ResumeContainerMobile = () => {
               <Grid item>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px", fontWeight: "bold" }}>Quality Assurance Specialist</Typography>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px" }}>MiMedx</Typography>
-                <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>Dec. 2014 - Mar. 2018</Typography>
+                <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>Dec. 2014 - Mar. 2017</Typography>
               </Grid>   
             </Grid>
             <List sx={{ listStyleType: 'disc', marginLeft: 3 }}>
