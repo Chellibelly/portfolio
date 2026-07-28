@@ -56,11 +56,7 @@ const ResumeContainerMobile = () => {
               SUMMARY
             </Typography>
             <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-              Passionate UX Designer with experience improving complex retail
-              and e-commerce products through research-driven design and
-              cross-functional collaboration. Focused on reducing friction in highvolume customer journeys and delivering measurable business
-              impact by partnering closely with product managers, engineers, and
-              users on agile teams.
+              Product designer with 8+ years of digital product experience spanning UX, front-end engineering, and quality assurance in retail and e-commerce. Experienced translating validated user needs into scalable, implementation-ready solutions that reduce friction in high-volume customer journeys and deliver measurable business impact.
             </Typography>
             <Box sx={{ mt: 2, mb: 2 }}>
               <hr style={{ borderColor: grey[400] }}/>
