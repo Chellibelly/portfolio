@@ -123,7 +123,7 @@ const ResumeContainerMobile = () => {
               <Grid item>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px", fontWeight: "bold" }}>Sr. Software Engineer</Typography>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px" }}>Aaron’s</Typography>
-                <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>Since March 2017</Typography>
+                <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>Since March 2018</Typography>
               </Grid>   
             </Grid>
             <List sx={{ listStyleType: 'disc', marginLeft: 3 }}>
@@ -159,7 +159,7 @@ const ResumeContainerMobile = () => {
               <Grid item>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px", fontWeight: "bold" }}>Quality Assurance Specialist</Typography>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px" }}>MiMedx</Typography>
-                <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>Dec. 2014 - Mar. 2017</Typography>
+                <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>Dec. 2014 - Mar. 2018</Typography>
               </Grid>   
             </Grid>
             <List sx={{ listStyleType: 'disc', marginLeft: 3 }}>
@@ -204,7 +204,7 @@ const ResumeContainerMobile = () => {
               </Grid>
               <Grid item sx={7}>
               <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px", fontWeight: "bold" }}>BA Applied<br/> Computer Science</Typography>
-                <Typography sx={{ fontFamily: "Montserrat", fontSize: "18px" }}>Awarded Dec. 2016</Typography>
+                <Typography sx={{ fontFamily: "Montserrat", fontSize: "18px" }}>Awarded January 2018</Typography>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "18px" }}>Kennesaw State<br/> University</Typography>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>Magna Cum Laude</Typography>
               </Grid>   

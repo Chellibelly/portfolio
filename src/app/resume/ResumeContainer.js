@@ -175,7 +175,7 @@ const ResumeContainer = () => {
               <Grid item sx={{ ml: 1 }}>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px" }}><b>Sr. Software Engineer</b> at Aaron’s</Typography>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "14px" }}><i>Retail | e-commerce | rent-to-own</i></Typography>
-                <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>March 2017 – Present</Typography>
+                <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>March 2018 – Present</Typography>
               </Grid>   
             </Grid>
 
@@ -215,7 +215,7 @@ const ResumeContainer = () => {
               <Grid item sx={{ ml: 1 }}>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px" }}><b>Quality Assurance Specialist</b> at MiMedx</Typography>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "14px" }}><i>Pharmaceuticals | Healthcare | Manufacturing</i></Typography>
-                <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>December 2014 - March 2017</Typography>
+                <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>December 2014 - March 2018</Typography>
               </Grid>   
             </Grid>
 
@@ -263,7 +263,7 @@ const ResumeContainer = () => {
                 </Box>
               </Grid>
               <Grid item sx={{ ml: 1 }}>
-                <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px" }}><b>BA Applied Computer Science</b> – December 2016</Typography>
+                <Typography sx={{ fontFamily: "Montserrat", fontSize: "20px" }}><b>BA Applied Computer Science</b> – January 2018</Typography>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>Kennesaw State University</Typography>
                 <Typography sx={{ fontFamily: "Montserrat", fontSize: "14px" }}>Magna Cum Laude</Typography>
               </Grid>             
