@@ -107,6 +107,28 @@ const cardStyle = {
             </Grid>   
           </Paper>
         </Link>
+
+        {/*placeholder for batched agreements*/}
+        {false &&
+        <Link href="/batchedAgreements" sx={{ textDecoration: 'none'}}>
+          <Paper sx={cardStyleNavigate}>
+            <Grid container direction="column" justifyContent="center" alignItems="center">
+              <Grid item>
+                <Image
+                  src={LifeManagementHero}
+                  width={380}
+                  alt="Batched Agreements Hero"
+                  style={{ margin: "auto", borderTopLeftRadius: 4, borderTopRightRadius: 4 }}
+                />
+              </Grid>
+              <Grid item sx={{ p: 2 }}>
+                <h1 style={{ ...globalStyles.heading4, fontSize: 18, textAlign: "center", fontWeight: 600 }}>Batched Payments</h1>
+                <h2 style={{ ...globalStyles.heading6, fontSize: 16, textAlign: "center", fontStyle: "italic" }}>Problem-to-Solution UX Project demonstrating <b>problem solving</b> proficiency</h2>
+              </Grid>
+            </Grid>   
+          </Paper>
+        </Link>}
+
       </Grid>
       </Box>
     </div>
