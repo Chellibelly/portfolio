@@ -100,7 +100,8 @@ const CaseStudiesHomeMobile = () => {
                 <Image
                   src={LifeManagementHero}
                   width={320}
-                  alt="Life Management App Hero"
+                  loading="eager"
+                  alt="Life Management Hero"
                   style={imageStyle}
                 />
               </Grid>

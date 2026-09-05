@@ -89,7 +89,8 @@ const cardStyle = {
                 <Image
                   src={LifeManagementHero}
                   width={380}
-                  alt="Life Management App Hero"
+                  loading="eager"
+                  alt="Life Management Hero"
                   style={{ margin: "auto", borderTopLeftRadius: 4, borderTopRightRadius: 4 }}
                 />
               </Grid>
