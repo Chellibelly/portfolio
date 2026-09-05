@@ -1,6 +1,4 @@
-//TODO: the flow image looks super blurry, get a better one
-//TODO: alts don't apply to images
-//TODO: obscure Aaron's logo from images where it's seen
+//TODO: the flow image looks super blurry, get a better one (or get two and put side by side)
 
 import React from "react";
 import Image from "next/image";
@@ -97,7 +95,7 @@ export default function BatchedAgreementsPage() {
       <Box sx={heroSx}>
         <Image
           src={BatchedPaymentsHero}
-          alt="Batched Payments workflow concept showing agreement selection and payment actions"
+          alt="Batched Payments case study hero"
           priority
           sizes="(max-width: 900px) 100vw, 1000px"
           style={{ width: "100%", height: "auto", display: "block" }}
@@ -150,7 +148,7 @@ export default function BatchedAgreementsPage() {
         </Typography>
         <Figure
           src={FlowMap}
-          alt="Flow map showing successful, partial-failure, and total-failure payment paths"
+          alt="initial design concept"
         />
       </Box>
 
@@ -192,12 +190,12 @@ export default function BatchedAgreementsPage() {
           I also incorporated requirements and usability findings directly into the interaction design. Use of credit cards on file now require the manager to enter the card's expirations date before payment, failed transactions are clearly separated from successful ones in a partial-failure state, and entered values are preserved for retry. To reduce clutter, agreement details were moved behind contextual info controls, while checkboxes give users an explicit way to include or remove agreements from the payment batch.
         </Typography>
         <Grid container spacing={3} sx={{ mt: 1 }}>
-          <Grid item xs={12} md={6}><Figure src={ExistingCardPayment} alt="Prototype showing a partial payment failure result" /></Grid>
-          <Grid item xs={12} md={6}><Figure src={AgreementDetailsPanel} alt="Prototype showing a successful batched payment result" /></Grid>
+          <Grid item xs={12} md={6}><Figure src={ExistingCardPayment} alt="Design showing an existing card selected" /></Grid>
+          <Grid item xs={12} md={6}><Figure src={AgreementDetailsPanel} alt="Design showing agreement details modal" /></Grid>
         </Grid>
         <Grid container spacing={3} sx={{ mt: -15 }}>
-           <Grid item xs={12} md={6}><Figure src={NewCardPayment} alt="Prototype showing a successful batched payment result" /></Grid>
-          <Grid item xs={12} md={6}><Figure src={PartialFailureState} alt="Prototype showing a partial payment failure result" /></Grid>
+           <Grid item xs={12} md={6}><Figure src={NewCardPayment} alt="Design showing a new card entry" /></Grid>
+          <Grid item xs={12} md={6}><Figure src={PartialFailureState} alt="Design showing a partial success partial failure payment result" /></Grid>
         </Grid>
       </Box>
 
@@ -209,7 +207,7 @@ export default function BatchedAgreementsPage() {
         <Typography sx={{ ...bodySx, mb: 10 }}>
           The team aligned with the direction and identified no major technical concerns. I worked with them to answer implementation questions and refine details as needed. Because I also work in development as a UX engineer and had the bandwidth, I implemented the solution myself with the team’s support.
         </Typography>
-        <Figure wide src={FinalAgreementState} alt="Prototype showing a final agreement-list state after payment workflow design" />
+        <Figure wide src={FinalAgreementState} alt="A screenshot of a full batched payment workflow" />
       </Box>
 
       <Box sx={{ ...sectionSx, mt: { xs: 7, md: 10 } }}>

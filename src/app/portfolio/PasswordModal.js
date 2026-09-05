@@ -24,7 +24,7 @@ const style = {
   p: 4,
 };
 
-export default function PasswordModal({ open, handleClose }) {
+export default function PasswordModal({ open, handleClose, destination = '/designTidbits' }) {
   const [password, setPassword] = React.useState('');
   const [error, setError] = React.useState(false);
 
@@ -33,7 +33,7 @@ export default function PasswordModal({ open, handleClose }) {
     if (password != 'lucky'){
       setError(true);
     } else {
-      window.location.pathname = "/designTidbits"
+      window.location.pathname = destination;
     }
     setPassword('');
   };
