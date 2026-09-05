@@ -89,7 +89,8 @@ const LifeManagementAppContainer = () => {
           pb: { xs: 8, md: 12 },
         }}
       >
-        <Typography component="h1" sx={{ position: 'absolute', width: '1px', height: '1px', p: 0, m: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: 0, }} > KorkBoard </Typography> <Image src={KorkBoardHero} alt="KorkBoard productivity app screens showing tasks, notes, goals, and rewards" priority sizes="(max-width: 1120px) 100vw, 1120px" style={{ width: '100%', height: 'auto', display: 'block', }} />
+        <Typography component="h1" sx={{ position: 'absolute', width: '1px', height: '1px', p: 0, m: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: 0, }} > KorkBoard </Typography> 
+        <Image src={KorkBoardHero} alt="KorkBoard productivity app screens showing tasks, notes, goals, and rewards" priority sizes="(max-width: 1120px) 100vw, 1120px" style={{ width: '100%', height: 'auto', display: 'block', }} />
         <Paper
           elevation={3}
           sx={{

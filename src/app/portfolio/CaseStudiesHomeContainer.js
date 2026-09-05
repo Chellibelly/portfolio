@@ -1,3 +1,9 @@
+//TODO - show the batched agreements work
+//TODO - reorder projects and adjust layout
+//TODO - add "Single-feature" to professional highlights
+//TODO - add dates to the projects
+//TODO - change the short paragraphs to pill keywords
+
 "use client"; 
 import React, {  } from 'react';
 import Image from 'next/image';
