@@ -1,5 +1,3 @@
-//TODO: the flow image looks super blurry, get a better one (or get two and put side by side)
-
 import React from "react";
 import Image from "next/image";
 import { Box, Grid, Paper, Typography } from "@mui/material";
@@ -17,7 +15,8 @@ import DesignGoal from "../../../public/BatchedAgreementPayments/artifact_33.png
 import HowMightWe from "../../../public/BatchedAgreementPayments/artifact_32.png";
 import FlowMap from "../../../public/BatchedAgreementPayments/artifact_28.png";
 import PartialFailureState from "../../../public/BatchedAgreementPayments/artifact_07.png";
-import FinalAgreementState from "../../../public/BatchedAgreementPayments/artifact_37.png";
+import FlowLeftSide from "../../../public/BatchedAgreementPayments/flow_leftside.png";
+import FlowRightSide from "../../../public/BatchedAgreementPayments/flow_rightside.png";
 import AgreementDetailsPanel from "../../../public/BatchedAgreementPayments/artifact_22.png";
 import NewCardPayment from "../../../public/BatchedAgreementPayments/artifact_14.png";
 import ExistingCardPayment from "../../../public/BatchedAgreementPayments/artifact_16.png";
@@ -27,7 +26,7 @@ const heroSx = { width: "100%", mt: { xs: "56px", lg: "64px" } };
 const bodySx = { ...globalStyles.paragraph, maxWidth: 850, mx: "auto" };
 const sectionHeadingSx = { ...globalStyles.heading2, maxWidth: 850, mx: "auto" };
 
-function Figure({ src, alt, caption, wide = false, width = "100%" }) {
+function Figure({ src, alt, caption, wide = false, width = "100%", framePadding = { xs: 1, md: 2 } }) {
   return (
     <Box
       component="figure"
@@ -42,7 +41,7 @@ function Figure({ src, alt, caption, wide = false, width = "100%" }) {
         transform: wide ? "translateX(-50%)" : undefined,
       }}
     >
-      <Box sx={{ backgroundColor: "#f5f7fa", p: { xs: 1, md: 2 } }}>
+      <Box sx={{ backgroundColor: "#f5f7fa", p: framePadding }}>
         <Image src={src} alt={alt} sizes="(max-width: 900px) 100vw, 1000px" style={{ width: "100%", height: "auto", display: "block" }} />
       </Box>
       <Typography component="figcaption" sx={{ ...globalStyles.paragraph, fontSize: 14, mt: 1.5, color: "text.secondary" }}>
@@ -193,7 +192,7 @@ export default function BatchedAgreementsPage() {
           <Grid item xs={12} md={6}><Figure src={ExistingCardPayment} alt="Design showing an existing card selected" /></Grid>
           <Grid item xs={12} md={6}><Figure src={AgreementDetailsPanel} alt="Design showing agreement details modal" /></Grid>
         </Grid>
-        <Grid container spacing={3} sx={{ mt: -15 }}>
+        <Grid container spacing={3} sx={{ mt: { xs: 3, md: -15 } }}>
            <Grid item xs={12} md={6}><Figure src={NewCardPayment} alt="Design showing a new card entry" /></Grid>
           <Grid item xs={12} md={6}><Figure src={PartialFailureState} alt="Design showing a partial success partial failure payment result" /></Grid>
         </Grid>
@@ -207,7 +206,25 @@ export default function BatchedAgreementsPage() {
         <Typography sx={{ ...bodySx, mb: 10 }}>
           The team aligned with the direction and identified no major technical concerns. I worked with them to answer implementation questions and refine details as needed. Because I also work in development as a UX engineer and had the bandwidth, I implemented the solution myself with the team’s support.
         </Typography>
-        <Figure wide src={FinalAgreementState} alt="A screenshot of a full batched payment workflow" />
+        <Box
+          sx={{
+            width: { xs: "100%", md: "90vw" },
+            maxWidth: "1400px",
+            mx: "auto",
+            position: { xs: "static", md: "relative" },
+            left: { xs: "auto", md: "50%" },
+            transform: { xs: "none", md: "translateX(-50%)" },
+          }}
+        >
+          <Grid container spacing={1} sx={{ mt: 1 }}>
+            <Grid item xs={12} md={6}>
+              <Figure src={FlowLeftSide} alt="Left side of the full batched payment workflow" framePadding={{ xs: 0.5, md: 1 }} />
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <Figure src={FlowRightSide} alt="Right side of the full batched payment workflow" framePadding={{ xs: 0.5, md: 1 }} />
+            </Grid>
+          </Grid>
+        </Box>
       </Box>
 
       <Box sx={{ ...sectionSx, mt: { xs: 7, md: 10 } }}>
@@ -216,7 +233,7 @@ export default function BatchedAgreementsPage() {
           The feature was built, tested, and deployed in about a week and a half, then piloted in seven stores. After monitoring usage for a week without significant issues, we gradually rolled it out to more than 1,000 stores over the following weeks.
         </Typography>
         <Typography sx={bodySx}>
-          Manager found the flow intuitive and said it reduced both the time and the risk of mistakes when processing multiple agreement payments. It proved especially useful for refinanced agreements, where customers often needed payments processed across several agreements at once, a use case I had not realized was so common during the initial design work.
+          Users found the flow intuitive and said it reduced both the time and the risk of mistakes when processing multiple agreement payments. It proved especially useful for refinanced agreements, where customers often needed payments processed across several agreements at once, a use case I had not realized was so common during the initial design work.
         </Typography>
         <Typography sx={bodySx}>
           By staying involved from concept through rollout, I was able to turn stakeholder feedback into a solution that was practical to build, intuitive to use, and valuable at scale.

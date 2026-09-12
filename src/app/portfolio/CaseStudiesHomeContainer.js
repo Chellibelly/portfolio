@@ -150,7 +150,7 @@ const cardStyle = {
                 <h2 style={{ ...globalStyles.heading6, fontSize: 16, textAlign: "center", fontStyle: "italic" }}>A collection of selected industry work showcasing impactful features</h2>
                 <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1, justifyContent: 'center', mt: 2 }}>
                   <Chip label="Industry work" size="medium" sx={{ backgroundColor: blue[800], color: "white" }}/>
-                  <Chip label="Real delivered results" sx={{ backgroundColor: orange[900], color: "white" }} size="medium" />
+                  <Chip label="Real delivered value" sx={{ backgroundColor: orange[900], color: "white" }} size="medium" />
                   <Chip label="Versatility" sx={{ backgroundColor: green[800], color: "white" }} size="medium" />
                   <Chip label="Responsive Designs" sx={{ backgroundColor: purple[800], color: "white" }} size="medium" />
                 </Box>
