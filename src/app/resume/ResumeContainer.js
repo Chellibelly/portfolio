@@ -182,22 +182,27 @@ const ResumeContainer = () => {
             <List sx={{ listStyleType: 'disc', marginLeft: 18, marginTop: -3 }}>
               <ListItem sx={{ display: 'list-item' }}>
                 <Typography variant='body1' sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                  Led an end-to-end UX sprint for a unified payment workflow that allowed stores to process multiple customer agreement payments at once, replacing a repetitive agreement-by-agreement process; facilitated a design jam, validated needs with store users, iterated with design and product partners, and carried the approved solution through handoff and implementation.
+                  Led UX design and development for a batched payment workflow, replacing repetitive agreement-by-agreement transactions with a streamlined experience. Facilitated collaborative design sessions, incorporated store-user feedback, and supported rollout to 1,000+ stores.
                 </Typography>
               </ListItem>
               <ListItem sx={{ display: 'list-item' }}>
                 <Typography variant='body1' sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                  Improved customer acquisition and onboarding by identifying friction through user feedback and usability insights, redesigning end-to-end UI flows to reduce application drop-off and completion time by 50%.
+                  Designed a proposed sales leads dashboard, conducting qualitative research with three store employees to evaluate concepts, uncover unmet needs, and prioritize functionality. Used findings to shape the dashboard's direction around actionable tasks, customer opportunities, and performance insights.
                 </Typography>
               </ListItem>
               <ListItem sx={{ display: 'list-item' }}>
                 <Typography variant='body1' sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                  Partnered with UX team to implement a fully remote web application, expanding business operation online during the COVID pandemic, streamlining onboarding and engagement through interactive flows, contributing to a 60% increase in closed deals.
+                  Engineered a real-time remote checkout experience that eliminated the need for customers to visit stores in person, synchronizing customer and store-associate workflows throughout the process. Initially created as a temporary solution during COVID-19, it remains the primary way stores assist customers with checkout today.
                 </Typography>
               </ListItem>
               <ListItem sx={{ display: 'list-item' }}>
                 <Typography variant='body1' sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
-                  Collaborated with design, product, and engineering partners to iterate on loyalty and autopay experiences supporting nearly two million customer enrollments.
+                  Integrated end-to-end AutoPay enrollment into the customer checkout workflow, enabling payment schedule selection, secure card tokenization, and enrollment through API integrations. Reduced reliance on a separate enrollment system, with the integrated checkout experience supporting over 2 million AutoPay enrollments.
+                </Typography>
+              </ListItem>
+              <ListItem sx={{ display: 'list-item' }}>
+                <Typography variant='body1' sx={{ fontFamily: "Montserrat", fontSize: "16px" }}>
+                  Researched, designed, and developed an internal localization tool informed by interviews with content editors and developers. Enabled content teams to independently manage multilingual website copy without having to wait on developer changes or code deployments.
                 </Typography>
               </ListItem>
             </List>
@@ -231,7 +236,7 @@ const ResumeContainer = () => {
                 </Typography>
               </ListItem>
             </List>
-<Box sx={sectionHeader}>
+            <Box sx={sectionHeader}>
              <hr style={{ borderColor: grey[400] }}/>
             </Box>
             <Typography sx={sectionHeader}>
